@@ -1,0 +1,46 @@
+manufacturer: DJI
+model: Matrice 400
+
+parameter_date: 2026-08-06
+parameter_type: official_plus_engineering_estimate
+
+mass_kg: 9.74
+mass_source: official
+max_takeoff_mass_kg: 15.8
+max_takeoff_mass_source: official
+max_payload_kg: 6.0
+max_payload_source: official
+
+dimensions_m: [0.98, 0.76, 0.48]
+dimensions_source: official
+diagonal_wheelbase_m: 1.07
+wheelbase_source: official
+propeller_diameter_m: 0.635
+propeller_diameter_source: derived_from_official
+
+rotor_xy_coordinate_abs_m: 0.378302127934803
+rotor_xy_coordinate_source: derived_from_official
+
+inertia_diagonal_kg_m2:
+  - 0.655826666666667
+  - 0.966532666666667
+  - 1.248343333333333
+inertia_method: equivalent_uniform_bounding_box
+inertia_source: derived_from_official
+inertia_is_measured: false
+
+suspension_mount_body_m: [0.0, 0.0, -0.24]
+suspension_mount_source: simulation_assumption
+suspension_mount_is_measured: false
+
+show_dimension_envelope: false
+visual_geometry_source: visual_only_simulation_assumption
+
+max_wind_resistance_m_s: 12.0
+max_wind_resistance_source: official
+max_pitch_angle_deg: 35.0
+max_pitch_angle_source: official
+
+source_urls:
+  official_specs: https://enterprise.dji.com/matrice-400/specs
+  official_downloads: https://www.dji.com/mx/downloads/products/matrice-400

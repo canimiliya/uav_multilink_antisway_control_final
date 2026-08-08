@@ -1,0 +1,77 @@
+{
+  "protocol": "S6T2-cutter-setpoint-protocol-r1",
+  "duration_s": 12.0,
+  "sample_dt_s": 0.005,
+  "target_delta_x_m": 0.3,
+  "initial_tip_position_m": [
+    0.225,
+    0.0,
+    0.38999999999999996
+  ],
+  "target_tip_position_m": [
+    0.525,
+    0.0,
+    0.38999999999999996
+  ],
+  "target_cutter_axis": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "equilibrium": {
+    "tip_relative_position_m": [
+      0.225,
+      0.0,
+      -2.81
+    ],
+    "cutter_axis_world": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "cutter_rotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "axis_norm": 1.0,
+    "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d"
+  },
+  "scenes": [
+    {
+      "name": "task_acquire_calm",
+      "task_start_time_s": 1.0,
+      "wind_profile": "calm",
+      "source_scenario": "approach_stop",
+      "performance_execution": true
+    },
+    {
+      "name": "task_acquire_crosswind",
+      "task_start_time_s": 3.0,
+      "wind_profile": "constant_crosswind",
+      "source_scenario": "crosswind_hover",
+      "performance_execution": true
+    },
+    {
+      "name": "task_gust_recovery",
+      "task_start_time_s": null,
+      "wind_profile": "one_cosine_gust",
+      "source_scenario": "gust_micro_adjust",
+      "performance_execution": false
+    }
+  ],
+  "setpoint_is_constant_after_issue": true,
+  "reference_preview_before_issue_forbidden": true
+}

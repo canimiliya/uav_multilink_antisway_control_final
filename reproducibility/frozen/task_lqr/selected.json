@@ -1,0 +1,24 @@
+{
+  "selected": true,
+  "usable_count": 3,
+  "grid_size": 27,
+  "status": "SELECTED",
+  "selected_candidate": {
+    "candidate_id": "lqr_011",
+    "index": 11,
+    "w_p": 80.0,
+    "w_theta": 5.0,
+    "R": 1.0,
+    "spectral_radius": 0.9745683876761655,
+    "dare_residual_norm": 5.450247054222573e-10,
+    "controller": "task_lqr",
+    "safe": true,
+    "candidate_usable": true,
+    "competence_pass": true,
+    "score": 1.3904364594014655,
+    "position_ratio_mean": 0.9446048723415879,
+    "orientation_ratio_mean": 0.5314649034051138,
+    "acquisition_norm_mean": 0.8615909090909091,
+    "control_rate_ratio_mean": 1.951352678717441
+  }
+}

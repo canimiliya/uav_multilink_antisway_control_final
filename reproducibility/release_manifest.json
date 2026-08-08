@@ -1,0 +1,55 @@
+{
+  "release_name": "RELEASE-R1-CLEAN-REPRODUCIBLE-PUBLIC-REPO-FREEZE",
+  "source_repository": "https://github.com/canimiliya/uav-multilink-antisway-control",
+  "source_commit": "2f79c0b04dda236bc3d66d9d4669a1f7e258346e",
+  "source_tag": "s6-taskspace-final-2026-08-08",
+  "target_repository": "https://github.com/canimiliya/uav_multilink_antisway_control_final.git",
+  "udaan_repository": "https://github.com/vkotaru/udaan.git",
+  "udaan_commit": "9eb1a2dcfe438ce7b4c4cd119072e4f3d8a6a816",
+  "runtime_model": {
+    "path": "reproducibility/frozen/model/model_5link_controlled.xml",
+    "sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d"
+  },
+  "dependencies": {
+    "python": "3.11.15",
+    "mujoco": "3.0.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "osqp": "1.1.3",
+    "pyyaml": "6.0.3",
+    "matplotlib": "3.11.1",
+    "imageio": "2.37.4",
+    "pytest": "9.1.1"
+  },
+  "frozen_files": {
+    "linear_model": ["A.npy", "B.npy", "K.npy", "Q.npy", "R.npy", "P.npy", "C_tip.npy"],
+    "ls_pmpc": ["method_freeze.json", "holdout_protocol.json", "primary_summary.json", "final_status.json"],
+    "task_lqr": ["C_task.npy", "selected.json", "development_comparison.json"],
+    "task_space_contract": ["protocol.json", "equilibrium_target.json", "task_acquire_calm.csv", "task_acquire_crosswind.csv"]
+  },
+  "sha256": {
+    "configs/model_5link.yaml": "e2eaafd1a1b0066816c2150bbe42c466393cb871bfbb61366b7fa2765d730c5d",
+    "configs/aerodynamics.yaml": "485c399bcddbd6ba363fdc3d9ab8eb3fd09e0afbefe51a0825ef2559db6bd1a9",
+    "configs/controllers.yaml": "2a56f858ec335074414cc010b08df37aa51e36079aa2824e1c3e08888f6d9ca1",
+    "configs/da_pmpc.yaml": "7418882c493e747c25f79d1abc4edb23a5e5e0ae241418d3ef0734a006245a43",
+    "configs/lqr.yaml": "4e0cdb2526b5450c73ccbb12019951f60b2cdd58db1bc0993a28c23e75247e5f",
+    "configs/s3_pid.yaml": "43fd2d9cd931e49ce6080b08b4892728f19939ca234b0e6482973c07d2ec530f",
+    "configs/scenarios.yaml": "52673d67942deb102b4db98a805530cb33dfe08a76e0c3e0e1a704e034e5de58",
+    "configs/wind_profiles.yaml": "3a1e06a2418631b7dcbb60eea6d040b44ae8d06a6ffac2f75565007ea416a095",
+    "reproducibility/frozen/model/model_5link_controlled.xml": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+    "reproducibility/frozen/linear_model/A.npy": "bb8ec9e5671381bf083986a979620e79e165c3b1766e23c791c177f77d3950fe",
+    "reproducibility/frozen/linear_model/B.npy": "7c96ed06c0e6812cb32c1967dbd8bd0dfd6b9568102026cef41413f9ba83c4d5",
+    "reproducibility/frozen/linear_model/K.npy": "fad2bca242912351f2c6ece0beed411e42e2e4f274a105215f30710ed21797f4",
+    "reproducibility/frozen/linear_model/Q.npy": "f098dd439352ed97243c1a709a29fd12e6eefc56ccb24e5a8ef10048baa3f9d5",
+    "reproducibility/frozen/linear_model/R.npy": "c309b9ddf5703f7aa0971dcfc1bd864ed7efc0a9c3701523568b1ccf36839bdd",
+    "reproducibility/frozen/linear_model/P.npy": "2e0ffd080ed14dfd61225e4a2aa425ffa1ab77bdc4c931638ace8fb3418ed9d8",
+    "reproducibility/frozen/linear_model/C_tip.npy": "e99fb4613411f4a8c129b5cb3f2db0c51bd4f1c658a59ec3d3d12ea6dcc89d63",
+    "reproducibility/frozen/task_lqr/C_task.npy": "6e9866ba2b07504f67c1f58ea47811ef4bdf5f84de0724edcb164aad5060cee3",
+    "reproducibility/expected/quick_expected.json": "1fe95feffc2ad8a8d3370625d8ce21c1726bcfec26a0d093d11b6a8881b2261e",
+    "reproducibility/expected/task_lqr_expected.json": "49cd7e7311379ba33e44b95f477b47e5e88bc56f0f5e31e0be19e9a859c2a97c",
+    "reproducibility/expected/s5b_expected.json": "c7c496389899dc9ba9d0dd40b20a0e7401e99df4070b1de1d14aad0f4365658a"
+  },
+  "clean_room_export": true,
+  "old_git_history_imported": false,
+  "old_remote_preserved": true
+}

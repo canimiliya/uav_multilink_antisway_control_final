@@ -1,0 +1,110 @@
+{
+  "protocol": "S6T6-final-evidence-freeze-r1",
+  "taskspace_protocol": "FROZEN",
+  "taskspace_metric_contract": "FROZEN",
+  "method_development": "CLOSED",
+  "final_taskspace_method": null,
+  "holdout_used": false,
+  "entries": [
+    {
+      "method": "old PID",
+      "status": "legacy_baseline",
+      "selected_or_frozen": true,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "retained as the traditional task-space comparison baseline",
+      "main_failure": "did not acquire the task target under the S6T2 setpoint protocol",
+      "artifact_paths": ["artifacts/s6_taskspace/t2/development_comparison.json", "artifacts/s6_taskspace/t2/gate.json"]
+    },
+    {
+      "method": "old LQR",
+      "status": "legacy_baseline",
+      "selected_or_frozen": true,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "retained as the formal traditional task-space reference",
+      "main_failure": "did not satisfy the S6T2 acquisition criterion in the recorded comparison",
+      "artifact_paths": ["artifacts/s6_taskspace/t2/development_comparison.json", "artifacts/s6_taskspace/t2/gate.json"]
+    },
+    {
+      "method": "Task-PID",
+      "status": "no_usable_candidate",
+      "selected_or_frozen": false,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "safety-valid candidate runs were retained",
+      "main_failure": "no candidate passed task competence and acquisition requirements",
+      "artifact_paths": ["artifacts/s6_taskspace/t2/task_pid/selected.json", "artifacts/s6_taskspace/t2/development_comparison.json"]
+    },
+    {
+      "method": "Task-LQR",
+      "status": "development_selected_not_final_method",
+      "selected_or_frozen": true,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "lqr_011 acquired calm in 2.455 s and reduced calm position/orientation RMSE versus old LQR",
+      "main_failure": "crosswind position RMSE increased and the task was not acquired",
+      "artifact_paths": ["artifacts/s6_taskspace/t2/task_lqr/selected.json", "artifacts/s6_taskspace/t2/development_comparison.json", "artifacts/s6_taskspace/t2/gate.json"]
+    },
+    {
+      "method": "Task-LQI",
+      "status": "no_usable_candidate",
+      "selected_or_frozen": false,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "candidate safety and competence audits were retained",
+      "main_failure": "zero usable candidates after the S6T3 closure re-audit",
+      "artifact_paths": ["artifacts/s6_taskspace/t3/task_lqi/selection.json", "artifacts/s6_taskspace/t3/closure/competence_reaudit.json", "artifacts/s6_taskspace/t3/closure/gate.json"]
+    },
+    {
+      "method": "ITS-RMPC",
+      "status": "no_usable_candidate",
+      "selected_or_frozen": false,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "acquisition-capable near-miss runs were retained for diagnosis",
+      "main_failure": "position/orientation competence and final task criteria were not jointly satisfied",
+      "artifact_paths": ["artifacts/s6_taskspace/t3/its_rmpc", "artifacts/s6_taskspace/t3/closure/competence_reaudit.json", "artifacts/s6_taskspace/t3/closure/gate.json"]
+    },
+    {
+      "method": "DOB-Task-LQR",
+      "status": "no_usable_candidate",
+      "selected_or_frozen": false,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "calm acquisition-capable observer candidates were retained",
+      "main_failure": "crosswind did not acquire under the frozen task contract",
+      "artifact_paths": ["artifacts/s6_taskspace/t4/observer_candidates.json", "artifacts/s6_taskspace/t4/observer_contribution.json", "artifacts/s6_taskspace/t4/gate.json"]
+    },
+    {
+      "method": "DOB-TS-RMPC",
+      "status": "no_usable_candidate",
+      "selected_or_frozen": false,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "the scalar disturbance-estimation experiment and safety evidence were retained",
+      "main_failure": "no full candidate satisfied calm/crosswind acquisition and competence",
+      "artifact_paths": ["artifacts/s6_taskspace/t4/selection.json", "artifacts/s6_taskspace/t4/gate.json", "artifacts/s6_taskspace/t4/development_comparison.json"]
+    },
+    {
+      "method": "AE-TSLQR",
+      "status": "closed_no_usable_candidate",
+      "selected_or_frozen": false,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "some candidates reduced crosswind RMSE and some acquired the target",
+      "main_failure": "the frozen 12-candidate grid produced no usable method under final acquisition and preservation gates",
+      "artifact_paths": ["artifacts/s6_taskspace/t5/selection.json", "artifacts/s6_taskspace/t5/gate.json"]
+    },
+    {
+      "method": "AE-TSLQR + acquisition lock",
+      "status": "closed_no_usable_candidate_final",
+      "selected_or_frozen": false,
+      "development_scenes": ["task_acquire_calm", "task_acquire_crosswind"],
+      "holdout_used": false,
+      "main_success": "24-run lock audit observed acquisition locks with zero locked-bias drift and zero locked bias rate",
+      "main_failure": "0/12 candidates were usable; the crosswind near-miss did not establish final stable 5 cm position competence",
+      "artifact_paths": ["artifacts/s6_taskspace/t5r1/gate.json", "artifacts/s6_taskspace/t5r1/lock_behavior_audit.json", "artifacts/s6_taskspace/t5r1/selection.json"]
+    }
+  ]
+}

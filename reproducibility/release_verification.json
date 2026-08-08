@@ -1,0 +1,49 @@
+{
+  "source_frozen_commit": "2f79c0b04dda236bc3d66d9d4669a1f7e258346e",
+  "source_frozen_tag": "s6-taskspace-final-2026-08-08",
+  "old_source_path": "private local source clone; absolute path intentionally omitted from public tree",
+  "old_source_size_bytes": 2601861703,
+  "old_git_size_bytes": 772877415,
+  "old_artifacts_size_bytes": 1799243542,
+  "old_source_head": "2f79c0b04dda236bc3d66d9d4669a1f7e258346e",
+  "old_source_tag": "s6-taskspace-final-2026-08-08",
+  "clean_room_export": true,
+  "old_git_history_imported": false,
+  "release_tests": {"command": "python -m pytest -q tests/release", "passed": 4},
+  "quick_reproduction": {
+    "passed": true,
+    "runtime_model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d"
+  },
+  "task_lqr_reproduction": {
+    "passed": true,
+    "calm_position_improvement_percent": 17.40789209550032,
+    "calm_orientation_improvement_percent": 51.7219199194371,
+    "calm_acquired": true,
+    "calm_acquisition_s": 2.455,
+    "crosswind_position_change_percent": 6.328866563817907,
+    "crosswind_orientation_improvement_percent": 41.98509939954015,
+    "crosswind_acquired": false
+  },
+  "s5b_reproduction": {
+    "passed": true,
+    "paired_runs": 60,
+    "random_seed_count": 20,
+    "tip_improvement_percent": 13.060585667030724,
+    "x_rmse_improvement_percent": 19.85945387327764,
+    "tip_wins": 59,
+    "primary_safety_failures": 0,
+    "solve_time_p95_ms": 0.856485,
+    "historical_reference_solve_time_p95_ms": 1.0731
+  },
+  "absolute_path_matches": 0,
+  "secret_scan_pass": true,
+  "fresh_environment": {"name": "uav_multilink_release_verify", "created": true, "install_pass": true, "old_repo_on_pythonpath": false, "release_tests": "4 passed", "quick_reproduction": true, "task_lqr_reproduction": true},
+  "fresh_clone": {"path": "_verify_uav_multilink_release", "submodule_pass": true, "release_tests": "4 passed", "quick_reproduction": true, "task_lqr_reproduction": true, "s5b_reproduction": true},
+  "remote_main_verified": true,
+  "release_tag_verified": true,
+  "old_local_repository_deleted": true,
+  "old_remote_repository_deleted": false,
+  "verification_clone_deleted": true,
+  "verification_env_deleted": true,
+  "result": "PUBLIC_RELEASE_FROZEN"
+}

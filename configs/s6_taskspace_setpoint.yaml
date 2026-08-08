@@ -1,0 +1,22 @@
+task_protocol: S6T2-cutter-setpoint-protocol-r1
+duration_s: 12.0
+sample_dt_s: 0.005
+target_delta_x_m: 0.30
+position_tolerance_m: 0.05
+orientation_tolerance_deg: 5.0
+tip_speed_tolerance_m_s: 0.10
+continuous_hold_s: 1.0
+scenes:
+  task_acquire_calm:
+    task_start_time_s: 1.0
+    wind_profile: calm
+    source_scenario: approach_stop
+  task_acquire_crosswind:
+    task_start_time_s: 3.0
+    wind_profile: constant_crosswind
+    source_scenario: crosswind_hover
+  task_gust_recovery:
+    task_start_time_s: null
+    wind_profile: one_cosine_gust
+    source_scenario: gust_micro_adjust
+    performance_execution: false

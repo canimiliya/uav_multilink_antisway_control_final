@@ -1,0 +1,22 @@
+protocol_mode: free_flight_controlled
+controller: pid
+physics_frequency_hz: 1000
+wind_frequency_hz: 200
+inner_loop_frequency_hz: 200
+log_frequency_hz: 200
+outer_controller_frequency_hz: 20
+duration_s: 12.0
+physics_dt_s: 0.001
+wind_dt_s: 0.005
+outer_dt_s: 0.05
+max_total_thrust_ratio: 2.2
+ax_min_m_s2: -2.0
+ax_max_m_s2: 2.0
+delta_ax_max_per_outer_step: 0.25
+integral_error_limit_m_s: 1.0
+position_gains_y: [1.5, 2.0]
+position_gains_z: [4.0, 3.5]
+attitude_natural_frequency_rad_s: 4.0
+attitude_damping_ratio: 0.9
+settling_band_m: 0.05
+settling_hold_time_s: 1.0

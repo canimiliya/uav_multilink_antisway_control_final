@@ -1,0 +1,22 @@
+air_density_kg_m3: 1.225
+
+airframe:
+  cd: 1.0
+  proxy_shape: box
+  dimensions_xyz_m: [0.98, 0.76, 0.48]
+  source: conservative_dimension_envelope_assumption
+
+link:
+  cd: 1.2
+  proxy_shape: capsule
+  diameter_m: 0.05
+  source: simulation_assumption
+
+cutter:
+  cd: 1.05
+  proxy_shape: box
+  dimensions_xyz_m: [0.45, 0.16, 0.14]
+  source: simulation_assumption
+
+apply_aerodynamic_torque: false
+wind_axis_world: [1, 0, 0]

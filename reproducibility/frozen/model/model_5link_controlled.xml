@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="uav_planar_chain_5link">
+  <compiler angle="radian" coordinate="local" inertiafromgeom="false" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="RK4">
+    <flag energy="enable" />
+  </option>
+  <visual>
+    <global offwidth="1280" offheight="720" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="gradient" rgb1="0.7 0.82 0.95" rgb2="0.35 0.45 0.55" width="512" height="512" />
+    <texture name="checker" type="2d" builtin="checker" rgb1="0.42 0.45 0.48" rgb2="0.34 0.37 0.4" width="512" height="512" mark="cross" markrgb="0.65 0.65 0.65" />
+    <material name="ground_mat" texture="checker" texrepeat="10 10" texuniform="true" reflectance="0.15" />
+  </asset>
+  <worldbody>
+    <light name="key" pos="2 2 6" dir="-0.2 -0.2 -1" directional="true" diffuse="0.9 0.9 0.9" />
+    <geom name="ground" type="plane" size="0 0 1" material="ground_mat" condim="1" />
+    <camera name="main_camera" mode="targetbody" target="link_3" pos="4 -6 3.5" fovy="50" />
+    <camera name="side_camera" mode="fixed" pos="0 -6 1.7" xyaxes="1 0 0 0 0 1" fovy="45" />
+    <camera name="oblique_camera" mode="targetbody" target="link_3" pos="5 -3 4.2" fovy="50" />
+    <body name="quadrotor" pos="0 0 3.2" quat="1 0 0 0">
+      <joint name="quadrotor_free" type="free" />
+      <inertial pos="0 0 0" mass="9.74" diaginertia="0.655826666667 0.966532666667 1.24834333333" />
+      <geom name="m400_fuselage" type="box" pos="0 0 0" size="0.20 0.15 0.07" mass="0" contype="0" conaffinity="0" rgba="0.12 0.12 0.14 1" />
+      <geom name="m400_lower_body" type="box" pos="0 0 -0.10" size="0.14 0.11 0.05" mass="0" contype="0" conaffinity="0" rgba="0.25 0.25 0.28 1" />
+      <geom name="quadrotor_rotor_arm_geom_0" type="box" pos="0 0 0" quat="0.92388 0 0 0.382683" size="0.378302127935 0.012 0.012" mass="0" contype="0" conaffinity="0" rgba="0.4 0.4 0.45 1" />
+      <geom name="quadrotor_rotor_prop_geom_0" type="cylinder" size="0.3175 0.005" pos="0.378302127935 0.378302127935 0" mass="0" contype="0" conaffinity="0" rgba="0.95 0.45 0.1 1" />
+      <site name="site0" type="box" pos="0.378302127935 0.378302127935 0" size="0.01 0.01 0.01" rgba="0 0 0 0" />
+      <geom name="quadrotor_rotor_arm_geom_1" type="box" pos="0 0 0" quat="0.382683 0 0 0.92388" size="0.378302127935 0.012 0.012" mass="0" contype="0" conaffinity="0" rgba="0.4 0.4 0.45 1" />
+      <geom name="quadrotor_rotor_prop_geom_1" type="cylinder" size="0.3175 0.005" pos="-0.378302127935 0.378302127935 0" mass="0" contype="0" conaffinity="0" rgba="0.95 0.45 0.1 1" />
+      <site name="site1" type="box" pos="-0.378302127935 0.378302127935 0" size="0.01 0.01 0.01" rgba="0 0 0 0" />
+      <geom name="quadrotor_rotor_arm_geom_2" type="box" pos="0 0 0" quat="-0.382683 0 0 0.92388" size="0.378302127935 0.012 0.012" mass="0" contype="0" conaffinity="0" rgba="0.4 0.4 0.45 1" />
+      <geom name="quadrotor_rotor_prop_geom_2" type="cylinder" size="0.3175 0.005" pos="-0.378302127935 -0.378302127935 0" mass="0" contype="0" conaffinity="0" rgba="0.95 0.45 0.1 1" />
+      <site name="site2" type="box" pos="-0.378302127935 -0.378302127935 0" size="0.01 0.01 0.01" rgba="0 0 0 0" />
+      <geom name="quadrotor_rotor_arm_geom_3" type="box" pos="0 0 0" quat="-0.92388 0 0 0.382683" size="0.378302127935 0.012 0.012" mass="0" contype="0" conaffinity="0" rgba="0.4 0.4 0.45 1" />
+      <geom name="quadrotor_rotor_prop_geom_3" type="cylinder" size="0.3175 0.005" pos="0.378302127935 -0.378302127935 0" mass="0" contype="0" conaffinity="0" rgba="0.95 0.45 0.1 1" />
+      <site name="site3" type="box" pos="0.378302127935 -0.378302127935 0" size="0.01 0.01 0.01" rgba="0 0 0 0" />
+      <site name="quadrotor_thrust" type="box" pos="0 0 0" size="0.035 0.035 0.035" rgba="0 0 0 0" />
+      <site name="quadrotor_Mx" type="box" pos="0 0 0" size="0.06 0.035 0.025" rgba="0 0 0 0" />
+      <site name="quadrotor_My" type="box" pos="0 0 0" size="0.06 0.035 0.025" rgba="0 0 0 0" />
+      <site name="quadrotor_Mz" type="box" pos="0 0 0" size="0.06 0.035 0.025" rgba="0 0 0 0" />
+      <body name="link_1" pos="0 0 -0.24" quat="1 0 0 0">
+        <joint name="joint_1" type="hinge" axis="0 1 0" limited="true" range="-1.74532925199 1.74532925199" damping="0.05" frictionloss="0.005" />
+        <geom name="joint_marker_1" type="sphere" pos="0 0 0" size="0.045" mass="0" contype="0" conaffinity="0" group="2" rgba="0.95 0.2 0.2 1" />
+        <inertial pos="0 0 -0.25" mass="0.2" diaginertia="0.00419791666667 0.00419791666667 6.25e-05" />
+        <geom name="link_1_geom" type="capsule" fromto="0 0 0 0 0 -0.5" size="0.025" mass="0.2" rgba="0.15 0.45 0.85 1" />
+        <body name="link_2_mount" pos="0 0 -0.5">
+          <body name="link_2" pos="0 0 0" quat="1 0 0 0">
+            <joint name="joint_2" type="hinge" axis="0 1 0" limited="true" range="-1.74532925199 1.74532925199" damping="0.05" frictionloss="0.005" />
+            <geom name="joint_marker_2" type="sphere" pos="0 0 0" size="0.045" mass="0" contype="0" conaffinity="0" group="2" rgba="0.95 0.75 0.15 1" />
+            <inertial pos="0 0 -0.25" mass="0.2" diaginertia="0.00419791666667 0.00419791666667 6.25e-05" />
+            <geom name="link_2_geom" type="capsule" fromto="0 0 0 0 0 -0.5" size="0.025" mass="0.2" rgba="0.15 0.45 0.85 1" />
+            <body name="link_3_mount" pos="0 0 -0.5">
+              <body name="link_3" pos="0 0 0" quat="1 0 0 0">
+                <joint name="joint_3" type="hinge" axis="0 1 0" limited="true" range="-1.74532925199 1.74532925199" damping="0.05" frictionloss="0.005" />
+                <geom name="joint_marker_3" type="sphere" pos="0 0 0" size="0.045" mass="0" contype="0" conaffinity="0" group="2" rgba="0.2 0.8 0.35 1" />
+                <inertial pos="0 0 -0.25" mass="0.2" diaginertia="0.00419791666667 0.00419791666667 6.25e-05" />
+                <geom name="link_3_geom" type="capsule" fromto="0 0 0 0 0 -0.5" size="0.025" mass="0.2" rgba="0.15 0.45 0.85 1" />
+                <body name="link_4_mount" pos="0 0 -0.5">
+                  <body name="link_4" pos="0 0 0" quat="1 0 0 0">
+                    <joint name="joint_4" type="hinge" axis="0 1 0" limited="true" range="-1.74532925199 1.74532925199" damping="0.05" frictionloss="0.005" />
+                    <geom name="joint_marker_4" type="sphere" pos="0 0 0" size="0.045" mass="0" contype="0" conaffinity="0" group="2" rgba="0.1 0.75 0.9 1" />
+                    <inertial pos="0 0 -0.25" mass="0.2" diaginertia="0.00419791666667 0.00419791666667 6.25e-05" />
+                    <geom name="link_4_geom" type="capsule" fromto="0 0 0 0 0 -0.5" size="0.025" mass="0.2" rgba="0.15 0.45 0.85 1" />
+                    <body name="link_5_mount" pos="0 0 -0.5">
+                      <body name="link_5" pos="0 0 0" quat="1 0 0 0">
+                        <joint name="joint_5" type="hinge" axis="0 1 0" limited="true" range="-1.74532925199 1.74532925199" damping="0.05" frictionloss="0.005" />
+                        <geom name="joint_marker_5" type="sphere" pos="0 0 0" size="0.045" mass="0" contype="0" conaffinity="0" group="2" rgba="0.25 0.4 0.95 1" />
+                        <inertial pos="0 0 -0.25" mass="0.2" diaginertia="0.00419791666667 0.00419791666667 6.25e-05" />
+                        <geom name="link_5_geom" type="capsule" fromto="0 0 0 0 0 -0.5" size="0.025" mass="0.2" rgba="0.15 0.45 0.85 1" />
+                        <body name="cutter" pos="0 0 -0.5">
+                          <geom name="cutter_geom" type="box" pos="0 0 -0.07" size="0.225 0.08 0.07" mass="2.5" rgba="0.1 0.75 0.25 1" />
+                          <inertial pos="0 0 -0.07" mass="2.5" diaginertia="0.00941666666667 0.0462708333333 0.0475208333333" />
+                          <site name="cutter_tip" type="sphere" pos="0.225 0 -0.07" size="0.025" rgba="0.95 0.85 0.1 1" />
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <weld name="passive_anchor" body1="quadrotor" active="false" solref="0.02 1" />
+  </equality>
+  <actuator>
+    <motor name="rotor_motor_0" site="site0" ctrlrange="0 10" gear="0 0 1 0 0 -0.0249945776" />
+    <motor name="rotor_motor_1" site="site1" ctrlrange="0 10" gear="0 0 1 0 0 0.0249945776" />
+    <motor name="rotor_motor_2" site="site2" ctrlrange="0 10" gear="0 0 1 0 0 -0.0249945776" />
+    <motor name="rotor_motor_3" site="site3" ctrlrange="0 10" gear="0 0 1 0 0 0.0249945776" />
+    <motor name="thrust_motor" site="quadrotor_thrust" ctrlrange="0 285.74568" gear="0 0 1 0 0 0" />
+    <motor name="mx_motor" site="quadrotor_Mx" ctrlrange="-25 25" gear="0 0 0 1 0 0" />
+    <motor name="my_motor" site="quadrotor_My" ctrlrange="-25 25" gear="0 0 0 0 1 0" />
+    <motor name="mz_motor" site="quadrotor_Mz" ctrlrange="-12 12" gear="0 0 0 0 0 1" />
+  </actuator>
+</mujoco>

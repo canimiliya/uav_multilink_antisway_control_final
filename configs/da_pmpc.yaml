@@ -1,0 +1,35 @@
+controller: lqr_stabilized_da_pmpc
+physics_dt_s: 0.001
+inner_dt_s: 0.005
+outer_dt_s: 0.05
+horizon_steps: 20
+horizon_seconds: 1.0
+tip_weight_candidates:
+- 20.0
+- 40.0
+- 80.0
+residual_weight_candidates:
+- 2.0
+- 8.0
+- 32.0
+tip_output_epsilon_scale: 1.0
+disturbance_observer_gain: 0.15
+disturbance_limit_m_s2: 2.0
+observer_enabled: true
+disturbance_compensation: true
+residual_enabled: true
+osqp_eps_abs: 1.0e-05
+osqp_eps_rel: 1.0e-05
+osqp_max_iter: 4000
+osqp_warm_start: true
+ax_min_m_s2: -2.0
+ax_max_m_s2: 2.0
+ax_slew_limit_m_s2_per_update: 0.25
+settling_start_s:
+  approach_stop: 6.0
+  crosswind_hover: 4.0
+development_scenarios:
+- approach_stop
+- crosswind_hover
+selected_tip_weight: 20.0
+selected_residual_weight: 2.0

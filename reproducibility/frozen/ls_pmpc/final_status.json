@@ -1,0 +1,137 @@
+{
+  "result": "PASS",
+  "pass": true,
+  "primary_method": "LS-PMPC",
+  "method_frozen_before_holdout": true,
+  "primary_dev_freeze_gate": {
+    "source": "independent_raw_csv_recomputation",
+    "pass": true,
+    "status": "PASS",
+    "scenarios": {
+      "approach_stop": {
+        "raw_csv": "historical development raw run omitted from public release",
+        "metrics": {
+          "source_csv": "historical development raw run omitted from public release",
+          "sample_count": 2401,
+          "duration_s": 12.0,
+          "tip_rms_m": 0.14143536630989192,
+          "tip_max_abs_m": 0.3158731823567932,
+          "x_rmse_m": 0.07292118322163804,
+          "z_rmse_m": 0.0011758262201292489,
+          "final_x_error_m": -0.011967416641565976,
+          "settled": false,
+          "settling_time_s": null,
+          "control_energy": 1.3593225303747587,
+          "control_rate": 125.61987247055777,
+          "solve_time_mean_ms": 0.6282875885047897,
+          "solve_time_p95_ms": 0.72,
+          "solve_time_max_ms": 1.3834,
+          "saturation_rate": 0.004164931278633903,
+          "finite_outputs": true,
+          "minimum_uav_height_m": 3.1965586663762107,
+          "minimum_tip_height_m": 0.3785049082596027,
+          "maximum_abs_joint_angle_rad": 0.07037644497266941,
+          "maximum_abs_roll_rad": 0.0,
+          "maximum_abs_pitch_rad": 0.07665845918045197,
+          "maximum_abs_ax_m_s2": 1.143301571354538,
+          "maximum_ax_step_change_m_s2": 0.22258678571449697,
+          "thrust_min_N": 129.61849729806835,
+          "thrust_max_N": 130.26650040086395,
+          "torque_max_abs_Nm": 0.6966165593614194,
+          "rotor_motor_max_abs_cmd": 0.0,
+          "anchor_active_any": false,
+          "observer_enabled": false,
+          "controller_mode": "preview"
+        },
+        "expected": {
+          "x_rmse_m": 0.07292118322163804,
+          "tip_rms_m": 0.14143536630989192
+        },
+        "x_rmse_abs_error": 0.0,
+        "tip_rms_abs_error": 0.0,
+        "pass": true
+      },
+      "crosswind_hover": {
+        "raw_csv": "historical development raw run omitted from public release",
+        "metrics": {
+          "source_csv": "historical development raw run omitted from public release",
+          "sample_count": 2401,
+          "duration_s": 12.0,
+          "tip_rms_m": 0.04796976955144093,
+          "tip_max_abs_m": 0.11071359572734105,
+          "x_rmse_m": 0.08488535527787332,
+          "z_rmse_m": 0.00018442809540966345,
+          "final_x_error_m": 0.10711838553467572,
+          "settled": true,
+          "settling_time_s": 4.0,
+          "control_energy": 0.39701484161631706,
+          "control_rate": 8.971263504109364,
+          "solve_time_mean_ms": 0.6383043315285297,
+          "solve_time_p95_ms": 0.7878,
+          "solve_time_max_ms": 1.3701,
+          "saturation_rate": 0.0,
+          "finite_outputs": true,
+          "minimum_uav_height_m": 3.1994819307649105,
+          "minimum_tip_height_m": 0.38581655197621323,
+          "maximum_abs_joint_angle_rad": 0.014024357240371781,
+          "maximum_abs_roll_rad": 3.3331843335490855e-29,
+          "maximum_abs_pitch_rad": 0.03321457556363169,
+          "maximum_abs_ax_m_s2": 0.34684856824638294,
+          "maximum_ax_step_change_m_s2": 0.11460307212901615,
+          "thrust_min_N": 129.8844,
+          "thrust_max_N": 129.94833303503447,
+          "torque_max_abs_Nm": 0.27430238026644727,
+          "rotor_motor_max_abs_cmd": 0.0,
+          "anchor_active_any": false,
+          "observer_enabled": false,
+          "controller_mode": "preview"
+        },
+        "expected": {
+          "x_rmse_m": 0.08488535527787332,
+          "tip_rms_m": 0.04796976955144093
+        },
+        "x_rmse_abs_error": 0.0,
+        "tip_rms_abs_error": 0.0,
+        "pass": true
+      }
+    }
+  },
+  "raw_gate": {
+    "source": "independent_raw_csv_recomputation",
+    "pass": true,
+    "primary_safety_failures": 0,
+    "scene_position_ratios": {
+      "approach_stop": 0.701248235794036,
+      "crosswind_hover": 0.92933875192757,
+      "gust_micro_adjust": 0.7749647681884407
+    },
+    "scene_tip_improvement_percent": {
+      "approach_stop": 16.101772971412124,
+      "crosswind_hover": 2.3270993516807046,
+      "gust_micro_adjust": 20.75288467799934
+    },
+    "overall_position_ratio": 0.7343826991387047,
+    "overall_tip_improvement_percent": 13.060585667030724,
+    "gust_position_ratio": 0.8002582396965541,
+    "gust_tip_ratio": 0.7756616645822386,
+    "bootstrap_tip_ci95": [
+      11.004057320112132,
+      15.084195277422793
+    ],
+    "primary_solve_time_p95_ms": 1.0731,
+    "primary_run_count": 60,
+    "random_seed_count": 20,
+    "conditions": {
+      "safety_zero_failures": true,
+      "position_each_scene_le_1p05": true,
+      "overall_position_not_worse": true,
+      "at_least_two_scene_tip_mean_ge_10": true,
+      "overall_tip_mean_ge_10": true,
+      "bootstrap_tip_ci_lower_gt_0": true,
+      "gust_position_le_1p05": true,
+      "gust_tip_le_0p95": true,
+      "solve_time_p95_lt_50_ms": true
+    },
+    "status": "PASS"
+  }
+}

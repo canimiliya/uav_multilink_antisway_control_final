@@ -1,0 +1,10 @@
+{
+  "paired_runs": 60,
+  "tip_improvement_percent": 13.060586,
+  "x_rmse_improvement_percent": 19.859454,
+  "tip_wins": 59,
+  "primary_safety_failures": 0,
+  "absolute_tolerance_percentage_points": 0.1,
+  "solve_time_p95_ms_reference": 1.0731,
+  "solve_time_is_hardware_dependent": true
+}

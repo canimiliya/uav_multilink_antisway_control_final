@@ -1,0 +1,4 @@
+{
+  "runtime_model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "checks": ["finite", "solver_solved", "safety", "task_lqr_calm_acquired"]
+}

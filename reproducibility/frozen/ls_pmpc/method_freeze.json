@@ -1,0 +1,52 @@
+{
+  "primary_method": "LS-PMPC",
+  "secondary_method": "LS-DA-PMPC",
+  "selection_basis": "development set only",
+  "development_scenarios": [
+    "approach_stop",
+    "crosswind_hover"
+  ],
+  "tip_weight": 20.0,
+  "residual_weight": 2.0,
+  "horizon_steps": 20,
+  "preview_seconds": 1.0,
+  "observer_enabled": false,
+  "disturbance_compensation": false,
+  "future_wind_used": false,
+  "reference_preview": true,
+  "holdout_used_for_selection": false,
+  "secondary_parameters": {
+    "tip_weight": 20.0,
+    "residual_weight": 2.0,
+    "horizon_steps": 20,
+    "observer_enabled": true,
+    "disturbance_compensation": true
+  },
+  "sha256": {
+    "A": "bb8ec9e5671381bf083986a979620e79e165c3b1766e23c791c177f77d3950fe",
+    "B": "7c96ed06c0e6812cb32c1967dbd8bd0dfd6b9568102026cef41413f9ba83c4d5",
+    "Q": "f098dd439352ed97243c1a709a29fd12e6eefc56ccb24e5a8ef10048baa3f9d5",
+    "R": "c309b9ddf5703f7aa0971dcfc1bd864ed7efc0a9c3701523568b1ccf36839bdd",
+    "K": "fad2bca242912351f2c6ece0beed411e42e2e4f274a105215f30710ed21797f4",
+    "P": "2e0ffd080ed14dfd61225e4a2aa425ffa1ab77bdc4c931638ace8fb3418ed9d8",
+    "C_tip": "e99fb4613411f4a8c129b5cb3f2db0c51bd4f1c658a59ec3d3d12ea6dcc89d63",
+    "runtime_model": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+    "inner_loop": "9fe884462b8db782f44edaecc9b5b6db76b0f7a30ce04d6d518aa51b32a8b555",
+    "controller": "7400e828fc4c7e0e594ea4675f01aa3552d1d992bea0dc7e0fed55e34c7370c6",
+    "preview_model": "5545f39fa10882b6ef311fe62bbff3fd5a230f790767b5008903c64141c255a8",
+    "reference_horizon": "98677ef9ee0a3d5140a2cce1c5654af442e146691a35f4a70d767ac4d38889c2",
+    "wind_manifest": "3e026ee55dc7358010c304d92dc0c6d1a487020ea3f3e235f0fdc910410c800d"
+  },
+  "reference_sha256": {
+    "approach_stop": "8cd101146a0bea68d848035b98d77ba61e388c3c818ca0a42a4c133de5706260",
+    "crosswind_hover": "ec3035b8ff37a5665f38c90ec84cbb30e787f090fc694bf4e2484d83f00461e7",
+    "gust_micro_adjust": "bcdf53e24b48a20c3898b7ca08ce208f2bfe09096c500d932dea857355a40be7"
+  },
+  "wind_manifest_sha256": "3e026ee55dc7358010c304d92dc0c6d1a487020ea3f3e235f0fdc910410c800d",
+  "runtime_model_sha256_expected": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "runtime_model_sha256_match": true,
+  "physics_dt_s": 0.001,
+  "inner_dt_s": 0.005,
+  "outer_dt_s": 0.05,
+  "created_before_holdout": true
+}

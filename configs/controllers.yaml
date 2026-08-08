@@ -1,0 +1,20 @@
+controller: pid
+kp: 1.6
+kd: 1.8
+ki: 0.1
+kp_candidates:
+- 0.8
+- 1.2
+- 1.6
+kd_candidates:
+- 1.2
+- 1.8
+- 2.4
+ki_candidates:
+- 0.03
+- 0.06
+- 0.1
+ax_min_m_s2: -2.0
+ax_max_m_s2: 2.0
+delta_ax_max_per_outer_step: 0.25
+integral_error_limit_m_s: 1.0

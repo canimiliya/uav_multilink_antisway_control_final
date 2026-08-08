@@ -1,0 +1,50 @@
+{
+  "initial_tip_position_m": [
+    0.225,
+    0.0,
+    0.38999999999999996
+  ],
+  "target_tip_position_m": [
+    0.525,
+    0.0,
+    0.38999999999999996
+  ],
+  "target_cutter_axis": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "equilibrium": {
+    "tip_relative_position_m": [
+      0.225,
+      0.0,
+      -2.81
+    ],
+    "cutter_axis_world": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "cutter_rotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "axis_norm": 1.0,
+    "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d"
+  },
+  "target_delta_x_m": 0.3,
+  "source": "runtime model equilibrium measurement"
+}

@@ -1,0 +1,17 @@
+n_links: 5
+total_length: 2.5
+hinge_axis: [0, 1, 0]
+hinge_damping: 0.05
+hinge_frictionloss: 0.005
+joint_range_deg: [-100, 100]
+n_links: 5
+total_length: 2.5
+total_chain_length_m: 2.5
+hinge_axis: [0, 1, 0]
+hinge_damping: 0.05
+hinge_frictionloss: 0.005
+joint_range_deg: [-100, 100]
+total_link_mass_kg: 1.0
+link_mass_source: provisional_simulation_assumption
+airframe_config: airframes/dji_matrice_400.yaml
+payload_config: payloads/cutter_box_2p5kg.yaml

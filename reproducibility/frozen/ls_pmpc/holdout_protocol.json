@@ -1,0 +1,44 @@
+{
+  "primary_method": "LS-PMPC",
+  "secondary_method": "LS-DA-PMPC",
+  "development_scenarios": [
+    "approach_stop",
+    "crosswind_hover"
+  ],
+  "holdout_scenario": "gust_micro_adjust",
+  "holdout_wind": "one_cosine_gust",
+  "random_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "random_run_count": 180,
+  "paired_primary_lqr_count": 60,
+  "modes": [
+    "LQR",
+    "LS-PMPC",
+    "LS-DA-PMPC"
+  ],
+  "selection_before_holdout": true,
+  "future_wind_used": false,
+  "reference_preview": true,
+  "primary_parameters_changed": false,
+  "seed_policy": "random_seed_000..019"
+}

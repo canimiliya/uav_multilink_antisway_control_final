@@ -1,0 +1,16 @@
+name: horizontal_rectangular_cutter_demo
+mass_kg: 2.5
+mass_source: user_provided
+
+shape: box
+dimensions_xyz_m: [0.45, 0.16, 0.14]
+half_extents_xyz_m: [0.225, 0.08, 0.07]
+
+long_axis: x
+attachment_local_position_m: [0.0, 0.0, 0.0]
+geom_center_local_position_m: [0.0, 0.0, -0.07]
+tip_local_position_m: [0.225, 0.0, -0.07]
+
+geometry_is_measured: false
+geometry_basis: first_horizontal_demo_assumption
+geometry_source: simulation_assumption

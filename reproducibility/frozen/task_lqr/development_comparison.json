@@ -1,0 +1,98 @@
+{
+  "rows": [
+    {
+      "controller": "old_PID",
+      "scenario": "task_acquire_calm",
+      "candidate_usable": true,
+      "task_position_rmse": 0.24415565676389434,
+      "orientation_rmse": 3.3666586999244146,
+      "task_acquired": false,
+      "acquisition_time": null,
+      "final_tip_position_error_m": 0.4344904046142139,
+      "safety": true
+    },
+    {
+      "controller": "old_PID",
+      "scenario": "task_acquire_crosswind",
+      "candidate_usable": true,
+      "task_position_rmse": 0.27022360824013686,
+      "orientation_rmse": 3.0689166300084914,
+      "task_acquired": false,
+      "acquisition_time": null,
+      "final_tip_position_error_m": 0.16198262141489708,
+      "safety": true
+    },
+    {
+      "controller": "old_LQR",
+      "scenario": "task_acquire_calm",
+      "candidate_usable": true,
+      "task_position_rmse": 0.12616564711246922,
+      "orientation_rmse": 1.477850781565043,
+      "task_acquired": false,
+      "acquisition_time": null,
+      "final_tip_position_error_m": 0.002278868876481598,
+      "safety": true
+    },
+    {
+      "controller": "old_LQR",
+      "scenario": "task_acquire_crosswind",
+      "candidate_usable": true,
+      "task_position_rmse": 0.1915271548862321,
+      "orientation_rmse": 1.7582759989436616,
+      "task_acquired": false,
+      "acquisition_time": null,
+      "final_tip_position_error_m": 0.13856793275087298,
+      "safety": true
+    },
+    {
+      "controller": "Task-PID",
+      "candidate_id": "pid_001",
+      "scenario": "task_acquire_calm",
+      "candidate_usable": false,
+      "task_position_rmse": 1.0562411095976616,
+      "orientation_rmse": 12.402953851601367,
+      "task_acquired": false,
+      "acquisition_time": null,
+      "final_tip_position_error_m": 0.5297127646275575,
+      "safety": true
+    },
+    {
+      "controller": "Task-PID",
+      "candidate_id": "pid_001",
+      "scenario": "task_acquire_crosswind",
+      "candidate_usable": false,
+      "task_position_rmse": 0.6693076513544942,
+      "orientation_rmse": 8.352221017546238,
+      "task_acquired": false,
+      "acquisition_time": null,
+      "final_tip_position_error_m": 1.024908079809638,
+      "safety": true
+    },
+    {
+      "controller": "Task-LQR",
+      "candidate_id": "lqr_011",
+      "scenario": "task_acquire_calm",
+      "candidate_usable": true,
+      "task_position_rmse": 0.10420286740154086,
+      "orientation_rmse": 0.7134779837951962,
+      "task_acquired": true,
+      "acquisition_time": 2.455,
+      "final_tip_position_error_m": 4.97823653389406e-05,
+      "safety": true
+    },
+    {
+      "controller": "Task-LQR",
+      "candidate_id": "lqr_011",
+      "scenario": "task_acquire_crosswind",
+      "candidate_usable": true,
+      "task_position_rmse": 0.20364865295245857,
+      "orientation_rmse": 1.0200620730689078,
+      "task_acquired": false,
+      "acquisition_time": null,
+      "final_tip_position_error_m": 0.24883870972351607,
+      "safety": true
+    }
+  ],
+  "selection_uses_old_counterpart_only": true,
+  "selection_uses_ls_pmpc": false
+}

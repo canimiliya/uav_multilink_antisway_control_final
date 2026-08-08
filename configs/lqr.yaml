@@ -1,0 +1,50 @@
+controller: lqr
+physics_dt_s: 0.001
+inner_loop_dt_s: 0.005
+outer_loop_dt_s: 0.05
+ax_min_m_s2: -2.0
+ax_max_m_s2: 2.0
+ax_slew_limit_m_s2_per_update: 0.25
+state_epsilon:
+  position_error_x: 0.0001
+  velocity_error_x: 0.0001
+  altitude_error: 0.0001
+  vertical_velocity: 0.0001
+  pitch: 1.0e-05
+  body_pitch_rate: 0.0001
+  joint_angle_each: 1.0e-05
+  joint_velocity_each: 0.0001
+input_epsilon: 0.001
+fixed_weights:
+  position_error_x: 20.0
+  velocity_error_x: 4.0
+  altitude_error: 8.0
+  vertical_velocity: 2.0
+  pitch: 4.0
+  body_pitch_rate: 1.0
+joint_angle_weight_candidates:
+- 20.0
+- 80.0
+joint_velocity_weight_candidates:
+- 3.0
+- 12.0
+input_weight_candidates:
+- 0.5
+- 1.0
+position_error_weight_candidates:
+- 20.0
+- 40.0
+- 80.0
+- 160.0
+velocity_error_weight_candidates:
+- 4.0
+- 8.0
+attitude_natural_frequency_rad_s: 4.0
+attitude_damping_ratio: 0.9
+selected_grid_index: 36
+selected_joint_angle_weight: 20.0
+selected_joint_velocity_weight: 12.0
+selected_input_weight: 1.0
+diagnostic_grid_index: null
+selected_position_error_weight: 80.0
+selected_velocity_error_weight: 4.0

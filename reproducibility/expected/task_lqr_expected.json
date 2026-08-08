@@ -1,0 +1,12 @@
+{
+  "candidate_id": "lqr_011",
+  "calm_position_improvement_percent": 17.407892,
+  "calm_orientation_improvement_percent": 51.72192,
+  "calm_acquired": true,
+  "calm_acquisition_s": 2.455,
+  "crosswind_position_change_percent": 6.328867,
+  "crosswind_orientation_improvement_percent": 41.985099,
+  "crosswind_acquired": false,
+  "absolute_tolerance_percentage_points": 0.1,
+  "acquisition_tolerance_s": 0.01
+}
