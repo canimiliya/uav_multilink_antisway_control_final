@@ -329,7 +329,7 @@ class DRTSRMPC:
         v, info = self.solver.solve(qp)
         mpc_ms = (time.perf_counter_ns() - mpc_started) / 1.0e6
         v0 = float(v[0])
-        raw = float(steady.u_s - (self.gain @ (x - steady.x_s))[0, 0] + v0)
+        raw = float(steady.u_s - (self.gain @ (x - steady.x_s))[0] + v0)
         limited = float(self.limiter.limit(raw))
         mismatch = abs(limited - raw)
         self.estimator.accept_actual_command(limited)

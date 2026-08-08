@@ -1,0 +1,9 @@
+{
+  "status": "INVALID_IMPLEMENTATION_RUN",
+  "stage": "V2-R3R2 Stage-1",
+  "runs": 324,
+  "reason": "DRTSRMPC.command indexed a one-dimensional matrix product with [0,0]",
+  "scientific_use": false,
+  "preserved_before_rerun": true,
+  "replacement_authorized": "after implementation fix and contract tests"
+}
