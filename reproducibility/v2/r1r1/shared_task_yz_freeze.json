@@ -1,0 +1,596 @@
+{
+  "selection_rule": "safety, task success, acquisition, task RMSE, gain norm",
+  "selected": {
+    "ay_kp": 0.1,
+    "ay_kd": 0.5,
+    "az_kp": 6.0,
+    "az_kd": 3.5
+  },
+  "grid_results": {
+    "y": [
+      {
+        "candidate": {
+          "kp": 0.1,
+          "kd": 0.5
+        },
+        "score_position_rmse_m": 0.12436776580095538,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 5.1475,
+        "gain_norm": 0.5099019513592785,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.1,
+          "ay_kd": 0.5,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.1,
+          "kd": 1.0
+        },
+        "score_position_rmse_m": 0.15691262659048377,
+        "safe_count": 4,
+        "task_success_count": 2,
+        "acquisition_median_s": 5.28,
+        "gain_norm": 1.004987562112089,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.1,
+          "ay_kd": 1.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.1,
+          "kd": 2.0
+        },
+        "score_position_rmse_m": 0.2434352107363835,
+        "safe_count": 4,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 2.0024984394500787,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.1,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.1,
+          "kd": 3.0
+        },
+        "score_position_rmse_m": 0.3225819916516762,
+        "safe_count": 4,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 3.0016662039607267,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.1,
+          "ay_kd": 3.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.25,
+          "kd": 0.5
+        },
+        "score_position_rmse_m": 0.2958969840121188,
+        "safe_count": 4,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 0.5590169943749475,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.25,
+          "ay_kd": 0.5,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.25,
+          "kd": 1.0
+        },
+        "score_position_rmse_m": 0.2595320782552152,
+        "safe_count": 4,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 1.0307764064044151,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.25,
+          "ay_kd": 1.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.25,
+          "kd": 2.0
+        },
+        "score_position_rmse_m": 0.6932977629024827,
+        "safe_count": 4,
+        "task_success_count": 2,
+        "acquisition_median_s": 3.705,
+        "gain_norm": 2.0155644370746373,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.25,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.25,
+          "kd": 3.0
+        },
+        "score_position_rmse_m": 1.2744816962295804,
+        "safe_count": 4,
+        "task_success_count": 2,
+        "acquisition_median_s": 3.7250000000000005,
+        "gain_norm": 3.010398644698074,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.25,
+          "ay_kd": 3.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.5,
+          "kd": 0.5
+        },
+        "score_position_rmse_m": 1.0545092819956476,
+        "safe_count": 4,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 0.7071067811865476,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.5,
+          "ay_kd": 0.5,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.5,
+          "kd": 1.0
+        },
+        "score_position_rmse_m": 0.7364315614857084,
+        "safe_count": 4,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 1.118033988749895,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.5,
+          "ay_kd": 1.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.5,
+          "kd": 2.0
+        },
+        "score_position_rmse_m": 1.8520482327138819,
+        "safe_count": 4,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 2.0615528128088303,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 0.5,
+          "kd": 3.0
+        },
+        "score_position_rmse_m": 2.998484419429788,
+        "safe_count": 4,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 3.0413812651491097,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 0.5,
+          "ay_kd": 3.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 0.5
+        },
+        "score_position_rmse_m": 3.9420007700699573,
+        "safe_count": 4,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 1.118033988749895,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.0,
+          "ay_kd": 0.5,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 1.0
+        },
+        "score_position_rmse_m": 2.8228247492886682,
+        "safe_count": 2,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 1.4142135623730951,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.0,
+          "ay_kd": 1.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 2.0
+        },
+        "score_position_rmse_m": 2.420105664743065,
+        "safe_count": 0,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 2.23606797749979,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.0,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 3.0
+        },
+        "score_position_rmse_m": 3.0267440447102154,
+        "safe_count": 0,
+        "task_success_count": 0,
+        "acquisition_median_s": null,
+        "gain_norm": 3.1622776601683795,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.0,
+          "ay_kd": 3.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      }
+    ],
+    "z": [
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 1.5
+        },
+        "score_position_rmse_m": 0.059610928584691046,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 2.085,
+        "gain_norm": 1.8027756377319946,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 1.0,
+          "az_kd": 1.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 2.5
+        },
+        "score_position_rmse_m": 0.06901437447816247,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 3.25,
+        "gain_norm": 2.692582403567252,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 1.0,
+          "az_kd": 2.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 3.5
+        },
+        "score_position_rmse_m": 0.07892334955390773,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 4.62,
+        "gain_norm": 3.640054944640259,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 1.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 5.0
+        },
+        "score_position_rmse_m": 0.09220791925702479,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 6.6775,
+        "gain_norm": 5.0990195135927845,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 1.0,
+          "az_kd": 5.0
+        }
+      },
+      {
+        "candidate": {
+          "kp": 2.0,
+          "kd": 1.5
+        },
+        "score_position_rmse_m": 0.048832982975306055,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.4925000000000002,
+        "gain_norm": 2.5,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 2.0,
+          "az_kd": 1.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 2.0,
+          "kd": 2.5
+        },
+        "score_position_rmse_m": 0.05243268492918252,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.665,
+        "gain_norm": 3.2015621187164243,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 2.0,
+          "az_kd": 2.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 2.0,
+          "kd": 3.5
+        },
+        "score_position_rmse_m": 0.058183255381634866,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 2.2824999999999998,
+        "gain_norm": 4.031128874149275,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 2.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 2.0,
+          "kd": 5.0
+        },
+        "score_position_rmse_m": 0.06699481587241837,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 3.3125,
+        "gain_norm": 5.385164807134504,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 2.0,
+          "az_kd": 5.0
+        }
+      },
+      {
+        "candidate": {
+          "kp": 4.0,
+          "kd": 1.5
+        },
+        "score_position_rmse_m": 0.043592854057187456,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.6175,
+        "gain_norm": 4.272001872658765,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 1.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 4.0,
+          "kd": 2.5
+        },
+        "score_position_rmse_m": 0.04289880480849596,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.25,
+        "gain_norm": 4.716990566028302,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 2.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 4.0,
+          "kd": 3.5
+        },
+        "score_position_rmse_m": 0.04525675046736574,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.1975,
+        "gain_norm": 5.315072906367325,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 4.0,
+          "kd": 5.0
+        },
+        "score_position_rmse_m": 0.05014700823492009,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.6575000000000002,
+        "gain_norm": 6.4031242374328485,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 5.0
+        }
+      },
+      {
+        "candidate": {
+          "kp": 6.0,
+          "kd": 1.5
+        },
+        "score_position_rmse_m": 0.04211184485347064,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.995,
+        "gain_norm": 6.18465843842649,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 6.0,
+          "az_kd": 1.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 6.0,
+          "kd": 2.5
+        },
+        "score_position_rmse_m": 0.04005598169339233,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.1625,
+        "gain_norm": 6.5,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 6.0,
+          "az_kd": 2.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 6.0,
+          "kd": 3.5
+        },
+        "score_position_rmse_m": 0.04079292883056291,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.12,
+        "gain_norm": 6.946221994724902,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 6.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 6.0,
+          "kd": 5.0
+        },
+        "score_position_rmse_m": 0.04377104495279239,
+        "safe_count": 4,
+        "task_success_count": 4,
+        "acquisition_median_s": 1.1400000000000001,
+        "gain_norm": 7.810249675906654,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 6.0,
+          "az_kd": 5.0
+        }
+      }
+    ]
+  },
+  "frozen_limits": {
+    "ay_abs_max_m_s2": 2.0,
+    "az_abs_max_m_s2": 2.0,
+    "axis_slew_max_m_s2_per_update": 0.25
+  }
+}

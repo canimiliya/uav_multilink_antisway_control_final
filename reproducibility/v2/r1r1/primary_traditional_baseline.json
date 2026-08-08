@@ -1,0 +1,23 @@
+{
+  "primary_controller": "pid_005",
+  "controller_family": "pid",
+  "selection_rule": "lexicographic safety, success, acquisition, 3D RMSE, orientation RMSE, ramp errors, total acceleration effort",
+  "selected_metrics": {
+    "candidate_id": "pid_005",
+    "sample_count": 57,
+    "safe_sample_count": 57,
+    "task_success_count": 41,
+    "safety_rate": 1.0,
+    "task_success_rate": 0.7192982456140351,
+    "acquisition_median_s": 4.92,
+    "position_rmse_3d_m": 0.11368841879515172,
+    "orientation_rmse_deg": 0.5465643501418134,
+    "control_effort": 0.15744206464858926,
+    "x_control_effort": 0.15744206464858926,
+    "total_acceleration_effort": 0.22044970374216877,
+    "ramp_peak_position_error_m": 0.13029872078634205,
+    "ramp_steady_state_position_error_m": 0.18372019793484656,
+    "gain_norm": 4.080441152620633,
+    "stage2_rank": 1
+  }
+}

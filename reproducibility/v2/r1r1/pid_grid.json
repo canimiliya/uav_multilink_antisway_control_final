@@ -1,0 +1,113 @@
+{
+  "grid": [
+    {
+      "candidate_id": "pid_000",
+      "kp": 0.8,
+      "kd": 1.0,
+      "ki": 0.0
+    },
+    {
+      "candidate_id": "pid_001",
+      "kp": 0.8,
+      "kd": 1.0,
+      "ki": 0.1
+    },
+    {
+      "candidate_id": "pid_002",
+      "kp": 0.8,
+      "kd": 2.0,
+      "ki": 0.0
+    },
+    {
+      "candidate_id": "pid_003",
+      "kp": 0.8,
+      "kd": 2.0,
+      "ki": 0.1
+    },
+    {
+      "candidate_id": "pid_004",
+      "kp": 0.8,
+      "kd": 4.0,
+      "ki": 0.0
+    },
+    {
+      "candidate_id": "pid_005",
+      "kp": 0.8,
+      "kd": 4.0,
+      "ki": 0.1
+    },
+    {
+      "candidate_id": "pid_006",
+      "kp": 1.6,
+      "kd": 1.0,
+      "ki": 0.0
+    },
+    {
+      "candidate_id": "pid_007",
+      "kp": 1.6,
+      "kd": 1.0,
+      "ki": 0.1
+    },
+    {
+      "candidate_id": "pid_008",
+      "kp": 1.6,
+      "kd": 2.0,
+      "ki": 0.0
+    },
+    {
+      "candidate_id": "pid_009",
+      "kp": 1.6,
+      "kd": 2.0,
+      "ki": 0.1
+    },
+    {
+      "candidate_id": "pid_010",
+      "kp": 1.6,
+      "kd": 4.0,
+      "ki": 0.0
+    },
+    {
+      "candidate_id": "pid_011",
+      "kp": 1.6,
+      "kd": 4.0,
+      "ki": 0.1
+    },
+    {
+      "candidate_id": "pid_012",
+      "kp": 3.2,
+      "kd": 1.0,
+      "ki": 0.0
+    },
+    {
+      "candidate_id": "pid_013",
+      "kp": 3.2,
+      "kd": 1.0,
+      "ki": 0.1
+    },
+    {
+      "candidate_id": "pid_014",
+      "kp": 3.2,
+      "kd": 2.0,
+      "ki": 0.0
+    },
+    {
+      "candidate_id": "pid_015",
+      "kp": 3.2,
+      "kd": 2.0,
+      "ki": 0.1
+    },
+    {
+      "candidate_id": "pid_016",
+      "kp": 3.2,
+      "kd": 4.0,
+      "ki": 0.0
+    },
+    {
+      "candidate_id": "pid_017",
+      "kp": 3.2,
+      "kd": 4.0,
+      "ki": 0.1
+    }
+  ],
+  "grid_size": 18
+}

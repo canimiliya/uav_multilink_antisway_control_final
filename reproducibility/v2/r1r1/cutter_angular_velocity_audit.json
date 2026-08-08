@@ -1,0 +1,23 @@
+{
+  "formal_source": "mujoco.mj_jacSite(..., jacr) followed by jacr @ qvel",
+  "finite_difference_used_for_formal_angular_velocity": false,
+  "raw_trace_column": "cutter_angular_speed_rad_s",
+  "raw_csv_count": 513,
+  "all_raw_csv_have_angular_speed": true,
+  "missing_angular_speed_files": [],
+  "all_angular_speed_values_finite": true,
+  "nonfinite_files": [],
+  "max_raw_cutter_angular_speed_rad_s": 0.1572823442900233,
+  "equilibrium_cutter_angular_velocity_world": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "equilibrium_cutter_angular_speed_rad_s": 0.0,
+  "equilibrium_angular_speed_tolerance_rad_s": 1e-12,
+  "equilibrium_angular_speed_pass": true,
+  "acquisition_includes_angular_speed_le_0p10_rad_s": true,
+  "acquisition_continuous_hold_s": 1.0,
+  "holdout_executed": false,
+  "result": "PASS_R1R1_CUTTER_ANGULAR_VELOCITY_AUDIT"
+}

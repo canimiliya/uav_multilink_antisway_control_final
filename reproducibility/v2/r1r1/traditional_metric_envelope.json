@@ -1,0 +1,34 @@
+{
+  "best_success_rate": {
+    "value": 0.7192982456140351,
+    "controller": "pid"
+  },
+  "best_acquisition_time_s": {
+    "value": 2.3,
+    "controller": "task_lqr"
+  },
+  "best_3d_position_rmse_m": {
+    "value": 0.11368841879515172,
+    "controller": "pid"
+  },
+  "best_ramp_peak_error_m": {
+    "value": 0.13029872078634205,
+    "controller": "pid"
+  },
+  "best_ramp_steady_state_error_m": {
+    "value": 0.18372019793484656,
+    "controller": "pid"
+  },
+  "best_safety_rate": {
+    "value": 1.0,
+    "controller": "pid"
+  },
+  "best_orientation_rmse_deg": {
+    "value": 0.2971479896297955,
+    "controller": "task_lqr"
+  },
+  "best_total_acceleration_effort": {
+    "value": 0.2140877594052417,
+    "controller": "task_lqr"
+  }
+}
