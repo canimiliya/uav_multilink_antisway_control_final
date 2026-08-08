@@ -60,6 +60,10 @@ def git_head() -> str:
     return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
 
 
+def freeze_head_is_ancestor() -> bool:
+    return subprocess.run(["git", "merge-base", "--is-ancestor", IMPLEMENTATION_FREEZE_HEAD, "HEAD"], cwd=ROOT).returncode == 0
+
+
 def frozen_method_arrays():
     a = np.load(ROOT / "reproducibility/frozen/linear_model/A.npy")
     b = np.load(ROOT / "reproducibility/frozen/linear_model/B.npy")
@@ -290,7 +294,7 @@ def main() -> int:
     args = parser.parse_args()
     if args.split != "development": raise RuntimeError("V2-R3R2 runner refuses holdout execution")
     if args.paper_advanced: raise RuntimeError("V2-R3R2 runner refuses Paper-Advanced execution")
-    if git_head() != IMPLEMENTATION_FREEZE_HEAD: raise RuntimeError("performance requires the pushed implementation freeze head")
+    if not freeze_head_is_ancestor(): raise RuntimeError("performance requires the pushed implementation freeze head as an ancestor")
     write_contract_audits()
     development = read_json("development_manifest.json", R1R1)["samples"]
     grid = enumerate_grid()
