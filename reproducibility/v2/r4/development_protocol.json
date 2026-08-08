@@ -1,0 +1,15 @@
+{
+  "task": "V2-R4-LV2026-CASCADE-ADAPTED-DEVELOPMENT-AND-FREEZE-R1",
+  "start_head": "86da5cbcb7ede23af4d5c6fd1a7742ee8c04b3a7",
+  "development_only": true,
+  "stage1_samples_per_candidate": 9,
+  "stage1_candidates": 9,
+  "stage1_runs": 81,
+  "stage2_top_count": 3,
+  "stage2_samples_per_candidate": 57,
+  "stage2_runs": 171,
+  "traditional_rerun": false,
+  "self_modified": false,
+  "holdout_executed": false,
+  "paper_exact_reproduction": false
+}

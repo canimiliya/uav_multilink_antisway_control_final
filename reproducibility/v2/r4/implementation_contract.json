@@ -1,0 +1,33 @@
+{
+  "task": "V2-R4-LV2026-CASCADE-ADAPTED-DEVELOPMENT-AND-FREEZE-R1",
+  "method": "LV2026-CASCADE-ADAPTED",
+  "claim": "paper-inspired five-link adaptation preserving suspension-point-acceleration swing regulation",
+  "exact_reproduction": false,
+  "suspension_point": "data.xpos[link_1] upper suspension point world position",
+  "cutter_com": "data.xipos[cutter] causal MuJoCo center of mass",
+  "relative_state": "r_eq = p_cutter_com - p_suspension; relative velocity from causal body Jacobians",
+  "beta_definition": "atan2(r_eq_x, -r_eq_z), z-up, positive toward +x",
+  "beta_rate_definition": "analytic angle derivative from relative COM velocity",
+  "future_state_or_target_used": false,
+  "outer_pid": {
+    "candidate_id": "pid_005_frozen",
+    "kp": 0.8,
+    "kd": 4.0,
+    "ki": 0.1,
+    "integral_limit": 1.0
+  },
+  "shared_yz": {
+    "ay_kp": 0.1,
+    "ay_kd": 0.5,
+    "az_kp": 6.0,
+    "az_kd": 3.5
+  },
+  "limits": {
+    "ax_abs_m_s2": [
+      -2.0,
+      2.0
+    ],
+    "delta_ax_max_per_update_m_s2": 0.25
+  },
+  "performance_executed": false
+}

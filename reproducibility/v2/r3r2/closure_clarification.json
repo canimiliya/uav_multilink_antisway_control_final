@@ -1,0 +1,30 @@
+{
+  "artifact": "R3R2 closure clarification",
+  "scope": "explanatory metadata only; reproducibility/v2/r3r2/gate.json is unchanged",
+  "source_gate_sha256": "b2fc460a943ef469ec7a127e48693ac2701e2c5b302a5ec7597f2866fb756179",
+  "candidate_level_competence": {
+    "top_candidates": [
+      "dr_tsrmpc_003",
+      "dr_tsrmpc_007",
+      "dr_tsrmpc_009",
+      "dr_tsrmpc_011"
+    ],
+    "safety_pass": "57/57 for each listed candidate",
+    "solver_pass": "100% for each listed candidate",
+    "steady_feasibility_pass": "100% for each listed candidate",
+    "limiter_parity_pass": "100% for each listed candidate",
+    "success_pass": "100% for each listed candidate",
+    "position_pass": "position RMSE below the frozen threshold for each listed candidate",
+    "ramp_pass": "ramp peak and/or steady-state condition passes for each listed candidate",
+    "realtime_pass": "P95 solve time below the frozen runtime limit for each listed candidate"
+  },
+  "final_selected_candidate_eligibility": {
+    "selected_candidate": null,
+    "global_acquisition_pass": false,
+    "paired_acquisition_pass": false,
+    "reason": "All Stage-2 candidates failed the frozen global acquisition and common-success paired acquisition thresholds; no candidate was eligible for selection."
+  },
+  "interpretation": "The false selected-candidate gate fields in gate.json encode final eligibility with selected_candidate=null; they do not mean that every raw candidate-level safety, solver, steady, success, position, ramp, and realtime check failed.",
+  "self_route_closed": true,
+  "scientific_conclusion": "DR-TSRMPC showed a partial advantage over the traditional envelope in success, position, and ramp metrics, but did not satisfy the simultaneous acquisition requirements and is not a V2 Self-Advanced winner."
+}

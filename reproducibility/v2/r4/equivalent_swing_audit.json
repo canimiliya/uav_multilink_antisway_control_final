@@ -1,0 +1,12 @@
+{
+  "coordinate_system": "MuJoCo world z-up, gravity [0, 0, -9.81]",
+  "r_eq": "p_cutter_com - p_susp",
+  "beta_eq": "atan2(r_eq_x, -r_eq_z), positive toward +x",
+  "beta_dot_eq": "(-r_eq_z*v_rel_x + r_eq_x*v_rel_z) / (r_eq_x^2 + r_eq_z^2)",
+  "equilibrium_beta_rad": 0.0,
+  "positive_x_beta_rad": 0.003999978666871465,
+  "positive_x_correction_ax_m_s2": 0.07316061364692872,
+  "positive_x_target_beta_acceleration_m_s2": -0.04495976021563527,
+  "positive_x_sign_pass": true,
+  "causal": true
+}

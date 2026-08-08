@@ -1,0 +1,20 @@
+{
+  "method": "LV2026-CASCADE-ADAPTED",
+  "paper_source": "https://arxiv.org/html/2601.03386",
+  "exact_reproduction": false,
+  "paper_equation": "Eq.18: M_sigma * xi_ddot_d = -(sigma_ddot_d + (I-k_sigma^2)e_sigma + (k_sigma+k_p_sigma)e_p_sigma) - M_sigma1^-1(model_terms)",
+  "mapping": {
+    "paper_sigma": "beta_eq = atan2(r_eq_x, -r_eq_z) in MuJoCo z-up coordinates",
+    "paper_suspension_acceleration": "benchmark x suspension-point acceleration",
+    "paper_swing_gains": "k_beta and k_p_beta, only 0.5x/1x/2x multipliers of 3.2",
+    "paper_omitted_model_terms": "five-link coupling and load geometry are represented by the instantaneous equivalent pendulum bridge; unmodeled y-axis and higher-link terms are not claimed to be exactly reproduced",
+    "outer_velocity_loop": "not ported; frozen PID-005 position bridge is used without retuning",
+    "inner_attitude_and_decoupler": "not ported; frozen shared geometric inner loop remains unchanged"
+  },
+  "equivalent_pendulum_bridge": "beta_ddot = -(a_susp_x + g*sin(beta_eq))/l_eq; a_paper = -l_eq*beta_ddot_target - g*sin(beta_eq)",
+  "desired_swing": {
+    "beta_d_rad": 0.0,
+    "beta_dot_d_rad_s": 0.0,
+    "beta_ddot_d_rad_s2": 0.0
+  }
+}
