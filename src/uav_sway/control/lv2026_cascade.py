@@ -206,7 +206,7 @@ class LV2026CascadeAdapted:
             swing.beta_eq_rad, swing.beta_dot_eq_rad_s, swing.alpha_eq_rad, swing.alpha_dot_eq_rad_s,
             swing.equivalent_length_m, beta_error, shaped_rate, beta_accel, correction, nominal,
             raw, limit_diag.amplitude_limited, limited, limit_diag.saturated,
-            limit_diag.slew_limited, bool(limit_diag.amplitude_limited != correction),
+            limit_diag.slew_limited, bool(abs(correction) > AX_MAX),
         )
         return limited
 

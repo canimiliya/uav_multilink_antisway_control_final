@@ -38,7 +38,7 @@ from scripts.run_v2_r1_baselines import (
 OUT = ROOT / "reproducibility/v2/r4"
 R1R1 = ROOT / "reproducibility/v2/r1r1"
 START_HEAD = "86da5cbcb7ede23af4d5c6fd1a7742ee8c04b3a7"
-IMPLEMENTATION_FREEZE_HEAD = "de6d8fedd4769c3274b58ca332e0a3ec7a47c942"
+IMPLEMENTATION_FREEZE_HEAD = "52221943b5c7329c4cd7e50f90757d79397de504"
 TASK = "V2-R4-LV2026-CASCADE-ADAPTED-DEVELOPMENT-AND-FREEZE-R1"
 R3R2_GATE_SHA256 = "b2fc460a943ef469ec7a127e48693ac2701e2c5b302a5ec7597f2866fb756179"
 
@@ -226,6 +226,11 @@ def run_case(params: dict, sample: dict, raw_path: Path | None = None) -> dict:
         "equivalent_swing_rate_rms_deg_s": float(np.rad2deg(np.sqrt(np.mean(trace["beta_dot_eq_rad_s"] ** 2)))),
         "paper_swing_correction_rms_m_s2": float(np.sqrt(np.mean(trace["paper_swing_correction_ax"] ** 2))),
         "paper_swing_correction_saturation_count": int(np.sum(trace["swing_correction_saturation"])),
+        "paper_swing_correction_ax_mean": float(np.mean(trace["paper_swing_correction_ax"])),
+        "paper_swing_correction_ax_rms": float(np.sqrt(np.mean(trace["paper_swing_correction_ax"] ** 2))),
+        "paper_swing_correction_ax_peak": float(np.max(np.abs(trace["paper_swing_correction_ax"]))),
+        "nominal_pid_ax_rms": float(np.sqrt(np.mean(trace["nominal_pid_ax"] ** 2))),
+        "final_ax_rms": float(np.sqrt(np.mean(trace["final_ax"] ** 2))),
         "nominal_pid_effort": float(np.trapezoid(trace["nominal_pid_ax"] ** 2, trace["time"])),
         "final_ax_effort": float(np.trapezoid(trace["final_ax"] ** 2, trace["time"])),
         "runtime_limits_pass": bool(result["safe"]),
@@ -243,6 +248,9 @@ def aggregate(params: dict, rows: list[dict]) -> dict:
         "position_rmse_3d_m": float(np.mean([row["position_rmse_3d_m"] for row in rows])), "orientation_rmse_deg": float(np.mean([row["orientation_rmse_deg"] for row in rows])),
         "ramp_peak_position_error_m": float(max((row.get("ramp_peak_position_error_m") or 0.0) for row in rows)), "ramp_steady_state_position_error_m": float(max((row.get("ramp_steady_state_position_error_m") or 0.0) for row in rows)),
         "equivalent_swing_rms_deg": float(np.mean([row["equivalent_swing_rms_deg"] for row in rows])), "equivalent_swing_peak_deg": float(max(row["equivalent_swing_peak_deg"] for row in rows)),
+        "paper_swing_correction_ax_rms": float(np.mean([row["paper_swing_correction_ax_rms"] for row in rows])), "paper_swing_correction_ax_peak": float(max(row["paper_swing_correction_ax_peak"] for row in rows)),
+        "nominal_pid_ax_rms": float(np.mean([row["nominal_pid_ax_rms"] for row in rows])), "final_ax_rms": float(np.mean([row["final_ax_rms"] for row in rows])),
+        "paper_swing_correction_saturation_count": int(sum(row["paper_swing_correction_saturation_count"] for row in rows)),
         "total_acceleration_effort": float(np.mean([row["total_acceleration_effort"] for row in rows])), "x_control_effort": float(np.mean([row["x_control_effort"] for row in rows])),
         "limiter_parity_rate": sum(bool(row.get("limiter_parity_valid")) for row in rows) / max(len(rows), 1), "runtime_limits_rate": sum(bool(row.get("runtime_limits_pass")) for row in rows) / max(len(rows), 1),
         "limiter_mismatch_max": float(max(row.get("limiter_mismatch_max", float("inf")) for row in rows)), "rows": rows,
@@ -324,7 +332,7 @@ def main() -> int:
     for rank, frozen in enumerate(top3, 1):
         params = frozen["parameters"]; rows = [run_case(params, sample) for sample in development]; summary = aggregate(params, rows); summary["stage1_rank"] = rank; stage2.append(summary)
         for row in rows:
-            per_sample.append({"candidate_id": params["candidate_id"], "stage1_rank": rank, **{key: row.get(key) for key in ("sample_id", "scenario", "safe", "task_success", "acquisition_time_s", "position_rmse_3d_m", "orientation_rmse_deg", "ramp_peak_position_error_m", "ramp_steady_state_position_error_m", "equivalent_swing_rms_deg", "equivalent_swing_peak_deg", "paper_swing_correction_ax", "nominal_pid_ax", "final_ax_effort", "total_acceleration_effort", "limiter_mismatch_max", "runtime_limits_pass")}})
+            per_sample.append({"candidate_id": params["candidate_id"], "stage1_rank": rank, **{key: row.get(key) for key in ("sample_id", "scenario", "safe", "task_success", "acquisition_time_s", "position_rmse_3d_m", "orientation_rmse_deg", "ramp_peak_position_error_m", "ramp_steady_state_position_error_m", "equivalent_swing_rms_deg", "equivalent_swing_peak_deg", "paper_swing_correction_ax_mean", "paper_swing_correction_ax_rms", "paper_swing_correction_ax_peak", "nominal_pid_ax_rms", "final_ax_rms", "paper_swing_correction_saturation_count", "total_acceleration_effort", "limiter_mismatch_max", "runtime_limits_pass")}})
         print(f"stage2 {params['candidate_id']} complete", flush=True)
     paired = paired_comparison(stage2); write_json("paired_traditional_comparison.json", paired)
     _write_candidate_csv("stage2_candidates.csv", stage2)
@@ -353,7 +361,7 @@ def main() -> int:
         "paired_acquisition_gate_pass": selected is not None and selected.get("paired_acquisition_improvement") is not None and selected["paired_acquisition_improvement"] >= 0.05,
         "ramp_gate_pass": selected is not None and (selected["ramp_peak_position_error_m"] <= 0.123784 or selected["ramp_steady_state_position_error_m"] <= 0.174534),
         "runtime_control_limits_pass": selected is not None and selected["runtime_limits_rate"] == 1.0,
-        "traditional_modified": False, "self_modified": False, "holdout_executed": False, "result": result,
+        "traditional_modified": False, "self_modified": False, "paper_route_closed": selected is None, "holdout_executed": False, "result": result,
     }
     write_json("gate.json", gate)
     print(json.dumps({"result": result, "selected": None if selected is None else selected["parameters"]}, indent=2), flush=True)

@@ -1,0 +1,8 @@
+{
+  "valid_scientific_evidence": false,
+  "reason": "The frozen controller result and gate were complete, but the first finalized Stage-1/Stage-2 artifacts did not expose all newly registered paper swing correction metrics at per-sample level.",
+  "controller_semantics_changed": false,
+  "gate_result_before_recovery": "CLOSED_WITH_NO_DEVELOPMENT_WIN_LV2026_ADAPTED",
+  "not_used_as_final_evidence": true,
+  "recovery": "correct diagnostic semantics and metric serialization, then rerun the unchanged 81 + 171 development protocol"
+}
