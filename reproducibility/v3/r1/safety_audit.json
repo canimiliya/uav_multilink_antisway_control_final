@@ -1,0 +1,44 @@
+{
+  "development_count": 75,
+  "holdout_executed": false,
+  "selected": {
+    "pid": {
+      "candidate_id": "pid_combo_004",
+      "sample_count": 75,
+      "safe_sample_count": 68,
+      "safety_rate": 0.9066666666666666,
+      "safe": false,
+      "unsafe_sample_ids": [
+        "calm_face_diagonal_05",
+        "constant_1.5_axis_05",
+        "constant_1.5_face_diagonal_05",
+        "constant_1.5_face_diagonal_06",
+        "constant_1.5_face_diagonal_09",
+        "constant_1.5_face_diagonal_10",
+        "constant_3_face_diagonal_05"
+      ],
+      "failure_reasons": [
+        "attitude",
+        "tip_height"
+      ]
+    },
+    "full_lqr": {
+      "candidate_id": "full_lqr_048",
+      "sample_count": 75,
+      "safe_sample_count": 75,
+      "safety_rate": 1.0,
+      "safe": true,
+      "unsafe_sample_ids": [],
+      "failure_reasons": []
+    },
+    "task_lqr": {
+      "candidate_id": "task_lqr_009",
+      "sample_count": 75,
+      "safe_sample_count": 75,
+      "safety_rate": 1.0,
+      "safe": true,
+      "unsafe_sample_ids": [],
+      "failure_reasons": []
+    }
+  }
+}

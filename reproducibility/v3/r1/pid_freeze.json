@@ -1,0 +1,183 @@
+{
+  "controller": "pid",
+  "selected": {
+    "candidate_id": "pid_combo_004",
+    "sample_count": 75,
+    "safe_sample_count": 68,
+    "task_success_count": 11,
+    "safety_rate": 0.9066666666666666,
+    "success_rate": 0.14666666666666667,
+    "acquisition_median_s": 4.88,
+    "position_rmse_3d_m": 1.1059333876960429,
+    "orientation_rmse_deg": 20.621833685654714,
+    "ramp_peak_position_error_m": 2.282809175675629,
+    "ramp_steady_state_position_error_m": 3.252827917025748,
+    "total_acceleration_effort": 20.847109387773273,
+    "parameters": {
+      "candidate_id": "pid_combo_004",
+      "kp": [
+        0.4,
+        0.05,
+        9.0
+      ],
+      "kd": [
+        2.0,
+        1.0,
+        3.5
+      ],
+      "ki": [
+        0.1,
+        0.05,
+        0.0
+      ],
+      "axis_sources": {
+        "x": {
+          "candidate_id": "pid_x_01",
+          "kp": [
+            0.4,
+            0.0,
+            0.0
+          ],
+          "kd": [
+            2.0,
+            0.0,
+            0.0
+          ],
+          "ki": [
+            0.1,
+            0.0,
+            0.0
+          ],
+          "screen_axis": "x"
+        },
+        "y": {
+          "candidate_id": "pid_y_05",
+          "kp": [
+            0.0,
+            0.05,
+            0.0
+          ],
+          "kd": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "ki": [
+            0.0,
+            0.05,
+            0.0
+          ],
+          "screen_axis": "y"
+        },
+        "z": {
+          "candidate_id": "pid_z_14",
+          "kp": [
+            0.0,
+            0.0,
+            9.0
+          ],
+          "kd": [
+            0.0,
+            0.0,
+            3.5
+          ],
+          "ki": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen_axis": "z"
+        }
+      }
+    }
+  },
+  "parameters": {
+    "candidate_id": "pid_combo_004",
+    "kp": [
+      0.4,
+      0.05,
+      9.0
+    ],
+    "kd": [
+      2.0,
+      1.0,
+      3.5
+    ],
+    "ki": [
+      0.1,
+      0.05,
+      0.0
+    ],
+    "axis_sources": {
+      "x": {
+        "candidate_id": "pid_x_01",
+        "kp": [
+          0.4,
+          0.0,
+          0.0
+        ],
+        "kd": [
+          2.0,
+          0.0,
+          0.0
+        ],
+        "ki": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "screen_axis": "x"
+      },
+      "y": {
+        "candidate_id": "pid_y_05",
+        "kp": [
+          0.0,
+          0.05,
+          0.0
+        ],
+        "kd": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "ki": [
+          0.0,
+          0.05,
+          0.0
+        ],
+        "screen_axis": "y"
+      },
+      "z": {
+        "candidate_id": "pid_z_14",
+        "kp": [
+          0.0,
+          0.0,
+          9.0
+        ],
+        "kd": [
+          0.0,
+          0.0,
+          3.5
+        ],
+        "ki": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "screen_axis": "z"
+      }
+    }
+  },
+  "common_limits": {
+    "frame": "world",
+    "components": [
+      "ax",
+      "ay",
+      "az"
+    ],
+    "amplitude_limit_m_s2": 2.0,
+    "slew_limit_m_s2_per_outer_update": 0.25,
+    "outer_period_s": 0.05
+  },
+  "holdout_executed": false
+}

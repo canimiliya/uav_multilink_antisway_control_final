@@ -1,0 +1,20 @@
+{
+  "contract": "V3-R1-advanced-numeric-win-contract",
+  "written_before_any_advanced_performance": true,
+  "safety_threshold_rate": 1.0,
+  "success_threshold_rate": 0.72,
+  "primary_traditional": "full_lqr:full_lqr_048",
+  "position_rmse_max_m": 0.08379179528732071,
+  "acquisition_noninferiority_max_s": 4.8877500000000005,
+  "strict_acquisition_max_s": 4.42225,
+  "ramp_peak_max_m": 0.30967327253789523,
+  "ramp_steady_max_m": 0.14285645198483307,
+  "paired_bootstrap": {
+    "variable": "RMSE_primary_i - RMSE_advanced_i",
+    "pairing": "exact sample_id",
+    "resamples": 10000,
+    "seed": 20260809,
+    "required_ci_lower_bound": "> 0"
+  },
+  "holdout_execution_allowed": false
+}
