@@ -1,0 +1,32 @@
+{
+  "task": "V2-R3R2-DR-TSRMPC-DEVELOPMENT-AND-FREEZE-R1",
+  "method": "DR-TSRMPC",
+  "implementation_freeze_head": "resolved from the pushed implementation commit before performance",
+  "dynamic_residual": {
+    "dimension": 16,
+    "formula": "r_k = x_k - (A x_prev + B previous_actual_ax - c_ref)",
+    "update": "d_hat = (1-beta)d_hat_prev + beta r_k",
+    "first_sample_d_hat": 0.0,
+    "previous_input": "limiter-after actual physical ax",
+    "reference_shift": "reference_vector(current) - A reference_vector(previous)",
+    "output_bias": false,
+    "matched_wind_model": false,
+    "wind_estimate": false
+  },
+  "steady_state": {
+    "equality": "(I-A)x_s - B u_s = d_hat",
+    "objective": "||C_task x_s||_Wss^2 + 1e-8(||x_s||^2 + u_s^2)",
+    "Wss": [1.0, 0.25, 0.25, 0.0625],
+    "u_bound": 2.0,
+    "solution": "exact equality parameterization with constrained nullspace coordinate"
+  },
+  "control_law": "a_x = u_s - K(x-x_s) + v_mpc",
+  "prediction": "xi_next = (A-BK)xi + Bv; no residual double counting",
+  "horizon": 20,
+  "dt_s": 0.05,
+  "physical_limits": {"ax_abs_max_m_s2": 2.0, "slew_m_s2_per_update": 0.25},
+  "osqp": {"eps_abs": 1e-5, "eps_rel": 1e-5, "max_iter": 4000, "warm_start": true},
+  "shared_yz": {"ay_kp": 0.1, "ay_kd": 0.5, "az_kp": 6.0, "az_kd": 3.5},
+  "parameter_grid_source": "reproducibility/v2/r3r1/dr_tsrmpc_parameter_grid.json",
+  "performance_executed": false
+}
