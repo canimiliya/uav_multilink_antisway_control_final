@@ -25,5 +25,12 @@
     "no extra camera, tension, slack-mode, obstacle, or payload sensor interface",
     "no future wind or future target"
   ],
+  "parameter_budget": {
+    "starting_point": "paper-reported original values",
+    "allowed_multiplier_per_major_gain": [0.5, 1.0, 2.0],
+    "maximum_total_candidates": 27,
+    "exact_grid_status": "must be frozen and committed before V2-R4 performance",
+    "brute_force_tuning_forbidden": true
+  },
   "fairness_status": "PASS_WITH_EXPLICIT_ADAPTATION_BOUNDARY"
 }

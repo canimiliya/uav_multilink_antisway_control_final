@@ -25,5 +25,10 @@
     {"title": "ES-HPC-MPC", "reason": "hybrid slack/taut and camera FoV core mechanisms are absent from frozen plant"},
     {"title": "SEP-NMPC", "reason": "point-mass/massless-cable and obstacle HOCBF core mechanisms do not map without breaking the method"}
   ],
+  "paper_grid_budget": {
+    "maximum_candidates": 27,
+    "per_major_gain_multipliers": [0.5, 1.0, 2.0],
+    "exact_values_frozen_before": "V2-R4 performance"
+  },
   "candidate_matrix": "reproducibility/v2/r2/paper_candidate_matrix.csv"
 }
