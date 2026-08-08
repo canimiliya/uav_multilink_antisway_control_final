@@ -7,6 +7,7 @@ from udaan.control.quadrotor import GeometricAttitudeController
 from udaan.manif import SO3, TSO3
 
 from .base import ControlState, ReferenceState
+from uav_sway.task_space.state import CutterTaskState
 from uav_sway.task_space.v2_reference import Shared3DControlLimits
 
 
@@ -38,10 +39,28 @@ class GeometricInnerLoop:
         self._previous_shared_ay = 0.0
         self._previous_shared_az = 0.0
 
-    def shared_yz_command(self, state: ControlState, reference: ReferenceState) -> tuple[float, float]:
-        """Compute the shared y/z command once per outer update."""
-        desired_ay = -self.ay_kp * (state.position[1] - reference.y_ref) - self.ay_kd * state.velocity[1]
-        desired_az = -self.az_kp * (state.position[2] - reference.z_ref) - self.az_kd * state.velocity[2]
+    def shared_yz_command(self, state: ControlState, reference: ReferenceState,
+                          task_state: CutterTaskState | None = None,
+                          tip_target_world: np.ndarray | None = None) -> tuple[float, float]:
+        """Compute the shared y/z command once per outer update.
+
+        The formal V2-R1R1 path supplies the measured cutter task state and the
+        external cutter target.  The UAV-state fallback is retained for older
+        callers outside the frozen V2 runner.
+        """
+        if (task_state is None) != (tip_target_world is None):
+            raise ValueError("task_state and tip_target_world must be supplied together")
+        if task_state is not None and tip_target_world is not None:
+            target = np.asarray(tip_target_world, dtype=float).reshape(3)
+            if not np.isfinite(target).all():
+                raise ValueError("tip target must be finite")
+            error = np.asarray(task_state.tip_position_world, dtype=float) - target
+            velocity = np.asarray(task_state.tip_velocity_world, dtype=float)
+            desired_ay = -self.ay_kp * error[1] - self.ay_kd * velocity[1]
+            desired_az = -self.az_kp * error[2] - self.az_kd * velocity[2]
+        else:
+            desired_ay = -self.ay_kp * (state.position[1] - reference.y_ref) - self.ay_kd * state.velocity[1]
+            desired_az = -self.az_kp * (state.position[2] - reference.z_ref) - self.az_kd * state.velocity[2]
         if self.shared_limits is not None:
             desired_ay, desired_az = self.shared_limits.apply(
                 desired_ay, desired_az, self._previous_shared_ay, self._previous_shared_az

@@ -34,18 +34,21 @@ class CutterTaskState:
 
     tip_position_world: np.ndarray
     tip_velocity_world: np.ndarray
+    cutter_angular_velocity_world: np.ndarray
     cutter_axis_world: np.ndarray
     cutter_rotation_world: np.ndarray
 
     def __post_init__(self) -> None:
         position = np.asarray(self.tip_position_world, dtype=float).reshape(3)
         velocity = np.asarray(self.tip_velocity_world, dtype=float).reshape(3)
+        angular_velocity = np.asarray(self.cutter_angular_velocity_world, dtype=float).reshape(3)
         axis = _unit(self.cutter_axis_world, "cutter_axis_world")
         rotation = np.asarray(self.cutter_rotation_world, dtype=float).reshape(3, 3)
-        if not all(np.isfinite(value).all() for value in (position, velocity, axis, rotation)):
+        if not all(np.isfinite(value).all() for value in (position, velocity, angular_velocity, axis, rotation)):
             raise ValueError("CutterTaskState must be finite")
         object.__setattr__(self, "tip_position_world", position.copy())
         object.__setattr__(self, "tip_velocity_world", velocity.copy())
+        object.__setattr__(self, "cutter_angular_velocity_world", angular_velocity.copy())
         object.__setattr__(self, "cutter_axis_world", axis.copy())
         object.__setattr__(self, "cutter_rotation_world", rotation.copy())
 
@@ -68,6 +71,7 @@ class CutterTaskSpaceReader:
         return CutterTaskState(
             tip_position_world=np.asarray(data.site_xpos[self.tip_site_id], dtype=float),
             tip_velocity_world=jacp @ np.asarray(data.qvel, dtype=float),
+            cutter_angular_velocity_world=jacr @ np.asarray(data.qvel, dtype=float),
             cutter_axis_world=axis,
             cutter_rotation_world=rotation,
         )

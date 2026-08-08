@@ -1,0 +1,10 @@
+{
+  "formal_freeze_valid": false,
+  "reason": [
+    "terminal angular-speed condition omitted",
+    "shared UAV-y scaffold unstable for cutter-y task",
+    "ay/az safety checks omitted"
+  ],
+  "superseded_by": "V2-R1R1",
+  "original_evidence_preserved": true
+}

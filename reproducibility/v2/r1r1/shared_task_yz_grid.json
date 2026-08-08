@@ -1,0 +1,24 @@
+{
+  "contract": "V2-R1R1-shared-task-yz-grid-r1",
+  "selection_rule": "separate y and z development-only calm axis tuning; no joint 256-grid",
+  "y": {
+    "kp": [0.1, 0.25, 0.5, 1.0],
+    "kd": [0.5, 1.0, 2.0, 3.0],
+    "grid_size": 16,
+    "selection_directions": ["+y", "-y"],
+    "selection_radii_m": [0.15, 0.25]
+  },
+  "z": {
+    "kp": [1.0, 2.0, 4.0, 6.0],
+    "kd": [1.5, 2.5, 3.5, 5.0],
+    "grid_size": 16,
+    "selection_directions": ["+z", "-z"],
+    "selection_radii_m": [0.15, 0.25]
+  },
+  "limits": {
+    "ay_abs_max_m_s2": 2.0,
+    "az_abs_max_m_s2": 2.0,
+    "axis_slew_max_m_s2_per_update": 0.25
+  },
+  "frozen_before_performance_run": true
+}

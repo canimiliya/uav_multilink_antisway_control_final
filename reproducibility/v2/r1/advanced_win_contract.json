@@ -10,4 +10,6 @@
   "paired_bootstrap_required": true,
   "improvement_direction": "positive means advanced metric is lower than the corresponding best traditional envelope",
   "holdout_only_for_final_pass": true
+  ,"superseded": true
+  ,"superseded_by": "V2-R1R1"
 }

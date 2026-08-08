@@ -1,0 +1,28 @@
+{
+  "task": "V2-R1R1-TRADITIONAL-3D-BASELINE-CONTRACT-CORRECTION-R1",
+  "start_head": "6b4ae43b3b6a3dff669beaf66fd0c453a60a719f",
+  "source_contract": "reproducibility/v2/r1",
+  "original_evidence_preserved": true,
+  "formal_freeze_valid_before_correction": false,
+  "corrections": {
+    "acquisition": [
+      "position_error_3d <= 0.05 m",
+      "tip_speed <= 0.10 m/s",
+      "cutter_direction_error <= 5 deg",
+      "cutter_angular_speed <= 0.10 rad/s",
+      "all_conditions_continuously held for >= 1.0 s"
+    ],
+    "shared_yz_state": "cutter-tip position error and measured site-Jacobian velocity",
+    "safety": [
+      "|ax|, |ay|, |az| <= 2 m/s^2",
+      "max per-outer-update |delta ax|, |delta ay|, |delta az| <= 0.25 m/s^2"
+    ],
+    "effort": [
+      "x_control_effort = integral(ax^2 dt)",
+      "total_acceleration_effort = integral((ax^2 + ay^2 + az^2) dt)"
+    ]
+  },
+  "advanced_self_started": false,
+  "advanced_paper_selected": false,
+  "holdout_executed": false
+}
