@@ -1,0 +1,29 @@
+{
+  "contract": "V2-R1-3d-control-interface-r1",
+  "start_head": "562bb1c99b43d25a07386ec5e3e99ec927b90cb6",
+  "external_task_output": "cutter_tip_position_world",
+  "target_to_uav_mapping": "p_uav_ref = p_tip_star - tip_relative_equilibrium",
+  "formal_metric_target": "external_cutter_target_only",
+  "cutter_orientation_axis_world": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "target_angular_velocity_rad_s": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "x_channel": "controller-specific ax only",
+  "shared_yz_scaffold": {
+    "ay_kp": 1.5,
+    "ay_kd": 2.0,
+    "az_kp": 4.0,
+    "az_kd": 3.5,
+    "ay_abs_max_m_s2": 2.0,
+    "az_abs_max_m_s2": 2.0,
+    "axis_slew_max_m_s2_per_update": 0.25
+  },
+  "all_methods_share_yz_scaffold": true,
+  "advanced_methods_may_not_retune_yz": true
+}

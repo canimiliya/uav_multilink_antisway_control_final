@@ -1,0 +1,976 @@
+{
+  "execution_allowed": false,
+  "samples": [
+    {
+      "sample_id": "holdout_1000",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mmm_r0.20",
+        "direction": "diag_mmm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          -0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          -0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1000
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1001",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mmp_r0.20",
+        "direction": "diag_mmp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          -0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          -0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1001
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1002",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mpm_r0.20",
+        "direction": "diag_mpm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1002
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1003",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mpp_r0.20",
+        "direction": "diag_mpp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1003
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1004",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_pmm_r0.20",
+        "direction": "diag_pmm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.11547005383792518,
+          -0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.34047005383792517,
+          -0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1004
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1005",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_pmp_r0.20",
+        "direction": "diag_pmp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.11547005383792518,
+          -0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.34047005383792517,
+          -0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1005
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1006",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_ppm_r0.20",
+        "direction": "diag_ppm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.11547005383792518,
+          0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.34047005383792517,
+          0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1006
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1007",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_ppp_r0.20",
+        "direction": "diag_ppp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.11547005383792518,
+          0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.34047005383792517,
+          0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1007
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1008",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mmm_r0.20",
+        "direction": "diag_mmm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          -0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          -0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1008
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1009",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mmp_r0.20",
+        "direction": "diag_mmp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          -0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          -0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1009
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1010",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mpm_r0.20",
+        "direction": "diag_mpm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1010
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1011",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mpp_r0.20",
+        "direction": "diag_mpp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1011
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1012",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_pmm_r0.20",
+        "direction": "diag_pmm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.11547005383792518,
+          -0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.34047005383792517,
+          -0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1012
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1013",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_pmp_r0.20",
+        "direction": "diag_pmp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.11547005383792518,
+          -0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.34047005383792517,
+          -0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1013
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1014",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_ppm_r0.20",
+        "direction": "diag_ppm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.11547005383792518,
+          0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.34047005383792517,
+          0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1014
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1015",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_ppp_r0.20",
+        "direction": "diag_ppp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.11547005383792518,
+          0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.34047005383792517,
+          0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1015
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1016",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mmm_r0.20",
+        "direction": "diag_mmm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          -0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          -0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1016
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1017",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mmp_r0.20",
+        "direction": "diag_mmp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          -0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          -0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1017
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1018",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mpm_r0.20",
+        "direction": "diag_mpm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1018
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_1019",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mpp_r0.20",
+        "direction": "diag_mpp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1019
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_constant_2p25",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mmm_r0.20",
+        "direction": "diag_mmm",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          -0.11547005383792518,
+          -0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          -0.11547005383792518,
+          0.27452994616207477
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.25
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_constant_3p75",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "diag_mmp_r0.20",
+        "direction": "diag_mmp",
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.11547005383792518,
+          -0.11547005383792518,
+          0.11547005383792518
+        ],
+        "tip_target_world_m": [
+          0.10952994616207483,
+          -0.11547005383792518,
+          0.5054700538379251
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "holdout_ramp_0_to_3p75",
+      "split": "holdout",
+      "execution_allowed": false,
+      "scenario": "RAMP_WIND_EQUILIBRIUM_HOLD",
+      "target": {
+        "target_id": "equilibrium_r0.00",
+        "direction": "equilibrium",
+        "radius_m": 0.0,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "linear_ramp",
+        "start_speed_m_s": 0.0,
+        "end_speed_m_s": 3.75,
+        "ramp_window_s": [
+          2.0,
+          8.0
+        ]
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": null,
+      "duration_s": 12.0
+    }
+  ]
+}

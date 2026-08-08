@@ -1,0 +1,394 @@
+{
+  "contract": "V2-R1-sample-bank-r1",
+  "start_head": "562bb1c99b43d25a07386ec5e3e99ec927b90cb6",
+  "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "equilibrium_tip_position_world_m": [
+    0.225,
+    0.0,
+    0.38999999999999996
+  ],
+  "tip_relative_equilibrium_m": [
+    0.225,
+    0.0,
+    -2.81
+  ],
+  "equilibrium_cutter_axis_world": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "target_orientation_is_frozen": true,
+  "development_target_count": 12,
+  "development_targets": [
+    {
+      "target_id": "+x_r0.15",
+      "direction": "+x",
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.15,
+        0.0,
+        0.0
+      ],
+      "tip_target_world_m": [
+        0.375,
+        0.0,
+        0.38999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "-x_r0.15",
+      "direction": "-x",
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        -0.15,
+        0.0,
+        0.0
+      ],
+      "tip_target_world_m": [
+        0.07500000000000001,
+        0.0,
+        0.38999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "+y_r0.15",
+      "direction": "+y",
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.0,
+        0.15,
+        0.0
+      ],
+      "tip_target_world_m": [
+        0.225,
+        0.15,
+        0.38999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "-y_r0.15",
+      "direction": "-y",
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.0,
+        -0.15,
+        0.0
+      ],
+      "tip_target_world_m": [
+        0.225,
+        -0.15,
+        0.38999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "+z_r0.15",
+      "direction": "+z",
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.0,
+        0.0,
+        0.15
+      ],
+      "tip_target_world_m": [
+        0.225,
+        0.0,
+        0.5399999999999999
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "-z_r0.15",
+      "direction": "-z",
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.0,
+        0.0,
+        -0.15
+      ],
+      "tip_target_world_m": [
+        0.225,
+        0.0,
+        0.23999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "+x_r0.25",
+      "direction": "+x",
+      "radius_m": 0.25,
+      "delta_tip_m": [
+        0.25,
+        0.0,
+        0.0
+      ],
+      "tip_target_world_m": [
+        0.475,
+        0.0,
+        0.38999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "-x_r0.25",
+      "direction": "-x",
+      "radius_m": 0.25,
+      "delta_tip_m": [
+        -0.25,
+        0.0,
+        0.0
+      ],
+      "tip_target_world_m": [
+        -0.024999999999999994,
+        0.0,
+        0.38999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "+y_r0.25",
+      "direction": "+y",
+      "radius_m": 0.25,
+      "delta_tip_m": [
+        0.0,
+        0.25,
+        0.0
+      ],
+      "tip_target_world_m": [
+        0.225,
+        0.25,
+        0.38999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "-y_r0.25",
+      "direction": "-y",
+      "radius_m": 0.25,
+      "delta_tip_m": [
+        0.0,
+        -0.25,
+        0.0
+      ],
+      "tip_target_world_m": [
+        0.225,
+        -0.25,
+        0.38999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "+z_r0.25",
+      "direction": "+z",
+      "radius_m": 0.25,
+      "delta_tip_m": [
+        0.0,
+        0.0,
+        0.25
+      ],
+      "tip_target_world_m": [
+        0.225,
+        0.0,
+        0.6399999999999999
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "-z_r0.25",
+      "direction": "-z",
+      "radius_m": 0.25,
+      "delta_tip_m": [
+        0.0,
+        0.0,
+        -0.25
+      ],
+      "tip_target_world_m": [
+        0.225,
+        0.0,
+        0.13999999999999996
+      ],
+      "target_orientation_axis_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_angular_velocity_rad_s": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "development_validation_sample_count": 57,
+  "development_seed_namespace": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "holdout_target_count": 8,
+  "holdout_target_radius_m": 0.2,
+  "holdout_seed_namespace": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019
+  ],
+  "holdout_execution_forbidden": true,
+  "holdout_min_target_tip_z_m": 0.27452994616207477,
+  "tuning_core": {
+    "target_directions": [
+      "+x",
+      "-x"
+    ],
+    "radii_m": [
+      0.15,
+      0.25
+    ],
+    "wind_strength_m_s": 3.0,
+    "samples_per_candidate": 8
+  },
+  "timing": {
+    "calm_issue_s": 1.0,
+    "wind_issue_s": 3.0,
+    "duration_s": 12.0,
+    "ramp_window_s": [
+      2.0,
+      8.0
+    ]
+  }
+}

@@ -1,0 +1,2404 @@
+{
+  "execution_allowed": true,
+  "samples": [
+    {
+      "sample_id": "calm__+x_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.15",
+        "direction": "+x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.375,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__+x_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.15",
+        "direction": "+x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.375,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__+x_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.15",
+        "direction": "+x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.375,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__-x_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.15",
+        "direction": "-x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.07500000000000001,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__-x_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.15",
+        "direction": "-x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.07500000000000001,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__-x_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.15",
+        "direction": "-x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.07500000000000001,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__+y_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "+y_r0.15",
+        "direction": "+y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__+y_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+y_r0.15",
+        "direction": "+y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__+y_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+y_r0.15",
+        "direction": "+y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__-y_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "-y_r0.15",
+        "direction": "-y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          -0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          -0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__-y_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-y_r0.15",
+        "direction": "-y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          -0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          -0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__-y_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-y_r0.15",
+        "direction": "-y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          -0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          -0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__+z_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "+z_r0.15",
+        "direction": "+z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.5399999999999999
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__+z_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+z_r0.15",
+        "direction": "+z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.5399999999999999
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__+z_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+z_r0.15",
+        "direction": "+z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.5399999999999999
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__-z_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "-z_r0.15",
+        "direction": "-z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.23999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__-z_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-z_r0.15",
+        "direction": "-z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.23999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__-z_r0.15",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-z_r0.15",
+        "direction": "-z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.23999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__+x_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.25",
+        "direction": "+x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.475,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__+x_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.25",
+        "direction": "+x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.475,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__+x_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.25",
+        "direction": "+x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.475,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__-x_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.25",
+        "direction": "-x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          -0.024999999999999994,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__-x_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.25",
+        "direction": "-x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          -0.024999999999999994,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__-x_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.25",
+        "direction": "-x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          -0.024999999999999994,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__+y_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "+y_r0.25",
+        "direction": "+y",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.25,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__+y_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+y_r0.25",
+        "direction": "+y",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.25,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__+y_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+y_r0.25",
+        "direction": "+y",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.25,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__-y_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "-y_r0.25",
+        "direction": "-y",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          -0.25,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__-y_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-y_r0.25",
+        "direction": "-y",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          -0.25,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__-y_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-y_r0.25",
+        "direction": "-y",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          -0.25,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__+z_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "+z_r0.25",
+        "direction": "+z",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.25
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.6399999999999999
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__+z_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+z_r0.25",
+        "direction": "+z",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.25
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.6399999999999999
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__+z_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+z_r0.25",
+        "direction": "+z",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.25
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.6399999999999999
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "calm__-z_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "-z_r0.25",
+        "direction": "-z",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.25
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.13999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 0.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 1.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_1p5__-z_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-z_r0.25",
+        "direction": "-z",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.25
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.13999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "wind_3p0__-z_r0.25",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-z_r0.25",
+        "direction": "-z",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.25
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.13999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0000",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.15",
+        "direction": "+x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.375,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 0
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0001",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.15",
+        "direction": "-x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.07500000000000001,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 1
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0002",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+y_r0.15",
+        "direction": "+y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 2
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0003",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-y_r0.15",
+        "direction": "-y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          -0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          -0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 3
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0004",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+z_r0.15",
+        "direction": "+z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.5399999999999999
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 4
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0005",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-z_r0.15",
+        "direction": "-z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.23999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 5
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0006",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.25",
+        "direction": "+x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.475,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 6
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0007",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.25",
+        "direction": "-x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          -0.024999999999999994,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 7
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0008",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+y_r0.25",
+        "direction": "+y",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.25,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.25,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 8
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0009",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-y_r0.25",
+        "direction": "-y",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          -0.25,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          -0.25,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 9
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0010",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+z_r0.25",
+        "direction": "+z",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.25
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.6399999999999999
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 10
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0011",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-z_r0.25",
+        "direction": "-z",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.25
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.13999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 11
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0012",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.15",
+        "direction": "+x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.375,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 12
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0013",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.15",
+        "direction": "-x",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.07500000000000001,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 13
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0014",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+y_r0.15",
+        "direction": "+y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 14
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0015",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-y_r0.15",
+        "direction": "-y",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          -0.15,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          -0.15,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 15
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0016",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+z_r0.15",
+        "direction": "+z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.5399999999999999
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 16
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0017",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-z_r0.15",
+        "direction": "-z",
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.15
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.23999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 17
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0018",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "+x_r0.25",
+        "direction": "+x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.475,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 18
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "stochastic_dev_0019",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "-x_r0.25",
+        "direction": "-x",
+        "radius_m": 0.25,
+        "delta_tip_m": [
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          -0.024999999999999994,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "frozen_random_wind",
+        "seed": 19
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": 3.0,
+      "duration_s": 12.0
+    },
+    {
+      "sample_id": "ramp_dev_0_to_3p0",
+      "split": "development",
+      "execution_allowed": true,
+      "scenario": "RAMP_WIND_EQUILIBRIUM_HOLD",
+      "target": {
+        "target_id": "equilibrium_r0.00",
+        "direction": "equilibrium",
+        "radius_m": 0.0,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tip_target_world_m": [
+          0.225,
+          0.0,
+          0.38999999999999996
+        ],
+        "target_orientation_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_angular_velocity_rad_s": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "linear_ramp",
+        "start_speed_m_s": 0.0,
+        "end_speed_m_s": 3.0,
+        "ramp_window_s": [
+          2.0,
+          8.0
+        ]
+      },
+      "wind_direction_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target_issue_time_s": null,
+      "duration_s": 12.0
+    }
+  ]
+}

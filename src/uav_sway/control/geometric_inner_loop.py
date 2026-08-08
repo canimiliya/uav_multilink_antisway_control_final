@@ -7,6 +7,7 @@ from udaan.control.quadrotor import GeometricAttitudeController
 from udaan.manif import SO3, TSO3
 
 from .base import ControlState, ReferenceState
+from uav_sway.task_space.v2_reference import Shared3DControlLimits
 
 
 class GeometricInnerLoop:
@@ -14,11 +15,15 @@ class GeometricInnerLoop:
                  attitude_natural_frequency: float = 4.0,
                  attitude_damping_ratio: float = 0.9,
                  ay_kp: float = 1.5, ay_kd: float = 2.0,
-                 az_kp: float = 4.0, az_kd: float = 3.5):
+                 az_kp: float = 4.0, az_kd: float = 3.5,
+                 shared_limits: Shared3DControlLimits | None = None):
         self.total_mass = float(total_mass)
         self.inertia_diagonal = np.asarray(inertia_diagonal, dtype=float).copy()
         self.ay_kp, self.ay_kd = float(ay_kp), float(ay_kd)
         self.az_kp, self.az_kd = float(az_kp), float(az_kd)
+        self.shared_limits = shared_limits
+        self._previous_shared_ay = 0.0
+        self._previous_shared_az = 0.0
         wn = float(attitude_natural_frequency)
         zeta = float(attitude_damping_ratio)
         self.k_r = self.inertia_diagonal * wn**2
@@ -29,12 +34,20 @@ class GeometricInnerLoop:
         self.controller._gains.kp = self.k_r.copy()
         self.controller._gains.kd = self.k_omega.copy()
 
+    def reset(self) -> None:
+        self._previous_shared_ay = 0.0
+        self._previous_shared_az = 0.0
+
     def desired_force(self, state: ControlState, reference: ReferenceState, ax_limited: float) -> np.ndarray:
-        acceleration = np.array([
-            float(ax_limited),
-            -self.ay_kp * (state.position[1] - reference.y_ref) - self.ay_kd * state.velocity[1],
-            -self.az_kp * (state.position[2] - reference.z_ref) - self.az_kd * state.velocity[2],
-        ])
+        desired_ay = -self.ay_kp * (state.position[1] - reference.y_ref) - self.ay_kd * state.velocity[1]
+        desired_az = -self.az_kp * (state.position[2] - reference.z_ref) - self.az_kd * state.velocity[2]
+        if self.shared_limits is not None:
+            desired_ay, desired_az = self.shared_limits.apply(
+                desired_ay, desired_az, self._previous_shared_ay, self._previous_shared_az
+            )
+            self._previous_shared_ay = desired_ay
+            self._previous_shared_az = desired_az
+        acceleration = np.array([float(ax_limited), desired_ay, desired_az])
         return self.total_mass * (acceleration + np.array([0.0, 0.0, 9.81]))
 
     def compute(self, state: ControlState, reference: ReferenceState, ax_limited: float) -> dict[str, np.ndarray | float]:
