@@ -1,0 +1,33 @@
+{
+  "interface_name": "V3AccelerationCommand",
+  "command_shape": [
+    3
+  ],
+  "components": [
+    "ax",
+    "ay",
+    "az"
+  ],
+  "units": "m/s^2",
+  "frame": "world",
+  "command_return_contract": "controller.command(...) -> finite [ax, ay, az]",
+  "amplitude_limits_m_s2": {
+    "ax": 2.0,
+    "ay": 2.0,
+    "az": 2.0
+  },
+  "slew_limit_m_s2_per_outer_update": {
+    "ax": 0.25,
+    "ay": 0.25,
+    "az": 0.25
+  },
+  "outer_period_s": 0.05,
+  "v1_v2_api_unchanged": true,
+  "controllers_required": [
+    "3D Task PID",
+    "3D Full-State LQR",
+    "3D Task-Weighted LQR",
+    "Self-Advanced",
+    "Paper-Advanced"
+  ]
+}

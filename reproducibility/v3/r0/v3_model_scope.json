@@ -1,0 +1,13 @@
+{
+  "plant": "frozen MuJoCo five-link model",
+  "passive_joint_count": 5,
+  "passive_joint_axis": [
+    0,
+    1,
+    0
+  ],
+  "internal_swing_scope": "primarily x-z plane due to y-axis hinges",
+  "translation_task_scope": "3D cutter-tip position remains a valid task because UAV translational command is 3D",
+  "forbidden_claim": "fully spatial universal-joint cable model",
+  "performance_experiment": false
+}

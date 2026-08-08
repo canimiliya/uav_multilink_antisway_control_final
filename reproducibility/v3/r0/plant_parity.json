@@ -1,0 +1,27 @@
+{
+  "plant_model_unchanged": true,
+  "model_path": "reproducibility/frozen/model/model_5link_controlled.xml",
+  "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "expected_model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "mujoco_timestep_s": 0.001,
+  "five_passive_hinges": true,
+  "hinge_axes": [
+    "0 1 0",
+    "0 1 0",
+    "0 1 0",
+    "0 1 0",
+    "0 1 0"
+  ],
+  "all_hinges_are_y_axis": true,
+  "plant_fields_frozen": [
+    "airframe mass/inertia",
+    "5-link geometry",
+    "cutter mass/geometry",
+    "hinge axis",
+    "wind physics",
+    "MuJoCo timestep",
+    "actuator limits",
+    "aerodynamic proxy",
+    "inner geometric attitude physics"
+  ]
+}

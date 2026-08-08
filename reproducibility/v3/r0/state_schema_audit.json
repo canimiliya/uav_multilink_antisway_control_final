@@ -1,0 +1,37 @@
+{
+  "state_dimension": 20,
+  "yaw_included": false,
+  "state_names": [
+    "ex",
+    "evx",
+    "ey",
+    "evy",
+    "ez",
+    "evz",
+    "roll",
+    "roll_rate",
+    "pitch",
+    "pitch_rate",
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5",
+    "qdot1",
+    "qdot2",
+    "qdot3",
+    "qdot4",
+    "qdot5"
+  ],
+  "yaw_decoupling_audit": {
+    "retained_dimension": 20,
+    "yaw_included": false,
+    "yaw_to_non_yaw_norm": 0.0,
+    "yaw_rate_to_non_yaw_norm": 0.0,
+    "non_yaw_to_yaw_norm": 0.0,
+    "non_yaw_to_yaw_rate_norm": 1.2398972080161376e-59,
+    "decoupling_tolerance": 1e-08,
+    "pass": true
+  },
+  "decision": "retain 20D because yaw/yaw-rate coupling is below the frozen audit tolerance"
+}

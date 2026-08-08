@@ -1,0 +1,28 @@
+{
+  "primary_comparison": "paired comparison against PRIMARY_TRADITIONAL selected in V3-R1",
+  "report_all_traditional": true,
+  "traditional_methods": [
+    "3D Task PID",
+    "3D Full-State LQR",
+    "3D Task-Weighted LQR"
+  ],
+  "advanced_methods": [
+    "Self-Advanced",
+    "Paper-Advanced"
+  ],
+  "common_inner_loop": {
+    "name": "frozen_udaan_geometric_attitude_inner_loop",
+    "force_mapping": "F_des = m * (a_des + g * e_z)",
+    "outer_period_s": 0.05,
+    "shared_across": [
+      "3D Task PID",
+      "3D Full-State LQR",
+      "3D Task-Weighted LQR",
+      "Self-Advanced",
+      "Paper-Advanced"
+    ],
+    "per_method_gain_overrides": false,
+    "plant_safety_limits_inherited": true
+  },
+  "selection_and_tuning_split": "development only; holdout remains forbidden"
+}

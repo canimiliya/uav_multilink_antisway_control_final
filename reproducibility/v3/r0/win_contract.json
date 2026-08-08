@@ -1,0 +1,18 @@
+{
+  "overall_win": [
+    "safety no worse than best traditional",
+    "success no lower than best traditional",
+    "3D position RMSE improves >=5%",
+    "acquisition degradation <=5% versus best traditional",
+    "ramp peak or steady improves >=5%",
+    "acquisition or ramp has an additional >=5% improvement",
+    "paired bootstrap 95% CI supports primary improvement >0"
+  ],
+  "STRICT_ALL_METRIC_WIN": [
+    "position improves >=5%",
+    "acquisition improves >=5%",
+    "ramp improves >=5%",
+    "success and safety no worse"
+  ],
+  "claim_separation_required": true
+}

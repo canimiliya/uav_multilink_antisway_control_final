@@ -1,0 +1,23 @@
+{
+  "method": "mirrored central finite difference of one 50 ms MuJoCo transition",
+  "includes": [
+    "frozen plant",
+    "shared Udaan geometric inner loop",
+    "constant outer acceleration command"
+  ],
+  "input": [
+    "ax",
+    "ay",
+    "az"
+  ],
+  "dt_s": 0.05,
+  "hard_checks": [
+    "finite",
+    "B input rank 3",
+    "stabilizability of |lambda|>=1 modes",
+    "epsilon sensitivity",
+    "positive/negative symmetry",
+    "outer-step prediction parity"
+  ],
+  "full_state_controllability_rank_hard_gate": false
+}

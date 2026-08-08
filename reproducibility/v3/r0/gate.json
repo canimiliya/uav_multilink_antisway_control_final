@@ -1,0 +1,22 @@
+{
+  "source_tag": "v2-research-final-2026-08-09",
+  "source_commit": "040327551ccc4cb49ed0a4f2c15bffae0bf061f7",
+  "branch": "research-v3",
+  "v2_modified": false,
+  "main_modified": false,
+  "v1_modified": false,
+  "plant_model_unchanged": true,
+  "full_3d_controller_interface": true,
+  "acceleration_input_dimension": 3,
+  "linear_model_input_rank": 3,
+  "outer_model_stabilizable": true,
+  "tip_position_task_rank": 3,
+  "development_target_count": 18,
+  "v2_holdout_reused": false,
+  "v3_holdout_new": true,
+  "traditional_started": false,
+  "advanced_self_started": false,
+  "advanced_paper_selected": false,
+  "performance_executed": false,
+  "result": "V3_FULL_3D_RESEARCH_CONTRACT_FROZEN"
+}

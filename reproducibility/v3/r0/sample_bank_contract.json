@@ -1,0 +1,173 @@
+{
+  "development_target_count": 18,
+  "axis_aligned_count": 6,
+  "face_diagonal_count": 12,
+  "holdout_direction_count": 12,
+  "v3_holdout_direction_overlap_with_v2": false,
+  "development_targets": [
+    {
+      "target_id": "axis_00",
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "radius_m": 0.15
+    },
+    {
+      "target_id": "axis_01",
+      "direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "radius_m": 0.15
+    },
+    {
+      "target_id": "axis_02",
+      "direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "radius_m": 0.15
+    },
+    {
+      "target_id": "axis_03",
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "radius_m": 0.15
+    },
+    {
+      "target_id": "axis_04",
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_m": 0.15
+    },
+    {
+      "target_id": "axis_05",
+      "direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "radius_m": 0.15
+    },
+    {
+      "target_id": "face_diagonal_00",
+      "direction": [
+        0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_01",
+      "direction": [
+        -0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_02",
+      "direction": [
+        0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_03",
+      "direction": [
+        -0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_04",
+      "direction": [
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_05",
+      "direction": [
+        -0.7071067811865475,
+        0.0,
+        -0.7071067811865475
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_06",
+      "direction": [
+        0.7071067811865475,
+        0.0,
+        -0.7071067811865475
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_07",
+      "direction": [
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_08",
+      "direction": [
+        0.0,
+        0.7071067811865475,
+        0.7071067811865475
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_09",
+      "direction": [
+        0.0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_10",
+      "direction": [
+        0.0,
+        0.7071067811865475,
+        -0.7071067811865475
+      ],
+      "radius_m": 0.2
+    },
+    {
+      "target_id": "face_diagonal_11",
+      "direction": [
+        0.0,
+        -0.7071067811865475,
+        0.7071067811865475
+      ],
+      "radius_m": 0.2
+    }
+  ],
+  "holdout_direction_sha256": "7be79fa030f19159bf66bf447a3ec10c23c0a2231a0f3377cf6cf3fe899abddd",
+  "V2_holdout_archival_only": true
+}

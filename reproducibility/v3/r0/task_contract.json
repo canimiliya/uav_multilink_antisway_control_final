@@ -1,0 +1,15 @@
+{
+  "tasks": [
+    "CALM_3D_SETPOINT",
+    "WIND_3D_SETPOINT",
+    "RAMP_WIND_EQUILIBRIUM_HOLD"
+  ],
+  "terminal_gate": {
+    "position_m": 0.05,
+    "tip_speed_m_s": 0.1,
+    "orientation_deg": 5.0,
+    "angular_speed_rad_s": 0.1,
+    "continuous_hold_s": 1.0
+  },
+  "v2_task_meaning_preserved": true
+}
