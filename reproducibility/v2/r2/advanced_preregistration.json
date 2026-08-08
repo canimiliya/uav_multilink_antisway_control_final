@@ -1,0 +1,20 @@
+{
+  "task": "V2-R2-ADVANCED-METHOD-SELECTION-AND-PREREGISTRATION-R1",
+  "status": "PREREGISTERED_BEFORE_ADVANCED_PERFORMANCE",
+  "start_head": "9a0e001cbe45895138008fc5b4ee137ec3eb5f6d",
+  "primary_traditional": {"method": "PID", "candidate_id": "pid_005"},
+  "advanced_self": "OF-TSRMPC",
+  "advanced_paper": "LV2026-CASCADE-ADAPTED",
+  "development_targets_reference_only": {
+    "safety_rate_min": 1.0,
+    "success_rate_min": 0.719298,
+    "position_rmse_3d_m_max": 0.108004,
+    "common_success_acquisition_s_max": 2.185,
+    "ramp_peak_m_max": 0.123784,
+    "ramp_steady_m_max": 0.174534,
+    "ramp_condition": "peak OR steady"
+  },
+  "final_decision": "Only frozen Holdout paired statistics decide final PASS; development targets do not constitute final success.",
+  "paired_bootstrap_confidence": 0.95,
+  "performance_execution": {"development": false, "random": false, "baseline_comparison": false, "holdout": false}
+}

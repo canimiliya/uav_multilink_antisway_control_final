@@ -1,0 +1,21 @@
+{
+  "task": "V2-R2-ADVANCED-METHOD-SELECTION-AND-PREREGISTRATION-R1",
+  "start_head": "9a0e001cbe45895138008fc5b4ee137ec3eb5f6d",
+  "branch": "research-v2",
+  "traditional_baselines_modified": false,
+  "sample_bank_modified": false,
+  "holdout_modified": false,
+  "advanced_win_contract_modified": false,
+  "paper_candidates_reviewed": true,
+  "paper_method_selected": true,
+  "paper_primary_source_complete": true,
+  "paper_adaptation_preserves_core_method": true,
+  "self_method": "OF-TSRMPC",
+  "self_output_disturbance_not_matched_wind": true,
+  "self_parameter_grid_size": 36,
+  "self_model_audit": "PASS_WITH_DOCUMENTED_PARTIAL_FULL_STATE_CONTROLLABILITY",
+  "shared_yz_unchanged": true,
+  "advanced_performance_executed": false,
+  "holdout_executed": false,
+  "result": "V2_ADVANCED_METHODS_PREREGISTERED"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN",
+  "sequence": [
+    {"stage": "V2-R3", "scope": "Advanced-Self development only", "method": "OF-TSRMPC", "holdout": false},
+    {"stage": "V2-R4", "scope": "Advanced-Paper development only", "method": "LV2026-CASCADE-ADAPTED", "holdout": false},
+    {"stage": "V2-R5", "scope": "single final Holdout evaluation after both methods are frozen", "method": "OF-TSRMPC and LV2026-CASCADE-ADAPTED", "holdout": true}
+  ],
+  "cross_method_retuning_forbidden": true,
+  "self_may_not_see_paper_results": true,
+  "paper_may_not_see_self_results": true,
+  "holdout_unseen_and_forbidden_until_v2_r5": true
+}

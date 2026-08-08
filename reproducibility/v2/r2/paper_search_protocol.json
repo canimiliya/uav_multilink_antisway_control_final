@@ -1,0 +1,27 @@
+{
+  "task": "V2-R2-ADVANCED-METHOD-SELECTION-AND-PREREGISTRATION-R1",
+  "date": "2026-08-08",
+  "scope": "2024-2026 UAV slung/suspended-load control methods",
+  "source_policy": {
+    "allowed": ["paper full text", "arXiv", "IEEE/publisher page", "author project page"],
+    "forbidden_as_formal_sources": ["blogs", "知乎", "secondary summaries"],
+    "selection_requires_primary_source_review": true
+  },
+  "queries": [
+    "UAV slung load control cascade acceleration suspension point 2026",
+    "UAV suspended payload MPC stability safety 2025",
+    "quadrotor slung load control 2024 prescribed performance",
+    "multi-body or multi-quadrotor suspended load control 2024 2025"
+  ],
+  "sources_reviewed": [
+    {"source": "arXiv", "url": "https://arxiv.org/html/2601.03386", "role": "primary full-text source for selected Lv-2026 paper"},
+    {"source": "arXiv", "url": "https://arxiv.org/html/2504.08841", "role": "primary source for ES-HPC-MPC"},
+    {"source": "arXiv", "url": "https://arxiv.org/abs/2603.08860", "role": "primary source for SEP-NMPC"},
+    {"source": "Elsevier publisher record", "url": "https://doi.org/10.1016/j.automatica.2024.111516", "role": "primary bibliographic/abstract source for unknown-load-mass paper"},
+    {"source": "MDPI publisher record", "url": "https://doi.org/10.3390/act14070335", "role": "primary publisher source for composite perturbation-rejection paper"},
+    {"source": "University of Twente author/institution page", "url": "https://research.utwente.nl/en/publications/agile-and-cooperative-aerial-manipulation-of-a-cable-suspended-lo/", "role": "author/institution source for Science Robotics candidate"}
+  ],
+  "formal_review_completed": true,
+  "performance_executed": false,
+  "holdout_executed": false
+}

@@ -1,0 +1,29 @@
+{
+  "method": "LV2026-CASCADE-ADAPTED",
+  "claim_boundary": {
+    "exact_reproduction": false,
+    "original_controller_on_five_link_plant": false,
+    "claim": "causal five-link adaptation preserving the paper's suspension-point-acceleration swing-regulation idea"
+  },
+  "equivalent_swing_definition": {
+    "suspension_point": "causal MuJoCo position of the upper suspension point",
+    "cutter_com": "causal MuJoCo position of cutter body center of mass",
+    "r_eq": "p_cutterCOM - p_suspension",
+    "angles": ["alpha_eq", "beta_eq"],
+    "rates": "causal time derivative from MuJoCo state/Jacobian, never future truth"
+  },
+  "preserved_core": [
+    "suspension-point acceleration is the virtual input used to regulate equivalent load swing",
+    "cascade separation between swing regulation and attitude/inner actuation",
+    "causal state-only implementation",
+    "paper-inspired local stability reasoning is retained as an adaptation rationale, not claimed as a proof for the five-link plant"
+  ],
+  "adaptation_limits": [
+    "only controller-specific x channel may be changed",
+    "R1R1 shared Y/Z task PD remains unchanged",
+    "same five-link MuJoCo plant, actuators, target, wind, terminal and safety gates",
+    "no extra camera, tension, slack-mode, obstacle, or payload sensor interface",
+    "no future wind or future target"
+  ],
+  "fairness_status": "PASS_WITH_EXPLICIT_ADAPTATION_BOUNDARY"
+}

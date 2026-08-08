@@ -1,0 +1,29 @@
+{
+  "method": "OF-TSRMPC",
+  "audit_status": "PASS_WITH_DOCUMENTED_PARTIAL_FULL_STATE_CONTROLLABILITY",
+  "model_files": {
+    "A": {"path": "reproducibility/frozen/linear_model/A.npy", "shape": [16, 16], "sha256": "BB8EC9E5671381BF083986A979620E79E165C3B1766E23C791C177F77D3950FE"},
+    "B": {"path": "reproducibility/frozen/linear_model/B.npy", "shape": [16, 1], "sha256": "7C96ED06C0E6812CB32C1967DBD8BD0DFD6B9568102026CEF41413F9BA83C4D5"},
+    "C_tip": {"path": "reproducibility/frozen/linear_model/C_tip.npy", "shape": [1, 16], "sha256": "E99FB4613411F4A8C129B5CB3F2DB0C51BD4F1C658A59EC3D3D12EA6DCC89D63"},
+    "P_frozen_longitudinal": {"path": "reproducibility/frozen/linear_model/P.npy", "shape": [16, 16], "sha256": "2E0FFD080ED14DFD61225E4A2AA425FFA1AB77BDC4C931638ACE8FB3418ED9D8"}
+  },
+  "checks": {
+    "all_finite": true,
+    "matrix_dimensions": true,
+    "full_state_controllability_rank": 13,
+    "full_state_dimension": 16,
+    "task_output_reachability_rank": 1,
+    "task_output_reachable": true,
+    "task_lqr_candidate": "task_lqr_001",
+    "task_lqr_closed_loop_spectral_radius": 0.9745724207437414,
+    "nominal_backbone_asymptotically_stable": true,
+    "riccati_P_symmetric_positive_definite": true,
+    "task_lqr_riccati_P_min_eigenvalue": 0.4408547961309982,
+    "frozen_longitudinal_P_min_eigenvalue": 8.817095922619902,
+    "single_step_equation_contract": "x_next = A x + B u",
+    "matched_wind_disturbance_used": false,
+    "output_bias_model_used": true,
+    "qp_synthetic_smoke": "reserved_for_R3_implementation; not a performance experiment"
+  },
+  "acceptance_rationale": "The frozen plant is not fully controllable in all 16 coordinates, but the controller-relevant tip-x output is reachable and the frozen task-LQR backbone is asymptotically stable. The partial rank is recorded rather than hidden."
+}

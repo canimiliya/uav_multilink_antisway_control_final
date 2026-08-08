@@ -1,0 +1,29 @@
+{
+  "selection_status": "SELECTED",
+  "selected_paper": {
+    "title": "Modeling and Control for UAV with Off-center Slung Load",
+    "authors": ["Zongyang Lv", "Yanmei Jia", "Yongqing Liu", "Alan F. Lynch", "Qing Zhao", "Yuhu Wu"],
+    "year": 2026,
+    "publication_status": "arXiv preprint; primary full text reviewed",
+    "primary_source": "https://arxiv.org/html/2601.03386",
+    "original_plant": "single multirotor with off-center suspension point and slung load",
+    "original_method": "cascade control with suspension-point acceleration regulating swing angle, off-center attitude control, and load-velocity outer loop",
+    "adaptation_name": "LV2026-CASCADE-ADAPTED",
+    "exact_reproduction_claim": false,
+    "original_controller_on_five_link_plant_claim": false,
+    "adaptation_core_preserved": true,
+    "selection_reason": "The suspension-point-acceleration-to-swing-control idea and cascade separation remain meaningful on the frozen five-link plant without requiring slack cable, camera FoV, obstacle, or multi-vehicle interfaces.",
+    "full_text_audit": {
+      "dynamic_model_sections_reviewed": ["Euler-Lagrange model", "control-oriented equations", "suspension-point/load geometry"],
+      "controller_sections_reviewed": ["inner attitude", "middle swing angle", "decoupler", "outer load velocity"],
+      "stability_sections_reviewed": ["Theorems 1-3 and Lyapunov arguments", "local exponential stability conclusion"],
+      "evidence_sections_reviewed": ["simulation", "ground experiment", "real flight experiment"],
+      "key_formula_contract_complete": true
+    }
+  },
+  "rejected_primary_candidates": [
+    {"title": "ES-HPC-MPC", "reason": "hybrid slack/taut and camera FoV core mechanisms are absent from frozen plant"},
+    {"title": "SEP-NMPC", "reason": "point-mass/massless-cable and obstacle HOCBF core mechanisms do not map without breaking the method"}
+  ],
+  "candidate_matrix": "reproducibility/v2/r2/paper_candidate_matrix.csv"
+}

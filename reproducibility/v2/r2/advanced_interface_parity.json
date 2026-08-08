@@ -1,0 +1,17 @@
+{
+  "status": "FROZEN",
+  "same_for_traditional_self_and_paper": {
+    "plant": true,
+    "actuator_limits": true,
+    "terminal_target": true,
+    "wind_process": true,
+    "shared_yz_scaffold": true,
+    "terminal_acquisition_gate": true,
+    "safety_gate": true,
+    "sample_bank": true,
+    "holdout_protocol": true
+  },
+  "controller_specific_change": "x anti-sway channel only",
+  "paper_xyz_request": "If original paper requests complete XYZ acceleration, adapt only to x channel; do not change the common interface unless an explicitly symmetric contract is committed for all methods.",
+  "forbidden_new_interfaces": ["future wind truth", "future target", "camera FoV sensor", "obstacle map", "cable tension sensor", "slack/taut mode oracle"]
+}

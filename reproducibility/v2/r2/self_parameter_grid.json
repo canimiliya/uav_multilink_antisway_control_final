@@ -1,0 +1,17 @@
+{
+  "method": "OF-TSRMPC",
+  "status": "FROZEN_BEFORE_PERFORMANCE",
+  "parameters": {
+    "output_bias_update_gain_beta": [0.05, 0.15, 0.30],
+    "task_position_weight": [40, 80, 160],
+    "orientation_weight": [5, 20],
+    "residual_R": [0.5, 2.0],
+    "horizon_steps": [20]
+  },
+  "candidate_count": 36,
+  "formula": "3 x 3 x 2 x 2",
+  "maximum_candidate_count": 36,
+  "grid_expansion_forbidden": true,
+  "paper_specific_grid": false,
+  "performance_executed": false
+}

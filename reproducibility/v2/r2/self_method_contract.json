@@ -1,0 +1,36 @@
+{
+  "method": "OF-TSRMPC",
+  "full_name": "Offset-Free Task-Space Residual Model Predictive Control",
+  "chinese_name": "无静差任务空间残差模型预测控制",
+  "status": "PREREGISTERED_NOT_EXECUTED",
+  "competition_channel": "x anti-sway only",
+  "shared_yz": "R1R1 frozen shared cutter-tip task PD",
+  "state": {"dimension": 16, "source": "reproducibility/frozen/linear_model/A.npy and B.npy", "equation": "x[k+1] = A x[k] + B u[k]"},
+  "nominal_backbone": {"controller": "Task-LQR", "candidate_id": "task_lqr_001", "parameters": {"w_p": 20.0, "w_theta": 5.0, "R": 1.0}, "source": "reproducibility/v2/r1r1/task_lqr_freeze.json"},
+  "control_law": "a_x = u_ss_hat - K_task x + v_mpc",
+  "disturbance_model": {
+    "type": "output disturbance",
+    "forbidden_type": "scalar matched physical wind acceleration",
+    "equations": ["d[k+1] = d[k]", "y_task[k] = C_task x[k] + d[k]"],
+    "interpretation": "task-output steady offset or unmodelled equilibrium bias",
+    "causal_update": "d_hat[k] = (1-beta) d_hat[k-1] + beta (y_measured[k] - C_task x[k])"
+  },
+  "steady_state_target_optimizer": {
+    "equations": ["x_s = A x_s + B u_s", "minimize ||C_position x_s + d_hat||^2"],
+    "constraint": "|u_s| <= 2 m/s^2",
+    "external_target_modified": false,
+    "purpose": "find the internal UAV equilibrium that realizes the unchanged cutter target under estimated task-output bias"
+  },
+  "residual_mpc": {
+    "dt_s": 0.05,
+    "horizon_steps": 20,
+    "horizon_s": 1.0,
+    "optimized_variable": "v_0 ... v_H-1",
+    "around": "(x_s, u_s)",
+    "future_wind_truth": false,
+    "future_target_truth": false
+  },
+  "cost_terms": ["tip-x position output", "tip-x velocity", "cutter orientation", "cutter angular velocity", "residual acceleration", "acceleration rate"],
+  "terminal_cost": "Riccati P returned by the frozen task_lqr_001 solve with w_p=20, w_theta=5, R=1; the frozen longitudinal P.npy remains an independently recorded positive-definite fallback artifact",
+  "forbidden": ["matched-wind DOB", "future holdout-specific quantity", "changing R1R1 baseline artifacts"]
+}
