@@ -1,0 +1,8 @@
+{
+  "valid_scientific_evidence": false,
+  "reason": "The first Stage-1 process reached the external tool timeout before a complete 81-run artifact was written; only the CSV header exists.",
+  "stage1_expected_runs": 81,
+  "completed_runs_verified": false,
+  "not_used_for_selection": true,
+  "recovery": "rerun the frozen Stage-1 protocol with the same implementation and sample bank"
+}

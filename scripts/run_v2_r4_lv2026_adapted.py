@@ -38,6 +38,7 @@ from scripts.run_v2_r1_baselines import (
 OUT = ROOT / "reproducibility/v2/r4"
 R1R1 = ROOT / "reproducibility/v2/r1r1"
 START_HEAD = "86da5cbcb7ede23af4d5c6fd1a7742ee8c04b3a7"
+IMPLEMENTATION_FREEZE_HEAD = "de6d8fedd4769c3274b58ca332e0a3ec7a47c942"
 TASK = "V2-R4-LV2026-CASCADE-ADAPTED-DEVELOPMENT-AND-FREEZE-R1"
 R3R2_GATE_SHA256 = "b2fc460a943ef469ec7a127e48693ac2701e2c5b302a5ec7597f2866fb756179"
 
@@ -55,7 +56,7 @@ def git_head() -> str:
 
 
 def freeze_head_is_ancestor() -> bool:
-    return subprocess.run(["git", "merge-base", "--is-ancestor", START_HEAD, "HEAD"], cwd=ROOT).returncode == 0
+    return subprocess.run(["git", "merge-base", "--is-ancestor", IMPLEMENTATION_FREEZE_HEAD, "HEAD"], cwd=ROOT).returncode == 0
 
 
 def write_json(name: str, payload) -> None:
@@ -103,6 +104,7 @@ def write_contract_artifacts() -> None:
     })
     write_json("implementation_audit.json", {
         "implementation_freeze_required_before_performance": True,
+        "implementation_freeze_head": IMPLEMENTATION_FREEZE_HEAD,
         "actual_head_at_audit": git_head(),
         "unit_test": "tests/v2/test_r4_lv2026_implementation.py",
         "synthetic_only": True,
@@ -120,6 +122,7 @@ def write_contract_artifacts() -> None:
     write_json("development_protocol.json", {
         "task": TASK,
         "start_head": START_HEAD,
+        "implementation_freeze_head": IMPLEMENTATION_FREEZE_HEAD,
         "development_only": True,
         "stage1_samples_per_candidate": 9,
         "stage1_candidates": 9,
@@ -289,7 +292,7 @@ def _write_candidate_csv(name: str, summaries: list[dict]) -> None:
     with (OUT / name).open("w", encoding="utf-8", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n"); writer.writeheader()
         for summary in summaries:
-            writer.writerow({field: summary.get(field, summary["parameters"].get(field)) for field in fields for summary in [summary]})
+            writer.writerow({field: summary.get(field, summary["parameters"].get(field)) for field in fields})
 
 
 def main() -> int:
@@ -336,11 +339,11 @@ def main() -> int:
         write_json("safety_audit.json", {"stage2_all_samples_safe": all(summary["safe_sample_count"] == 57 for summary in stage2), "stage2_candidates": 3})
         result = "CLOSED_WITH_NO_DEVELOPMENT_WIN_LV2026_ADAPTED"
     else:
-        write_json("paper_freeze.json", {"candidate_id": selected["candidate_id"], **selected["parameters"], "implementation_freeze_head": START_HEAD, "development_only": True, "holdout_executed": False})
+        write_json("paper_freeze.json", {"candidate_id": selected["candidate_id"], **selected["parameters"], "implementation_freeze_head": IMPLEMENTATION_FREEZE_HEAD, "development_only": True, "holdout_executed": False})
         write_json("safety_audit.json", {"selected_candidate": selected["candidate_id"], "safe_sample_count": selected["safe_sample_count"], "sample_count": 57})
         result = "V2_LV2026_ADAPTED_FROZEN"
     gate = {
-        "task": TASK, "start_head": START_HEAD, "r3r2_closure_clarified": True, "r3r2_gate_sha256": R3R2_GATE_SHA256,
+        "task": TASK, "start_head": START_HEAD, "implementation_freeze_head": IMPLEMENTATION_FREEZE_HEAD, "r3r2_closure_clarified": True, "r3r2_gate_sha256": R3R2_GATE_SHA256,
         "self_route_closed": True, "paper_claim_exact_reproduction": False, "paper_core_preserved": True,
         "equivalent_swing_audit_pass": True, "paper_equation_mapping_pass": True, "outer_pid": "pid_005_frozen", "paper_grid_size": 9,
         "implementation_frozen_before_performance": True, "stage1_runs": 81, "stage2_top_count": 3, "stage2_runs": 171,

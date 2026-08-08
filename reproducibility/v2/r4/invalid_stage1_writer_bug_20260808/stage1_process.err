@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "D:\Desktop\my_project\uav_multilink_antisway_control_final\scripts\run_v2_r4_lv2026_adapted.py", line 361, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\Desktop\my_project\uav_multilink_antisway_control_final\scripts\run_v2_r4_lv2026_adapted.py", line 315, in main
+    _write_candidate_csv("stage1_candidates.csv", stage1)
+  File "D:\Desktop\my_project\uav_multilink_antisway_control_final\scripts\run_v2_r4_lv2026_adapted.py", line 292, in _write_candidate_csv
+    writer.writerow({field: summary.get(field, summary["parameters"].get(field)) for field in fields for summary in [summary]})
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\my_project\uav_multilink_antisway_control_final\scripts\run_v2_r4_lv2026_adapted.py", line 292, in <dictcomp>
+    writer.writerow({field: summary.get(field, summary["parameters"].get(field)) for field in fields for summary in [summary]})
+                                                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'summary' where it is not associated with a value
+ERROR conda.cli.main_run:execute(142): `conda run python scripts/run_v2_r4_lv2026_adapted.py --stage stage1` failed. (See above for error)
