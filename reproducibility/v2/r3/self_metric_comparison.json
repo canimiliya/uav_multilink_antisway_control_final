@@ -1,0 +1,31 @@
+{
+  "task": "V2-R3-OF-TSRMPC-DEVELOPMENT-AND-FREEZE-R1",
+  "start_head": "2aa1d72a58fdb2bac450d1106b1e044bc258e0ee",
+  "implementation_freeze_head": "3fbc718477383f48a9d8e99f63050b76471c7e58",
+  "stage1_candidates": 36,
+  "stage1_samples_per_candidate": 9,
+  "stage1_runs": 324,
+  "stage2_candidates": 6,
+  "stage2_samples_per_candidate": 57,
+  "stage2_runs": 342,
+  "solver_tolerance_unchanged": true,
+  "holdout_executed": false,
+  "advanced_paper_executed": false,
+  "selected_candidate": null,
+  "development_eligibility": false,
+  "final_scientific_pass": false,
+  "traditional_baseline_rerun": false,
+  "holdout_final_pass": false,
+  "thresholds": {
+    "safety_rate": 1.0,
+    "solver_success_rate": 1.0,
+    "task_success_rate_min": 0.719298,
+    "position_rmse_3d_max": 0.108004,
+    "acquisition_median_max_s": 2.185,
+    "ramp_peak_max": 0.123784,
+    "ramp_steady_max": 0.174534,
+    "solve_p95_max_ms_exclusive": 50.0,
+    "limiter_mismatch_max": 1e-06
+  },
+  "near_miss": "reproducibility/v2/r3/near_miss.json"
+}

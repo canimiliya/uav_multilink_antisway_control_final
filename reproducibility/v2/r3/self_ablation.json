@@ -1,0 +1,20 @@
+{
+  "task": "V2-R3-OF-TSRMPC-DEVELOPMENT-AND-FREEZE-R1",
+  "start_head": "2aa1d72a58fdb2bac450d1106b1e044bc258e0ee",
+  "implementation_freeze_head": "3fbc718477383f48a9d8e99f63050b76471c7e58",
+  "stage1_candidates": 36,
+  "stage1_samples_per_candidate": 9,
+  "stage1_runs": 324,
+  "stage2_candidates": 6,
+  "stage2_samples_per_candidate": 57,
+  "stage2_runs": 342,
+  "solver_tolerance_unchanged": true,
+  "holdout_executed": false,
+  "advanced_paper_executed": false,
+  "completed": false,
+  "reason": "no candidate crossed the development eligibility gate; ablation is permitted only after Self freeze",
+  "backbone": "not_run",
+  "rmpc_only": "not_run",
+  "offset_only": "not_run",
+  "full": "not_run"
+}

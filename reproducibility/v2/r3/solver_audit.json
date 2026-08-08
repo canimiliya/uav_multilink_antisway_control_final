@@ -1,0 +1,68 @@
+{
+  "task": "V2-R3-OF-TSRMPC-DEVELOPMENT-AND-FREEZE-R1",
+  "start_head": "2aa1d72a58fdb2bac450d1106b1e044bc258e0ee",
+  "implementation_freeze_head": "3fbc718477383f48a9d8e99f63050b76471c7e58",
+  "stage1_candidates": 36,
+  "stage1_samples_per_candidate": 9,
+  "stage1_runs": 324,
+  "stage2_candidates": 6,
+  "stage2_samples_per_candidate": 57,
+  "stage2_runs": 342,
+  "solver_tolerance_unchanged": true,
+  "holdout_executed": false,
+  "advanced_paper_executed": false,
+  "solver": {
+    "name": "OSQP",
+    "eps_abs": 1e-05,
+    "eps_rel": 1e-05,
+    "max_iter": 4000,
+    "warm_start": true,
+    "accepted_status": "solved",
+    "fallback": false
+  },
+  "top6": [
+    {
+      "candidate_id": "of_ts_rmpc_001",
+      "outer_update_count": 13737,
+      "solver_success_count": 13737,
+      "solver_success_rate": 1.0,
+      "total_solve_time_p95_ms": 1.1335
+    },
+    {
+      "candidate_id": "of_ts_rmpc_013",
+      "outer_update_count": 13737,
+      "solver_success_count": 13737,
+      "solver_success_rate": 1.0,
+      "total_solve_time_p95_ms": 1.1263
+    },
+    {
+      "candidate_id": "of_ts_rmpc_025",
+      "outer_update_count": 13737,
+      "solver_success_count": 13737,
+      "solver_success_rate": 1.0,
+      "total_solve_time_p95_ms": 1.3922
+    },
+    {
+      "candidate_id": "of_ts_rmpc_003",
+      "outer_update_count": 13737,
+      "solver_success_count": 13737,
+      "solver_success_rate": 1.0,
+      "total_solve_time_p95_ms": 1.9483
+    },
+    {
+      "candidate_id": "of_ts_rmpc_015",
+      "outer_update_count": 13737,
+      "solver_success_count": 13737,
+      "solver_success_rate": 1.0,
+      "total_solve_time_p95_ms": 1.8234
+    },
+    {
+      "candidate_id": "of_ts_rmpc_027",
+      "outer_update_count": 13737,
+      "solver_success_count": 13737,
+      "solver_success_rate": 1.0,
+      "total_solve_time_p95_ms": 1.8316
+    }
+  ],
+  "all_top6_solver_success_rate_100_percent": true
+}

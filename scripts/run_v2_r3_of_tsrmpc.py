@@ -24,7 +24,7 @@ from uav_sway.control.of_tsrmpc import OFTSRMPC, enumerate_grid
 from uav_sway.disturbances.aerodynamics import load_aerodynamic_config
 from uav_sway.disturbances.wind_applier import clear_and_apply_wind
 from uav_sway.evaluation.metrics import control_rate_proxy
-from uav_sway.evaluation.task_baseline_runner import (
+from scripts.run_v2_r1_baselines import (
     ROOT, SAFETY, DT_SIGNAL, DT_OUTER, DURATION, equilibrium_context,
     rpy, summarize_trace, target_reference, wind_series, read_json,
 )
@@ -93,6 +93,7 @@ def run_case(params: dict, sample: dict, raw_path: Path | None = None) -> dict:
     controller.reset()
     shared_yz = (0.0, 0.0)
     trace = {key: [] for key in ("time", "position_error_3d_m", "orientation_error_deg", "tip_speed_m_s", "cutter_angular_speed_rad_s", "ax_cmd", "ay_cmd", "az_cmd", "uav_z", "tip_x", "tip_y", "tip_z", "target_x", "target_y", "target_z", "wind_x", "thrust", "torque", "joint_angles", "roll", "pitch", "anchor_active", "rotor_commands", "d_raw", "d_hat", "x_s_norm", "u_s", "steady_state_residual", "v_mpc", "qp_status", "qp_iterations", "steady_solve_ms", "residual_solve_ms", "total_solve_ms", "limiter_mismatch")}
+    outer_statuses = []
     physics_dt = float(model.opt.timestep); signal_steps = int(round(DT_SIGNAL / physics_dt)); outer_steps = int(round(DT_OUTER / physics_dt)); physics_steps = int(round(DURATION / physics_dt))
     try:
         for step in range(physics_steps + 1):
@@ -107,6 +108,7 @@ def run_case(params: dict, sample: dict, raw_path: Path | None = None) -> dict:
                 from uav_sway.linearization.task_output import signed_cutter_planar_angle
                 measured_task = np.asarray([tip_position[0] - reference.x_ref - pose.tip_relative_position_m[0], tip_velocity[0] - reference.vx_ref, signed_cutter_planar_angle(axis), angular_velocity[1]], dtype=float)
                 controller.command(layout.extract(model, data, reference), measured_task, reference.ax_ref)
+                outer_statuses.append(controller.diagnostics.qp_status)
                 shared_yz = inner.shared_yz_command(reader.read(model, data), reference, tip_reader.read(model, data), tip_target)
             if step % signal_steps == 0:
                 state = reader.read(model, data)
@@ -125,7 +127,7 @@ def run_case(params: dict, sample: dict, raw_path: Path | None = None) -> dict:
         return _failure(sample, params, exc)
     trace = {key: np.asarray(value) for key, value in trace.items()}
     result = summarize_trace(trace, sample, None)
-    result.update({"controller": "of_tsrmpc", "candidate_id": params["candidate_id"], "solver_success": bool(np.all(trace["qp_status"] == "solved")), "solver_success_count": int(np.sum(trace["qp_status"] == "solved")), "outer_update_count": len(trace["qp_status"]), "total_solve_time_p95_ms": float(np.percentile(trace["total_solve_ms"], 95)), "limiter_mismatch_max": float(np.max(trace["limiter_mismatch"])), "steady_state_residual_max": float(np.max(trace["steady_state_residual"])), "trace": trace})
+    result.update({"controller": "of_tsrmpc", "candidate_id": params["candidate_id"], "solver_success": bool(all(status == "solved" for status in outer_statuses)), "solver_success_count": int(sum(status == "solved" for status in outer_statuses)), "outer_update_count": len(outer_statuses), "total_solve_time_p95_ms": float(np.percentile(trace["total_solve_ms"], 95)), "limiter_mismatch_max": float(np.max(trace["limiter_mismatch"])), "steady_state_residual_max": float(np.max(trace["steady_state_residual"])), "trace": trace})
     if raw_path is not None: _write_raw(raw_path, trace, result); result["raw_csv"] = str(raw_path)
     result.pop("trace", None)
     return result
@@ -173,8 +175,7 @@ def main() -> int:
     for rank, selected in enumerate(top6, 1):
         params = selected["parameters"]; rows = []
         for sample in development:
-            output = tmp / params["candidate_id"] / f"{sample['sample_id']}.csv"
-            row = run_case(params, sample, output); rows.append(row); per_sample.append({"candidate_id": params["candidate_id"], "stage1_rank": rank, **{k: row.get(k) for k in ("sample_id", "safe", "solver_success", "task_success", "acquisition_time_s", "position_rmse_3d_m", "orientation_rmse_deg", "ramp_peak_position_error_m", "ramp_steady_state_position_error_m", "total_acceleration_effort", "total_solve_time_p95_ms", "limiter_mismatch_max")}})
+            row = run_case(params, sample, None); rows.append(row); per_sample.append({"candidate_id": params["candidate_id"], "stage1_rank": rank, **{k: row.get(k) for k in ("sample_id", "safe", "solver_success", "task_success", "acquisition_time_s", "position_rmse_3d_m", "orientation_rmse_deg", "ramp_peak_position_error_m", "ramp_steady_state_position_error_m", "total_acceleration_effort", "total_solve_time_p95_ms", "limiter_mismatch_max")}})
         stage2.append(aggregate(params, rows)); print(f"stage2 {params['candidate_id']} complete", flush=True)
     # Keep raw traces only for the eventual selected candidate; summaries for
     # every top-6 candidate remain available for the audit.
