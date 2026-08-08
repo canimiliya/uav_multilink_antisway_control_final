@@ -1,0 +1,24 @@
+{
+  "definition": "r_k = x_k - (A x_(k-1) + B a_(k-1) - c_ref_(k-1_to_k))",
+  "reference_shift": "c_ref_(k-1_to_k) = reference_vector(reference_k) - A reference_vector(reference_(k-1))",
+  "residual_name": "estimated additive dynamic residual",
+  "residual_dimension": 16,
+  "output_bias_model_used": false,
+  "matched_wind_model_used": false,
+  "update": "d_hat[k] = (1-beta) d_hat[k-1] + beta r_k",
+  "beta_grid": [
+    0.05,
+    0.15,
+    0.3
+  ],
+  "previous_action_contract": "a_(k-1) is the previous outer-step limiter-after physical ax",
+  "causality_pass": true,
+  "forbidden_labels": [
+    "measured wind",
+    "wind acceleration",
+    "matched disturbance"
+  ],
+  "deviation_dynamics": "xi[k+1] = (A - B K) xi[k] + B v[k] when d_hat is constant over the horizon",
+  "double_counting_forbidden": true,
+  "performance_executed": false
+}

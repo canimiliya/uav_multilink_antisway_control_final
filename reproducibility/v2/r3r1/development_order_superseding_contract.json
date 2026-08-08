@@ -1,0 +1,14 @@
+{
+  "supersedes_future_order_only": true,
+  "does_not_rewrite_r2": true,
+  "order": [
+    "R3: OF-TSRMPC negative closure",
+    "R3R1: DR-TSRMPC preregistration",
+    "R3R2: DR-TSRMPC development",
+    "if DR development wins: freeze Self",
+    "R4: LV2026-CASCADE-ADAPTED",
+    "R5: single Holdout"
+  ],
+  "if_dr_development_fails": "close Self structural reset on current V2 benchmark; do not start a third consecutive Self-method fishing cycle",
+  "current_task_performance_executed": false
+}

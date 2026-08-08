@@ -1,0 +1,53 @@
+{
+  "method": "DR-TSRMPC",
+  "full_name": "Dynamic-Residual Task-Space Residual Model Predictive Control",
+  "chinese_name": "\u52a8\u529b\u5b66\u6b8b\u5dee\u4efb\u52a1\u7a7a\u95f4\u6b8b\u5dee\u6a21\u578b\u9884\u6d4b\u63a7\u5236",
+  "method_class": "NEW_STRUCTURAL_SELF_METHOD",
+  "x_channel_only": true,
+  "frozen_plant": {
+    "A_shape": [
+      16,
+      16
+    ],
+    "B_shape": [
+      16,
+      1
+    ],
+    "C_task_shape": [
+      4,
+      16
+    ],
+    "K": "task_lqr_001",
+    "P": "task_lqr_001_Riccati_P"
+  },
+  "shared_yz": "R1R1_frozen",
+  "dynamic_residual_dimension": 16,
+  "output_bias_model_used": false,
+  "matched_wind_model_used": false,
+  "causal_inputs": [
+    "x[k]",
+    "x[k-1]",
+    "previous_actual_limited_physical_ax",
+    "past_or_current_reference"
+  ],
+  "future_information_forbidden": [
+    "x[k+1]",
+    "future_wind",
+    "future_target",
+    "holdout_information"
+  ],
+  "horizon": 20,
+  "dt_s": 0.05,
+  "physical_constraints": {
+    "ax_abs_max_m_s2": 2.0,
+    "ax_slew_max_m_s2_per_update": 0.25
+  },
+  "solver": {
+    "name": "OSQP",
+    "eps_abs": 1e-05,
+    "eps_rel": 1e-05,
+    "max_iter": 4000,
+    "warm_start": true
+  },
+  "performance_executed": false
+}

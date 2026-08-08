@@ -1,0 +1,61 @@
+{
+  "A_shape": [
+    16,
+    16
+  ],
+  "B_shape": [
+    16,
+    1
+  ],
+  "C_task_shape": [
+    4,
+    16
+  ],
+  "K_shape": [
+    1,
+    16
+  ],
+  "P_shape": [
+    16,
+    16
+  ],
+  "A_sha256": "bb8ec9e5671381bf083986a979620e79e165c3b1766e23c791c177f77d3950fe",
+  "B_sha256": "7c96ed06c0e6812cb32c1967dbd8bd0dfd6b9568102026cef41413f9ba83c4d5",
+  "C_task_sha256": "6e9866ba2b07504f67c1f58ea47811ef4bdf5f84de0724edcb164aad5060cee3",
+  "K_sha256": "96bc8aae53e27c3055df57216b419c6b63fd659988069b7d9156225451dee2d0",
+  "P_sha256": "c47a51116b1172b7e6e99bc77a1f22d3a56b51684122a7c7eceb872d4af1bdcb",
+  "shared_yz": {
+    "ay_kp": 0.1,
+    "ay_kd": 0.5,
+    "az_kp": 6.0,
+    "az_kd": 3.5
+  },
+  "physical_limits": {
+    "ax_abs_max_m_s2": 2.0,
+    "axis_slew_max_m_s2_per_update": 0.25
+  },
+  "traditional_modified": false,
+  "r1r1_diff_from_start": [],
+  "r2_diff_from_start": [],
+  "sample_bank_diff_from_start": [],
+  "win_contract_diff_from_start": [],
+  "steady_state_control_parity": {
+    "zero_residual": {
+      "u_s": 0.0,
+      "a_x_at_xs_v0": 0.0,
+      "absolute_error": 0.0
+    },
+    "small_x_direction_residual": {
+      "u_s": 1.7667892603480495e-16,
+      "a_x_at_xs_v0": 1.7667892603480495e-16,
+      "absolute_error": 0.0
+    },
+    "multi_state_residual": {
+      "u_s": 0.0544780423460093,
+      "a_x_at_xs_v0": 0.0544780423460093,
+      "absolute_error": 0.0
+    }
+  },
+  "steady_state_control_parity_pass": true,
+  "pass": true
+}

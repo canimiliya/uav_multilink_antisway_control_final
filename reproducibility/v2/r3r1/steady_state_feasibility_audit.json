@@ -1,0 +1,120 @@
+{
+  "problem": "min ||C_task x_s||_Wss^2 + 1e-8(||x_s||^2 + u_s^2) subject to (I-A)x_s - B u_s = d_hat and |u_s| <= 2",
+  "Wss": [
+    1.0,
+    0.25,
+    0.25,
+    0.0625
+  ],
+  "synthetic_cases": {
+    "zero_residual": {
+      "finite": true,
+      "u_s": 0.0,
+      "x_s_norm": 0.0,
+      "equality_residual_norm": 0.0,
+      "task_steady_residual_norm": 0.0,
+      "objective": 0.0,
+      "bounded_solution": false,
+      "u_limit": 2.0,
+      "x_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "small_x_direction_residual": {
+      "finite": true,
+      "u_s": 1.7667892603480495e-16,
+      "x_s_norm": 0.002000000000000004,
+      "equality_residual_norm": 1.6977573254561168e-18,
+      "task_steady_residual_norm": 0.001999999999999958,
+      "objective": 1.000000039999958e-06,
+      "bounded_solution": false,
+      "u_limit": 2.0,
+      "x_s": [
+        8.276364238483076e-18,
+        -0.002000000000000004,
+        -1.1091644981388847e-17,
+        6.900300965247954e-18,
+        -2.983685172601022e-19,
+        -7.014440174729983e-18,
+        2.039836566401755e-17,
+        -2.7048435755887427e-17,
+        1.1148928194920548e-17,
+        -7.605546932329262e-18,
+        1.7017322495609687e-18,
+        -1.1849071138871336e-17,
+        8.527963529073921e-18,
+        -1.3495160304646617e-17,
+        7.170713694173491e-18,
+        1.5394644559463872e-19
+      ]
+    },
+    "multi_state_residual": {
+      "finite": true,
+      "u_s": 0.0544780423460093,
+      "x_s_norm": 0.010958280653866372,
+      "equality_residual_norm": 9.231568484187721e-18,
+      "task_steady_residual_norm": 0.006282115477299711,
+      "objective": 8.30928885893268e-06,
+      "bounded_solution": false,
+      "u_limit": 2.0,
+      "x_s": [
+        0.007055546349365779,
+        -0.002097140978818208,
+        4.4777549723651333e-17,
+        -1.214306433183765e-17,
+        0.000703178003151724,
+        -1.3678282536175201e-05,
+        0.005830570586890529,
+        -0.004848225757536297,
+        4.625266095318835e-05,
+        3.474777250040443e-05,
+        3.698306438349893e-05,
+        -0.0028111518918774304,
+        -4.5061505752816926e-05,
+        -1.8559744956788822e-05,
+        3.3094368813633186e-06,
+        3.489001490812104e-06
+      ]
+    }
+  },
+  "equality_tolerance": 1e-08,
+  "all_finite": true,
+  "max_equality_residual_norm": 9.231568484187721e-18,
+  "pass": true,
+  "control_law": "a_x = u_s - K(x - x_s) + v_mpc",
+  "control_parity_rows": {
+    "zero_residual": {
+      "u_s": 0.0,
+      "a_x_at_xs_v0": 0.0,
+      "absolute_error": 0.0
+    },
+    "small_x_direction_residual": {
+      "u_s": 1.7667892603480495e-16,
+      "a_x_at_xs_v0": 1.7667892603480495e-16,
+      "absolute_error": 0.0
+    },
+    "multi_state_residual": {
+      "u_s": 0.0544780423460093,
+      "a_x_at_xs_v0": 0.0544780423460093,
+      "absolute_error": 0.0
+    }
+  },
+  "control_parity_tolerance": 1e-10,
+  "control_parity_pass": true,
+  "performance_executed": false
+}

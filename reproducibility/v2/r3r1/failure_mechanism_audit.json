@@ -1,0 +1,202 @@
+{
+  "task": "V2-R3R1-SELF-STRUCTURAL-RESET-DR-TSRMPC-PREREGISTRATION-R1",
+  "of_tsrmpc_status": "CLOSED_WITH_NO_DEVELOPMENT_WIN",
+  "source_evidence": [
+    "reproducibility/v2/r1r1/development_baseline_summary.json",
+    "reproducibility/v2/r3/near_miss.json",
+    "reproducibility/v2/r3/development_summary.json",
+    "src/uav_sway/control/of_tsrmpc.py"
+  ],
+  "selected_of_candidate": {
+    "candidate_id": "of_ts_rmpc_001",
+    "parameters": {
+      "candidate_id": "of_ts_rmpc_001",
+      "beta": 0.05,
+      "w_p": 40.0,
+      "w_theta": 5.0,
+      "R": 2.0,
+      "H": 20
+    },
+    "sample_count": 57,
+    "safe_sample_count": 57,
+    "solver_success_count": 13737,
+    "solver_success_rate": 1.0,
+    "task_success_count": 34,
+    "task_success_rate": 0.5964912280701754,
+    "acquisition_median_s": 2.245,
+    "position_rmse_3d_m": 0.126606458138574,
+    "orientation_rmse_deg": 0.29470919247070443,
+    "ramp_peak_position_error_m": 0.17604842601064835,
+    "ramp_steady_state_position_error_m": 0.2688307728585782,
+    "total_acceleration_effort": 0.22099330837484898,
+    "x_control_effort": 0.15956441246506112,
+    "total_solve_time_p95_ms": 1.1335,
+    "limiter_mismatch_max": 2.6978555356382827e-06,
+    "development_eligible": false
+  },
+  "task_lqr_baseline": {
+    "candidate_id": "task_lqr_001",
+    "sample_count": 57,
+    "safe_sample_count": 57,
+    "task_success_count": 34,
+    "safety_rate": 1.0,
+    "task_success_rate": 0.5964912280701754,
+    "acquisition_median_s": 2.3,
+    "position_rmse_3d_m": 0.12729634690251088,
+    "orientation_rmse_deg": 0.2971479896297955,
+    "control_effort": 0.15276389534884272,
+    "x_control_effort": 0.15276389534884272,
+    "total_acceleration_effort": 0.2140877594052417,
+    "ramp_peak_position_error_m": 0.17797693631104378,
+    "ramp_steady_state_position_error_m": 0.27126018941136054,
+    "gain_norm": 47.47633487879517,
+    "stage2_rank": 1,
+    "parameters": {
+      "candidate_id": "task_lqr_001",
+      "w_p": 20.0,
+      "w_theta": 5.0,
+      "R": 1.0
+    }
+  },
+  "pid_baseline": {
+    "candidate_id": "pid_005",
+    "sample_count": 57,
+    "safe_sample_count": 57,
+    "task_success_count": 41,
+    "safety_rate": 1.0,
+    "task_success_rate": 0.7192982456140351,
+    "acquisition_median_s": 4.92,
+    "position_rmse_3d_m": 0.11368841879515172,
+    "orientation_rmse_deg": 0.5465643501418134,
+    "control_effort": 0.15744206464858926,
+    "x_control_effort": 0.15744206464858926,
+    "total_acceleration_effort": 0.22044970374216877,
+    "ramp_peak_position_error_m": 0.13029872078634205,
+    "ramp_steady_state_position_error_m": 0.18372019793484656,
+    "gain_norm": 4.080441152620633,
+    "stage2_rank": 1,
+    "parameters": {
+      "candidate_id": "pid_005",
+      "kp": 0.8,
+      "kd": 4.0,
+      "ki": 0.1
+    }
+  },
+  "of_vs_task_lqr": {
+    "success_delta_percentage_points": 0.0,
+    "acquisition_improvement_percent": 2.391304347826075,
+    "position_improvement_percent": 0.5419548798719516,
+    "orientation_improvement_percent": 0.820734867541747,
+    "ramp_peak_improvement_percent": 1.0835731529983403,
+    "ramp_steady_improvement_percent": 0.8956037957704795
+  },
+  "of_vs_pid": {
+    "success_gap_percentage_points": -12.28070175438597,
+    "position_degradation_percent": 11.362669549216363,
+    "ramp_peak_degradation_percent": 35.111400133639535,
+    "ramp_steady_degradation_percent": 46.32619378840139,
+    "acquisition_improvement_percent": 54.36991869918699
+  },
+  "beta_sensitivity": {
+    "source": "reproducibility/v2/r3/near_miss.json",
+    "top_candidate_count": 6,
+    "candidate_metrics": [
+      {
+        "candidate_id": "of_ts_rmpc_001",
+        "beta": 0.05,
+        "task_success_rate": 0.5964912280701754,
+        "acquisition_median_s": 2.245,
+        "position_rmse_3d_m": 0.126606458138574,
+        "ramp_peak_position_error_m": 0.17604842601064835,
+        "ramp_steady_state_position_error_m": 0.2688307728585782
+      },
+      {
+        "candidate_id": "of_ts_rmpc_013",
+        "beta": 0.15,
+        "task_success_rate": 0.5964912280701754,
+        "acquisition_median_s": 2.245,
+        "position_rmse_3d_m": 0.12660656550229354,
+        "ramp_peak_position_error_m": 0.1760487314891741,
+        "ramp_steady_state_position_error_m": 0.26883365967802453
+      },
+      {
+        "candidate_id": "of_ts_rmpc_025",
+        "beta": 0.3,
+        "task_success_rate": 0.5964912280701754,
+        "acquisition_median_s": 2.245,
+        "position_rmse_3d_m": 0.1266065929404738,
+        "ramp_peak_position_error_m": 0.17604888361529847,
+        "ramp_steady_state_position_error_m": 0.2688345494923344
+      },
+      {
+        "candidate_id": "of_ts_rmpc_003",
+        "beta": 0.05,
+        "task_success_rate": 0.5964912280701754,
+        "acquisition_median_s": 2.25,
+        "position_rmse_3d_m": 0.12707583401901887,
+        "ramp_peak_position_error_m": 0.17700432041359412,
+        "ramp_steady_state_position_error_m": 0.2705707980148074
+      },
+      {
+        "candidate_id": "of_ts_rmpc_015",
+        "beta": 0.15,
+        "task_success_rate": 0.5964912280701754,
+        "acquisition_median_s": 2.25,
+        "position_rmse_3d_m": 0.1270759421944972,
+        "ramp_peak_position_error_m": 0.17700462210770723,
+        "ramp_steady_state_position_error_m": 0.2705736888112999
+      },
+      {
+        "candidate_id": "of_ts_rmpc_027",
+        "beta": 0.3,
+        "task_success_rate": 0.5964912280701754,
+        "acquisition_median_s": 2.25,
+        "position_rmse_3d_m": 0.12707596942623917,
+        "ramp_peak_position_error_m": 0.17700477273735196,
+        "ramp_steady_state_position_error_m": 0.27057458327390804
+      }
+    ],
+    "core_metric_ranges": {
+      "task_success_rate": {
+        "min": 0.5964912280701754,
+        "max": 0.5964912280701754,
+        "range": 0.0
+      },
+      "acquisition_median_s": {
+        "min": 2.245,
+        "max": 2.25,
+        "range": 0.004999999999999893
+      },
+      "position_rmse_3d_m": {
+        "min": 0.126606458138574,
+        "max": 0.12707596942623917,
+        "range": 0.00046951128766517525
+      },
+      "ramp_peak_position_error_m": {
+        "min": 0.17604842601064835,
+        "max": 0.17700477273735196,
+        "range": 0.0009563467267036108
+      },
+      "ramp_steady_state_position_error_m": {
+        "min": 0.2688307728585782,
+        "max": 0.27057458327390804,
+        "range": 0.0017438104153298384
+      }
+    },
+    "max_relative_range": 0.0064866473312829845,
+    "descriptive_relative_range_tolerance": 0.01,
+    "success_rate_range_is_zero": true,
+    "conclusion": "core outcomes are effectively insensitive to beta across the frozen R3 top-six evidence",
+    "pass": true
+  },
+  "implementation_bug": false,
+  "structural_limitation": true,
+  "mechanism": {
+    "of_residual_definition": "d_raw = measured_tip_x - C_pos x",
+    "observed_quantity": "output-equation mismatch rather than an unmodelled state-dynamics residual",
+    "evidence": "beta changes 0.05, 0.15, 0.30 leave success identical and keep all core metric ranges below 1 percent relative range"
+  },
+  "performance_rerun": false,
+  "holdout_executed": false,
+  "artifact_alias_of": "of_tsrmpc_failure_mechanism.json"
+}

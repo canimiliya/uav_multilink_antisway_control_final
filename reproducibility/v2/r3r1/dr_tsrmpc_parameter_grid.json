@@ -1,0 +1,25 @@
+{
+  "beta": [
+    0.05,
+    0.15,
+    0.3
+  ],
+  "w_p": [
+    40.0,
+    80.0,
+    160.0
+  ],
+  "w_theta": [
+    5.0,
+    20.0
+  ],
+  "R": [
+    0.5,
+    2.0
+  ],
+  "H": 20,
+  "grid_size": 36,
+  "identical_to_r3": true,
+  "tuning_dimensions_added": 0,
+  "performance_executed": false
+}

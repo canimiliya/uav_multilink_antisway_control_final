@@ -1,0 +1,11 @@
+{
+  "closed_method": "OF-TSRMPC",
+  "closed_status": "CLOSED_WITH_NO_DEVELOPMENT_WIN",
+  "implementation_bug": false,
+  "structural_limitation": true,
+  "why_not_expand_of_grid": "beta sensitivity audit shows the frozen top candidates remain in the Task-LQR performance region; parameter expansion would be fishing rather than a structural correction",
+  "new_method": "DR-TSRMPC",
+  "structural_change": "move the estimated residual from output-equation mismatch to one-step state-dynamics prediction residual",
+  "third_self_method_fishing_forbidden": true,
+  "performance_executed": false
+}
