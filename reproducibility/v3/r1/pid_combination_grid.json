@@ -1,0 +1,53 @@
+{
+  "grid": [
+    {
+      "candidate_id": "pid_combo_000",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "candidate_id": "pid_combo_001",
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    {
+      "candidate_id": "pid_combo_002",
+      "x": 0,
+      "y": 1,
+      "z": 0
+    },
+    {
+      "candidate_id": "pid_combo_003",
+      "x": 0,
+      "y": 1,
+      "z": 1
+    },
+    {
+      "candidate_id": "pid_combo_004",
+      "x": 1,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "candidate_id": "pid_combo_005",
+      "x": 1,
+      "y": 0,
+      "z": 1
+    },
+    {
+      "candidate_id": "pid_combo_006",
+      "x": 1,
+      "y": 1,
+      "z": 0
+    },
+    {
+      "candidate_id": "pid_combo_007",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    }
+  ],
+  "grid_size": 8
+}

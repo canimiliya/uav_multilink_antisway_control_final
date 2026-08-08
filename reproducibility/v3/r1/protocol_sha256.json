@@ -1,0 +1,10 @@
+{
+  "files": {
+    "r1_protocol.json": "6448d6d6d0cbe2c26e1dc18856b1690cecdfef89c34dd16283cad08660724b91",
+    "development_evaluation_manifest.json": "7e26c8ee8fb96c3dd3dd6b50e12107dfebc7eed69f92e2909feec661653b90a0",
+    "pid_axis_grids.json": "22bf38ea854d2422212547962565814b52d0e55a290e95ec2edb4b3e97790365",
+    "pid_combination_grid.json": "552fa0c95ec644f63c2484b4769a6878cfbfefbd0a7e2c6e3c446b61c2e56114",
+    "full_lqr_grid.json": "a338211996997ab8dbd401c3f451adda3a3fb861969bd18a80250725b9a7e206",
+    "task_lqr_grid.json": "409718b7c2fa64f363cf80b1b3894d19ba9fcf280f4346414d8c1e34ea577dbd"
+  }
+}

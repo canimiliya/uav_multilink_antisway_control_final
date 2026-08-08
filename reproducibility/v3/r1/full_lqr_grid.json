@@ -1,0 +1,581 @@
+{
+  "grid": [
+    {
+      "candidate_id": "full_lqr_000",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_001",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_002",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_003",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_004",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_005",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_006",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_007",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_008",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_009",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_010",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_011",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_012",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_013",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_014",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_015",
+      "q_position": 20.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_016",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_017",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_018",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_019",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_020",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_021",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_022",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_023",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_024",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_025",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_026",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_027",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_028",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_029",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_030",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_031",
+      "q_position": 20.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_032",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_033",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_034",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_035",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_036",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_037",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_038",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_039",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_040",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_041",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_042",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_043",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_044",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_045",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_046",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_047",
+      "q_position": 80.0,
+      "q_velocity": 4.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_048",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_049",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_050",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_051",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_052",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_053",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_054",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_055",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 5.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_056",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_057",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_058",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_059",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 20.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_060",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_061",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 3.0,
+      "r": 2.0
+    },
+    {
+      "candidate_id": "full_lqr_062",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 0.5
+    },
+    {
+      "candidate_id": "full_lqr_063",
+      "q_position": 80.0,
+      "q_velocity": 12.0,
+      "q_attitude": 20.0,
+      "q_joint_angle": 80.0,
+      "q_joint_velocity": 12.0,
+      "r": 2.0
+    }
+  ],
+  "grid_size": 64
+}

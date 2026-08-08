@@ -1,0 +1,79 @@
+{
+  "task": "V3-R1-THREE-FULL-3D-TRADITIONAL-BASELINES-DEVELOPMENT-AND-FREEZE-R1",
+  "start_head": "f27a79d24689d2fd9d8444df58d3d7dae0d6ee64",
+  "protected_paths": [
+    "reproducibility/v2/**",
+    "reproducibility/v3/r0/**",
+    "main",
+    "v1.0.0",
+    "v2-research-final-2026-08-09"
+  ],
+  "controller_output": {
+    "frame": "world",
+    "components": [
+      "ax",
+      "ay",
+      "az"
+    ],
+    "amplitude_limit_m_s2": 2.0,
+    "slew_limit_m_s2_per_outer_update": 0.25,
+    "outer_period_s": 0.05
+  },
+  "common_inner_loop": "frozen Udaan geometric inner loop; no per-method gain override",
+  "target_mapping": "p_uav_ref = p_tip_star - r_tip_equilibrium; equilibrium geometry is read from the frozen model",
+  "pid": {
+    "controller": "3D Task PID",
+    "integral_absolute_limit": 1.0,
+    "anti_windup": "per-axis conditional",
+    "axis_screen_cases": [
+      "+axis calm",
+      "-axis calm",
+      "+axis wind 3.0",
+      "-axis wind 3.0"
+    ],
+    "axis_screen_runs": 72,
+    "combination_grid_size": 8
+  },
+  "full_state_lqr": {
+    "controller": "3D Full-State LQR",
+    "state_dimension": 20,
+    "input_dimension": 3,
+    "gain_shape": [
+      3,
+      20
+    ],
+    "grid_size": 64,
+    "stability_gate": "DARE finite, P positive definite, rho(A-BK)<1"
+  },
+  "task_weighted_lqr": {
+    "controller": "3D Task-Weighted LQR",
+    "grid_size": 27,
+    "task_metric_outputs": [
+      "C_pos",
+      "C_vel",
+      "C_dir",
+      "C_omega_perp"
+    ],
+    "stability_gate": "DARE finite, P positive definite, rho(A-BK)<1"
+  },
+  "stage1_core_case_count": 13,
+  "stage1_selection": [
+    "safety-valid count descending",
+    "task-success count descending",
+    "3D position RMSE ascending",
+    "acquisition median ascending",
+    "ramp steady error ascending",
+    "ramp peak error ascending",
+    "orientation RMSE ascending",
+    "total acceleration effort ascending",
+    "candidate ID ascending"
+  ],
+  "stage2": {
+    "top_k": 3,
+    "evaluation_samples": 75,
+    "raw_trace_policy": "aggregate plus diagnostics; retained selected representative cases only"
+  },
+  "holdout_execution_allowed": false,
+  "advanced_self_started": false,
+  "advanced_paper_selected": false
+}

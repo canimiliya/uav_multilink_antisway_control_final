@@ -1,0 +1,2035 @@
+{
+  "split": "development",
+  "duration_s": 12.0,
+  "outer_period_s": 0.05,
+  "log_period_s": 0.005,
+  "target_issue_times_s": {
+    "CALM_3D_SETPOINT": 1.0,
+    "WIND_3D_SETPOINT": 3.0,
+    "RAMP_WIND_EQUILIBRIUM_HOLD": null
+  },
+  "targets": [
+    {
+      "target_id": "axis_00",
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.15,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "axis_01",
+      "direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        -0.15,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "axis_02",
+      "direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.0,
+        0.15,
+        0.0
+      ]
+    },
+    {
+      "target_id": "axis_03",
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.0,
+        -0.15,
+        0.0
+      ]
+    },
+    {
+      "target_id": "axis_04",
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.0,
+        0.0,
+        0.15
+      ]
+    },
+    {
+      "target_id": "axis_05",
+      "direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "radius_m": 0.15,
+      "delta_tip_m": [
+        0.0,
+        0.0,
+        -0.15
+      ]
+    },
+    {
+      "target_id": "face_diagonal_00",
+      "direction": [
+        0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        0.1414213562373095,
+        0.1414213562373095,
+        0.0
+      ]
+    },
+    {
+      "target_id": "face_diagonal_01",
+      "direction": [
+        -0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        -0.1414213562373095,
+        -0.1414213562373095,
+        0.0
+      ]
+    },
+    {
+      "target_id": "face_diagonal_02",
+      "direction": [
+        0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        0.1414213562373095,
+        -0.1414213562373095,
+        0.0
+      ]
+    },
+    {
+      "target_id": "face_diagonal_03",
+      "direction": [
+        -0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        -0.1414213562373095,
+        0.1414213562373095,
+        0.0
+      ]
+    },
+    {
+      "target_id": "face_diagonal_04",
+      "direction": [
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        0.1414213562373095,
+        0.0,
+        0.1414213562373095
+      ]
+    },
+    {
+      "target_id": "face_diagonal_05",
+      "direction": [
+        -0.7071067811865475,
+        0.0,
+        -0.7071067811865475
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        -0.1414213562373095,
+        0.0,
+        -0.1414213562373095
+      ]
+    },
+    {
+      "target_id": "face_diagonal_06",
+      "direction": [
+        0.7071067811865475,
+        0.0,
+        -0.7071067811865475
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        0.1414213562373095,
+        0.0,
+        -0.1414213562373095
+      ]
+    },
+    {
+      "target_id": "face_diagonal_07",
+      "direction": [
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        -0.1414213562373095,
+        0.0,
+        0.1414213562373095
+      ]
+    },
+    {
+      "target_id": "face_diagonal_08",
+      "direction": [
+        0.0,
+        0.7071067811865475,
+        0.7071067811865475
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        0.0,
+        0.1414213562373095,
+        0.1414213562373095
+      ]
+    },
+    {
+      "target_id": "face_diagonal_09",
+      "direction": [
+        0.0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        0.0,
+        -0.1414213562373095,
+        -0.1414213562373095
+      ]
+    },
+    {
+      "target_id": "face_diagonal_10",
+      "direction": [
+        0.0,
+        0.7071067811865475,
+        -0.7071067811865475
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        0.0,
+        0.1414213562373095,
+        -0.1414213562373095
+      ]
+    },
+    {
+      "target_id": "face_diagonal_11",
+      "direction": [
+        0.0,
+        -0.7071067811865475,
+        0.7071067811865475
+      ],
+      "radius_m": 0.2,
+      "delta_tip_m": [
+        0.0,
+        -0.1414213562373095,
+        0.1414213562373095
+      ]
+    }
+  ],
+  "development_seeds": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "samples": [
+    {
+      "sample_id": "calm_axis_00",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_00",
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_axis_01",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_01",
+        "direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_axis_02",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_02",
+        "direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.15,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_axis_03",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_03",
+        "direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          -0.15,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_axis_04",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_04",
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.15
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_axis_05",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_05",
+        "direction": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.15
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_00",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_00",
+        "direction": [
+          0.7071067811865475,
+          0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_01",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_01",
+        "direction": [
+          -0.7071067811865475,
+          -0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          -0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_02",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_02",
+        "direction": [
+          0.7071067811865475,
+          -0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          -0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_03",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_03",
+        "direction": [
+          -0.7071067811865475,
+          0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_04",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_04",
+        "direction": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.0,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_05",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_05",
+        "direction": [
+          -0.7071067811865475,
+          0.0,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.0,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_06",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_06",
+        "direction": [
+          0.7071067811865475,
+          0.0,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.0,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_07",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_07",
+        "direction": [
+          -0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.0,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_08",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_08",
+        "direction": [
+          0.0,
+          0.7071067811865475,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          0.1414213562373095,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_09",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_09",
+        "direction": [
+          0.0,
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          -0.1414213562373095,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_10",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_10",
+        "direction": [
+          0.0,
+          0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          0.1414213562373095,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "calm_face_diagonal_11",
+      "scenario": "CALM_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_11",
+        "direction": [
+          0.0,
+          -0.7071067811865475,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          -0.1414213562373095,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "calm",
+        "speed_m_s": 0.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_axis_00",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_00",
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_axis_01",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_01",
+        "direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_axis_02",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_02",
+        "direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.15,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_axis_03",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_03",
+        "direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          -0.15,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_axis_04",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_04",
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.15
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_axis_05",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_05",
+        "direction": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.15
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_00",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_00",
+        "direction": [
+          0.7071067811865475,
+          0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_01",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_01",
+        "direction": [
+          -0.7071067811865475,
+          -0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          -0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_02",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_02",
+        "direction": [
+          0.7071067811865475,
+          -0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          -0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_03",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_03",
+        "direction": [
+          -0.7071067811865475,
+          0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_04",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_04",
+        "direction": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.0,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_05",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_05",
+        "direction": [
+          -0.7071067811865475,
+          0.0,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.0,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_06",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_06",
+        "direction": [
+          0.7071067811865475,
+          0.0,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.0,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_07",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_07",
+        "direction": [
+          -0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.0,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_08",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_08",
+        "direction": [
+          0.0,
+          0.7071067811865475,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          0.1414213562373095,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_09",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_09",
+        "direction": [
+          0.0,
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          -0.1414213562373095,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_10",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_10",
+        "direction": [
+          0.0,
+          0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          0.1414213562373095,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_1.5_face_diagonal_11",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_11",
+        "direction": [
+          0.0,
+          -0.7071067811865475,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          -0.1414213562373095,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 1.5
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_axis_00",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_00",
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_axis_01",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_01",
+        "direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_axis_02",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_02",
+        "direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.15,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_axis_03",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_03",
+        "direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          -0.15,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_axis_04",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_04",
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.15
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_axis_05",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_05",
+        "direction": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.15
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_00",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_00",
+        "direction": [
+          0.7071067811865475,
+          0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_01",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_01",
+        "direction": [
+          -0.7071067811865475,
+          -0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          -0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_02",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_02",
+        "direction": [
+          0.7071067811865475,
+          -0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          -0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_03",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_03",
+        "direction": [
+          -0.7071067811865475,
+          0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_04",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_04",
+        "direction": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.0,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_05",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_05",
+        "direction": [
+          -0.7071067811865475,
+          0.0,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.0,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_06",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_06",
+        "direction": [
+          0.7071067811865475,
+          0.0,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.0,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_07",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_07",
+        "direction": [
+          -0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.0,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_08",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_08",
+        "direction": [
+          0.0,
+          0.7071067811865475,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          0.1414213562373095,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_09",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_09",
+        "direction": [
+          0.0,
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          -0.1414213562373095,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_10",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_10",
+        "direction": [
+          0.0,
+          0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          0.1414213562373095,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_11",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_11",
+        "direction": [
+          0.0,
+          -0.7071067811865475,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          -0.1414213562373095,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2000",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_00",
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2000
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2001",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_01",
+        "direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2001
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2002",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_02",
+        "direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.15,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2002
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2003",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_03",
+        "direction": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          -0.15,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2003
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2004",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_04",
+        "direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.15
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2004
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2005",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_05",
+        "direction": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          -0.15
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2005
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2006",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_00",
+        "direction": [
+          0.7071067811865475,
+          0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2006
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2007",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_01",
+        "direction": [
+          -0.7071067811865475,
+          -0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          -0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2007
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2008",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_02",
+        "direction": [
+          0.7071067811865475,
+          -0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          -0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2008
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2009",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_03",
+        "direction": [
+          -0.7071067811865475,
+          0.7071067811865475,
+          0.0
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.1414213562373095,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2009
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2010",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_04",
+        "direction": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.0,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2010
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2011",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_05",
+        "direction": [
+          -0.7071067811865475,
+          0.0,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.0,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2011
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2012",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_06",
+        "direction": [
+          0.7071067811865475,
+          0.0,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.1414213562373095,
+          0.0,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2012
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2013",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_07",
+        "direction": [
+          -0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          -0.1414213562373095,
+          0.0,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2013
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2014",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_08",
+        "direction": [
+          0.0,
+          0.7071067811865475,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          0.1414213562373095,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2014
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2015",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_09",
+        "direction": [
+          0.0,
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          -0.1414213562373095,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2015
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2016",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_10",
+        "direction": [
+          0.0,
+          0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          0.1414213562373095,
+          -0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2016
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2017",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "face_diagonal_11",
+        "direction": [
+          0.0,
+          -0.7071067811865475,
+          0.7071067811865475
+        ],
+        "radius_m": 0.2,
+        "delta_tip_m": [
+          0.0,
+          -0.1414213562373095,
+          0.1414213562373095
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2017
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2018",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_00",
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2018
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "stochastic_2019",
+      "scenario": "WIND_3D_SETPOINT",
+      "target": {
+        "target_id": "axis_01",
+        "direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.15,
+        "delta_tip_m": [
+          -0.15,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "stochastic",
+        "speed_m_s": 0.0,
+        "seed": 2019
+      },
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "ramp_wind_equilibrium_hold",
+      "scenario": "RAMP_WIND_EQUILIBRIUM_HOLD",
+      "target": {
+        "target_id": "equilibrium",
+        "direction": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.0,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "wind": {
+        "kind": "ramp",
+        "speed_m_s": 3.0
+      },
+      "execution_allowed": true
+    }
+  ],
+  "sample_count": 75
+}
