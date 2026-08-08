@@ -1,0 +1,7 @@
+{
+  "synthetic_case_count": 3,
+  "max_equality_residual": 1.995206803809586e-17,
+  "tolerance": 1e-08,
+  "bounded_solution": true,
+  "pass": true
+}

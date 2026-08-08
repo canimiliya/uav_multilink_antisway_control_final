@@ -1,0 +1,7 @@
+{
+  "formula": "reference_vector(current) - A reference_vector(previous)",
+  "target_step_delta_x_m": 0.15,
+  "reference_only_false_residual_norm": 0.0,
+  "tolerance": 1e-08,
+  "pass": true
+}

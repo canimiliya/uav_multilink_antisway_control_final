@@ -1,0 +1,14 @@
+{
+  "task": "V2-R3R2-DR-TSRMPC-DEVELOPMENT-AND-FREEZE-R1",
+  "implementation_freeze_head": "dfdd5639012b6c8064c05a524f0f00d47b98b6ff",
+  "grid_size": 36,
+  "stage1_samples_per_candidate": 9,
+  "stage1_runs": 324,
+  "stage2_top_count": 6,
+  "stage2_samples_per_candidate": 57,
+  "stage2_runs": 342,
+  "development_only": true,
+  "traditional_rerun": false,
+  "paper_advanced_executed": false,
+  "holdout_executed": false
+}

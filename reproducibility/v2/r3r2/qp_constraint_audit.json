@@ -1,0 +1,9 @@
+{
+  "horizon": 20,
+  "rows": 40,
+  "amplitude_rows": 20,
+  "slew_rows": 20,
+  "first_step_previous_actual_ax": 0.2,
+  "physical_constraints": true,
+  "pass": true
+}

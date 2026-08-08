@@ -1,0 +1,26 @@
+{
+  "implementation_freeze_head": "dfdd5639012b6c8064c05a524f0f00d47b98b6ff",
+  "actual_head_at_audit": "35eb7ce65612e7b459724359be4b86109a0005e4",
+  "A_shape": [
+    16,
+    16
+  ],
+  "B_shape": [
+    16,
+    1
+  ],
+  "C_task_shape": [
+    4,
+    16
+  ],
+  "K_shape": [
+    1,
+    16
+  ],
+  "P_shape": [
+    16,
+    16
+  ],
+  "performance_executed": false,
+  "tests": "tests/v2/test_r3r2_implementation.py"
+}

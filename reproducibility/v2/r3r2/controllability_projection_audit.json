@@ -1,0 +1,9 @@
+{
+  "controllability_rank": 13,
+  "state_dimension": 16,
+  "d_hat_norm": 0.0024585451886114367,
+  "d_controllable_norm": 0.0022514421261866677,
+  "d_uncontrollable_norm": 0.0009876501389037072,
+  "projection_residual": 0.0,
+  "diagnostic_only": true
+}

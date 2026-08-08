@@ -1,0 +1,8 @@
+{
+  "dimension": 16,
+  "first_update_zero": true,
+  "previous_actual_ax": "limiter-after physical ax",
+  "causal": true,
+  "output_bias": false,
+  "matched_wind_model": false
+}

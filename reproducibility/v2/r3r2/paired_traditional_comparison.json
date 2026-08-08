@@ -1,0 +1,1273 @@
+{
+  "acquisition_best_traditional": "task_lqr_001",
+  "formula": "median((t_task_lqr - t_DR) / t_task_lqr) over common-success samples with t_task_lqr > 0",
+  "zero_denominator_policy": "record as undefined and exclude from median; never substitute a value",
+  "comparisons": [
+    {
+      "candidate_id": "dr_tsrmpc_001",
+      "traditional_candidate_id": "task_lqr_001",
+      "common_success_count": 33,
+      "defined_count": 32,
+      "zero_baseline_common_success_count": 1,
+      "median_improvement": -0.00501509054325954,
+      "undefined_zero_baseline_samples": [
+        {
+          "sample_id": "ramp_dev_0_to_3p0",
+          "task_lqr_acquisition_s": 0.0,
+          "dr_acquisition_s": 0.0,
+          "improvement": null,
+          "undefined_reason": "zero_task_lqr_denominator"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "calm__+x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.2,
+          "improvement": -0.06024096385542168
+        },
+        {
+          "sample_id": "calm__-x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.205,
+          "improvement": -0.0626506024096385
+        },
+        {
+          "sample_id": "calm__+y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.6550000000000002,
+          "improvement": -0.08588957055214722
+        },
+        {
+          "sample_id": "calm__-x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.6550000000000002,
+          "improvement": -0.08588957055214722
+        },
+        {
+          "sample_id": "calm__+y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0000",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.0600000000000005,
+          "improvement": -0.022332506203474354
+        },
+        {
+          "sample_id": "stochastic_dev_0001",
+          "task_lqr_acquisition_s": 2.2,
+          "dr_acquisition_s": 2.335,
+          "improvement": -0.06136363636363626
+        },
+        {
+          "sample_id": "stochastic_dev_0002",
+          "task_lqr_acquisition_s": 5.8100000000000005,
+          "dr_acquisition_s": 5.335000000000001,
+          "improvement": 0.08175559380378651
+        },
+        {
+          "sample_id": "stochastic_dev_0003",
+          "task_lqr_acquisition_s": 5.01,
+          "dr_acquisition_s": 4.99,
+          "improvement": 0.003992015968063787
+        },
+        {
+          "sample_id": "stochastic_dev_0004",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.004999999999999893
+        },
+        {
+          "sample_id": "stochastic_dev_0005",
+          "task_lqr_acquisition_s": 0.9849999999999999,
+          "dr_acquisition_s": 0.9900000000000002,
+          "improvement": -0.0050761421319800385
+        },
+        {
+          "sample_id": "stochastic_dev_0006",
+          "task_lqr_acquisition_s": 2.4750000000000005,
+          "dr_acquisition_s": 2.705,
+          "improvement": -0.09292929292929272
+        },
+        {
+          "sample_id": "stochastic_dev_0007",
+          "task_lqr_acquisition_s": 2.1100000000000003,
+          "dr_acquisition_s": 3.005,
+          "improvement": -0.4241706161137438
+        },
+        {
+          "sample_id": "stochastic_dev_0008",
+          "task_lqr_acquisition_s": 5.495000000000001,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.028207461328480638
+        },
+        {
+          "sample_id": "stochastic_dev_0009",
+          "task_lqr_acquisition_s": 5.375,
+          "dr_acquisition_s": 5.359999999999999,
+          "improvement": 0.0027906976744187105
+        },
+        {
+          "sample_id": "stochastic_dev_0010",
+          "task_lqr_acquisition_s": 1.2400000000000002,
+          "dr_acquisition_s": 1.665,
+          "improvement": -0.3427419354838708
+        },
+        {
+          "sample_id": "stochastic_dev_0011",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0012",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.1799999999999997,
+          "improvement": -0.0818858560794045
+        },
+        {
+          "sample_id": "stochastic_dev_0013",
+          "task_lqr_acquisition_s": 2.2300000000000004,
+          "dr_acquisition_s": 2.5,
+          "improvement": -0.12107623318385628
+        },
+        {
+          "sample_id": "stochastic_dev_0014",
+          "task_lqr_acquisition_s": 4.97,
+          "dr_acquisition_s": 4.995,
+          "improvement": -0.005030181086519187
+        },
+        {
+          "sample_id": "stochastic_dev_0015",
+          "task_lqr_acquisition_s": 5.0649999999999995,
+          "dr_acquisition_s": 4.985,
+          "improvement": 0.01579466929911139
+        },
+        {
+          "sample_id": "stochastic_dev_0016",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.04,
+          "improvement": -0.040000000000000036
+        },
+        {
+          "sample_id": "stochastic_dev_0017",
+          "task_lqr_acquisition_s": 0.9950000000000001,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.010050251256281192
+        },
+        {
+          "sample_id": "stochastic_dev_0018",
+          "task_lqr_acquisition_s": 2.6799999999999997,
+          "dr_acquisition_s": 3.7250000000000005,
+          "improvement": -0.3899253731343287
+        },
+        {
+          "sample_id": "stochastic_dev_0019",
+          "task_lqr_acquisition_s": 2.995,
+          "dr_acquisition_s": 2.49,
+          "improvement": 0.16861435726210347
+        }
+      ]
+    },
+    {
+      "candidate_id": "dr_tsrmpc_005",
+      "traditional_candidate_id": "task_lqr_001",
+      "common_success_count": 33,
+      "defined_count": 32,
+      "zero_baseline_common_success_count": 1,
+      "median_improvement": -0.0020120724346076924,
+      "undefined_zero_baseline_samples": [
+        {
+          "sample_id": "ramp_dev_0_to_3p0",
+          "task_lqr_acquisition_s": 0.0,
+          "dr_acquisition_s": 0.0,
+          "improvement": null,
+          "undefined_reason": "zero_task_lqr_denominator"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "calm__+x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.15,
+          "improvement": -0.03614457831325288
+        },
+        {
+          "sample_id": "calm__-x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.15,
+          "improvement": -0.03614457831325288
+        },
+        {
+          "sample_id": "calm__+y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.6350000000000002,
+          "improvement": -0.0777096114519427
+        },
+        {
+          "sample_id": "calm__-x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.6350000000000002,
+          "improvement": -0.0777096114519427
+        },
+        {
+          "sample_id": "calm__+y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0000",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.0949999999999998,
+          "improvement": -0.03970223325062039
+        },
+        {
+          "sample_id": "stochastic_dev_0001",
+          "task_lqr_acquisition_s": 2.2,
+          "dr_acquisition_s": 2.3,
+          "improvement": -0.04545454545454529
+        },
+        {
+          "sample_id": "stochastic_dev_0002",
+          "task_lqr_acquisition_s": 5.8100000000000005,
+          "dr_acquisition_s": 5.33,
+          "improvement": 0.08261617900172123
+        },
+        {
+          "sample_id": "stochastic_dev_0003",
+          "task_lqr_acquisition_s": 5.01,
+          "dr_acquisition_s": 4.985,
+          "improvement": 0.0049900199600797345
+        },
+        {
+          "sample_id": "stochastic_dev_0004",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.004999999999999893
+        },
+        {
+          "sample_id": "stochastic_dev_0005",
+          "task_lqr_acquisition_s": 0.9849999999999999,
+          "dr_acquisition_s": 0.9849999999999999,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0006",
+          "task_lqr_acquisition_s": 2.4750000000000005,
+          "dr_acquisition_s": 2.6850000000000005,
+          "improvement": -0.08484848484848481
+        },
+        {
+          "sample_id": "stochastic_dev_0007",
+          "task_lqr_acquisition_s": 2.1100000000000003,
+          "dr_acquisition_s": 3.1000000000000005,
+          "improvement": -0.46919431279620855
+        },
+        {
+          "sample_id": "stochastic_dev_0008",
+          "task_lqr_acquisition_s": 5.495000000000001,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.028207461328480638
+        },
+        {
+          "sample_id": "stochastic_dev_0009",
+          "task_lqr_acquisition_s": 5.375,
+          "dr_acquisition_s": 5.359999999999999,
+          "improvement": 0.0027906976744187105
+        },
+        {
+          "sample_id": "stochastic_dev_0010",
+          "task_lqr_acquisition_s": 1.2400000000000002,
+          "dr_acquisition_s": 1.6150000000000002,
+          "improvement": -0.30241935483870963
+        },
+        {
+          "sample_id": "stochastic_dev_0011",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0012",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.1450000000000005,
+          "improvement": -0.06451612903225847
+        },
+        {
+          "sample_id": "stochastic_dev_0013",
+          "task_lqr_acquisition_s": 2.2300000000000004,
+          "dr_acquisition_s": 2.4699999999999998,
+          "improvement": -0.1076233183856499
+        },
+        {
+          "sample_id": "stochastic_dev_0014",
+          "task_lqr_acquisition_s": 4.97,
+          "dr_acquisition_s": 4.99,
+          "improvement": -0.004024144869215385
+        },
+        {
+          "sample_id": "stochastic_dev_0015",
+          "task_lqr_acquisition_s": 5.0649999999999995,
+          "dr_acquisition_s": 4.985,
+          "improvement": 0.01579466929911139
+        },
+        {
+          "sample_id": "stochastic_dev_0016",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.0350000000000001,
+          "improvement": -0.03500000000000014
+        },
+        {
+          "sample_id": "stochastic_dev_0017",
+          "task_lqr_acquisition_s": 0.9950000000000001,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.010050251256281192
+        },
+        {
+          "sample_id": "stochastic_dev_0018",
+          "task_lqr_acquisition_s": 2.6799999999999997,
+          "dr_acquisition_s": 3.5200000000000005,
+          "improvement": -0.3134328358208958
+        },
+        {
+          "sample_id": "stochastic_dev_0019",
+          "task_lqr_acquisition_s": 2.995,
+          "dr_acquisition_s": 2.4699999999999998,
+          "improvement": 0.17529215358931563
+        }
+      ]
+    },
+    {
+      "candidate_id": "dr_tsrmpc_003",
+      "traditional_candidate_id": "task_lqr_001",
+      "common_success_count": 33,
+      "defined_count": 32,
+      "zero_baseline_common_success_count": 1,
+      "median_improvement": -0.005038071065989966,
+      "undefined_zero_baseline_samples": [
+        {
+          "sample_id": "ramp_dev_0_to_3p0",
+          "task_lqr_acquisition_s": 0.0,
+          "dr_acquisition_s": 0.0,
+          "improvement": null,
+          "undefined_reason": "zero_task_lqr_denominator"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "calm__+x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.205,
+          "improvement": -0.0626506024096385
+        },
+        {
+          "sample_id": "calm__-x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.205,
+          "improvement": -0.0626506024096385
+        },
+        {
+          "sample_id": "calm__+y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.66,
+          "improvement": -0.08793456032719829
+        },
+        {
+          "sample_id": "calm__-x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.66,
+          "improvement": -0.08793456032719829
+        },
+        {
+          "sample_id": "calm__+y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0000",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.0700000000000003,
+          "improvement": -0.02729528535980179
+        },
+        {
+          "sample_id": "stochastic_dev_0001",
+          "task_lqr_acquisition_s": 2.2,
+          "dr_acquisition_s": 2.335,
+          "improvement": -0.06136363636363626
+        },
+        {
+          "sample_id": "stochastic_dev_0002",
+          "task_lqr_acquisition_s": 5.8100000000000005,
+          "dr_acquisition_s": 5.345000000000001,
+          "improvement": 0.08003442340791735
+        },
+        {
+          "sample_id": "stochastic_dev_0003",
+          "task_lqr_acquisition_s": 5.01,
+          "dr_acquisition_s": 4.995,
+          "improvement": 0.0029940119760478406
+        },
+        {
+          "sample_id": "stochastic_dev_0004",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.004999999999999893
+        },
+        {
+          "sample_id": "stochastic_dev_0005",
+          "task_lqr_acquisition_s": 0.9849999999999999,
+          "dr_acquisition_s": 0.9900000000000002,
+          "improvement": -0.0050761421319800385
+        },
+        {
+          "sample_id": "stochastic_dev_0006",
+          "task_lqr_acquisition_s": 2.4750000000000005,
+          "dr_acquisition_s": 2.71,
+          "improvement": -0.0949494949494947
+        },
+        {
+          "sample_id": "stochastic_dev_0007",
+          "task_lqr_acquisition_s": 2.1100000000000003,
+          "dr_acquisition_s": 3.0150000000000006,
+          "improvement": -0.4289099526066351
+        },
+        {
+          "sample_id": "stochastic_dev_0008",
+          "task_lqr_acquisition_s": 5.495000000000001,
+          "dr_acquisition_s": 5.345000000000001,
+          "improvement": 0.02729754322111016
+        },
+        {
+          "sample_id": "stochastic_dev_0009",
+          "task_lqr_acquisition_s": 5.375,
+          "dr_acquisition_s": 5.359999999999999,
+          "improvement": 0.0027906976744187105
+        },
+        {
+          "sample_id": "stochastic_dev_0010",
+          "task_lqr_acquisition_s": 1.2400000000000002,
+          "dr_acquisition_s": 1.6799999999999997,
+          "improvement": -0.3548387096774189
+        },
+        {
+          "sample_id": "stochastic_dev_0011",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0012",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.175,
+          "improvement": -0.07940446650124078
+        },
+        {
+          "sample_id": "stochastic_dev_0013",
+          "task_lqr_acquisition_s": 2.2300000000000004,
+          "dr_acquisition_s": 2.505,
+          "improvement": -0.12331838565022395
+        },
+        {
+          "sample_id": "stochastic_dev_0014",
+          "task_lqr_acquisition_s": 4.97,
+          "dr_acquisition_s": 5.0,
+          "improvement": -0.006036217303822988
+        },
+        {
+          "sample_id": "stochastic_dev_0015",
+          "task_lqr_acquisition_s": 5.0649999999999995,
+          "dr_acquisition_s": 4.985,
+          "improvement": 0.01579466929911139
+        },
+        {
+          "sample_id": "stochastic_dev_0016",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.04,
+          "improvement": -0.040000000000000036
+        },
+        {
+          "sample_id": "stochastic_dev_0017",
+          "task_lqr_acquisition_s": 0.9950000000000001,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.010050251256281192
+        },
+        {
+          "sample_id": "stochastic_dev_0018",
+          "task_lqr_acquisition_s": 2.6799999999999997,
+          "dr_acquisition_s": 3.745,
+          "improvement": -0.3973880597014927
+        },
+        {
+          "sample_id": "stochastic_dev_0019",
+          "task_lqr_acquisition_s": 2.995,
+          "dr_acquisition_s": 2.495,
+          "improvement": 0.1669449081803005
+        }
+      ]
+    },
+    {
+      "candidate_id": "dr_tsrmpc_007",
+      "traditional_candidate_id": "task_lqr_001",
+      "common_success_count": 33,
+      "defined_count": 32,
+      "zero_baseline_common_success_count": 1,
+      "median_improvement": -0.0024999999999999467,
+      "undefined_zero_baseline_samples": [
+        {
+          "sample_id": "ramp_dev_0_to_3p0",
+          "task_lqr_acquisition_s": 0.0,
+          "dr_acquisition_s": 0.0,
+          "improvement": null,
+          "undefined_reason": "zero_task_lqr_denominator"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "calm__+x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.15,
+          "improvement": -0.03614457831325288
+        },
+        {
+          "sample_id": "calm__-x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.15,
+          "improvement": -0.03614457831325288
+        },
+        {
+          "sample_id": "calm__+y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.645,
+          "improvement": -0.08179959100204487
+        },
+        {
+          "sample_id": "calm__-x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.645,
+          "improvement": -0.08179959100204487
+        },
+        {
+          "sample_id": "calm__+y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0000",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.1000000000000005,
+          "improvement": -0.04218362282878455
+        },
+        {
+          "sample_id": "stochastic_dev_0001",
+          "task_lqr_acquisition_s": 2.2,
+          "dr_acquisition_s": 2.3049999999999997,
+          "improvement": -0.047727272727272514
+        },
+        {
+          "sample_id": "stochastic_dev_0002",
+          "task_lqr_acquisition_s": 5.8100000000000005,
+          "dr_acquisition_s": 5.335000000000001,
+          "improvement": 0.08175559380378651
+        },
+        {
+          "sample_id": "stochastic_dev_0003",
+          "task_lqr_acquisition_s": 5.01,
+          "dr_acquisition_s": 4.985,
+          "improvement": 0.0049900199600797345
+        },
+        {
+          "sample_id": "stochastic_dev_0004",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.004999999999999893
+        },
+        {
+          "sample_id": "stochastic_dev_0005",
+          "task_lqr_acquisition_s": 0.9849999999999999,
+          "dr_acquisition_s": 0.9849999999999999,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0006",
+          "task_lqr_acquisition_s": 2.4750000000000005,
+          "dr_acquisition_s": 2.6950000000000003,
+          "improvement": -0.08888888888888877
+        },
+        {
+          "sample_id": "stochastic_dev_0007",
+          "task_lqr_acquisition_s": 2.1100000000000003,
+          "dr_acquisition_s": 3.1100000000000003,
+          "improvement": -0.4739336492890995
+        },
+        {
+          "sample_id": "stochastic_dev_0008",
+          "task_lqr_acquisition_s": 5.495000000000001,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.028207461328480638
+        },
+        {
+          "sample_id": "stochastic_dev_0009",
+          "task_lqr_acquisition_s": 5.375,
+          "dr_acquisition_s": 5.359999999999999,
+          "improvement": 0.0027906976744187105
+        },
+        {
+          "sample_id": "stochastic_dev_0010",
+          "task_lqr_acquisition_s": 1.2400000000000002,
+          "dr_acquisition_s": 1.63,
+          "improvement": -0.31451612903225773
+        },
+        {
+          "sample_id": "stochastic_dev_0011",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0012",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.1550000000000002,
+          "improvement": -0.0694789081885859
+        },
+        {
+          "sample_id": "stochastic_dev_0013",
+          "task_lqr_acquisition_s": 2.2300000000000004,
+          "dr_acquisition_s": 2.4750000000000005,
+          "improvement": -0.10986547085201796
+        },
+        {
+          "sample_id": "stochastic_dev_0014",
+          "task_lqr_acquisition_s": 4.97,
+          "dr_acquisition_s": 4.995,
+          "improvement": -0.005030181086519187
+        },
+        {
+          "sample_id": "stochastic_dev_0015",
+          "task_lqr_acquisition_s": 5.0649999999999995,
+          "dr_acquisition_s": 4.985,
+          "improvement": 0.01579466929911139
+        },
+        {
+          "sample_id": "stochastic_dev_0016",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.0350000000000001,
+          "improvement": -0.03500000000000014
+        },
+        {
+          "sample_id": "stochastic_dev_0017",
+          "task_lqr_acquisition_s": 0.9950000000000001,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.010050251256281192
+        },
+        {
+          "sample_id": "stochastic_dev_0018",
+          "task_lqr_acquisition_s": 2.6799999999999997,
+          "dr_acquisition_s": 3.5600000000000005,
+          "improvement": -0.3283582089552242
+        },
+        {
+          "sample_id": "stochastic_dev_0019",
+          "task_lqr_acquisition_s": 2.995,
+          "dr_acquisition_s": 2.4750000000000005,
+          "improvement": 0.17362270450751238
+        }
+      ]
+    },
+    {
+      "candidate_id": "dr_tsrmpc_009",
+      "traditional_candidate_id": "task_lqr_001",
+      "common_success_count": 33,
+      "defined_count": 32,
+      "zero_baseline_common_success_count": 1,
+      "median_improvement": -0.0015090543259557916,
+      "undefined_zero_baseline_samples": [
+        {
+          "sample_id": "ramp_dev_0_to_3p0",
+          "task_lqr_acquisition_s": 0.0,
+          "dr_acquisition_s": 0.0,
+          "improvement": null,
+          "undefined_reason": "zero_task_lqr_denominator"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "calm__+x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.12,
+          "improvement": -0.021686746987951772
+        },
+        {
+          "sample_id": "calm__-x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.12,
+          "improvement": -0.021686746987951772
+        },
+        {
+          "sample_id": "calm__+y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.6,
+          "improvement": -0.06339468302658478
+        },
+        {
+          "sample_id": "calm__-x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.6,
+          "improvement": -0.06339468302658478
+        },
+        {
+          "sample_id": "calm__+y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0000",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.165,
+          "improvement": -0.07444168734491334
+        },
+        {
+          "sample_id": "stochastic_dev_0001",
+          "task_lqr_acquisition_s": 2.2,
+          "dr_acquisition_s": 2.245,
+          "improvement": -0.02045454545454542
+        },
+        {
+          "sample_id": "stochastic_dev_0002",
+          "task_lqr_acquisition_s": 5.8100000000000005,
+          "dr_acquisition_s": 5.32,
+          "improvement": 0.0843373493975904
+        },
+        {
+          "sample_id": "stochastic_dev_0003",
+          "task_lqr_acquisition_s": 5.01,
+          "dr_acquisition_s": 4.9750000000000005,
+          "improvement": 0.006986027944111628
+        },
+        {
+          "sample_id": "stochastic_dev_0004",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.004999999999999893
+        },
+        {
+          "sample_id": "stochastic_dev_0005",
+          "task_lqr_acquisition_s": 0.9849999999999999,
+          "dr_acquisition_s": 0.9849999999999999,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0006",
+          "task_lqr_acquisition_s": 2.4750000000000005,
+          "dr_acquisition_s": 2.6500000000000004,
+          "improvement": -0.07070707070707062
+        },
+        {
+          "sample_id": "stochastic_dev_0007",
+          "task_lqr_acquisition_s": 2.1100000000000003,
+          "dr_acquisition_s": 3.295,
+          "improvement": -0.5616113744075827
+        },
+        {
+          "sample_id": "stochastic_dev_0008",
+          "task_lqr_acquisition_s": 5.495000000000001,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.028207461328480638
+        },
+        {
+          "sample_id": "stochastic_dev_0009",
+          "task_lqr_acquisition_s": 5.375,
+          "dr_acquisition_s": 5.359999999999999,
+          "improvement": 0.0027906976744187105
+        },
+        {
+          "sample_id": "stochastic_dev_0010",
+          "task_lqr_acquisition_s": 1.2400000000000002,
+          "dr_acquisition_s": 1.5200000000000005,
+          "improvement": -0.22580645161290339
+        },
+        {
+          "sample_id": "stochastic_dev_0011",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0012",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.1900000000000004,
+          "improvement": -0.08684863523573237
+        },
+        {
+          "sample_id": "stochastic_dev_0013",
+          "task_lqr_acquisition_s": 2.2300000000000004,
+          "dr_acquisition_s": 2.4000000000000004,
+          "improvement": -0.0762331838565022
+        },
+        {
+          "sample_id": "stochastic_dev_0014",
+          "task_lqr_acquisition_s": 4.97,
+          "dr_acquisition_s": 4.985,
+          "improvement": -0.003018108651911583
+        },
+        {
+          "sample_id": "stochastic_dev_0015",
+          "task_lqr_acquisition_s": 5.0649999999999995,
+          "dr_acquisition_s": 4.98,
+          "improvement": 0.01678183613030584
+        },
+        {
+          "sample_id": "stochastic_dev_0016",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.0300000000000002,
+          "improvement": -0.03000000000000025
+        },
+        {
+          "sample_id": "stochastic_dev_0017",
+          "task_lqr_acquisition_s": 0.9950000000000001,
+          "dr_acquisition_s": 1.0,
+          "improvement": -0.005025125628140596
+        },
+        {
+          "sample_id": "stochastic_dev_0018",
+          "task_lqr_acquisition_s": 2.6799999999999997,
+          "dr_acquisition_s": 3.005,
+          "improvement": -0.12126865671641798
+        },
+        {
+          "sample_id": "stochastic_dev_0019",
+          "task_lqr_acquisition_s": 2.995,
+          "dr_acquisition_s": 2.4299999999999997,
+          "improvement": 0.1886477462437397
+        }
+      ]
+    },
+    {
+      "candidate_id": "dr_tsrmpc_011",
+      "traditional_candidate_id": "task_lqr_001",
+      "common_success_count": 33,
+      "defined_count": 32,
+      "zero_baseline_common_success_count": 1,
+      "median_improvement": -0.0015090543259557916,
+      "undefined_zero_baseline_samples": [
+        {
+          "sample_id": "ramp_dev_0_to_3p0",
+          "task_lqr_acquisition_s": 0.0,
+          "dr_acquisition_s": 0.0,
+          "improvement": null,
+          "undefined_reason": "zero_task_lqr_denominator"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "calm__+x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.125,
+          "improvement": -0.024096385542168586
+        },
+        {
+          "sample_id": "calm__-x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "dr_acquisition_s": 2.125,
+          "improvement": -0.024096385542168586
+        },
+        {
+          "sample_id": "calm__+y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "dr_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "dr_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.605,
+          "improvement": -0.06543967280163586
+        },
+        {
+          "sample_id": "calm__-x_r0.25",
+          "task_lqr_acquisition_s": 2.4450000000000003,
+          "dr_acquisition_s": 2.605,
+          "improvement": -0.06543967280163586
+        },
+        {
+          "sample_id": "calm__+y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0000",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.17,
+          "improvement": -0.07692307692307705
+        },
+        {
+          "sample_id": "stochastic_dev_0001",
+          "task_lqr_acquisition_s": 2.2,
+          "dr_acquisition_s": 2.25,
+          "improvement": -0.022727272727272645
+        },
+        {
+          "sample_id": "stochastic_dev_0002",
+          "task_lqr_acquisition_s": 5.8100000000000005,
+          "dr_acquisition_s": 5.324999999999999,
+          "improvement": 0.08347676419965597
+        },
+        {
+          "sample_id": "stochastic_dev_0003",
+          "task_lqr_acquisition_s": 5.01,
+          "dr_acquisition_s": 4.9750000000000005,
+          "improvement": 0.006986027944111628
+        },
+        {
+          "sample_id": "stochastic_dev_0004",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.005,
+          "improvement": -0.004999999999999893
+        },
+        {
+          "sample_id": "stochastic_dev_0005",
+          "task_lqr_acquisition_s": 0.9849999999999999,
+          "dr_acquisition_s": 0.9849999999999999,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0006",
+          "task_lqr_acquisition_s": 2.4750000000000005,
+          "dr_acquisition_s": 2.66,
+          "improvement": -0.07474747474747458
+        },
+        {
+          "sample_id": "stochastic_dev_0007",
+          "task_lqr_acquisition_s": 2.1100000000000003,
+          "dr_acquisition_s": 3.3,
+          "improvement": -0.5639810426540282
+        },
+        {
+          "sample_id": "stochastic_dev_0008",
+          "task_lqr_acquisition_s": 5.495000000000001,
+          "dr_acquisition_s": 5.34,
+          "improvement": 0.028207461328480638
+        },
+        {
+          "sample_id": "stochastic_dev_0009",
+          "task_lqr_acquisition_s": 5.375,
+          "dr_acquisition_s": 5.359999999999999,
+          "improvement": 0.0027906976744187105
+        },
+        {
+          "sample_id": "stochastic_dev_0010",
+          "task_lqr_acquisition_s": 1.2400000000000002,
+          "dr_acquisition_s": 1.5350000000000001,
+          "improvement": -0.2379032258064515
+        },
+        {
+          "sample_id": "stochastic_dev_0011",
+          "task_lqr_acquisition_s": 1.25,
+          "dr_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0012",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "dr_acquisition_s": 2.1950000000000003,
+          "improvement": -0.0893300248138961
+        },
+        {
+          "sample_id": "stochastic_dev_0013",
+          "task_lqr_acquisition_s": 2.2300000000000004,
+          "dr_acquisition_s": 2.4050000000000002,
+          "improvement": -0.07847533632286986
+        },
+        {
+          "sample_id": "stochastic_dev_0014",
+          "task_lqr_acquisition_s": 4.97,
+          "dr_acquisition_s": 4.985,
+          "improvement": -0.003018108651911583
+        },
+        {
+          "sample_id": "stochastic_dev_0015",
+          "task_lqr_acquisition_s": 5.0649999999999995,
+          "dr_acquisition_s": 4.98,
+          "improvement": 0.01678183613030584
+        },
+        {
+          "sample_id": "stochastic_dev_0016",
+          "task_lqr_acquisition_s": 1.0,
+          "dr_acquisition_s": 1.0300000000000002,
+          "improvement": -0.03000000000000025
+        },
+        {
+          "sample_id": "stochastic_dev_0017",
+          "task_lqr_acquisition_s": 0.9950000000000001,
+          "dr_acquisition_s": 1.0,
+          "improvement": -0.005025125628140596
+        },
+        {
+          "sample_id": "stochastic_dev_0018",
+          "task_lqr_acquisition_s": 2.6799999999999997,
+          "dr_acquisition_s": 3.01,
+          "improvement": -0.12313432835820899
+        },
+        {
+          "sample_id": "stochastic_dev_0019",
+          "task_lqr_acquisition_s": 2.995,
+          "dr_acquisition_s": 2.4350000000000005,
+          "improvement": 0.18697829716193642
+        }
+      ]
+    }
+  ]
+}
