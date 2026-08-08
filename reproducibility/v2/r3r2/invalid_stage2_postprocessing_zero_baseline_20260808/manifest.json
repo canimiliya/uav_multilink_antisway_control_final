@@ -1,0 +1,9 @@
+{
+  "status": "INVALID_POSTPROCESSING_RUN",
+  "stage": "V2-R3R2 Stage-2 paired comparison",
+  "runs_completed": 342,
+  "reason": "Task-LQR paired acquisition denominator was zero for successful samples; raw division raised ZeroDivisionError",
+  "controller_performance_invalidated": false,
+  "final_summary_written": false,
+  "replacement_authorized": "after explicit zero-baseline handling"
+}

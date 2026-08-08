@@ -270,16 +270,21 @@ def load_task_lqr_rows() -> dict[str, dict]:
 def paired_comparison(stage2: list[dict]) -> dict:
     baseline = load_task_lqr_rows(); comparisons = []
     for candidate in stage2:
-        values = []
+        values = []; undefined_zero_baseline = []
         for row in candidate["rows"]:
             base = baseline[row["sample_id"]]
             if row.get("task_success") and base["task_success"] == "True":
                 task_time = float(base["acquisition_time_s"]); dr_time = float(row["acquisition_time_s"])
-                values.append({"sample_id": row["sample_id"], "task_lqr_acquisition_s": task_time, "dr_acquisition_s": dr_time, "improvement": (task_time - dr_time) / task_time})
-        candidate["paired_common_success_count"] = len(values)
+                if task_time <= 0.0:
+                    undefined_zero_baseline.append({"sample_id": row["sample_id"], "task_lqr_acquisition_s": task_time, "dr_acquisition_s": dr_time, "improvement": None, "undefined_reason": "zero_task_lqr_denominator"})
+                else:
+                    values.append({"sample_id": row["sample_id"], "task_lqr_acquisition_s": task_time, "dr_acquisition_s": dr_time, "improvement": (task_time - dr_time) / task_time})
+        candidate["paired_common_success_count"] = len(values) + len(undefined_zero_baseline)
+        candidate["paired_defined_count"] = len(values)
         candidate["paired_acquisition_improvement"] = float(np.median([v["improvement"] for v in values])) if values else None
-        comparisons.append({"candidate_id": candidate["candidate_id"], "traditional_candidate_id": "task_lqr_001", "common_success_count": len(values), "median_improvement": candidate["paired_acquisition_improvement"], "samples": values})
-    return {"acquisition_best_traditional": "task_lqr_001", "formula": "median((t_task_lqr - t_DR) / t_task_lqr)", "comparisons": comparisons}
+        candidate["paired_zero_baseline_count"] = len(undefined_zero_baseline)
+        comparisons.append({"candidate_id": candidate["candidate_id"], "traditional_candidate_id": "task_lqr_001", "common_success_count": len(values) + len(undefined_zero_baseline), "defined_count": len(values), "zero_baseline_common_success_count": len(undefined_zero_baseline), "median_improvement": candidate["paired_acquisition_improvement"], "undefined_zero_baseline_samples": undefined_zero_baseline, "samples": values})
+    return {"acquisition_best_traditional": "task_lqr_001", "formula": "median((t_task_lqr - t_DR) / t_task_lqr) over common-success samples with t_task_lqr > 0", "zero_denominator_policy": "record as undefined and exclude from median; never substitute a value", "comparisons": comparisons}
 
 
 def eligible(s: dict) -> bool:

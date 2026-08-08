@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Desktop\my_project\uav_multilink_antisway_control_final\scripts\run_v2_r3r2_dr_tsrmpc.py", line 373, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\Desktop\my_project\uav_multilink_antisway_control_final\scripts\run_v2_r3r2_dr_tsrmpc.py", line 325, in main
+    paired = paired_comparison(stage2); _write_json("paired_traditional_comparison.json", paired)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\my_project\uav_multilink_antisway_control_final\scripts\run_v2_r3r2_dr_tsrmpc.py", line 278, in paired_comparison
+    values.append({"sample_id": row["sample_id"], "task_lqr_acquisition_s": task_time, "dr_acquisition_s": dr_time, "improvement": (task_time - dr_time) / task_time})
+                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+ZeroDivisionError: float division by zero
