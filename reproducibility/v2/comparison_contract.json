@@ -1,0 +1,58 @@
+{
+  "contract": "V2-R0-comparison-contract",
+  "traditional_baselines": [
+    {
+      "id": "Traditional-1",
+      "name": "Cascaded PID / PD",
+      "class": "traditional"
+    },
+    {
+      "id": "Traditional-2",
+      "name": "Full-State LQR",
+      "class": "traditional"
+    },
+    {
+      "id": "Traditional-3",
+      "name": "Task-Space LQR",
+      "class": "traditional"
+    }
+  ],
+  "advanced_methods": [
+    {
+      "id": "Advanced-Self",
+      "requirement": "one self-developed primary method",
+      "status": "not_started"
+    },
+    {
+      "id": "Advanced-Paper",
+      "requirement": "one fair adaptation of a selected 2024-2026 high-quality paper method",
+      "status": "paper_not_selected"
+    },
+    {
+      "id": "LS-PMPC-v1",
+      "requirement": "legacy advanced reference only",
+      "status": "optional_legacy_reference"
+    }
+  ],
+  "fairness": {
+    "same_plant": true,
+    "same_actuator_limits": true,
+    "same_wind_samples": true,
+    "same_task_samples": true,
+    "same_terminal_gate": true,
+    "same_safety_gate": true,
+    "traditional_methods_must_be_seriously_tuned": true,
+    "deliberate_baseline_degradation_forbidden": true
+  },
+  "best_traditional_selection": "select from the three traditional methods using frozen development statistics before holdout evaluation",
+  "advanced_success_rule": {
+    "comparison_target": "best traditional baseline",
+    "safety_rate_not_lower": true,
+    "task_success_rate_not_lower": true,
+    "common_success_acquisition_time_clear_improvement": true,
+    "3d_cutter_position_error_clear_improvement": true,
+    "ramp_wind_peak_or_steady_state_error_clear_improvement": true,
+    "paired_holdout_statistics_required": true,
+    "percentage_threshold": "not fixed in V2-R0; freeze after V2-R1 baseline statistics and before advanced holdout evaluation"
+  }
+}

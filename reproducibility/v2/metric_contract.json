@@ -1,0 +1,46 @@
+{
+  "contract": "V2-R0-metric-contract",
+  "position_error": "norm(p_tip - p_tip_star)",
+  "orientation_error": "angle between cutter body x-axis and equilibrium cutter direction",
+  "terminal_acquisition": {
+    "position_error_3d_m_max": 0.05,
+    "tip_speed_m_s_max": 0.1,
+    "cutter_direction_error_deg_max": 5.0,
+    "cutter_angular_speed_rad_s_max": 0.1,
+    "continuous_hold_s_min": 1.0,
+    "all_conditions_required": true
+  },
+  "ramp_wind_hold_metrics": [
+    "peak_position_deviation_m",
+    "steady_state_position_deviation_m",
+    "peak_orientation_error_deg",
+    "steady_state_orientation_error_deg",
+    "tip_speed_m_s",
+    "cutter_angular_speed_rad_s",
+    "control_effort",
+    "safety"
+  ],
+  "comparison_metrics": [
+    "task_success_rate",
+    "acquisition_time_s",
+    "3d_cutter_position_error_rmse_m",
+    "peak_and_steady_state_ramp_wind_error",
+    "safety_rate",
+    "control_effort"
+  ],
+  "safety_gate": {
+    "finite_outputs": true,
+    "anchor_or_fallback_active": false,
+    "minimum_uav_height_m": 0.05,
+    "minimum_tip_height_m": 0.05,
+    "absolute_joint_angle_deg": 100.0,
+    "absolute_roll_deg": 25.0,
+    "absolute_pitch_deg": 25.0,
+    "absolute_longitudinal_acceleration_m_s2": 2.0,
+    "longitudinal_acceleration_step_m_s2": 0.25,
+    "thrust_max_N": 285.74568,
+    "torque_max_abs_Nm": 25.0,
+    "rotor_motor_commands": "zero for the wrench-only controlled plant"
+  },
+  "metric_freeze_rule": "no tolerance may be relaxed after observing controller results"
+}

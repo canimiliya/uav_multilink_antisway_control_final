@@ -1,0 +1,181 @@
+{
+  "audit": "V2-R0-local-cutter-tip-position-controllability",
+  "model_path": "reproducibility/frozen/model/model_5link_controlled.xml",
+  "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "plant": {
+    "free_uav_dof": 6,
+    "suspended_links": 5,
+    "model_nq": 12,
+    "model_nv": 11
+  },
+  "equilibrium": {
+    "uav_position_m": [
+      0.0,
+      0.0,
+      3.2
+    ],
+    "tip_position_m": [
+      0.225,
+      0.0,
+      0.38999999999999996
+    ],
+    "tip_relative_position_m": [
+      0.225,
+      0.0,
+      -2.81
+    ],
+    "cutter_axis_world": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "tip_velocity_m_s": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cutter_angular_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "joint_angles_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "jacobian_definition": {
+    "output": "world-frame cutter_tip position [x,y,z] in metres",
+    "input": "MuJoCo qvel coordinates; free-joint columns 0:3 are UAV translation and 3:6 are UAV angular coordinates",
+    "full_qvel_jacobian": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -0.0,
+        -2.81,
+        -0.0,
+        -2.57,
+        -2.07,
+        -1.5699999999999998,
+        -1.0699999999999998,
+        -0.5699999999999998
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.81,
+        0.0,
+        0.225,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.225,
+        0.0,
+        -0.225,
+        -0.225,
+        -0.225,
+        -0.225,
+        -0.225
+      ]
+    ],
+    "uav_translation_jacobian": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uav_attitude_jacobian": [
+      [
+        -0.0,
+        -2.81,
+        -0.0
+      ],
+      [
+        2.81,
+        0.0,
+        0.225
+      ],
+      [
+        0.0,
+        -0.225,
+        0.0
+      ]
+    ],
+    "uav_translation_attitude_jacobian": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -0.0,
+        -2.81,
+        -0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.81,
+        0.0,
+        0.225
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.225,
+        0.0
+      ]
+    ]
+  },
+  "rank": {
+    "uav_translation": 3,
+    "uav_translation_attitude": 3,
+    "singular_values_uav_translation_attitude": [
+      2.991107654364851,
+      2.9911076543648507,
+      1.0000000000000002
+    ],
+    "required_position_rank": 3
+  },
+  "terminal_state": {
+    "target_tip_velocity_m_s": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "target_cutter_angular_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "orientation_reference": "equilibrium cutter orientation; arbitrary 3-D orientation is out of scope",
+    "static_equilibrium_valid": true
+  },
+  "local_3d_position_rank": 3,
+  "local_3d_task_justified": true
+}

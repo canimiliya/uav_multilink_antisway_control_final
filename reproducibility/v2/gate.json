@@ -1,0 +1,20 @@
+{
+  "task": "V2-R0-RESEARCH-BRANCH-AND-BENCHMARK-CONTRACT-FREEZE",
+  "branch": "research-v2",
+  "based_on_v1_0_0": true,
+  "source_commit": "62769122b6b75cd124c9cabc48aee2976a159f6b",
+  "main_modified": false,
+  "v1_0_0_modified": false,
+  "local_3d_position_rank": 3,
+  "local_3d_task_justified": true,
+  "calm_3d_setpoint_defined": true,
+  "wind_3d_setpoint_defined": true,
+  "ramp_wind_hold_defined": true,
+  "terminal_state_defined": true,
+  "traditional_baseline_count": 3,
+  "development_holdout_split_frozen": true,
+  "advanced_methods_not_tuned_yet": true,
+  "paper_method_not_selected_yet": true,
+  "large_raw_runs_generated": false,
+  "result": "V2_RESEARCH_CONTRACT_FROZEN"
+}

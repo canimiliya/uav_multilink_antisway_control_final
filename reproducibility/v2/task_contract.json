@@ -1,0 +1,45 @@
+{
+  "contract": "V2-R0-task-contract",
+  "version": 1,
+  "branch": "research-v2",
+  "based_on": {
+    "tag": "v1.0.0",
+    "commit": "62769122b6b75cd124c9cabc48aee2976a159f6b"
+  },
+  "plant": {
+    "description": "frozen MuJoCo 6-DoF UAV with 5-link suspended chain and cutter",
+    "model": "reproducibility/frozen/model/model_5link_controlled.xml",
+    "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+    "uav_dof": 6,
+    "link_count": 5
+  },
+  "task_output": {
+    "position": "world-frame cutter_tip position [x,y,z]",
+    "terminal_tip_velocity_m_s": [0.0, 0.0, 0.0],
+    "terminal_cutter_angular_velocity_rad_s": [0.0, 0.0, 0.0],
+    "orientation": "equilibrium cutter orientation; arbitrary 3-D orientation is out of scope",
+    "pre_generated_flight_trajectory": false,
+    "future_wind_truth_available": false
+  },
+  "tasks": [
+    {
+      "name": "CALM_3D_SETPOINT",
+      "initial_state": "equilibrium",
+      "disturbance": "calm",
+      "objective": "reach nearby 3-D cutter-tip target and satisfy terminal acquisition"
+    },
+    {
+      "name": "WIND_3D_SETPOINT",
+      "initial_state": "equilibrium",
+      "disturbance": ["constant distributed wind", "unseen stochastic distributed wind"],
+      "objective": "reach the same type of nearby 3-D target under causal wind disturbance"
+    },
+    {
+      "name": "RAMP_WIND_EQUILIBRIUM_HOLD",
+      "initial_state": "equilibrium target already acquired",
+      "disturbance": "wind ramps from zero",
+      "objective": "hold equilibrium cutter position and orientation"
+    }
+  ],
+  "nearby_target_policy": "fixed nearby terminal setpoints defined in the development/holdout split; no arbitrary-global-reachability claim"
+}

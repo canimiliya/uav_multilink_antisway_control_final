@@ -1,0 +1,24 @@
+{
+  "contract": "V2-R0-development-holdout-split",
+  "frozen_before_controller_tuning": true,
+  "development": {
+    "purpose": "controller structure, gains, and implementation selection",
+    "target_direction_family": "axis_aligned_local_directions",
+    "wind_seed_namespace": "development_seed_0000_to_0019",
+    "wind_strength_family": "development_strengths_only",
+    "allowed_for_tuning": true
+  },
+  "holdout": {
+    "purpose": "final paired evaluation after every method and parameter is frozen",
+    "target_direction_family": "unseen_local_diagonal_directions",
+    "wind_seed_namespace": "holdout_seed_1000_to_1019",
+    "wind_strength_family": "unseen_subset_of_wind_strengths",
+    "includes_unseen_stochastic_wind": true,
+    "allowed_for_tuning": false,
+    "run_during_v2_r0": false
+  },
+  "common_samples": true,
+  "same_split_for_all_methods": true,
+  "holdout_access_policy": "read-only evaluation after method-freeze manifest is signed",
+  "preservation_rule": "retain raw, failed, and safety-invalid holdout cases; do not replace them with repaired runs"
+}
