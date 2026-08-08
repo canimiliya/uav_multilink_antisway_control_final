@@ -14,8 +14,8 @@ from pathlib import Path
 from types import SimpleNamespace
 
 import numpy as np
+from scipy.linalg import solve_discrete_are
 
-from uav_sway.control.task_lqr import build_task_lqr
 from uav_sway.mpc.preview_model import reference_vector
 
 
@@ -62,6 +62,18 @@ def git_diff(paths: list[str]) -> list[str]:
 
 def percent_lower_is_better(reference: float, candidate: float) -> float:
     return 100.0 * (reference - candidate) / reference
+
+
+def frozen_task_lqr(a: np.ndarray, b: np.ndarray, c_task: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """Recompute the frozen task_lqr_001 Riccati pair without a simulator import."""
+    q_base = np.diag([80, 4, 8, 2, 4, 1, 20, 20, 20, 20, 20, 12, 12, 12, 12, 12])
+    w = np.diag([20.0, 5.0, 5.0, 1.25])
+    q = 0.05 * q_base + c_task.T @ w @ c_task
+    r = np.asarray([[1.0]], dtype=float)
+    p = solve_discrete_are(a, b, q, r)
+    p = 0.5 * (p + p.T)
+    k = np.linalg.solve(r + b.T @ p @ b, b.T @ p @ a)
+    return np.asarray(k, dtype=float), np.asarray(p, dtype=float)
 
 
 def solve_dr_steady_state(a: np.ndarray, b: np.ndarray, c_task: np.ndarray,
@@ -126,16 +138,16 @@ def main() -> int:
     A = np.load(frozen / "linear_model/A.npy")
     B = np.load(frozen / "linear_model/B.npy")
     C = np.load(frozen / "task_lqr/C_task.npy")
-    task_lqr = build_task_lqr(A, B, C, 20.0, 5.0, 1.0)
-    K = np.asarray(task_lqr["K"], dtype=float)
-    P = np.asarray(task_lqr["P"], dtype=float)
+    K, P = frozen_task_lqr(A, B, C)
     shared_yz = read_json(r1r1 / "shared_task_yz_freeze.json")["selected"]
 
     r3_near_miss = read_json(r3 / "near_miss.json")
     of = next(row for row in r3_near_miss if row["candidate_id"] == "of_ts_rmpc_001")
-    baseline = read_json(r1r1 / "development_baseline_summary.json")["final_selected"]
-    task = baseline["task_lqr"]
-    pid = baseline["pid"]
+    # These are the R1R1 frozen references.  Do not use the historical
+    # development summary's alternate candidate ranking here: the V2
+    # contract freezes task_lqr_001 and pid_005 explicitly.
+    task = read_json(r1r1 / "task_lqr_freeze.json")["selected"]
+    pid = read_json(r1r1 / "pid_freeze.json")["selected"]
 
     of_vs_task = {
         "success_delta_percentage_points": 100.0 * (of["task_success_rate"] - task["task_success_rate"]),
@@ -191,7 +203,8 @@ def main() -> int:
         "task": "V2-R3R1-SELF-STRUCTURAL-RESET-DR-TSRMPC-PREREGISTRATION-R1",
         "of_tsrmpc_status": "CLOSED_WITH_NO_DEVELOPMENT_WIN",
         "source_evidence": [
-            "reproducibility/v2/r1r1/development_baseline_summary.json",
+            "reproducibility/v2/r1r1/task_lqr_freeze.json",
+            "reproducibility/v2/r1r1/pid_freeze.json",
             "reproducibility/v2/r3/near_miss.json",
             "reproducibility/v2/r3/development_summary.json",
             "src/uav_sway/control/of_tsrmpc.py",

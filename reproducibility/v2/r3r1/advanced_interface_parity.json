@@ -22,8 +22,8 @@
   "A_sha256": "bb8ec9e5671381bf083986a979620e79e165c3b1766e23c791c177f77d3950fe",
   "B_sha256": "7c96ed06c0e6812cb32c1967dbd8bd0dfd6b9568102026cef41413f9ba83c4d5",
   "C_task_sha256": "6e9866ba2b07504f67c1f58ea47811ef4bdf5f84de0724edcb164aad5060cee3",
-  "K_sha256": "96bc8aae53e27c3055df57216b419c6b63fd659988069b7d9156225451dee2d0",
-  "P_sha256": "c47a51116b1172b7e6e99bc77a1f22d3a56b51684122a7c7eceb872d4af1bdcb",
+  "K_sha256": "454904629715b80974c417dc95916aae18ff031cf2bd976847b9c09d8b3b52e7",
+  "P_sha256": "ce669e7f0f4dd5616e8311e0618e0643480e7b5879efb75a70554d6cf3f55a24",
   "shared_yz": {
     "ay_kp": 0.1,
     "ay_kd": 0.5,
@@ -46,13 +46,13 @@
       "absolute_error": 0.0
     },
     "small_x_direction_residual": {
-      "u_s": 1.7667892603480495e-16,
-      "a_x_at_xs_v0": 1.7667892603480495e-16,
+      "u_s": -1.4554029421374906e-16,
+      "a_x_at_xs_v0": -1.4554029421374906e-16,
       "absolute_error": 0.0
     },
     "multi_state_residual": {
-      "u_s": 0.0544780423460093,
-      "a_x_at_xs_v0": 0.0544780423460093,
+      "u_s": 0.05447804234600985,
+      "a_x_at_xs_v0": 0.05447804234600985,
       "absolute_error": 0.0
     }
   },

@@ -2,7 +2,8 @@
   "task": "V2-R3R1-SELF-STRUCTURAL-RESET-DR-TSRMPC-PREREGISTRATION-R1",
   "of_tsrmpc_status": "CLOSED_WITH_NO_DEVELOPMENT_WIN",
   "source_evidence": [
-    "reproducibility/v2/r1r1/development_baseline_summary.json",
+    "reproducibility/v2/r1r1/task_lqr_freeze.json",
+    "reproducibility/v2/r1r1/pid_freeze.json",
     "reproducibility/v2/r3/near_miss.json",
     "reproducibility/v2/r3/development_summary.json",
     "src/uav_sway/control/of_tsrmpc.py"
@@ -50,13 +51,7 @@
     "ramp_peak_position_error_m": 0.17797693631104378,
     "ramp_steady_state_position_error_m": 0.27126018941136054,
     "gain_norm": 47.47633487879517,
-    "stage2_rank": 1,
-    "parameters": {
-      "candidate_id": "task_lqr_001",
-      "w_p": 20.0,
-      "w_theta": 5.0,
-      "R": 1.0
-    }
+    "stage2_rank": 1
   },
   "pid_baseline": {
     "candidate_id": "pid_005",
@@ -74,13 +69,7 @@
     "ramp_peak_position_error_m": 0.13029872078634205,
     "ramp_steady_state_position_error_m": 0.18372019793484656,
     "gain_norm": 4.080441152620633,
-    "stage2_rank": 1,
-    "parameters": {
-      "candidate_id": "pid_005",
-      "kp": 0.8,
-      "kd": 4.0,
-      "ki": 0.1
-    }
+    "stage2_rank": 1
   },
   "of_vs_task_lqr": {
     "success_delta_percentage_points": 0.0,

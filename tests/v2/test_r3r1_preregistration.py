@@ -44,6 +44,18 @@ def test_reference_shift_and_steady_state_audits_pass():
 def test_of_route_is_preserved_as_structural_negative():
     failure = read("of_tsrmpc_failure_mechanism.json")
     assert failure["of_tsrmpc_status"] == "CLOSED_WITH_NO_DEVELOPMENT_WIN"
+    assert failure["task_lqr_baseline"]["candidate_id"] == "task_lqr_001"
+    assert failure["pid_baseline"]["candidate_id"] == "pid_005"
     assert failure["implementation_bug"] is False
     assert failure["structural_limitation"] is True
     assert failure["performance_rerun"] is False
+
+
+def test_shared_yz_and_model_interface_remain_frozen():
+    parity = read("advanced_interface_parity.json")
+    shared = json.loads((ROOT / "reproducibility/v2/r1r1/shared_task_yz_freeze.json").read_text(encoding="utf-8"))
+    assert parity["shared_yz"] == shared["selected"]
+    assert parity["A_shape"] == [16, 16]
+    assert parity["B_shape"] == [16, 1]
+    assert parity["C_task_shape"] == [4, 16]
+    assert parity["pass"] is True
