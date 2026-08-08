@@ -1,0 +1,32 @@
+{
+  "manifest_scope": "Evidence references for V2 final freeze; hashes are of pre-existing source evidence unless stated otherwise.",
+  "start_head": "8aafbc87cb583ed8fdc3b4e9cadcc1442c3f7aed",
+  "protected_source_evidence": [
+    {"path": "../r3r2/gate.json", "sha256": "b2fc460a943ef469ec7a127e48693ac2701e2c5b302a5ec7597f2866fb756179", "must_remain_unchanged": true},
+    {"path": "../r4/gate.json", "sha256": "4247aa63e135047f5dcada88b41f151a0603873bcfe594b934861fe1a73b1b69", "must_remain_unchanged": true},
+    {"path": "../r1/holdout_manifest.json", "sha256": "88584594006a2d970d2106ab589b66231999e85d1d6c64b55b95117053c9c6e7", "must_remain_unchanged": true},
+    {"path": "../r1r1/holdout_manifest.json", "sha256": "88584594006a2d970d2106ab589b66231999e85d1d6c64b55b95117053c9c6e7", "must_remain_unchanged": true}
+  ],
+  "source_artifacts": [
+    "../r1/pid_freeze.json",
+    "../r1/lqr_freeze.json",
+    "../r1/task_lqr_freeze.json",
+    "../r3/gate.json",
+    "../r3r1/gate.json",
+    "../r3r2/development_summary.json",
+    "../r3r2/paired_traditional_comparison.json",
+    "../r3r2/closure_clarification.json",
+    "../r4/development_summary.json",
+    "../r4/paired_traditional_comparison.json",
+    "../r4/near_miss.json",
+    "../r4/gate.json"
+  ],
+  "protected_paths_from_task_start": [
+    "reproducibility/v2/r1r1/**",
+    "reproducibility/v2/r2/**",
+    "reproducibility/v2/r3/**",
+    "reproducibility/v2/r3r1/**",
+    "reproducibility/v2/r3r2/gate.json",
+    "reproducibility/v2/r4/gate.json"
+  ]
+}

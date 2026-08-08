@@ -1,0 +1,24 @@
+{
+  "traditional": {
+    "status": "FROZEN",
+    "controllers": [
+      {"controller": "PID", "candidate_id": "pid_005", "source": "../r1r1/pid_freeze.json"},
+      {"controller": "LQR", "candidate_id": "lqr_041", "source": "../r1r1/lqr_freeze.json"},
+      {"controller": "Task-LQR", "candidate_id": "task_lqr_001", "source": "../r1r1/task_lqr_freeze.json"}
+    ]
+  },
+  "self": {
+    "OF-TSRMPC": "CLOSED_NEGATIVE",
+    "DR-TSRMPC": "CLOSED_PARTIAL_SCIENTIFIC_SUCCESS",
+    "selected_self_controller": null
+  },
+  "paper": {
+    "LV2026-CASCADE-ADAPTED": "CLOSED_NEGATIVE",
+    "selected_paper_controller": null,
+    "exact_reproduction_claim": false
+  },
+  "holdout": {
+    "status": "NEVER_EXECUTED",
+    "execution_allowed": false
+  }
+}

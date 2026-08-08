@@ -1,0 +1,33 @@
+{
+  "metric_scope": "V2 development evidence only; Holdout was never executed",
+  "traditional_frozen_envelope": {
+    "success_rate": {"value": 0.7192982456140351, "controller": "pid_005"},
+    "best_acquisition_median_s": {"value": 2.3, "controller": "task_lqr_001"},
+    "best_3d_position_rmse_m": {"value": 0.11368841879515172, "controller": "pid_005"},
+    "best_ramp_peak_error_m": {"value": 0.13029872078634205, "controller": "pid_005"},
+    "best_ramp_steady_state_error_m": {"value": 0.18372019793484656, "controller": "pid_005"}
+  },
+  "dr_tsrmpc_representative_development_range": {
+    "candidate_ids": ["dr_tsrmpc_001", "dr_tsrmpc_005", "dr_tsrmpc_003", "dr_tsrmpc_007", "dr_tsrmpc_009", "dr_tsrmpc_011"],
+    "success_rate": {"min": 1.0, "max": 1.0},
+    "position_rmse_3d_m": {"min": 0.08215089852679071, "max": 0.08238216302922526},
+    "ramp_peak_error_m": {"min": 0.08849819468914359, "max": 0.09079590790616546},
+    "ramp_steady_state_error_m": {"min": 0.07301984819289327, "max": 0.07712781842292858},
+    "solve_p95_ms": {"min": 1.7162, "max": 2.4142},
+    "global_acquisition_median_s": {"min": 2.43, "max": 2.495},
+    "paired_acquisition_improvement": {"max": -0.0015090543259557916},
+    "overall_winner": false
+  },
+  "lv2026_cascade_adapted_best_development": {
+    "candidate_id": "lv2026_000",
+    "success_rate": 0.5614035087719298,
+    "position_rmse_3d_m": 0.14215165747248237,
+    "acquisition_median_s": 2.3725,
+    "paired_acquisition_improvement": -0.0018604651162790302,
+    "ramp_peak_error_m": 0.1462048302596153,
+    "ramp_steady_state_error_m": 0.19596440328494374,
+    "safe_samples": "57/57",
+    "runtime_limits": "PASS",
+    "overall_winner": false
+  }
+}

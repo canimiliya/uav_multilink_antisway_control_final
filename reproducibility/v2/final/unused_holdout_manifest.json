@@ -1,0 +1,23 @@
+{
+  "status": "UNUSED_HOLDOUT_PRESERVED",
+  "execution_allowed": false,
+  "holdout_executed": false,
+  "sample_count": 23,
+  "source_manifests": ["../r1/holdout_manifest.json", "../r1r1/holdout_manifest.json"],
+  "source_manifests_identical": true,
+  "source_sha256": "88584594006a2d970d2106ab589b66231999e85d1d6c64b55b95117053c9c6e7",
+  "sample_ids": [
+    "holdout_1000", "holdout_1001", "holdout_1002", "holdout_1003", "holdout_1004",
+    "holdout_1005", "holdout_1006", "holdout_1007", "holdout_1008", "holdout_1009",
+    "holdout_1010", "holdout_1011", "holdout_1012", "holdout_1013", "holdout_1014",
+    "holdout_1015", "holdout_1016", "holdout_1017", "holdout_1018", "holdout_1019",
+    "holdout_constant_2p25", "holdout_constant_3p75", "holdout_ramp_0_to_3p75"
+  ],
+  "design": {
+    "diagonal_targets": 8,
+    "random_wind_seeds": "1000..1019",
+    "constant_wind_speeds_m_s": [2.25, 3.75],
+    "ramp_wind_end_speed_m_s": 3.75
+  },
+  "provenance_rule": "All listed samples remained excluded from tuning, model selection, and final testing throughout V2. V2 closure does not consume or repurpose them."
+}

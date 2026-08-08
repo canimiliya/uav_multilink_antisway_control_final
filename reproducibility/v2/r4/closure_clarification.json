@@ -1,0 +1,22 @@
+{
+  "artifact": "R4 closure clarification",
+  "scope": "explanatory metadata only; reproducibility/v2/r4/gate.json is unchanged",
+  "source_gate_sha256": "4247aa63e135047f5dcada88b41f151a0603873bcfe594b934861fe1a73b1b69",
+  "best_candidate": "lv2026_000",
+  "candidate_level_competence": {
+    "safe": "57/57",
+    "runtime_limits": "PASS",
+    "limiter_parity": "PASS"
+  },
+  "final_eligibility": {
+    "success": "FAIL",
+    "position": "FAIL",
+    "global_acquisition": "FAIL",
+    "paired_acquisition": "FAIL",
+    "ramp": "FAIL",
+    "selected_candidate": null
+  },
+  "interpretation": "The false selected-candidate safety field in gate.json encodes final eligibility with selected_candidate=null; it does not mean that lv2026_000 was unsafe on its raw development samples.",
+  "paper_route_closed": true,
+  "holdout_executed": false
+}

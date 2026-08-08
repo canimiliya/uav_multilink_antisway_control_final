@@ -1,0 +1,21 @@
+{
+  "result": "V2_CLOSED_WITH_PARTIAL_SCIENTIFIC_SUCCESS",
+  "of_tsrmpc": {
+    "status": "CLOSED_NEGATIVE",
+    "interpretation": "Structural failure was audited and preserved; route was not reopened."
+  },
+  "dr_tsrmpc": {
+    "status": "CLOSED_PARTIAL_SCIENTIFIC_SUCCESS",
+    "positive_metrics": ["task success", "3D positioning", "ramp-wind disturbance rejection"],
+    "failed_overall_gates": ["global acquisition", "paired acquisition"],
+    "interpretation": "Strong development-set trade-off, not an overall advanced winner."
+  },
+  "lv2026_cascade_adapted": {
+    "status": "CLOSED_NEGATIVE",
+    "best_candidate": "lv2026_000",
+    "failed_gates": ["success", "position", "global acquisition", "paired acquisition", "ramp"],
+    "interpretation": "The five-link x-channel adaptation did not outperform the frozen traditional envelope."
+  },
+  "global_conclusion": "V2 did not establish a controller that dominates the frozen traditional metric envelope under all preregistered gates.",
+  "scope_boundary": "These are development-set conclusions; no Holdout result exists."
+}

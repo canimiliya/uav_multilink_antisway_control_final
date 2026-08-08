@@ -1,0 +1,46 @@
+{
+  "claims": [
+    {
+      "claim_id": "traditional_baselines_frozen",
+      "claim": "PID, LQR, and Task-LQR are the frozen traditional baselines.",
+      "status": "SUPPORTED",
+      "evidence": ["../r1r1/pid_freeze.json", "../r1r1/lqr_freeze.json", "../r1r1/task_lqr_freeze.json"]
+    },
+    {
+      "claim_id": "dr_partial_success",
+      "claim": "DR-TSRMPC improved development-set task success, 3D positioning, and ramp-wind rejection relative to the traditional envelope, but did not improve acquisition.",
+      "status": "SUPPORTED_WITH_SCOPE",
+      "scope": "development set only; no overall-winner claim",
+      "evidence": ["../r3r2/development_summary.json", "../r3r2/paired_traditional_comparison.json", "../r3r2/closure_clarification.json"]
+    },
+    {
+      "claim_id": "paper_negative",
+      "claim": "The five-link x-channel LV2026-CASCADE-ADAPTED development route did not beat the frozen traditional metric envelope.",
+      "status": "SUPPORTED",
+      "evidence": ["../r4/development_summary.json", "../r4/paired_traditional_comparison.json", "../r4/closure_clarification.json"]
+    },
+    {
+      "claim_id": "overall_domination",
+      "claim": "V2 established an advanced controller that dominates the frozen traditional envelope under all preregistered gates.",
+      "status": "NOT_ESTABLISHED",
+      "evidence": ["final_metric_summary.json", "negative_results.json"]
+    },
+    {
+      "claim_id": "holdout",
+      "claim": "The frozen Holdout was not used for tuning, model selection, or final testing.",
+      "status": "SUPPORTED",
+      "evidence": ["unused_holdout_manifest.json", "../r1/holdout_manifest.json", "../r1r1/holdout_manifest.json"]
+    },
+    {
+      "claim_id": "v2_limitation",
+      "claim": "Advanced controller-specific authority was restricted to x while the formal metric evaluated the full 3D cutter-tip task.",
+      "status": "SUPPORTED_AS_EXPERIMENTAL_DESIGN_LIMITATION",
+      "evidence": ["v2_limitations.json", "../comparison_contract.json", "../r2/advanced_interface_parity.json"]
+    }
+  ],
+  "prohibited_claims": [
+    "Advanced > Traditional",
+    "LV2026 paper is invalid",
+    "Holdout performance was measured"
+  ]
+}

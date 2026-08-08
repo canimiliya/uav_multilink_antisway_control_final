@@ -1,0 +1,13 @@
+{
+  "status": "FUTURE_WORK_ONLY",
+  "v3_created_by_this_task": false,
+  "recommendation": "If the research goal remains to compare Self-Advanced and Paper-Advanced methods against 2-3 traditional controllers under a fair full-task interface, create a new V3 contract.",
+  "required_contract_changes": [
+    "Give every controller the same full 3D acceleration interface [a_x, a_y, a_z].",
+    "Define 3D PID, 3D LQR, and 3D Task-LQR under that common authority.",
+    "Define 3D Self-Advanced and 3D Paper-Advanced under the same authority.",
+    "Re-freeze development and Holdout splits before any V3 tuning or selection.",
+    "Do not automatically reuse V2 Holdout as the V3 Holdout."
+  ],
+  "scope_boundary": "This task does not create a V3 branch, contract, controller, or experiment."
+}

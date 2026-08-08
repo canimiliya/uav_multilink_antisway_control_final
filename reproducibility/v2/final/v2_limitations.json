@@ -1,0 +1,10 @@
+{
+  "limitation_id": "V2_X_ONLY_ADVANCED_AUTHORITY_VS_FULL_3D_METRIC",
+  "statement": "Controller-specific authority was restricted to the x anti-sway channel, while shared y/z control was identical across methods and the formal metric evaluated the full 3D cutter-tip task.",
+  "consequence": "Advanced methods could not independently improve the shared y/z task channels; equal acquisition on many y/z targets is therefore compatible with the frozen interface contract.",
+  "classification": "V2_EXPERIMENTAL_DESIGN_LIMITATION",
+  "not_a_gate_change": true,
+  "not_a_posthoc_excuse": true,
+  "evidence": ["../comparison_contract.json", "../r2/advanced_interface_parity.json", "../r3r2/paired_traditional_comparison.json"],
+  "interpretation_boundary": "This limitation does not invalidate the preregistered V2 result and does not justify relaxing the V2 win gate."
+}
