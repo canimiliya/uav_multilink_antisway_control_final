@@ -1,6 +1,7 @@
 {
   "implementation_freeze_required_before_performance": true,
-  "actual_head_at_audit": "de6d8fedd4769c3274b58ca332e0a3ec7a47c942",
+  "implementation_freeze_head": "52221943b5c7329c4cd7e50f90757d79397de504",
+  "actual_head_at_audit": "df86b2e5467e59b43b32748d9083b80518dd80bc",
   "unit_test": "tests/v2/test_r4_lv2026_implementation.py",
   "synthetic_only": true,
   "equivalent_swing_audit_pass": true

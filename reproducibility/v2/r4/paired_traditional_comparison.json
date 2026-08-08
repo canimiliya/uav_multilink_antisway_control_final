@@ -1,0 +1,313 @@
+{
+  "acquisition_best_traditional": "task_lqr_001",
+  "formula": "median((t_task_lqr - t_paper) / t_task_lqr) over common-success samples with t_task_lqr > 0",
+  "zero_denominator_policy": "record undefined and exclude from median; never substitute a value",
+  "comparisons": [
+    {
+      "candidate_id": "lv2026_000",
+      "traditional_candidate_id": "task_lqr_001",
+      "common_success_count": 25,
+      "defined_count": 24,
+      "median_improvement": -0.0018604651162790302,
+      "undefined_zero_baseline_samples": [
+        {
+          "sample_id": "ramp_dev_0_to_3p0",
+          "task_lqr_acquisition_s": 0.0,
+          "paper_acquisition_s": 0.0,
+          "improvement": null,
+          "undefined_reason": "zero_task_lqr_denominator"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "calm__+x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "paper_acquisition_s": 3.0300000000000002,
+          "improvement": -0.4602409638554217
+        },
+        {
+          "sample_id": "calm__-x_r0.15",
+          "task_lqr_acquisition_s": 2.075,
+          "paper_acquisition_s": 3.0300000000000002,
+          "improvement": -0.4602409638554217
+        },
+        {
+          "sample_id": "calm__+y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "paper_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "paper_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "paper_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "paper_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "paper_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "paper_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "paper_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "paper_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0001",
+          "task_lqr_acquisition_s": 2.2,
+          "paper_acquisition_s": 2.6100000000000003,
+          "improvement": -0.18636363636363643
+        },
+        {
+          "sample_id": "stochastic_dev_0003",
+          "task_lqr_acquisition_s": 5.01,
+          "paper_acquisition_s": 6.525,
+          "improvement": -0.30239520958083843
+        },
+        {
+          "sample_id": "stochastic_dev_0004",
+          "task_lqr_acquisition_s": 1.0,
+          "paper_acquisition_s": 1.0099999999999998,
+          "improvement": -0.009999999999999787
+        },
+        {
+          "sample_id": "stochastic_dev_0005",
+          "task_lqr_acquisition_s": 0.9849999999999999,
+          "paper_acquisition_s": 0.98,
+          "improvement": 0.0050761421319795875
+        },
+        {
+          "sample_id": "stochastic_dev_0008",
+          "task_lqr_acquisition_s": 5.495000000000001,
+          "paper_acquisition_s": 5.355,
+          "improvement": 0.025477707006369525
+        },
+        {
+          "sample_id": "stochastic_dev_0009",
+          "task_lqr_acquisition_s": 5.375,
+          "paper_acquisition_s": 5.395,
+          "improvement": -0.0037209302325580604
+        },
+        {
+          "sample_id": "stochastic_dev_0010",
+          "task_lqr_acquisition_s": 1.2400000000000002,
+          "paper_acquisition_s": 2.2700000000000005,
+          "improvement": -0.8306451612903226
+        },
+        {
+          "sample_id": "stochastic_dev_0011",
+          "task_lqr_acquisition_s": 1.25,
+          "paper_acquisition_s": 1.255,
+          "improvement": -0.003999999999999915
+        },
+        {
+          "sample_id": "stochastic_dev_0012",
+          "task_lqr_acquisition_s": 2.0149999999999997,
+          "paper_acquisition_s": 2.995,
+          "improvement": -0.48635235732009957
+        },
+        {
+          "sample_id": "stochastic_dev_0013",
+          "task_lqr_acquisition_s": 2.2300000000000004,
+          "paper_acquisition_s": 2.9800000000000004,
+          "improvement": -0.33632286995515687
+        },
+        {
+          "sample_id": "stochastic_dev_0015",
+          "task_lqr_acquisition_s": 5.0649999999999995,
+          "paper_acquisition_s": 5.234999999999999,
+          "improvement": -0.033563672260612035
+        },
+        {
+          "sample_id": "stochastic_dev_0016",
+          "task_lqr_acquisition_s": 1.0,
+          "paper_acquisition_s": 0.9849999999999999,
+          "improvement": 0.015000000000000124
+        },
+        {
+          "sample_id": "stochastic_dev_0017",
+          "task_lqr_acquisition_s": 0.9950000000000001,
+          "paper_acquisition_s": 0.9849999999999999,
+          "improvement": 0.010050251256281638
+        },
+        {
+          "sample_id": "stochastic_dev_0018",
+          "task_lqr_acquisition_s": 2.6799999999999997,
+          "paper_acquisition_s": 3.5200000000000005,
+          "improvement": -0.3134328358208958
+        }
+      ]
+    },
+    {
+      "candidate_id": "lv2026_003",
+      "traditional_candidate_id": "task_lqr_001",
+      "common_success_count": 10,
+      "defined_count": 9,
+      "median_improvement": 0.0,
+      "undefined_zero_baseline_samples": [
+        {
+          "sample_id": "ramp_dev_0_to_3p0",
+          "task_lqr_acquisition_s": 0.0,
+          "paper_acquisition_s": 0.0,
+          "improvement": null,
+          "undefined_reason": "zero_task_lqr_denominator"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "calm__+y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "paper_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "paper_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "paper_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "paper_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "paper_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "paper_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "paper_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "paper_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0011",
+          "task_lqr_acquisition_s": 1.25,
+          "paper_acquisition_s": 1.2649999999999997,
+          "improvement": -0.011999999999999744
+        }
+      ]
+    },
+    {
+      "candidate_id": "lv2026_001",
+      "traditional_candidate_id": "task_lqr_001",
+      "common_success_count": 10,
+      "defined_count": 9,
+      "median_improvement": 0.0,
+      "undefined_zero_baseline_samples": [
+        {
+          "sample_id": "ramp_dev_0_to_3p0",
+          "task_lqr_acquisition_s": 0.0,
+          "paper_acquisition_s": 0.0,
+          "improvement": null,
+          "undefined_reason": "zero_task_lqr_denominator"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "calm__+y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "paper_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.15",
+          "task_lqr_acquisition_s": 4.955,
+          "paper_acquisition_s": 4.955,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "paper_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.15",
+          "task_lqr_acquisition_s": 0.99,
+          "paper_acquisition_s": 0.99,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "paper_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-y_r0.25",
+          "task_lqr_acquisition_s": 5.34,
+          "paper_acquisition_s": 5.34,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__+z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "paper_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "calm__-z_r0.25",
+          "task_lqr_acquisition_s": 1.25,
+          "paper_acquisition_s": 1.25,
+          "improvement": 0.0
+        },
+        {
+          "sample_id": "stochastic_dev_0011",
+          "task_lqr_acquisition_s": 1.25,
+          "paper_acquisition_s": 1.2649999999999997,
+          "improvement": -0.011999999999999744
+        }
+      ]
+    }
+  ]
+}
