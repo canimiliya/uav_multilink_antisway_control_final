@@ -1,0 +1,19 @@
+{
+  "horizon": 20,
+  "dt_s": 0.05,
+  "variable": "v_0...v_19",
+  "physical_acceleration_constraints": true,
+  "first_step_uses_previous_actual_ax": true,
+  "slew_limit": 0.25,
+  "amplitude_limit": 2.0,
+  "solver": {
+    "name": "OSQP",
+    "eps_abs": 1e-05,
+    "eps_rel": 1e-05,
+    "max_iter": 4000,
+    "warm_start": true,
+    "status": "solved",
+    "iterations": 25
+  },
+  "pass": true
+}

@@ -1,0 +1,9 @@
+{
+  "d_hat": 0.0,
+  "x_s": "zero",
+  "v_mpc": 0.0,
+  "sample_count": 32,
+  "maximum_absolute_error": 0.0,
+  "tolerance": 1e-10,
+  "pass": true
+}

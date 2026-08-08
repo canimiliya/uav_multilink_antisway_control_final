@@ -1,0 +1,9 @@
+{
+  "formula": "a_x = u_s - K_task (x - x_s) + v_mpc",
+  "x_equals_x_s": true,
+  "v_mpc": 0.0,
+  "u_s": 1.7130665204509295e-15,
+  "a_x": 1.7130665204509295e-15,
+  "absolute_error": 0.0,
+  "pass": true
+}

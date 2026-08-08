@@ -1,0 +1,10 @@
+{
+  "u_limit": 2.0,
+  "regularization": 1e-08,
+  "d_hat": 0.15,
+  "steady_state_residual": 8.145115187297102e-17,
+  "u_s": 1.7130665204509295e-15,
+  "x_s_norm": 0.14999999850001625,
+  "objective": 2.2499999775004862e-10,
+  "pass": true
+}

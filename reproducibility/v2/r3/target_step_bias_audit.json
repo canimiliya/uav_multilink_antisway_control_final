@@ -1,0 +1,10 @@
+{
+  "test": "equilibrium target -> +0.15 m x",
+  "measured_error_before": 0.0,
+  "measured_error_after": -0.14999999999998348,
+  "d_raw_before": 0.0,
+  "d_raw_after": 0.0,
+  "false_bias_tolerance": 1e-12,
+  "pass": true,
+  "no_holdoff_deadzone_or_clamp_added": true
+}

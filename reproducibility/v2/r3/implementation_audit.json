@@ -1,0 +1,11 @@
+{
+  "task_output_matrix": true,
+  "target_step_bias": true,
+  "steady_state_optimizer": true,
+  "steady_state_control_parity": true,
+  "backbone_parity": true,
+  "qp_smoke": true,
+  "grid_size": 36,
+  "all_freeze_only": true,
+  "pass": true
+}

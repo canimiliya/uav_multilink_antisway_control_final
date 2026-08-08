@@ -1,0 +1,22 @@
+{
+  "task": "V2-R3-OF-TSRMPC-DEVELOPMENT-AND-FREEZE-R1",
+  "start_head": "2aa1d72a58fdb2bac450d1106b1e044bc258e0ee",
+  "method": "OF-TSRMPC",
+  "performance_runs_executed": false,
+  "holdout_executed": false,
+  "advanced_paper_executed": false,
+  "horizon": 20,
+  "dt_s": 0.05,
+  "grid_size": 36,
+  "output_bias": "tip-x position output only",
+  "matched_wind_dob": false,
+  "physical_ax_constraints_in_qp": true,
+  "solver": {
+    "name": "OSQP",
+    "eps_abs": 1e-05,
+    "eps_rel": 1e-05,
+    "max_iter": 4000,
+    "warm_start": true
+  },
+  "r1r1_and_r2_read_only": true
+}
