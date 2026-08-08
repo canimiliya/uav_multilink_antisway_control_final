@@ -1,0 +1,32 @@
+{
+  "controller": "pid",
+  "selected": {
+    "candidate_id": "pid_005",
+    "sample_count": 57,
+    "safe_sample_count": 57,
+    "task_success_count": 28,
+    "safety_rate": 1.0,
+    "task_success_rate": 0.49122807017543857,
+    "acquisition_median_s": 2.72,
+    "position_rmse_3d_m": 0.37835758750541715,
+    "orientation_rmse_deg": 0.5441563227407265,
+    "control_effort": 0.15778791861891026,
+    "ramp_peak_position_error_m": 0.13029909377897284,
+    "ramp_steady_state_position_error_m": 0.183741825636707,
+    "gain_norm": 4.080441152620633,
+    "stage2_rank": 1
+  },
+  "parameters": {
+    "candidate_id": "pid_005",
+    "kp": 0.8,
+    "kd": 4.0,
+    "ki": 0.1
+  },
+  "shared_yz": {
+    "ay_kp": 1.0,
+    "ay_kd": 1.5,
+    "az_kp": 6.0,
+    "az_kd": 2.5
+  },
+  "stage2_selection_rule": "lexicographic safety, success, acquisition, 3D RMSE, orientation RMSE, effort, conservative gain norm"
+}

@@ -1,0 +1,290 @@
+{
+  "selection_rule": "separate axis calm +/-axis development samples",
+  "selected": {
+    "ay_kp": 1.0,
+    "ay_kd": 1.5,
+    "az_kp": 6.0,
+    "az_kd": 2.5
+  },
+  "grid_results": {
+    "y": [
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 1.5
+        },
+        "score_position_rmse_m": 1.6553519071666571,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.0,
+          "ay_kd": 1.5,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 2.0
+        },
+        "score_position_rmse_m": 2.016328397051488,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.0,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.0,
+          "kd": 3.0
+        },
+        "score_position_rmse_m": 2.2317696024592477,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.0,
+          "ay_kd": 3.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.5,
+          "kd": 1.5
+        },
+        "score_position_rmse_m": 2.397270027307778,
+        "safe_count": 2,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 1.5,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.5,
+          "kd": 2.0
+        },
+        "score_position_rmse_m": 2.7187739651415277,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 1.5,
+          "kd": 3.0
+        },
+        "score_position_rmse_m": 3.4962322614029,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 3.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 2.5,
+          "kd": 1.5
+        },
+        "score_position_rmse_m": 4.768905608597853,
+        "safe_count": 2,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 2.5,
+          "ay_kd": 1.5,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 2.5,
+          "kd": 2.0
+        },
+        "score_position_rmse_m": 4.040613776905529,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 2.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 2.5,
+          "kd": 3.0
+        },
+        "score_position_rmse_m": 3.989908215273801,
+        "safe_count": 2,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 2.5,
+          "ay_kd": 3.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      }
+    ],
+    "z": [
+      {
+        "candidate": {
+          "kp": 2.5,
+          "kd": 2.5
+        },
+        "score_position_rmse_m": 0.048698053109488236,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 2.5,
+          "az_kd": 2.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 2.5,
+          "kd": 3.5
+        },
+        "score_position_rmse_m": 0.05326858807023892,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 2.5,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 2.5,
+          "kd": 5.0
+        },
+        "score_position_rmse_m": 0.060722167205717485,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 2.5,
+          "az_kd": 5.0
+        }
+      },
+      {
+        "candidate": {
+          "kp": 4.0,
+          "kd": 2.5
+        },
+        "score_position_rmse_m": 0.042898804808495956,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 2.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 4.0,
+          "kd": 3.5
+        },
+        "score_position_rmse_m": 0.04525675046736573,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 4.0,
+          "kd": 5.0
+        },
+        "score_position_rmse_m": 0.05014700823492009,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 4.0,
+          "az_kd": 5.0
+        }
+      },
+      {
+        "candidate": {
+          "kp": 6.0,
+          "kd": 2.5
+        },
+        "score_position_rmse_m": 0.040055981693392334,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 6.0,
+          "az_kd": 2.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 6.0,
+          "kd": 3.5
+        },
+        "score_position_rmse_m": 0.040792928830562916,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 6.0,
+          "az_kd": 3.5
+        }
+      },
+      {
+        "candidate": {
+          "kp": 6.0,
+          "kd": 5.0
+        },
+        "score_position_rmse_m": 0.043771044952792375,
+        "safe_count": 4,
+        "samples": 4,
+        "shared_yz": {
+          "ay_kp": 1.5,
+          "ay_kd": 2.0,
+          "az_kp": 6.0,
+          "az_kd": 5.0
+        }
+      }
+    ]
+  },
+  "frozen_limits": {
+    "ay_abs_max_m_s2": 2.0,
+    "az_abs_max_m_s2": 2.0,
+    "axis_slew_max_m_s2_per_update": 0.25
+  }
+}

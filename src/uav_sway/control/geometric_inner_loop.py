@@ -38,7 +38,8 @@ class GeometricInnerLoop:
         self._previous_shared_ay = 0.0
         self._previous_shared_az = 0.0
 
-    def desired_force(self, state: ControlState, reference: ReferenceState, ax_limited: float) -> np.ndarray:
+    def shared_yz_command(self, state: ControlState, reference: ReferenceState) -> tuple[float, float]:
+        """Compute the shared y/z command once per outer update."""
         desired_ay = -self.ay_kp * (state.position[1] - reference.y_ref) - self.ay_kd * state.velocity[1]
         desired_az = -self.az_kp * (state.position[2] - reference.z_ref) - self.az_kd * state.velocity[2]
         if self.shared_limits is not None:
@@ -47,11 +48,19 @@ class GeometricInnerLoop:
             )
             self._previous_shared_ay = desired_ay
             self._previous_shared_az = desired_az
+        return float(desired_ay), float(desired_az)
+
+    def desired_force(self, state: ControlState, reference: ReferenceState, ax_limited: float,
+                      shared_yz: tuple[float, float] | None = None) -> np.ndarray:
+        if shared_yz is None:
+            shared_yz = self.shared_yz_command(state, reference)
+        desired_ay, desired_az = shared_yz
         acceleration = np.array([float(ax_limited), desired_ay, desired_az])
         return self.total_mass * (acceleration + np.array([0.0, 0.0, 9.81]))
 
-    def compute(self, state: ControlState, reference: ReferenceState, ax_limited: float) -> dict[str, np.ndarray | float]:
-        desired_force = self.desired_force(state, reference, ax_limited)
+    def compute(self, state: ControlState, reference: ReferenceState, ax_limited: float,
+                shared_yz: tuple[float, float] | None = None) -> dict[str, np.ndarray | float]:
+        desired_force = self.desired_force(state, reference, ax_limited, shared_yz)
         thrust, torque = self.controller.compute(
             float(0.0),
             (SO3(state.rotation), TSO3(state.body_angular_velocity)),

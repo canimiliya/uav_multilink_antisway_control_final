@@ -1,0 +1,13 @@
+{
+  "contract": "V2-R1-advanced-win-r1",
+  "written_before_any_advanced_performance": true,
+  "safety_rate_must_be_at_least_best_traditional": true,
+  "task_success_rate_must_be_at_least_best_traditional": true,
+  "position_rmse_improvement_required_fraction": 0.05,
+  "common_success_acquisition_improvement_required_fraction": 0.05,
+  "ramp_peak_or_steady_state_improvement_required_fraction": 0.05,
+  "paired_bootstrap_confidence": 0.95,
+  "paired_bootstrap_required": true,
+  "improvement_direction": "positive means advanced metric is lower than the corresponding best traditional envelope",
+  "holdout_only_for_final_pass": true
+}

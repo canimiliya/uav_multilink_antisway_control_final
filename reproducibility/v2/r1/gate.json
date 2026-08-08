@@ -1,0 +1,23 @@
+{
+  "task": "V2-R1-TRADITIONAL-3D-BASELINES-DEVELOPMENT-AND-FREEZE-R1",
+  "start_head": "562bb1c99b43d25a07386ec5e3e99ec927b90cb6",
+  "branch": "research-v2",
+  "main_unchanged": true,
+  "v1_tag_unchanged": true,
+  "shared_3d_scaffold_frozen": true,
+  "development_target_count": 12,
+  "holdout_diagonal_target_count": 8,
+  "pid_grid_size": 18,
+  "lqr_grid_size": 64,
+  "task_lqr_grid_size": 27,
+  "pid_selected": true,
+  "lqr_selected": true,
+  "task_lqr_selected": true,
+  "primary_traditional_selected": true,
+  "traditional_metric_envelope_written": true,
+  "advanced_win_contract_frozen": true,
+  "advanced_self_started": false,
+  "advanced_paper_selected": false,
+  "holdout_executed": false,
+  "result": "V2_TRADITIONAL_BASELINES_FROZEN"
+}

@@ -1,0 +1,22 @@
+{
+  "best_success_rate": {
+    "value": 0.49122807017543857,
+    "controller": "pid"
+  },
+  "best_acquisition_time_s": {
+    "value": 1.6200000000000003,
+    "controller": "task_lqr"
+  },
+  "best_3d_position_rmse_m": {
+    "value": 0.37835758750541715,
+    "controller": "pid"
+  },
+  "best_ramp_peak_error_m": {
+    "value": 0.13029909377897284,
+    "controller": "pid"
+  },
+  "best_ramp_steady_state_error_m": {
+    "value": 0.183741825636707,
+    "controller": "pid"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "development_samples": 57,
+  "holdout_samples_manifested": 23,
+  "holdout_executed": false,
+  "unsafe_samples_retained": true,
+  "controller_safety": {
+    "pid": {
+      "safe_sample_count": 57,
+      "sample_count": 57,
+      "unsafe_sample_ids": []
+    },
+    "lqr": {
+      "safe_sample_count": 57,
+      "sample_count": 57,
+      "unsafe_sample_ids": []
+    },
+    "task_lqr": {
+      "safe_sample_count": 57,
+      "sample_count": 57,
+      "unsafe_sample_ids": []
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "controller": "lqr",
+  "selected": {
+    "candidate_id": "lqr_041",
+    "sample_count": 57,
+    "safe_sample_count": 57,
+    "task_success_count": 28,
+    "safety_rate": 1.0,
+    "task_success_rate": 0.49122807017543857,
+    "acquisition_median_s": 2.49,
+    "position_rmse_3d_m": 0.38152233527663765,
+    "orientation_rmse_deg": 0.3826238827109822,
+    "control_effort": 0.15559446229845425,
+    "ramp_peak_position_error_m": 0.16617196631992318,
+    "ramp_steady_state_position_error_m": 0.23622293059581306,
+    "gain_norm": 31.324587092708274,
+    "stage2_rank": 1
+  },
+  "parameters": {
+    "candidate_id": "lqr_041",
+    "joint_angle_weight": 80.0,
+    "joint_velocity_weight": 3.0,
+    "input_weight": 1.0,
+    "position_error_weight": 20.0,
+    "velocity_error_weight": 8.0
+  },
+  "shared_yz": {
+    "ay_kp": 1.0,
+    "ay_kd": 1.5,
+    "az_kp": 6.0,
+    "az_kd": 2.5
+  },
+  "stage2_selection_rule": "lexicographic safety, success, acquisition, 3D RMSE, orientation RMSE, effort, conservative gain norm"
+}
