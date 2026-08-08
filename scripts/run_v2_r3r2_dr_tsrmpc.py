@@ -301,17 +301,22 @@ def main() -> int:
     tuning = [s for s in development if s["scenario"] in {"CALM_3D_SETPOINT", "WIND_3D_SETPOINT"} and s["target"]["direction"] in {"+x", "-x"} and s["target"]["radius_m"] in {0.15, 0.25} and (s["scenario"] == "CALM_3D_SETPOINT" or s["wind"].get("speed_m_s") == 3.0)]
     ramp = [s for s in development if s["scenario"] == "RAMP_WIND_EQUILIBRIUM_HOLD"]
     if len(tuning) != 8 or len(ramp) != 1: raise RuntimeError("stage-1 sample contract mismatch")
-    stage1 = []
-    for index, params in enumerate(grid):
-        rows = [run_case(params, sample) for sample in tuning + ramp]; stage1.append(aggregate(params, rows)); print(f"stage1 {index + 1}/36", flush=True)
     fields = ["candidate_id", "beta", "w_p", "w_theta", "R", "H", "safe_sample_count", "solver_valid_sample_count", "solver_success_rate", "steady_feasibility_rate", "limiter_parity_rate", "task_success_count", "task_success_rate", "position_rmse_3d_m", "acquisition_median_s", "ramp_peak_position_error_m", "ramp_steady_state_position_error_m", "total_acceleration_effort", "total_solve_time_p95_ms"]
-    with (OUT / "stage1_candidates.csv").open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n"); writer.writeheader()
-        for s in stage1: writer.writerow({**{key: s["parameters"].get(key) for key in ("candidate_id", "beta", "w_p", "w_theta", "R", "H")}, **{key: s[key] for key in fields if key not in {"candidate_id", "beta", "w_p", "w_theta", "R", "H"}}})
-    valid_stage1 = [s for s in stage1 if s["safe_sample_count"] == 9 and s["solver_valid_sample_count"] == 9 and s["steady_feasibility_rate"] == 1.0 and s["limiter_parity_rate"] == 1.0]
-    top6 = sorted(valid_stage1, key=stage_key)[:6]
-    _write_json("stage1_top6.json", [{key: value for key, value in s.items() if key != "rows"} for s in top6])
-    if args.stage == "stage1": return 0
+    if args.stage == "stage2":
+        top6 = json.loads((OUT / "stage1_top6.json").read_text(encoding="utf-8"))
+        if len(top6) != 6:
+            raise RuntimeError("stage2 requires an existing six-candidate Stage-1 freeze")
+    else:
+        stage1 = []
+        for index, params in enumerate(grid):
+            rows = [run_case(params, sample) for sample in tuning + ramp]; stage1.append(aggregate(params, rows)); print(f"stage1 {index + 1}/36", flush=True)
+        with (OUT / "stage1_candidates.csv").open("w", encoding="utf-8", newline="") as stream:
+            writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n"); writer.writeheader()
+            for s in stage1: writer.writerow({**{key: s["parameters"].get(key) for key in ("candidate_id", "beta", "w_p", "w_theta", "R", "H")}, **{key: s[key] for key in fields if key not in {"candidate_id", "beta", "w_p", "w_theta", "R", "H"}}})
+        valid_stage1 = [s for s in stage1 if s["safe_sample_count"] == 9 and s["solver_valid_sample_count"] == 9 and s["steady_feasibility_rate"] == 1.0 and s["limiter_parity_rate"] == 1.0]
+        top6 = sorted(valid_stage1, key=stage_key)[:6]
+        _write_json("stage1_top6.json", [{key: value for key, value in s.items() if key != "rows"} for s in top6])
+        if args.stage == "stage1": return 0
     if len(top6) < 6: raise RuntimeError("fewer than six valid Stage-1 candidates; protocol is blocked")
     stage2 = []; per_sample = []
     for rank, selected in enumerate(top6, 1):
