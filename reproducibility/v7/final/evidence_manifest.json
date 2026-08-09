@@ -1,0 +1,20 @@
+{
+  "primary_source_audit": "reproducibility/v7/r0/paper_source_audit.json",
+  "canonical_source_audit": "reproducibility/v7/paper_source_audit.json",
+  "contract": "reproducibility/v7/r0/research_contract.json",
+  "development_manifest": "reproducibility/v7/r0/development_manifest.json",
+  "locked_holdout_manifest": "reproducibility/v7/r0/holdout_manifest.json",
+  "adaptation_mapping": "docs/v7/paper_equation_mapping.md",
+  "implementation_freeze": "reproducibility/v7/paper/implementation_freeze.json",
+  "development_final": "reproducibility/v7/paper/development_final.json",
+  "development_gate_audit": "reproducibility/v7/paper/development_gate_audit.json",
+  "failure_mechanism_audit": "reproducibility/v7/paper/failure_mechanism_audit.json",
+  "execution_audit": "reproducibility/v7/development/execution_audit.json",
+  "holdout_status": "reproducibility/v7/holdout_status.json",
+  "technical_report": "docs/v7/FINAL_PROJECT_TECHNICAL_REPORT.md",
+  "negative_results": "docs/v7/NEGATIVE_RESULTS.md",
+  "claim_matrix": "docs/v7/FINAL_CLAIM_MATRIX.md",
+  "project_tests": "reproducibility/v7/final/project_tests.json",
+  "protected_evidence_audit": "reproducibility/v7/final/protected_evidence_audit.json",
+  "resume_outputs": "reproducibility/v7/final/resume_outputs.json"
+}

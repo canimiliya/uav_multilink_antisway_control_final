@@ -1,0 +1,22 @@
+{
+  "traditional": {
+    "status": "FROZEN_UNCHANGED",
+    "methods": [
+      "hybrid_x007_y041_z041",
+      "full_lqr_048",
+      "task_lqr_009"
+    ]
+  },
+  "self": {
+    "method": "satc_b_027 / SATC-OFMPC",
+    "status": "FROZEN_UNCHANGED_REFERENCE_ONLY",
+    "formal_claim": "V5_SELF_OVERALL_HOLDOUT_WIN"
+  },
+  "paper": {
+    "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+    "development": "NO_QUALIFIED_CANDIDATE",
+    "best_near_miss": "kang_b_001",
+    "holdout": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+    "paper_freeze": "NOT_CREATED"
+  }
+}

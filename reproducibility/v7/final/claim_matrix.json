@@ -1,0 +1,16 @@
+{
+  "allowed": [
+    "The Kang2026 full primary source was audited before performance and its FAS, virtual-constraint, cascade, swing-suppression, and DOB structure was adapted to the common five-link acceleration interface.",
+    "The best V7 Kang2026 adaptation was safe and acquired faster than Full-LQR on the few successful Development samples, but failed the preregistered strong-baseline gate.",
+    "No V7 Paper candidate qualified on Development, so the locked V7 Holdout was not executed.",
+    "The frozen V5 SATC Overall Holdout claim remains unchanged."
+  ],
+  "forbidden": [
+    "Recent Paper Advanced outperformed Traditional.",
+    "SATC outperformed the original Kang and Shan controller.",
+    "The V7 adaptation is an exact reproduction.",
+    "V7 Holdout was executed.",
+    "Project research is complete.",
+    "The evidence establishes hardware or real-flight performance."
+  ]
+}

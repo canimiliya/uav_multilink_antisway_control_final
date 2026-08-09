@@ -1,0 +1,33 @@
+{
+  "reference_tag": "v6-research-final-2026-08-09",
+  "all_unchanged": true,
+  "trees": {
+    "frozen": {
+      "reference": "01b7503111617baca2460f93824acab235ff22bc",
+      "v7": "01b7503111617baca2460f93824acab235ff22bc"
+    },
+    "v2": {
+      "reference": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+      "v7": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7"
+    },
+    "v3": {
+      "reference": "956e77658e01efabb110dcf1934215af344a620d",
+      "v7": "956e77658e01efabb110dcf1934215af344a620d"
+    },
+    "v4": {
+      "reference": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+      "v7": "9c76518abe95e5e88419eb7cd310087ff1eb559f"
+    },
+    "v5": {
+      "reference": "1134092eb80efc8639ce822d777f30c04a9af226",
+      "v7": "1134092eb80efc8639ce822d777f30c04a9af226"
+    },
+    "v6": {
+      "reference": "c6e50538a3a5c1d98829873331e8fd1f09713409",
+      "v7": "c6e50538a3a5c1d98829873331e8fd1f09713409"
+    }
+  },
+  "traditional_retuned": false,
+  "satc_retuned": false,
+  "old_tags_moved": false
+}

@@ -1,0 +1,32 @@
+{
+  "task": "V7-KANG2026-FAS-PAPER-STRONG-BASELINE-END-TO-END-R1",
+  "result": "KANG2026_ADAPTATION_NOT_STRONGER_THAN_TRADITIONAL",
+  "v7_complete": true,
+  "v7_permanently_closed": true,
+  "project_research_complete": false,
+  "highest_validated_project_claim": "V5_SELF_OVERALL_HOLDOUT_WIN",
+  "paper_development_qualified": false,
+  "paper_gt_traditional": false,
+  "paper_vs_self_tradeoff_reported": false,
+  "qualified_paper_count": 0,
+  "development_authoritative_runs": 11520,
+  "holdout": {
+    "executed": false,
+    "samples": 0,
+    "participants": 0,
+    "retries": [],
+    "compromised": false,
+    "reason": "ZERO_DEVELOPMENT_QUALIFIED_KANG2026_CANDIDATES"
+  },
+  "checkpoints": {
+    "source_head": "6849c611c1361f5a88527753a5d1cb17dea3b76d",
+    "contract_freeze_head": "79fa0ce058823f2a09d3d6cdda24105a5a9591d5",
+    "paper_implementation_head": "400e1b32132a46dd298f1a940b5c07838638161f",
+    "paper_development_final_head": "2304538eed8e2e8d067257c33747a835a91a0a2a",
+    "paper_freeze_head": null,
+    "holdout_protocol_head": null
+  },
+  "final_tag": "v7-research-final-2026-08-10",
+  "new_self_tuning": false,
+  "old_evidence_modified": false
+}
