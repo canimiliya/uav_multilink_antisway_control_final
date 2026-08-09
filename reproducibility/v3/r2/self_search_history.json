@@ -30,6 +30,36 @@
         "candidate ID ascending"
       ],
       "WHY_THIS_SEARCH": "Factorial screening isolates backbone, prediction horizon, causal residual bandwidth/clip, and task-position emphasis before any refinement or full-bank finalist run.",
+      "performance_started": true,
+      "performance_completed": true,
+      "candidate_count_executed": 48,
+      "case_count_per_candidate": 14,
+      "authoritative_case_executions": 672,
+      "best_candidate": "self_a_034",
+      "holdout_executed": false
+    },
+    {
+      "SEARCH_ROUND": "R2-B",
+      "ARCHITECTURE_VERSION": "3D-DR-TSRMPC-A1",
+      "SEARCH_SPACE": {
+        "candidate_ids": ["self_a_034", "self_a_046", "self_a_035", "self_a_030", "self_a_042", "self_a_047"],
+        "source": "top six R2-A candidates under the preregistered selection rule",
+        "parameters_changed": false
+      },
+      "MAX_EVALUATIONS": 6,
+      "EVALUATION_SET": "complete frozen 75-sample Development bank",
+      "SELECTION_RULE": [
+        "hard safety, solver, limiter-parity, and realtime gates",
+        "hard V3 overall numeric contract",
+        "task-success count descending",
+        "3D position RMSE ascending",
+        "acquisition median ascending",
+        "ramp steady error ascending",
+        "ramp peak error ascending",
+        "candidate ID ascending"
+      ],
+      "WHY_THIS_SEARCH": "The six strongest preregistered core candidates all passed safety and success; full-bank evaluation is required to select or reject a freeze candidate without changing parameters.",
+      "written_after_R2_A_and_before_R2_B_performance": true,
       "performance_started": false,
       "holdout_executed": false
     }

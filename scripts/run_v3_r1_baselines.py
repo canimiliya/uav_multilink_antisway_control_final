@@ -188,6 +188,7 @@ def run_case(kind: str, parameters: dict, sample: dict, output_csv: str | None =
     max_torque = 0.0
     previous_logged_command = np.zeros(3, dtype=float)
     force = {"total_x": 0.0}
+    advanced_updates: list[dict] = []
     self_audit = {
         "d_raw_norm_max": 0.0,
         "d_hat_norm_max": 0.0,
@@ -212,6 +213,20 @@ def run_case(kind: str, parameters: dict, sample: dict, output_csv: str | None =
             started = time.perf_counter_ns()
             command = controller.command(observation, reference, OUTER_DT)
             solve_time_ms = (time.perf_counter_ns() - started) / 1.0e6
+            diagnostics = controller.diagnostics
+            if hasattr(diagnostics, "qp_status"):
+                advanced_updates.append({
+                    "status": str(diagnostics.qp_status),
+                    "iterations": int(diagnostics.qp_iterations),
+                    "solve_time_ms": float(diagnostics.solve_time_ms),
+                    "limiter_mismatch": float(diagnostics.limiter_mismatch),
+                    "steady_state_residual": float(diagnostics.steady_state_residual),
+                    "steady_task_residual": float(diagnostics.steady_task_residual),
+                    "d_raw_norm": float(diagnostics.d_raw_norm),
+                    "d_hat_norm": float(diagnostics.d_hat_norm),
+                    "d_projected_norm": float(diagnostics.d_projected_norm),
+                    "d_rejected_norm": float(diagnostics.d_rejected_norm),
+                })
         if step % wind_stride == 0:
             control_state = _control_state(model, data, legacy_reader)
             inner_output = inner.compute(control_state, reference_state, float(command[0]), (float(command[1]), float(command[2])))
@@ -257,7 +272,20 @@ def run_case(kind: str, parameters: dict, sample: dict, output_csv: str | None =
             max_abs_command = np.maximum(max_abs_command, np.abs(current_command))
             max_step = np.maximum(max_step, np.abs(current_command - previous_logged_command))
             max_thrust = max(max_thrust, abs(thrust_raw)); max_torque = max(max_torque, float(np.max(np.abs(torque_raw))))
-            rows.append({"time": time_s, "position_error_3d_m": float(np.linalg.norm(position_error)), "tip_speed_m_s": tip_speed, "orientation_error_deg": orientation_deg, "angular_speed_rad_s": angular_speed, "safe": bool(safety), "task_success": False, "ax": float(current_command[0]), "ay": float(current_command[1]), "az": float(current_command[2]), "raw_ax": float(diagnostics.raw_command[0]), "raw_ay": float(diagnostics.raw_command[1]), "raw_az": float(diagnostics.raw_command[2]), "integral_x": float(diagnostics.integral[0]), "integral_y": float(diagnostics.integral[1]), "integral_z": float(diagnostics.integral[2]), "saturated": bool(np.any(diagnostics.saturated)), "slew_limited": bool(np.any(diagnostics.slew_limited)), "roll_deg": float(np.rad2deg(roll)), "pitch_deg": float(np.rad2deg(pitch)), "uav_x": float(control_state.position[0]), "uav_y": float(control_state.position[1]), "uav_z": float(control_state.position[2]), "tip_x": float(task.tip_position_world[0]), "tip_y": float(task.tip_position_world[1]), "tip_z": float(task.tip_position_world[2]), "target_x": float(target[0]), "target_y": float(target[1]), "target_z": float(target[2]), "wind_x": float(wind[wind_index]), "thrust_raw_N": thrust_raw, "max_abs_torque_Nm": float(np.max(np.abs(torque_raw))), "solve_time_ms": float(solve_time_ms if step % outer_stride == 0 else rows[-1]["solve_time_ms"] if rows else 0.0), "force_total_x": float(force["total_x"])})
+            row = {"time": time_s, "position_error_3d_m": float(np.linalg.norm(position_error)), "tip_speed_m_s": tip_speed, "orientation_error_deg": orientation_deg, "angular_speed_rad_s": angular_speed, "safe": bool(safety), "task_success": False, "ax": float(current_command[0]), "ay": float(current_command[1]), "az": float(current_command[2]), "raw_ax": float(diagnostics.raw_command[0]), "raw_ay": float(diagnostics.raw_command[1]), "raw_az": float(diagnostics.raw_command[2]), "integral_x": float(diagnostics.integral[0]), "integral_y": float(diagnostics.integral[1]), "integral_z": float(diagnostics.integral[2]), "saturated": bool(np.any(diagnostics.saturated)), "slew_limited": bool(np.any(diagnostics.slew_limited)), "roll_deg": float(np.rad2deg(roll)), "pitch_deg": float(np.rad2deg(pitch)), "uav_x": float(control_state.position[0]), "uav_y": float(control_state.position[1]), "uav_z": float(control_state.position[2]), "tip_x": float(task.tip_position_world[0]), "tip_y": float(task.tip_position_world[1]), "tip_z": float(task.tip_position_world[2]), "target_x": float(target[0]), "target_y": float(target[1]), "target_z": float(target[2]), "wind_x": float(wind[wind_index]), "thrust_raw_N": thrust_raw, "max_abs_torque_Nm": float(np.max(np.abs(torque_raw))), "solve_time_ms": float(solve_time_ms if step % outer_stride == 0 else rows[-1]["solve_time_ms"] if rows else 0.0), "force_total_x": float(force["total_x"])}
+            if hasattr(diagnostics, "qp_status"):
+                row.update({
+                    "qp_status": str(diagnostics.qp_status),
+                    "qp_iterations": int(diagnostics.qp_iterations),
+                    "limiter_mismatch": float(diagnostics.limiter_mismatch),
+                    "steady_state_residual": float(diagnostics.steady_state_residual),
+                    "steady_task_residual": float(diagnostics.steady_task_residual),
+                    "d_raw_norm": float(diagnostics.d_raw_norm),
+                    "d_hat_norm": float(diagnostics.d_hat_norm),
+                    "d_projected_norm": float(diagnostics.d_projected_norm),
+                    "d_rejected_norm": float(diagnostics.d_rejected_norm),
+                })
+            rows.append(row)
             previous_logged_command = current_command.copy()
         if step < physics_steps:
             mujoco.mj_step(model, data)
@@ -277,6 +305,25 @@ def run_case(kind: str, parameters: dict, sample: dict, output_csv: str | None =
     ramp_mask = (times >= 2.0) & (times <= 8.0)
     steady_mask = times >= 8.0
     result = {"sample_id": sample["sample_id"], "scenario": sample["scenario"], "wind_kind": sample["wind"]["kind"], "wind_speed_m_s": sample["wind"].get("speed_m_s", 0.0), "seed": sample["wind"].get("seed", -1), "sample_count": len(rows), "safe": bool(all(row["safe"] for row in rows)), "safe_sample_count": int(sum(row["safe"] for row in rows)), "task_success": bool(acquired), "acquisition_time_s": acquisition_time, "position_rmse_3d_m": float(np.sqrt(np.mean(position ** 2))), "orientation_rmse_deg": float(np.sqrt(np.mean(orientation ** 2))), "ramp_peak_position_error_m": float(np.max(position[ramp_mask])) if np.any(ramp_mask) else 0.0, "ramp_steady_state_position_error_m": float(np.mean(position[steady_mask])) if np.any(steady_mask) else 0.0, "total_acceleration_effort": float(np.trapezoid(np.sum(np.asarray([[row["ax"], row["ay"], row["az"]] for row in rows]) ** 2, axis=1), times) if hasattr(np, "trapezoid") else np.trapz(np.sum(np.asarray([[row["ax"], row["ay"], row["az"]] for row in rows]) ** 2, axis=1), times)), "max_abs_ax_m_s2": float(max_abs_command[0]), "max_abs_ay_m_s2": float(max_abs_command[1]), "max_abs_az_m_s2": float(max_abs_command[2]), "max_ax_step_m_s2": float(max_step[0]), "max_ay_step_m_s2": float(max_step[1]), "max_az_step_m_s2": float(max_step[2]), "max_thrust_N": float(max_thrust), "max_abs_torque_Nm": float(max_torque), "max_cutter_angular_speed_rad_s": float(np.max(angular)), "solve_time_mean_ms": float(np.mean([row["solve_time_ms"] for row in rows])), "solve_time_p95_ms": float(np.percentile([row["solve_time_ms"] for row in rows], 95)), "safety_failure_reasons": sorted(safety_reasons), "controller": kind, "candidate_id": parameters["candidate_id"]}
+    if advanced_updates:
+        solved_statuses = {"solved", "solved inaccurate", "not_run_residual_only_ablation"}
+        solve_times = [item["solve_time_ms"] for item in advanced_updates]
+        result.update({
+            "solver_success_count": int(sum(item["status"] in solved_statuses for item in advanced_updates)),
+            "outer_update_count": len(advanced_updates),
+            "solver_success_rate": float(sum(item["status"] in solved_statuses for item in advanced_updates) / len(advanced_updates)),
+            "qp_statuses": sorted({item["status"] for item in advanced_updates}),
+            "qp_iterations_max": int(max(item["iterations"] for item in advanced_updates)),
+            "advanced_solve_time_p95_ms": float(np.percentile(solve_times, 95)),
+            "limiter_mismatch_max": float(max(item["limiter_mismatch"] for item in advanced_updates)),
+            "steady_state_residual_max": float(max(item["steady_state_residual"] for item in advanced_updates)),
+            "steady_task_residual_max": float(max(item["steady_task_residual"] for item in advanced_updates)),
+            "d_raw_norm_max": float(max(item["d_raw_norm"] for item in advanced_updates)),
+            "d_hat_norm_max": float(max(item["d_hat_norm"] for item in advanced_updates)),
+            "d_projected_norm_max": float(max(item["d_projected_norm"] for item in advanced_updates)),
+            "d_rejected_norm_max": float(max(item["d_rejected_norm"] for item in advanced_updates)),
+            "_advanced_solve_times_ms": solve_times,
+        })
     if kind == "self_dr_tsrmpc":
         result.update({key: value for key, value in self_audit.items() if key != "qp_statuses"})
         result["qp_statuses"] = sorted(self_audit["qp_statuses"])

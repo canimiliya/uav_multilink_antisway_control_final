@@ -76,7 +76,10 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--smoke", action="store_true")
+    parser.add_argument("--round-b", action="store_true")
     args = parser.parse_args()
+    if args.smoke and args.round_b:
+        raise ValueError("smoke and Round B are mutually exclusive")
     manifest = read_json(R1 / "development_evaluation_manifest.json")
     if manifest["split"] != "development":
         raise RuntimeError("R2 runner refuses non-development manifests")
@@ -89,11 +92,18 @@ def main() -> int:
         "candidate_ids": [row["candidate_id"] for row in candidates],
         "holdout_executed": False,
     })
-    selected_candidates = candidates[:1] if args.smoke else candidates
-    selected_samples = core_samples(samples)[:1] if args.smoke else core_samples(samples)
+    if args.round_b:
+        protocol = read_json(R2 / "self_round_b_protocol.json")
+        ids = protocol["SEARCH_SPACE"]["candidate_ids"]
+        by_id = {row["candidate_id"]: row for row in candidates}
+        selected_candidates = [by_id[candidate_id] for candidate_id in ids]
+        selected_samples = samples
+    else:
+        selected_candidates = candidates[:1] if args.smoke else candidates
+        selected_samples = core_samples(samples)[:1] if args.smoke else core_samples(samples)
     summaries = run_candidates("self_dr_tsrmpc", selected_candidates, selected_samples, args.workers, "v3-r2-a")
     summaries.sort(key=search_key)
-    suffix = "smoke" if args.smoke else "round_a"
+    suffix = "round_b" if args.round_b else "smoke" if args.smoke else "round_a"
     write_csv(R2 / f"self_{suffix}.csv", [summary_without_rows(row) for row in summaries])
     write_csv(R2 / f"development_results_{suffix}.csv", [
         {**sample, "candidate_id": row["candidate_id"]} for row in summaries for sample in row["rows"]

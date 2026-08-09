@@ -29,7 +29,10 @@ def test_first_search_is_preregistered_and_bounded() -> None:
     assert first["SEARCH_ROUND"] == "R2-A"
     assert first["ARCHITECTURE_VERSION"] == "3D-DR-TSRMPC-A1"
     assert first["MAX_EVALUATIONS"] == 48
-    assert first["performance_started"] is False
+    assert history["written_before_any_self_performance"] is True
+    assert first["performance_started"] is True
+    assert first["performance_completed"] is True
+    assert first["authoritative_case_executions"] == 672
     assert first["holdout_executed"] is False
 
 

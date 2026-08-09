@@ -234,6 +234,8 @@ class V3DRTSRMPC(_V3ControllerBase):
         if not all(np.isfinite(value).all() for value in (self.a, self.b, self.c_task, self.gain)):
             raise ValueError("DR-TSRMPC arrays must be finite")
         self.horizon = int(parameters["horizon_updates"])
+        self.residual_enabled = bool(parameters.get("residual_enabled", True))
+        self.predictive_enabled = bool(parameters.get("predictive_enabled", True))
         self.estimator = CausalDynamicResidual(
             self.a, self.b, float(parameters["residual_beta"]), float(parameters["residual_clip_norm"])
         )
@@ -261,15 +263,24 @@ class V3DRTSRMPC(_V3ControllerBase):
         started = time.perf_counter_ns()
         state = observation.full_state_error
         raw_residual, filtered_residual, projected_residual = self.estimator.update(state, reference)
+        if not self.residual_enabled:
+            projected_residual = np.zeros(20, dtype=float)
         steady = self.steady.solve(projected_residual)
-        qp = build_qp(
-            self.a, self.b, self.c_task, self.gain, state, steady, self.limiter.previous,
-            self.horizon, float(self.parameters["task_position_weight"]),
-            float(self.parameters["task_velocity_weight"]), float(self.parameters["orientation_weight"]),
-            float(self.parameters["angular_velocity_weight"]), float(self.parameters["residual_correction_weight"]),
-            float(self.parameters["command_rate_weight"]),
-        )
-        correction, info = self.solver.solve(qp)
+        if self.predictive_enabled:
+            qp = build_qp(
+                self.a, self.b, self.c_task, self.gain, state, steady, self.limiter.previous,
+                self.horizon, float(self.parameters["task_position_weight"]),
+                float(self.parameters["task_velocity_weight"]), float(self.parameters["orientation_weight"]),
+                float(self.parameters["angular_velocity_weight"]), float(self.parameters["residual_correction_weight"]),
+                float(self.parameters["command_rate_weight"]),
+            )
+            correction, info = self.solver.solve(qp)
+            qp_status = str(info.status)
+            qp_iterations = int(info.iter)
+        else:
+            correction = np.zeros(3 * self.horizon, dtype=float)
+            qp_status = "not_run_residual_only_ablation"
+            qp_iterations = 0
         raw_command = steady.command - self.gain @ (state - steady.state) + correction[:3]
         amplitude = np.clip(raw_command, -2.0, 2.0)
         limited = self.limiter.limit(raw_command).as_array()
@@ -281,7 +292,7 @@ class V3DRTSRMPC(_V3ControllerBase):
             raw_residual.copy(), filtered_residual.copy(), projected_residual.copy(),
             float(np.linalg.norm(raw_residual)), float(np.linalg.norm(filtered_residual)),
             float(np.linalg.norm(projected_residual)), float(np.linalg.norm(filtered_residual - projected_residual)),
-            steady.equality_residual, steady.task_residual, steady.command.copy(), str(info.status), int(info.iter),
+            steady.equality_residual, steady.task_residual, steady.command.copy(), qp_status, qp_iterations,
             (time.perf_counter_ns() - started) / 1.0e6, mismatch,
         )
         return limited

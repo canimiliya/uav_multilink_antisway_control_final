@@ -1,0 +1,15 @@
+{
+  "SEARCH_ROUND": "R2-B",
+  "ARCHITECTURE_VERSION": "3D-DR-TSRMPC-A1",
+  "SEARCH_SPACE": {
+    "candidate_ids": ["self_a_034", "self_a_046", "self_a_035", "self_a_030", "self_a_042", "self_a_047"],
+    "source": "R2-A top six under frozen lexicographic rule",
+    "new_unique_configurations": 0
+  },
+  "MAX_EVALUATIONS": 6,
+  "SELECTION_RULE": "hard gates, then success descending, position ascending, acquisition ascending, ramp steady ascending, ramp peak ascending, candidate ID ascending",
+  "WHY_THIS_SEARCH": "Every potentially frozen candidate must run all 75 frozen Development samples.",
+  "development_sample_count": 75,
+  "written_before_R2_B_performance": true,
+  "holdout_executed": false
+}

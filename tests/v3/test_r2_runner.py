@@ -31,3 +31,13 @@ def test_runner_uses_only_frozen_development_cases() -> None:
     source = (ROOT / "scripts/run_v3_r2_self_advanced.py").read_text(encoding="utf-8").lower()
     assert "holdout_manifest" not in source
     assert "3000" not in source and "3019" not in source and "3.5" not in source
+
+
+def test_round_b_protocol_uses_only_round_a_candidates() -> None:
+    protocol = read_json(ROOT / "reproducibility/v3/r2/self_round_b_protocol.json")
+    grid_ids = {row["candidate_id"] for row in round_a_candidates()}
+    ids = protocol["SEARCH_SPACE"]["candidate_ids"]
+    assert len(ids) == 6 and len(set(ids)) == 6
+    assert set(ids) <= grid_ids
+    assert protocol["written_before_R2_B_performance"] is True
+    assert protocol["holdout_executed"] is False

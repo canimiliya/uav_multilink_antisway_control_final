@@ -1,0 +1,31 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "scope": "R2-A engineering smoke",
+      "candidate_count": 1,
+      "development_case_count": 1,
+      "workers": 1,
+      "status": "COMPLETE",
+      "result_artifacts": ["self_smoke.csv", "development_results_smoke.csv", "self_smoke_summary.json"]
+    },
+    {
+      "attempt": 2,
+      "scope": "R2-A preregistered factorial screening",
+      "candidate_count": 48,
+      "development_case_count": 14,
+      "authoritative_case_executions": 672,
+      "workers": 8,
+      "status": "COMPLETE",
+      "result_artifacts": ["self_round_a.csv", "development_results_round_a.csv", "self_round_a_summary.json"]
+    }
+  ],
+  "hardware": {
+    "cpu_workers": 8,
+    "blas_threads_per_worker": 1,
+    "gpu_used": false,
+    "gpu_reason": "MuJoCo simulation and small dense/OSQP problems have no CUDA path in this implementation"
+  },
+  "failed_attempts_preserved": true,
+  "holdout_executed": false
+}
