@@ -1,0 +1,16 @@
+{
+  "status": "V7_KANG2026_IMPLEMENTATION_FROZEN_BEFORE_PERFORMANCE",
+  "contract_freeze_head": "79fa0ce058823f2a09d3d6cdda24105a5a9591d5",
+  "implementation": "src/uav_sway/v7/kang2026_fas_dob.py::Kang2026FASDOB",
+  "sha256": {
+    "src/uav_sway/v7/kang2026_fas_dob.py": "daabe80ba33af3dfd9fa6829fc97f430f20ce80194bb0bfa23325ca00dccd0a9",
+    "scripts/run_v7_development.py": "4ef662724e25c1cf14b92ba194b11c962cdd222565e19306799204e644911a8a",
+    "scripts/evaluate_v7_development.py": "7d0ca3cfd68884bf29c3df67e970fef9aa3c747f9a3f3c21b5fabe7da77a26ee",
+    "docs/v7/paper_equation_mapping.md": "adcc24ce8fbaacfda435f32999ec095ab1e42c0ce3daaa6fc922cd29e2fdd988"
+  },
+  "traditional_mutated": false,
+  "satc_mutated": false,
+  "paper_performance_executed": false,
+  "holdout_accessed": false,
+  "implementation_mutable_after_freeze": false
+}

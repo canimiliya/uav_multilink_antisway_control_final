@@ -1,0 +1,1878 @@
+{
+  "paper": "Kang and Shan 2026",
+  "adaptation": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+  "stage_a_sample_ids": [
+    "v7d_calm_00",
+    "v7d_calm_01",
+    "v7d_calm_02",
+    "v7d_calm_03",
+    "v7d_calm_04",
+    "v7d_calm_05",
+    "v7d_moderate_00",
+    "v7d_moderate_01",
+    "v7d_moderate_02",
+    "v7d_moderate_03",
+    "v7d_moderate_04",
+    "v7d_moderate_05",
+    "v7d_strong_before_aligned_00",
+    "v7d_strong_before_aligned_01",
+    "v7d_strong_before_aligned_02",
+    "v7d_strong_before_aligned_03",
+    "v7d_strong_before_aligned_04",
+    "v7d_strong_before_aligned_05",
+    "v7d_stochastic_8000",
+    "v7d_stochastic_8001",
+    "v7d_stochastic_8002",
+    "v7d_stochastic_8003",
+    "v7d_stochastic_8004",
+    "v7d_stochastic_8005"
+  ],
+  "stages": {
+    "stage_a": {
+      "samples_each": 24,
+      "selection_authority": false,
+      "candidates": [
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_001",
+          "position_gain": 0.7,
+          "velocity_gain": 0.9,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_002",
+          "position_gain": 0.7,
+          "velocity_gain": 0.9,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_003",
+          "position_gain": 0.7,
+          "velocity_gain": 1.4,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_004",
+          "position_gain": 0.7,
+          "velocity_gain": 1.4,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_005",
+          "position_gain": 0.7,
+          "velocity_gain": 2.0,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_006",
+          "position_gain": 0.7,
+          "velocity_gain": 2.0,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_007",
+          "position_gain": 0.7,
+          "velocity_gain": 2.8,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_008",
+          "position_gain": 0.7,
+          "velocity_gain": 2.8,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_009",
+          "position_gain": 1.1,
+          "velocity_gain": 0.9,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_010",
+          "position_gain": 1.1,
+          "velocity_gain": 0.9,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_011",
+          "position_gain": 1.1,
+          "velocity_gain": 1.4,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_012",
+          "position_gain": 1.1,
+          "velocity_gain": 1.4,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_013",
+          "position_gain": 1.1,
+          "velocity_gain": 2.0,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_014",
+          "position_gain": 1.1,
+          "velocity_gain": 2.0,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_015",
+          "position_gain": 1.1,
+          "velocity_gain": 2.8,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_016",
+          "position_gain": 1.1,
+          "velocity_gain": 2.8,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_017",
+          "position_gain": 1.6,
+          "velocity_gain": 0.9,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_018",
+          "position_gain": 1.6,
+          "velocity_gain": 0.9,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_019",
+          "position_gain": 1.6,
+          "velocity_gain": 1.4,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_020",
+          "position_gain": 1.6,
+          "velocity_gain": 1.4,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_021",
+          "position_gain": 1.6,
+          "velocity_gain": 2.0,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_022",
+          "position_gain": 1.6,
+          "velocity_gain": 2.0,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_023",
+          "position_gain": 1.6,
+          "velocity_gain": 2.8,
+          "virtual_constraint_gain": 0.55,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_a_024",
+          "position_gain": 1.6,
+          "velocity_gain": 2.8,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 0.8,
+          "observer_lambda1": 0.8,
+          "observer_lambda2": 0.6,
+          "observer_rho": 0.8,
+          "observer_clip_m_s2": 0.6,
+          "observer_compensation_scale": 0.25,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        }
+      ]
+    },
+    "stage_b": {
+      "samples_each": 144,
+      "selection_authority": true,
+      "candidates": [
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_001",
+          "position_gain": 0.6,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_002",
+          "position_gain": 0.6,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_003",
+          "position_gain": 0.6,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_004",
+          "position_gain": 0.6,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_005",
+          "position_gain": 0.6,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_006",
+          "position_gain": 0.6,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_007",
+          "position_gain": 0.6,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_008",
+          "position_gain": 0.6,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_009",
+          "position_gain": 0.6,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_010",
+          "position_gain": 0.6,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_011",
+          "position_gain": 0.6,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_012",
+          "position_gain": 0.6,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_013",
+          "position_gain": 0.9,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_014",
+          "position_gain": 0.9,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_015",
+          "position_gain": 0.9,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_016",
+          "position_gain": 0.9,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_017",
+          "position_gain": 0.9,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_018",
+          "position_gain": 0.9,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_019",
+          "position_gain": 0.9,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_020",
+          "position_gain": 0.9,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_021",
+          "position_gain": 0.9,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_022",
+          "position_gain": 0.9,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_023",
+          "position_gain": 0.9,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_024",
+          "position_gain": 0.9,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_025",
+          "position_gain": 1.3,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_026",
+          "position_gain": 1.3,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_027",
+          "position_gain": 1.3,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_028",
+          "position_gain": 1.3,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_029",
+          "position_gain": 1.3,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_030",
+          "position_gain": 1.3,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_031",
+          "position_gain": 1.3,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_032",
+          "position_gain": 1.3,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_033",
+          "position_gain": 1.3,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_034",
+          "position_gain": 1.3,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_035",
+          "position_gain": 1.3,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_036",
+          "position_gain": 1.3,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_037",
+          "position_gain": 1.8,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_038",
+          "position_gain": 1.8,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_039",
+          "position_gain": 1.8,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_040",
+          "position_gain": 1.8,
+          "velocity_gain": 1.0,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_041",
+          "position_gain": 1.8,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_042",
+          "position_gain": 1.8,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_043",
+          "position_gain": 1.8,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_044",
+          "position_gain": 1.8,
+          "velocity_gain": 1.6,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_045",
+          "position_gain": 1.8,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_046",
+          "position_gain": 1.8,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 0.65,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_047",
+          "position_gain": 1.8,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.3,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_b_048",
+          "position_gain": 1.8,
+          "velocity_gain": 2.3,
+          "virtual_constraint_gain": 1.0,
+          "virtual_length_scale": 0.9,
+          "observer_lambda1": 1.2,
+          "observer_lambda2": 1.0,
+          "observer_rho": 1.0,
+          "observer_clip_m_s2": 0.9,
+          "observer_compensation_scale": 0.7,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        }
+      ]
+    },
+    "stage_c": {
+      "samples_each": 144,
+      "selection_authority": true,
+      "candidates": [
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_001",
+          "position_gain": 0.8,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_002",
+          "position_gain": 0.8,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_003",
+          "position_gain": 0.8,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_004",
+          "position_gain": 0.8,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_005",
+          "position_gain": 0.8,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_006",
+          "position_gain": 0.8,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_007",
+          "position_gain": 0.8,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_008",
+          "position_gain": 0.8,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_009",
+          "position_gain": 1.15,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_010",
+          "position_gain": 1.15,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_011",
+          "position_gain": 1.15,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_012",
+          "position_gain": 1.15,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_013",
+          "position_gain": 1.15,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_014",
+          "position_gain": 1.15,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_015",
+          "position_gain": 1.15,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_016",
+          "position_gain": 1.15,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_017",
+          "position_gain": 1.5,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_018",
+          "position_gain": 1.5,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_019",
+          "position_gain": 1.5,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_020",
+          "position_gain": 1.5,
+          "velocity_gain": 1.3,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_021",
+          "position_gain": 1.5,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_022",
+          "position_gain": 1.5,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.75,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_023",
+          "position_gain": 1.5,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.45,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        },
+        {
+          "method": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+          "candidate_id": "kang_c_024",
+          "position_gain": 1.5,
+          "velocity_gain": 1.9,
+          "virtual_constraint_gain": 0.9,
+          "virtual_length_scale": 1.0,
+          "observer_lambda1": 1.7,
+          "observer_lambda2": 1.4,
+          "observer_rho": 1.2,
+          "observer_clip_m_s2": 1.1,
+          "observer_compensation_scale": 0.9,
+          "observer_substeps": 5,
+          "axis_scale": [
+            1.0,
+            1.0,
+            0.85
+          ]
+        }
+      ]
+    }
+  },
+  "unique_configuration_count": 96,
+  "maximum_unique_configurations": 96,
+  "selection_rule": "all gates, then gate count, strong P90, position, acquisition, orientation, effort, runtime, candidate id",
+  "holdout_accessed": false
+}
