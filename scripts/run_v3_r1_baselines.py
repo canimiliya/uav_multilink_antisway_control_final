@@ -188,6 +188,17 @@ def run_case(kind: str, parameters: dict, sample: dict, output_csv: str | None =
     max_torque = 0.0
     previous_logged_command = np.zeros(3, dtype=float)
     force = {"total_x": 0.0}
+    self_audit = {
+        "d_raw_norm_max": 0.0,
+        "d_hat_norm_max": 0.0,
+        "d_projected_norm_max": 0.0,
+        "d_rejected_norm_max": 0.0,
+        "steady_state_residual_max": 0.0,
+        "steady_task_residual_max": 0.0,
+        "limiter_mismatch_max": 0.0,
+        "qp_statuses": set(),
+        "qp_iterations_max": 0,
+    }
     for step in range(physics_steps + 1):
         time_s = step * DT
         wind_index = min(step // wind_stride, len(wind) - 1)
@@ -225,6 +236,14 @@ def run_case(kind: str, parameters: dict, sample: dict, output_csv: str | None =
             roll, pitch, _ = _rpy(control_state.rotation)
             current_command = np.asarray(command, dtype=float)
             diagnostics = controller.diagnostics
+            if kind == "self_dr_tsrmpc":
+                for name in (
+                    "d_raw_norm", "d_hat_norm", "d_projected_norm", "d_rejected_norm",
+                    "steady_state_residual", "steady_task_residual", "limiter_mismatch",
+                ):
+                    self_audit[f"{name}_max"] = max(self_audit[f"{name}_max"], float(getattr(diagnostics, name)))
+                self_audit["qp_statuses"].add(str(diagnostics.qp_status))
+                self_audit["qp_iterations_max"] = max(self_audit["qp_iterations_max"], int(diagnostics.qp_iterations))
             finite = bool(np.isfinite(np.r_[position_error, task.tip_velocity_world, task.cutter_angular_velocity_world, current_command, thrust, torque]).all())
             limits_ok = bool(np.all(np.abs(current_command) <= 2.0 + 1.0e-9) and np.all(np.abs(current_command - previous_logged_command) <= 0.25 + 1.0e-9))
             torque_limit = max(max(abs(model.actuator_ctrlrange[actuator_ids[name], 0]), abs(model.actuator_ctrlrange[actuator_ids[name], 1])) for name in ("mx_motor", "my_motor", "mz_motor"))
@@ -258,6 +277,11 @@ def run_case(kind: str, parameters: dict, sample: dict, output_csv: str | None =
     ramp_mask = (times >= 2.0) & (times <= 8.0)
     steady_mask = times >= 8.0
     result = {"sample_id": sample["sample_id"], "scenario": sample["scenario"], "wind_kind": sample["wind"]["kind"], "wind_speed_m_s": sample["wind"].get("speed_m_s", 0.0), "seed": sample["wind"].get("seed", -1), "sample_count": len(rows), "safe": bool(all(row["safe"] for row in rows)), "safe_sample_count": int(sum(row["safe"] for row in rows)), "task_success": bool(acquired), "acquisition_time_s": acquisition_time, "position_rmse_3d_m": float(np.sqrt(np.mean(position ** 2))), "orientation_rmse_deg": float(np.sqrt(np.mean(orientation ** 2))), "ramp_peak_position_error_m": float(np.max(position[ramp_mask])) if np.any(ramp_mask) else 0.0, "ramp_steady_state_position_error_m": float(np.mean(position[steady_mask])) if np.any(steady_mask) else 0.0, "total_acceleration_effort": float(np.trapezoid(np.sum(np.asarray([[row["ax"], row["ay"], row["az"]] for row in rows]) ** 2, axis=1), times) if hasattr(np, "trapezoid") else np.trapz(np.sum(np.asarray([[row["ax"], row["ay"], row["az"]] for row in rows]) ** 2, axis=1), times)), "max_abs_ax_m_s2": float(max_abs_command[0]), "max_abs_ay_m_s2": float(max_abs_command[1]), "max_abs_az_m_s2": float(max_abs_command[2]), "max_ax_step_m_s2": float(max_step[0]), "max_ay_step_m_s2": float(max_step[1]), "max_az_step_m_s2": float(max_step[2]), "max_thrust_N": float(max_thrust), "max_abs_torque_Nm": float(max_torque), "max_cutter_angular_speed_rad_s": float(np.max(angular)), "solve_time_mean_ms": float(np.mean([row["solve_time_ms"] for row in rows])), "solve_time_p95_ms": float(np.percentile([row["solve_time_ms"] for row in rows], 95)), "safety_failure_reasons": sorted(safety_reasons), "controller": kind, "candidate_id": parameters["candidate_id"]}
+    if kind == "self_dr_tsrmpc":
+        result.update({key: value for key, value in self_audit.items() if key != "qp_statuses"})
+        result["qp_statuses"] = sorted(self_audit["qp_statuses"])
+        result["solver_valid"] = bool(result["qp_statuses"] and set(result["qp_statuses"]) <= {"solved", "solved inaccurate"})
+        result["limiter_parity_valid"] = bool(result["limiter_mismatch_max"] <= 1.0e-5)
     if output_csv is not None:
         write_csv(Path(output_csv), rows)
     return result
@@ -285,7 +309,13 @@ def aggregate(candidate_id: str, rows: list[dict], parameters: dict) -> dict:
     acquisition = [row["acquisition_time_s"] for row in rows if row["task_success"] and row["acquisition_time_s"] is not None]
     safe_count = sum(bool(row["safe"]) for row in rows)
     success_count = sum(bool(row["task_success"]) for row in rows)
-    return {"candidate_id": candidate_id, "sample_count": len(rows), "safe_sample_count": safe_count, "task_success_count": success_count, "safety_rate": safe_count / len(rows), "success_rate": success_count / len(rows), "acquisition_median_s": float(np.median(acquisition)) if acquisition else None, "position_rmse_3d_m": float(np.mean([row["position_rmse_3d_m"] for row in rows])), "orientation_rmse_deg": float(np.mean([row["orientation_rmse_deg"] for row in rows])), "ramp_peak_position_error_m": float(max(row["ramp_peak_position_error_m"] for row in rows)), "ramp_steady_state_position_error_m": float(max(row["ramp_steady_state_position_error_m"] for row in rows)), "total_acceleration_effort": float(np.mean([row["total_acceleration_effort"] for row in rows])), "parameters": parameters, "rows": rows}
+    result = {"candidate_id": candidate_id, "sample_count": len(rows), "safe_sample_count": safe_count, "task_success_count": success_count, "safety_rate": safe_count / len(rows), "success_rate": success_count / len(rows), "acquisition_median_s": float(np.median(acquisition)) if acquisition else None, "position_rmse_3d_m": float(np.mean([row["position_rmse_3d_m"] for row in rows])), "orientation_rmse_deg": float(np.mean([row["orientation_rmse_deg"] for row in rows])), "ramp_peak_position_error_m": float(max(row["ramp_peak_position_error_m"] for row in rows)), "ramp_steady_state_position_error_m": float(max(row["ramp_steady_state_position_error_m"] for row in rows)), "total_acceleration_effort": float(np.mean([row["total_acceleration_effort"] for row in rows])), "solve_time_p95_ms": float(max(row["solve_time_p95_ms"] for row in rows)), "parameters": parameters, "rows": rows}
+    if rows and rows[0].get("controller") == "self_dr_tsrmpc":
+        for name in ("d_raw_norm_max", "d_hat_norm_max", "d_projected_norm_max", "d_rejected_norm_max", "steady_state_residual_max", "steady_task_residual_max", "limiter_mismatch_max", "qp_iterations_max"):
+            result[name] = float(max(row[name] for row in rows))
+        result["solver_valid_rate"] = sum(bool(row["solver_valid"]) for row in rows) / len(rows)
+        result["limiter_parity_rate"] = sum(bool(row["limiter_parity_valid"]) for row in rows) / len(rows)
+    return result
 
 
 def case_subset(manifest: list[dict], mode: str) -> list[dict]:
