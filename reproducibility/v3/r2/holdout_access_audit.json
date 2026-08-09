@@ -1,0 +1,9 @@
+{
+  "development_manifest_loaded": "reproducibility/v3/r1/development_evaluation_manifest.json",
+  "holdout_manifest_loaded": false,
+  "spherical_holdout_targets_executed": false,
+  "seeds_3000_3019_executed": false,
+  "constant_2_or_3p5_m_s_executed": false,
+  "ramp_0_to_3p5_m_s_executed": false,
+  "holdout_executed": false
+}

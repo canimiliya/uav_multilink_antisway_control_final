@@ -1,0 +1,19 @@
+{
+  "implementation": "uav_sway.v3.dr_tsrmpc.V3DRTSRMPC",
+  "state_dimension": 20,
+  "input_dimension": 3,
+  "physical_input": [
+    "ax",
+    "ay",
+    "az"
+  ],
+  "A3_B3_sha256": "47e26957c833c51e086362136dd40d61d1c991caa6b46e9e8d9e8a810afa24e5",
+  "C_task_v3_sha256": "16a155a04432667f2152823e1c5b919010da19f52557db03064ebd9dadf2fdb3",
+  "backbone": "task_lqr_009",
+  "backbone_gain_retuned": false,
+  "future_wind_truth": false,
+  "future_target_leakage": false,
+  "fallback": false,
+  "traditional_override": false,
+  "paper_advanced_started": false
+}

@@ -1,0 +1,39 @@
+{
+  "task": "V3-R2-FULL-3D-SELF-ADVANCED-DEVELOPMENT-AND-FREEZE-R1",
+  "start_head": "6ced3e97d4f635cedb05456eccc402d22a6b6028",
+  "protocol_freeze_head": "6625a4fd0abdfb9ff6e5ed786bd6a46fb434ef60",
+  "three_traditional_unchanged": true,
+  "advanced_contract_unchanged": true,
+  "protected_trees": {
+    "reproducibility/v2": {
+      "start_tree": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+      "current_tree": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7"
+    },
+    "reproducibility/v3/r0": {
+      "start_tree": "36c63351b55e827e21423cd792ab5b96b294a479",
+      "current_tree": "36c63351b55e827e21423cd792ab5b96b294a479"
+    },
+    "reproducibility/v3/r1": {
+      "start_tree": "39855236f5c2890f184b38dd4d07394921b2cc23",
+      "current_tree": "39855236f5c2890f184b38dd4d07394921b2cc23"
+    },
+    "reproducibility/v3/r1r1": {
+      "start_tree": "345472cc7ce95bcfe4660defc1c7c2194eb23fc4",
+      "current_tree": "345472cc7ce95bcfe4660defc1c7c2194eb23fc4"
+    }
+  },
+  "self_method": "3D-DR-TSRMPC",
+  "full_3d_control": true,
+  "self_candidate_frozen": true,
+  "safety_gate": true,
+  "success_gate": true,
+  "position_gate": true,
+  "acquisition_gate": true,
+  "ramp_gate": true,
+  "realtime_gate": true,
+  "win_level": "STRICT_ALL_METRIC_WIN_DEVELOPMENT",
+  "ablation_executed": false,
+  "advanced_paper_started": false,
+  "holdout_executed": false,
+  "result": "V3_SELF_ADVANCED_FROZEN_PRE_ABLATION"
+}

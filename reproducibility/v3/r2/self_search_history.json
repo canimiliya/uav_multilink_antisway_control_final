@@ -60,7 +60,12 @@
       ],
       "WHY_THIS_SEARCH": "The six strongest preregistered core candidates all passed safety and success; full-bank evaluation is required to select or reject a freeze candidate without changing parameters.",
       "written_after_R2_A_and_before_R2_B_performance": true,
-      "performance_started": false,
+      "performance_started": true,
+      "performance_completed": true,
+      "candidate_count_executed": 6,
+      "case_count_per_candidate": 75,
+      "authoritative_case_executions": 450,
+      "selected_candidate": "self_a_034",
       "holdout_executed": false
     }
   ]

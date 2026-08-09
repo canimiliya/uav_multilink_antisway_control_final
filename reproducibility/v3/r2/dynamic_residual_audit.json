@@ -1,0 +1,15 @@
+{
+  "equation": "d_raw[k] = x[k] - (A3*x[k-1] + B3*u_actual_limited[k-1] - reference_shift[k])",
+  "causal": true,
+  "raw_dimension": 20,
+  "bounded_low_pass_beta": 0.3,
+  "component_limit": 0.2,
+  "controllable_projection_rank": 18,
+  "raw_norm_max": 0.23847306154621295,
+  "filtered_norm_max": 0.17467194856484408,
+  "projected_norm_max": 0.1744743891467768,
+  "rejected_norm_max": 0.008305248178028172,
+  "steady_state_residual_max": 2.4065511885348558e-16,
+  "steady_task_residual_max": 6.347813404223829e-09,
+  "wind_truth_used": false
+}

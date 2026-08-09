@@ -1,0 +1,8 @@
+{
+  "solver": "OSQP",
+  "solver_valid_rate": 1.0,
+  "solve_p95_ms": 1.1014,
+  "realtime_threshold_ms": 50.0,
+  "qp_iterations_max": 150.0,
+  "pass": true
+}

@@ -1,0 +1,10 @@
+{
+  "constraints_inside_qp": true,
+  "physical_amplitude_limit_m_s2": 2.0,
+  "physical_slew_limit_m_s2_per_update": 0.25,
+  "observed_max_abs_command_m_s2": 1.1592538884155523,
+  "observed_max_step_m_s2": 0.25000000000000006,
+  "limiter_mismatch_max": 9.219077399064135e-06,
+  "limiter_mismatch_tolerance": 1e-05,
+  "pass": true
+}

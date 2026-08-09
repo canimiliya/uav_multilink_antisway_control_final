@@ -18,6 +18,17 @@
       "workers": 8,
       "status": "COMPLETE",
       "result_artifacts": ["self_round_a.csv", "development_results_round_a.csv", "self_round_a_summary.json"]
+    },
+    {
+      "attempt": 3,
+      "scope": "R2-B frozen finalists on complete Development bank",
+      "candidate_count": 6,
+      "development_case_count": 75,
+      "authoritative_case_executions": 450,
+      "workers": 8,
+      "status": "COMPLETE",
+      "parameters_changed_after_R2_A": false,
+      "result_artifacts": ["self_round_b.csv", "development_results_round_b.csv", "self_round_b_summary.json"]
     }
   ],
   "hardware": {
