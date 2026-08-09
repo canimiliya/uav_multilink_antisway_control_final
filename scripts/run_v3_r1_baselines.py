@@ -31,6 +31,7 @@ from uav_sway.disturbances.wind_applier import clear_and_apply_wind
 from uav_sway.evaluation.task_space_metrics import first_continuous_acquisition
 from uav_sway.models.model_config import load_model_config
 from uav_sway.v3.controllers import V3CascadedTaskPID, V3FullStateLQR, V3TaskPID, V3TaskWeightedLQR
+from uav_sway.v3.dr_tsrmpc import V3DRTSRMPC
 from uav_sway.v3.metrics import build_full_lqr_q, build_task_lqr_q, load_r0_linear_matrices, solve_v3_lqr
 from uav_sway.v3.observation import V3Reference, V3StateReader, reference_for_target
 
@@ -135,6 +136,11 @@ def _controller(kind: str, parameters: dict, gains: dict | None = None):
         return V3FullStateLQR(np.asarray(parameters["K"], dtype=float))
     if kind == "task_lqr":
         return V3TaskWeightedLQR(np.asarray(parameters["K"], dtype=float))
+    if kind == "self_dr_tsrmpc":
+        a, b = load_r0_linear_matrices(ROOT)
+        metric = read_json(R1 / "task_metric_alignment_audit.json")
+        c_task = np.vstack([metric[name] for name in ("C_pos", "C_vel", "C_dir", "C_omega_perp")])
+        return V3DRTSRMPC(a, b, c_task, np.asarray(parameters["K"], dtype=float), parameters)
     raise KeyError(kind)
 
 
