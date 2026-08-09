@@ -1,0 +1,31 @@
+{
+  "result": "KANG2026_ADAPTATION_NOT_STRONGER_THAN_TRADITIONAL",
+  "best_candidate": "kang_b_001",
+  "formal_observations": {
+    "safety_rate": 1.0,
+    "success_rate": 0.006944444444444444,
+    "position_mean_m": 0.37310801008367694,
+    "full_lqr_position_mean_m": 0.14703016519008688,
+    "position_change_vs_full_lqr_fraction": -1.5376289933518539,
+    "acquisition_improvement_vs_full_lqr_fraction": 0.07610619469026544,
+    "strong_position_mean_m": 0.4277402138639447,
+    "strong_position_p90_m": 0.5512617998230862,
+    "catastrophic_pair_count": 43,
+    "bootstrap_ci_95_m": [
+      -0.24431326929761585,
+      -0.20809674698860747
+    ],
+    "bootstrap_positive_pair_fraction": 0.0,
+    "gate_pass_count": 2,
+    "gate_count": 7
+  },
+  "evidence_supported_interpretation": [
+    "The adaptation remained safe and occasionally acquired faster, but it did not provide competitive cutter-tip regulation.",
+    "The negative paired interval and zero positive-pair fraction show a systematic position deficit rather than sampling noise.",
+    "The equivalent single-direction payload state cannot represent all internal five-link modes; this is a plausible adaptation limitation, not a proven defect in the original paper controller.",
+    "Restricting the paper method to the common acceleration interface omitted its original body-torque inner loop, preserving fairness but reducing reproduction fidelity."
+  ],
+  "forbidden_inference": "These results do not evaluate or refute the original Kang and Shan controller on its published point-payload plant or hardware.",
+  "additional_search_authorized": false,
+  "holdout_accessed": false
+}

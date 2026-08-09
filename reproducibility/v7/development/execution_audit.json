@@ -1,0 +1,31 @@
+{
+  "authoritative_runs": {
+    "comparators": 576,
+    "stage_a": 576,
+    "stage_b": 6912,
+    "stage_c": 3456,
+    "total": 11520
+  },
+  "scientific_configuration_changed_after_freeze": false,
+  "retries": [
+    {
+      "phase": "comparators",
+      "attempt": 1,
+      "reason": "Windows pagefile/resource exhaustion caused SciPy DLL and MuJoCo allocation failures with 24 workers",
+      "classification": "INFRASTRUCTURE_ONLY",
+      "scientific_results_used": false,
+      "retry": "same commit, controller parameters, metrics, sample manifest, and seeds with 12 workers"
+    },
+    {
+      "phase": "stage_c_launcher",
+      "attempt": 1,
+      "reason": "outer shell command returned a one-second timeout while the original process continued",
+      "classification": "LAUNCHER_OBSERVABILITY_ONLY",
+      "duplicate_execution_started": false,
+      "scientific_results_used": true,
+      "resolution": "confirmed one parent process and 12 workers; allowed the original frozen run to finish"
+    }
+  ],
+  "holdout_accessed": false,
+  "compromised": false
+}

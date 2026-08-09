@@ -1,0 +1,12 @@
+{
+  "execution_allowed": false,
+  "executed": false,
+  "samples_executed": 0,
+  "participants_executed": 0,
+  "reason": "ZERO_DEVELOPMENT_QUALIFIED_KANG2026_CANDIDATES",
+  "paper_status": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+  "manifest_remained_locked": true,
+  "manifest_sample_count": 112,
+  "holdout_results_accessed": false,
+  "compromised": false
+}
