@@ -1,0 +1,58 @@
+{
+  "task": "V8-DOUBLE-PENDULUM-RECENT-PAPER-STRONG-BASELINE-AND-PROJECT-CLOSURE-R1",
+  "audit_date": "2026-08-10",
+  "selection_rule": "first preregistered source with complete legally obtainable primary equations; no performance was accessed",
+  "performance_accessed": false,
+  "priority_a": {
+    "citation": "Yan et al. (2026), Adaptive Proportional-Derivative Sliding Mode Control for a Quadrotor With Suspended Double-Pendulum Payload",
+    "doi": "10.1002/acs.70074",
+    "publisher": "Wiley",
+    "open_access_status": "closed",
+    "complete_primary_equations_obtained": false,
+    "evidence": [
+      "Publisher landing page and abstract were available.",
+      "Unpaywall and OpenAlex reported no lawful open full-text location.",
+      "Search-index snippets and figure previews were not treated as a complete primary source."
+    ],
+    "decision": "INELIGIBLE_INCOMPLETE_PRIMARY_SOURCE"
+  },
+  "fallback_b": {
+    "citation": "Yan et al. (2024), An enhanced coupling nonlinear control for quadrotor with suspended double-pendulum payload",
+    "doi": "10.1002/rnc.7483",
+    "publisher": "Wiley",
+    "open_access_status": "closed",
+    "complete_primary_equations_obtained": false,
+    "evidence": [
+      "Publisher abstract and bibliographic record were available.",
+      "The University of Adelaide repository record 2440/142839 reported accessStatus=metadata.only.",
+      "Unpaywall and OpenAlex reported no lawful open full-text location."
+    ],
+    "decision": "INELIGIBLE_INCOMPLETE_PRIMARY_SOURCE"
+  },
+  "fallback_c": {
+    "citation": "Xu, Lin, Ye, and Jiang (2025), Composite Perturbation-Rejection Trajectory-Tracking Control for a Quadrotor-Slung Load System",
+    "doi": "10.3390/act14070335",
+    "venue": "Actuators 14(7):335",
+    "publisher": "MDPI",
+    "open_access_status": "gold",
+    "license": "CC BY 4.0",
+    "primary_pdf_url": "https://www.mdpi.com/2076-0825/14/7/335/pdf?version=1751531610",
+    "primary_pdf_sha256": "2f1d7e4ff7a25a057cea9f65fbd99175e4a92e62dc21e4bb5991ec65d37c593d",
+    "page_count": 24,
+    "complete_primary_equations_obtained": true,
+    "complete_read": true,
+    "coverage": {
+      "system_model_and_states": "Eqs. (1)-(13)",
+      "multivariable_finite_time_disturbance_observer": "Eqs. (14)-(19), (25), and (38)",
+      "four_loop_composite_backstepping_controller": "Eqs. (20)-(41)",
+      "stability_assumptions_and_gain_bounds": "Assumptions 1-3, Lemmas 1-3, Theorem 1, Eqs. (42)-(56)",
+      "simulation_and_experiment_parameters": "Sections 4-5"
+    },
+    "decision": "SELECTED_COMPLETE_LEGAL_PRIMARY_SOURCE"
+  },
+  "selected_source": "XU2025-CBS-FTDO-ADAPTED-5LINK",
+  "selected_doi": "10.3390/act14070335",
+  "source_switching_after_freeze_allowed": false,
+  "abstract_formula_inference_used": false,
+  "result": "PASS_V8_PRIMARY_SOURCE_SELECTION"
+}

@@ -1,0 +1,13 @@
+{
+  "selected": "Xu et al. (2025), Composite Perturbation-Rejection Trajectory-Tracking Control for a Quadrotor-Slung Load System",
+  "year": 2025,
+  "venue": "Actuators 14(7):335",
+  "doi": "10.3390/act14070335",
+  "adaptation_name": "XU2025-CBS-FTDO-ADAPTED-5LINK",
+  "full_primary_source": true,
+  "primary_pdf_sha256": "2f1d7e4ff7a25a057cea9f65fbd99175e4a92e62dc21e4bb5991ec65d37c593d",
+  "selection_before_performance": true,
+  "selection_basis": "preregistered source availability order only",
+  "paper_replacement_allowed": false,
+  "performance_accessed": false
+}
