@@ -1,0 +1,14 @@
+{
+  "files": {
+    "reproducibility/v8/r0/development_manifest.json": "b51d9958b706354867d593d61a93336c702561e1e3b3e9dfcd5488ced0886cc3",
+    "reproducibility/v8/r0/double_pendulum_identification.json": "d0c4ba4c7e79675c711d9ed16389b7873107c598e739709a385a05c0c39dae20",
+    "reproducibility/v8/r0/five_link_modal_audit.json": "30cbcea2667bb60899d2fc3a3835f243e24952b95406bd4ea44e5a7348f2a524",
+    "reproducibility/v8/r0/holdout_carryforward_audit.json": "e994b042604abe3ee381efccaca39284dc82d2f62d7c0f187fc2804a8e84f82f",
+    "reproducibility/v8/r0/holdout_manifest.json": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+    "reproducibility/v8/r0/modal_selection_contract.json": "aee756ebdf4fe582bb1fdc2771dcb2ef070690178cc7b05d1324a03bfb542c65",
+    "reproducibility/v8/r0/paper_source_freeze.json": "8fffd37f30bffa50ad5737ee59e054d85d4e44fc2e284a453665994dcfce0e63",
+    "reproducibility/v8/r0/research_contract.json": "9a36a468ca1f3b55d119be0d7c6a2cf2306c5f4e5991ecf537b8af18f5d16a58",
+    "reproducibility/v8/r0/source_audit.json": "7b95dfea9f2b49330f632df338e22e9a9e96a6823b06e3196b169df1d6fa9aa8",
+    "reproducibility/v8/r0/win_contract.json": "8f8e801c07aa1d2d3e93c1d4203c29d9ec7011a07b917342a82c1a73428530d7"
+  }
+}

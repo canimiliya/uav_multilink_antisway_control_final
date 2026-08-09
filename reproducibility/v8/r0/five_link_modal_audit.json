@@ -1,0 +1,188 @@
+{
+  "model_path": "reproducibility/frozen/model/model_5link_controlled.xml",
+  "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "plant_modified": false,
+  "equilibrium": {
+    "quadrotor_position_m": [
+      0.0,
+      0.0,
+      3.2
+    ],
+    "joint_angles_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "linearization": {
+    "method": "MuJoCo mass matrix plus centered finite-difference gravity stiffness",
+    "finite_difference_step_rad": 1e-06,
+    "mass_matrix_kg_m2": [
+      [
+        18.64201041666665,
+        14.812812499999978,
+        11.033614583333309,
+        7.354416666666639,
+        3.8252187499999692
+      ],
+      [
+        14.812812499999978,
+        11.82531249999998,
+        8.846114583333309,
+        5.916916666666639,
+        3.0877187499999694
+      ],
+      [
+        11.033614583333309,
+        8.846114583333309,
+        6.658614583333309,
+        4.479416666666639,
+        2.3502187499999696
+      ],
+      [
+        7.354416666666639,
+        5.916916666666639,
+        4.479416666666639,
+        3.0419166666666393,
+        1.61271874999997
+      ],
+      [
+        3.8252187499999692,
+        3.0877187499999694,
+        2.3502187499999696,
+        1.61271874999997,
+        0.87521874999997
+      ]
+    ],
+    "gravity_stiffness_Nm_per_rad": [
+      [
+        75.29174999998746,
+        58.61474999999024,
+        42.918749999992855,
+        28.203749999995303,
+        14.469749999997587
+      ],
+      [
+        58.61474999999024,
+        58.61474999999024,
+        42.918749999992855,
+        28.203749999995303,
+        14.469749999997592
+      ],
+      [
+        42.918749999992855,
+        42.918749999992855,
+        42.91874999999284,
+        28.203749999995303,
+        14.469749999997587
+      ],
+      [
+        28.203749999995303,
+        28.203749999995303,
+        28.203749999995303,
+        28.203749999995303,
+        14.469749999997589
+      ],
+      [
+        14.469749999997587,
+        14.469749999997592,
+        14.469749999997587,
+        14.469749999997589,
+        14.469749999997589
+      ]
+    ],
+    "joint_damping_Nm_s_per_rad": [
+      0.05,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+    ]
+  },
+  "passive_mode_count": 5,
+  "modes": [
+    {
+      "mode_id": 1,
+      "natural_frequency_hz": 0.31943858217467047,
+      "damping_ratio": 0.0005724762855079711,
+      "mass_normalized_joint_shape": [
+        0.21370125934838505,
+        0.010591413011814266,
+        0.008937213167502088,
+        0.006798649535607657,
+        0.007348250201773391
+      ],
+      "cutter_tip_position_participation_m": 0.5992215731944799,
+      "cutter_tip_orientation_participation_rad": 0.24737678526508247,
+      "cutter_tip_kinetic_energy_proxy": 0.8976662344541686,
+      "uav_translation_control_participation": 1.772925952314755
+    },
+    {
+      "mode_id": 2,
+      "natural_frequency_hz": 1.6053642085900912,
+      "damping_ratio": 0.01187321784776712,
+      "mass_normalized_joint_shape": [
+        -1.2674511133415365,
+        0.3146411270538331,
+        0.6658333260382745,
+        0.8555806523177752,
+        1.3819289782868993
+      ],
+      "cutter_tip_position_participation_m": 0.4614209840346745,
+      "cutter_tip_orientation_participation_rad": 1.9505329703552459,
+      "cutter_tip_kinetic_energy_proxy": 0.5322733112688184,
+      "uav_translation_control_participation": 0.4365461409454112
+    },
+    {
+      "mode_id": 3,
+      "natural_frequency_hz": 3.0306944630266424,
+      "damping_ratio": 0.056318456094334716,
+      "mass_normalized_joint_shape": [
+        2.389869542335149,
+        -2.190982154249548,
+        -2.6369325312981426,
+        -0.3060255675404813,
+        5.0337493276182865
+      ],
+      "cutter_tip_position_participation_m": 0.5152467757338891,
+      "cutter_tip_orientation_participation_rad": 2.2896786168652636,
+      "cutter_tip_kinetic_energy_proxy": 0.6636980997604215,
+      "uav_translation_control_participation": 0.25950729290993646
+    },
+    {
+      "mode_id": 4,
+      "natural_frequency_hz": 5.191261254654959,
+      "damping_ratio": 0.14854812853342944,
+      "mass_normalized_joint_shape": [
+        3.6493465630737876,
+        -7.768419099123067,
+        0.8895369538128932,
+        8.579735958106733,
+        -6.7633173900152705
+      ],
+      "cutter_tip_position_participation_m": 0.3185792768477894,
+      "cutter_tip_orientation_participation_rad": 1.4131170141449232,
+      "cutter_tip_kinetic_energy_proxy": 0.25373188909215116,
+      "uav_translation_control_participation": 0.17500265654673974
+    },
+    {
+      "mode_id": 5,
+      "natural_frequency_hz": 7.942692221906202,
+      "damping_ratio": 0.29822568678629374,
+      "mass_normalized_joint_shape": [
+        3.3732157100009768,
+        -11.457723915441115,
+        16.35280763422631,
+        -12.63657164958491,
+        5.056450312614617
+      ],
+      "cutter_tip_position_participation_m": 0.15541632680070114,
+      "cutter_tip_orientation_participation_rad": 0.6881780918158782,
+      "cutter_tip_kinetic_energy_proxy": 0.06038558659055584,
+      "uav_translation_control_participation": 0.10118429778689908
+    }
+  ],
+  "performance_accessed": false
+}

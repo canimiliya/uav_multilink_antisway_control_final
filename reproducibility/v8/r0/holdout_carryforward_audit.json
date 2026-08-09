@@ -1,0 +1,10 @@
+{
+  "source": "reproducibility/v7/r0/holdout_manifest.json",
+  "source_sha256": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+  "v8_copy_sha256": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+  "byte_identical": true,
+  "sample_count": 112,
+  "execution_allowed": false,
+  "prior_execution_detected": false,
+  "V7_HOLDOUT_CARRIED_FORWARD_UNCHANGED": true
+}

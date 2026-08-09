@@ -1,0 +1,66 @@
+{
+  "task": "V8-DOUBLE-PENDULUM-RECENT-PAPER-STRONG-BASELINE-AND-PROJECT-CLOSURE-R1",
+  "source_tag": "v7-research-final-2026-08-10",
+  "source_head": "86420873934f9e459a69676468059b9bf65177d5",
+  "branch": "research-v8",
+  "selected_paper": {
+    "selected": "Xu et al. (2025), Composite Perturbation-Rejection Trajectory-Tracking Control for a Quadrotor-Slung Load System",
+    "year": 2025,
+    "venue": "Actuators 14(7):335",
+    "doi": "10.3390/act14070335",
+    "adaptation_name": "XU2025-CBS-FTDO-ADAPTED-5LINK",
+    "full_primary_source": true,
+    "primary_pdf_sha256": "2f1d7e4ff7a25a057cea9f65fbd99175e4a92e62dc21e4bb5991ec65d37c593d",
+    "selection_before_performance": true,
+    "selection_basis": "preregistered source availability order only",
+    "paper_replacement_allowed": false,
+    "performance_accessed": false
+  },
+  "development": {
+    "source": "reproducibility/v7/r0/development_manifest.json",
+    "sha256": "b51d9958b706354867d593d61a93336c702561e1e3b3e9dfcd5488ced0886cc3",
+    "v8_copy_sha256": "b51d9958b706354867d593d61a93336c702561e1e3b3e9dfcd5488ced0886cc3",
+    "sample_count": 144,
+    "execution_allowed": true
+  },
+  "holdout": {
+    "source": "reproducibility/v7/r0/holdout_manifest.json",
+    "sha256": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+    "v8_copy_sha256": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+    "sample_count": 112,
+    "execution_allowed": false,
+    "unlock_condition": "Paper Development qualified and frozen; search permanently stopped"
+  },
+  "comparators": {
+    "traditional": [
+      "hybrid_x007_y041_z041",
+      "full_lqr_048",
+      "task_lqr_009"
+    ],
+    "self_reference": "satc_b_027",
+    "parameters_frozen": true,
+    "development_evidence": "reproducibility/v7/development/baseline_results.csv",
+    "development_evidence_sha256": "de369f9a1bee2ad0a4c021dcbc8833369c118d2278ab7d33f4f744f1fb3e478e"
+  },
+  "control_authority": {
+    "output": "world-frame [ax, ay, az]",
+    "absolute_axis_limit_m_s2": 2.0,
+    "slew_axis_limit_m_s2_per_update": 0.25,
+    "outer_rate_hz": 20.0,
+    "inner_loop": "same frozen geometric inner loop"
+  },
+  "search": {
+    "max_unique_configurations": 128,
+    "paper_native_parameters_only": true,
+    "satc_modules_forbidden": true,
+    "holdout_selection_authority": false
+  },
+  "absolute_prohibitions": [
+    "modify V1-V7 evidence or tags",
+    "retune Traditional or satc_b_027",
+    "modify plant, metrics, safety, Development, or Holdout",
+    "increase Paper control authority",
+    "replace the frozen Paper source"
+  ],
+  "performance_accessed": false
+}

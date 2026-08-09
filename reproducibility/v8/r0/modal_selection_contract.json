@@ -1,0 +1,61 @@
+{
+  "selection_before_paper_performance": true,
+  "performance_accessed": false,
+  "criteria": [
+    "natural frequency below 2 Hz so the frozen 20 Hz outer loop provides at least ten updates per cycle",
+    "nonzero cutter-tip position and orientation observability",
+    "nonzero UAV-translation control participation",
+    "largest low-frequency plant-energy participation"
+  ],
+  "eligible_mode_ids": [
+    1,
+    2
+  ],
+  "selected_mode_ids": [
+    1,
+    2
+  ],
+  "selected_frequencies_hz": [
+    0.31943858217467047,
+    1.6053642085900912
+  ],
+  "modal_basis_mass_normalized": [
+    [
+      0.21370125934838505,
+      -1.2674511133415365
+    ],
+    [
+      0.010591413011814266,
+      0.3146411270538331
+    ],
+    [
+      0.008937213167502088,
+      0.6658333260382745
+    ],
+    [
+      0.006798649535607657,
+      0.8555806523177752
+    ],
+    [
+      0.007348250201773391,
+      1.3819289782868993
+    ]
+  ],
+  "joint_to_modal_projection": [
+    [
+      4.3174282493277625,
+      3.4327394388339325,
+      2.558823622100965,
+      1.7068816994419092,
+      0.8885574105996674
+    ],
+    [
+      -0.042091293451630284,
+      0.16565929225719475,
+      0.31264949915583107,
+      0.3541544548318874,
+      0.2774006243879342
+    ]
+  ],
+  "selection_authority": "FROZEN_PLANT_PHYSICS_ONLY"
+}

@@ -1,0 +1,32 @@
+{
+  "representation": "DIRECT_TWO_MODE_MODAL_COORDINATES",
+  "physical_double_pendulum_parameter_fit": false,
+  "selected_mode_ids": [
+    1,
+    2
+  ],
+  "selected_natural_frequencies_hz": [
+    0.31943858217467047,
+    1.6053642085900912
+  ],
+  "equilibrium_suspension_to_cutter_geometry_m": [
+    0.225,
+    0.0,
+    -2.81
+  ],
+  "diagnostic_excitation": "0.1 m/s^2 x-axis half-sine base-acceleration pulse over 0.25 s",
+  "diagnostic_duration_s": 12.0,
+  "controller_performance_used": false,
+  "parity": {
+    "full_linear_tip_x_rms_m": 0.005856268767199196,
+    "two_mode_residual_tip_x_rms_m": 1.717122876595953e-07,
+    "normalized_rmse": 2.932110777110354e-05,
+    "peak_amplitude_ratio": 0.9999614167690913,
+    "frequency_error_fraction": [
+      0.0,
+      0.0
+    ],
+    "pass": true
+  },
+  "result": "MODEL_IDENTIFICATION_PARITY_PASS"
+}

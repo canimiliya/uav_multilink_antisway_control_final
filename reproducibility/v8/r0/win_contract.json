@@ -1,0 +1,29 @@
+{
+  "primary_traditional": "full_lqr_048",
+  "best_traditional_scope": [
+    "hybrid_x007_y041_z041",
+    "full_lqr_048",
+    "task_lqr_009"
+  ],
+  "development_and_holdout_hard_gates": {
+    "safety_rate": ">= best Traditional",
+    "success_rate": ">= best Traditional",
+    "position_mean": "<= 0.95 * full_lqr_048",
+    "acquisition_median": "<= 1.05 * full_lqr_048",
+    "paired_position_bootstrap": "10000 exact pairs; 95% CI lower bound > 0",
+    "strong_position_mean": "<= 0.95 * full_lqr_048 strong mean",
+    "strong_position_p90": "<= 1.10 * full_lqr_048 strong P90",
+    "catastrophic_strong_pairs": 0
+  },
+  "advanced_value_requires_any": [
+    "acquisition >=5% better than full_lqr_048",
+    "orientation >=10% better than full_lqr_048",
+    "strong mean >=10% better than full_lqr_048",
+    "effort >=10% better than full_lqr_048",
+    "runtime >=50% lower than satc_b_027 while all position/robustness gates pass"
+  ],
+  "development_bootstrap_seed": 20260825,
+  "holdout_bootstrap_seed": 20260826,
+  "bootstrap_resamples": 10000,
+  "thresholds_modifiable": false
+}
