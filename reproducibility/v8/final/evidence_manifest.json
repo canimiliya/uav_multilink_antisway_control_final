@@ -1,0 +1,168 @@
+{
+  "task": "V8-DOUBLE-PENDULUM-RECENT-PAPER-STRONG-BASELINE-AND-PROJECT-CLOSURE-R1",
+  "result": "V8_NO_QUALIFIED_DOUBLE_PENDULUM_PAPER_BASELINE",
+  "project_research_complete": false,
+  "holdout_executed": false,
+  "files": {
+    "docs/v8/FINAL_TECHNICAL_REPORT.md": {
+      "sha256": "dec749eb185a15d4ff07e6d2848cda6b0e5b1c110b21146735b2d46daea0fc04",
+      "bytes": 2711
+    },
+    "docs/v8/INTERVIEW_QA.md": {
+      "sha256": "10d8b014155aa1198b0ae6787aeb621263f171f10c3239aaa7ed3d87237b0052",
+      "bytes": 2281
+    },
+    "docs/v8/METHOD_COMPARISON.md": {
+      "sha256": "73705a3148413f341d0fe440d7f6825d93566b3024942c1566e6b19ce3aa594a",
+      "bytes": 1042
+    },
+    "reproducibility/v8/development/baseline_carryforward_audit.json": {
+      "sha256": "028118c68954dc7a85baaf856aeee597e08c7e36cb6d42daa134e6bd8163f882",
+      "bytes": 261
+    },
+    "reproducibility/v8/development/baseline_results.csv": {
+      "sha256": "de369f9a1bee2ad0a4c021dcbc8833369c118d2278ab7d33f4f744f1fb3e478e",
+      "bytes": 181163
+    },
+    "reproducibility/v8/development/baseline_summary.json": {
+      "sha256": "484c307e544bb110fcb5e132d4b8cf564ddb54dc69dd091f78593994849e1441",
+      "bytes": 125767
+    },
+    "reproducibility/v8/development/comparator_summary.json": {
+      "sha256": "928f40836414b66412af5180930955710816afe2b692e5a5e568b7bcca2d9da1",
+      "bytes": 1831
+    },
+    "reproducibility/v8/development/execution_audit.json": {
+      "sha256": "8447561223a52f34ff85c2486f7fded891d97241ab4ddaa506bc76ecc2282b1a",
+      "bytes": 1348
+    },
+    "reproducibility/v8/final/claim_matrix.json": {
+      "sha256": "c8b79005515c3fba64537f9a7ab81f6d0e6c767c5992d07a53be082818362674",
+      "bytes": 981
+    },
+    "reproducibility/v8/final/final_gate.json": {
+      "sha256": "77b1925d3147fd81bc4da2b5d2eae1304d5af807c8d63a1a7107a0defbebfb51",
+      "bytes": 764
+    },
+    "reproducibility/v8/final/metric_table.json": {
+      "sha256": "eafe2faec03b0639890805f7f3c6c106fa41e22f4aa6af11a907a60511d9cc13",
+      "bytes": 1742
+    },
+    "reproducibility/v8/final/paper_vs_satc_status.json": {
+      "sha256": "cd6fe81e945cef8737dba11acd3adfa6ff26d8a53284052f04a7c5c030854315",
+      "bytes": 318
+    },
+    "reproducibility/v8/final/project_tests.json": {
+      "sha256": "2852ec2542e841cb4301ddffb50f3e60e83db364af24ec953806246f88f667ed",
+      "bytes": 615
+    },
+    "reproducibility/v8/final/protected_evidence_audit.json": {
+      "sha256": "0d6f4cf412a5200e8733a1d47f8a341e23d7b47747f1c66cc159d61c630571ec",
+      "bytes": 1174
+    },
+    "reproducibility/v8/final/resume_claims.json": {
+      "sha256": "4413ce1439c22274be9387aeb04dc0b1d8369e736aa31f66ade88da834ca1546",
+      "bytes": 285
+    },
+    "reproducibility/v8/holdout/status.json": {
+      "sha256": "0b3ec0f7dde90cda5111a5105c83e641599ceccc926115203815962400ba974c",
+      "bytes": 471
+    },
+    "reproducibility/v8/paper/candidate_registry.json": {
+      "sha256": "e2f0065c59907cf38668713ac60096e1e4cb347392c10e9a7b6e171d05b73575",
+      "bytes": 202392
+    },
+    "reproducibility/v8/paper/development_final.json": {
+      "sha256": "4ac655f0095a8990bbd98bcb913f82b5a33139aa1224aaed32493e127c78da7a",
+      "bytes": 7260
+    },
+    "reproducibility/v8/paper/development_gate_audit.json": {
+      "sha256": "6ee04962c725a45a7d0d2841ed15ffe5a2861a6640001f2f922ab1ce7edd1357",
+      "bytes": 710028
+    },
+    "reproducibility/v8/paper/development_protocol.json": {
+      "sha256": "ee0be2fb537eeeac75c13676050d390ecf1e6f7b2156aea888384858cb053ac8",
+      "bytes": 6876
+    },
+    "reproducibility/v8/paper/equation_mapping.md": {
+      "sha256": "39651c1f34df26655ff935c72c78adf4b7b929ca065ac2d6d1b3a9392b7a5cfb",
+      "bytes": 2324
+    },
+    "reproducibility/v8/paper/failure_mechanism_audit.json": {
+      "sha256": "2bd6717339694e7ae59b994cd4175ad0b8ccee2d9d949397e4b2d9784be2da46",
+      "bytes": 2710
+    },
+    "reproducibility/v8/paper/implementation_audit.json": {
+      "sha256": "6f80a25be5b5d813fa8b8a8c2a308b6a64241a98ca07bf3d5bcd845dc7e77d10",
+      "bytes": 790
+    },
+    "reproducibility/v8/paper/protocol_sha256.json": {
+      "sha256": "b39ce79f239181b009358d06d300359f43cd3e18ac51e0b7212fe12884be582f",
+      "bytes": 461
+    },
+    "reproducibility/v8/paper/search_history.json": {
+      "sha256": "8f12b21ecafda7e458ad04ac6914ab63f0fdc82e26ff646c92412b2fdd1ba9b8",
+      "bytes": 924
+    },
+    "reproducibility/v8/paper/stage_a_results.csv": {
+      "sha256": "08efa0befa789ea9c5e4e9bf7ef9ea0bd406bbbd897a2aa8c8fe5ef1d0af7610",
+      "bytes": 125183
+    },
+    "reproducibility/v8/paper/stage_a_summary.json": {
+      "sha256": "14d27135b35d5c11578c88bae95a35ce5357b8d52e3bc751175b43d38608e5f2",
+      "bytes": 294324
+    },
+    "reproducibility/v8/paper/stage_b_results.csv": {
+      "sha256": "cdc166d14812090409da4a2672b44451ba5dd74d4acb511407dcbbef8c306fe9",
+      "bytes": 6033311
+    },
+    "reproducibility/v8/paper/stage_b_summary.json": {
+      "sha256": "9cc9f8b0cd73bfc2d140205dcbf23f64f0d8d15b7beed70ad63fc73f86bc1465",
+      "bytes": 2362169
+    },
+    "reproducibility/v8/r0/contract_sha256.json": {
+      "sha256": "0f79dd1e363e6d34c7f63e82994454ace33c08d0d897772f7c4a08bc7d0037ca",
+      "bytes": 1247
+    },
+    "reproducibility/v8/r0/development_manifest.json": {
+      "sha256": "b51d9958b706354867d593d61a93336c702561e1e3b3e9dfcd5488ced0886cc3",
+      "bytes": 123579
+    },
+    "reproducibility/v8/r0/double_pendulum_identification.json": {
+      "sha256": "d0c4ba4c7e79675c711d9ed16389b7873107c598e739709a385a05c0c39dae20",
+      "bytes": 851
+    },
+    "reproducibility/v8/r0/five_link_modal_audit.json": {
+      "sha256": "30cbcea2667bb60899d2fc3a3835f243e24952b95406bd4ea44e5a7348f2a524",
+      "bytes": 5214
+    },
+    "reproducibility/v8/r0/holdout_carryforward_audit.json": {
+      "sha256": "e994b042604abe3ee381efccaca39284dc82d2f62d7c0f187fc2804a8e84f82f",
+      "bytes": 401
+    },
+    "reproducibility/v8/r0/holdout_manifest.json": {
+      "sha256": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+      "bytes": 97056
+    },
+    "reproducibility/v8/r0/modal_selection_contract.json": {
+      "sha256": "aee756ebdf4fe582bb1fdc2771dcb2ef070690178cc7b05d1324a03bfb542c65",
+      "bytes": 1301
+    },
+    "reproducibility/v8/r0/paper_source_freeze.json": {
+      "sha256": "8fffd37f30bffa50ad5737ee59e054d85d4e44fc2e284a453665994dcfce0e63",
+      "bytes": 572
+    },
+    "reproducibility/v8/r0/research_contract.json": {
+      "sha256": "9a36a468ca1f3b55d119be0d7c6a2cf2306c5f4e5991ecf537b8af18f5d16a58",
+      "bytes": 2631
+    },
+    "reproducibility/v8/r0/source_audit.json": {
+      "sha256": "7b95dfea9f2b49330f632df338e22e9a9e96a6823b06e3196b169df1d6fa9aa8",
+      "bytes": 2833
+    },
+    "reproducibility/v8/r0/win_contract.json": {
+      "sha256": "8f8e801c07aa1d2d3e93c1d4203c29d9ec7011a07b917342a82c1a73428530d7",
+      "bytes": 1084
+    }
+  }
+}

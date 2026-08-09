@@ -1,0 +1,53 @@
+{
+  "split": "V8 Development, inherited byte-identically from V7",
+  "sample_count": 144,
+  "methods": {
+    "corrected_pid": {
+      "safety_rate": 1.0,
+      "success_rate": 0.13194444444444445,
+      "position_mean_m": 0.3050658685829423,
+      "acquisition_median_s": 3.1950000000000003,
+      "orientation_mean_deg": 0.9056406547155466,
+      "effort_mean": 5.341798434064142,
+      "runtime_p95_ms": 0.0708
+    },
+    "full_lqr_048": {
+      "safety_rate": 1.0,
+      "success_rate": 0.25,
+      "position_mean_m": 0.14703016519008688,
+      "acquisition_median_s": 4.2375,
+      "orientation_mean_deg": 0.9212517603204107,
+      "effort_mean": 1.2123297201268646,
+      "runtime_p95_ms": 0.0372
+    },
+    "task_lqr_009": {
+      "safety_rate": 1.0,
+      "success_rate": 0.25,
+      "position_mean_m": 0.18692639642596465,
+      "acquisition_median_s": 2.1375,
+      "orientation_mean_deg": 0.6470147378042395,
+      "effort_mean": 1.4282256921364693,
+      "runtime_p95_ms": 0.0387
+    },
+    "satc_b_027": {
+      "safety_rate": 1.0,
+      "success_rate": 0.6041666666666666,
+      "position_mean_m": 0.10209440482599884,
+      "acquisition_median_s": 2.795,
+      "orientation_mean_deg": 0.7471637589705722,
+      "effort_mean": 1.091293561393061,
+      "runtime_p95_ms": 2.8391
+    },
+    "xu_v8_077_diagnostic_only": {
+      "safety_rate": 0.4791666666666667,
+      "success_rate": 0.006944444444444444,
+      "position_mean_m": 2.198163544648049,
+      "acquisition_median_s_among_successes": 1.1600000000000001,
+      "orientation_mean_deg": 21.404311416437398,
+      "effort_mean": 26.073249640869236,
+      "runtime_p95_ms": 0.3511,
+      "qualified": false
+    }
+  },
+  "holdout_metrics": "NOT_RUN_DEVELOPMENT_INELIGIBLE"
+}

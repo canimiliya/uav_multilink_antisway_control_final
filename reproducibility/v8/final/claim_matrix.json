@@ -1,0 +1,21 @@
+{
+  "allowed": [
+    "V8 selected the first preregistered source with complete legally obtainable primary equations: Xu et al. 2025.",
+    "A plant-only two-mode reduction of the frozen five-link system passed small-signal parity before controller performance.",
+    "The faithful V8 adaptation evaluated 128 configurations on the inherited 144-sample Development bank.",
+    "No V8 Paper candidate satisfied the preregistered Development strong-baseline gate.",
+    "The inherited 112-sample Holdout remained unseen and unexecuted.",
+    "The highest validated project claim remains V5_SELF_OVERALL_HOLDOUT_WIN."
+  ],
+  "forbidden": [
+    "Recent Paper Advanced > Traditional",
+    "Xu2025 adaptation > Traditional",
+    "SATC > Xu2025 on Holdout",
+    "Xu2025 <-> SATC validated trade-off",
+    "PROJECT_RESEARCH_COMPLETE",
+    "physical-flight or hardware validation"
+  ],
+  "paper_freeze_created": false,
+  "paper_holdout_executed": false,
+  "pure_simulation_boundary": true
+}

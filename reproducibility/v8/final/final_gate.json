@@ -1,0 +1,19 @@
+{
+  "task": "V8-DOUBLE-PENDULUM-RECENT-PAPER-STRONG-BASELINE-AND-PROJECT-CLOSURE-R1",
+  "result": "V8_NO_QUALIFIED_DOUBLE_PENDULUM_PAPER_BASELINE",
+  "THREE_TRADITIONAL_STRONG": true,
+  "SATC_SELF_VALIDATED": true,
+  "RECENT_PAPER_STRONG_BASELINE_VALIDATED": false,
+  "PAPER_GT_TRADITIONAL": false,
+  "PAPER_VS_SATC_TRADEOFF_REPORTED": false,
+  "TRADEOFF_VALID": false,
+  "PROJECT_RESEARCH_COMPLETE": false,
+  "paper_freeze_head": "NOT_CREATED_DEVELOPMENT_INELIGIBLE",
+  "holdout_protocol_head": "NOT_CREATED_DEVELOPMENT_INELIGIBLE",
+  "holdout_executed": false,
+  "resume_outputs_generated": false,
+  "highest_validated_claim": "V5_SELF_OVERALL_HOLDOUT_WIN",
+  "v8_closed": true,
+  "v9_started": false,
+  "final_status": "V8_DOUBLE_PENDULUM_PAPER_ROUTE_FAILED"
+}
