@@ -1,0 +1,34 @@
+{
+  "selection_time": "2026-08-10T03:18:00+08:00",
+  "selection_before_v9_performance": true,
+  "title": "Neural Predictor for Flight Control with Payload",
+  "authors": [
+    "Ao Jin",
+    "Chenhao Li",
+    "Qinyi Wang",
+    "Ya Liu",
+    "Panfeng Huang",
+    "Fan Zhang"
+  ],
+  "venue": "IEEE Robotics and Automation Letters",
+  "year": 2025,
+  "doi": "10.1109/LRA.2025.3573624",
+  "arxiv": "2410.15946v2",
+  "official_repository": "https://github.com/NPU-RCIR/Neural-Predictor",
+  "upstream_branch": "master",
+  "upstream_commit": "e2ababf519e7b7cca8e23f42dcb8c34fae927037",
+  "license": "MIT",
+  "source_archive_sha256": "f9e1857f08ad7d39d006d830ffe5a88e71fadc9dfeee71759a63840726c452d9",
+  "paper_pdf_sha256": "40065e6036a8768d5833db3439a42cc258d2286e4aeb2d0cb6f108bc536936fc",
+  "adaptation_name": "JIN2025-NP-MPC-ADAPTED-5LINK",
+  "adaptation_classification": "ADAPTED_NOT_EXACT_REPRODUCTION",
+  "selection_reasons": [
+    "recent peer-reviewed RA-L payload-control method",
+    "unknown payload and residual force/torque modeled from data",
+    "learned lifted dynamics integrated into MPC",
+    "complete primary paper and author training/evaluation code",
+    "method family directly addresses the V6-V8 cross-model adaptation gap"
+  ],
+  "selection_not_based_on": "expected ease of defeating SATC",
+  "paper_replacement_after_failure_allowed": false
+}

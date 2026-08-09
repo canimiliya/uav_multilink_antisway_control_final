@@ -1,0 +1,65 @@
+{
+  "upstream_commit": "e2ababf519e7b7cca8e23f42dcb8c34fae927037",
+  "environment": {
+    "name": "v9_neural_predictor",
+    "python": "3.9.25",
+    "torch_requested_by_upstream": "2.1.0",
+    "torch_used": "2.7.1+cu128",
+    "cuda_available": true,
+    "hardware": "RTX 5060 Ti",
+    "non_torch_requirements": "upstream pinned versions"
+  },
+  "dataset_loading": "PASS",
+  "lls_training": "PASS",
+  "spectral_normalization": "PASS",
+  "multi_step_prediction": "PASS",
+  "model_serialization": "PASS",
+  "pretrained_wrapper_load": "PASS",
+  "pretrained_numerical_evaluation": "PASS_WITH_MINIMAL_COMPATIBILITY_PATCH",
+  "training_smoke": {
+    "epochs": 2,
+    "lifting_dimension": 24,
+    "initial_loss": 0.082,
+    "best_loss": 0.0029285925636627196,
+    "artifacts_written": [
+      "lifting_func.pth",
+      "A.pth",
+      "B.pth",
+      "lls_wrapper.pth"
+    ],
+    "result": "PASS"
+  },
+  "minimal_compatibility_repairs": [
+    {
+      "file": "validation.py",
+      "reason": "published lifting_func.pth is a 689-byte truncated archive without data.pkl",
+      "change": "skip unused lifting_func/A/B loads; use the complete lls_wrapper.pth already used by the original prediction loop",
+      "algorithm_changed": false,
+      "metrics_changed": false
+    },
+    {
+      "file": "train.py",
+      "reason": "TensorBoard add_scalars creates a mixed-separator nested path on Windows",
+      "change": "log the same two scalars with add_scalar",
+      "algorithm_changed": false,
+      "optimizer_changed": false
+    }
+  ],
+  "official_evaluation": {
+    "unseen_trajectories": 13,
+    "recomputed_neural_predictor_mean_force_rmse_N": 0.07492307692307693,
+    "recomputed_neural_predictor_mean_torque_rmse_Nm": 0.006230769230769231,
+    "published_csv_mean_force_rmse_N": 0.12361538461538461,
+    "published_csv_mean_torque_rmse_Nm": 0.008076923076923077,
+    "published_csv_exact_parity": false,
+    "max_absolute_table_cell_difference": 0.15799999999999997,
+    "different_neural_predictor_cells": 115,
+    "total_neural_predictor_cells": 130,
+    "comparator_rows_exact": true,
+    "interpretation": "The complete published wrapper runs successfully, but it is not byte/metric-identical to the repository's separately published CSV. This upstream inconsistency is preserved and does not alter V9 benchmark evidence."
+  },
+  "upstream_code_separated_from_v9_adaptation": true,
+  "v9_benchmark_performance_accessed": false,
+  "holdout_accessed": false,
+  "result": "PASS_WITH_RECORDED_UPSTREAM_ARTIFACT_INCONSISTENCY"
+}
