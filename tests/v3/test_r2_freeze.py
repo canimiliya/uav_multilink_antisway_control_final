@@ -49,3 +49,13 @@ def test_frozen_boundaries_and_holdout_remain_untouched() -> None:
     assert gate["holdout_executed"] is False
     assert holdout["holdout_manifest_loaded"] is False
     assert holdout["holdout_executed"] is False
+
+
+def test_ablation_contract_is_post_freeze_and_cannot_retune() -> None:
+    contract = read("self_ablation_contract.json")
+    assert contract["written_after_committed_self_freeze"] is True
+    assert contract["self_freeze_commit"] == "58b6544ab6a123f08d1cf04f3b9a7b38a40647e5"
+    assert contract["frozen_candidate"] == "self_a_034"
+    assert contract["ablation_retuning_allowed"] is False
+    assert contract["ablation_may_modify_self_freeze"] is False
+    assert contract["holdout_executed"] is False

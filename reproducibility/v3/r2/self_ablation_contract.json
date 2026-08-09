@@ -1,0 +1,15 @@
+{
+  "written_after_committed_self_freeze": true,
+  "self_freeze_commit": "58b6544ab6a123f08d1cf04f3b9a7b38a40647e5",
+  "frozen_candidate": "self_a_034",
+  "evaluation_set": "complete frozen 75-sample Development bank",
+  "variants": {
+    "backbone": "frozen task_lqr_009 evidence; no rerun or retuning",
+    "predictive_only": "frozen Self parameters with residual estimation and steady compensation disabled",
+    "residual_only": "frozen Self parameters with predictive QP disabled",
+    "full": "committed self_a_034 freeze evidence; no rerun or retuning"
+  },
+  "ablation_retuning_allowed": false,
+  "ablation_may_modify_self_freeze": false,
+  "holdout_executed": false
+}

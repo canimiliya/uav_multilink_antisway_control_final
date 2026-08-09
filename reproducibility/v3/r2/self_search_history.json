@@ -6,16 +6,42 @@
       "SEARCH_ROUND": "R2-A",
       "ARCHITECTURE_VERSION": "3D-DR-TSRMPC-A1",
       "SEARCH_SPACE": {
-        "backbone": ["full_lqr_048", "task_lqr_009"],
-        "horizon_updates": [8, 12],
-        "residual_beta": [0.05, 0.15, 0.3],
-        "residual_clip_norm": [0.08, 0.2],
-        "task_position_weight": [40.0, 120.0],
-        "task_velocity_weight": [2.0],
-        "orientation_weight": [1.0],
-        "angular_velocity_weight": [0.2],
-        "residual_correction_weight": [0.2],
-        "command_rate_weight": [1.0]
+        "backbone": [
+          "full_lqr_048",
+          "task_lqr_009"
+        ],
+        "horizon_updates": [
+          8,
+          12
+        ],
+        "residual_beta": [
+          0.05,
+          0.15,
+          0.3
+        ],
+        "residual_clip_norm": [
+          0.08,
+          0.2
+        ],
+        "task_position_weight": [
+          40.0,
+          120.0
+        ],
+        "task_velocity_weight": [
+          2.0
+        ],
+        "orientation_weight": [
+          1.0
+        ],
+        "angular_velocity_weight": [
+          0.2
+        ],
+        "residual_correction_weight": [
+          0.2
+        ],
+        "command_rate_weight": [
+          1.0
+        ]
       },
       "MAX_EVALUATIONS": 48,
       "EVALUATION_SET": "14-case frozen Development core only",
@@ -42,7 +68,14 @@
       "SEARCH_ROUND": "R2-B",
       "ARCHITECTURE_VERSION": "3D-DR-TSRMPC-A1",
       "SEARCH_SPACE": {
-        "candidate_ids": ["self_a_034", "self_a_046", "self_a_035", "self_a_030", "self_a_042", "self_a_047"],
+        "candidate_ids": [
+          "self_a_034",
+          "self_a_046",
+          "self_a_035",
+          "self_a_030",
+          "self_a_042",
+          "self_a_047"
+        ],
         "source": "top six R2-A candidates under the preregistered selection rule",
         "parameters_changed": false
       },
@@ -68,5 +101,9 @@
       "selected_candidate": "self_a_034",
       "holdout_executed": false
     }
-  ]
+  ],
+  "total_unique_candidates_executed": 48,
+  "full_development_finalist_count": 6,
+  "selected_candidate": "self_a_034",
+  "selected_before_ablation": true
 }
