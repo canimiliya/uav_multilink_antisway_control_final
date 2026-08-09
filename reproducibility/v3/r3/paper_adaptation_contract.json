@@ -1,0 +1,24 @@
+{
+  "task": "V3-R3-PAPER-ADVANCED-SELECTION-ADAPTATION-DEVELOPMENT-AND-FREEZE-R1",
+  "start_head": "472fc54a82c3c50c328622ca10cb1eebeb2c61f9",
+  "branch": "research-v3",
+  "method": "LV2026-SPACC-ADAPTED-3D",
+  "claim": "three-dimensional five-link adaptation preserving Lv et al.'s suspension-point-acceleration swing-regulation mechanism",
+  "exact_reproduction": false,
+  "architecture": {
+    "nominal_backbone": "one frozen Traditional LQR gain, used without retuning",
+    "outer_tracking_adapter": "causal cutter-tip position error is mapped to a bounded desired load velocity; Eq.31 velocity feedback becomes an acceleration correction",
+    "equivalent_swing": "r_eq = p_tip - p_uav and v_eq = v_tip - v_uav; alpha=atan2(r_y,-r_z), beta=atan2(r_x,-r_z)",
+    "middle_loop": "paper Eq.18 shaped swing errors on alpha and beta",
+    "decoupler": "paper Eqs.25-27 reduced to the equivalent-pendulum suspension-acceleration bridge on world x/y",
+    "output": "world-frame [ax, ay, az]",
+    "limiter": "shared amplitude +/-2 m/s^2 then 0.25 m/s^2/update slew",
+    "inner_loop": "frozen shared geometric inner loop"
+  },
+  "causal_inputs_only": true,
+  "future_wind_used": false,
+  "future_target_used": false,
+  "self_module_used": false,
+  "traditional_parameters_reselected": false,
+  "holdout_execution_allowed": false
+}

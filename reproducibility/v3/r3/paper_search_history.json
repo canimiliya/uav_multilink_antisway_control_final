@@ -1,0 +1,51 @@
+{
+  "written_before_any_paper_performance": true,
+  "total_unique_candidate_budget": 48,
+  "rounds": [
+    {
+      "SEARCH_ROUND": "R3-A",
+      "SEARCH_SPACE": {
+        "backbone": ["full_lqr_048", "task_lqr_009"],
+        "outer_position_gain": [0.25, 0.5],
+        "outer_velocity_gain": [0.5, 1.0],
+        "swing_gain_scale_of_reported_3_2": [0.0625, 0.125, 0.25],
+        "swing_correction_scale": [0.1, 0.25],
+        "swing_correction_clip_m_s2": [0.5],
+        "desired_tip_speed_limit_m_s": [0.5]
+      },
+      "MAX_EVALUATIONS": 48,
+      "EVALUATION_SET": "14-case frozen Development core",
+      "SELECTION_RULE": [
+        "all cases safe first",
+        "success count descending",
+        "position RMSE ascending",
+        "acquisition median ascending",
+        "ramp steady error ascending",
+        "ramp peak error ascending",
+        "runtime P95 ascending",
+        "candidate ID ascending"
+      ],
+      "RATIONALE": "Factorial screening separates frozen nominal backbone, adapted outer velocity layer, and paper middle-loop strength without architecture refinement."
+    },
+    {
+      "SEARCH_ROUND": "R3-B",
+      "SEARCH_SPACE": "top six unchanged R3-A parameter sets",
+      "MAX_EVALUATIONS": 6,
+      "EVALUATION_SET": "complete frozen 75-sample Development bank",
+      "SELECTION_RULE": [
+        "hard safety and runtime gates",
+        "hard frozen V3 overall numeric contract",
+        "success count descending",
+        "position RMSE ascending",
+        "acquisition median ascending",
+        "ramp steady error ascending",
+        "ramp peak error ascending",
+        "candidate ID ascending"
+      ],
+      "RATIONALE": "No parameter change or refinement is permitted between core screening and full-bank evaluation."
+    }
+  ],
+  "traditional_rerun": false,
+  "self_rerun_or_retune": false,
+  "holdout_executed": false
+}

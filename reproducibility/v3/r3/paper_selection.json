@@ -1,0 +1,18 @@
+{
+  "selected_candidate": "lv2026",
+  "title": "Modeling and Control for UAV with Off-center Slung Load",
+  "authors": ["Zongyang Lv", "Yanmei Jia", "Yongqing Liu", "Alan F. Lynch", "Qing Zhao", "Yuhu Wu"],
+  "year": 2026,
+  "venue": "arXiv",
+  "publication_status": "preprint",
+  "primary_source": "https://arxiv.org/abs/2601.03386",
+  "primary_source_pdf_sha256": "869b178b5704dac1035403142856876260ed337e110af3f3796c62b882ccd924",
+  "adaptation_name": "LV2026-SPACC-ADAPTED-3D",
+  "exact_reproduction": false,
+  "selected_before_paper_performance": true,
+  "selection_reason": "The complete primary manuscript exposes the paper's three-dimensional suspension-point-acceleration middle loop and reported gains. It is the shortest faithful path to the frozen three-axis acceleration authority, uses available causal state, and does not require obstacles, perception, multi-UAV coordination, direct thrust, or torque authority.",
+  "priority_1_disposition": "The TITS 2025 article was audited first, but no legal public full text or author manuscript was found; OpenAlex reports closed access and no repository full text. Its abstract was not used to invent equations.",
+  "v2_history_disclosure": "A planar V2 adaptation of the same paper family closed with no win. That evidence is retained as a risk; no V2 parameters, ranking, or performance are reused for V3 selection.",
+  "performance_considered": false,
+  "holdout_accessed": false
+}

@@ -1,0 +1,31 @@
+{
+  "adaptation_name": "LV2026-SPACC-ADAPTED-3D",
+  "PRESERVED": [
+    "single-UAV suspended-load cascade concept",
+    "three-dimensional suspension-point acceleration as middle-loop authority",
+    "alpha/beta shaped swing-error law from Eq.18",
+    "zero desired swing",
+    "outer load-velocity feedback concept",
+    "causal measured-state feedback"
+  ],
+  "ADAPTED": [
+    "single cable/off-center load to a five-link cutter-tip equivalent swing vector",
+    "paper velocity task to frozen cutter-tip position task through a bounded causal velocity reference",
+    "nonlinear model terms to an instantaneous equivalent-pendulum bridge",
+    "reported gains to a preregistered scale grid for 20 Hz execution and benchmark units",
+    "paper thrust vector to the frozen world-acceleration interface"
+  ],
+  "OMITTED": [
+    "paper attitude controller",
+    "paper thrust constraint and rotor mixer",
+    "explicit off-center rigid-body torque compensation",
+    "direct cable tension estimation"
+  ],
+  "UNAVAILABLE": [
+    "single-cable tension sensor",
+    "paper-specific off-center suspension geometry",
+    "direct thrust and torque authority"
+  ],
+  "core_mechanism_preserved": true,
+  "exact_reproduction": false
+}

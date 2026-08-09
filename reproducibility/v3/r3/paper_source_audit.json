@@ -1,0 +1,28 @@
+{
+  "audit_date": "2026-08-09",
+  "priority_1": {
+    "doi": "10.1109/TITS.2025.3594288",
+    "publisher_document_id": "11122372",
+    "metadata_verified": true,
+    "full_text_available": false,
+    "openalex_open_access_status": "closed",
+    "repository_full_text_found": false,
+    "implementation_from_abstract_forbidden": true
+  },
+  "selected_source": {
+    "url": "https://arxiv.org/pdf/2601.03386",
+    "pages": 9,
+    "sha256": "869b178b5704dac1035403142856876260ed337e110af3f3796c62b882ccd924",
+    "visually_inspected_pages": [4, 5, 6, 7, 8],
+    "equations_inspected": [9, 11, 12, 13, 18, 20, 21, 24, 25, 26, 27, 31, 35, 36],
+    "reported_gains_inspected": true,
+    "sufficient_for_adaptation": true
+  },
+  "other_full_text_sha256": {
+    "gpac2026": "0a2eddc45a191815711af206e1321b2cbb07b73893ab2c3e2cf8f56be7a88a28",
+    "yu2026": "946abc02d9f548bc14e03af3d7190b397bec3b8a1cbd69fb34d27ba3dedf775f",
+    "zhu2024": "4b061048ed5f9c283043b4be5df4f75d6172d2774e27ed0d12acb7d4ebf73ea2"
+  },
+  "secondary_blog_used_for_equations": false,
+  "holdout_accessed": false
+}

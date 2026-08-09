@@ -1,0 +1,32 @@
+{
+  "method": "LV2026-SPACC-ADAPTED-3D",
+  "source": "https://arxiv.org/pdf/2601.03386",
+  "mappings": [
+    {
+      "paper": "Eq.9c and Remark 1: swing dynamics are driven by suspension-point acceleration",
+      "benchmark": "causal cutter-to-UAV equivalent swing driven by frozen outer acceleration authority",
+      "status": "PRESERVED_WITH_EQUIVALENT_FIVE_LINK_STATE"
+    },
+    {
+      "paper": "Eqs.11c, 12b, 18: shaped alpha/beta error and desired virtual swing acceleration",
+      "benchmark": "alpha_d=beta_d=0 with analytic causal rates; reported 3.2 gains scaled only inside the preregistered grid",
+      "status": "PRESERVED_AND_EXTENDED_TO_BOTH_WORLD_PLANES"
+    },
+    {
+      "paper": "Eqs.25-27: decouple desired swing acceleration into 3D suspension-point acceleration",
+      "benchmark": "a_xy = -l_eq*sigma_ddot_des - g*sin(sigma); z remains under nominal/outer tracking because direct thrust is frozen",
+      "status": "ADAPTED_TO_ACCELERATION_INTERFACE"
+    },
+    {
+      "paper": "Eq.31: outer load-velocity feedback",
+      "benchmark": "bounded position-to-velocity reference followed by velocity acceleration correction",
+      "status": "ADAPTED_FROM_VELOCITY_TO_POSITION_TASK"
+    },
+    {
+      "paper": "Eqs.13-16 and 28-30: attitude, thrust, torque and mixer realization",
+      "benchmark": "shared geometric inner loop and common actuator model",
+      "status": "OMITTED_BY_FROZEN_INTERFACE"
+    }
+  ],
+  "exact_reproduction": false
+}
