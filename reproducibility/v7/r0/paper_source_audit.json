@@ -1,0 +1,42 @@
+{
+  "publication": {
+    "authors": [
+      "Junjie Kang",
+      "Jinjun Shan"
+    ],
+    "year": 2026,
+    "title": "Robust control of aerial cable-suspended payload transportation via fully actuated system approach",
+    "venue": "Control Engineering Practice 170, 106837",
+    "doi": "10.1016/j.conengprac.2026.106837",
+    "license": "CC BY-NC-ND 4.0"
+  },
+  "primary_source_path": "C:/Users/Administrator/Downloads/1-s2.0-S096706612600081X-main.pdf",
+  "primary_source_sha256": "1a2236debef68536d8ba3fb1b3e995f2d831eb7db08a21316d679428d6e45546",
+  "primary_source_pages": 9,
+  "controller_equations_complete": true,
+  "parameter_information_complete": true,
+  "equation_inventory": {
+    "plant": "Eqs. (1)-(9)",
+    "coordinate_transform": "Eqs. (10)-(13)",
+    "outer_fas_dob": "Eqs. (14)-(20)",
+    "outer_stability": "Eqs. (21)-(28)",
+    "inner_fas_dob": "Eqs. (29)-(44)",
+    "disturbances": "Eqs. (45)-(46)"
+  },
+  "required_sensors": [
+    "UAV position/velocity",
+    "UAV attitude/rate",
+    "payload swing angles/rates"
+  ],
+  "required_states": [
+    "UAV translation",
+    "two cable swing angles",
+    "UAV attitude"
+  ],
+  "original_controller_output": "desired force vector outer loop and body torque inner loop",
+  "original_payload_model": "point payload on a fixed-length lightweight rigid cable with two swing angles",
+  "original_actuator_assumptions": "quadrotor total thrust and three body torques",
+  "original_disturbance_model": "matched additive outer translational and inner attitude disturbances",
+  "v7_fairness_mapping": "outer-loop structure only; output restricted to common world-frame acceleration command",
+  "performance_executed": false
+}

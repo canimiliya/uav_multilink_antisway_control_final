@@ -1,0 +1,18 @@
+{
+  "source_tag_type": "tag",
+  "source_head": "6849c611c1361f5a88527753a5d1cb17dea3b76d",
+  "protected_trees": {
+    "v2": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+    "v3": "956e77658e01efabb110dcf1934215af344a620d",
+    "v4": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+    "v5": "1134092eb80efc8639ce822d777f30c04a9af226",
+    "v6": "c6e50538a3a5c1d98829873331e8fd1f09713409"
+  },
+  "traditional_and_satc_files": {
+    "reproducibility/v3/r1r1/pid_freeze.json": "759561998a44f41f5688dab1199daa6c47f6c4ae3586e96070910625b2f5db64",
+    "reproducibility/v3/r1/full_lqr_freeze.json": "d98d569200dad66c0afb88042a93632c2318c1a62b92b286ba9e0bffdd8b9fa6",
+    "reproducibility/v3/r1/task_lqr_freeze.json": "0399190be129f34a1061dbee0258f160268def76b9fdc032b98b395d3a4589d9",
+    "reproducibility/v5/self/self_freeze.json": "613e48ec12d7aaede8171ce9fdf173e5b673befb1295f4b0045126dca04ae36b"
+  },
+  "v1_v6_read_only": true
+}

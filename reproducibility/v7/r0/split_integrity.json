@@ -1,0 +1,45 @@
+{
+  "development_holdout_ids_disjoint": true,
+  "v7_holdout_old_holdout_ids_disjoint": false,
+  "development_seed": 20260821,
+  "holdout_seed": 20260822,
+  "development_stochastic_seeds": [
+    8000,
+    8001,
+    8002,
+    8003,
+    8004,
+    8005,
+    8006,
+    8007,
+    8008,
+    8009,
+    8010,
+    8011
+  ],
+  "holdout_stochastic_seeds": [
+    9000,
+    9001,
+    9002,
+    9003,
+    9004,
+    9005,
+    9006,
+    9007,
+    9008,
+    9009
+  ],
+  "old_holdout_manifest_sha256": {
+    "reproducibility/v2/final/unused_holdout_manifest.json": "f3c71f6f4eee990f54d1cc144409392b4c53c76f2026972c90f1dd1b661a7dbf",
+    "reproducibility/v2/r1/holdout_manifest.json": "88584594006a2d970d2106ab589b66231999e85d1d6c64b55b95117053c9c6e7",
+    "reproducibility/v2/r1r1/holdout_manifest.json": "88584594006a2d970d2106ab589b66231999e85d1d6c64b55b95117053c9c6e7",
+    "reproducibility/v3/r0/holdout_manifest.json": "b4f4427c19dc440b1a3e7be53704f810c6783c3e7efa2b99795586ff66df1739",
+    "reproducibility/v3/r4/holdout_execution_manifest.json": "1a872be7adfac68ccbe4a8229a8b29bf94717bcef87da548b9935527291ff46f",
+    "reproducibility/v4/final/unused_holdout_manifest.json": "fe697f3c452edd28559970fe4ef4b8a89d9b8dab45b385a27ba85d4355360d45",
+    "reproducibility/v4/r0/holdout_manifest.json": "751b105b300e99ba58d3e3dae45d35e02e50e728f322dbb73f481baa58b962a3",
+    "reproducibility/v5/r0/holdout_manifest.json": "0fda29255e1a30718e78942287aacb2baf4939649e3b7ec09e399cb97636c485",
+    "reproducibility/v6/r0/holdout_manifest.json": "573f68b6df7ee559f9cffcdd787896d0f7b4cefc016a253355bd8172621e51b9",
+    "reproducibility/v7/r0/holdout_manifest.json": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65"
+  },
+  "holdout_execution_allowed": false
+}

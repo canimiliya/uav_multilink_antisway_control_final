@@ -1,0 +1,25 @@
+{
+  "adaptation_name": "KANG2026-FAS-DOB-ADAPTED-5LINK",
+  "exact_reproduction": false,
+  "preserved": [
+    "reduced-order FAS coordinate",
+    "virtual-constraint swing coupling",
+    "cascade outer-loop structure",
+    "payload swing suppression",
+    "causal finite-time disturbance observer"
+  ],
+  "adapted": {
+    "payload": "point payload cable direction -> UAV-to-cutter-COM equivalent direction",
+    "dimension": "two cable angles -> 3D equivalent swing displacement/rate",
+    "input": "desired force -> world-frame acceleration command",
+    "inner_loop": "paper torque loop -> frozen common geometric inner loop"
+  },
+  "omitted": [
+    "paper-specific rotor thrust/torque allocation",
+    "paper inner-loop torque DOB",
+    "true disturbance inputs"
+  ],
+  "causal_states_only": true,
+  "physical_plant_modified": false,
+  "controller_authority_expanded": false
+}

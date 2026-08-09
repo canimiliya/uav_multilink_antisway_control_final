@@ -1,0 +1,3492 @@
+{
+  "name": "V7_FROZEN_HOLDOUT_BANK",
+  "generator_seed": 20260822,
+  "sample_count": 112,
+  "samples": [
+    {
+      "sample_id": "v7h_calm_00",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_aligned_00",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.7721326785597831,
+          0.2077552446720772,
+          0.6005404940645884
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13126255535516312,
+          0.03531839159425313,
+          0.10209188399098004
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_00",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_00",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.7721326785597831,
+          0.2077552446720772,
+          0.6005404940645884
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13126255535516312,
+          0.03531839159425313,
+          0.10209188399098004
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": 1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_01",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_aligned_01",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.8363623302899528,
+          0.013766530563794151,
+          0.5480041378568195
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.17563608936089006,
+          0.0028909714183967716,
+          0.11508086894993208
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_01",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_aligned_01",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.8363623302899528,
+          0.013766530563794151,
+          0.5480041378568195
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.17563608936089006,
+          0.0028909714183967716,
+          0.11508086894993208
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": -1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_02",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_aligned_02",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6674326411161262,
+          0.5875383705490596,
+          0.4575285048008575
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.16018383386787027,
+          0.1410092089317743,
+          0.10980684115220579
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_02",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_02",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6674326411161262,
+          0.5875383705490596,
+          0.4575285048008575
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.16018383386787027,
+          0.1410092089317743,
+          0.10980684115220579
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": 1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_03",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_aligned_03",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6060432808242465,
+          0.18096970456857894,
+          0.7745718222322219
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.10302735774012192,
+          0.030764849776658422,
+          0.13167720977947772
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_03",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_aligned_03",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6060432808242465,
+          0.18096970456857894,
+          0.7745718222322219
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.10302735774012192,
+          0.030764849776658422,
+          0.13167720977947772
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": -1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_04",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_aligned_04",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.87384517737447,
+          -0.25647445432147364,
+          -0.4130562434583013
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1835074872486387,
+          -0.05385963540750947,
+          -0.08674181112624327
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_04",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_04",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.87384517737447,
+          -0.25647445432147364,
+          -0.4130562434583013
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1835074872486387,
+          -0.05385963540750947,
+          -0.08674181112624327
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": 1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_05",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_aligned_05",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6892747300186104,
+          -0.5346570791895652,
+          -0.48891937395674423
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.1654259352044665,
+          -0.12831769900549564,
+          -0.11734064974961861
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_05",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_aligned_05",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6892747300186104,
+          -0.5346570791895652,
+          -0.48891937395674423
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.1654259352044665,
+          -0.12831769900549564,
+          -0.11734064974961861
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": -1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_06",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_opposed_00",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7429543093467054,
+          -0.5891624386038263,
+          -0.3176578586491331
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.1263022325889399,
+          -0.10015761456265049,
+          -0.05400183597035263
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_06",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_00",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7429543093467054,
+          -0.5891624386038263,
+          -0.3176578586491331
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.1263022325889399,
+          -0.10015761456265049,
+          -0.05400183597035263
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": 1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_07",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_opposed_01",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6882328696288167,
+          -0.33512195539872996,
+          0.643450691329348
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.1445289026220515,
+          -0.0703756106337333,
+          0.13512464517916306
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_07",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_opposed_01",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6882328696288167,
+          -0.33512195539872996,
+          0.643450691329348
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.1445289026220515,
+          -0.0703756106337333,
+          0.13512464517916306
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": -1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_08",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_opposed_02",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6068312364981912,
+          0.14680693818871426,
+          -0.7811552811763687
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.14563949675956586,
+          0.035233665165291424,
+          -0.18747726748232849
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_08",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_02",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6068312364981912,
+          0.14680693818871426,
+          -0.7811552811763687
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.14563949675956586,
+          0.035233665165291424,
+          -0.18747726748232849
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": 1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_09",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_opposed_03",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7734673104143784,
+          -0.6257409910235954,
+          0.10097787813752226
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.13148944277044433,
+          -0.10637596847401122,
+          0.017166239283378786
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_09",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_opposed_03",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7734673104143784,
+          -0.6257409910235954,
+          0.10097787813752226
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.13148944277044433,
+          -0.10637596847401122,
+          0.017166239283378786
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": -1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_10",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_opposed_04",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6476492926614035,
+          0.420716541924063,
+          -0.635254268042838
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.13600635145889473,
+          0.08835047380405323,
+          -0.13340339628899597
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_10",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_04",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6476492926614035,
+          0.420716541924063,
+          -0.635254268042838
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.13600635145889473,
+          0.08835047380405323,
+          -0.13340339628899597
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": 1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_11",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_opposed_05",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.5822365038878397,
+          -0.6412977847559501,
+          -0.49973773602518434
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.13973676093308152,
+          -0.15391146834142802,
+          -0.11993705664604423
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_11",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_opposed_05",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.5822365038878397,
+          -0.6412977847559501,
+          -0.49973773602518434
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.13973676093308152,
+          -0.15391146834142802,
+          -0.11993705664604423
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": -1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_12",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_cross_00",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.05111307611337643,
+          0.6206993943207711,
+          -0.7823807994449098
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.008689222939273994,
+          0.1055188970345311,
+          -0.13300473590563466
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_12",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_00",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.05111307611337643,
+          0.6206993943207711,
+          -0.7823807994449098
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.008689222939273994,
+          0.1055188970345311,
+          -0.13300473590563466
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": 1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_13",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_cross_01",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.036510809462411115,
+          0.7011903227160519,
+          -0.7120386872366966
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.007667269987106334,
+          0.1472499677703709,
+          -0.14952812431970627
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_13",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_01",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.036510809462411115,
+          0.7011903227160519,
+          -0.7120386872366966
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.007667269987106334,
+          0.1472499677703709,
+          -0.14952812431970627
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": -1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_14",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_cross_02",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.014922677939308099,
+          -0.9721763239427706,
+          0.23377448288519564
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0035814427054339437,
+          -0.23332231774626494,
+          0.056105875892446956
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_14",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_02",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.014922677939308099,
+          -0.9721763239427706,
+          0.23377448288519564
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0035814427054339437,
+          -0.23332231774626494,
+          0.056105875892446956
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": 1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_15",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_cross_03",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.03598992243119775,
+          -0.9991542402023293,
+          -0.019887930236766497
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.006118286813303619,
+          -0.169856220834396,
+          -0.003380948140250305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_15",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_03",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.03598992243119775,
+          -0.9991542402023293,
+          -0.019887930236766497
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.006118286813303619,
+          -0.169856220834396,
+          -0.003380948140250305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": -1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_16",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_cross_04",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.14408848499701649,
+          0.76692150755945,
+          -0.6253558264972072
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.03025858184937346,
+          0.16105351658748449,
+          -0.13132472356441352
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_16",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_04",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.14408848499701649,
+          0.76692150755945,
+          -0.6253558264972072
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.03025858184937346,
+          0.16105351658748449,
+          -0.13132472356441352
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": 1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_calm_17",
+      "cohort": "NORMAL_CALM",
+      "directional_stratum": "not_applicable",
+      "target": {
+        "target_id": "v7h_dir_cross_05",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.005279534898073257,
+          0.9995646173185901,
+          -0.02902933543849294
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.0012670883755375817,
+          0.23989550815646163,
+          -0.006967040505238305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm",
+        "direction_sign": 0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_moderate_17",
+      "cohort": "NORMAL_CONSTANT",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_05",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.005279534898073257,
+          0.9995646173185901,
+          -0.02902933543849294
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.0012670883755375817,
+          0.23989550815646163,
+          -0.006967040505238305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.45,
+        "direction_sign": -1,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_aligned_00",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_00",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.7721326785597831,
+          0.2077552446720772,
+          0.6005404940645884
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13126255535516312,
+          0.03531839159425313,
+          0.10209188399098004
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_aligned_01",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_01_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.8363623302899528,
+          -0.013766530563794151,
+          -0.5480041378568195
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.17563608936089006,
+          -0.0028909714183967716,
+          -0.11508086894993208
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_aligned_02",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_02",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6674326411161262,
+          0.5875383705490596,
+          0.4575285048008575
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.16018383386787027,
+          0.1410092089317743,
+          0.10980684115220579
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_aligned_03",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_03_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.6060432808242465,
+          -0.18096970456857894,
+          -0.7745718222322219
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.10302735774012192,
+          -0.030764849776658422,
+          -0.13167720977947772
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_aligned_04",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_04",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.87384517737447,
+          -0.25647445432147364,
+          -0.4130562434583013
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1835074872486387,
+          -0.05385963540750947,
+          -0.08674181112624327
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_aligned_05",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_05_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.6892747300186104,
+          0.5346570791895652,
+          0.48891937395674423
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.1654259352044665,
+          0.12831769900549564,
+          0.11734064974961861
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_opposed_00",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_00",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7429543093467054,
+          -0.5891624386038263,
+          -0.3176578586491331
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.1263022325889399,
+          -0.10015761456265049,
+          -0.05400183597035263
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_opposed_01",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_01_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.6882328696288167,
+          0.33512195539872996,
+          -0.643450691329348
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1445289026220515,
+          0.0703756106337333,
+          -0.13512464517916306
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_opposed_02",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_02",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6068312364981912,
+          0.14680693818871426,
+          -0.7811552811763687
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.14563949675956586,
+          0.035233665165291424,
+          -0.18747726748232849
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_opposed_03",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_03_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.7734673104143784,
+          0.6257409910235954,
+          -0.10097787813752226
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13148944277044433,
+          0.10637596847401122,
+          -0.017166239283378786
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_opposed_04",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_04",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6476492926614035,
+          0.420716541924063,
+          -0.635254268042838
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.13600635145889473,
+          0.08835047380405323,
+          -0.13340339628899597
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_opposed_05",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_05_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.5822365038878397,
+          0.6412977847559501,
+          0.49973773602518434
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.13973676093308152,
+          0.15391146834142802,
+          0.11993705664604423
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_cross_00",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_00",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.05111307611337643,
+          0.6206993943207711,
+          -0.7823807994449098
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.008689222939273994,
+          0.1055188970345311,
+          -0.13300473590563466
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_cross_01",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_01_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.036510809462411115,
+          -0.7011903227160519,
+          0.7120386872366966
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.007667269987106334,
+          -0.1472499677703709,
+          0.14952812431970627
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_cross_02",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_02",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.014922677939308099,
+          -0.9721763239427706,
+          0.23377448288519564
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0035814427054339437,
+          -0.23332231774626494,
+          0.056105875892446956
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_cross_03",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_03_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.03598992243119775,
+          0.9991542402023293,
+          0.019887930236766497
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.006118286813303619,
+          0.169856220834396,
+          0.003380948140250305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_cross_04",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_04",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.14408848499701649,
+          0.76692150755945,
+          -0.6253558264972072
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.03025858184937346,
+          0.16105351658748449,
+          -0.13132472356441352
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_preexisting_shifted_cross_05",
+      "cohort": "STRONG_PREEXISTING",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_05_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.005279534898073257,
+          -0.9995646173185901,
+          0.02902933543849294
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0012670883755375817,
+          -0.23989550815646163,
+          0.006967040505238305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.18,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 0.27
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_aligned_00",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_00",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.7721326785597831,
+          0.2077552446720772,
+          0.6005404940645884
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13126255535516312,
+          0.03531839159425313,
+          0.10209188399098004
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_aligned_01",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_01_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.8363623302899528,
+          -0.013766530563794151,
+          -0.5480041378568195
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.17563608936089006,
+          -0.0028909714183967716,
+          -0.11508086894993208
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_aligned_02",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_02",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6674326411161262,
+          0.5875383705490596,
+          0.4575285048008575
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.16018383386787027,
+          0.1410092089317743,
+          0.10980684115220579
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_aligned_03",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_03_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.6060432808242465,
+          -0.18096970456857894,
+          -0.7745718222322219
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.10302735774012192,
+          -0.030764849776658422,
+          -0.13167720977947772
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_aligned_04",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_04",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.87384517737447,
+          -0.25647445432147364,
+          -0.4130562434583013
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1835074872486387,
+          -0.05385963540750947,
+          -0.08674181112624327
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_aligned_05",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_05_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.6892747300186104,
+          0.5346570791895652,
+          0.48891937395674423
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.1654259352044665,
+          0.12831769900549564,
+          0.11734064974961861
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_opposed_00",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_00",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7429543093467054,
+          -0.5891624386038263,
+          -0.3176578586491331
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.1263022325889399,
+          -0.10015761456265049,
+          -0.05400183597035263
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_opposed_01",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_01_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.6882328696288167,
+          0.33512195539872996,
+          -0.643450691329348
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1445289026220515,
+          0.0703756106337333,
+          -0.13512464517916306
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_opposed_02",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_02",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6068312364981912,
+          0.14680693818871426,
+          -0.7811552811763687
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.14563949675956586,
+          0.035233665165291424,
+          -0.18747726748232849
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_opposed_03",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_03_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.7734673104143784,
+          0.6257409910235954,
+          -0.10097787813752226
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13148944277044433,
+          0.10637596847401122,
+          -0.017166239283378786
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_opposed_04",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_04",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6476492926614035,
+          0.420716541924063,
+          -0.635254268042838
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.13600635145889473,
+          0.08835047380405323,
+          -0.13340339628899597
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_opposed_05",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_05_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.5822365038878397,
+          0.6412977847559501,
+          0.49973773602518434
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.13973676093308152,
+          0.15391146834142802,
+          0.11993705664604423
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_cross_00",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_00",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.05111307611337643,
+          0.6206993943207711,
+          -0.7823807994449098
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.008689222939273994,
+          0.1055188970345311,
+          -0.13300473590563466
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_cross_01",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_01_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.036510809462411115,
+          -0.7011903227160519,
+          0.7120386872366966
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.007667269987106334,
+          -0.1472499677703709,
+          0.14952812431970627
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_cross_02",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_02",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.014922677939308099,
+          -0.9721763239427706,
+          0.23377448288519564
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0035814427054339437,
+          -0.23332231774626494,
+          0.056105875892446956
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_cross_03",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_03_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.03598992243119775,
+          0.9991542402023293,
+          0.019887930236766497
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.006118286813303619,
+          0.169856220834396,
+          0.003380948140250305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_cross_04",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_04",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.14408848499701649,
+          0.76692150755945,
+          -0.6253558264972072
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.03025858184937346,
+          0.16105351658748449,
+          -0.13132472356441352
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_before_shifted_cross_05",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_05_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.005279534898073257,
+          -0.9995646173185901,
+          0.02902933543849294
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0012670883755375817,
+          -0.23989550815646163,
+          0.006967040505238305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.49
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_aligned_00",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_00",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.7721326785597831,
+          0.2077552446720772,
+          0.6005404940645884
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13126255535516312,
+          0.03531839159425313,
+          0.10209188399098004
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_aligned_01",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_01_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.8363623302899528,
+          -0.013766530563794151,
+          -0.5480041378568195
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.17563608936089006,
+          -0.0028909714183967716,
+          -0.11508086894993208
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_aligned_02",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_02",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6674326411161262,
+          0.5875383705490596,
+          0.4575285048008575
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.16018383386787027,
+          0.1410092089317743,
+          0.10980684115220579
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_aligned_03",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_03_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.6060432808242465,
+          -0.18096970456857894,
+          -0.7745718222322219
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.10302735774012192,
+          -0.030764849776658422,
+          -0.13167720977947772
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_aligned_04",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_04",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.87384517737447,
+          -0.25647445432147364,
+          -0.4130562434583013
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1835074872486387,
+          -0.05385963540750947,
+          -0.08674181112624327
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_aligned_05",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_05_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.6892747300186104,
+          0.5346570791895652,
+          0.48891937395674423
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.1654259352044665,
+          0.12831769900549564,
+          0.11734064974961861
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_opposed_00",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_00",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7429543093467054,
+          -0.5891624386038263,
+          -0.3176578586491331
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.1263022325889399,
+          -0.10015761456265049,
+          -0.05400183597035263
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_opposed_01",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_01_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.6882328696288167,
+          0.33512195539872996,
+          -0.643450691329348
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1445289026220515,
+          0.0703756106337333,
+          -0.13512464517916306
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_opposed_02",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_02",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6068312364981912,
+          0.14680693818871426,
+          -0.7811552811763687
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.14563949675956586,
+          0.035233665165291424,
+          -0.18747726748232849
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_opposed_03",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_03_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.7734673104143784,
+          0.6257409910235954,
+          -0.10097787813752226
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13148944277044433,
+          0.10637596847401122,
+          -0.017166239283378786
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_opposed_04",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_04",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6476492926614035,
+          0.420716541924063,
+          -0.635254268042838
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.13600635145889473,
+          0.08835047380405323,
+          -0.13340339628899597
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_opposed_05",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_05_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.5822365038878397,
+          0.6412977847559501,
+          0.49973773602518434
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.13973676093308152,
+          0.15391146834142802,
+          0.11993705664604423
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_cross_00",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_00",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.05111307611337643,
+          0.6206993943207711,
+          -0.7823807994449098
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.008689222939273994,
+          0.1055188970345311,
+          -0.13300473590563466
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_cross_01",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_01_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.036510809462411115,
+          -0.7011903227160519,
+          0.7120386872366966
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.007667269987106334,
+          -0.1472499677703709,
+          0.14952812431970627
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_cross_02",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_02",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.014922677939308099,
+          -0.9721763239427706,
+          0.23377448288519564
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0035814427054339437,
+          -0.23332231774626494,
+          0.056105875892446956
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_cross_03",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_03_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.03598992243119775,
+          0.9991542402023293,
+          0.019887930236766497
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.006118286813303619,
+          0.169856220834396,
+          0.003380948140250305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_cross_04",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_04",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.14408848499701649,
+          0.76692150755945,
+          -0.6253558264972072
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.03025858184937346,
+          0.16105351658748449,
+          -0.13132472356441352
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_strong_after_shifted_cross_05",
+      "cohort": "STRONG_NEAR_SIMULTANEOUS",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_05_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.005279534898073257,
+          -0.9995646173185901,
+          0.02902933543849294
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0012670883755375817,
+          -0.23989550815646163,
+          0.006967040505238305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 3.51
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9000",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_02",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6674326411161262,
+          0.5875383705490596,
+          0.4575285048008575
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.16018383386787027,
+          0.1410092089317743,
+          0.10980684115220579
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9000,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": 1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9001",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_opposed_01",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6882328696288167,
+          -0.33512195539872996,
+          0.643450691329348
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.1445289026220515,
+          -0.0703756106337333,
+          0.13512464517916306
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9001,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": -1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9002",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_00",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.05111307611337643,
+          0.6206993943207711,
+          -0.7823807994449098
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.008689222939273994,
+          0.1055188970345311,
+          -0.13300473590563466
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9002,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": 1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9003",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_05",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.005279534898073257,
+          0.9995646173185901,
+          -0.02902933543849294
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.0012670883755375817,
+          0.23989550815646163,
+          -0.006967040505238305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9003,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": -1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9004",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_04",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.87384517737447,
+          -0.25647445432147364,
+          -0.4130562434583013
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1835074872486387,
+          -0.05385963540750947,
+          -0.08674181112624327
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9004,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": 1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9005",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_opposed_03",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7734673104143784,
+          -0.6257409910235954,
+          0.10097787813752226
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.13148944277044433,
+          -0.10637596847401122,
+          0.017166239283378786
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9005,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": -1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9006",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_02",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.014922677939308099,
+          -0.9721763239427706,
+          0.23377448288519564
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0035814427054339437,
+          -0.23332231774626494,
+          0.056105875892446956
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9006,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": 1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9007",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_aligned_01",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.8363623302899528,
+          0.013766530563794151,
+          0.5480041378568195
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.17563608936089006,
+          0.0028909714183967716,
+          0.11508086894993208
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9007,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": -1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9008",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_00",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7429543093467054,
+          -0.5891624386038263,
+          -0.3176578586491331
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.1263022325889399,
+          -0.10015761456265049,
+          -0.05400183597035263
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9008,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": 1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_stochastic_9009",
+      "cohort": "NORMAL_STOCHASTIC",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_opposed_05",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.5822365038878397,
+          -0.6412977847559501,
+          -0.49973773602518434
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.13973676093308152,
+          -0.15391146834142802,
+          -0.11993705664604423
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 9009,
+        "sigma_m_s": 0.96,
+        "clip_m_s": 3.2,
+        "direction_sign": -1
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_aligned_00",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_00",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.7721326785597831,
+          0.2077552446720772,
+          0.6005404940645884
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13126255535516312,
+          0.03531839159425313,
+          0.10209188399098004
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_aligned_01",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_01_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.8363623302899528,
+          -0.013766530563794151,
+          -0.5480041378568195
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.17563608936089006,
+          -0.0028909714183967716,
+          -0.11508086894993208
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_aligned_02",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_02",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          0.6674326411161262,
+          0.5875383705490596,
+          0.4575285048008575
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.16018383386787027,
+          0.1410092089317743,
+          0.10980684115220579
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_aligned_03",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "aligned",
+      "target": {
+        "target_id": "v7h_dir_aligned_03_mirrored",
+        "canonical_stratum": "aligned",
+        "direction_unit": [
+          -0.6060432808242465,
+          -0.18096970456857894,
+          -0.7745718222322219
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.10302735774012192,
+          -0.030764849776658422,
+          -0.13167720977947772
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_opposed_00",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_00",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.7429543093467054,
+          -0.5891624386038263,
+          -0.3176578586491331
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          -0.1263022325889399,
+          -0.10015761456265049,
+          -0.05400183597035263
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_opposed_01",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_01_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.6882328696288167,
+          0.33512195539872996,
+          -0.643450691329348
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          0.1445289026220515,
+          0.0703756106337333,
+          -0.13512464517916306
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_opposed_02",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_02",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          -0.6068312364981912,
+          0.14680693818871426,
+          -0.7811552811763687
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.14563949675956586,
+          0.035233665165291424,
+          -0.18747726748232849
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_opposed_03",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "opposed",
+      "target": {
+        "target_id": "v7h_dir_opposed_03_mirrored",
+        "canonical_stratum": "opposed",
+        "direction_unit": [
+          0.7734673104143784,
+          0.6257409910235954,
+          -0.10097787813752226
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.13148944277044433,
+          0.10637596847401122,
+          -0.017166239283378786
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_cross_00",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_00",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.05111307611337643,
+          0.6206993943207711,
+          -0.7823807994449098
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.008689222939273994,
+          0.1055188970345311,
+          -0.13300473590563466
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_cross_01",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_01_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.036510809462411115,
+          -0.7011903227160519,
+          0.7120386872366966
+        ],
+        "radius_m": 0.21,
+        "delta_tip_m": [
+          -0.007667269987106334,
+          -0.1472499677703709,
+          0.14952812431970627
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_cross_02",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_02",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          -0.014922677939308099,
+          -0.9721763239427706,
+          0.23377448288519564
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.0035814427054339437,
+          -0.23332231774626494,
+          0.056105875892446956
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": 1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "v7h_ramp_cross_03",
+      "cohort": "RAMP_STRONG",
+      "directional_stratum": "cross",
+      "target": {
+        "target_id": "v7h_dir_cross_03_mirrored",
+        "canonical_stratum": "cross",
+        "direction_unit": [
+          0.03598992243119775,
+          0.9991542402023293,
+          0.019887930236766497
+        ],
+        "radius_m": 0.17,
+        "delta_tip_m": [
+          0.006118286813303619,
+          0.169856220834396,
+          0.003380948140250305
+        ],
+        "generator": "PCG64 stratified spherical direction",
+        "generator_seed": 20260822
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "direction_sign": -1,
+        "onset_time_s": 2.31,
+        "duration_s": 5.37
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    }
+  ],
+  "cohort_counts": {
+    "NORMAL_CALM": 18,
+    "NORMAL_CONSTANT": 18,
+    "NORMAL_STOCHASTIC": 10,
+    "RAMP_STRONG": 12,
+    "STRONG_NEAR_SIMULTANEOUS": 36,
+    "STRONG_PREEXISTING": 18
+  },
+  "directional_counts": {
+    "aligned": 33,
+    "cross": 31,
+    "opposed": 30
+  },
+  "performance_accessed_at_freeze": false,
+  "execution_allowed": false
+}

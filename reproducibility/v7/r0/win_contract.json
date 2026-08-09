@@ -1,0 +1,22 @@
+{
+  "primary_traditional": "full_lqr_048",
+  "best_traditional_fields": [
+    "safety",
+    "success"
+  ],
+  "development_and_holdout": {
+    "safety_no_worse_best_traditional": true,
+    "success_no_worse_best_traditional": true,
+    "position_improvement_vs_full_min": 0.05,
+    "bootstrap_lower_gt_zero": true,
+    "strong_p90_degradation_vs_full_max": 0.1,
+    "catastrophic_pair_max": 0,
+    "meaningful_extra": [
+      "acquisition improvement >=5%",
+      "strong position improvement >=10%",
+      "orientation improvement >=10%",
+      "effort improvement >=10%"
+    ]
+  },
+  "paper_vs_satc_is_gate": false
+}

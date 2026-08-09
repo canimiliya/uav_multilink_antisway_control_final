@@ -1,0 +1,11 @@
+{
+  "pairing": "exact sample_id",
+  "resamples": 10000,
+  "development_bootstrap_seed": 20260823,
+  "holdout_bootstrap_seed": 20260824,
+  "ci_quantiles": [
+    0.025,
+    0.975
+  ],
+  "seed_hunting_forbidden": true
+}
