@@ -1,0 +1,8 @@
+{
+  "source": "Jirousek et al., ICINCO 2025, DOI 10.5220/0013789200003982",
+  "method": "incremental MPC adapted to frozen five-link model",
+  "development_status": "PAPER_DEVELOPMENT_INELIGIBLE",
+  "candidate": "paper_b_002",
+  "holdout_status": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+  "claims_about_original_authors_on_v5_benchmark": false
+}

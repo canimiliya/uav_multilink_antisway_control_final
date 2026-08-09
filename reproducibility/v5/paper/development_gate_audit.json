@@ -1,0 +1,1554 @@
+{
+  "candidate_count": 24,
+  "ranked": [
+    {
+      "candidate_id": "paper_b_002",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 12.705410214698855,
+        "position_p90_m": 27.770756426620697,
+        "position_p95_m": 28.06273194360032,
+        "orientation_mean_deg": 5.394174027525962,
+        "acquisition_median_s": 1.5899999999999999,
+        "effort_mean": 34.80040009147532,
+        "solve_p95_ms": 0.8757
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 18.037877420652894,
+        "position_p90_m": 28.063109275773144,
+        "position_p95_m": 28.33420324763728,
+        "orientation_mean_deg": 6.658172768977571,
+        "acquisition_median_s": null,
+        "effort_mean": 42.28699951642241,
+        "solve_p95_ms": 0.8319
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 8.983132102374714,
+        "position_p90_m": 17.715185658797175,
+        "position_p95_m": 18.124462321181316,
+        "orientation_mean_deg": 4.1485116798144555,
+        "acquisition_median_s": null,
+        "effort_mean": 29.18890370848907,
+        "solve_p95_ms": 0.8557
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -12.568240211894024,
+        "median_delta_m": -11.651663130233988,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -14.042521821711015,
+          -11.122928419085868
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -91.62528216738637,
+      "acquisition_degradation_vs_full": -0.5734406438631792
+    },
+    {
+      "candidate_id": "paper_b_001",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 17.59727683602048,
+        "position_p90_m": 32.89799821718312,
+        "position_p95_m": 33.77660642814515,
+        "orientation_mean_deg": 6.1891671691427765,
+        "acquisition_median_s": 1.3600000000000003,
+        "effort_mean": 45.184539504102666,
+        "solve_p95_ms": 0.8606
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 23.19684722138918,
+        "position_p90_m": 33.85424338556865,
+        "position_p95_m": 33.98751282984987,
+        "orientation_mean_deg": 6.748211143782599,
+        "acquisition_median_s": null,
+        "effort_mean": 50.655724778545604,
+        "solve_p95_ms": 0.8606
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 13.983492004179126,
+        "position_p90_m": 24.321074376458384,
+        "position_p95_m": 24.58081133261367,
+        "orientation_mean_deg": 5.687582987312874,
+        "acquisition_median_s": null,
+        "effort_mean": 41.98277445130678,
+        "solve_p95_ms": 0.849
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -17.46010683321565,
+        "median_delta_m": -16.349713486401427,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -19.079356178793383,
+          -15.856585828937634
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -127.28808395563028,
+      "acquisition_degradation_vs_full": -0.6351441985244801
+    },
+    {
+      "candidate_id": "paper_b_004",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 20.417625043690347,
+        "position_p90_m": 34.89174147978008,
+        "position_p95_m": 36.1769076977989,
+        "orientation_mean_deg": 6.486337773597184,
+        "acquisition_median_s": 1.4900000000000002,
+        "effort_mean": 50.95396751385776,
+        "solve_p95_ms": 1.126
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 26.074140344529003,
+        "position_p90_m": 36.21409306877184,
+        "position_p95_m": 36.429915251140564,
+        "orientation_mean_deg": 6.963253365271618,
+        "acquisition_median_s": null,
+        "effort_mean": 56.36182868476394,
+        "solve_p95_ms": 0.9713
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 16.912408614515197,
+        "position_p90_m": 27.311970539455068,
+        "position_p95_m": 27.647517746720332,
+        "orientation_mean_deg": 6.1719495794064425,
+        "acquisition_median_s": null,
+        "effort_mean": 48.24547845599429,
+        "solve_p95_ms": 1.0143
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -20.280455040885514,
+        "median_delta_m": -18.648117468342953,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -21.91771362534417,
+          -18.676955869347214
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -147.84905319088418,
+      "acquisition_degradation_vs_full": -0.6002682763246143
+    },
+    {
+      "candidate_id": "paper_b_006",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 23.015986006219087,
+        "position_p90_m": 37.058595894204494,
+        "position_p95_m": 38.4387801380291,
+        "orientation_mean_deg": 6.786615182848978,
+        "acquisition_median_s": 1.0700000000000003,
+        "effort_mean": 55.31131430243196,
+        "solve_p95_ms": 1.2371
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 28.49808701699088,
+        "position_p90_m": 38.462277992520164,
+        "position_p95_m": 38.70049955635098,
+        "orientation_mean_deg": 7.18478987446393,
+        "acquisition_median_s": null,
+        "effort_mean": 59.909721958063336,
+        "solve_p95_ms": 1.2371
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 19.708558460274745,
+        "position_p90_m": 30.134604731206597,
+        "position_p95_m": 30.506392822231444,
+        "orientation_mean_deg": 6.518079158696742,
+        "acquisition_median_s": null,
+        "effort_mean": 52.74097458153786,
+        "solve_p95_ms": 1.1932
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -22.87881600341425,
+        "median_delta_m": -20.723294863349103,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -24.510283316264772,
+          -21.252627712777823
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -166.79168575921412,
+      "acquisition_degradation_vs_full": -0.7129443326626425
+    },
+    {
+      "candidate_id": "paper_b_020",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 23.92370405238732,
+        "position_p90_m": 37.6891671765705,
+        "position_p95_m": 39.1752113648358,
+        "orientation_mean_deg": 6.792681428072683,
+        "acquisition_median_s": 1.0200000000000005,
+        "effort_mean": 56.52486009702924,
+        "solve_p95_ms": 1.3531
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 29.404462864016516,
+        "position_p90_m": 39.190380155708525,
+        "position_p95_m": 39.45204145271041,
+        "orientation_mean_deg": 7.12991805092838,
+        "acquisition_median_s": null,
+        "effort_mean": 60.84445312513559,
+        "solve_p95_ms": 1.3129
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 20.63049350163538,
+        "position_p90_m": 31.015997802054216,
+        "position_p95_m": 31.404849763579733,
+        "orientation_mean_deg": 6.574824722062942,
+        "acquisition_median_s": null,
+        "effort_mean": 54.19594607645149,
+        "solve_p95_ms": 1.3531
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -23.786534049582485,
+        "median_delta_m": -21.524620359377877,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -25.41111005782731,
+          -22.155342383116903
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -173.40915333672623,
+      "acquisition_degradation_vs_full": -0.72635814889336
+    },
+    {
+      "candidate_id": "paper_b_016",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 23.956981787920956,
+        "position_p90_m": 37.73193544518845,
+        "position_p95_m": 39.2162330024943,
+        "orientation_mean_deg": 6.818049138287182,
+        "acquisition_median_s": 1.0200000000000005,
+        "effort_mean": 56.642097110527494,
+        "solve_p95_ms": 1.2619
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 29.43693634981969,
+        "position_p90_m": 39.2314642737795,
+        "position_p95_m": 39.49268757316298,
+        "orientation_mean_deg": 7.181352861640779,
+        "acquisition_median_s": null,
+        "effort_mean": 61.041296020599624,
+        "solve_p95_ms": 1.2619
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 20.667861966764097,
+        "position_p90_m": 31.06147014402228,
+        "position_p95_m": 31.449914621183776,
+        "orientation_mean_deg": 6.579095713768264,
+        "acquisition_median_s": null,
+        "effort_mean": 54.252296466365316,
+        "solve_p95_ms": 1.2109
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -23.819811785116123,
+        "median_delta_m": -21.55836595596776,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -25.444581735827878,
+          -22.186848728424923
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -173.65175547169144,
+      "acquisition_degradation_vs_full": -0.72635814889336
+    },
+    {
+      "candidate_id": "paper_b_021",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 26.406356408421324,
+        "position_p90_m": 40.193015375557444,
+        "position_p95_m": 41.534309391664046,
+        "orientation_mean_deg": 6.933295743115794,
+        "acquisition_median_s": 1.3100000000000005,
+        "effort_mean": 60.43311903018513,
+        "solve_p95_ms": 1.149
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 31.882861324336094,
+        "position_p90_m": 41.55120156587611,
+        "position_p95_m": 41.820193155353714,
+        "orientation_mean_deg": 7.288330742551814,
+        "acquisition_median_s": null,
+        "effort_mean": 64.59595445548585,
+        "solve_p95_ms": 1.149
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 23.27099159842059,
+        "position_p90_m": 33.93070952628121,
+        "position_p95_m": 34.32002959601492,
+        "orientation_mean_deg": 6.768923598853517,
+        "acquisition_median_s": null,
+        "effort_mean": 58.36050701290065,
+        "solve_p95_ms": 1.1031
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -26.269186405616487,
+        "median_delta_m": -23.887992727284633,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -27.910823366079804,
+          -24.626024245208182
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -191.50824428422987,
+      "acquisition_degradation_vs_full": -0.6485580147551977
+    },
+    {
+      "candidate_id": "paper_b_005",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 27.27685104769241,
+        "position_p90_m": 41.020498069284024,
+        "position_p95_m": 42.058213782000955,
+        "orientation_mean_deg": 6.97842148991108,
+        "acquisition_median_s": 0.9550000000000001,
+        "effort_mean": 61.352939684421926,
+        "solve_p95_ms": 1.2773
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 32.73336080908058,
+        "position_p90_m": 42.183874242722766,
+        "position_p95_m": 42.358917660256004,
+        "orientation_mean_deg": 7.350581684916154,
+        "acquisition_median_s": null,
+        "effort_mean": 65.30215696965392,
+        "solve_p95_ms": 1.2773
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 24.076861868277632,
+        "position_p90_m": 34.52780667481221,
+        "position_p95_m": 34.948870374620554,
+        "orientation_mean_deg": 6.790320386375277,
+        "acquisition_median_s": null,
+        "effort_mean": 59.29931239076505,
+        "solve_p95_ms": 1.2335
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -27.13968104488758,
+        "median_delta_m": -24.654717197417103,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -28.781306634125094,
+          -25.49241796253676
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -197.8543449000448,
+      "acquisition_degradation_vs_full": -0.743796109993293
+    },
+    {
+      "candidate_id": "paper_b_010",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 27.605928309379753,
+        "position_p90_m": 40.816767287873056,
+        "position_p95_m": 42.130689389228195,
+        "orientation_mean_deg": 6.99651421365409,
+        "acquisition_median_s": 1.0200000000000005,
+        "effort_mean": 61.68984652145951,
+        "solve_p95_ms": 1.6313
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 33.079275146845845,
+        "position_p90_m": 42.140440079333054,
+        "position_p95_m": 42.78122984081079,
+        "orientation_mean_deg": 7.37925293837285,
+        "acquisition_median_s": null,
+        "effort_mean": 65.74015839764832,
+        "solve_p95_ms": 1.6313
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 24.331827341060947,
+        "position_p90_m": 34.492684510173994,
+        "position_p95_m": 34.94180156954544,
+        "orientation_mean_deg": 6.752721802735879,
+        "acquisition_median_s": null,
+        "effort_mean": 59.66140413888598,
+        "solve_p95_ms": 1.5644
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -27.468758306574916,
+        "median_delta_m": -24.967895634837234,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -29.096623172300696,
+          -25.843411567583082
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -200.25339173942962,
+      "acquisition_degradation_vs_full": -0.72635814889336
+    },
+    {
+      "candidate_id": "paper_b_019",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 27.74504010027776,
+        "position_p90_m": 41.33222318472968,
+        "position_p95_m": 42.49100160658218,
+        "orientation_mean_deg": 6.9858103852041005,
+        "acquisition_median_s": 0.9500000000000002,
+        "effort_mean": 61.97060696896768,
+        "solve_p95_ms": 1.246
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 33.18352122658884,
+        "position_p90_m": 42.56861673178321,
+        "position_p95_m": 42.946526341745816,
+        "orientation_mean_deg": 7.332495525694551,
+        "acquisition_median_s": null,
+        "effort_mean": 65.83912994716712,
+        "solve_p95_ms": 1.246
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 24.54613737726911,
+        "position_p90_m": 34.9480458448162,
+        "position_p95_m": 35.37307942217384,
+        "orientation_mean_deg": 6.814001669747342,
+        "acquisition_median_s": null,
+        "effort_mean": 59.929564753021175,
+        "solve_p95_ms": 1.2217
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -27.607870097472926,
+        "median_delta_m": -25.073347506098422,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -29.2481027395899,
+          -25.96812864082457
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -201.26754780893074,
+      "acquisition_degradation_vs_full": -0.7451374916163648
+    },
+    {
+      "candidate_id": "paper_b_015",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 27.820658135720638,
+        "position_p90_m": 41.41277259267107,
+        "position_p95_m": 42.58928678059483,
+        "orientation_mean_deg": 6.9982717481229635,
+        "acquisition_median_s": 0.9500000000000002,
+        "effort_mean": 62.10546737777553,
+        "solve_p95_ms": 1.7873
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 33.2515633487892,
+        "position_p90_m": 42.65297219581942,
+        "position_p95_m": 43.029158864233324,
+        "orientation_mean_deg": 7.346608338020601,
+        "acquisition_median_s": null,
+        "effort_mean": 65.98746223740835,
+        "solve_p95_ms": 1.7873
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 24.630392761377827,
+        "position_p90_m": 35.04697322298971,
+        "position_p95_m": 35.470845872139144,
+        "orientation_mean_deg": 6.824001688728389,
+        "acquisition_median_s": null,
+        "effort_mean": 60.044155805339564,
+        "solve_p95_ms": 1.4096
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -27.6834881329158,
+        "median_delta_m": -25.119618023210144,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -29.32548849152814,
+          -26.03788872624008
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -201.81882020009974,
+      "acquisition_degradation_vs_full": -0.7451374916163648
+    },
+    {
+      "candidate_id": "paper_b_008",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 29.417676088635858,
+        "position_p90_m": 42.56075536747817,
+        "position_p95_m": 43.90049584854027,
+        "orientation_mean_deg": 7.082493256700072,
+        "acquisition_median_s": 0.9650000000000003,
+        "effort_mean": 64.29771049332625,
+        "solve_p95_ms": 1.3101
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 34.8533817255964,
+        "position_p90_m": 43.90594397291837,
+        "position_p95_m": 44.90561597523048,
+        "orientation_mean_deg": 7.4481450482649825,
+        "acquisition_median_s": null,
+        "effort_mean": 68.14579549342727,
+        "solve_p95_ms": 1.2518
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 26.2265508966309,
+        "position_p90_m": 36.6426271525169,
+        "position_p95_m": 37.08360298518337,
+        "orientation_mean_deg": 6.879841251196236,
+        "acquisition_median_s": null,
+        "effort_mean": 62.20286065144134,
+        "solve_p95_ms": 1.3101
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -29.280506085831025,
+        "median_delta_m": -26.49327323754968,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -30.925400472245112,
+          -27.653882018331924
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -213.461438267167,
+      "acquisition_degradation_vs_full": -0.7411133467471495
+    },
+    {
+      "candidate_id": "paper_b_009",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 30.32622484405399,
+        "position_p90_m": 44.0160929725786,
+        "position_p95_m": 44.36321270162303,
+        "orientation_mean_deg": 7.037268902230137,
+        "acquisition_median_s": 0.935,
+        "effort_mean": 64.96227062499602,
+        "solve_p95_ms": 1.7019
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 35.82107535822193,
+        "position_p90_m": 44.508288213370484,
+        "position_p95_m": 45.30870303406864,
+        "orientation_mean_deg": 7.417868641998683,
+        "acquisition_median_s": null,
+        "effort_mean": 68.67452450574449,
+        "solve_p95_ms": 1.7019
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 26.99362803870679,
+        "position_p90_m": 37.04198901960916,
+        "position_p95_m": 37.49165397902178,
+        "orientation_mean_deg": 6.830647430504063,
+        "acquisition_median_s": null,
+        "effort_mean": 62.94888560806102,
+        "solve_p95_ms": 1.6648
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -30.189054841249156,
+        "median_delta_m": -27.50077698943059,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -31.83859588080912,
+          -28.58435751055928
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -220.084961900908,
+      "acquisition_degradation_vs_full": -0.7491616364855801
+    },
+    {
+      "candidate_id": "paper_b_023",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.008333333333333333,
+        "position_mean_m": 31.576886048362084,
+        "position_p90_m": 45.19278278426835,
+        "position_p95_m": 45.60488211036058,
+        "orientation_mean_deg": 7.209840985350857,
+        "acquisition_median_s": 0.9849999999999999,
+        "effort_mean": 67.01721175028145,
+        "solve_p95_ms": 1.494
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 36.9407094193698,
+        "position_p90_m": 45.60934424094767,
+        "position_p95_m": 46.560525454767955,
+        "orientation_mean_deg": 7.5550731962905155,
+        "acquisition_median_s": null,
+        "effort_mean": 70.47288142418272,
+        "solve_p95_ms": 1.494
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 28.454955536803485,
+        "position_p90_m": 38.68863398437389,
+        "position_p95_m": 39.13173751537496,
+        "orientation_mean_deg": 7.022704419432181,
+        "acquisition_median_s": null,
+        "effort_mean": 65.2739399116387,
+        "solve_p95_ms": 1.4525
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -31.439716045557255,
+        "median_delta_m": -28.78669003948584,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -33.090333399340935,
+          -29.822789910763976
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": true,
+        "bootstrap": false
+      },
+      "gate_pass_count": 2,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -229.20256180420137,
+      "acquisition_degradation_vs_full": -0.7357478202548625
+    },
+    {
+      "candidate_id": "paper_b_003",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 25.468383247781524,
+        "position_p90_m": 39.06298860915131,
+        "position_p95_m": 40.72456991378058,
+        "orientation_mean_deg": 6.778580443028362,
+        "acquisition_median_s": null,
+        "effort_mean": 58.825728462638565,
+        "solve_p95_ms": 1.0654
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 31.076204183847214,
+        "position_p90_m": 40.73330126942952,
+        "position_p95_m": 41.01872344193185,
+        "orientation_mean_deg": 7.144991315318951,
+        "acquisition_median_s": null,
+        "effort_mean": 63.19738811507426,
+        "solve_p95_ms": 1.0654
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 22.187418527708548,
+        "position_p90_m": 32.74878305000079,
+        "position_p95_m": 33.15437439100996,
+        "orientation_mean_deg": 6.618284453450786,
+        "acquisition_median_s": null,
+        "effort_mean": 56.70102510579213,
+        "solve_p95_ms": 1.0429
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -25.33121324497669,
+        "median_delta_m": -23.175077626555677,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -26.981788790048316,
+          -23.68356143208187
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -184.67021015533686,
+      "acquisition_degradation_vs_full": null
+    },
+    {
+      "candidate_id": "paper_b_022",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 31.001064747210528,
+        "position_p90_m": 44.11082963455775,
+        "position_p95_m": 45.41593239222297,
+        "orientation_mean_deg": 7.198193632564854,
+        "acquisition_median_s": null,
+        "effort_mean": 66.3825065128158,
+        "solve_p95_ms": 1.2382
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 36.41415012622035,
+        "position_p90_m": 45.41742110951361,
+        "position_p95_m": 46.349159499541514,
+        "orientation_mean_deg": 7.552294205477598,
+        "acquisition_median_s": null,
+        "effort_mean": 69.96907710007133,
+        "solve_p95_ms": 1.2382
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 27.911065059551714,
+        "position_p90_m": 38.43048167686229,
+        "position_p95_m": 38.84784507675781,
+        "orientation_mean_deg": 7.006762037506128,
+        "acquisition_median_s": null,
+        "effort_mean": 64.59881763094948,
+        "solve_p95_ms": 1.1659
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -30.863894744405695,
+        "median_delta_m": -28.264128624553457,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -32.512388839298346,
+          -29.227103999642086
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -225.00469573015278,
+      "acquisition_degradation_vs_full": null
+    },
+    {
+      "candidate_id": "paper_b_018",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 32.185878440061956,
+        "position_p90_m": 45.45991240376953,
+        "position_p95_m": 45.87883074349645,
+        "orientation_mean_deg": 7.251803830928106,
+        "acquisition_median_s": null,
+        "effort_mean": 67.91157877338524,
+        "solve_p95_ms": 1.3585
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 37.487991196096836,
+        "position_p90_m": 46.00250748063493,
+        "position_p95_m": 46.75560967193349,
+        "orientation_mean_deg": 7.595839641823496,
+        "acquisition_median_s": null,
+        "effort_mean": 71.2863045942632,
+        "solve_p95_ms": 1.2937
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 29.111992106567342,
+        "position_p90_m": 39.12913183513997,
+        "position_p95_m": 39.578758997345886,
+        "orientation_mean_deg": 7.06196305337027,
+        "acquisition_median_s": null,
+        "effort_mean": 66.23698951005973,
+        "solve_p95_ms": 1.3585
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -32.04870843725712,
+        "median_delta_m": -29.354048800060617,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -33.6875611996583,
+          -30.441216064601562
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -233.64225254741982,
+      "acquisition_degradation_vs_full": null
+    },
+    {
+      "candidate_id": "paper_b_014",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 32.219066516602645,
+        "position_p90_m": 45.498264919796064,
+        "position_p95_m": 45.91749717148513,
+        "orientation_mean_deg": 7.257033787606558,
+        "acquisition_median_s": null,
+        "effort_mean": 67.95527425123974,
+        "solve_p95_ms": 1.5104
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 37.51792885536987,
+        "position_p90_m": 46.04075184528141,
+        "position_p95_m": 46.79388815870614,
+        "orientation_mean_deg": 7.601406069556265,
+        "acquisition_median_s": null,
+        "effort_mean": 71.32365937284979,
+        "solve_p95_ms": 1.4679
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 29.150172261545965,
+        "position_p90_m": 39.17435846093035,
+        "position_p95_m": 39.62322709784202,
+        "orientation_mean_deg": 7.06658731379071,
+        "acquisition_median_s": null,
+        "effort_mean": 66.28634556992853,
+        "solve_p95_ms": 1.5104
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -32.08189651379781,
+        "median_delta_m": -29.377898194585846,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -33.71928966133623,
+          -30.473105000405198
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -233.88420104827324,
+      "acquisition_degradation_vs_full": null
+    },
+    {
+      "candidate_id": "paper_b_007",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 32.86655362445051,
+        "position_p90_m": 46.43098640167027,
+        "position_p95_m": 46.85846850858506,
+        "orientation_mean_deg": 7.292678996962219,
+        "acquisition_median_s": null,
+        "effort_mean": 68.54278295237351,
+        "solve_p95_ms": 1.4628
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 38.186681311449064,
+        "position_p90_m": 46.91254889180475,
+        "position_p95_m": 47.62440184547132,
+        "orientation_mean_deg": 7.638544388138815,
+        "acquisition_median_s": null,
+        "effort_mean": 71.83723366762567,
+        "solve_p95_ms": 1.4628
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 29.790382136449367,
+        "position_p90_m": 39.96905722550013,
+        "position_p95_m": 40.37517161379471,
+        "orientation_mean_deg": 7.097590904221764,
+        "acquisition_median_s": null,
+        "effort_mean": 66.90769154214071,
+        "solve_p95_ms": 1.4137
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -32.729383621645674,
+        "median_delta_m": -29.92275652188678,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -34.38078214622341,
+          -31.10400075481926
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -238.60452688196966,
+      "acquisition_degradation_vs_full": null
+    },
+    {
+      "candidate_id": "paper_b_012",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 32.95042175060669,
+        "position_p90_m": 46.23456419423212,
+        "position_p95_m": 47.085149121001116,
+        "orientation_mean_deg": 7.250205570344152,
+        "acquisition_median_s": null,
+        "effort_mean": 68.59806960986822,
+        "solve_p95_ms": 1.6531
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 38.230760621923025,
+        "position_p90_m": 47.31550596613559,
+        "position_p95_m": 47.90598624195845,
+        "orientation_mean_deg": 7.590520097476106,
+        "acquisition_median_s": null,
+        "effort_mean": 71.84622919462957,
+        "solve_p95_ms": 1.648
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 29.84156275383461,
+        "position_p90_m": 39.80135007579857,
+        "position_p95_m": 40.24995578073328,
+        "orientation_mean_deg": 7.05913890827165,
+        "acquisition_median_s": null,
+        "effort_mean": 66.96471021468267,
+        "solve_p95_ms": 1.6531
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -32.81325174780185,
+        "median_delta_m": -30.13429621066568,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -34.471444030062464,
+          -31.18943534967254
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -239.2159442796605,
+      "acquisition_degradation_vs_full": null
+    },
+    {
+      "candidate_id": "paper_b_011",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 34.73002695250451,
+        "position_p90_m": 47.727504438848506,
+        "position_p95_m": 48.47973200211652,
+        "orientation_mean_deg": 7.300887809740739,
+        "acquisition_median_s": null,
+        "effort_mean": 70.5859608240116,
+        "solve_p95_ms": 1.6622
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 40.00277639037305,
+        "position_p90_m": 48.485858210598224,
+        "position_p95_m": 50.27611285218201,
+        "orientation_mean_deg": 7.640408086801963,
+        "acquisition_median_s": null,
+        "effort_mean": 73.69797189866584,
+        "solve_p95_ms": 1.6348
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 31.591342032089894,
+        "position_p90_m": 41.381213808511845,
+        "position_p95_m": 41.75030788313317,
+        "orientation_mean_deg": 7.1032983115858634,
+        "acquisition_median_s": null,
+        "effort_mean": 69.01118006607634,
+        "solve_p95_ms": 1.6622
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -34.59285694969967,
+        "median_delta_m": -31.700684251776764,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -36.264617504572165,
+          -32.96596942871052
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -252.1896642294214,
+      "acquisition_degradation_vs_full": null
+    },
+    {
+      "candidate_id": "paper_b_024",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 34.92096629487212,
+        "position_p90_m": 48.053539429080175,
+        "position_p95_m": 48.9583282338457,
+        "orientation_mean_deg": 7.400502512663023,
+        "acquisition_median_s": null,
+        "effort_mean": 71.0870636868404,
+        "solve_p95_ms": 1.416
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 40.09360221943753,
+        "position_p90_m": 48.960520209413815,
+        "position_p95_m": 50.21082829007739,
+        "orientation_mean_deg": 7.7048025737355035,
+        "acquisition_median_s": null,
+        "effort_mean": 74.12315507231092,
+        "solve_p95_ms": 1.416
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 31.95913081384488,
+        "position_p90_m": 41.9864346881187,
+        "position_p95_m": 42.34945639163487,
+        "orientation_mean_deg": 7.229282418608595,
+        "acquisition_median_s": null,
+        "effort_mean": 69.6530636751219,
+        "solve_p95_ms": 1.3955
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -34.7837962920673,
+        "median_delta_m": -32.00846720515133,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -36.466916991128144,
+          -33.13389790965049
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -253.58165474092766,
+      "acquisition_degradation_vs_full": null
+    },
+    {
+      "candidate_id": "paper_b_017",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 36.00128093020722,
+        "position_p90_m": 48.89070958808334,
+        "position_p95_m": 49.323678710228265,
+        "orientation_mean_deg": 7.467020365115292,
+        "acquisition_median_s": null,
+        "effort_mean": 72.41962494436108,
+        "solve_p95_ms": 1.3474
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 41.08692478233933,
+        "position_p90_m": 49.329214107550314,
+        "position_p95_m": 51.43361782797821,
+        "orientation_mean_deg": 7.763006175664431,
+        "acquisition_median_s": null,
+        "effort_mean": 75.30036895988354,
+        "solve_p95_ms": 1.3474
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 33.121361380170214,
+        "position_p90_m": 43.01618322878009,
+        "position_p95_m": 43.250139270309866,
+        "orientation_mean_deg": 7.2981486192928635,
+        "acquisition_median_s": null,
+        "effort_mean": 71.12255328133037,
+        "solve_p95_ms": 1.2736
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -35.864110927402386,
+        "median_delta_m": -33.062016867262315,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -37.534577808283174,
+          -34.22026634462552
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -261.4573900565577,
+      "acquisition_degradation_vs_full": null
+    },
+    {
+      "candidate_id": "paper_b_013",
+      "overall": {
+        "sample_count": 120,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 36.06398694799766,
+        "position_p90_m": 48.973089825266804,
+        "position_p95_m": 49.406773152115896,
+        "orientation_mean_deg": 7.46267121644652,
+        "acquisition_median_s": null,
+        "effort_mean": 72.53199834781276,
+        "solve_p95_ms": 1.2709
+      },
+      "strong": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 41.09552978464358,
+        "position_p90_m": 49.412325219428745,
+        "position_p95_m": 51.52497978237626,
+        "orientation_mean_deg": 7.73168136393278,
+        "acquisition_median_s": null,
+        "effort_mean": 75.3705951122689,
+        "solve_p95_ms": 1.2709
+      },
+      "normal": {
+        "sample_count": 54,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 33.2375225878584,
+        "position_p90_m": 43.141093461413796,
+        "position_p95_m": 43.371033085096826,
+        "orientation_mean_deg": 7.314563179720001,
+        "acquisition_median_s": null,
+        "effort_mean": 71.27226461208272,
+        "solve_p95_ms": 1.252
+      },
+      "bootstrap": {
+        "pairs": 120,
+        "resamples": 10000,
+        "seed": 20260816,
+        "mean_delta_m": -35.926816945192826,
+        "median_delta_m": -33.14107539224936,
+        "positive_pair_fraction": 0.0,
+        "ci_95_m": [
+          -37.604046248813674,
+          -34.280555038057024
+        ],
+        "lower_bound_gt_zero": false
+      },
+      "gates": {
+        "safety": true,
+        "success": false,
+        "position": false,
+        "acquisition": false,
+        "bootstrap": false
+      },
+      "gate_pass_count": 1,
+      "gate_count": 5,
+      "final_pass": false,
+      "position_improvement_vs_full": -261.9145309511282,
+      "acquisition_degradation_vs_full": null
+    }
+  ],
+  "qualified_ids": [],
+  "final_status": "PAPER_DEVELOPMENT_INELIGIBLE",
+  "holdout_status": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+  "technical_retries": [
+    {
+      "reason": "24-worker Windows page-file exhaustion before any Stage-B cache was written",
+      "resolution": "same commit/config/samples completed with 12 workers"
+    },
+    {
+      "reason": "finalizer initially subtracted null acquisition",
+      "resolution": "diagnostic degradation stored as null; frozen acquisition gate remained false"
+    }
+  ]
+}
