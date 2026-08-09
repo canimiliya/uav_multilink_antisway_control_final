@@ -1,0 +1,37 @@
+{
+  "written_before_any_self_performance": true,
+  "total_unique_controller_budget_guidance": 240,
+  "rounds": [
+    {
+      "SEARCH_ROUND": "R2-A",
+      "ARCHITECTURE_VERSION": "3D-DR-TSRMPC-A1",
+      "SEARCH_SPACE": {
+        "backbone": ["full_lqr_048", "task_lqr_009"],
+        "horizon_updates": [8, 12],
+        "residual_beta": [0.05, 0.15, 0.3],
+        "residual_clip_norm": [0.08, 0.2],
+        "task_position_weight": [40.0, 120.0],
+        "task_velocity_weight": [2.0],
+        "orientation_weight": [1.0],
+        "angular_velocity_weight": [0.2],
+        "residual_correction_weight": [0.2],
+        "command_rate_weight": [1.0]
+      },
+      "MAX_EVALUATIONS": 48,
+      "EVALUATION_SET": "14-case frozen Development core only",
+      "SELECTION_RULE": [
+        "all cases safety-valid first",
+        "task-success count descending",
+        "3D position RMSE ascending",
+        "acquisition median ascending",
+        "ramp steady error ascending",
+        "ramp peak error ascending",
+        "solve P95 ascending",
+        "candidate ID ascending"
+      ],
+      "WHY_THIS_SEARCH": "Factorial screening isolates backbone, prediction horizon, causal residual bandwidth/clip, and task-position emphasis before any refinement or full-bank finalist run.",
+      "performance_started": false,
+      "holdout_executed": false
+    }
+  ]
+}

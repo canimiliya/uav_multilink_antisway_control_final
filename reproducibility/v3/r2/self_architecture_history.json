@@ -1,0 +1,17 @@
+{
+  "written_before_any_self_performance": true,
+  "architectures": [
+    {
+      "architecture_version": "3D-DR-TSRMPC-A1",
+      "status": "PREREGISTERED",
+      "state": "frozen V3 20D error state",
+      "input": "three physical world-frame accelerations",
+      "residual": "causal bounded low-pass 20D residual projected onto the frozen controllable subspace",
+      "steady_compensation": "regularized residual-consistent equilibrium with bounded steady input",
+      "prediction": "condensed linear QP around one of the two frozen stabilizing backbones",
+      "task_objective": "frozen cutter-tip position/velocity and cutter orientation/angular-velocity outputs",
+      "constraints": "physical command amplitude and inter-update slew enforced in the QP",
+      "excluded": ["OF output bias", "future wind", "future target", "fallback", "Traditional override", "Holdout"]
+    }
+  ]
+}

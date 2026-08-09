@@ -1,0 +1,57 @@
+{
+  "task": "V3-R2-FULL-3D-SELF-ADVANCED-DEVELOPMENT-AND-FREEZE-R1",
+  "method": "3D-DR-TSRMPC",
+  "long_name": "three-dimensional dynamic-residual task-space residual model predictive control",
+  "written_before_any_self_performance": true,
+  "start_head": "6ced3e97d4f635cedb05456eccc402d22a6b6028",
+  "branch": "research-v3",
+  "state_model": {
+    "dimension": 20,
+    "source": "reproducibility/v3/r0/linear_model_audit.json",
+    "A3_B3_frozen": true,
+    "outer_period_s": 0.05
+  },
+  "control": {
+    "frame": "world",
+    "components": ["ax", "ay", "az"],
+    "amplitude_limit_m_s2": 2.0,
+    "slew_limit_m_s2_per_update": 0.25,
+    "physical_commands_constrained_inside_qp": true,
+    "post_qp_limiter_is_audited_not_a_fallback": true
+  },
+  "backbone": {
+    "allowed": ["full_lqr_048", "task_lqr_009"],
+    "gains_must_remain_byte_exact": true,
+    "selection_uses_development_only": true
+  },
+  "dynamic_residual": {
+    "causal_equation": "d_raw[k] = x[k] - (A3*x[k-1] + B3*u_actual[k-1] - reference_shift[k])",
+    "previous_input": "actual amplitude-and-slew-limited 3D command",
+    "future_wind_truth": false,
+    "target_jump_handling": "known current reference shift is removed before residual filtering",
+    "estimator": "bounded componentwise exponential low-pass followed by frozen controllable-subspace projection"
+  },
+  "steady_compensation": {
+    "form": "regularized constrained least-squares internal equilibrium",
+    "external_tip_target_moves": false,
+    "purpose": "find a steady-compatible residual/input pair without redefining the external task"
+  },
+  "predictive_controller": {
+    "form": "finite-horizon convex QP over 3D residual corrections around a frozen LQR backbone",
+    "task_output_source": "frozen C_task_v3",
+    "physical_input_and_rate_constraints": true,
+    "fallback_or_traditional_override": false
+  },
+  "frozen_boundaries": [
+    "MuJoCo plant and physics",
+    "20D A3/B3 and C_task_v3",
+    "75-sample Development bank",
+    "V3 Holdout bank",
+    "safety and terminal success definitions",
+    "common acceleration and slew limits",
+    "three Traditional controllers",
+    "advanced numeric win contract and bootstrap definition"
+  ],
+  "paper_advanced_started": false,
+  "holdout_executed": false
+}
