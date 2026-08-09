@@ -1,0 +1,35 @@
+{
+  "task": "V3-R4-ONE-SHOT-HOLDOUT-VALIDATION-AND-FINAL-EVIDENCE-FREEZE-R1",
+  "start_head": "a668e1ebdd9de1341e6c1cd278ed0b21f730ed83",
+  "holdout_protocol_freeze_head": "759831afa0a043729a30eb79b349fedb5f829372",
+  "final_evidence_commit_definition": "the Git commit containing this gate and all final R4 evidence",
+  "original_r0_contract_modified": false,
+  "sample_count": 57,
+  "controllers_executed": 4,
+  "authoritative_runs": 228,
+  "retries": [],
+  "compromised": false,
+  "paper_holdout_status": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+  "gates": {
+    "safety_no_worse_than_best_traditional": true,
+    "success_no_worse_than_best_traditional": true,
+    "position_improvement_ge_5pct_vs_primary": false,
+    "acquisition_degradation_le_5pct_vs_primary": true,
+    "ramp_peak_or_steady_improvement_ge_5pct": false,
+    "acquisition_or_ramp_additional_improvement_ge_5pct": true,
+    "paired_bootstrap_ci_lower_gt_zero": false
+  },
+  "strict_gates": {
+    "safety_no_worse_than_best_traditional": true,
+    "success_no_worse_than_best_traditional": true,
+    "position_improvement_ge_5pct": false,
+    "acquisition_improvement_ge_5pct": true,
+    "ramp_peak_or_steady_improvement_ge_5pct": false,
+    "paired_bootstrap_ci_lower_gt_zero": false
+  },
+  "overall_win": false,
+  "strict_all_metric_win_holdout": false,
+  "final_status": "V3_SELF_DEVELOPMENT_WIN_NOT_CONFIRMED_ON_HOLDOUT",
+  "second_holdout_authorized": false,
+  "v3_closed_after_this_task": true
+}

@@ -1,0 +1,32 @@
+{
+  "all_controllers": {
+    "hybrid_x007_y041_z041": {
+      "safe_samples": 57,
+      "sample_count": 57,
+      "safety_rate": 1.0
+    },
+    "full_lqr_048": {
+      "safe_samples": 57,
+      "sample_count": 57,
+      "safety_rate": 1.0
+    },
+    "task_lqr_009": {
+      "safe_samples": 57,
+      "sample_count": 57,
+      "safety_rate": 1.0
+    },
+    "self_a_034": {
+      "safe_samples": 57,
+      "sample_count": 57,
+      "safety_rate": 1.0
+    }
+  },
+  "best_traditional_safety_rate": 1.0,
+  "self_no_worse": true,
+  "failure_reasons": {
+    "hybrid_x007_y041_z041": [],
+    "full_lqr_048": [],
+    "task_lqr_009": [],
+    "self_a_034": []
+  }
+}

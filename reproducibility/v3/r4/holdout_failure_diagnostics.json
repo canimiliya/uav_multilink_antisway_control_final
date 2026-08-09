@@ -1,0 +1,63 @@
+{
+  "scope": "explanatory diagnostic computed from the completed frozen Holdout results",
+  "formal_gate_replaced": false,
+  "second_holdout_executed": false,
+  "self_vs_primary_position_by_cohort": {
+    "calm": {
+      "sample_count": 12,
+      "primary_mean_m": 0.0717261945977181,
+      "self_mean_m": 0.06478197847957852,
+      "mean_primary_minus_self_m": 0.006944216118139587,
+      "self_better_pair_fraction": 0.9166666666666666,
+      "primary_success_count": 10,
+      "self_success_count": 12
+    },
+    "constant_2p0_m_s": {
+      "sample_count": 12,
+      "primary_mean_m": 0.09506681070585098,
+      "self_mean_m": 0.06678614532274384,
+      "mean_primary_minus_self_m": 0.028280665383107126,
+      "self_better_pair_fraction": 1.0,
+      "primary_success_count": 9,
+      "self_success_count": 12
+    },
+    "constant_3p5_m_s": {
+      "sample_count": 12,
+      "primary_mean_m": 0.21230805574990605,
+      "self_mean_m": 0.7113791997210748,
+      "mean_primary_minus_self_m": -0.49907114397116886,
+      "self_better_pair_fraction": 0.0,
+      "primary_success_count": 0,
+      "self_success_count": 0
+    },
+    "stochastic": {
+      "sample_count": 20,
+      "primary_mean_m": 0.0700414589879519,
+      "self_mean_m": 0.06403602554181928,
+      "mean_primary_minus_self_m": 0.006005433446132619,
+      "self_better_pair_fraction": 0.85,
+      "primary_success_count": 14,
+      "self_success_count": 20
+    },
+    "ramp_equilibrium_hold": {
+      "sample_count": 1,
+      "primary_position_rmse_m": 0.1242663694256408,
+      "self_position_rmse_m": 0.028342467997933524,
+      "mean_primary_minus_self_m": 0.09592390142770728,
+      "primary_ramp_peak_m": 0.15840922422297768,
+      "self_ramp_peak_m": 0.055865444282689955,
+      "primary_ramp_steady_m": 0.19854111622246182,
+      "self_ramp_steady_m": 0.02584900722731307,
+      "primary_success_count": 1,
+      "self_success_count": 1
+    }
+  },
+  "decisive_failure_mode": "All 12 constant-3.5-m/s pairs favored Full-LQR in position RMSE. Their large negative deltas outweighed Self gains in the other 45 samples and caused the formal paired bootstrap and aggregate position gate to fail.",
+  "paired_distribution": {
+    "self_better_pairs": 41,
+    "pair_count": 57,
+    "positive_pair_fraction": 0.7192982456140351,
+    "mean_primary_minus_self_m": -0.09386179963664396,
+    "median_primary_minus_self_m": 0.005101541245343524
+  }
+}

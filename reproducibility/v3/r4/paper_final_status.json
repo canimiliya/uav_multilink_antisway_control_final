@@ -1,0 +1,11 @@
+{
+  "method": "LV2026-SPACC-ADAPTED-3D",
+  "development_status": "NO_WIN",
+  "holdout_status": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+  "holdout_runs": 0,
+  "allowed_claim": "The V3 adaptation of Lv et al. did not satisfy Development qualification and therefore was not evaluated on Holdout.",
+  "forbidden_claims": [
+    "Self > original Lv et al.",
+    "Self > Paper on Holdout"
+  ]
+}

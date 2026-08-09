@@ -1,0 +1,16 @@
+{
+  "pairing": "exact sample_id",
+  "pairs": 57,
+  "variable": "RMSE_full_lqr_i - RMSE_self_i",
+  "resamples": 10000,
+  "seed": 20260809,
+  "mean_delta_m": -0.09386179963664396,
+  "median_delta_m": 0.005101541245343524,
+  "positive_pair_fraction": 0.7192982456140351,
+  "ci_95_m": [
+    -0.14970822533838446,
+    -0.04128737723861429
+  ],
+  "lower_bound_gt_zero": false,
+  "seed_hunting": false
+}

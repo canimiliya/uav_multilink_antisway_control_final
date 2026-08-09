@@ -1,0 +1,16 @@
+{
+  "final_self_status": "V3_SELF_DEVELOPMENT_WIN_NOT_CONFIRMED_ON_HOLDOUT",
+  "overall_win": false,
+  "strict_all_metric_win_holdout": false,
+  "allowed": [
+    "All four frozen V3 controller participants were evaluated once on the same 57-sample unseen Holdout.",
+    "Self comparisons may be reported against corrected PID, Full-LQR, and Task-LQR using the frozen metrics.",
+    "The Paper adaptation was Development-ineligible and was not run on Holdout."
+  ],
+  "not_allowed": [
+    "second V3 Holdout",
+    "post-Holdout Self tuning",
+    "Self > original Lv et al.",
+    "Self > Paper on Holdout"
+  ]
+}

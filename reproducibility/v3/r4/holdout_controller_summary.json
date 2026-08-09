@@ -1,0 +1,97 @@
+{
+  "split": "holdout",
+  "sample_count_per_controller": 57,
+  "authoritative_runs": 228,
+  "primary_traditional": "full_lqr_048",
+  "controllers": {
+    "hybrid_x007_y041_z041": {
+      "candidate_id": "hybrid_x007_y041_z041",
+      "controller": "corrected_pid",
+      "sample_count": 57,
+      "safe_sample_count": 57,
+      "task_success_count": 22,
+      "safety_rate": 1.0,
+      "success_rate": 0.38596491228070173,
+      "acquisition_median_s": 3.1775,
+      "position_rmse_3d_m": 0.27493674638429955,
+      "orientation_rmse_deg": 0.6958559519656109,
+      "ramp_peak_position_error_m": 0.5814396677768983,
+      "ramp_steady_state_position_error_m": 0.87658666381307,
+      "total_acceleration_effort": 5.9013547326202405,
+      "solve_time_p95_ms": 0.1949,
+      "aggregation_semantics": {
+        "position_orientation_effort": "mean over the exact 57 samples",
+        "acquisition": "median over successful samples under the frozen terminal gate",
+        "ramp_peak_and_steady": "maximum of the inherited per-sample t=2..8 peak and t>=8 steady metrics",
+        "solve_p95": "maximum per-sample p95"
+      }
+    },
+    "full_lqr_048": {
+      "candidate_id": "full_lqr_048",
+      "controller": "full_lqr",
+      "sample_count": 57,
+      "safe_sample_count": 57,
+      "task_success_count": 34,
+      "safety_rate": 1.0,
+      "success_rate": 0.5964912280701754,
+      "acquisition_median_s": 3.755,
+      "position_rmse_3d_m": 0.1065668119618663,
+      "orientation_rmse_deg": 0.7957386228273527,
+      "ramp_peak_position_error_m": 0.427940251693197,
+      "ramp_steady_state_position_error_m": 0.2068722558540387,
+      "total_acceleration_effort": 0.8096161660710534,
+      "solve_time_p95_ms": 0.1163,
+      "aggregation_semantics": {
+        "position_orientation_effort": "mean over the exact 57 samples",
+        "acquisition": "median over successful samples under the frozen terminal gate",
+        "ramp_peak_and_steady": "maximum of the inherited per-sample t=2..8 peak and t>=8 steady metrics",
+        "solve_p95": "maximum per-sample p95"
+      }
+    },
+    "task_lqr_009": {
+      "candidate_id": "task_lqr_009",
+      "controller": "task_lqr",
+      "sample_count": 57,
+      "safe_sample_count": 57,
+      "task_success_count": 31,
+      "safety_rate": 1.0,
+      "success_rate": 0.543859649122807,
+      "acquisition_median_s": 2.1000000000000005,
+      "position_rmse_3d_m": 0.12422613393653312,
+      "orientation_rmse_deg": 0.600998288005717,
+      "ramp_peak_position_error_m": 0.5033708529411471,
+      "ramp_steady_state_position_error_m": 0.3026478509943565,
+      "total_acceleration_effort": 1.418547865406135,
+      "solve_time_p95_ms": 0.1192,
+      "aggregation_semantics": {
+        "position_orientation_effort": "mean over the exact 57 samples",
+        "acquisition": "median over successful samples under the frozen terminal gate",
+        "ramp_peak_and_steady": "maximum of the inherited per-sample t=2..8 peak and t>=8 steady metrics",
+        "solve_p95": "maximum per-sample p95"
+      }
+    },
+    "self_a_034": {
+      "candidate_id": "self_a_034",
+      "controller": "self_dr_tsrmpc",
+      "sample_count": 57,
+      "safe_sample_count": 57,
+      "task_success_count": 45,
+      "safety_rate": 1.0,
+      "success_rate": 0.7894736842105263,
+      "acquisition_median_s": 2.245,
+      "position_rmse_3d_m": 0.20042861159851028,
+      "orientation_rmse_deg": 2.427884207768483,
+      "ramp_peak_position_error_m": 1.3738413785912302,
+      "ramp_steady_state_position_error_m": 0.785216427747748,
+      "total_acceleration_effort": 6.099010953152896,
+      "solve_time_p95_ms": 4.024,
+      "aggregation_semantics": {
+        "position_orientation_effort": "mean over the exact 57 samples",
+        "acquisition": "median over successful samples under the frozen terminal gate",
+        "ramp_peak_and_steady": "maximum of the inherited per-sample t=2..8 peak and t>=8 steady metrics",
+        "solve_p95": "maximum per-sample p95"
+      }
+    }
+  },
+  "paper": "NOT_RUN_DEVELOPMENT_INELIGIBLE"
+}

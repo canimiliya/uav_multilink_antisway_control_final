@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETED",
+  "protocol_freeze_head": "759831afa0a043729a30eb79b349fedb5f829372",
+  "manifest_sha256": "1a872be7adfac68ccbe4a8229a8b29bf94717bcef87da548b9935527291ff46f",
+  "result_sha256": "b5f9a7671cf82c1719a3688b67d82f9ee8c3bddbde86cee76a12a9aaa4682c96",
+  "sample_count": 57,
+  "controller_count": 4,
+  "authoritative_runs": 228,
+  "workers": 12,
+  "retries": [],
+  "compromised": false,
+  "scientific_results_inspected_during_execution": false
+}
