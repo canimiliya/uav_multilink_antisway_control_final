@@ -1,0 +1,28 @@
+{
+  "method": "SATC-OFMPC",
+  "long_name": "Shock-Aware Transient-Coordination Offset-Free Model Predictive Control",
+  "family": "CART-OFMPC plus causal transient coordination",
+  "required_mechanisms": [
+    "innovation shock detection",
+    "bumpless offset engagement",
+    "direct physical-input coordination",
+    "finite-slew authority reserve",
+    "disturbance-task conflict index"
+  ],
+  "cart_mechanisms_retained": [
+    "constraint-feasible steady target",
+    "explicit unrepresented residual",
+    "anti-windup debt",
+    "causal residual estimator",
+    "physical acceleration and slew constraints"
+  ],
+  "conflict_definition": "causal opposition between controllable innovation-equivalent acceleration and desired task displacement; no coordinate-sign branch",
+  "representative_trace_strata": [
+    "normal",
+    "strong_aligned",
+    "strong_opposed",
+    "strong_cross"
+  ],
+  "implementation_started": false,
+  "performance_executed": false
+}

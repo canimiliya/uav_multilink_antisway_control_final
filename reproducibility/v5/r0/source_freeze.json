@@ -1,0 +1,15 @@
+{
+  "source_tag_type": "tag",
+  "source_head": "8e3d7ad08747b00d46b9bdfc3cc72451491567db",
+  "v4_tree": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+  "v1_v4_read_only": true,
+  "source_sha256": {
+    "reproducibility/v4/final/final_gate.json": "be448e1c0fe4a33eb216a48a3d1f41e9e9f8c39341cb085f1931cfa10b5d5498",
+    "reproducibility/v4/final/v5_recommendation.json": "c486b97f4945a25d4493c3bd9be89a8c9720427bb88ccafb35669fe97339e802",
+    "reproducibility/v4/final/simultaneous_tail_audit.json": "3e66ddb9c5e9843a4e1bac4498e10aaf5e4079c046b6e68c53d6c6d39bf6f0db",
+    "reproducibility/v4/r1/near_miss.json": "c96477a7af56b04db2baeda4b31f3d37fc81f12bab17482c4e0b7bab8af00128",
+    "src/uav_sway/v4/cart_ofmpc.py": "385510d44e050632c63071a738d7c76d595d1434f818dd9652cc5a4a27412bff",
+    "reproducibility/v3/r1/full_lqr_freeze.json": "d98d569200dad66c0afb88042a93632c2318c1a62b92b286ba9e0bffdd8b9fa6",
+    "reproducibility/v3/r2/self_freeze.json": "b779f6b72a1b59679c55c7890c4f9d936bc93cd2dbc85267df02e9e32d278127"
+  }
+}

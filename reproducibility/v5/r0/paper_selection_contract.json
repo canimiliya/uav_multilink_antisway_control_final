@@ -1,0 +1,23 @@
+{
+  "year_range": [
+    2024,
+    2026
+  ],
+  "topic": "constraint-aware robust transient control for UAV suspended or slung payloads",
+  "primary_source_required": true,
+  "selection_count": 1,
+  "unique_configuration_max": 32,
+  "ranking": [
+    "research relevance",
+    "mathematical completeness",
+    "five-link adaptability",
+    "same acceleration authority",
+    "available sensing",
+    "mechanism preservation",
+    "publication quality"
+  ],
+  "selection_by_ease_of_defeat_forbidden": true,
+  "performance_before_protocol_freeze": false,
+  "qualification": "at least the frozen V5 Overall gate",
+  "failure_status": "PAPER_DEVELOPMENT_INELIGIBLE"
+}

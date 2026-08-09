@@ -1,0 +1,36 @@
+{
+  "primary_traditional": "full_lqr_048",
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20260816,
+    "confidence": 0.95,
+    "required_lower_bound_m": 0.0
+  },
+  "catastrophic_definition": "candidate position RMSE > 2 * paired full_lqr_048 position RMSE",
+  "overall": {
+    "safety_no_worse_best_traditional": true,
+    "success_no_worse_best_traditional": true,
+    "position_improvement_vs_full_min": 0.05,
+    "acquisition_degradation_vs_full_max": 0.05,
+    "bootstrap_lower_gt_zero": true
+  },
+  "strong_transient": {
+    "position_improvement_vs_full_min": 0.05,
+    "position_improvement_vs_legacy_min": 0.3,
+    "p90_degradation_vs_full_max": 0.1,
+    "catastrophic_pair_max": 0,
+    "success_no_worse_best_traditional": true
+  },
+  "normal_nonregression_vs_legacy": {
+    "safety_no_worse": true,
+    "success_no_worse": true,
+    "position_degradation_max": 0.05,
+    "acquisition_degradation_max": 0.1
+  },
+  "directional_hard_gate_each_aligned_opposed_cross": {
+    "p90_degradation_vs_full_max": 0.1,
+    "catastrophic_pair_max": 0
+  },
+  "holdout_uses_same_relative_rules": true,
+  "development_thresholds_are_not_absolute_holdout_targets": true
+}

@@ -1,0 +1,46 @@
+{
+  "task": "V5-END-TO-END-TRANSIENT-ROBUST-SELF-PAPER-AND-ONE-SHOT-VALIDATION-R1",
+  "source_tag": "v4-research-final-2026-08-09",
+  "source_head": "8e3d7ad08747b00d46b9bdfc3cc72451491567db",
+  "branch": "research-v5",
+  "scientific_question": "Can a causal predictive controller remain tail-robust when a strong disturbance onset and a 3D target transient occur concurrently, without sacrificing normal-regime performance?",
+  "frozen": {
+    "plant": "MuJoCo five-link plant",
+    "wind_physics": "unchanged world-x quadratic drag implementation",
+    "task_and_metrics": true,
+    "safety": true,
+    "terminal_acquisition": true,
+    "inner_loop": "frozen geometric inner loop",
+    "command_frame": "world [ax, ay, az]",
+    "acceleration_limit_m_s2_per_axis": 2.0,
+    "slew_limit_m_s2_per_update": 0.25,
+    "outer_rate_hz": 20.0,
+    "traditional": [
+      "hybrid_x007_y041_z041",
+      "full_lqr_048",
+      "task_lqr_009"
+    ],
+    "legacy_self": "self_a_034",
+    "v4_cart": "negative mechanism baseline only"
+  },
+  "forbidden": [
+    "true wind measurement",
+    "future wind",
+    "target-x sign switch",
+    "Holdout access before unlock",
+    "old evidence mutation",
+    "authority increase"
+  ],
+  "phase_order": [
+    "contract",
+    "Self Development",
+    "Self freeze and ablation",
+    "Paper Development",
+    "selection freeze",
+    "one-shot Holdout",
+    "final freeze"
+  ],
+  "stop_on_self_failure": "V5_SELF_NO_DEVELOPMENT_QUALIFICATION; Paper and Holdout not executed",
+  "new_controller_performance_executed": false,
+  "holdout_executed": false
+}

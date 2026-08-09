@@ -1,0 +1,22 @@
+{
+  "maximum_unique_configurations": 64,
+  "stage_a": {
+    "maximum": 12,
+    "purpose": "structural smoke",
+    "selection_authority": false,
+    "sample_count_each": 24
+  },
+  "stage_b": {
+    "maximum": 36,
+    "purpose": "full frozen Development search",
+    "sample_count_each": 120
+  },
+  "stage_c": {
+    "maximum": 8,
+    "purpose": "exact full-bank confirmation of existing Stage-B parameters",
+    "creates_new_configuration": false
+  },
+  "maximum_unique_planned": 48,
+  "selection_rule": "all hard gates first; then directional worst P90, strong mean, overall mean, normal mean, acquisition, effort, runtime, candidate id",
+  "no_65th_configuration": true
+}
