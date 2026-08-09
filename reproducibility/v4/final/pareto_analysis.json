@@ -1,0 +1,125 @@
+{
+  "unique_configuration_count": 26,
+  "stage_a_smoke_only_count": 8,
+  "stage_b_full_bank_count": 18,
+  "cross_stage_frontier_prohibited": true,
+  "reason": "Stage A used 16 smoke samples and has no selection authority; only the 18 Stage-B full-bank candidates are mutually comparable.",
+  "stage_b_objectives": {
+    "maximize": [
+      "success_rate"
+    ],
+    "minimize": [
+      "position_rmse_3d_m",
+      "position_p90_3d_m",
+      "acquisition_median_s",
+      "effort"
+    ]
+  },
+  "stage_b_pareto_frontier": [
+    "cart_b_001",
+    "cart_b_002",
+    "cart_b_003",
+    "cart_b_004",
+    "cart_b_005",
+    "cart_b_007",
+    "cart_b_009",
+    "cart_b_011",
+    "cart_b_014",
+    "cart_b_015"
+  ],
+  "strong_gate_pass_counts_across_stage_b": {
+    "success": 14,
+    "p90_tail": 0,
+    "catastrophic_pairs": 0
+  },
+  "representative_comparison": {
+    "cart_b_001": {
+      "overall": {
+        "sample_count": 94,
+        "safety_rate": 1.0,
+        "success_rate": 0.648936170212766,
+        "position_mean_m": 0.10527127917156004,
+        "position_p90_m": 0.11848732117794558,
+        "position_p95_m": 0.41193019898433614,
+        "acquisition_median_s": 2.24,
+        "effort_mean": 2.0400773681466613,
+        "solve_p95_ms": 4.6908
+      },
+      "strong_wind": {
+        "sample_count": 37,
+        "safety_rate": 1.0,
+        "success_rate": 0.10810810810810811,
+        "position_mean_m": 0.16005538497613564,
+        "position_p90_m": 0.41597240654401224,
+        "position_p95_m": 0.4240680410651888,
+        "acquisition_median_s": 1.9175000000000002,
+        "effort_mean": 4.473949221116178,
+        "solve_p95_ms": 4.6908
+      },
+      "normal_regime": {
+        "sample_count": 44,
+        "safety_rate": 1.0,
+        "success_rate": 1.0,
+        "position_mean_m": 0.06588769466172958,
+        "position_p90_m": 0.0807794586453082,
+        "position_p95_m": 0.08384722079261836,
+        "acquisition_median_s": 2.245,
+        "effort_mean": 0.3725601360120347,
+        "solve_p95_ms": 4.6831
+      },
+      "hard_gate_pass_count": 12,
+      "failed_gates": [
+        "strong_wind.success",
+        "strong_wind.p90_tail",
+        "strong_wind.catastrophic_pairs"
+      ],
+      "catastrophic_pair_count": 7
+    },
+    "cart_b_014": {
+      "overall": {
+        "sample_count": 94,
+        "safety_rate": 1.0,
+        "success_rate": 0.8617021276595744,
+        "position_mean_m": 0.10143158771563718,
+        "position_p90_m": 0.11070920272491402,
+        "position_p95_m": 0.12214916530597408,
+        "acquisition_median_s": 2.9299999999999997,
+        "effort_mean": 1.5362894114995587,
+        "solve_p95_ms": 4.4674
+      },
+      "strong_wind": {
+        "sample_count": 37,
+        "safety_rate": 1.0,
+        "success_rate": 0.8918918918918919,
+        "position_mean_m": 0.14541353951034616,
+        "position_p90_m": 0.2696472486961176,
+        "position_p95_m": 0.5116034418984499,
+        "acquisition_median_s": 5.4399999999999995,
+        "effort_mean": 3.265045388409517,
+        "solve_p95_ms": 4.4674
+      },
+      "normal_regime": {
+        "sample_count": 44,
+        "safety_rate": 1.0,
+        "success_rate": 1.0,
+        "position_mean_m": 0.06929228980560058,
+        "position_p90_m": 0.08391400403616729,
+        "position_p95_m": 0.09057752215540377,
+        "acquisition_median_s": 2.645,
+        "effort_mean": 0.32317832182476464,
+        "solve_p95_ms": 3.8896
+      },
+      "hard_gate_pass_count": 11,
+      "failed_gates": [
+        "strong_wind.p90_tail",
+        "strong_wind.catastrophic_pairs",
+        "normal_nonregression.position",
+        "normal_nonregression.acquisition"
+      ],
+      "catastrophic_pair_count": 4
+    }
+  },
+  "conclusion": "ARCHITECTURE_LEVEL_TRANSIENT_ROBUSTNESS_LIMITATION_WITH_PARAMETER_TRADEOFF",
+  "interpretation": "cart_b_014 trades slower acquisition and normal-regime regression for higher strong success, yet still fails tail/catastrophic gates. No full-bank candidate clears either tail gate, so additional CART retuning is not evidence-supported under the exhausted frozen search.",
+  "selection_changed": false
+}

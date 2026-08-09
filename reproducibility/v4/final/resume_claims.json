@@ -1,0 +1,13 @@
+{
+  "allowed": [
+    "Identified a constraint-infeasible disturbance-compensation failure mode in a UAV suspended-load controller.",
+    "Developed constraint-aware residual-trust MPC that reduced strong-wind mean position error while preserving normal-regime performance in Development.",
+    "Reduced residual clipping from about 69.74% to 3.53% and slew activity from about 62.55% to 9.71% in the frozen strong-wind Development cohort.",
+    "Detected an abrupt-onset directional tail using cohort, P90, and catastrophic-pair gates, preventing a mean-only false success claim."
+  ],
+  "prohibited": [
+    "Final strong-wind generalization succeeded.",
+    "V4 outperformed all baselines.",
+    "CART-OFMPC was Holdout validated."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "method": "CART-OFMPC",
+  "status": "CLOSED_WITH_NO_DEVELOPMENT_WIN",
+  "best_near_miss": "cart_b_001",
+  "best_near_miss_frozen_as_winner": false,
+  "passed_gates": "12/15",
+  "failed_gates": [
+    "strong_success",
+    "strong_p90_tail",
+    "catastrophic_pair_count"
+  ],
+  "mechanism_repair": "DEMONSTRATED_FOR_DOMINANT_V3_PERSISTENT_STRONG_WIND_INFEASIBILITY_CHAIN",
+  "development_qualification": "FAIL",
+  "holdout_eligibility": false,
+  "claim": "Mechanism improvement with favorable mean performance, but no qualified V4 Self method."
+}

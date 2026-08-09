@@ -1,0 +1,101 @@
+{
+  "scope": "offline aggregation of the 12 frozen cart_b_001 STRONG_SIMULTANEOUS rows",
+  "catastrophic_definition_source": "reproducibility/v4/r1/strong_wind_comparison.json",
+  "catastrophic": {
+    "sample_count": 7,
+    "target_direction_mean": [
+      -0.6048381667628467,
+      0.0724950630053501,
+      0.39624476180933793
+    ],
+    "target_direction_abs_mean": [
+      0.6048381667628467,
+      0.46742179386252697,
+      0.5792172134983996
+    ],
+    "target_positive_counts_xyz": [
+      0,
+      4,
+      6
+    ],
+    "position_rmse_mean_m": 0.41987185623043194,
+    "position_peak_proxy_mean_m": 0.7311251018982097,
+    "orientation_rmse_mean_deg": 5.178151284774496,
+    "trust_mean": 0.5580727191320817,
+    "residual_clip_fraction_mean": 0.18558238236394414,
+    "residual_debt_norm_mean": 0.009332212163815077,
+    "requested_steady_input_max_abs_mean_m_s2": 0.023199221856273884,
+    "backbone_norm_mean": 4.022556811771507,
+    "qp_correction_norm_mean": 6.792012332949304,
+    "qp_to_backbone_norm_ratio_mean": 1.688392725024531,
+    "slew_activity_fraction_mean": 0.3965619442797866,
+    "amplitude_activity_fraction_mean": 0.05216360403082394
+  },
+  "noncatastrophic": {
+    "sample_count": 5,
+    "target_direction_mean": [
+      0.5590350008901411,
+      0.07842226266560512,
+      0.24874624402943168
+    ],
+    "target_direction_abs_mean": [
+      0.5590350008901411,
+      0.5018634352704334,
+      0.4759906200280851
+    ],
+    "target_positive_counts_xyz": [
+      5,
+      3,
+      3
+    ],
+    "position_rmse_mean_m": 0.08572587832622411,
+    "position_peak_proxy_mean_m": 0.21221412776130225,
+    "orientation_rmse_mean_deg": 0.8584454997657442,
+    "trust_mean": 0.9413655549283636,
+    "residual_clip_fraction_mean": 0.00011413562218978705,
+    "residual_debt_norm_mean": 0.002070967319402422,
+    "requested_steady_input_max_abs_mean_m_s2": 0.0035555377811689786,
+    "backbone_norm_mean": 1.6991351779141186,
+    "qp_correction_norm_mean": 0.12007633191803313,
+    "qp_to_backbone_norm_ratio_mean": 0.07064631478751061,
+    "slew_activity_fraction_mean": 0.02904564315352697,
+    "amplitude_activity_fraction_mean": 0.0
+  },
+  "sign_partition": {
+    "negative_x": {
+      "sample_count": 7,
+      "catastrophic_count": 7
+    },
+    "positive_x": {
+      "sample_count": 5,
+      "catastrophic_count": 0
+    },
+    "interpretation": "x sign perfectly partitions this frozen 12-direction cohort; y sign, z sign, and vertical magnitude do not.",
+    "generalization_limit": "exploratory n=12 directional association; it is not a causal or unseen-direction validation"
+  },
+  "spearman_correlations_with_position_rmse": {
+    "orientation_rmse_deg": 0.6923076923076923,
+    "trust_mean": -0.8951048951048951,
+    "residual_clip_fraction_mean": 0.8380489500927584,
+    "residual_debt_norm_mean": 0.8041958041958042,
+    "requested_steady_input_max_abs_mean": 0.8251748251748252,
+    "backbone_norm_mean": 0.9090909090909091,
+    "qp_correction_norm_mean": 0.9370629370629371,
+    "slew_activity_fraction": 0.6843299593167942,
+    "amplitude_saturation_fraction": 0.8209231172776182,
+    "target_x_signed": -0.8461538461538461,
+    "target_x_absolute": 0.02097902097902098,
+    "target_y_signed": -0.24475524475524477,
+    "target_y_absolute": -0.02097902097902098,
+    "target_z_signed": 0.06993006993006994,
+    "target_z_absolute": 0.38461538461538464
+  },
+  "time_to_tail_onset": {
+    "status": "NOT_OBSERVABLE_FROM_FROZEN_AGGREGATES",
+    "reason": "R1 preserved one row per sample, not time-series traces; no new simulation is authorized."
+  },
+  "backbone_qp_vector_cancellation": {
+    "status": "VECTOR_ANGLE_NOT_OBSERVABLE_FROM_FROZEN_AGGREGATES",
+    "available_proxy": "catastrophic cases show large co-activation and QP/backbone norm ratio, but vector opposition cannot be recomputed"
+  }
+}

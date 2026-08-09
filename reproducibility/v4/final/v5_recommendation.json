@@ -1,0 +1,26 @@
+{
+  "decision": "RECOMMEND_NEW_RESEARCH_VERSION",
+  "authorization": "RECOMMENDATION_ONLY_V5_NOT_STARTED",
+  "new_scientific_question": "Can a causal controller remain tail-robust when a 3D target step and strong wind onset occur simultaneously, without sacrificing normal-regime response?",
+  "new_mechanism_hypothesis": "An onset innovation impulse and target transient enter a direction-dependent low-trust regime; backbone/predictive co-activation then meets slew-limited authority and creates a long directional tail.",
+  "why_not_just_retune_cart": [
+    "The frozen Stage-A/B/C budget is exhausted.",
+    "All 18 full-bank Stage-B candidates failed both tail gates.",
+    "cart_b_014 demonstrates the trade: better strong success still leaves catastrophic pairs and regresses normal position/acquisition.",
+    "The remaining question concerns transient coordination, not the persistent-equilibrium infeasibility already repaired by CART."
+  ],
+  "candidate_research_directions_not_implemented": [
+    "transient shock-aware confidence governor with innovation-rate/consistency hysteresis",
+    "slew-aware bumpless steady-target engagement",
+    "explicit backbone-QP cancellation penalty with logged vector diagnostics",
+    "transient robust or tube constraint layer"
+  ],
+  "must_be_frozen_before_performance": [
+    "new version and independent Development/Holdout data policy",
+    "causal observation and controller interface",
+    "simultaneous-onset cohort and directional coverage",
+    "P90 and catastrophic-pair gates",
+    "time-series diagnostics needed to test onset and vector-cancellation hypotheses",
+    "search budget, metrics, safety, and stopping rules"
+  ]
+}

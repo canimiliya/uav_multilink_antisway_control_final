@@ -1,0 +1,46 @@
+{
+  "candidate_id": "cart_b_001",
+  "cohort": "STRONG_SIMULTANEOUS",
+  "sample_count": 12,
+  "catastrophic_pair_count": 7,
+  "catastrophic_pair_ids": [
+    "dev_strong_simultaneous_00",
+    "dev_strong_simultaneous_01",
+    "dev_strong_simultaneous_02",
+    "dev_strong_simultaneous_05",
+    "dev_strong_simultaneous_06",
+    "dev_strong_simultaneous_09",
+    "dev_strong_simultaneous_11"
+  ],
+  "position_tail": {
+    "strong_all_p90_m": 0.41597240654401224,
+    "p90_change_vs_full_lqr": 0.9404353508009997,
+    "catastrophic_position_mean_m": 0.41987185623043194,
+    "noncatastrophic_position_mean_m": 0.08572587832622411
+  },
+  "orientation": {
+    "catastrophic_rmse_mean_deg": 5.178151284774496,
+    "noncatastrophic_rmse_mean_deg": 0.8584454997657442
+  },
+  "mechanism_hierarchy": {
+    "confirmed": [
+      "The catastrophic partition is exactly the seven negative-x target directions in the frozen 12-direction simultaneous cohort.",
+      "Catastrophic rows have much lower trust, greater residual clipping/debt, larger backbone and QP norms, and much higher slew activity than non-catastrophic rows.",
+      "All 18 full-bank Stage-B candidates failed both the strong P90-tail and catastrophic-pair gates."
+    ],
+    "strongly_supported": [
+      "The wind-onset innovation and simultaneous target transient trigger a direction-dependent low-trust, high-correction regime.",
+      "Large backbone/QP co-activation, correction larger than backbone by norm, and active slew limits support a coordination-limited recovery mechanism.",
+      "The remaining failure is an abrupt-onset transient-robustness limitation rather than recurrence of V3 persistent-equilibrium infeasibility."
+    ],
+    "hypothesized": [
+      "The fixed +x wind and negative-x target demand may align the onset innovation against the task transient and produce the observed sign partition.",
+      "Innovation-rate hysteresis, bumpless steady-target engagement, an explicit cancellation penalty, or a transient tube layer may interrupt the tail without normal-regime regression."
+    ]
+  },
+  "limitations": [
+    "n=12 and Development-only: the exact x-sign split is exploratory, not a general law.",
+    "No time series were frozen, so tail-onset time and backbone/QP vector opposition are not directly identifiable.",
+    "Correlations are descriptive and do not establish causality."
+  ]
+}

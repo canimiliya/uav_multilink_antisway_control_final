@@ -1,0 +1,20 @@
+{
+  "v3_self": {
+    "development": "WIN",
+    "holdout": "NOT_CONFIRMED"
+  },
+  "v4_cart_ofmpc": {
+    "development_overall_mean_improvement": true,
+    "mechanism_repair_demonstrated": true,
+    "development_qualification": "FAIL",
+    "holdout": "NOT_RUN"
+  },
+  "v4_holdout": "UNUSED",
+  "paper": "NOT_PART_OF_V4",
+  "prohibited_claims": [
+    "CART-OFMPC WIN",
+    "CART-OFMPC completely failed",
+    "final strong-wind generalization succeeded",
+    "V4 outperformed all baselines"
+  ]
+}

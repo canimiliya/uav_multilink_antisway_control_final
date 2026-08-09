@@ -1,0 +1,34 @@
+{
+  "task": "V4-R2-FINAL-EVIDENCE-FREEZE-AND-V5-DECISION-EVIDENCE-R1",
+  "analysis_mode": "OFFLINE_EXISTING_EVIDENCE_ONLY",
+  "hash_normalization": "text files canonicalized to LF before SHA-256",
+  "source_sha256": {
+    "reproducibility/v4/r0/development_manifest.json": "bd49870881a5d13b9583fafa2362d284ffdb2c56255aec87c1e979f3c373ad32",
+    "reproducibility/v4/r0/holdout_manifest.json": "751b105b300e99ba58d3e3dae45d35e02e50e728f322dbb73f481baa58b962a3",
+    "reproducibility/v4/r0/v3_failure_postmortem.json": "cb63c2ec4fa02d86f681af2c2b910af204e17f44f4717227bb70249907932ad1",
+    "reproducibility/v4/r1/candidate_results.csv": "6c364c14db849169a9a5b9b54b15bee206401e2e0d5eac2ce4be375ed3fa5c15",
+    "reproducibility/v4/r1/development_results.csv": "91fd2e94abdd4f5f9facc806eb5c170648fe795028e03e914f4276b7e5f9cc4e",
+    "reproducibility/v4/r1/near_miss.json": "c96477a7af56b04db2baeda4b31f3d37fc81f12bab17482c4e0b7bab8af00128",
+    "reproducibility/v4/r1/stage_b_gate_audit.json": "ce5de19c1257fb3d3040755168e9e73a311628ee435a24b7bb1ed046eba35076",
+    "reproducibility/v4/r1/strong_wind_comparison.json": "7e476da18f1806509b9fc3a389e86f7b6c1e8a50e8f87be48a9fd1906d481d30",
+    "reproducibility/v4/r1/normal_regime_comparison.json": "b40079be4fcca74b551dbd46c9eec2d456cc455e3b1526c62c3b25f769255bec",
+    "reproducibility/v4/r1/paired_bootstrap.json": "f6cfe8006a2ee096ac189d1e39e2127df616071c93909a3993a99e0798e65ee4"
+  },
+  "output_sha256": {
+    "reproducibility/v4/final/directional_failure_analysis.json": "db5924f831839c91ea50a41710de0bd2a0e3bf497cb33127f32e550bf2c2ad77",
+    "reproducibility/v4/final/final_claim_matrix.json": "8b18995fbc0e36edbea2d6144cda8892c5c06068c271d6a5891156dbf3ac9a4d",
+    "reproducibility/v4/final/final_gate.json": "be448e1c0fe4a33eb216a48a3d1f41e9e9f8c39341cb085f1931cfa10b5d5498",
+    "reproducibility/v4/final/final_method_status.json": "1ee93e6606af2748e792bbdf9016610a46cc5e26d764e1e05e1be7f17fb91e08",
+    "reproducibility/v4/final/final_metric_summary.json": "f99a21e0089aebfb9862a3577afe8c8fc389f4501ec7673beabcffc8426f9eac",
+    "reproducibility/v4/final/pareto_analysis.json": "dc1fa4c32f1b603a3baab6c2d307645c265b9f6863652d3b3137105b99e64c62",
+    "reproducibility/v4/final/resume_claims.json": "85e1971d7289a8c1c257ca52eb644d007b71c931dbc61be162d824ea29f75062",
+    "reproducibility/v4/final/simultaneous_directional_samples.csv": "03b2898cc086eeaf4c9ad0e6c7b1bb8780e6a36c9f5b246b1c0a74b26275675b",
+    "reproducibility/v4/final/simultaneous_tail_audit.json": "3e66ddb9c5e9843a4e1bac4498e10aaf5e4079c046b6e68c53d6c6d39bf6f0db",
+    "reproducibility/v4/final/unused_holdout_manifest.json": "fe697f3c452edd28559970fe4ef4b8a89d9b8dab45b385a27ba85d4355360d45",
+    "reproducibility/v4/final/v5_recommendation.json": "c486b97f4945a25d4493c3bd9be89a8c9720427bb88ccafb35669fe97339e802",
+    "docs/V4_FINAL_TECHNICAL_REPORT.md": "aac3b7717eac78c0b543d1fb3660d2369253a45b2e339cea4612c0283c7e7da0"
+  },
+  "new_controller_performance_executed": false,
+  "holdout_executed": false,
+  "v5_started": false
+}

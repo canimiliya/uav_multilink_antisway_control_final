@@ -1,0 +1,19 @@
+{
+  "task": "V4-R2-FINAL-EVIDENCE-FREEZE-AND-V5-DECISION-EVIDENCE-R1",
+  "start_head": "720e65ecc1ae0104fff00c7498ca19d7c8878038",
+  "protected_tree_ids": {
+    "reproducibility/v3": "956e77658e01efabb110dcf1934215af344a620d",
+    "reproducibility/v4/r0": "0eadf8a8b9e173bd9d73e06521e94a42a0938b70",
+    "reproducibility/v4/r1": "0406181f317c60ca16687099841593d48f89efe3"
+  },
+  "v3_unchanged": true,
+  "v4_r0_unchanged": true,
+  "v4_r1_unchanged": true,
+  "cart_ofmpc_development_winner": false,
+  "cart_ofmpc_mechanism_improvement": true,
+  "strong_tail_failure_preserved": true,
+  "new_controller_performance_executed": false,
+  "v4_holdout_executed": false,
+  "v5_started": false,
+  "result": "V4_CLOSED_WITH_MECHANISM_IMPROVEMENT_BUT_NO_QUALIFIED_SELF"
+}
