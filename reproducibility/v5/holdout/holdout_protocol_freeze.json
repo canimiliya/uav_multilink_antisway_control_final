@@ -1,0 +1,26 @@
+{
+  "task": "V5-ONE-SHOT-HOLDOUT-VALIDATION-R1",
+  "start_head": "5de1160e4a160f5fbab09603ae1a6596a2f5460f",
+  "one_shot": true,
+  "written_before_first_holdout_trajectory": true,
+  "controller_code_parameters_metrics_runner_manifest_locked": true,
+  "same_exact_manifest_all_participants": true,
+  "paper_not_run": true,
+  "technical_retry_rule": "OS crash, power/write/process failure only; same commit/config/sample; record reason",
+  "scientific_bug_rule": "HOLDOUT_COMPROMISED; do not repair and continue as the same Holdout",
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20260816,
+    "pairing": "exact sample_id",
+    "ci": [
+      0.025,
+      0.975
+    ]
+  },
+  "final_status_order": [
+    "V5_SELF_STRICT_HOLDOUT_WIN",
+    "V5_SELF_OVERALL_HOLDOUT_WIN",
+    "V5_SELF_DEVELOPMENT_WIN_NOT_CONFIRMED_ON_HOLDOUT"
+  ],
+  "holdout_executed_at_freeze": false
+}

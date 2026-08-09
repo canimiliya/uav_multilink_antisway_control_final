@@ -1,0 +1,14 @@
+{
+  "traditional_finalized": true,
+  "legacy_self_finalized": true,
+  "v5_self_finalized_and_qualified": true,
+  "paper_selection_process_finalized": true,
+  "paper_qualified_candidate_exists": false,
+  "paper_holdout_status": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+  "all_method_selection_outcomes_final": true,
+  "all_search_permanently_stopped": true,
+  "original_v5_contract_modified": false,
+  "v1_v4_unchanged": true,
+  "holdout_accessed_before_unlock": false,
+  "result": "V5_HOLDOUT_UNLOCKED"
+}
