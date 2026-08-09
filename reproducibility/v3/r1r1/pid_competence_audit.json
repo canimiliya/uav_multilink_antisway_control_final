@@ -7,11 +7,11 @@
   },
   "observed": {
     "safety_rate": 1.0,
-    "success_rate": 0.3333333333333333,
-    "calm_axis_acquired_count": 4,
-    "position_rmse_3d_m": 0.3550208540759499
+    "success_rate": 0.48,
+    "calm_axis_acquired_count": 6,
+    "position_rmse_3d_m": 0.3828861939327448
   },
   "pass": false,
-  "selected_candidate": "cascaded_pid_061",
+  "selected_candidate": "cascaded_relative_pid_007",
   "holdout_executed": false
 }

@@ -27,6 +27,16 @@
       "selection_rule_changed": false,
       "candidate_set_changed": false,
       "development_manifest_changed": false
+    },
+    {
+      "attempt": 4,
+      "workers": 8,
+      "status": "COMPLETE",
+      "scope": "Preregistered Rounds C and D",
+      "completed_case_count": 1074,
+      "candidate_set_changed": true,
+      "change_authorized_by": "pid_refinement_protocol.json",
+      "holdout_executed": false
     }
   ],
   "holdout_executed": false

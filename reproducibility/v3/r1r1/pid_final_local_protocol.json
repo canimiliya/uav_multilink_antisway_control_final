@@ -1,0 +1,15 @@
+{
+  "amendment": "V3-R1R1-E-FINAL-LOCAL-COMPOSITION",
+  "written_before_performance": true,
+  "purpose": "One final finite hypothesis-driven search; stop the PID family if no candidate passes.",
+  "WHY_EXPANDED": "Round D exposed complementary axis behavior: candidate 007 had the highest success count (36/75) and 6/6 calm-axis acquisition but late y divergence; candidate 041 had 6/6 calm-axis acquisition and passed the 0.25 m RMSE threshold; candidate 035 had the lowest RMSE. The controller is per-axis, so recombining only observed axis parameter blocks directly tests whether these strengths coexist without widening any numerical range.",
+  "OLD_RANGE": "48 broad relative-velocity candidates followed by six full-Development finalists",
+  "NEW_RANGE": "18 exhaustive x/y/z donor combinations: x from {007,041,035}, y from {041,035}, z from {007,041,035}; scalar correction slew and integral limit are the arithmetic means of the three selected donor values",
+  "candidate_budget": 18,
+  "evaluation_sample_count_each": 75,
+  "selection_rule": ["competence pass first", "safety count descending", "calm-axis acquisition count descending", "success count descending", "position RMSE ascending", "acquisition median ascending", "orientation RMSE ascending", "effort ascending", "candidate ID ascending"],
+  "stop_rule": "If none of the 18 candidates passes all frozen competence thresholds, return BLOCKED_V3_PID_TRADITIONAL_FAMILY with no further tuning.",
+  "benchmark_changed": false,
+  "holdout_execution_allowed": false,
+  "advanced_execution_allowed": false
+}

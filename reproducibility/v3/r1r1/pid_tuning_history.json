@@ -9,61 +9,72 @@
       "round": "R1R1-B",
       "candidate_count": 8,
       "case_count": 75
+    },
+    {
+      "round": "R1R1-C",
+      "candidate_count": 48,
+      "case_count": 13
+    },
+    {
+      "round": "R1R1-D",
+      "candidate_count": 6,
+      "case_count": 75
     }
   ],
-  "total_unique_candidates_evaluated": 72,
-  "authoritative_case_executions": 1432,
+  "total_unique_candidates_evaluated": 126,
+  "authoritative_case_executions": 2506,
   "all_attempts_retained": true,
   "execution_audit": "pid_execution_audit.json",
   "selected": {
-    "candidate_id": "cascaded_pid_061",
+    "candidate_id": "cascaded_relative_pid_007",
     "sample_count": 75,
     "safe_sample_count": 75,
-    "task_success_count": 25,
+    "task_success_count": 36,
     "safety_rate": 1.0,
-    "success_rate": 0.3333333333333333,
-    "acquisition_median_s": 3.24,
-    "position_rmse_3d_m": 0.3550208540759499,
-    "orientation_rmse_deg": 0.7041464341023346,
-    "ramp_peak_position_error_m": 0.6782666916402925,
-    "ramp_steady_state_position_error_m": 1.6756972053328258,
-    "total_acceleration_effort": 6.124456992481669,
+    "success_rate": 0.48,
+    "acquisition_median_s": 3.0650000000000004,
+    "position_rmse_3d_m": 0.3828861939327448,
+    "orientation_rmse_deg": 0.5774952534714999,
+    "ramp_peak_position_error_m": 0.4337049481771983,
+    "ramp_steady_state_position_error_m": 1.6596967330693166,
+    "total_acceleration_effort": 7.200505166151011,
     "parameters": {
-      "candidate_id": "cascaded_pid_061",
+      "candidate_id": "cascaded_relative_pid_007",
       "uav_kp": [
-        0.4389290477363431,
-        0.4389290477363431,
-        1.7354078336487042
+        0.48867289851180795,
+        0.5274468914348825,
+        2.6337323750795765
       ],
       "uav_kd": [
-        3.4974487716889886,
-        3.4974487716889886,
-        4.949259390824762
+        2.22217353760614,
+        6.99638760169997,
+        3.824911498356344
       ],
       "uav_ki": [
-        0.1919913844321036,
-        0.1919913844321036,
-        0.026763720295116644
+        0.23661659265799365,
+        0.21706509734685092,
+        0.19883893370556166
       ],
       "tip_kp": [
-        0.5137306298841408,
-        0.5137306298841408,
-        0.09353969321807315
+        0.35025352831652395,
+        0.04826873755995449,
+        0.22224589774922432
       ],
       "tip_kd": [
-        0.6671070813485961,
-        0.6671070813485961,
-        0.0698140514467288
+        0.014200466963988934,
+        0.15717863519746822,
+        0.18132327099714712
       ],
       "correction_limit_m": [
-        0.08265392367976052,
-        0.08265392367976052,
-        0.02611250460496481
+        0.11025026326783037,
+        0.030390348674764523,
+        0.035216582603129314
       ],
-      "correction_slew_m_per_update": 0.09693266769673356,
-      "integral_limit": 0.3954002436293109
+      "correction_slew_m_per_update": 0.04037111026333381,
+      "integral_limit": 0.24488745234477247,
+      "tip_velocity_mode": "relative_to_uav"
     },
-    "calm_axis_acquired_count": 4,
+    "calm_axis_acquired_count": 6,
     "competence_pass": false
   }
 }
