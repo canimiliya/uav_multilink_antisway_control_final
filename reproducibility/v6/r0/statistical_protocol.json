@@ -1,0 +1,18 @@
+{
+  "pairing": "exact sample_id",
+  "resamples": 10000,
+  "bootstrap_seed": 20260819,
+  "ci_quantiles": [
+    0.025,
+    0.975
+  ],
+  "cohorts": [
+    "overall",
+    "normal",
+    "strong",
+    "aligned",
+    "opposed",
+    "cross"
+  ],
+  "seed_hunting_forbidden": true
+}

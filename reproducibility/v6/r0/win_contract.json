@@ -1,0 +1,29 @@
+{
+  "primary_traditional": "full_lqr_048",
+  "best_traditional_fields": [
+    "safety",
+    "success"
+  ],
+  "development_qualification": {
+    "safety_no_worse_best_traditional": true,
+    "success_no_worse_best_traditional": true,
+    "position_improvement_vs_full_min": 0.05,
+    "acquisition_degradation_vs_full_max": 0.05,
+    "strong_p90_degradation_vs_full_max": 0.1,
+    "catastrophic_pair_max": 0,
+    "meaningful_extra": "strong mean improvement vs Full-LQR >=5% OR normal acquisition improvement vs Full-LQR >=5%",
+    "bootstrap_lower_gt_zero": true
+  },
+  "holdout_overall": {
+    "safety_no_worse_full": true,
+    "success_no_worse_full": true,
+    "position_improvement_vs_full_min": 0.05,
+    "acquisition_degradation_vs_full_max": 0.05,
+    "bootstrap_lower_gt_zero": true,
+    "strong_p90_degradation_vs_full_max": 0.1,
+    "catastrophic_pair_max": 0
+  },
+  "strict_additional": {
+    "acquisition_improvement_vs_full_min": 0.05
+  }
+}

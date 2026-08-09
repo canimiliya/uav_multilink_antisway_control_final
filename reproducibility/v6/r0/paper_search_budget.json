@@ -1,0 +1,16 @@
+{
+  "per_paper_unique_configuration_planned": 32,
+  "per_paper_unique_configuration_max": 48,
+  "stage_a": {
+    "maximum": 8,
+    "sample_count_each": 24,
+    "selection_authority": false
+  },
+  "stage_b": {
+    "maximum": 24,
+    "sample_count_each": 120,
+    "selection_authority": true
+  },
+  "selection_rule": "all qualification gates, then gate count, strong P90, overall position, acquisition, success, effort, runtime, candidate id",
+  "budget_extension_after_failure": false
+}

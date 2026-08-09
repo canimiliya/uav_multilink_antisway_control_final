@@ -1,0 +1,31 @@
+{
+  "search_years": [
+    2025,
+    2026
+  ],
+  "suite_size_min": 2,
+  "suite_size_max": 3,
+  "primary_source_required": true,
+  "full_equations_required": true,
+  "priority": [
+    "Yu et al. 2026 finite-time anti-swing plus compensation-function observer",
+    "Kang and Shan 2026 fully-actuated-system robust controller"
+  ],
+  "fallback_predeclared_before_performance": true,
+  "ranking": [
+    "primary-source completeness",
+    "problem relevance",
+    "five-link adaptability",
+    "same acceleration authority",
+    "publication quality"
+  ],
+  "replacement_after_suite_freeze": false,
+  "selection_by_performance": false,
+  "adaptation_labels": [
+    "PRESERVED",
+    "ADAPTED",
+    "OMITTED",
+    "UNAVAILABLE"
+  ],
+  "unfaithful_action": "UNFAITHFUL_ADAPTATION; withdraw before performance"
+}

@@ -1,0 +1,11 @@
+{
+  "development_manifest.json": "ab98f262652f82714b70fa104e248f4146cdf492457ca5d44066b349cb83fa40",
+  "holdout_manifest.json": "573f68b6df7ee559f9cffcdd787896d0f7b4cefc016a253355bd8172621e51b9",
+  "paper_search_budget.json": "9cda4c90f3c3d59dccac30664286bbae8f81d9fb3f884c8a23dd758e795e1c1e",
+  "paper_selection_contract.json": "6e4d178f843105fa8944a26f374ade6a9364292ad4705ac343b5480d3f3b137f",
+  "research_contract.json": "23003add57b75217c7e8bbc00a37f83b7bb945aa94a6951ba4236f4e09b3928e",
+  "source_freeze.json": "74eeec72bb7c85019050e84c910c71b1de3cf0e2214000a98acf8aa99064797e",
+  "split_integrity.json": "537c1fec0f4cedfba46de38fcc8607fa20582e66a146d4025f1c8a71696dd5b0",
+  "statistical_protocol.json": "fe93a945ab94fb12e5f5ce21bdb26e48bcedb60bce3aea11c8e00ebc7fd79776",
+  "win_contract.json": "93d00d5f8efe5d39033375c1cbaeaf76f25455daf671df511ef7209d7f29d2d5"
+}
