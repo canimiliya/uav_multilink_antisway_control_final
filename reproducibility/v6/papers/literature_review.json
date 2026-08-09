@@ -1,0 +1,63 @@
+{
+  "workflow": "multi-source-search",
+  "search_date": "2026-08-09",
+  "routing": "T1 primary publisher/arXiv sources; academic-search MCP unavailable, primary-source web fallback used",
+  "selection_completed_before_v6_paper_performance": true,
+  "deduplication": "normalized DOI/arXiv identifier, then normalized title and first author",
+  "candidates": [
+    {
+      "paper_id": "YU2026",
+      "title": "Robust finite-time anti-swing control for quadrotor slung-load system based on compensation function observer",
+      "authors": "Yu et al.",
+      "venue": "PLOS ONE 21(4):e0331662",
+      "year": 2026,
+      "doi": "10.1371/journal.pone.0331662",
+      "peer_reviewed": true,
+      "open_access": true,
+      "primary_article": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0331662",
+      "manuscript_sha256": "d741f5409be7d6bbd1c0016515264e1bad62e3ec621b99b38bd0ec198fa95b34",
+      "supplementary_package_sha256": "468a6f8d62269c41382edb6209d7d09c2e2b96defbbbbbbd7bdf8eaf522369ec",
+      "supplementary_audit": "Package contains LaTeX manuscript source, figures, and bibliography; it does not contain executable simulation source code.",
+      "full_equations_available": true,
+      "selected": true,
+      "selection_role": "Priority Paper A"
+    },
+    {
+      "paper_id": "KANG2026",
+      "title": "Robust control of aerial cable-suspended payload transportation via fully actuated system approach",
+      "authors": "Kang and Shan",
+      "venue": "Control Engineering Practice 170:106837",
+      "year": 2026,
+      "doi": "10.1016/j.conengprac.2026.106837",
+      "peer_reviewed": true,
+      "primary_abstract": "https://www.sciencedirect.com/science/article/pii/S096706612600081X",
+      "full_equations_available": false,
+      "selected": false,
+      "reason": "Only abstract-level primary content was legally and reliably retrievable before suite freeze; formula guessing is forbidden."
+    },
+    {
+      "paper_id": "SEP2026",
+      "title": "SEP-NMPC: Safety Enhanced Passivity-Based Nonlinear Model Predictive Control for a UAV Slung Payload System",
+      "authors": "Rezaei, Kang, Haridevan, and Shan",
+      "venue": "ICRA 2026 accepted preprint",
+      "year": 2026,
+      "arxiv": "2603.08860v1",
+      "primary_full_text": "https://arxiv.org/html/2603.08860v1",
+      "tex_source_sha256": "379d9a1734fdf179a48d1ad49a9ee52321eba6eb2238da9eb0c99bc68e2aed6e",
+      "html_sha256": "fb283983e1a002aec703069a9f655f415ecbff4bba274fcf7a60137eb8fb51b4",
+      "full_equations_available": true,
+      "selected": true,
+      "selection_role": "predeclared fallback for unavailable Priority Paper B"
+    },
+    {
+      "paper_id": "ACTUATORS2025",
+      "title": "Composite Perturbation-Rejection Trajectory-Tracking Control for a Quadrotor-Slung Load System",
+      "venue": "Actuators 14(7):335",
+      "year": 2025,
+      "doi": "10.3390/act14070335",
+      "full_equations_available": true,
+      "selected": false,
+      "reason": "Complete 2026 fallback SEP-NMPC ranked higher on recency and direct constrained-MPC authority compatibility."
+    }
+  ]
+}

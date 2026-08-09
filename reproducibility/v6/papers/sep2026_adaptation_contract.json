@@ -1,0 +1,26 @@
+{
+  "method": "SEP2026-PASSIVITY-NMPC-ADAPTED-5LINK",
+  "label": "adaptation, not exact reproduction",
+  "PRESERVED": [
+    "Eq. (7a)-(7d) predictive objective, model constraints, authority set, and strict passivity inequality",
+    "Eq. (8) shaped storage: kinetic/task velocity, multi-link swing energy proxy, and position shaping",
+    "Eq. (10) passivity filter with positive rho and epsilon",
+    "finite-horizon constrained optimization at every 20 Hz update"
+  ],
+  "ADAPTED": [
+    "nonlinear single-cable state mapped to frozen linearized 20-state five-link model and measured task outputs",
+    "force/shaped input mapped to world-frame acceleration and common geometric inner loop",
+    "payload swing energy mapped to frozen orientation and angular task outputs"
+  ],
+  "OMITTED": [
+    "obstacle HOCBF inequalities because the frozen benchmark contains no obstacle geometry or obstacle task"
+  ],
+  "UNAVAILABLE": [],
+  "core_innovation_retained": true,
+  "faithfulness": "FAITHFUL_PASSIVITY_NMPC_ADAPTATION_WITH_INAPPLICABLE_OBSTACLE_MODULE_OMITTED",
+  "authority": {
+    "output": "world acceleration",
+    "absolute_limit": 2.0,
+    "slew_per_update": 0.25
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "method": "YU2026-FT-CFO-ADAPTED-5LINK",
+  "label": "adaptation, not exact reproduction",
+  "PRESERVED": [
+    "Eq. (15) compensation-function observer structure with position and velocity innovations and intermediate z0",
+    "Eq. (28) finite-time signed-power virtual velocity structure",
+    "Eq. (39)-(45) payload energy/swing terms",
+    "Eq. (49) finite-time position/velocity feedback plus disturbance compensation and swing rejection"
+  ],
+  "ADAPTED": [
+    "single rigid cable and point load mapped to measured five-link cutter-tip relative displacement and velocity",
+    "force command U1 mapped to world-frame acceleration [ax, ay, az]",
+    "continuous observer integrated at frozen 20 Hz and bounded by the common physical limiter"
+  ],
+  "OMITTED": [
+    "quadrotor attitude/torque loop because the same frozen geometric inner loop is mandatory"
+  ],
+  "UNAVAILABLE": [
+    "executable simulation source code; the PLOS supporting package is manuscript source only"
+  ],
+  "core_innovation_retained": true,
+  "faithfulness": "FAITHFUL_MATHEMATICAL_ADAPTATION",
+  "authority": {
+    "output": "world acceleration",
+    "absolute_limit": 2.0,
+    "slew_per_update": 0.25
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "V6_PAPER_SUITE_FROZEN_BEFORE_PERFORMANCE",
+  "suite_size": 2,
+  "methods": [
+    "YU2026-FT-CFO-ADAPTED-5LINK",
+    "SEP2026-PASSIVITY-NMPC-ADAPTED-5LINK"
+  ],
+  "priority_b_exclusion": "KANG2026_FULL_TEXT_UNAVAILABLE_NO_FORMULA_GUESSING",
+  "replacement_after_freeze_allowed": false,
+  "paper_performance_executed": false,
+  "holdout_accessed": false,
+  "holdout_executed": false
+}
