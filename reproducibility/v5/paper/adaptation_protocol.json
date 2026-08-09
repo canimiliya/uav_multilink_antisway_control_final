@@ -1,0 +1,396 @@
+{
+  "task": "V5-PAPER-ADVANCED-JIROUSEK2025-INCREMENTAL-MPC-R1",
+  "start_head": "c1b63ab318b7d5db9f60b191614e39884cba564b",
+  "written_before_paper_performance": true,
+  "source_equations": {
+    "24": "augmented [x,u] dynamics driven by delta-u",
+    "22_23": "QP with quadratic tracking/input costs and constraints",
+    "25_26": "payload position plus input output penalty and delta-u penalty"
+  },
+  "adaptation": {
+    "source_single_cable_state": "replaced by frozen identified 20D five-link error model without changing plant",
+    "payload_position_output": "frozen C_pos tip-position map",
+    "source_attitude_command": "frozen world-frame acceleration command",
+    "incremental_decision": "delta world acceleration",
+    "input_constraints": "per-axis absolute 2.0 m/s2",
+    "increment_constraints": "per-update 0.25 m/s2",
+    "outer_rate_hz": 20.0,
+    "state_estimator": "not duplicated because the benchmark already exposes the same causal measured state contract to every method",
+    "trajectory_planner": "not adapted because the task target and reference generator are frozen"
+  },
+  "core_mechanism_preserved": true,
+  "noncausal_information": false,
+  "traditional_self_unchanged": true,
+  "search": {
+    "maximum_unique_configurations": 32,
+    "stage_a": {
+      "selection_authority": false,
+      "candidate_count": 8,
+      "sample_count_each": 24,
+      "candidates": [
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_a_001",
+          "horizon_updates": 10,
+          "position_weight": 60.0,
+          "velocity_weight": 8.0,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 2.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_a_002",
+          "horizon_updates": 6,
+          "position_weight": 60.0,
+          "velocity_weight": 8.0,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 2.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_a_003",
+          "horizon_updates": 14,
+          "position_weight": 60.0,
+          "velocity_weight": 8.0,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 2.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_a_004",
+          "horizon_updates": 10,
+          "position_weight": 20.0,
+          "velocity_weight": 8.0,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 2.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_a_005",
+          "horizon_updates": 10,
+          "position_weight": 120.0,
+          "velocity_weight": 8.0,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 2.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_a_006",
+          "horizon_updates": 10,
+          "position_weight": 60.0,
+          "velocity_weight": 8.0,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 0.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_a_007",
+          "horizon_updates": 10,
+          "position_weight": 60.0,
+          "velocity_weight": 8.0,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 8.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_a_008",
+          "horizon_updates": 10,
+          "position_weight": 60.0,
+          "velocity_weight": 8.0,
+          "orientation_weight": 8.0,
+          "angular_weight": 2.0,
+          "input_weight": 0.1,
+          "delta_weight": 2.0
+        }
+      ]
+    },
+    "stage_b": {
+      "candidate_count": 24,
+      "sample_count_each": 120,
+      "candidates": [
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_001",
+          "horizon_updates": 6,
+          "position_weight": 30.0,
+          "velocity_weight": 4.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 0.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_002",
+          "horizon_updates": 6,
+          "position_weight": 30.0,
+          "velocity_weight": 4.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 3.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_003",
+          "horizon_updates": 6,
+          "position_weight": 70.0,
+          "velocity_weight": 10.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 0.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_004",
+          "horizon_updates": 6,
+          "position_weight": 70.0,
+          "velocity_weight": 10.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 3.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_005",
+          "horizon_updates": 10,
+          "position_weight": 30.0,
+          "velocity_weight": 4.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 0.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_006",
+          "horizon_updates": 10,
+          "position_weight": 30.0,
+          "velocity_weight": 4.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 3.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_007",
+          "horizon_updates": 10,
+          "position_weight": 70.0,
+          "velocity_weight": 10.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 0.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_008",
+          "horizon_updates": 10,
+          "position_weight": 70.0,
+          "velocity_weight": 10.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 3.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_009",
+          "horizon_updates": 14,
+          "position_weight": 30.0,
+          "velocity_weight": 4.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 0.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_010",
+          "horizon_updates": 14,
+          "position_weight": 30.0,
+          "velocity_weight": 4.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 3.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_011",
+          "horizon_updates": 14,
+          "position_weight": 70.0,
+          "velocity_weight": 10.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 0.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_012",
+          "horizon_updates": 14,
+          "position_weight": 70.0,
+          "velocity_weight": 10.5,
+          "orientation_weight": 2.0,
+          "angular_weight": 0.5,
+          "input_weight": 0.1,
+          "delta_weight": 3.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_013",
+          "horizon_updates": 10,
+          "position_weight": 90.0,
+          "velocity_weight": 12.0,
+          "orientation_weight": 0.5,
+          "angular_weight": 0.125,
+          "input_weight": 0.03,
+          "delta_weight": 1.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_014",
+          "horizon_updates": 10,
+          "position_weight": 90.0,
+          "velocity_weight": 12.0,
+          "orientation_weight": 0.5,
+          "angular_weight": 0.125,
+          "input_weight": 0.03,
+          "delta_weight": 6.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_015",
+          "horizon_updates": 10,
+          "position_weight": 90.0,
+          "velocity_weight": 12.0,
+          "orientation_weight": 0.5,
+          "angular_weight": 0.125,
+          "input_weight": 0.3,
+          "delta_weight": 1.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_016",
+          "horizon_updates": 10,
+          "position_weight": 90.0,
+          "velocity_weight": 12.0,
+          "orientation_weight": 0.5,
+          "angular_weight": 0.125,
+          "input_weight": 0.3,
+          "delta_weight": 6.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_017",
+          "horizon_updates": 10,
+          "position_weight": 90.0,
+          "velocity_weight": 12.0,
+          "orientation_weight": 3.0,
+          "angular_weight": 0.75,
+          "input_weight": 0.03,
+          "delta_weight": 1.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_018",
+          "horizon_updates": 10,
+          "position_weight": 90.0,
+          "velocity_weight": 12.0,
+          "orientation_weight": 3.0,
+          "angular_weight": 0.75,
+          "input_weight": 0.03,
+          "delta_weight": 6.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_019",
+          "horizon_updates": 10,
+          "position_weight": 90.0,
+          "velocity_weight": 12.0,
+          "orientation_weight": 3.0,
+          "angular_weight": 0.75,
+          "input_weight": 0.3,
+          "delta_weight": 1.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_020",
+          "horizon_updates": 10,
+          "position_weight": 90.0,
+          "velocity_weight": 12.0,
+          "orientation_weight": 3.0,
+          "angular_weight": 0.75,
+          "input_weight": 0.3,
+          "delta_weight": 6.0
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_021",
+          "horizon_updates": 8,
+          "position_weight": 45.0,
+          "velocity_weight": 9.0,
+          "orientation_weight": 5.0,
+          "angular_weight": 1.0,
+          "input_weight": 0.08,
+          "delta_weight": 1.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_022",
+          "horizon_updates": 8,
+          "position_weight": 90.0,
+          "velocity_weight": 18.0,
+          "orientation_weight": 5.0,
+          "angular_weight": 1.0,
+          "input_weight": 0.08,
+          "delta_weight": 1.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_023",
+          "horizon_updates": 12,
+          "position_weight": 45.0,
+          "velocity_weight": 9.0,
+          "orientation_weight": 5.0,
+          "angular_weight": 1.0,
+          "input_weight": 0.08,
+          "delta_weight": 1.5
+        },
+        {
+          "method": "JIROUSEK2025-INCREMENTAL-MPC-ADAPTED-5LINK",
+          "candidate_id": "paper_b_024",
+          "horizon_updates": 12,
+          "position_weight": 90.0,
+          "velocity_weight": 18.0,
+          "orientation_weight": 5.0,
+          "angular_weight": 1.0,
+          "input_weight": 0.08,
+          "delta_weight": 1.5
+        }
+      ],
+      "selection_rule": "V5 Overall gate first; then position, acquisition, success, effort, runtime, candidate id"
+    }
+  },
+  "qualification": "all frozen V5 Overall gates",
+  "no_qualified_candidate": "PAPER_DEVELOPMENT_INELIGIBLE; no replacement paper",
+  "holdout_executed": false
+}

@@ -1,0 +1,16 @@
+{
+  "selected_title": "Towards Fully Onboard State Estimation and Trajectory Tracking for UAVs with Suspended Payloads",
+  "authors": [
+    "Martin Jirousek",
+    "Tomas Baca",
+    "Martin Saska"
+  ],
+  "year": 2025,
+  "venue": "ICINCO 2025",
+  "doi": "10.5220/0013789200003982",
+  "arxiv": "2508.11547v2",
+  "primary_source_complete": true,
+  "selection_reason": "Published, openly available, complete incremental-MPC mathematics, payload-position objective, causal onboard sensing, direct compatibility with the frozen acceleration and slew interface.",
+  "paper_claim_preserved": "incremental augmented-state MPC optimizes command increments and constrained physical inputs to smooth actuation while tracking payload position",
+  "performance_seen_before_selection": false
+}

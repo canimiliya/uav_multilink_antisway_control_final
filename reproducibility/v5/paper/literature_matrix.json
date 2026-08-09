@@ -1,0 +1,56 @@
+{
+  "workflow": "multi-source-search",
+  "search_date": "2026-08-09",
+  "academic_search_mcp_available": false,
+  "fallback": "T1 primary-source web search",
+  "candidates": [
+    {
+      "title": "Towards Fully Onboard State Estimation and Trajectory Tracking for UAVs with Suspended Payloads",
+      "year": 2025,
+      "venue": "ICINCO 2025",
+      "doi": "10.5220/0013789200003982",
+      "primary_full_source": "https://arxiv.org/html/2508.11547v2",
+      "method": "linear Kalman filter + incremental MPC + MPCC",
+      "five_link_adaptability": "high",
+      "same_authority_adaptability": "high",
+      "selected": true
+    },
+    {
+      "title": "ES-HPC-MPC: Exponentially Stable Hybrid Perception Constrained MPC for Quadrotor with Suspended Payloads",
+      "year": 2025,
+      "venue": "IEEE RA-L",
+      "primary_full_source": "https://arxiv.org/html/2504.08841v2",
+      "method": "hybrid MPC with ES-CLF and perception CBF",
+      "five_link_adaptability": "low: benchmark has no slack cable or camera FoV state",
+      "selected": false
+    },
+    {
+      "title": "Trajectory tracking and load anti-swing control under time-varying disturbances",
+      "year": 2025,
+      "venue": "Control Engineering Practice",
+      "doi": "10.1016/j.conengprac.2025.106518",
+      "method": "dual TVUDE",
+      "five_link_adaptability": "medium",
+      "selected": false
+    },
+    {
+      "title": "Improved extended disturbance observer-based integral backstepping sliding mode control",
+      "year": 2025,
+      "venue": "Aerospace Science and Technology",
+      "doi": "10.1016/j.ast.2025.110042",
+      "method": "IEDO + integral backstepping sliding mode",
+      "five_link_adaptability": "medium-low: single-load angle decoupling",
+      "selected": false
+    },
+    {
+      "title": "Modeling and Control for UAV with Off-center Slung Load",
+      "year": 2026,
+      "primary_full_source": "https://arxiv.org/abs/2601.03386",
+      "method": "suspension-point cascade",
+      "selected": false,
+      "reason": "already adapted and closed in V3; not a fresh V5 Paper route"
+    }
+  ],
+  "deduplication": "normalized DOI, then normalized title + first author",
+  "selection_not_based_on_ease_of_defeat": true
+}
