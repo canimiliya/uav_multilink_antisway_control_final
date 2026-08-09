@@ -1,0 +1,41 @@
+{
+  "task": "V9-NEURAL-PREDICTOR-MPC-RECENT-PAPER-STRONG-BASELINE-AND-FINAL-CLOSURE-R1",
+  "result": "BLOCKED_V9_NEURAL_PREDICTOR_NOT_VALIDATED",
+  "source_head": "92188e0eee0e92ed9405af07e80839360e30a19c",
+  "branch": "research-v9",
+  "checkpoints": {
+    "upstream_pin_head": "18e496436885a6e0833c684ff5cade07540563e0",
+    "v9_contract_freeze_head": "858aab21860405d9d12f615f826147b1108e7586",
+    "training_data_freeze_head": "9e1f8e69287cc9d7763f0e9a4470400460935e2a",
+    "predictor_freeze_head": "6b3d0bad3fa80eba9ce3b2e1ac996118b6880b1e",
+    "paper_protocol_freeze_head": "NOT_CREATED_PREDICTOR_INELIGIBLE",
+    "paper_implementation_head": "NOT_CREATED_PREDICTOR_INELIGIBLE",
+    "paper_development_final_head": "NOT_CREATED_PREDICTOR_INELIGIBLE",
+    "paper_freeze_head": "NOT_CREATED_PREDICTOR_INELIGIBLE",
+    "v9_holdout_protocol_head": "NOT_CREATED_PREDICTOR_INELIGIBLE"
+  },
+  "predictor": {
+    "models_evaluated": 24,
+    "selected_diagnostic_model": "np_v9_14",
+    "selected_is_qualified": false,
+    "force_improvement_vs_best_simple": -0.10500639567844061,
+    "torque_improvement_vs_best_simple": 0.17297432951627512,
+    "all_rmse_improvement_vs_best_simple": -0.08532187590022189,
+    "competence_pass": false
+  },
+  "np_mpc_configurations_executed": 0,
+  "development_executed": false,
+  "holdout_executed": false,
+  "THREE_TRADITIONAL_STRONG": true,
+  "SATC_SELF_VALIDATED": true,
+  "RECENT_PAPER_STRONG_BASELINE_VALIDATED": false,
+  "PAPER_GT_TRADITIONAL": false,
+  "PAPER_VS_SATC_TRADEOFF_REPORTED": false,
+  "TRADEOFF_VALID": false,
+  "PROJECT_RESEARCH_COMPLETE": false,
+  "resume_outputs_generated": false,
+  "highest_validated_claim": "V5_SELF_OVERALL_HOLDOUT_WIN",
+  "v9_closed": true,
+  "automatic_v10_started": false,
+  "final_status": "V9_CLOSED_NO_DEVELOPMENT_OR_HOLDOUT"
+}

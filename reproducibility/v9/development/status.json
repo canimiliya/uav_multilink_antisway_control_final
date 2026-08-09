@@ -1,0 +1,14 @@
+{
+  "status": "NOT_RUN_PREDICTOR_INELIGIBLE",
+  "predictor_validated": false,
+  "np_mpc_implemented": false,
+  "paper_candidate_exists": false,
+  "manifest_source": "reproducibility/v7/r0/development_manifest.json",
+  "manifest_sha256": "b51d9958b706354867d593d61a93336c702561e1e3b3e9dfcd5488ced0886cc3",
+  "manifest_unchanged": true,
+  "sample_count": 144,
+  "controller_configurations_executed": 0,
+  "authoritative_runs": 0,
+  "satc_comparison_executed": false,
+  "reason": "The preregistered Neural Predictor competence gate failed before NP-MPC implementation."
+}

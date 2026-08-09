@@ -1,0 +1,29 @@
+{
+  "reference_tag": "v8-research-final-2026-08-10",
+  "reference_commit": "92188e0eee0e92ed9405af07e80839360e30a19c",
+  "protected_paths_changed": [],
+  "all_present_protected_trees_match": true,
+  "trees": {
+    "reproducibility/frozen": "01b7503111617baca2460f93824acab235ff22bc",
+    "reproducibility/v1": "ABSENT_IN_REFERENCE_AND_HEAD",
+    "reproducibility/v2": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+    "reproducibility/v3": "956e77658e01efabb110dcf1934215af344a620d",
+    "reproducibility/v4": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+    "reproducibility/v5": "1134092eb80efc8639ce822d777f30c04a9af226",
+    "reproducibility/v6": "c6e50538a3a5c1d98829873331e8fd1f09713409",
+    "reproducibility/v7": "e5230eefa26044c40ad2b016afc5125bf44241e9",
+    "reproducibility/v8": "21ef52d0c8f1a510d7a124f27774a826a39b5880",
+    "src/uav_sway/v2": "ABSENT_IN_REFERENCE_AND_HEAD",
+    "src/uav_sway/v3": "868c6de2a551f35dbdec60483bce6dcda3f872f0",
+    "src/uav_sway/v4": "93ec99dbc607124036f64f95b23b61d1c89d0a9d",
+    "src/uav_sway/v5": "81639dc544d5b955dece38651f588e5280d2bfe1",
+    "src/uav_sway/v6": "4a8c8f2b235963588f59367be16794e9c85c6f19",
+    "src/uav_sway/v7": "144b496b4235d16523c25f286e1937f37115b2b0",
+    "src/uav_sway/v8": "59b4fa21c96fd3993225f87a5152e3987a16f8d6"
+  },
+  "v7_development_manifest_sha256": "b51d9958b706354867d593d61a93336c702561e1e3b3e9dfcd5488ced0886cc3",
+  "v7_holdout_manifest_sha256": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+  "traditional_parameters_unchanged": true,
+  "satc_parameters_unchanged": true,
+  "v1_v8_tags_moved": false
+}

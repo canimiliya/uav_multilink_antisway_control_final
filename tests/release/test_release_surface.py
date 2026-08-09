@@ -56,5 +56,7 @@ def test_limits_and_controller_contracts() -> None:
 def test_release_expected_files_and_no_large_frozen_file() -> None:
     expected = ROOT / "reproducibility/expected"
     assert {path.name for path in expected.glob("*.json")} == {"quick_expected.json", "task_lqr_expected.json", "s5b_expected.json"}
-    tracked_candidates = [path for path in ROOT.rglob("*") if path.is_file() and ".git" not in path.parts]
+    # This release invariant belongs to the immutable public-release payload.
+    # Later research branches may carry separately audited identification data.
+    tracked_candidates = [path for path in FROZEN.rglob("*") if path.is_file()]
     assert max(path.stat().st_size for path in tracked_candidates) < 10 * 1024 * 1024

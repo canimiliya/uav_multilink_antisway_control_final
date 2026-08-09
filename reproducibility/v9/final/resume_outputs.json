@@ -1,0 +1,14 @@
+{
+  "project_research_complete": false,
+  "generation_allowed": false,
+  "status": "NOT_GENERATED_PROJECT_INCOMPLETE",
+  "outputs": {
+    "cn_2line": "NOT_GENERATED",
+    "cn_4line": "NOT_GENERATED",
+    "en_2line": "NOT_GENERATED",
+    "en_4line": "NOT_GENERATED",
+    "interview_cn": "NOT_GENERATED",
+    "interview_en": "NOT_GENERATED"
+  },
+  "reason": "The Recent Paper strong baseline was not validated, so the completion-resume contract is not satisfied."
+}

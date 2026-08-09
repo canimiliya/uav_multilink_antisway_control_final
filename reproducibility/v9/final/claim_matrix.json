@@ -1,0 +1,26 @@
+{
+  "allowed": [
+    "The official Jin et al. Neural-Predictor code completed numerical-evaluation and training smoke tests after two documented Windows/artifact compatibility repairs.",
+    "The complete published wrapper ran, but its Neural Predictor metrics did not exactly match the repository's separately published CSV.",
+    "V9 generated a frozen 240-trajectory five-link identification bank using Full-LQR without wind truth as a training or runtime input.",
+    "Twenty-four preregistered Neural Predictor configurations were evaluated on a whole-trajectory validation split.",
+    "The diagnostic best model improved torque RMSE but did not beat the best simple estimator on force RMSE, so the preregistered predictor gate failed.",
+    "NP-MPC implementation, Development evaluation, SATC comparison, and the inherited one-shot Holdout were not executed.",
+    "The highest validated project claim remains V5_SELF_OVERALL_HOLDOUT_WIN."
+  ],
+  "forbidden": [
+    "JIN2025-NP-MPC-ADAPTED-5LINK > Traditional",
+    "Recent Paper Advanced > Traditional",
+    "JIN2025 adaptation > SATC",
+    "SATC > JIN2025 adaptation",
+    "Paper and SATC have a validated performance trade-off",
+    "RECENT_PAPER_STRONG_BASELINE_VALIDATED",
+    "PROJECT_RESEARCH_COMPLETE",
+    "physical-flight or hardware validation"
+  ],
+  "predictor_qualified": false,
+  "paper_controller_created": false,
+  "paper_development_executed": false,
+  "paper_holdout_executed": false,
+  "pure_simulation_boundary": true
+}
