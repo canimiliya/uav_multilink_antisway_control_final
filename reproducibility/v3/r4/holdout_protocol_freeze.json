@@ -1,0 +1,44 @@
+{
+  "task": "V3-R4-ONE-SHOT-HOLDOUT-VALIDATION-AND-FINAL-EVIDENCE-FREEZE-R1",
+  "start_head": "a668e1ebdd9de1341e6c1cd278ed0b21f730ed83",
+  "freeze_commit_definition": "the Git commit containing this file, the exact execution manifest, and the exact runner hashes below",
+  "freeze_commit_message": "research(v3): freeze one-shot Holdout protocol",
+  "protocol_frozen_before_first_holdout_trajectory": true,
+  "original_r0_contract_modified": false,
+  "primary_traditional": "full_lqr_048",
+  "bootstrap": {
+    "pairing": "exact sample_id",
+    "resamples": 10000,
+    "seed": 20260809,
+    "confidence_interval": 0.95,
+    "required_lower_bound": "> 0"
+  },
+  "file_sha256": {
+    "scripts/run_v3_r1_baselines.py": "757ada57f6fe676b16f580636cce1cc4baf5443622857dc9060d3115b10ca838",
+    "scripts/run_v3_r4_holdout.py": "516a14d004268d3455ce2c908b3e2cc2298531d84cd3eff1297b37da837adb0c",
+    "scripts/finalize_v3_r4_holdout.py": "03b9730251a1e9a9de1497959bf542b3949192cf72552bd018206fbd923930fb",
+    "src/uav_sway/v3/controllers.py": "45b61d298fe1653cb8dd294bd6928b4c53df4e3002186609d5ec3844613ab1d4",
+    "src/uav_sway/v3/dr_tsrmpc.py": "711b296cd14f968d08ac504e1553b50097692dc309631cb84079862e7458b6ed",
+    "src/uav_sway/v3/observation.py": "87dbd34d914aa2319eabc20199cd2e4f4d299581c6ce3af81b17e7d90ffbd675",
+    "src/uav_sway/v3/metrics.py": "f858b9351ae41e15dd92dc79b979d05431fd174f54f41164c0b4ac9893722642",
+    "reproducibility/frozen/model/model_5link_controlled.xml": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+    "configs/model_5link.yaml": "e2eaafd1a1b0066816c2150bbe42c466393cb871bfbb61366b7fa2765d730c5d",
+    "configs/aerodynamics.yaml": "485c399bcddbd6ba363fdc3d9ab8eb3fd09e0afbefe51a0825ef2559db6bd1a9",
+    "configs/s3_pid.yaml": "43fd2d9cd931e49ce6080b08b4892728f19939ca234b0e6482973c07d2ec530f",
+    "reproducibility/v3/r1r1/pid_freeze.json": "759561998a44f41f5688dab1199daa6c47f6c4ae3586e96070910625b2f5db64",
+    "reproducibility/v3/r1/full_lqr_freeze.json": "d98d569200dad66c0afb88042a93632c2318c1a62b92b286ba9e0bffdd8b9fa6",
+    "reproducibility/v3/r1/task_lqr_freeze.json": "0399190be129f34a1061dbee0258f160268def76b9fdc032b98b395d3a4589d9",
+    "reproducibility/v3/r2/self_freeze.json": "b779f6b72a1b59679c55c7890c4f9d936bc93cd2dbc85267df02e9e32d278127",
+    "reproducibility/v3/r0/win_contract.json": "e78e01ae111460c3889f13e3f13e11ae43affa68f55a15dd74b7953e43ee68c2",
+    "reproducibility/v3/r4/holdout_execution_manifest.json": "1a872be7adfac68ccbe4a8229a8b29bf94717bcef87da548b9935527291ff46f"
+  },
+  "protected_trees": {
+    "reproducibility/v3/r0": "36c63351b55e827e21423cd792ab5b96b294a479",
+    "reproducibility/v3/r1": "39855236f5c2890f184b38dd4d07394921b2cc23",
+    "reproducibility/v3/r1r1": "345472cc7ce95bcfe4660defc1c7c2194eb23fc4",
+    "reproducibility/v3/r2": "5db2db085ac2c3167eb7ff2d15b49cd5bca37f61",
+    "reproducibility/v3/r3": "230fa9292c878154e341e4b70fa27865629d6aae"
+  },
+  "paper_holdout_status": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+  "second_holdout_authorized": false
+}

@@ -85,7 +85,7 @@ def _wind_series(sample: dict) -> np.ndarray:
     if kind == "constant":
         return np.full_like(times, float(spec["speed_m_s"]))
     if kind == "ramp":
-        return 3.0 * np.clip((times - 2.0) / 6.0, 0.0, 1.0)
+        return float(spec["speed_m_s"]) * np.clip((times - 2.0) / 6.0, 0.0, 1.0)
     if kind == "stochastic":
         rng = np.random.Generator(np.random.PCG64(int(spec["seed"])))
         alpha = float(np.exp(-LOG_DT / 1.0))
