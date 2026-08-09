@@ -1,0 +1,34 @@
+{
+  "source_frozen_before_performance": true,
+  "implementation_frozen_before_performance": true,
+  "rounds": [
+    {
+      "name": "Stage 0",
+      "purpose": "formula, unit, reset, frame, and limiter validation",
+      "plant_performance": false,
+      "result": "PASS"
+    },
+    {
+      "name": "Stage A",
+      "candidate_count": 16,
+      "sample_count_each": 24,
+      "selection_authority": false,
+      "result": "COMPLETED_NO_USABLE_DIAGNOSTIC_CANDIDATE"
+    },
+    {
+      "name": "Stage B",
+      "candidate_count": 128,
+      "sample_count_each": 144,
+      "selection_authority": true,
+      "result": "ZERO_QUALIFIED"
+    }
+  ],
+  "unique_configurations": 128,
+  "max_unique_configurations": 128,
+  "budget_exceeded": false,
+  "paper_replaced": false,
+  "satc_modules_added": false,
+  "holdout_accessed": false,
+  "stage_c_executed": false,
+  "stop_reason": "V8_NO_QUALIFIED_DOUBLE_PENDULUM_PAPER_BASELINE"
+}

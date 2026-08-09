@@ -1,0 +1,61 @@
+{
+  "result": "V8_NO_QUALIFIED_DOUBLE_PENDULUM_PAPER_BASELINE",
+  "qualified_candidates": 0,
+  "diagnostic_best_candidate": "xu_v8_077",
+  "diagnostic_best_is_frozen_paper": false,
+  "metrics": {
+    "safety_rate": 0.4791666666666667,
+    "success_rate": 0.006944444444444444,
+    "position_mean_m": 2.198163544648049,
+    "acquisition_median_s_among_single_success": 1.1600000000000001,
+    "strong_position_mean_m": 2.4621468630935945,
+    "strong_position_p90_m": 3.549620675127552,
+    "orientation_mean_deg": 21.404311416437398,
+    "effort_mean": 26.073249640869236,
+    "runtime_p95_ms": 0.3511
+  },
+  "full_lqr_position_mean_m": 0.14703016519008688,
+  "position_improvement_fraction_vs_full_lqr": -13.950425593320725,
+  "hard_gates_passed": 1,
+  "hard_gates_total": 8,
+  "failed_hard_gates": [
+    "safety_no_worse_best_traditional",
+    "success_no_worse_best_traditional",
+    "position_improvement_vs_full_ge_5pct",
+    "paired_bootstrap_lower_gt_zero",
+    "strong_mean_improvement_vs_full_ge_5pct",
+    "strong_p90_degradation_vs_full_le_10pct",
+    "zero_catastrophic_pairs"
+  ],
+  "catastrophic_strong_pairs": 72,
+  "bootstrap": {
+    "pairs": 144,
+    "resamples": 10000,
+    "seed": 20260825,
+    "mean_delta_m": -2.0511333794579616,
+    "median_delta_m": -2.0089012416175898,
+    "positive_pair_fraction": 0.0,
+    "ci_95_m": [-2.1716854104128234, -1.9331700529199543],
+    "lower_bound_gt_zero": false
+  },
+  "mechanism_diagnostics": {
+    "mean_amplitude_saturation_fraction": 0.26175656984785617,
+    "mean_slew_activity_fraction": 0.09050829875518672,
+    "max_thrust_raw_N": 159.3140022783755,
+    "max_abs_torque_raw_Nm": 74.2571635635245,
+    "sample_failure_reason_counts": {
+      "attitude": 61,
+      "uav_height": 47,
+      "joint_angle": 46,
+      "tip_height": 26
+    }
+  },
+  "interpretation": [
+    "The plant-only two-mode reduction itself passed small-signal parity, so modal identification failure is not supported by the audit.",
+    "The source controller assumes direct thrust-vector synthesis and 100 Hz execution on a point load; V8 fairly restricted it to a rate-limited 20 Hz acceleration outer loop and a common inner loop.",
+    "The inherited benchmark uses discontinuous task setpoints and five massive internal links, whereas the source stability argument assumes a C5 desired load trajectory and a single inextensible cable.",
+    "Across the complete frozen budget, the adapted direction/angular cascade frequently saturated the common authority and produced unsafe attitude, height, and joint excursions.",
+    "The fast acquisition number is based on one successful sample and is not evidence of an Advanced baseline."
+  ],
+  "paper_claim_allowed": false
+}

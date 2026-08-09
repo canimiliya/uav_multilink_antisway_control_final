@@ -1,0 +1,15 @@
+{
+  "inherited_from_v7": true,
+  "manifest_source": "reproducibility/v7/r0/holdout_manifest.json",
+  "manifest_sha256": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+  "manifest_unchanged": true,
+  "sample_count": 112,
+  "paper_development_qualified": false,
+  "paper_frozen": false,
+  "execution_allowed": false,
+  "executed": false,
+  "authoritative_runs": 0,
+  "retries": 0,
+  "compromised": false,
+  "status": "NOT_RUN_DEVELOPMENT_INELIGIBLE"
+}

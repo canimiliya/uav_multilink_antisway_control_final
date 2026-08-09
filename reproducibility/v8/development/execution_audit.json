@@ -1,0 +1,37 @@
+{
+  "commit": "148658ca779302fedf853b06f2d6d56c0b254546",
+  "controller_implementation_sha256": "a55d1a8953b940ca2cba1077412b8df37a242e9d518f4279aa9a9fcd6f981980",
+  "development_manifest": "reproducibility/v8/r0/development_manifest.json",
+  "holdout_loaded": false,
+  "comparator_evidence": {
+    "source": "reproducibility/v7/development/baseline_results.csv",
+    "carried_forward_byte_identical": true,
+    "rerun": false,
+    "retuned": false,
+    "authoritative_rows": 576
+  },
+  "paper_runs": {
+    "stage_a_nonselection": 384,
+    "stage_b_authoritative": 18432,
+    "stage_c_confirmation": 0,
+    "unique_configurations": 128,
+    "stage_b_sample_count_each": 144
+  },
+  "successful_worker_count": 4,
+  "stage_b_elapsed_s": 4511.6,
+  "infrastructure_retries": [
+    {
+      "phase": "stage_a_launcher",
+      "scientific_runs_completed": 0,
+      "reason": "repository-local udaan path absent from PYTHONPATH",
+      "resolution": "same commit/config relaunched with repository src and third_party/udaan paths"
+    },
+    {
+      "phase": "stage_a_launcher",
+      "reason": "12-worker Windows pagefile, SciPy DLL, and MuJoCo allocation failure",
+      "resolution": "same commit/config and cached completed samples resumed with four workers"
+    }
+  ],
+  "controller_or_metric_changed_after_performance": false,
+  "compromised": false
+}

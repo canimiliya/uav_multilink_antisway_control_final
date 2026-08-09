@@ -1,0 +1,222 @@
+{
+  "result": "V8_NO_QUALIFIED_DOUBLE_PENDULUM_PAPER_BASELINE",
+  "qualified": false,
+  "provisionally_qualified": false,
+  "qualified_count": 0,
+  "selected_candidate": "xu_v8_077",
+  "selected_parameters": {
+    "candidate_id": "xu_v8_077",
+    "architecture": "XU2025-CBS-FTDO-ADAPTED-5LINK",
+    "modal_basis": [
+      [
+        0.21370125934838505,
+        -1.2674511133415365
+      ],
+      [
+        0.010591413011814266,
+        0.3146411270538331
+      ],
+      [
+        0.008937213167502088,
+        0.6658333260382745
+      ],
+      [
+        0.006798649535607657,
+        0.8555806523177752
+      ],
+      [
+        0.007348250201773391,
+        1.3819289782868993
+      ]
+    ],
+    "modal_projection": [
+      [
+        4.3174282493277625,
+        3.4327394388339325,
+        2.558823622100965,
+        1.7068816994419092,
+        0.8885574105996674
+      ],
+      [
+        -0.042091293451630284,
+        0.16565929225719475,
+        0.31264949915583107,
+        0.3541544548318874,
+        0.2774006243879342
+      ]
+    ],
+    "effective_length_m": 2.81,
+    "axis_scale": [
+      1.0,
+      1.0,
+      1.11409076
+    ],
+    "position_gain": 1.80684228,
+    "velocity_gain": 4.51804174,
+    "direction_gain": 3.35595089,
+    "angular_gain": 1.6203581,
+    "direction_filter_gain": 14.48879527,
+    "angular_filter_gain": 5.09112952,
+    "force_observer_k1": 0.50016867,
+    "force_observer_k2": 4.52079338,
+    "angular_observer_k1": 0.50016867,
+    "angular_observer_k2": 4.52079338,
+    "observer_boundary": 0.04293251,
+    "observer_clip": 1.06349885,
+    "observer_compensation_scale": 0.2919474,
+    "angular_coupling_scale": 0.08089055
+  },
+  "selected_metrics": {
+    "candidate_id": "xu_v8_077",
+    "overall": {
+      "sample_count": 144,
+      "safety_rate": 0.4791666666666667,
+      "success_rate": 0.006944444444444444,
+      "position_mean_m": 2.198163544648049,
+      "position_p90_m": 3.2114500502066203,
+      "position_p95_m": 3.5983753216759964,
+      "orientation_mean_deg": 21.404311416437398,
+      "acquisition_median_s": 1.1600000000000001,
+      "effort_mean": 26.073249640869236,
+      "solve_p95_ms": 0.3511
+    },
+    "strong": {
+      "sample_count": 72,
+      "safety_rate": 0.5833333333333334,
+      "success_rate": 0.0,
+      "position_mean_m": 2.4621468630935945,
+      "position_p90_m": 3.549620675127552,
+      "position_p95_m": 3.685025383544869,
+      "orientation_mean_deg": 22.79428099925295,
+      "acquisition_median_s": null,
+      "effort_mean": 27.949827947256683,
+      "solve_p95_ms": 0.3511
+    },
+    "comparisons": {
+      "position_improvement_vs_full": -13.950425593320725,
+      "acquisition_improvement_vs_full": 0.7262536873156342,
+      "strong_position_improvement_vs_full": -11.389108220083905,
+      "strong_p90_degradation_vs_full": 15.060952812730461,
+      "orientation_improvement_vs_full": -22.23394357367957,
+      "effort_improvement_vs_full": -20.506731385040034,
+      "runtime_improvement_vs_satc": 0.876334049522736
+    },
+    "hard_gates": {
+      "safety_no_worse_best_traditional": false,
+      "success_no_worse_best_traditional": false,
+      "position_improvement_vs_full_ge_5pct": false,
+      "acquisition_degradation_vs_full_le_5pct": true,
+      "paired_bootstrap_lower_gt_zero": false,
+      "strong_mean_improvement_vs_full_ge_5pct": false,
+      "strong_p90_degradation_vs_full_le_10pct": false,
+      "zero_catastrophic_pairs": false
+    },
+    "hard_gate_pass_count": 1,
+    "hard_gate_count": 8,
+    "advanced_value_options": {
+      "acquisition_improvement_ge_5pct": true,
+      "orientation_improvement_ge_10pct": false,
+      "strong_position_improvement_ge_10pct": false,
+      "effort_improvement_ge_10pct": false,
+      "runtime_improvement_vs_satc_ge_50pct": true
+    },
+    "advanced_value_pass": true,
+    "catastrophic_pair_ids": [
+      "v7d_strong_preexisting_aligned_00",
+      "v7d_strong_preexisting_aligned_01",
+      "v7d_strong_preexisting_aligned_02",
+      "v7d_strong_preexisting_aligned_03",
+      "v7d_strong_preexisting_aligned_04",
+      "v7d_strong_preexisting_aligned_05",
+      "v7d_strong_preexisting_aligned_06",
+      "v7d_strong_preexisting_aligned_07",
+      "v7d_strong_preexisting_opposed_00",
+      "v7d_strong_preexisting_opposed_01",
+      "v7d_strong_preexisting_opposed_02",
+      "v7d_strong_preexisting_opposed_03",
+      "v7d_strong_preexisting_opposed_04",
+      "v7d_strong_preexisting_opposed_05",
+      "v7d_strong_preexisting_opposed_06",
+      "v7d_strong_preexisting_opposed_07",
+      "v7d_strong_preexisting_cross_00",
+      "v7d_strong_preexisting_cross_01",
+      "v7d_strong_preexisting_cross_02",
+      "v7d_strong_preexisting_cross_03",
+      "v7d_strong_preexisting_cross_04",
+      "v7d_strong_preexisting_cross_05",
+      "v7d_strong_preexisting_cross_06",
+      "v7d_strong_preexisting_cross_07",
+      "v7d_strong_before_aligned_00",
+      "v7d_strong_before_aligned_01",
+      "v7d_strong_before_aligned_02",
+      "v7d_strong_before_aligned_03",
+      "v7d_strong_before_aligned_04",
+      "v7d_strong_before_aligned_05",
+      "v7d_strong_before_aligned_06",
+      "v7d_strong_before_aligned_07",
+      "v7d_strong_before_opposed_00",
+      "v7d_strong_before_opposed_01",
+      "v7d_strong_before_opposed_02",
+      "v7d_strong_before_opposed_03",
+      "v7d_strong_before_opposed_04",
+      "v7d_strong_before_opposed_05",
+      "v7d_strong_before_opposed_06",
+      "v7d_strong_before_opposed_07",
+      "v7d_strong_before_cross_00",
+      "v7d_strong_before_cross_01",
+      "v7d_strong_before_cross_02",
+      "v7d_strong_before_cross_03",
+      "v7d_strong_before_cross_04",
+      "v7d_strong_before_cross_05",
+      "v7d_strong_before_cross_06",
+      "v7d_strong_before_cross_07",
+      "v7d_strong_after_aligned_00",
+      "v7d_strong_after_aligned_01",
+      "v7d_strong_after_aligned_02",
+      "v7d_strong_after_aligned_03",
+      "v7d_strong_after_aligned_04",
+      "v7d_strong_after_aligned_05",
+      "v7d_strong_after_aligned_06",
+      "v7d_strong_after_aligned_07",
+      "v7d_strong_after_opposed_00",
+      "v7d_strong_after_opposed_01",
+      "v7d_strong_after_opposed_02",
+      "v7d_strong_after_opposed_03",
+      "v7d_strong_after_opposed_04",
+      "v7d_strong_after_opposed_05",
+      "v7d_strong_after_opposed_06",
+      "v7d_strong_after_opposed_07",
+      "v7d_strong_after_cross_00",
+      "v7d_strong_after_cross_01",
+      "v7d_strong_after_cross_02",
+      "v7d_strong_after_cross_03",
+      "v7d_strong_after_cross_04",
+      "v7d_strong_after_cross_05",
+      "v7d_strong_after_cross_06",
+      "v7d_strong_after_cross_07"
+    ],
+    "bootstrap": {
+      "pairs": 144,
+      "resamples": 10000,
+      "seed": 20260825,
+      "mean_delta_m": -2.0511333794579616,
+      "median_delta_m": -2.0089012416175898,
+      "positive_pair_fraction": 0.0,
+      "ci_95_m": [
+        -2.1716854104128234,
+        -1.9331700529199543
+      ],
+      "lower_bound_gt_zero": false
+    },
+    "final_pass": false
+  },
+  "confirmation_pass": false,
+  "authoritative_runs": {
+    "comparators_carried_forward": 576,
+    "stage_a_nonselection": 384,
+    "stage_b": 18432,
+    "stage_c_confirmation": 0
+  },
+  "holdout_execution_allowed": false,
+  "holdout_executed": false
+}

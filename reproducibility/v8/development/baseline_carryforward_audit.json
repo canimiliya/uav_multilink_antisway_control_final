@@ -1,0 +1,10 @@
+{
+  "source": "reproducibility/v7/development/baseline_results.csv",
+  "source_bytes": 181163,
+  "byte_identical": true,
+  "traditional_rerun": false,
+  "satc_rerun": false,
+  "traditional_retuned": false,
+  "satc_retuned": false,
+  "holdout_accessed": false
+}
