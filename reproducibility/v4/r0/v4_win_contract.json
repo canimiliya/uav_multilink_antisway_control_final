@@ -1,0 +1,50 @@
+{
+  "written_before_new_self_performance": true,
+  "primary_traditional": "full_lqr_048",
+  "comparators": [
+    "hybrid_x007_y041_z041",
+    "full_lqr_048",
+    "task_lqr_009",
+    "self_a_034"
+  ],
+  "overall": {
+    "safety_rate_no_worse_than_best_traditional": true,
+    "success_rate_no_worse_than_best_traditional": true,
+    "position_mean_improvement_vs_full_lqr_min_fraction": 0.05,
+    "acquisition_degradation_vs_full_lqr_max_fraction": 0.05,
+    "paired_bootstrap_position_ci_lower_gt_zero": true
+  },
+  "strong_wind": {
+    "cohorts": [
+      "STRONG_PREEXISTING",
+      "STRONG_SIMULTANEOUS",
+      "STRONG_POST_TARGET"
+    ],
+    "safety_rate_no_worse_than_best_traditional": true,
+    "success_rate_no_worse_than_best_traditional": true,
+    "position_mean_improvement_vs_full_lqr_min_fraction": 0.05,
+    "position_mean_improvement_vs_legacy_self_min_fraction": 0.3,
+    "position_p90_degradation_vs_full_lqr_max_fraction": 0.1,
+    "catastrophic_pair_definition": "new_self_position > 2.0 * full_lqr_position",
+    "catastrophic_pair_count_max": 0
+  },
+  "normal_regime_nonregression": {
+    "cohorts": [
+      "NORMAL_CALM",
+      "NORMAL_CONSTANT",
+      "NORMAL_STOCHASTIC"
+    ],
+    "safety_rate_no_worse_than_legacy_self": true,
+    "success_rate_no_worse_than_legacy_self": true,
+    "position_degradation_vs_legacy_self_max_fraction": 0.05,
+    "acquisition_degradation_vs_legacy_self_max_fraction": 0.1
+  },
+  "paired_bootstrap": {
+    "pairing": "exact sample_id",
+    "resamples": 10000,
+    "seed": 20260812,
+    "confidence": 0.95
+  },
+  "development_qualification_uses_same_cohort_logic": true,
+  "holdout_gate_may_not_be_changed_after_r0": true
+}

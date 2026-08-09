@@ -1,0 +1,23 @@
+{
+  "authorized_method": "CART-OFMPC only",
+  "new_controller_candidates_max": 32,
+  "stage_a_structural_smoke": {
+    "candidate_max": 8,
+    "predeclared_development_subset_cases": 16,
+    "selection_authority": false
+  },
+  "stage_b_full_development": {
+    "candidate_max": 18,
+    "cases_per_candidate": 94
+  },
+  "stage_c_confirmation": {
+    "candidate_max": 6,
+    "cases_per_candidate": 94
+  },
+  "selection_source": "V4 Development only",
+  "traditional_retuning": false,
+  "legacy_self_retuning": false,
+  "paper_search": false,
+  "holdout_runs_authorized": 0,
+  "gpu_note": "The current MuJoCo/NumPy/OSQP path is CPU-bound; use up to 24 isolated CPU workers with BLAS threads fixed to one."
+}

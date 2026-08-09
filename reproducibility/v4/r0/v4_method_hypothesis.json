@@ -1,0 +1,30 @@
+{
+  "selection_count": 1,
+  "selected": {
+    "name": "CART-OFMPC",
+    "long_name": "Constraint-Aware Residual-Trust Offset-Free Model Predictive Control",
+    "status": "V4_SINGLE_SELF_HYPOTHESIS_FROZEN_NOT_IMPLEMENTED",
+    "core_mechanism": [
+      "Estimate disturbance/residual state causally from measured state and the previous actual limited command.",
+      "Compute the steady target inside the common acceleration bounds and a finite slew-reachable set; never silently scale an infeasible equilibrium.",
+      "Schedule residual trust from innovation clipping, prediction consistency, and constraint headroom.",
+      "Back-calculate the unrepresented residual as anti-windup state so the estimator, backbone, and QP share one feasible offset model.",
+      "Retain a bounded task-LQR-centered correction when residual confidence is low; no wind-truth switch is available."
+    ],
+    "why_it_addresses_v3_failure": "It directly interrupts the observed chain from clipped persistent residual to infeasible steady command, silent scaling, large backbone/QP cancellation, and sustained amplitude/slew activity.",
+    "causal_information_only": true,
+    "forbidden_information": [
+      "true wind speed",
+      "future wind",
+      "V4 Holdout results"
+    ],
+    "implementation_started": false,
+    "performance_executed": false
+  },
+  "alternatives_considered_not_selected": [
+    "unbounded disturbance-state augmentation",
+    "wind-threshold controller switching",
+    "larger horizon only",
+    "higher acceleration or slew authority"
+  ]
+}

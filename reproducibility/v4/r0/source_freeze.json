@@ -1,0 +1,23 @@
+{
+  "task": "V4-R0-STRONG-WIND-GENERALIZATION-POSTMORTEM-AND-RESEARCH-CONTRACT-FREEZE-R1",
+  "source_tag": "v3-research-final-2026-08-09",
+  "source_tag_type": "tag",
+  "source_head": "1f6ef12bc657724024f4e281c6b0534ca1d76fad",
+  "source_tag_peeled_head": "1f6ef12bc657724024f4e281c6b0534ca1d76fad",
+  "v3_final_status": "V3_SELF_DEVELOPMENT_WIN_NOT_CONFIRMED_ON_HOLDOUT",
+  "v3_final_tree": "956e77658e01efabb110dcf1934215af344a620d",
+  "v3_final_unchanged": true,
+  "v3_holdout_is_now_v4_prior_evidence": true,
+  "v3_holdout_is_v4_holdout": false,
+  "v3_read_only": true,
+  "hash_normalization": "text files canonicalized to LF before SHA-256",
+  "source_file_sha256": {
+    "reproducibility/v3/r2/self_freeze.json": "b779f6b72a1b59679c55c7890c4f9d936bc93cd2dbc85267df02e9e32d278127",
+    "reproducibility/v3/r1/full_lqr_freeze.json": "d98d569200dad66c0afb88042a93632c2318c1a62b92b286ba9e0bffdd8b9fa6",
+    "reproducibility/v3/r4/holdout_results.csv": "b5f9a7671cf82c1719a3688b67d82f9ee8c3bddbde86cee76a12a9aaa4682c96",
+    "reproducibility/v3/r4/gate.json": "6404a869c072499d49a87011c75973e7308c6f1691ee1768ad0a36511d782d38",
+    "docs/V3_FINAL_TECHNICAL_REPORT.md": "5ee152ae0fd7dad4223595193f0b13e97e077f61284ed780c0e2b04b35fc8fa1",
+    "src/uav_sway/v3/dr_tsrmpc.py": "711b296cd14f968d08ac504e1553b50097692dc309631cb84079862e7458b6ed",
+    "scripts/run_v3_r1_baselines.py": "757ada57f6fe676b16f580636cce1cc4baf5443622857dc9060d3115b10ca838"
+  }
+}

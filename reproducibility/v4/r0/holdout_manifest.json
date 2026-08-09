@@ -1,0 +1,2674 @@
+{
+  "name": "V4_FROZEN_UNSEEN_HOLDOUT_BANK",
+  "written_before_new_self_tuning": true,
+  "target_generator": {
+    "algorithm": "PCG64 normal-vector normalization",
+    "seed": 20260810,
+    "count": 12
+  },
+  "random_seeds": [
+    4000,
+    4001,
+    4002,
+    4003,
+    4004,
+    4005,
+    4006,
+    4007,
+    4008,
+    4009,
+    4010,
+    4011,
+    4012,
+    4013,
+    4014,
+    4015,
+    4016,
+    4017,
+    4018,
+    4019
+  ],
+  "sample_count": 94,
+  "samples": [
+    {
+      "sample_id": "holdout_calm_00",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_00",
+        "direction_unit": [
+          0.3147910827640091,
+          -0.9443973108149232,
+          -0.09497522591604704
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.05981030572516172,
+          -0.17943548905483542,
+          -0.01804529292404894
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_01",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_01",
+        "direction_unit": [
+          -0.8764136394660267,
+          -0.3451654694626083,
+          -0.33579745569103225
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16651859149854506,
+          -0.06558143919789558,
+          -0.06380151658129612
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_02",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_02",
+        "direction_unit": [
+          -0.857505756744473,
+          -0.4713887524580465,
+          -0.20609832897463073
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16292609378144987,
+          -0.08956386296702884,
+          -0.03915868250517984
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_03",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_03",
+        "direction_unit": [
+          0.8140352871248135,
+          0.18638422181045008,
+          -0.5500976942105239
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.15466670455371456,
+          0.03541300214398552,
+          -0.10451856189999954
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_04",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_04",
+        "direction_unit": [
+          -0.1221762225722685,
+          0.9820074326840471,
+          -0.14399434985879886
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.023213482288731015,
+          0.18658141220996896,
+          -0.027358926473171785
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_05",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_05",
+        "direction_unit": [
+          -0.6676342704193591,
+          0.5642242572514562,
+          0.4857113015883538
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.12685051137967823,
+          0.10720260887777668,
+          0.09228514730178722
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_06",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_06",
+        "direction_unit": [
+          0.8401107420572553,
+          -0.0673244435218557,
+          0.538220549946284
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.20162657809374127,
+          -0.016157866445245365,
+          0.12917293198710816
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_07",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_07",
+        "direction_unit": [
+          0.07454192809076363,
+          0.6375882808809207,
+          -0.7667624697648051
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.01789006274178327,
+          0.15302118741142096,
+          -0.18402299274355322
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_08",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_08",
+        "direction_unit": [
+          0.8988293705460062,
+          0.37477236009224885,
+          0.22726953327438323
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.2157190489310415,
+          0.08994536642213972,
+          0.05454468798585197
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_09",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_09",
+        "direction_unit": [
+          -0.2205364525900177,
+          0.17482340618552705,
+          0.9595834772070123
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.052928748621604245,
+          0.04195761748452649,
+          0.23030003452968295
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_10",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_10",
+        "direction_unit": [
+          0.1356648105462941,
+          -0.7255272317844821,
+          0.6746890358665869
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.032559554531110584,
+          -0.17412653562827568,
+          0.16192536860798085
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_calm_11",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "v4h_dir_11",
+        "direction_unit": [
+          -0.0764747747363003,
+          0.9705381973125666,
+          -0.2284889852625406
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.01835394593671207,
+          0.23292916735501598,
+          -0.054837356463009745
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_00",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_00",
+        "direction_unit": [
+          0.3147910827640091,
+          -0.9443973108149232,
+          -0.09497522591604704
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.05981030572516172,
+          -0.17943548905483542,
+          -0.01804529292404894
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_01",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_01",
+        "direction_unit": [
+          -0.8764136394660267,
+          -0.3451654694626083,
+          -0.33579745569103225
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16651859149854506,
+          -0.06558143919789558,
+          -0.06380151658129612
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_02",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_02",
+        "direction_unit": [
+          -0.857505756744473,
+          -0.4713887524580465,
+          -0.20609832897463073
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16292609378144987,
+          -0.08956386296702884,
+          -0.03915868250517984
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_03",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_03",
+        "direction_unit": [
+          0.8140352871248135,
+          0.18638422181045008,
+          -0.5500976942105239
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.15466670455371456,
+          0.03541300214398552,
+          -0.10451856189999954
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_04",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_04",
+        "direction_unit": [
+          -0.1221762225722685,
+          0.9820074326840471,
+          -0.14399434985879886
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.023213482288731015,
+          0.18658141220996896,
+          -0.027358926473171785
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_05",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_05",
+        "direction_unit": [
+          -0.6676342704193591,
+          0.5642242572514562,
+          0.4857113015883538
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.12685051137967823,
+          0.10720260887777668,
+          0.09228514730178722
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_06",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_06",
+        "direction_unit": [
+          0.8401107420572553,
+          -0.0673244435218557,
+          0.538220549946284
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.20162657809374127,
+          -0.016157866445245365,
+          0.12917293198710816
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_07",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_07",
+        "direction_unit": [
+          0.07454192809076363,
+          0.6375882808809207,
+          -0.7667624697648051
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.01789006274178327,
+          0.15302118741142096,
+          -0.18402299274355322
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_08",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_08",
+        "direction_unit": [
+          0.8988293705460062,
+          0.37477236009224885,
+          0.22726953327438323
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.2157190489310415,
+          0.08994536642213972,
+          0.05454468798585197
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_09",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_09",
+        "direction_unit": [
+          -0.2205364525900177,
+          0.17482340618552705,
+          0.9595834772070123
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.052928748621604245,
+          0.04195761748452649,
+          0.23030003452968295
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_10",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_10",
+        "direction_unit": [
+          0.1356648105462941,
+          -0.7255272317844821,
+          0.6746890358665869
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.032559554531110584,
+          -0.17412653562827568,
+          0.16192536860798085
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_constant_2p5_11",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "v4h_dir_11",
+        "direction_unit": [
+          -0.0764747747363003,
+          0.9705381973125666,
+          -0.2284889852625406
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.01835394593671207,
+          0.23292916735501598,
+          -0.054837356463009745
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_00",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_00",
+        "direction_unit": [
+          0.3147910827640091,
+          -0.9443973108149232,
+          -0.09497522591604704
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.05981030572516172,
+          -0.17943548905483542,
+          -0.01804529292404894
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_01",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_01",
+        "direction_unit": [
+          -0.8764136394660267,
+          -0.3451654694626083,
+          -0.33579745569103225
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16651859149854506,
+          -0.06558143919789558,
+          -0.06380151658129612
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_02",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_02",
+        "direction_unit": [
+          -0.857505756744473,
+          -0.4713887524580465,
+          -0.20609832897463073
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16292609378144987,
+          -0.08956386296702884,
+          -0.03915868250517984
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_03",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_03",
+        "direction_unit": [
+          0.8140352871248135,
+          0.18638422181045008,
+          -0.5500976942105239
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.15466670455371456,
+          0.03541300214398552,
+          -0.10451856189999954
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_04",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_04",
+        "direction_unit": [
+          -0.1221762225722685,
+          0.9820074326840471,
+          -0.14399434985879886
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.023213482288731015,
+          0.18658141220996896,
+          -0.027358926473171785
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_05",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_05",
+        "direction_unit": [
+          -0.6676342704193591,
+          0.5642242572514562,
+          0.4857113015883538
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.12685051137967823,
+          0.10720260887777668,
+          0.09228514730178722
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_06",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_06",
+        "direction_unit": [
+          0.8401107420572553,
+          -0.0673244435218557,
+          0.538220549946284
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.20162657809374127,
+          -0.016157866445245365,
+          0.12917293198710816
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_07",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_07",
+        "direction_unit": [
+          0.07454192809076363,
+          0.6375882808809207,
+          -0.7667624697648051
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.01789006274178327,
+          0.15302118741142096,
+          -0.18402299274355322
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_08",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_08",
+        "direction_unit": [
+          0.8988293705460062,
+          0.37477236009224885,
+          0.22726953327438323
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.2157190489310415,
+          0.08994536642213972,
+          0.05454468798585197
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_09",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_09",
+        "direction_unit": [
+          -0.2205364525900177,
+          0.17482340618552705,
+          0.9595834772070123
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.052928748621604245,
+          0.04195761748452649,
+          0.23030003452968295
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_10",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_10",
+        "direction_unit": [
+          0.1356648105462941,
+          -0.7255272317844821,
+          0.6746890358665869
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.032559554531110584,
+          -0.17412653562827568,
+          0.16192536860798085
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p25_preexisting_11",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_11",
+        "direction_unit": [
+          -0.0764747747363003,
+          0.9705381973125666,
+          -0.2284889852625406
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.01835394593671207,
+          0.23292916735501598,
+          -0.054837356463009745
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.25,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_00",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_00",
+        "direction_unit": [
+          0.3147910827640091,
+          -0.9443973108149232,
+          -0.09497522591604704
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.05981030572516172,
+          -0.17943548905483542,
+          -0.01804529292404894
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_01",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_01",
+        "direction_unit": [
+          -0.8764136394660267,
+          -0.3451654694626083,
+          -0.33579745569103225
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16651859149854506,
+          -0.06558143919789558,
+          -0.06380151658129612
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_02",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_02",
+        "direction_unit": [
+          -0.857505756744473,
+          -0.4713887524580465,
+          -0.20609832897463073
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16292609378144987,
+          -0.08956386296702884,
+          -0.03915868250517984
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_03",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_03",
+        "direction_unit": [
+          0.8140352871248135,
+          0.18638422181045008,
+          -0.5500976942105239
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.15466670455371456,
+          0.03541300214398552,
+          -0.10451856189999954
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_04",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_04",
+        "direction_unit": [
+          -0.1221762225722685,
+          0.9820074326840471,
+          -0.14399434985879886
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.023213482288731015,
+          0.18658141220996896,
+          -0.027358926473171785
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_05",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_05",
+        "direction_unit": [
+          -0.6676342704193591,
+          0.5642242572514562,
+          0.4857113015883538
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.12685051137967823,
+          0.10720260887777668,
+          0.09228514730178722
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_06",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_06",
+        "direction_unit": [
+          0.8401107420572553,
+          -0.0673244435218557,
+          0.538220549946284
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.20162657809374127,
+          -0.016157866445245365,
+          0.12917293198710816
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_07",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_07",
+        "direction_unit": [
+          0.07454192809076363,
+          0.6375882808809207,
+          -0.7667624697648051
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.01789006274178327,
+          0.15302118741142096,
+          -0.18402299274355322
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_08",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_08",
+        "direction_unit": [
+          0.8988293705460062,
+          0.37477236009224885,
+          0.22726953327438323
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.2157190489310415,
+          0.08994536642213972,
+          0.05454468798585197
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_09",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_09",
+        "direction_unit": [
+          -0.2205364525900177,
+          0.17482340618552705,
+          0.9595834772070123
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.052928748621604245,
+          0.04195761748452649,
+          0.23030003452968295
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_10",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_10",
+        "direction_unit": [
+          0.1356648105462941,
+          -0.7255272317844821,
+          0.6746890358665869
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.032559554531110584,
+          -0.17412653562827568,
+          0.16192536860798085
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p75_preexisting_11",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "v4h_dir_11",
+        "direction_unit": [
+          -0.0764747747363003,
+          0.9705381973125666,
+          -0.2284889852625406
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.01835394593671207,
+          0.23292916735501598,
+          -0.054837356463009745
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.75,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_00",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_00",
+        "direction_unit": [
+          0.3147910827640091,
+          -0.9443973108149232,
+          -0.09497522591604704
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.05981030572516172,
+          -0.17943548905483542,
+          -0.01804529292404894
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_01",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_01",
+        "direction_unit": [
+          -0.8764136394660267,
+          -0.3451654694626083,
+          -0.33579745569103225
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16651859149854506,
+          -0.06558143919789558,
+          -0.06380151658129612
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_02",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_02",
+        "direction_unit": [
+          -0.857505756744473,
+          -0.4713887524580465,
+          -0.20609832897463073
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16292609378144987,
+          -0.08956386296702884,
+          -0.03915868250517984
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_03",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_03",
+        "direction_unit": [
+          0.8140352871248135,
+          0.18638422181045008,
+          -0.5500976942105239
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.15466670455371456,
+          0.03541300214398552,
+          -0.10451856189999954
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_04",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_04",
+        "direction_unit": [
+          -0.1221762225722685,
+          0.9820074326840471,
+          -0.14399434985879886
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.023213482288731015,
+          0.18658141220996896,
+          -0.027358926473171785
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_05",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_05",
+        "direction_unit": [
+          -0.6676342704193591,
+          0.5642242572514562,
+          0.4857113015883538
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.12685051137967823,
+          0.10720260887777668,
+          0.09228514730178722
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_06",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_06",
+        "direction_unit": [
+          0.8401107420572553,
+          -0.0673244435218557,
+          0.538220549946284
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.20162657809374127,
+          -0.016157866445245365,
+          0.12917293198710816
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_07",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_07",
+        "direction_unit": [
+          0.07454192809076363,
+          0.6375882808809207,
+          -0.7667624697648051
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.01789006274178327,
+          0.15302118741142096,
+          -0.18402299274355322
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_08",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_08",
+        "direction_unit": [
+          0.8988293705460062,
+          0.37477236009224885,
+          0.22726953327438323
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.2157190489310415,
+          0.08994536642213972,
+          0.05454468798585197
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_09",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_09",
+        "direction_unit": [
+          -0.2205364525900177,
+          0.17482340618552705,
+          0.9595834772070123
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.052928748621604245,
+          0.04195761748452649,
+          0.23030003452968295
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_10",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_10",
+        "direction_unit": [
+          0.1356648105462941,
+          -0.7255272317844821,
+          0.6746890358665869
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.032559554531110584,
+          -0.17412653562827568,
+          0.16192536860798085
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_simultaneous_11",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "v4h_dir_11",
+        "direction_unit": [
+          -0.0764747747363003,
+          0.9705381973125666,
+          -0.2284889852625406
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.01835394593671207,
+          0.23292916735501598,
+          -0.054837356463009745
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_00",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_00",
+        "direction_unit": [
+          0.3147910827640091,
+          -0.9443973108149232,
+          -0.09497522591604704
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.05981030572516172,
+          -0.17943548905483542,
+          -0.01804529292404894
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_01",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_01",
+        "direction_unit": [
+          -0.8764136394660267,
+          -0.3451654694626083,
+          -0.33579745569103225
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16651859149854506,
+          -0.06558143919789558,
+          -0.06380151658129612
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_02",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_02",
+        "direction_unit": [
+          -0.857505756744473,
+          -0.4713887524580465,
+          -0.20609832897463073
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16292609378144987,
+          -0.08956386296702884,
+          -0.03915868250517984
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_03",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_03",
+        "direction_unit": [
+          0.8140352871248135,
+          0.18638422181045008,
+          -0.5500976942105239
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.15466670455371456,
+          0.03541300214398552,
+          -0.10451856189999954
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_04",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_04",
+        "direction_unit": [
+          -0.1221762225722685,
+          0.9820074326840471,
+          -0.14399434985879886
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.023213482288731015,
+          0.18658141220996896,
+          -0.027358926473171785
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_05",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_05",
+        "direction_unit": [
+          -0.6676342704193591,
+          0.5642242572514562,
+          0.4857113015883538
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.12685051137967823,
+          0.10720260887777668,
+          0.09228514730178722
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_06",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_06",
+        "direction_unit": [
+          0.8401107420572553,
+          -0.0673244435218557,
+          0.538220549946284
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.20162657809374127,
+          -0.016157866445245365,
+          0.12917293198710816
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_07",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_07",
+        "direction_unit": [
+          0.07454192809076363,
+          0.6375882808809207,
+          -0.7667624697648051
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.01789006274178327,
+          0.15302118741142096,
+          -0.18402299274355322
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_08",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_08",
+        "direction_unit": [
+          0.8988293705460062,
+          0.37477236009224885,
+          0.22726953327438323
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.2157190489310415,
+          0.08994536642213972,
+          0.05454468798585197
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_09",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_09",
+        "direction_unit": [
+          -0.2205364525900177,
+          0.17482340618552705,
+          0.9595834772070123
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.052928748621604245,
+          0.04195761748452649,
+          0.23030003452968295
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_10",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_10",
+        "direction_unit": [
+          0.1356648105462941,
+          -0.7255272317844821,
+          0.6746890358665869
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.032559554531110584,
+          -0.17412653562827568,
+          0.16192536860798085
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_strong_3p5_post_target_11",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "v4h_dir_11",
+        "direction_unit": [
+          -0.0764747747363003,
+          0.9705381973125666,
+          -0.2284889852625406
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.01835394593671207,
+          0.23292916735501598,
+          -0.054837356463009745
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4000",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_00",
+        "direction_unit": [
+          0.3147910827640091,
+          -0.9443973108149232,
+          -0.09497522591604704
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.05981030572516172,
+          -0.17943548905483542,
+          -0.01804529292404894
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4000,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4001",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_01",
+        "direction_unit": [
+          -0.8764136394660267,
+          -0.3451654694626083,
+          -0.33579745569103225
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16651859149854506,
+          -0.06558143919789558,
+          -0.06380151658129612
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4001,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4002",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_02",
+        "direction_unit": [
+          -0.857505756744473,
+          -0.4713887524580465,
+          -0.20609832897463073
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16292609378144987,
+          -0.08956386296702884,
+          -0.03915868250517984
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4002,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4003",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_03",
+        "direction_unit": [
+          0.8140352871248135,
+          0.18638422181045008,
+          -0.5500976942105239
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.15466670455371456,
+          0.03541300214398552,
+          -0.10451856189999954
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4003,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4004",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_04",
+        "direction_unit": [
+          -0.1221762225722685,
+          0.9820074326840471,
+          -0.14399434985879886
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.023213482288731015,
+          0.18658141220996896,
+          -0.027358926473171785
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4004,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4005",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_05",
+        "direction_unit": [
+          -0.6676342704193591,
+          0.5642242572514562,
+          0.4857113015883538
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.12685051137967823,
+          0.10720260887777668,
+          0.09228514730178722
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4005,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4006",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_06",
+        "direction_unit": [
+          0.8401107420572553,
+          -0.0673244435218557,
+          0.538220549946284
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.20162657809374127,
+          -0.016157866445245365,
+          0.12917293198710816
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4006,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4007",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_07",
+        "direction_unit": [
+          0.07454192809076363,
+          0.6375882808809207,
+          -0.7667624697648051
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.01789006274178327,
+          0.15302118741142096,
+          -0.18402299274355322
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4007,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4008",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_08",
+        "direction_unit": [
+          0.8988293705460062,
+          0.37477236009224885,
+          0.22726953327438323
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.2157190489310415,
+          0.08994536642213972,
+          0.05454468798585197
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4008,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4009",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_09",
+        "direction_unit": [
+          -0.2205364525900177,
+          0.17482340618552705,
+          0.9595834772070123
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.052928748621604245,
+          0.04195761748452649,
+          0.23030003452968295
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4009,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4010",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_10",
+        "direction_unit": [
+          0.1356648105462941,
+          -0.7255272317844821,
+          0.6746890358665869
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.032559554531110584,
+          -0.17412653562827568,
+          0.16192536860798085
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4010,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4011",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_11",
+        "direction_unit": [
+          -0.0764747747363003,
+          0.9705381973125666,
+          -0.2284889852625406
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          -0.01835394593671207,
+          0.23292916735501598,
+          -0.054837356463009745
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4011,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4012",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_00",
+        "direction_unit": [
+          0.3147910827640091,
+          -0.9443973108149232,
+          -0.09497522591604704
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.05981030572516172,
+          -0.17943548905483542,
+          -0.01804529292404894
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4012,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4013",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_01",
+        "direction_unit": [
+          -0.8764136394660267,
+          -0.3451654694626083,
+          -0.33579745569103225
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16651859149854506,
+          -0.06558143919789558,
+          -0.06380151658129612
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4013,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4014",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_02",
+        "direction_unit": [
+          -0.857505756744473,
+          -0.4713887524580465,
+          -0.20609832897463073
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.16292609378144987,
+          -0.08956386296702884,
+          -0.03915868250517984
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4014,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4015",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_03",
+        "direction_unit": [
+          0.8140352871248135,
+          0.18638422181045008,
+          -0.5500976942105239
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          0.15466670455371456,
+          0.03541300214398552,
+          -0.10451856189999954
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4015,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4016",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_04",
+        "direction_unit": [
+          -0.1221762225722685,
+          0.9820074326840471,
+          -0.14399434985879886
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.023213482288731015,
+          0.18658141220996896,
+          -0.027358926473171785
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4016,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4017",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_05",
+        "direction_unit": [
+          -0.6676342704193591,
+          0.5642242572514562,
+          0.4857113015883538
+        ],
+        "radius_m": 0.19,
+        "delta_tip_m": [
+          -0.12685051137967823,
+          0.10720260887777668,
+          0.09228514730178722
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4017,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4018",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_06",
+        "direction_unit": [
+          0.8401107420572553,
+          -0.0673244435218557,
+          0.538220549946284
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.20162657809374127,
+          -0.016157866445245365,
+          0.12917293198710816
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4018,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_stochastic_4019",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "v4h_dir_07",
+        "direction_unit": [
+          0.07454192809076363,
+          0.6375882808809207,
+          -0.7667624697648051
+        ],
+        "radius_m": 0.24,
+        "delta_tip_m": [
+          0.01789006274178327,
+          0.15302118741142096,
+          -0.18402299274355322
+        ],
+        "generator": "PCG64 normal-vector normalization",
+        "generator_seed": 20260810
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 4019,
+        "sigma_m_s": 0.9,
+        "clip_m_s": 3.2
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_ramp_equilibrium",
+      "cohort": "STRONG_TRANSIENT_DIAGNOSTIC",
+      "target": {
+        "v4_target_id": "equilibrium",
+        "direction_unit": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.0,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "target_issue_time_s": null,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.75,
+        "onset_time_s": 2.5,
+        "duration_s": 5.5
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    },
+    {
+      "sample_id": "holdout_step_equilibrium",
+      "cohort": "STRONG_TRANSIENT_DIAGNOSTIC",
+      "target": {
+        "v4_target_id": "equilibrium",
+        "direction_unit": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.0,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "target_issue_time_s": null,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.5
+      },
+      "duration_s": 12.0,
+      "execution_allowed": false
+    }
+  ],
+  "cohort_counts": {
+    "NORMAL_CALM": 12,
+    "NORMAL_CONSTANT": 12,
+    "NORMAL_STOCHASTIC": 20,
+    "STRONG_POST_TARGET": 12,
+    "STRONG_PREEXISTING": 24,
+    "STRONG_SIMULTANEOUS": 12,
+    "STRONG_TRANSIENT_DIAGNOSTIC": 2
+  },
+  "sustained_strong_wind_cases": 48,
+  "new": true,
+  "execution_allowed": false,
+  "unlock_condition": "Traditional results, legacy Self result, new Self selection, and every authorized method-selection outcome are frozen",
+  "one_shot_only": true
+}

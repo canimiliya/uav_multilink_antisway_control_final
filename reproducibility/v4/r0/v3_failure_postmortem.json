@@ -1,0 +1,64 @@
+{
+  "v3_status_preserved": "V3_SELF_DEVELOPMENT_WIN_NOT_CONFIRMED_ON_HOLDOUT",
+  "diagnostic_scope": "instrument-only frozen-controller replay used as V4 prior evidence",
+  "diagnostic_case_count": 18,
+  "diagnostic_run_count": 36,
+  "controllers": [
+    "full_lqr_048",
+    "self_a_034"
+  ],
+  "v3_failure_reproduced": true,
+  "constant_3p5": {
+    "sample_count": 12,
+    "full_lqr_position_rmse_mean_m": 0.21230805574990605,
+    "self_position_rmse_mean_m": 0.7113791997210748,
+    "self_orientation_rmse_mean_deg": 10.306511198271727,
+    "self_dynamic_residual_mean": 0.4294873332057023,
+    "self_residual_clip_update_fraction": 0.6974412171507608,
+    "self_unscaled_steady_input_mean_max_abs_m_s2": 5.190052210655721,
+    "self_unscaled_steady_input_peak_max_abs_m_s2": 11.341733402499827,
+    "self_steady_scaling_active_fraction": 0.6908713692946059,
+    "self_steady_scale_mean": 0.5502622658470947,
+    "self_physical_saturation_fraction": 0.27766251728907326,
+    "self_slew_active_fraction": 0.62551867219917
+  },
+  "ramp_0_to_3p5": {
+    "full_lqr_position_rmse_m": 0.1242663694256408,
+    "self_position_rmse_m": 0.028342467997933524,
+    "self_dynamic_residual_mean": 0.018780667448996098,
+    "self_residual_clip_update_fraction": 0.0,
+    "self_steady_scaling_active_fraction": 0.0,
+    "self_physical_saturation_fraction": 0.0,
+    "self_slew_active_fraction": 0.0
+  },
+  "timing_diagnostics": {
+    "matched_calm": {
+      "position_rmse_m": 0.055647029775933214,
+      "residual_clip_update_fraction": 0.0,
+      "steady_scaling_active_fraction": 0.0
+    },
+    "matched_constant_2p0": {
+      "position_rmse_m": 0.05843263261270715,
+      "residual_clip_update_fraction": 0.0,
+      "steady_scaling_active_fraction": 0.0
+    },
+    "timing_simultaneous_t3": {
+      "position_rmse_m": 0.5074458696352694,
+      "residual_clip_update_fraction": 0.48132780082987553,
+      "steady_scaling_active_fraction": 0.44813278008298757
+    },
+    "timing_post_target_t4": {
+      "position_rmse_m": 0.5939911355242795,
+      "residual_clip_update_fraction": 0.44813278008298757,
+      "steady_scaling_active_fraction": 0.42738589211618255
+    },
+    "strong_wind_equilibrium_no_step": {
+      "position_rmse_m": 0.6888948476837699,
+      "residual_clip_update_fraction": 0.6929460580912863,
+      "steady_scaling_active_fraction": 0.6929460580912863
+    }
+  },
+  "root_cause_audited": true,
+  "new_self_performance_executed": false,
+  "v4_holdout_executed": false
+}

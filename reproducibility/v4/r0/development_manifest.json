@@ -1,0 +1,2673 @@
+{
+  "name": "V4_FROZEN_DEVELOPMENT_BANK",
+  "sample_count": 94,
+  "samples": [
+    {
+      "sample_id": "dev_calm_00",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_00",
+        "direction_unit": [
+          -0.5425819532685368,
+          0.755926328826682,
+          0.36630616889961637
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09766475158833661,
+          0.13606673918880274,
+          0.06593511040193094
+        ],
+        "v4_target_id": "v4d_prior_dir_00",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_00",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_00",
+        "direction_unit": [
+          -0.5425819532685368,
+          0.755926328826682,
+          0.36630616889961637
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09766475158833661,
+          0.13606673918880274,
+          0.06593511040193094
+        ],
+        "v4_target_id": "v4d_prior_dir_00",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_00",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_00",
+        "direction_unit": [
+          -0.5425819532685368,
+          0.755926328826682,
+          0.36630616889961637
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09766475158833661,
+          0.13606673918880274,
+          0.06593511040193094
+        ],
+        "v4_target_id": "v4d_prior_dir_00",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_00",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_00",
+        "direction_unit": [
+          -0.5425819532685368,
+          0.755926328826682,
+          0.36630616889961637
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09766475158833661,
+          0.13606673918880274,
+          0.06593511040193094
+        ],
+        "v4_target_id": "v4d_prior_dir_00",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_00",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_00",
+        "direction_unit": [
+          -0.5425819532685368,
+          0.755926328826682,
+          0.36630616889961637
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09766475158833661,
+          0.13606673918880274,
+          0.06593511040193094
+        ],
+        "v4_target_id": "v4d_prior_dir_00",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_00",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_00",
+        "direction_unit": [
+          -0.5425819532685368,
+          0.755926328826682,
+          0.36630616889961637
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09766475158833661,
+          0.13606673918880274,
+          0.06593511040193094
+        ],
+        "v4_target_id": "v4d_prior_dir_00",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_01",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_01",
+        "direction_unit": [
+          -0.5266658210518665,
+          -0.5590226887087986,
+          -0.6404035809117161
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09479984778933598,
+          -0.10062408396758374,
+          -0.11527264456410889
+        ],
+        "v4_target_id": "v4d_prior_dir_01",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_01",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_01",
+        "direction_unit": [
+          -0.5266658210518665,
+          -0.5590226887087986,
+          -0.6404035809117161
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09479984778933598,
+          -0.10062408396758374,
+          -0.11527264456410889
+        ],
+        "v4_target_id": "v4d_prior_dir_01",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_01",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_01",
+        "direction_unit": [
+          -0.5266658210518665,
+          -0.5590226887087986,
+          -0.6404035809117161
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09479984778933598,
+          -0.10062408396758374,
+          -0.11527264456410889
+        ],
+        "v4_target_id": "v4d_prior_dir_01",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_01",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_01",
+        "direction_unit": [
+          -0.5266658210518665,
+          -0.5590226887087986,
+          -0.6404035809117161
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09479984778933598,
+          -0.10062408396758374,
+          -0.11527264456410889
+        ],
+        "v4_target_id": "v4d_prior_dir_01",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_01",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_01",
+        "direction_unit": [
+          -0.5266658210518665,
+          -0.5590226887087986,
+          -0.6404035809117161
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09479984778933598,
+          -0.10062408396758374,
+          -0.11527264456410889
+        ],
+        "v4_target_id": "v4d_prior_dir_01",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_01",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_01",
+        "direction_unit": [
+          -0.5266658210518665,
+          -0.5590226887087986,
+          -0.6404035809117161
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09479984778933598,
+          -0.10062408396758374,
+          -0.11527264456410889
+        ],
+        "v4_target_id": "v4d_prior_dir_01",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_02",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_02",
+        "direction_unit": [
+          -0.5282481254808294,
+          0.6179415492618224,
+          0.5823247887750345
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.0950846625865493,
+          0.11122947886712803,
+          0.1048184619795062
+        ],
+        "v4_target_id": "v4d_prior_dir_02",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_02",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_02",
+        "direction_unit": [
+          -0.5282481254808294,
+          0.6179415492618224,
+          0.5823247887750345
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.0950846625865493,
+          0.11122947886712803,
+          0.1048184619795062
+        ],
+        "v4_target_id": "v4d_prior_dir_02",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_02",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_02",
+        "direction_unit": [
+          -0.5282481254808294,
+          0.6179415492618224,
+          0.5823247887750345
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.0950846625865493,
+          0.11122947886712803,
+          0.1048184619795062
+        ],
+        "v4_target_id": "v4d_prior_dir_02",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_02",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_02",
+        "direction_unit": [
+          -0.5282481254808294,
+          0.6179415492618224,
+          0.5823247887750345
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.0950846625865493,
+          0.11122947886712803,
+          0.1048184619795062
+        ],
+        "v4_target_id": "v4d_prior_dir_02",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_02",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_02",
+        "direction_unit": [
+          -0.5282481254808294,
+          0.6179415492618224,
+          0.5823247887750345
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.0950846625865493,
+          0.11122947886712803,
+          0.1048184619795062
+        ],
+        "v4_target_id": "v4d_prior_dir_02",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_02",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_02",
+        "direction_unit": [
+          -0.5282481254808294,
+          0.6179415492618224,
+          0.5823247887750345
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.0950846625865493,
+          0.11122947886712803,
+          0.1048184619795062
+        ],
+        "v4_target_id": "v4d_prior_dir_02",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_03",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_03",
+        "direction_unit": [
+          0.7507710210937205,
+          0.3270239331971539,
+          0.5739322442607279
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.1351387837968697,
+          0.058864307975487695,
+          0.10330780396693101
+        ],
+        "v4_target_id": "v4d_prior_dir_03",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_03",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_03",
+        "direction_unit": [
+          0.7507710210937205,
+          0.3270239331971539,
+          0.5739322442607279
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.1351387837968697,
+          0.058864307975487695,
+          0.10330780396693101
+        ],
+        "v4_target_id": "v4d_prior_dir_03",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_03",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_03",
+        "direction_unit": [
+          0.7507710210937205,
+          0.3270239331971539,
+          0.5739322442607279
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.1351387837968697,
+          0.058864307975487695,
+          0.10330780396693101
+        ],
+        "v4_target_id": "v4d_prior_dir_03",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_03",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_03",
+        "direction_unit": [
+          0.7507710210937205,
+          0.3270239331971539,
+          0.5739322442607279
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.1351387837968697,
+          0.058864307975487695,
+          0.10330780396693101
+        ],
+        "v4_target_id": "v4d_prior_dir_03",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_03",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_03",
+        "direction_unit": [
+          0.7507710210937205,
+          0.3270239331971539,
+          0.5739322442607279
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.1351387837968697,
+          0.058864307975487695,
+          0.10330780396693101
+        ],
+        "v4_target_id": "v4d_prior_dir_03",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_03",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_03",
+        "direction_unit": [
+          0.7507710210937205,
+          0.3270239331971539,
+          0.5739322442607279
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.1351387837968697,
+          0.058864307975487695,
+          0.10330780396693101
+        ],
+        "v4_target_id": "v4d_prior_dir_03",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_04",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_04",
+        "direction_unit": [
+          0.2943600235224639,
+          0.9061571288396109,
+          -0.30369628645244773
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.052984804234043496,
+          0.16310828319112994,
+          -0.054665331561440586
+        ],
+        "v4_target_id": "v4d_prior_dir_04",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_04",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_04",
+        "direction_unit": [
+          0.2943600235224639,
+          0.9061571288396109,
+          -0.30369628645244773
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.052984804234043496,
+          0.16310828319112994,
+          -0.054665331561440586
+        ],
+        "v4_target_id": "v4d_prior_dir_04",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_04",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_04",
+        "direction_unit": [
+          0.2943600235224639,
+          0.9061571288396109,
+          -0.30369628645244773
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.052984804234043496,
+          0.16310828319112994,
+          -0.054665331561440586
+        ],
+        "v4_target_id": "v4d_prior_dir_04",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_04",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_04",
+        "direction_unit": [
+          0.2943600235224639,
+          0.9061571288396109,
+          -0.30369628645244773
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.052984804234043496,
+          0.16310828319112994,
+          -0.054665331561440586
+        ],
+        "v4_target_id": "v4d_prior_dir_04",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_04",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_04",
+        "direction_unit": [
+          0.2943600235224639,
+          0.9061571288396109,
+          -0.30369628645244773
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.052984804234043496,
+          0.16310828319112994,
+          -0.054665331561440586
+        ],
+        "v4_target_id": "v4d_prior_dir_04",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_04",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_04",
+        "direction_unit": [
+          0.2943600235224639,
+          0.9061571288396109,
+          -0.30369628645244773
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.052984804234043496,
+          0.16310828319112994,
+          -0.054665331561440586
+        ],
+        "v4_target_id": "v4d_prior_dir_04",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_05",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_05",
+        "direction_unit": [
+          -0.3847315474233147,
+          -0.36213094154713654,
+          0.8490246271996156
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.06925167853619665,
+          -0.06518356947848458,
+          0.1528244328959308
+        ],
+        "v4_target_id": "v4d_prior_dir_05",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_05",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_05",
+        "direction_unit": [
+          -0.3847315474233147,
+          -0.36213094154713654,
+          0.8490246271996156
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.06925167853619665,
+          -0.06518356947848458,
+          0.1528244328959308
+        ],
+        "v4_target_id": "v4d_prior_dir_05",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_05",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_05",
+        "direction_unit": [
+          -0.3847315474233147,
+          -0.36213094154713654,
+          0.8490246271996156
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.06925167853619665,
+          -0.06518356947848458,
+          0.1528244328959308
+        ],
+        "v4_target_id": "v4d_prior_dir_05",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_05",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_05",
+        "direction_unit": [
+          -0.3847315474233147,
+          -0.36213094154713654,
+          0.8490246271996156
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.06925167853619665,
+          -0.06518356947848458,
+          0.1528244328959308
+        ],
+        "v4_target_id": "v4d_prior_dir_05",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_05",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_05",
+        "direction_unit": [
+          -0.3847315474233147,
+          -0.36213094154713654,
+          0.8490246271996156
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.06925167853619665,
+          -0.06518356947848458,
+          0.1528244328959308
+        ],
+        "v4_target_id": "v4d_prior_dir_05",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_05",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_05",
+        "direction_unit": [
+          -0.3847315474233147,
+          -0.36213094154713654,
+          0.8490246271996156
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.06925167853619665,
+          -0.06518356947848458,
+          0.1528244328959308
+        ],
+        "v4_target_id": "v4d_prior_dir_05",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_06",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_06",
+        "direction_unit": [
+          -0.6502383329063883,
+          -0.461089927744184,
+          0.6038097290968276
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.14955481656846933,
+          -0.10605068338116233,
+          0.13887623769227037
+        ],
+        "v4_target_id": "v4d_prior_dir_06",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_06",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_06",
+        "direction_unit": [
+          -0.6502383329063883,
+          -0.461089927744184,
+          0.6038097290968276
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.14955481656846933,
+          -0.10605068338116233,
+          0.13887623769227037
+        ],
+        "v4_target_id": "v4d_prior_dir_06",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_06",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_06",
+        "direction_unit": [
+          -0.6502383329063883,
+          -0.461089927744184,
+          0.6038097290968276
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.14955481656846933,
+          -0.10605068338116233,
+          0.13887623769227037
+        ],
+        "v4_target_id": "v4d_prior_dir_06",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_06",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_06",
+        "direction_unit": [
+          -0.6502383329063883,
+          -0.461089927744184,
+          0.6038097290968276
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.14955481656846933,
+          -0.10605068338116233,
+          0.13887623769227037
+        ],
+        "v4_target_id": "v4d_prior_dir_06",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_06",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_06",
+        "direction_unit": [
+          -0.6502383329063883,
+          -0.461089927744184,
+          0.6038097290968276
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.14955481656846933,
+          -0.10605068338116233,
+          0.13887623769227037
+        ],
+        "v4_target_id": "v4d_prior_dir_06",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_06",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_06",
+        "direction_unit": [
+          -0.6502383329063883,
+          -0.461089927744184,
+          0.6038097290968276
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.14955481656846933,
+          -0.10605068338116233,
+          0.13887623769227037
+        ],
+        "v4_target_id": "v4d_prior_dir_06",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_07",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_07",
+        "direction_unit": [
+          0.27095690483457147,
+          0.21753318280333164,
+          0.9376895382278302
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.06232008811195144,
+          0.05003263204476628,
+          0.21566859379240094
+        ],
+        "v4_target_id": "v4d_prior_dir_07",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_07",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_07",
+        "direction_unit": [
+          0.27095690483457147,
+          0.21753318280333164,
+          0.9376895382278302
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.06232008811195144,
+          0.05003263204476628,
+          0.21566859379240094
+        ],
+        "v4_target_id": "v4d_prior_dir_07",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_07",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_07",
+        "direction_unit": [
+          0.27095690483457147,
+          0.21753318280333164,
+          0.9376895382278302
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.06232008811195144,
+          0.05003263204476628,
+          0.21566859379240094
+        ],
+        "v4_target_id": "v4d_prior_dir_07",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_07",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_07",
+        "direction_unit": [
+          0.27095690483457147,
+          0.21753318280333164,
+          0.9376895382278302
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.06232008811195144,
+          0.05003263204476628,
+          0.21566859379240094
+        ],
+        "v4_target_id": "v4d_prior_dir_07",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_07",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_07",
+        "direction_unit": [
+          0.27095690483457147,
+          0.21753318280333164,
+          0.9376895382278302
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.06232008811195144,
+          0.05003263204476628,
+          0.21566859379240094
+        ],
+        "v4_target_id": "v4d_prior_dir_07",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_07",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_07",
+        "direction_unit": [
+          0.27095690483457147,
+          0.21753318280333164,
+          0.9376895382278302
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.06232008811195144,
+          0.05003263204476628,
+          0.21566859379240094
+        ],
+        "v4_target_id": "v4d_prior_dir_07",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_08",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_08",
+        "direction_unit": [
+          0.9214181715757145,
+          -0.2847339882788413,
+          -0.26441465354418603
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.21192617946241435,
+          -0.0654888173041335,
+          -0.06081537031516279
+        ],
+        "v4_target_id": "v4d_prior_dir_08",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_08",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_08",
+        "direction_unit": [
+          0.9214181715757145,
+          -0.2847339882788413,
+          -0.26441465354418603
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.21192617946241435,
+          -0.0654888173041335,
+          -0.06081537031516279
+        ],
+        "v4_target_id": "v4d_prior_dir_08",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_08",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_08",
+        "direction_unit": [
+          0.9214181715757145,
+          -0.2847339882788413,
+          -0.26441465354418603
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.21192617946241435,
+          -0.0654888173041335,
+          -0.06081537031516279
+        ],
+        "v4_target_id": "v4d_prior_dir_08",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_08",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_08",
+        "direction_unit": [
+          0.9214181715757145,
+          -0.2847339882788413,
+          -0.26441465354418603
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.21192617946241435,
+          -0.0654888173041335,
+          -0.06081537031516279
+        ],
+        "v4_target_id": "v4d_prior_dir_08",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_08",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_08",
+        "direction_unit": [
+          0.9214181715757145,
+          -0.2847339882788413,
+          -0.26441465354418603
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.21192617946241435,
+          -0.0654888173041335,
+          -0.06081537031516279
+        ],
+        "v4_target_id": "v4d_prior_dir_08",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_08",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_08",
+        "direction_unit": [
+          0.9214181715757145,
+          -0.2847339882788413,
+          -0.26441465354418603
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.21192617946241435,
+          -0.0654888173041335,
+          -0.06081537031516279
+        ],
+        "v4_target_id": "v4d_prior_dir_08",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_09",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_09",
+        "direction_unit": [
+          -0.893748606095729,
+          0.28813769354549806,
+          0.3437878686926314
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.20556217940201768,
+          0.06627166951546455,
+          0.07907120979930522
+        ],
+        "v4_target_id": "v4d_prior_dir_09",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_09",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_09",
+        "direction_unit": [
+          -0.893748606095729,
+          0.28813769354549806,
+          0.3437878686926314
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.20556217940201768,
+          0.06627166951546455,
+          0.07907120979930522
+        ],
+        "v4_target_id": "v4d_prior_dir_09",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_09",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_09",
+        "direction_unit": [
+          -0.893748606095729,
+          0.28813769354549806,
+          0.3437878686926314
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.20556217940201768,
+          0.06627166951546455,
+          0.07907120979930522
+        ],
+        "v4_target_id": "v4d_prior_dir_09",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_09",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_09",
+        "direction_unit": [
+          -0.893748606095729,
+          0.28813769354549806,
+          0.3437878686926314
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.20556217940201768,
+          0.06627166951546455,
+          0.07907120979930522
+        ],
+        "v4_target_id": "v4d_prior_dir_09",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_09",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_09",
+        "direction_unit": [
+          -0.893748606095729,
+          0.28813769354549806,
+          0.3437878686926314
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.20556217940201768,
+          0.06627166951546455,
+          0.07907120979930522
+        ],
+        "v4_target_id": "v4d_prior_dir_09",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_09",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_09",
+        "direction_unit": [
+          -0.893748606095729,
+          0.28813769354549806,
+          0.3437878686926314
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.20556217940201768,
+          0.06627166951546455,
+          0.07907120979930522
+        ],
+        "v4_target_id": "v4d_prior_dir_09",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_10",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_10",
+        "direction_unit": [
+          0.5576688834242353,
+          -0.7738689432332295,
+          0.30022037765523407
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.1282638431875741,
+          -0.1779898569436428,
+          0.06905068686070384
+        ],
+        "v4_target_id": "v4d_prior_dir_10",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_10",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_10",
+        "direction_unit": [
+          0.5576688834242353,
+          -0.7738689432332295,
+          0.30022037765523407
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.1282638431875741,
+          -0.1779898569436428,
+          0.06905068686070384
+        ],
+        "v4_target_id": "v4d_prior_dir_10",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_10",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_10",
+        "direction_unit": [
+          0.5576688834242353,
+          -0.7738689432332295,
+          0.30022037765523407
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.1282638431875741,
+          -0.1779898569436428,
+          0.06905068686070384
+        ],
+        "v4_target_id": "v4d_prior_dir_10",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_10",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_10",
+        "direction_unit": [
+          0.5576688834242353,
+          -0.7738689432332295,
+          0.30022037765523407
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.1282638431875741,
+          -0.1779898569436428,
+          0.06905068686070384
+        ],
+        "v4_target_id": "v4d_prior_dir_10",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_10",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_10",
+        "direction_unit": [
+          0.5576688834242353,
+          -0.7738689432332295,
+          0.30022037765523407
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.1282638431875741,
+          -0.1779898569436428,
+          0.06905068686070384
+        ],
+        "v4_target_id": "v4d_prior_dir_10",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_10",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_10",
+        "direction_unit": [
+          0.5576688834242353,
+          -0.7738689432332295,
+          0.30022037765523407
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.1282638431875741,
+          -0.1779898569436428,
+          0.06905068686070384
+        ],
+        "v4_target_id": "v4d_prior_dir_10",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_calm_11",
+      "cohort": "NORMAL_CALM",
+      "target": {
+        "target_id": "spherical_11",
+        "direction_unit": [
+          -0.707652781113262,
+          0.22770342740356722,
+          0.6688637309133559
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.16276013965605027,
+          0.052371788302820466,
+          0.15383865811007189
+        ],
+        "v4_target_id": "v4d_prior_dir_11",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "calm"
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_constant_2p0_11",
+      "cohort": "NORMAL_CONSTANT",
+      "target": {
+        "target_id": "spherical_11",
+        "direction_unit": [
+          -0.707652781113262,
+          0.22770342740356722,
+          0.6688637309133559
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.16276013965605027,
+          0.052371788302820466,
+          0.15383865811007189
+        ],
+        "v4_target_id": "v4d_prior_dir_11",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 2.0,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_preexisting_11",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "target_id": "spherical_11",
+        "direction_unit": [
+          -0.707652781113262,
+          0.22770342740356722,
+          0.6688637309133559
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.16276013965605027,
+          0.052371788302820466,
+          0.15383865811007189
+        ],
+        "v4_target_id": "v4d_prior_dir_11",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_simultaneous_11",
+      "cohort": "STRONG_SIMULTANEOUS",
+      "target": {
+        "target_id": "spherical_11",
+        "direction_unit": [
+          -0.707652781113262,
+          0.22770342740356722,
+          0.6688637309133559
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.16276013965605027,
+          0.052371788302820466,
+          0.15383865811007189
+        ],
+        "v4_target_id": "v4d_prior_dir_11",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_post_target_11",
+      "cohort": "STRONG_POST_TARGET",
+      "target": {
+        "target_id": "spherical_11",
+        "direction_unit": [
+          -0.707652781113262,
+          0.22770342740356722,
+          0.6688637309133559
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.16276013965605027,
+          0.052371788302820466,
+          0.15383865811007189
+        ],
+        "v4_target_id": "v4d_prior_dir_11",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 1.0,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 4.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_target_11",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "target_id": "spherical_11",
+        "direction_unit": [
+          -0.707652781113262,
+          0.22770342740356722,
+          0.6688637309133559
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.16276013965605027,
+          0.052371788302820466,
+          0.15383865811007189
+        ],
+        "v4_target_id": "v4d_prior_dir_11",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3000",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_00",
+        "direction_unit": [
+          -0.5425819532685368,
+          0.755926328826682,
+          0.36630616889961637
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09766475158833661,
+          0.13606673918880274,
+          0.06593511040193094
+        ],
+        "v4_target_id": "v4d_prior_dir_00",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3000,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3001",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_01",
+        "direction_unit": [
+          -0.5266658210518665,
+          -0.5590226887087986,
+          -0.6404035809117161
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09479984778933598,
+          -0.10062408396758374,
+          -0.11527264456410889
+        ],
+        "v4_target_id": "v4d_prior_dir_01",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3001,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3002",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_02",
+        "direction_unit": [
+          -0.5282481254808294,
+          0.6179415492618224,
+          0.5823247887750345
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.0950846625865493,
+          0.11122947886712803,
+          0.1048184619795062
+        ],
+        "v4_target_id": "v4d_prior_dir_02",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3002,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3003",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_03",
+        "direction_unit": [
+          0.7507710210937205,
+          0.3270239331971539,
+          0.5739322442607279
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.1351387837968697,
+          0.058864307975487695,
+          0.10330780396693101
+        ],
+        "v4_target_id": "v4d_prior_dir_03",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3003,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3004",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_04",
+        "direction_unit": [
+          0.2943600235224639,
+          0.9061571288396109,
+          -0.30369628645244773
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.052984804234043496,
+          0.16310828319112994,
+          -0.054665331561440586
+        ],
+        "v4_target_id": "v4d_prior_dir_04",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3004,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3005",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_05",
+        "direction_unit": [
+          -0.3847315474233147,
+          -0.36213094154713654,
+          0.8490246271996156
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.06925167853619665,
+          -0.06518356947848458,
+          0.1528244328959308
+        ],
+        "v4_target_id": "v4d_prior_dir_05",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3005,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3006",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_06",
+        "direction_unit": [
+          -0.6502383329063883,
+          -0.461089927744184,
+          0.6038097290968276
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.14955481656846933,
+          -0.10605068338116233,
+          0.13887623769227037
+        ],
+        "v4_target_id": "v4d_prior_dir_06",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3006,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3007",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_07",
+        "direction_unit": [
+          0.27095690483457147,
+          0.21753318280333164,
+          0.9376895382278302
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.06232008811195144,
+          0.05003263204476628,
+          0.21566859379240094
+        ],
+        "v4_target_id": "v4d_prior_dir_07",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3007,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3008",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_08",
+        "direction_unit": [
+          0.9214181715757145,
+          -0.2847339882788413,
+          -0.26441465354418603
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.21192617946241435,
+          -0.0654888173041335,
+          -0.06081537031516279
+        ],
+        "v4_target_id": "v4d_prior_dir_08",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3008,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3009",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_09",
+        "direction_unit": [
+          -0.893748606095729,
+          0.28813769354549806,
+          0.3437878686926314
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.20556217940201768,
+          0.06627166951546455,
+          0.07907120979930522
+        ],
+        "v4_target_id": "v4d_prior_dir_09",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3009,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3010",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_10",
+        "direction_unit": [
+          0.5576688834242353,
+          -0.7738689432332295,
+          0.30022037765523407
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.1282638431875741,
+          -0.1779898569436428,
+          0.06905068686070384
+        ],
+        "v4_target_id": "v4d_prior_dir_10",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3010,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3011",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_11",
+        "direction_unit": [
+          -0.707652781113262,
+          0.22770342740356722,
+          0.6688637309133559
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.16276013965605027,
+          0.052371788302820466,
+          0.15383865811007189
+        ],
+        "v4_target_id": "v4d_prior_dir_11",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3011,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3012",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_00",
+        "direction_unit": [
+          -0.5425819532685368,
+          0.755926328826682,
+          0.36630616889961637
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09766475158833661,
+          0.13606673918880274,
+          0.06593511040193094
+        ],
+        "v4_target_id": "v4d_prior_dir_00",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3012,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3013",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_01",
+        "direction_unit": [
+          -0.5266658210518665,
+          -0.5590226887087986,
+          -0.6404035809117161
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.09479984778933598,
+          -0.10062408396758374,
+          -0.11527264456410889
+        ],
+        "v4_target_id": "v4d_prior_dir_01",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3013,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3014",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_02",
+        "direction_unit": [
+          -0.5282481254808294,
+          0.6179415492618224,
+          0.5823247887750345
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.0950846625865493,
+          0.11122947886712803,
+          0.1048184619795062
+        ],
+        "v4_target_id": "v4d_prior_dir_02",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3014,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3015",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_03",
+        "direction_unit": [
+          0.7507710210937205,
+          0.3270239331971539,
+          0.5739322442607279
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.1351387837968697,
+          0.058864307975487695,
+          0.10330780396693101
+        ],
+        "v4_target_id": "v4d_prior_dir_03",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3015,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3016",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_04",
+        "direction_unit": [
+          0.2943600235224639,
+          0.9061571288396109,
+          -0.30369628645244773
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          0.052984804234043496,
+          0.16310828319112994,
+          -0.054665331561440586
+        ],
+        "v4_target_id": "v4d_prior_dir_04",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3016,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3017",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_05",
+        "direction_unit": [
+          -0.3847315474233147,
+          -0.36213094154713654,
+          0.8490246271996156
+        ],
+        "radius_m": 0.18,
+        "delta_tip_m": [
+          -0.06925167853619665,
+          -0.06518356947848458,
+          0.1528244328959308
+        ],
+        "v4_target_id": "v4d_prior_dir_05",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3017,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3018",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_06",
+        "direction_unit": [
+          -0.6502383329063883,
+          -0.461089927744184,
+          0.6038097290968276
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          -0.14955481656846933,
+          -0.10605068338116233,
+          0.13887623769227037
+        ],
+        "v4_target_id": "v4d_prior_dir_06",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3018,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_stochastic_3019",
+      "cohort": "NORMAL_STOCHASTIC",
+      "target": {
+        "target_id": "spherical_07",
+        "direction_unit": [
+          0.27095690483457147,
+          0.21753318280333164,
+          0.9376895382278302
+        ],
+        "radius_m": 0.23,
+        "delta_tip_m": [
+          0.06232008811195144,
+          0.05003263204476628,
+          0.21566859379240094
+        ],
+        "v4_target_id": "v4d_prior_dir_07",
+        "provenance": "V3_HOLDOUT_NOW_V4_PRIOR_EVIDENCE"
+      },
+      "target_issue_time_s": 3.0,
+      "wind": {
+        "kind": "stochastic",
+        "seed": 3019,
+        "sigma_m_s": 0.8,
+        "clip_m_s": 3.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_strong_equilibrium",
+      "cohort": "STRONG_PREEXISTING",
+      "target": {
+        "v4_target_id": "equilibrium",
+        "direction_unit": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.0,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "target_issue_time_s": null,
+      "wind": {
+        "kind": "constant",
+        "speed_m_s": 3.5,
+        "onset_time_s": 0.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    },
+    {
+      "sample_id": "dev_ramp_equilibrium",
+      "cohort": "RAMP_STRONG",
+      "target": {
+        "v4_target_id": "equilibrium",
+        "direction_unit": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.0,
+        "delta_tip_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "target_issue_time_s": null,
+      "wind": {
+        "kind": "ramp",
+        "start_speed_m_s": 0.0,
+        "speed_m_s": 3.5,
+        "onset_time_s": 2.0,
+        "duration_s": 6.0
+      },
+      "duration_s": 12.0,
+      "execution_allowed": true
+    }
+  ],
+  "cohort_counts": {
+    "NORMAL_CALM": 12,
+    "NORMAL_CONSTANT": 12,
+    "NORMAL_STOCHASTIC": 20,
+    "RAMP_STRONG": 13,
+    "STRONG_POST_TARGET": 12,
+    "STRONG_PREEXISTING": 13,
+    "STRONG_SIMULTANEOUS": 12
+  },
+  "sustained_strong_wind_cases": 37,
+  "wind_onset_variants": [
+    "preexisting_before_target",
+    "simultaneous_with_target",
+    "after_target"
+  ],
+  "v3_prior_evidence_reuse_allowed": true,
+  "holdout_identity": false
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "V4-R0 frozen evidence and research contract",
+  "hash_normalization": "text files canonicalized to LF before SHA-256",
+  "files": {
+    "reproducibility/v4/r0/source_freeze.json": "6adb1b0d6f802fd94c7725282cb7755ef14e7b05b1097619c5def5a343723c4b",
+    "reproducibility/v4/r0/v3_failure_postmortem.json": "cb63c2ec4fa02d86f681af2c2b910af204e17f44f4717227bb70249907932ad1",
+    "reproducibility/v4/r0/strong_wind_diagnostic.csv": "acd3a899be024732b66cf02528c6e72e4065833ec5696997c50c3337c8659cef",
+    "reproducibility/v4/r0/failure_mechanism_report.json": "697113915787476a8b5b5dd4d45fb63e2393238d15d825171bc22bc6fd42d586",
+    "reproducibility/v4/r0/v4_method_hypothesis.json": "1df33ab30481b582db43f5da85a5a117b110bc59ef93fcb396a06340c9ea639c",
+    "reproducibility/v4/r0/v4_control_contract.json": "1529e704710cea8f50a8601a7d0eebd3f37fdb9939af28cdbf538e93c76f7f35",
+    "reproducibility/v4/r0/development_manifest.json": "bd49870881a5d13b9583fafa2362d284ffdb2c56255aec87c1e979f3c373ad32",
+    "reproducibility/v4/r0/holdout_manifest.json": "751b105b300e99ba58d3e3dae45d35e02e50e728f322dbb73f481baa58b962a3",
+    "reproducibility/v4/r0/split_integrity.json": "2eb1315ce9b1e2e6b9715f712c6bf637612d50d064b597d652d5fc35458706a8",
+    "reproducibility/v4/r0/v4_win_contract.json": "c87ca66027dc5618d64cdc0acb55dd3b1459df20b9e276dfe3326ff780b247be",
+    "reproducibility/v4/r0/v4_search_budget.json": "00580a6bf0b09c121c3e58e693606ad09838cdc8516541907078053d2c1be9cd",
+    "reproducibility/v4/r0/gate.json": "ae2d9c8a1a3269b1a64c38a85147ac209bebeeabd666946c2de0fdf5d0609856"
+  },
+  "docs/V4_RESEARCH_CONTRACT.md": "e9bb6bac61c16b7a72b6ba47bad80789cd846ad08b143b3e2cc9731f6214c46b"
+}

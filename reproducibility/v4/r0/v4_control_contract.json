@@ -1,0 +1,26 @@
+{
+  "command_interface": {
+    "frame": "world",
+    "components": [
+      "ax",
+      "ay",
+      "az"
+    ]
+  },
+  "acceleration_limit_m_s2_per_axis": 2.0,
+  "slew_limit_m_s2_per_update": 0.25,
+  "outer_rate_hz": 20.0,
+  "outer_period_s": 0.05,
+  "inner_loop": "same frozen geometric inner loop",
+  "plant": "same frozen MuJoCo five-link plant",
+  "task_definition_unchanged": true,
+  "safety_definition_unchanged": true,
+  "traditional_parameters_frozen": [
+    "hybrid_x007_y041_z041",
+    "full_lqr_048",
+    "task_lqr_009"
+  ],
+  "legacy_self_baseline": "self_a_034",
+  "legacy_self_mutable": false,
+  "physical_contract_change_required": false
+}

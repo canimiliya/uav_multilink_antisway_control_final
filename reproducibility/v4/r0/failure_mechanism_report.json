@@ -1,0 +1,85 @@
+{
+  "primary_root_cause": {
+    "status": "STRONGLY_SUPPORTED",
+    "name": "constraint-unaware residual-to-equilibrium mapping enters a saturated positive-feedback regime",
+    "mechanism": "An abrupt sustained 3.5 m/s wind drives one-step dynamic residuals beyond the componentwise estimator bound. The frozen steady compensator maps that clipped residual to an unconstrained equilibrium command far outside the common acceleration authority, then uniformly scales the state/command solution without exposing the unrepresented residual to an anti-windup or trust mechanism. The task-LQR backbone and QP then make large opposing corrections around a partially represented equilibrium while amplitude and slew constraints remain active, sustaining model error."
+  },
+  "secondary_root_causes": [
+    {
+      "status": "CONFIRMED",
+      "name": "componentwise residual clipping concentrated in cutter angular-rate states",
+      "evidence": [
+        {
+          "state": "qdot1",
+          "mean_clip_update_fraction": 0.6974412171507608
+        },
+        {
+          "state": "qdot2",
+          "mean_clip_update_fraction": 0.3896957123098202
+        },
+        {
+          "state": "qdot3",
+          "mean_clip_update_fraction": 0.26590594744121715
+        },
+        {
+          "state": "pitch_rate",
+          "mean_clip_update_fraction": 0.11964038727524205
+        }
+      ]
+    },
+    {
+      "status": "STRONGLY_SUPPORTED",
+      "name": "abrupt wind onset creates a path-dependent estimator/constraint excursion",
+      "evidence": {
+        "preexisting_position_rmse_m": 0.69980790554375,
+        "simultaneous_position_rmse_m": 0.5074458696352694,
+        "post_target_position_rmse_m": 0.5939911355242795,
+        "ramp_position_rmse_m": 0.028342467997933524
+      }
+    },
+    {
+      "status": "STRONGLY_SUPPORTED",
+      "name": "large backbone/QP cancellation amplifies sensitivity near active constraints",
+      "evidence": {
+        "backbone_norm_mean": 21.737131431230555,
+        "qp_correction_norm_mean": 19.274504517621047,
+        "physical_saturation_fraction": 0.27766251728907326,
+        "slew_active_fraction": 0.62551867219917
+      }
+    }
+  ],
+  "evidence_against": [
+    {
+      "candidate": "controllable-subspace rejection is the primary cause",
+      "evidence": {
+        "projected_residual_norm_mean": 0.2627014343006691,
+        "rejected_residual_norm_mean": 0.004930625271477084,
+        "rejected_to_projected_ratio": 0.01876893167562171
+      }
+    },
+    {
+      "candidate": "QP solver failure",
+      "evidence": {
+        "qp_solved_fraction": 1.0
+      }
+    },
+    {
+      "candidate": "reference step is necessary for failure",
+      "evidence": {
+        "strong_wind_no_reference_step_position_rmse_m": 0.6888948476837699
+      }
+    },
+    {
+      "candidate": "common physical acceleration authority is intrinsically insufficient",
+      "evidence": {
+        "full_lqr_position_rmse_m": 0.21230805574990605,
+        "full_lqr_physical_saturation_fraction": 0.0038035961272475795
+      }
+    }
+  ],
+  "unknown_remaining": [
+    "The exact wind-onset slope and magnitude boundary at which the residual loop leaves its feasible trust region.",
+    "How much of the sustained prediction error is aerodynamic nonlinearity versus state-dependent cutter motion.",
+    "Whether confidence scheduling alone is sufficient or an explicit bounded disturbance state is also required."
+  ]
+}
