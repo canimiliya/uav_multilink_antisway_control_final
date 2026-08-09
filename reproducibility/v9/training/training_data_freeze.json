@@ -1,0 +1,12 @@
+{
+  "result": "V9_TRAINING_DATA_FROZEN",
+  "bank": "reproducibility/v9/training/training_bank.npz",
+  "bank_sha256": "e8f04df4f115086f539307be518dd15ef9e2b00baedd89b4ae162e112a4c6ac3",
+  "manifest": "reproducibility/v9/r0/identification_manifest.json",
+  "manifest_sha256": "c86be87ce6d8d1133a5c5e7de5823cbe3215af9d7d63b1e01fc880b880952bb6",
+  "trajectory_split_frozen": true,
+  "predictor_fit_mask": "label_valid AND safe_step",
+  "unsafe_data_policy": "preserved for audit and excluded from fitting/model selection",
+  "training_allowed_after_this_freeze": true,
+  "holdout_accessed": false
+}
