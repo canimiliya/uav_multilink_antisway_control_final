@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT / "scripts") not in sys.path:
     sys.path.insert(0, str(ROOT / "scripts"))
 
-from run_v3_r1_baselines import read_json, run_candidates, run_case, summary_without_rows, write_csv, write_json  # noqa: E402
+from run_v3_r1_baselines import read_json, run_candidates, run_case, summary_without_rows, write_json  # noqa: E402
 
 
 R1 = ROOT / "reproducibility/v3/r1"
@@ -34,6 +34,18 @@ def git(*args: str) -> str:
 
 def scalar(summary: dict) -> dict:
     return summary_without_rows(summary)
+
+
+def write_union_csv(path: Path, rows: list[dict]) -> None:
+    fields: list[str] = []
+    for row in rows:
+        for key in row:
+            if key not in fields:
+                fields.append(key)
+    with path.open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def representative_traces(parameters: dict, samples: list[dict]) -> dict:
@@ -137,7 +149,7 @@ def main() -> int:
     rows = []
     for name, value in (("backbone", backbone), ("predictive_only", predictive), ("residual_only", residual), ("full", full)):
         rows.append({"ablation": name, **{key: item for key, item in value.items() if key != "parameters"}})
-    write_csv(R2 / "ablation_results.csv", rows)
+    write_union_csv(R2 / "ablation_results.csv", rows)
     write_json(R2 / "self_ablation.json", {
         "executed_after_committed_self_freeze": True,
         "self_freeze_head": git("rev-parse", SELF_FREEZE_HEAD),

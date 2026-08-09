@@ -1,0 +1,34 @@
+{
+  "selected_candidate": "self_a_034",
+  "development_only": true,
+  "traces": [
+    {
+      "sample_id": "calm_axis_00",
+      "path": "reproducibility/v3/r2/representative/calm_axis_00.csv",
+      "sha256": "143871e2756758b50d39783cbb48b25f20ecbddffaba43d63ba6a79f74cb8811"
+    },
+    {
+      "sample_id": "constant_3_face_diagonal_00",
+      "path": "reproducibility/v3/r2/representative/constant_3_face_diagonal_00.csv",
+      "sha256": "137cd5fd339b37a6dff3050511d343cc3de7e2000986e88680f7e8bb5e5e60ed"
+    },
+    {
+      "sample_id": "stochastic_2000",
+      "path": "reproducibility/v3/r2/representative/stochastic_2000.csv",
+      "sha256": "1bfb2fe05d58e5e7815f0a45ca09ecbc4162ab471b8dc78bdfa62f30abd719c0"
+    },
+    {
+      "sample_id": "ramp_wind_equilibrium_hold",
+      "path": "reproducibility/v3/r2/representative/ramp_wind_equilibrium_hold.csv",
+      "sha256": "f05af60d7476b961baca34e74a57f81b820a9c838649a61faf7cc5cf5d533ed6"
+    }
+  ],
+  "plots": [
+    {
+      "path": "reproducibility/v3/r2/representative/selected_position_error.png",
+      "sha256": "19bbd3792c5c2c2033344dde124899fbf257d4233ab41bd2580bf5f96b06e28f",
+      "purpose": "representative frozen Self 3D cutter-tip position-error trajectories"
+    }
+  ],
+  "holdout_executed": false
+}

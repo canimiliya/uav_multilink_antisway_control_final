@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 from pathlib import Path
 
 
@@ -59,3 +60,30 @@ def test_ablation_contract_is_post_freeze_and_cannot_retune() -> None:
     assert contract["ablation_retuning_allowed"] is False
     assert contract["ablation_may_modify_self_freeze"] is False
     assert contract["holdout_executed"] is False
+
+
+def test_ablation_is_post_freeze_and_full_method_is_necessary() -> None:
+    ablation = read("self_ablation.json")
+    gate = read("gate.json")
+    assert ablation["executed_after_committed_self_freeze"] is True
+    assert ablation["self_freeze_head"] == "58b6544ab6a123f08d1cf04f3b9a7b38a40647e5"
+    assert ablation["no_ablation_retuning"] is True
+    assert ablation["backbone"]["success_rate"] == 44 / 75
+    assert ablation["predictive_only"]["success_rate"] == 39 / 75
+    assert ablation["residual_only"]["success_rate"] == 25 / 75
+    assert ablation["full"]["success_rate"] == 1.0
+    assert ablation["holdout_executed"] is False
+    assert gate["ablation_executed"] is True
+    assert gate["ablation_after_committed_freeze"] is True
+    assert gate["result"] == "V3_SELF_ADVANCED_FROZEN"
+
+
+def test_representative_development_artifacts_match_manifest_hashes() -> None:
+    manifest = read("visual_manifest.json")
+    entries = manifest["traces"] + manifest["plots"]
+    assert len(manifest["traces"]) == 4 and len(manifest["plots"]) == 1
+    for entry in entries:
+        path = ROOT / entry["path"]
+        assert path.is_file()
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == entry["sha256"]
+    assert manifest["holdout_executed"] is False

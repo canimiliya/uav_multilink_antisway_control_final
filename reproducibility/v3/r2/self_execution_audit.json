@@ -29,6 +29,32 @@
       "status": "COMPLETE",
       "parameters_changed_after_R2_A": false,
       "result_artifacts": ["self_round_b.csv", "development_results_round_b.csv", "self_round_b_summary.json"]
+    },
+    {
+      "attempt": 4,
+      "scope": "post-freeze ablation, initial evidence writer",
+      "candidate_count": 2,
+      "development_case_count": 75,
+      "authoritative_case_executions": 150,
+      "workers": 8,
+      "status": "PERFORMANCE_COMPLETE_EVIDENCE_WRITE_FAILED",
+      "failure": "ValueError: dict contains fields not in fieldnames",
+      "root_cause": "backbone, predictive-only, residual-only, and full summaries have different optional diagnostic columns",
+      "frozen_parameters_changed": false,
+      "holdout_executed": false
+    },
+    {
+      "attempt": 5,
+      "scope": "post-freeze ablation repeated after union-column CSV repair",
+      "candidate_count": 2,
+      "development_case_count": 75,
+      "authoritative_case_executions": 150,
+      "representative_development_reruns": 4,
+      "workers": 8,
+      "status": "COMPLETE",
+      "frozen_parameters_changed": false,
+      "result_artifacts": ["ablation_results.csv", "self_ablation.json", "visual_manifest.json", "representative/"],
+      "holdout_executed": false
     }
   ],
   "hardware": {

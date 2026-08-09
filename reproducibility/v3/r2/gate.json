@@ -32,8 +32,9 @@
   "ramp_gate": true,
   "realtime_gate": true,
   "win_level": "STRICT_ALL_METRIC_WIN_DEVELOPMENT",
-  "ablation_executed": false,
+  "ablation_executed": true,
   "advanced_paper_started": false,
   "holdout_executed": false,
-  "result": "V3_SELF_ADVANCED_FROZEN_PRE_ABLATION"
+  "result": "V3_SELF_ADVANCED_FROZEN",
+  "ablation_after_committed_freeze": true
 }
