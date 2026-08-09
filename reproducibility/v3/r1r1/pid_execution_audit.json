@@ -37,6 +37,16 @@
       "candidate_set_changed": true,
       "change_authorized_by": "pid_refinement_protocol.json",
       "holdout_executed": false
+    },
+    {
+      "attempt": 5,
+      "workers": 8,
+      "status": "COMPLETE",
+      "scope": "Preregistered final Round E",
+      "completed_case_count": 1350,
+      "candidate_set_changed": true,
+      "change_authorized_by": "pid_final_local_protocol.json",
+      "holdout_executed": false
     }
   ],
   "holdout_executed": false

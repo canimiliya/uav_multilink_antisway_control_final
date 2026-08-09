@@ -1,0 +1,8 @@
+{
+  "old_contract": "reproducibility/v3/r1/advanced_numeric_win_contract.json",
+  "old_contract_sha256": "04379bc5da0577d8ae63fd77477a5d785922a5e147622597c137c74d82d76cb2",
+  "old_contract_status": "SUPERSEDED_BY_R1R1_AFTER_TRADITIONAL_RECOVERY",
+  "new_contract": "reproducibility/v3/r1r1/advanced_numeric_win_contract.json",
+  "reason": "Three competent traditional baselines were refrozen after PID recovery.",
+  "advanced_started": false
+}

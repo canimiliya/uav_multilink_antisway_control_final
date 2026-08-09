@@ -1,0 +1,20 @@
+{
+  "task": "V3-R1R1-TRADITIONAL-PID-RECOVERY-AND-BASELINE-REFREEZE-R1",
+  "start_head": "4c1bdda538ceee970bff3f28162b40bcbd846081",
+  "branch": "research-v3",
+  "r1_evidence_preserved": true,
+  "pid_root_cause_audited": true,
+  "corrected_pid_frozen": true,
+  "pid_safety_rate": 1.0,
+  "pid_competence_pass": true,
+  "full_lqr_unchanged": true,
+  "task_lqr_unchanged": true,
+  "three_traditional_valid": true,
+  "primary_traditional_selected": true,
+  "traditional_metric_envelope_refrozen": true,
+  "advanced_numeric_contract_refrozen": true,
+  "advanced_self_started": false,
+  "advanced_paper_selected": false,
+  "holdout_executed": false,
+  "result": "V3_TRADITIONAL_BASELINES_FROZEN"
+}

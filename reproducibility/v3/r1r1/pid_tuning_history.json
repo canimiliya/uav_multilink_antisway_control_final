@@ -19,62 +19,72 @@
       "round": "R1R1-D",
       "candidate_count": 6,
       "case_count": 75
+    },
+    {
+      "round": "R1R1-E",
+      "candidate_count": 18,
+      "case_count": 75
     }
   ],
-  "total_unique_candidates_evaluated": 126,
-  "authoritative_case_executions": 2506,
+  "total_unique_candidates_evaluated": 144,
+  "authoritative_case_executions": 3856,
   "all_attempts_retained": true,
   "execution_audit": "pid_execution_audit.json",
   "selected": {
-    "candidate_id": "cascaded_relative_pid_007",
+    "candidate_id": "hybrid_x007_y041_z041",
     "sample_count": 75,
     "safe_sample_count": 75,
-    "task_success_count": 36,
+    "task_success_count": 40,
     "safety_rate": 1.0,
-    "success_rate": 0.48,
-    "acquisition_median_s": 3.0650000000000004,
-    "position_rmse_3d_m": 0.3828861939327448,
-    "orientation_rmse_deg": 0.5774952534714999,
-    "ramp_peak_position_error_m": 0.4337049481771983,
-    "ramp_steady_state_position_error_m": 1.6596967330693166,
-    "total_acceleration_effort": 7.200505166151011,
+    "success_rate": 0.5333333333333333,
+    "acquisition_median_s": 3.58,
+    "position_rmse_3d_m": 0.23238635694954796,
+    "orientation_rmse_deg": 0.5546705195073431,
+    "ramp_peak_position_error_m": 0.4337399307846601,
+    "ramp_steady_state_position_error_m": 0.7190388513613158,
+    "total_acceleration_effort": 5.16355838774362,
     "parameters": {
-      "candidate_id": "cascaded_relative_pid_007",
+      "candidate_id": "hybrid_x007_y041_z041",
       "uav_kp": [
         0.48867289851180795,
-        0.5274468914348825,
-        2.6337323750795765
+        0.37128866118501314,
+        3.431062154413886
       ],
       "uav_kd": [
         2.22217353760614,
-        6.99638760169997,
-        3.824911498356344
+        4.4776894974449775,
+        2.7041925588228946
       ],
       "uav_ki": [
         0.23661659265799365,
-        0.21706509734685092,
-        0.19883893370556166
+        0.2297287253389862,
+        0.14051984560559472
       ],
       "tip_kp": [
         0.35025352831652395,
-        0.04826873755995449,
-        0.22224589774922432
+        0.10878004321285528,
+        0.10826243541616985
       ],
       "tip_kd": [
         0.014200466963988934,
-        0.15717863519746822,
-        0.18132327099714712
+        0.0808420650785526,
+        0.20759230115721328
       ],
       "correction_limit_m": [
         0.11025026326783037,
-        0.030390348674764523,
-        0.035216582603129314
+        0.036683753488332485,
+        0.03442936630634569
       ],
-      "correction_slew_m_per_update": 0.04037111026333381,
-      "integral_limit": 0.24488745234477247,
-      "tip_velocity_mode": "relative_to_uav"
+      "correction_slew_m_per_update": 0.034588666456093715,
+      "integral_limit": 0.37816414809693777,
+      "tip_velocity_mode": "relative_to_uav",
+      "axis_donors": {
+        "x": "007",
+        "y": "041",
+        "z": "041"
+      }
     },
     "calm_axis_acquired_count": 6,
-    "competence_pass": false
+    "competence_pass": true
   }
 }

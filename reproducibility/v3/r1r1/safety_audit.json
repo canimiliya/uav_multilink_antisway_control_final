@@ -1,0 +1,22 @@
+{
+  "development_count": 75,
+  "selected": {
+    "corrected_pid": {
+      "candidate_id": "hybrid_x007_y041_z041",
+      "safe": true,
+      "safety_rate": 1.0
+    },
+    "full_lqr": {
+      "candidate_id": "full_lqr_048",
+      "safe": true,
+      "safety_rate": 1.0
+    },
+    "task_lqr": {
+      "candidate_id": "task_lqr_009",
+      "safe": true,
+      "safety_rate": 1.0
+    }
+  },
+  "all_selected_safe": true,
+  "holdout_executed": false
+}

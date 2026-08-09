@@ -1,0 +1,54 @@
+{
+  "three_traditional_valid": true,
+  "metrics": {
+    "safety": {
+      "value": 1.0,
+      "SOURCE_CONTROLLER": "corrected_pid",
+      "SOURCE_CANDIDATE": "hybrid_x007_y041_z041",
+      "field": "safety_rate"
+    },
+    "success": {
+      "value": 0.72,
+      "SOURCE_CONTROLLER": "full_lqr",
+      "SOURCE_CANDIDATE": "full_lqr_048",
+      "field": "success_rate"
+    },
+    "position": {
+      "value": 0.08820188977612707,
+      "SOURCE_CONTROLLER": "full_lqr",
+      "SOURCE_CANDIDATE": "full_lqr_048",
+      "field": "position_rmse_3d_m"
+    },
+    "acquisition": {
+      "value": 2.17,
+      "SOURCE_CONTROLLER": "task_lqr",
+      "SOURCE_CANDIDATE": "task_lqr_009",
+      "field": "acquisition_median_s"
+    },
+    "orientation": {
+      "value": 0.3607769490324001,
+      "SOURCE_CONTROLLER": "task_lqr",
+      "SOURCE_CANDIDATE": "task_lqr_009",
+      "field": "orientation_rmse_deg"
+    },
+    "ramp_peak": {
+      "value": 0.32597186582936344,
+      "SOURCE_CONTROLLER": "full_lqr",
+      "SOURCE_CANDIDATE": "full_lqr_048",
+      "field": "ramp_peak_position_error_m"
+    },
+    "ramp_steady": {
+      "value": 0.15037521261561376,
+      "SOURCE_CONTROLLER": "full_lqr",
+      "SOURCE_CANDIDATE": "full_lqr_048",
+      "field": "ramp_steady_state_position_error_m"
+    },
+    "effort": {
+      "value": 0.594907928959152,
+      "SOURCE_CONTROLLER": "task_lqr",
+      "SOURCE_CANDIDATE": "task_lqr_009",
+      "field": "total_acceleration_effort"
+    }
+  },
+  "holdout_executed": false
+}
