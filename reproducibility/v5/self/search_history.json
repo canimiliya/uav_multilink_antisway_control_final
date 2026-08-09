@@ -1,0 +1,26 @@
+{
+  "protocol_frozen_before_performance": true,
+  "stage_a": {
+    "candidate_count": 12,
+    "sample_count_each": 24,
+    "selection_authority": false
+  },
+  "stage_b": {
+    "candidate_count": 36,
+    "sample_count_each": 120
+  },
+  "stage_c_selected_candidate_ids": [
+    "satc_b_027",
+    "satc_b_026",
+    "satc_b_031",
+    "satc_b_003",
+    "satc_b_029",
+    "satc_b_025",
+    "satc_b_006",
+    "satc_b_009"
+  ],
+  "stage_c_reuses_stage_b_parameters": true,
+  "unique_configuration_count": 48,
+  "maximum_unique_configurations": 64,
+  "holdout_executed": false
+}

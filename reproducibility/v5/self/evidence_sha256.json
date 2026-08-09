@@ -1,0 +1,15 @@
+{
+  "development_protocol.json": "24e7a1978f0c3d9bb9dd1dde1b774697b7ddb85c2427680372b5a79c0f511e72",
+  "baseline_development_results.csv": "9d5cc3427b764b11b00e8747e9467cd855a935ecb8348d7558140a21b45996ad",
+  "stage_a_results.csv": "43d1f1b97c8dbd6be1ca2717418bad5eb6e35c12657e3f6861034f13a259c583",
+  "stage_b_results.csv": "4e3df759619e933099cb2541b948225d7f7e8f902df25552dfa0524c8254b97d",
+  "stage_c_results.csv": "1d4122c47db3c511d4f9948361d8a7b2701f4f7605be18746738e43f0fc947f1",
+  "stage_b_gate_audit.json": "0db6cc226f580a2cdfeddfa4585f943b4b8f9dac412033a5be339884f2d41217",
+  "stage_c_gate_audit.json": "cf9df8787995d591173bb8ebc739d7c0615d6aa2e2fba07db28b456b1e69d491",
+  "self_freeze.json": "613e48ec12d7aaede8171ce9fdf173e5b673befb1295f4b0045126dca04ae36b",
+  "development_results.csv": "d3debc739ba72801fd4b125e47975857ae3ab0892c34e8c6ff7e57b109aaeeac",
+  "directional_analysis.json": "c59519e40438d3fb816dbff4b5c9b4ff1cb4ebb28cd4a2dce4a9a7dcb8a8daba",
+  "paired_bootstrap.json": "890b2a374591a3e085020a98370645ba3437bb4075dbf9270c3287cb70dd946b",
+  "safety_audit.json": "99b8f38d90370b8cb4fcf3d16953ed4e5df353f3b8c9c6be0d4e2299e8d922e2",
+  "constraint_audit.json": "49a6d9907bef0e9cfea569638d2ed7fc998432eac417ecc68db7d707ad0417fb"
+}

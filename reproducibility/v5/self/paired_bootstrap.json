@@ -1,0 +1,13 @@
+{
+  "pairs": 120,
+  "resamples": 10000,
+  "seed": 20260816,
+  "mean_delta_m": 0.04004286019003157,
+  "median_delta_m": 0.052880405308879795,
+  "positive_pair_fraction": 0.9166666666666666,
+  "ci_95_m": [
+    0.03491735424543911,
+    0.0450581985798106
+  ],
+  "lower_bound_gt_zero": true
+}

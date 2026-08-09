@@ -1,0 +1,8 @@
+{
+  "candidate_id": "satc_b_027",
+  "acceleration_limit_m_s2": 2.0,
+  "slew_limit_m_s2_per_update": 0.25,
+  "max_observed_acceleration_m_s2": 1.391059160972362,
+  "max_observed_step_m_s2": 0.23731143838045643,
+  "within_frozen_authority": true
+}
