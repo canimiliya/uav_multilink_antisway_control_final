@@ -1,0 +1,54 @@
+{
+  "task": "V6-RECENT-PAPER-ADVANCED-BENCHMARK-SUITE-AND-FINAL-PUBLICATION-FREEZE-R1",
+  "result": "V6_NO_QUALIFIED_RECENT_PAPER_BASELINE",
+  "v6_complete": true,
+  "v6_permanently_closed": true,
+  "highest_project_claim": "V5_SELF_OVERALL_HOLDOUT_WIN",
+  "highest_project_claim_changed_by_v6": false,
+  "qualified_paper_count": 0,
+  "v6_holdout": {
+    "executed": false,
+    "sample_count": 0,
+    "participants": 0,
+    "retries": [],
+    "compromised": false,
+    "reason": "ZERO_QUALIFIED_PAPERS"
+  },
+  "v6_development_authoritative_runs": {
+    "comparators": 480,
+    "paper_stage_a": 384,
+    "paper_stage_b": 5760,
+    "total": 6624
+  },
+  "checkpoints": {
+    "source_head": "60a6350d6875d4654ab881fdf8d96e749226133c",
+    "contract_head": "8cb763054d292f0bf40e2b9be08c2635b90fdb53",
+    "paper_suite_head": "104991c2f0b5bdcdaed2ba20d11485f7bfea9ebc",
+    "implementation_head": "5e54001607f79e97cba3afb2af72acdb65b40795",
+    "paper_development_final_head": "8e877ec8cbd0102dc07f72a87d0f349a50cbe514",
+    "holdout_protocol_head": null
+  },
+  "v1_v5_unchanged": true,
+  "protected_trees": {
+    "frozen": {
+      "source": "01b7503111617baca2460f93824acab235ff22bc",
+      "current": "01b7503111617baca2460f93824acab235ff22bc"
+    },
+    "v2": {
+      "source": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+      "current": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7"
+    },
+    "v3": {
+      "source": "956e77658e01efabb110dcf1934215af344a620d",
+      "current": "956e77658e01efabb110dcf1934215af344a620d"
+    },
+    "v4": {
+      "source": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+      "current": "9c76518abe95e5e88419eb7cd310087ff1eb559f"
+    },
+    "v5": {
+      "source": "1134092eb80efc8639ce822d777f30c04a9af226",
+      "current": "1134092eb80efc8639ce822d777f30c04a9af226"
+    }
+  }
+}

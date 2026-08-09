@@ -1,0 +1,29 @@
+{
+  "traditional": {
+    "status": "FROZEN_UNCHANGED",
+    "methods": [
+      "hybrid_x007_y041_z041",
+      "full_lqr_048",
+      "task_lqr_009"
+    ]
+  },
+  "satc": {
+    "candidate": "satc_b_027",
+    "status": "FROZEN_UNCHANGED",
+    "v5": "V5_SELF_OVERALL_HOLDOUT_WIN",
+    "v6_role": "reference only"
+  },
+  "YU2026": {
+    "development": "PAPER_DEVELOPMENT_INELIGIBLE",
+    "holdout": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+    "best_candidate": "yu_b_007"
+  },
+  "SEP2026": {
+    "development": "PAPER_DEVELOPMENT_INELIGIBLE",
+    "holdout": "NOT_RUN_DEVELOPMENT_INELIGIBLE",
+    "best_candidate": "sep_b_002"
+  },
+  "KANG2026": {
+    "status": "NOT_IMPLEMENTED_FULL_TEXT_UNAVAILABLE_NO_FORMULA_GUESSING"
+  }
+}

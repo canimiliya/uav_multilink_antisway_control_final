@@ -1,0 +1,10 @@
+{
+  "technical_report": "docs/v6/FINAL_PROJECT_TECHNICAL_REPORT.md",
+  "paper_ready_results": "docs/v6/PAPER_READY_RESULTS.md",
+  "comparison_table": "docs/v6/FINAL_COMPARISON_TABLE.csv",
+  "claim_matrix": "docs/v6/FINAL_CLAIM_MATRIX.md",
+  "resume": "docs/v6/RESUME_PROJECT_FINAL.md",
+  "interview_qa": "docs/v6/INTERVIEW_QA.md",
+  "method_evolution": "docs/v6/METHOD_EVOLUTION.md",
+  "negative_results": "docs/v6/NEGATIVE_RESULTS.md"
+}

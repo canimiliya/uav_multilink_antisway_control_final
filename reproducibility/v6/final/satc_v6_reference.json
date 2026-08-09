@@ -1,0 +1,46 @@
+{
+  "candidate": "satc_b_027",
+  "status": "FROZEN_UNCHANGED_REFERENCE_ONLY",
+  "overall": {
+    "sample_count": 120,
+    "safety_rate": 1.0,
+    "success_rate": 0.9,
+    "position_mean_m": 0.09687473218275416,
+    "position_p90_m": 0.14267044496649559,
+    "position_p95_m": 0.1510582764536151,
+    "orientation_mean_deg": 0.7333995828416328,
+    "acquisition_median_s": 3.7225,
+    "effort_mean": 0.9649844773829573,
+    "solve_p95_ms": 4.0365
+  },
+  "strong": {
+    "sample_count": 54,
+    "safety_rate": 1.0,
+    "success_rate": 0.9074074074074074,
+    "position_mean_m": 0.12778405821509717,
+    "position_p90_m": 0.15233618125442078,
+    "position_p95_m": 0.15680224641660415,
+    "orientation_mean_deg": 1.0519558756956506,
+    "acquisition_median_s": 6.295,
+    "effort_mean": 1.4556198982630748,
+    "solve_p95_ms": 3.73
+  },
+  "position_improvement_vs_full_lqr": 0.30277944117035266,
+  "paired_bootstrap": {
+    "evidence_split": "V6 Development only",
+    "comparison": "full_lqr_048 minus frozen satc_b_027 position RMSE",
+    "pairs": 120,
+    "resamples": 10000,
+    "seed": 20260819,
+    "mean_delta_m": 0.04206943828945313,
+    "median_delta_m": 0.05438179851867535,
+    "positive_pair_fraction": 0.925,
+    "ci_95_m": [
+      0.03709840103113865,
+      0.046934981280648304
+    ],
+    "lower_bound_gt_zero": true,
+    "formal_claim_boundary": "Supporting V6 Development reference; formal SATC claim remains the frozen V5 Holdout result."
+  },
+  "holdout": "NOT_RUN_V6_ZERO_QUALIFIED_PAPERS"
+}

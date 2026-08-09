@@ -1,0 +1,6 @@
+{
+  "command": "python -m pytest tests/release tests/v2 tests/v3 tests/v4 tests/v5 tests/v6 --import-mode=importlib -q",
+  "result": "190 passed",
+  "warnings": "6 dependency deprecation warnings from OSQP tests",
+  "performance_rerun_during_finalization": false
+}

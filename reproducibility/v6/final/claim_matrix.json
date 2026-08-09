@@ -1,0 +1,17 @@
+{
+  "allowed": [
+    "V5 SATC-OFMPC remains the project's formal Overall Holdout winner against the frozen Traditional benchmark.",
+    "On the new V6 Development bank, frozen SATC achieved lower mean position RMSE than frozen Full-LQR without V6 retuning.",
+    "The two preregistered recent-Paper adaptations failed V6 Development qualification and were not evaluated on V6 Holdout.",
+    "The negative Paper results are adaptation results on this five-link benchmark, not evaluations of the original authors' systems."
+  ],
+  "forbidden": [
+    "V5_SELF_STRICT_HOLDOUT_WIN",
+    "Paper-Advanced > Traditional",
+    "SATC beat Yu et al. or SEP-NMPC as originally published",
+    "V6 Holdout was executed",
+    "Kang and Shan formulas were reproduced",
+    "real-flight or hardware validation"
+  ],
+  "v6_satc_development_position_improvement_vs_full": 0.30277944117035266
+}
