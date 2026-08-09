@@ -1,0 +1,28 @@
+{
+  "search_seed": 20260831,
+  "maximum_unique_configurations": 128,
+  "planned_unique_configurations": 48,
+  "stage_a": {
+    "candidates": 48,
+    "representative_samples": 24,
+    "selection_authority": "rank top 8 for Stage B"
+  },
+  "stage_b": {
+    "candidates": 8,
+    "samples_each": 144,
+    "qualification_authority": true
+  },
+  "stage_c": {
+    "trigger": "at least one Stage-B candidate passes all gates",
+    "candidate": "single preregistered lexicographic winner",
+    "fresh_confirmation_samples": 144
+  },
+  "parameter_families": [
+    "prediction horizon",
+    "position/velocity/orientation/angular task weights",
+    "input and rate weights",
+    "learned-force mapping scale",
+    "online lifted update ridge and blending"
+  ],
+  "satc_used_for_search": false
+}

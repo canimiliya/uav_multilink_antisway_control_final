@@ -1,0 +1,94 @@
+{
+  "task": "V9-NEURAL-PREDICTOR-MPC-RECENT-PAPER-STRONG-BASELINE-AND-FINAL-CLOSURE-R1",
+  "source_head": "92188e0eee0e92ed9405af07e80839360e30a19c",
+  "branch": "research-v9",
+  "paper": {
+    "selection_time": "2026-08-10T03:18:00+08:00",
+    "selection_before_v9_performance": true,
+    "title": "Neural Predictor for Flight Control with Payload",
+    "authors": [
+      "Ao Jin",
+      "Chenhao Li",
+      "Qinyi Wang",
+      "Ya Liu",
+      "Panfeng Huang",
+      "Fan Zhang"
+    ],
+    "venue": "IEEE Robotics and Automation Letters",
+    "year": 2025,
+    "doi": "10.1109/LRA.2025.3573624",
+    "arxiv": "2410.15946v2",
+    "official_repository": "https://github.com/NPU-RCIR/Neural-Predictor",
+    "upstream_branch": "master",
+    "upstream_commit": "e2ababf519e7b7cca8e23f42dcb8c34fae927037",
+    "license": "MIT",
+    "source_archive_sha256": "f9e1857f08ad7d39d006d830ffe5a88e71fadc9dfeee71759a63840726c452d9",
+    "paper_pdf_sha256": "40065e6036a8768d5833db3439a42cc258d2286e4aeb2d0cb6f108bc536936fc",
+    "adaptation_name": "JIN2025-NP-MPC-ADAPTED-5LINK",
+    "adaptation_classification": "ADAPTED_NOT_EXACT_REPRODUCTION",
+    "selection_reasons": [
+      "recent peer-reviewed RA-L payload-control method",
+      "unknown payload and residual force/torque modeled from data",
+      "learned lifted dynamics integrated into MPC",
+      "complete primary paper and author training/evaluation code",
+      "method family directly addresses the V6-V8 cross-model adaptation gap"
+    ],
+    "selection_not_based_on": "expected ease of defeating SATC",
+    "paper_replacement_after_failure_allowed": false
+  },
+  "primary_goal": "Recent Paper stronger than frozen Traditional on Development and inherited unseen Holdout",
+  "protected": {
+    "versions": "V1-V8 tags and evidence",
+    "traditional": [
+      "hybrid_x007_y041_z041",
+      "full_lqr_048",
+      "task_lqr_009"
+    ],
+    "self": [
+      "self_a_034",
+      "satc_b_027"
+    ],
+    "plant": "reproducibility/frozen/model/model_5link_controlled.xml"
+  },
+  "common_interface": {
+    "command": "[ax, ay, az] world-frame acceleration",
+    "outer_rate_hz": 20,
+    "component_limit_m_s2": 2.0,
+    "component_slew_limit_m_s2_per_update": 0.25,
+    "inner_loop": "same geometric inner loop",
+    "paper_torque_actuator_authority": false
+  },
+  "data_isolation": [
+    "V9 identification/training bank",
+    "V7 frozen 144-sample Development",
+    "V7 frozen 112-sample one-shot Holdout"
+  ],
+  "training_data": {
+    "trajectory_count": 240,
+    "split": "192 TRAIN / 48 VALIDATION by whole trajectory",
+    "controller": "full_lqr_048",
+    "label_source": "finite differences plus actual command and nominal dynamics",
+    "wind_truth_input": false
+  },
+  "search_limits": {
+    "neural_predictor_models_max": 64,
+    "neural_predictor_models_registered": 24,
+    "np_mpc_configurations_max": 128,
+    "np_mpc_configurations_planned": 48
+  },
+  "np_mpc": {
+    "nominal_model": "frozen 20-state discrete linear model",
+    "learned_term": "predicted force/torque state mapped inside every horizon transition",
+    "optimizer": "OSQP constrained receding-horizon QP",
+    "online_lifted_update_window": 40,
+    "satc_modules_forbidden": true
+  },
+  "stopping": {
+    "predictor_incompetent": "BLOCKED_V9_NEURAL_PREDICTOR_NOT_VALIDATED",
+    "development_fail": "V9_NEURAL_PREDICTOR_PAPER_NOT_STRONGER_THAN_TRADITIONAL",
+    "paper_replacement": false,
+    "automatic_v10": false
+  },
+  "performance_accessed": false,
+  "holdout_accessed": false
+}

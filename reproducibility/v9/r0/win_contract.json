@@ -1,0 +1,36 @@
+{
+  "primary": "full_lqr_048",
+  "best_traditional_scope": [
+    "hybrid_x007_y041_z041",
+    "full_lqr_048",
+    "task_lqr_009"
+  ],
+  "development_and_holdout_gates": {
+    "safety_rate": "not below best Traditional",
+    "success_rate": "not below best Traditional",
+    "position_mean": "at least 5 percent better than full_lqr_048",
+    "acquisition_median": "no more than 5 percent worse than full_lqr_048",
+    "paired_bootstrap": "95 percent lower bound greater than zero",
+    "strong_mean": "at least 5 percent better than full_lqr_048",
+    "strong_p90": "no more than 10 percent worse than full_lqr_048",
+    "catastrophic_pairs": 0
+  },
+  "additional_value_any_one": [
+    "acquisition at least 5 percent better",
+    "orientation at least 10 percent better",
+    "strong mean at least 10 percent better",
+    "effort at least 10 percent better",
+    "another preregistered paper-native advantage"
+  ],
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20260901,
+    "pairing": "exact sample_id"
+  },
+  "holdout_unlock": [
+    "predictor frozen",
+    "Paper Development qualified",
+    "NP-MPC frozen",
+    "all search stopped"
+  ]
+}

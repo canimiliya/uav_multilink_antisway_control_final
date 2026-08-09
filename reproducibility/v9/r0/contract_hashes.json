@@ -1,0 +1,9 @@
+{
+  "development_manifest": "b51d9958b706354867d593d61a93336c702561e1e3b3e9dfcd5488ced0886cc3",
+  "holdout_manifest": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+  "identification_manifest": "c86be87ce6d8d1133a5c5e7de5823cbe3215af9d7d63b1e01fc880b880952bb6",
+  "predictor_registry": "c7f16d93e889bf8c3d4f4154b50813881f77c994ea75867ba5b9aa336d5f4123",
+  "research_contract": "44ceeb98bb0ce402d2fc85a96e304dfeeca398dae35e243e125e343d81f68453",
+  "win_contract": "d73939c90403cbb1df63f4bd405ba8e165948638b03b34b14c4d80ba7de9b7f3",
+  "controller_search_contract": "abe665b1f7f0fc4cb841b2c040b5994a9e6e2c9a9440d10b6c1a7d2186d7294e"
+}
