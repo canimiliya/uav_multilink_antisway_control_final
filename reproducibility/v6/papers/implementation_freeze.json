@@ -1,0 +1,20 @@
+{
+  "status": "V6_PAPER_IMPLEMENTATIONS_FROZEN_BEFORE_PERFORMANCE",
+  "suite_freeze_head": "104991c2f0b5bdcdaed2ba20d11485f7bfea9ebc",
+  "implementations": {
+    "YU2026": "src/uav_sway/v6/paper_controllers.py::Yu2026FiniteTimeCFO",
+    "SEP2026": "src/uav_sway/v6/paper_controllers.py::SEP2026PassivityNMPC"
+  },
+  "sha256": {
+    "src/uav_sway/v6/paper_controllers.py": "4c4870f8cb34b8399058e4f8a0f4765c54af572e3120315237d4c933be242f55",
+    "scripts/run_v6_development.py": "fdf2e6c18d9dce8556390bd94ad107ecc9523b3787d583c8d1639511370f67ca",
+    "reproducibility/v6/papers/yu2026_adaptation_contract.json": "e4a8d385070970c2658c0ff344a6cc0cc248ffb19644e2073488a882c7beb45c",
+    "reproducibility/v6/papers/sep2026_adaptation_contract.json": "fc943a93ea929752314bd097ab4eea85d117b6a8c10da981d86100130689ebdd",
+    "reproducibility/v6/papers/development_protocol.json": "357d77eb8dca54817d2e3e26aa5c6803084438a29902c7ca030d229ed45be7c2"
+  },
+  "traditional_mutated": false,
+  "satc_mutated": false,
+  "paper_performance_executed": false,
+  "holdout_accessed": false,
+  "parameters_and_implementation_mutable_after_freeze": false
+}
