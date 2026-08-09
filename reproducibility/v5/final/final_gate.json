@@ -1,0 +1,52 @@
+{
+  "task": "V5-END-TO-END-TRANSIENT-ROBUST-SELF-PAPER-AND-ONE-SHOT-VALIDATION-R1",
+  "result": "V5_SELF_OVERALL_HOLDOUT_WIN",
+  "v5_complete": true,
+  "v5_permanently_closed": true,
+  "strict_holdout_win": false,
+  "overall_holdout_win": true,
+  "development_win": true,
+  "failed_frozen_gate": {
+    "section": "normal_nonregression",
+    "gate": "acquisition",
+    "observed_degradation": 0.11272321428571425,
+    "maximum": 0.1
+  },
+  "holdout": {
+    "executed": true,
+    "sample_count": 96,
+    "participants": 5,
+    "authoritative_runs": 480,
+    "retries": [],
+    "compromised": false
+  },
+  "paper": {
+    "development": "PAPER_DEVELOPMENT_INELIGIBLE",
+    "holdout": "NOT_RUN_DEVELOPMENT_INELIGIBLE"
+  },
+  "v1_v4_unchanged": true,
+  "v1_v4_trees": {
+    "v1_release_frozen": {
+      "path": "reproducibility/frozen",
+      "source": "01b7503111617baca2460f93824acab235ff22bc",
+      "current": "01b7503111617baca2460f93824acab235ff22bc"
+    },
+    "v2": {
+      "path": "reproducibility/v2",
+      "source": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+      "current": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7"
+    },
+    "v3": {
+      "path": "reproducibility/v3",
+      "source": "956e77658e01efabb110dcf1934215af344a620d",
+      "current": "956e77658e01efabb110dcf1934215af344a620d"
+    },
+    "v4": {
+      "path": "reproducibility/v4",
+      "source": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+      "current": "9c76518abe95e5e88419eb7cd310087ff1eb559f"
+    }
+  },
+  "source_head": "8e3d7ad08747b00d46b9bdfc3cc72451491567db",
+  "holdout_protocol_head": "a97f00d5cfa11a8646117f490753742567893143"
+}

@@ -1,0 +1,142 @@
+{
+  "self": {
+    "aligned": {
+      "candidate": {
+        "sample_count": 12,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 0.13584118831734251,
+        "position_p90_m": 0.14950513990380981,
+        "position_p95_m": 0.15255677270158371,
+        "orientation_mean_deg": 1.268810473725866,
+        "acquisition_median_s": null,
+        "effort_mean": 1.682124648315687,
+        "solve_p95_ms": 3.2429
+      },
+      "full_lqr": {
+        "sample_count": 12,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 0.20086992522799696,
+        "position_p90_m": 0.21562679560455952,
+        "position_p95_m": 0.21594077658579452,
+        "orientation_mean_deg": 1.4331718240721332,
+        "acquisition_median_s": null,
+        "effort_mean": 1.6543757619550412,
+        "solve_p95_ms": 0.0482
+      },
+      "p90_degradation": -0.30664860327475707,
+      "catastrophic_pair_ids": [],
+      "gates": {
+        "p90_tail": true,
+        "catastrophic_pairs": true
+      }
+    },
+    "opposed": {
+      "candidate": {
+        "sample_count": 12,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 0.1417551528029759,
+        "position_p90_m": 0.15901571690682098,
+        "position_p95_m": 0.16026951810130943,
+        "orientation_mean_deg": 1.003482164991946,
+        "acquisition_median_s": null,
+        "effort_mean": 1.4641830521662331,
+        "solve_p95_ms": 3.2862
+      },
+      "full_lqr": {
+        "sample_count": 12,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 0.2118536145388176,
+        "position_p90_m": 0.23280097922422757,
+        "position_p95_m": 0.23641697523213215,
+        "orientation_mean_deg": 1.0936543208801888,
+        "acquisition_median_s": null,
+        "effort_mean": 1.629048860705795,
+        "solve_p95_ms": 0.0468
+      },
+      "p90_degradation": -0.3169456699163565,
+      "catastrophic_pair_ids": [],
+      "gates": {
+        "p90_tail": true,
+        "catastrophic_pairs": true
+      }
+    },
+    "cross": {
+      "candidate": {
+        "sample_count": 12,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 0.12633297615836506,
+        "position_p90_m": 0.14336121033314794,
+        "position_p95_m": 0.146251462484546,
+        "orientation_mean_deg": 1.014033908756564,
+        "acquisition_median_s": null,
+        "effort_mean": 1.7685349890344455,
+        "solve_p95_ms": 3.2843
+      },
+      "full_lqr": {
+        "sample_count": 12,
+        "safety_rate": 1.0,
+        "success_rate": 0.0,
+        "position_mean_m": 0.20308573775447494,
+        "position_p90_m": 0.2242784751805879,
+        "position_p95_m": 0.22564321337529986,
+        "orientation_mean_deg": 1.0830211044983533,
+        "acquisition_median_s": null,
+        "effort_mean": 1.8855350947672778,
+        "solve_p95_ms": 0.0478
+      },
+      "p90_degradation": -0.36078925889916896,
+      "catastrophic_pair_ids": [],
+      "gates": {
+        "p90_tail": true,
+        "catastrophic_pairs": true
+      }
+    }
+  },
+  "formal_bootstrap": {
+    "aligned": {
+      "pairs": 12,
+      "resamples": 10000,
+      "seed": 20260816,
+      "mean_delta_m": 0.06502873691065444,
+      "median_delta_m": 0.06685745960807643,
+      "positive_pair_fraction": 1.0,
+      "ci_95_m": [
+        0.06153680975924926,
+        0.06855445383812188
+      ],
+      "lower_bound_gt_zero": true
+    },
+    "opposed": {
+      "pairs": 12,
+      "resamples": 10000,
+      "seed": 20260816,
+      "mean_delta_m": 0.0700984617358417,
+      "median_delta_m": 0.0673919332645498,
+      "positive_pair_fraction": 1.0,
+      "ci_95_m": [
+        0.06363673403741162,
+        0.07680025983634509
+      ],
+      "lower_bound_gt_zero": true
+    },
+    "cross": {
+      "pairs": 12,
+      "resamples": 10000,
+      "seed": 20260816,
+      "mean_delta_m": 0.07675276159610984,
+      "median_delta_m": 0.07726387376331767,
+      "positive_pair_fraction": 1.0,
+      "ci_95_m": [
+        0.0725281996534117,
+        0.08094214564542507
+      ],
+      "lower_bound_gt_zero": true
+    }
+  },
+  "all_frozen_directional_gates_pass": true
+}

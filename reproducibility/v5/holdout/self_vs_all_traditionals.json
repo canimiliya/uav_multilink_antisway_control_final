@@ -1,0 +1,26 @@
+{
+  "hybrid_x007_y041_z041": {
+    "success_candidate": 0.5520833333333334,
+    "success_reference": 0.11458333333333333,
+    "position_improvement": 0.6784352227278165,
+    "acquisition_degradation": -0.22347266881028946,
+    "orientation_improvement": 0.1729198140367526,
+    "effort_change": -0.8221778340865528
+  },
+  "full_lqr_048": {
+    "success_candidate": 0.5520833333333334,
+    "success_reference": 0.3125,
+    "position_improvement": 0.29101476216297667,
+    "acquisition_degradation": -0.37997432605905007,
+    "orientation_improvement": 0.22826353878773614,
+    "effort_change": -0.10164044712600681
+  },
+  "task_lqr_009": {
+    "success_candidate": 0.5520833333333334,
+    "success_reference": 0.3854166666666667,
+    "position_improvement": 0.4272767980721413,
+    "acquisition_degradation": 0.12850467289719644,
+    "orientation_improvement": -0.13441652040510282,
+    "effort_change": -0.20004157516472024
+  }
+}

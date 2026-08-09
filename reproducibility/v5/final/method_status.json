@@ -1,0 +1,29 @@
+{
+  "traditional": {
+    "status": "FROZEN_UNCHANGED",
+    "methods": [
+      "hybrid_x007_y041_z041",
+      "full_lqr_048",
+      "task_lqr_009"
+    ]
+  },
+  "legacy_self": {
+    "method": "self_a_034",
+    "status": "FROZEN_UNCHANGED"
+  },
+  "v4_cart": {
+    "status": "NEGATIVE_MECHANISM_BASELINE_UNCHANGED"
+  },
+  "v5_self": {
+    "method": "SATC-OFMPC",
+    "candidate": "satc_b_027",
+    "development": "QUALIFIED_FROZEN",
+    "holdout": "OVERALL_WIN_NOT_STRICT"
+  },
+  "paper": {
+    "source": "Jirousek et al., ICINCO 2025, DOI 10.5220/0013789200003982",
+    "method": "incremental MPC adapted to frozen five-link model",
+    "development": "PAPER_DEVELOPMENT_INELIGIBLE",
+    "holdout": "NOT_RUN_DEVELOPMENT_INELIGIBLE"
+  }
+}

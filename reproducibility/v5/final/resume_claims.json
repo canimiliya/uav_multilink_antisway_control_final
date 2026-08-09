@@ -1,0 +1,12 @@
+{
+  "resume_status": "V5_PERMANENTLY_CLOSED",
+  "do_not_resume": [
+    "SATC tuning",
+    "Paper search",
+    "V5 Development",
+    "V5 Holdout",
+    "second Holdout"
+  ],
+  "future_work_requires": "a separately authorized new research version with a new contract and new unseen Holdout",
+  "headline": "SATC-OFMPC is a Development-qualified and Overall-Holdout-winning V5 Self method, but not a Strict Holdout winner."
+}

@@ -1,0 +1,202 @@
+{
+  "primary": "full_lqr_048",
+  "audit": {
+    "candidate_id": "satc_b_027",
+    "overall": {
+      "sample_count": 96,
+      "safety_rate": 1.0,
+      "success_rate": 0.5520833333333334,
+      "position_mean_m": 0.09682653103338741,
+      "position_p90_m": 0.14339584398764077,
+      "position_p95_m": 0.14903880972380223,
+      "orientation_mean_deg": 0.6879762045613971,
+      "acquisition_median_s": 2.415,
+      "effort_mean": 1.0254916676866417,
+      "solve_p95_ms": 3.5196
+    },
+    "strong": {
+      "sample_count": 36,
+      "safety_rate": 1.0,
+      "success_rate": 0.0,
+      "position_mean_m": 0.13464310575956115,
+      "position_p90_m": 0.14959136972357562,
+      "position_p95_m": 0.15673998324023128,
+      "orientation_mean_deg": 1.0954421824914586,
+      "acquisition_median_s": null,
+      "effort_mean": 1.6382808965054556,
+      "solve_p95_ms": 3.2862
+    },
+    "normal": {
+      "sample_count": 48,
+      "safety_rate": 1.0,
+      "success_rate": 1.0,
+      "position_mean_m": 0.07038162082551587,
+      "position_p90_m": 0.08831557425048905,
+      "position_p95_m": 0.09021222349145151,
+      "orientation_mean_deg": 0.4123273189330538,
+      "acquisition_median_s": 2.4925,
+      "effort_mean": 0.5682699515159982,
+      "solve_p95_ms": 3.5196
+    },
+    "directional": {
+      "aligned": {
+        "candidate": {
+          "sample_count": 12,
+          "safety_rate": 1.0,
+          "success_rate": 0.0,
+          "position_mean_m": 0.13584118831734251,
+          "position_p90_m": 0.14950513990380981,
+          "position_p95_m": 0.15255677270158371,
+          "orientation_mean_deg": 1.268810473725866,
+          "acquisition_median_s": null,
+          "effort_mean": 1.682124648315687,
+          "solve_p95_ms": 3.2429
+        },
+        "full_lqr": {
+          "sample_count": 12,
+          "safety_rate": 1.0,
+          "success_rate": 0.0,
+          "position_mean_m": 0.20086992522799696,
+          "position_p90_m": 0.21562679560455952,
+          "position_p95_m": 0.21594077658579452,
+          "orientation_mean_deg": 1.4331718240721332,
+          "acquisition_median_s": null,
+          "effort_mean": 1.6543757619550412,
+          "solve_p95_ms": 0.0482
+        },
+        "p90_degradation": -0.30664860327475707,
+        "catastrophic_pair_ids": [],
+        "gates": {
+          "p90_tail": true,
+          "catastrophic_pairs": true
+        }
+      },
+      "opposed": {
+        "candidate": {
+          "sample_count": 12,
+          "safety_rate": 1.0,
+          "success_rate": 0.0,
+          "position_mean_m": 0.1417551528029759,
+          "position_p90_m": 0.15901571690682098,
+          "position_p95_m": 0.16026951810130943,
+          "orientation_mean_deg": 1.003482164991946,
+          "acquisition_median_s": null,
+          "effort_mean": 1.4641830521662331,
+          "solve_p95_ms": 3.2862
+        },
+        "full_lqr": {
+          "sample_count": 12,
+          "safety_rate": 1.0,
+          "success_rate": 0.0,
+          "position_mean_m": 0.2118536145388176,
+          "position_p90_m": 0.23280097922422757,
+          "position_p95_m": 0.23641697523213215,
+          "orientation_mean_deg": 1.0936543208801888,
+          "acquisition_median_s": null,
+          "effort_mean": 1.629048860705795,
+          "solve_p95_ms": 0.0468
+        },
+        "p90_degradation": -0.3169456699163565,
+        "catastrophic_pair_ids": [],
+        "gates": {
+          "p90_tail": true,
+          "catastrophic_pairs": true
+        }
+      },
+      "cross": {
+        "candidate": {
+          "sample_count": 12,
+          "safety_rate": 1.0,
+          "success_rate": 0.0,
+          "position_mean_m": 0.12633297615836506,
+          "position_p90_m": 0.14336121033314794,
+          "position_p95_m": 0.146251462484546,
+          "orientation_mean_deg": 1.014033908756564,
+          "acquisition_median_s": null,
+          "effort_mean": 1.7685349890344455,
+          "solve_p95_ms": 3.2843
+        },
+        "full_lqr": {
+          "sample_count": 12,
+          "safety_rate": 1.0,
+          "success_rate": 0.0,
+          "position_mean_m": 0.20308573775447494,
+          "position_p90_m": 0.2242784751805879,
+          "position_p95_m": 0.22564321337529986,
+          "orientation_mean_deg": 1.0830211044983533,
+          "acquisition_median_s": null,
+          "effort_mean": 1.8855350947672778,
+          "solve_p95_ms": 0.0478
+        },
+        "p90_degradation": -0.36078925889916896,
+        "catastrophic_pair_ids": [],
+        "gates": {
+          "p90_tail": true,
+          "catastrophic_pairs": true
+        }
+      }
+    },
+    "catastrophic_pair_ids": [],
+    "bootstrap": {
+      "pairs": 96,
+      "resamples": 10000,
+      "seed": 20260816,
+      "mean_delta_m": 0.0397440572750327,
+      "median_delta_m": 0.04314744200435383,
+      "positive_pair_fraction": 0.9270833333333334,
+      "ci_95_m": [
+        0.033754035488857706,
+        0.04575584542014521
+      ],
+      "lower_bound_gt_zero": true
+    },
+    "gates": {
+      "overall": {
+        "safety": true,
+        "success": true,
+        "position": true,
+        "acquisition": true,
+        "bootstrap": true
+      },
+      "strong_transient": {
+        "success": true,
+        "position_vs_full": true,
+        "position_vs_legacy": true,
+        "p90_tail": true,
+        "catastrophic_pairs": true
+      },
+      "normal_nonregression": {
+        "safety": true,
+        "success": true,
+        "position": true,
+        "acquisition": false
+      },
+      "directional": {
+        "aligned": {
+          "p90_tail": true,
+          "catastrophic_pairs": true
+        },
+        "opposed": {
+          "p90_tail": true,
+          "catastrophic_pairs": true
+        },
+        "cross": {
+          "p90_tail": true,
+          "catastrophic_pairs": true
+        }
+      }
+    },
+    "hard_gate_pass_count": 19,
+    "hard_gate_count": 20,
+    "final_pass": false,
+    "comparisons": {
+      "overall_position_improvement_vs_full": 0.29101476216297667,
+      "strong_position_improvement_vs_full": 0.34406750267785796,
+      "strong_position_improvement_vs_legacy": 0.8011150309394145,
+      "normal_position_degradation_vs_legacy": 0.03494051732566019,
+      "normal_acquisition_degradation_vs_legacy": 0.11272321428571425,
+      "worst_directional_p90_degradation": -0.30664860327475707
+    }
+  },
+  "final_status": "V5_SELF_OVERALL_HOLDOUT_WIN"
+}

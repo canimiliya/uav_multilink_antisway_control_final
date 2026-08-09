@@ -1,0 +1,17 @@
+{
+  "allowed": [
+    "SATC-OFMPC satc_b_027 achieved the frozen V5 Overall Holdout win against the fixed Traditional benchmark.",
+    "SATC-OFMPC passed all frozen strong-transient and directional Holdout tail gates with zero catastrophic pairs.",
+    "SATC-OFMPC improved Holdout mean position RMSE by 29.10% versus full_lqr_048 with a positive paired-bootstrap lower bound.",
+    "The V5 adaptation of Jirousek et al. was Development-ineligible and was not evaluated on Holdout."
+  ],
+  "forbidden": [
+    "V5_SELF_STRICT_HOLDOUT_WIN",
+    "normal-regime acquisition non-regression passed",
+    "Self outperformed the original Jirousek et al. method",
+    "Self beat Paper on Holdout",
+    "Paper was evaluated on Holdout",
+    "V5 results establish real-flight performance"
+  ],
+  "qualification": "The sole strict-gate miss was 11.27% normal acquisition degradation versus a frozen 10% maximum."
+}

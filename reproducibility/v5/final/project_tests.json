@@ -1,0 +1,6 @@
+{
+  "targeted_v5_tests": "22 passed",
+  "full_project_tests": "170 passed",
+  "third_party_udaan": "repository-pinned third_party/udaan supplied via PYTHONPATH",
+  "performance_rerun_during_finalization": false
+}

@@ -1,0 +1,35 @@
+{
+  "all_methods": {
+    "hybrid_x007_y041_z041": {
+      "sample_count": 96,
+      "safe_count": 96,
+      "safety_rate": 1.0,
+      "failure_ids": []
+    },
+    "full_lqr_048": {
+      "sample_count": 96,
+      "safe_count": 96,
+      "safety_rate": 1.0,
+      "failure_ids": []
+    },
+    "task_lqr_009": {
+      "sample_count": 96,
+      "safe_count": 96,
+      "safety_rate": 1.0,
+      "failure_ids": []
+    },
+    "self_a_034": {
+      "sample_count": 96,
+      "safe_count": 96,
+      "safety_rate": 1.0,
+      "failure_ids": []
+    },
+    "satc_b_027": {
+      "sample_count": 96,
+      "safe_count": 96,
+      "safety_rate": 1.0,
+      "failure_ids": []
+    }
+  },
+  "compromised": false
+}
