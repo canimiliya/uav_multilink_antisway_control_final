@@ -1,0 +1,6 @@
+{
+  "executed": false,
+  "reason": "No Paper candidate passed the Development gate, so no candidate was frozen and the post-freeze ablation precondition was not met.",
+  "paper_candidate_frozen": false,
+  "holdout_executed": false
+}

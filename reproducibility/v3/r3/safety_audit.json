@@ -1,0 +1,7 @@
+{
+  "round_a_all_safe": true,
+  "round_b_all_safe": true,
+  "near_miss_safe_samples": 75,
+  "near_miss_sample_count": 75,
+  "holdout_executed": false
+}

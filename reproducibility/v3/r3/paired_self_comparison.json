@@ -1,0 +1,14 @@
+{
+  "pairing": "exact sample_id",
+  "comparator": "self_a_034",
+  "pair_count": 75,
+  "sample_ids_sha256": "31dd9de42bf20679a51b35ff58990a5c4df736475a2825885c172d935b18769b",
+  "position_difference_definition": "comparator_i - paper_i; positive favors Paper",
+  "position_difference_mean_m": -0.024309603412269006,
+  "position_difference_median_m": -0.009091375015342525,
+  "position_positive_fraction": 0.09333333333333334,
+  "acquisition_common_pair_count": 55,
+  "acquisition_difference_median_s": -2.92,
+  "formal_10000_bootstrap_executed": false,
+  "bootstrap_reason": "reserved for future frozen Holdout; Paper candidate did not pass Development gate"
+}

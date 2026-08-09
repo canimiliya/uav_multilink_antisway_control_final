@@ -1,0 +1,8 @@
+{
+  "holdout_manifest_loaded": false,
+  "holdout_execution_path_present_in_paper_runner": false,
+  "forbidden_seeds_3000_3019_used": false,
+  "forbidden_wind_2_0_or_3_5_m_s_used": false,
+  "forbidden_ramp_3_5_m_s_used": false,
+  "holdout_executed": false
+}

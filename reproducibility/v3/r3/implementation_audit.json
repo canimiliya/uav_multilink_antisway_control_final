@@ -1,0 +1,13 @@
+{
+  "method": "LV2026-SPACC-ADAPTED-3D",
+  "protocol_freeze_head": "39a01592429897df943f306ec61c70deedabad3e",
+  "protocol_freeze_is_ancestor": true,
+  "frozen_v3_case_runner_modified": false,
+  "paper_runner_reuses_frozen_case_execution_by_process_local_controller_factory": true,
+  "self_module_imported_or_used": false,
+  "traditional_gain_values_used_as_frozen_backbones_only": true,
+  "three_axis_output": true,
+  "common_limiter": true,
+  "future_wind_or_target_used": false,
+  "holdout_manifest_loaded": false
+}

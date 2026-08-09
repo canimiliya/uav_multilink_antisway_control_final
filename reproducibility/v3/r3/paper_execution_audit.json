@@ -1,0 +1,33 @@
+{
+  "smoke": {
+    "candidates": 1,
+    "cases_each": 1,
+    "authoritative": false
+  },
+  "round_a": {
+    "unique_candidates": 48,
+    "cases_each": 14,
+    "authoritative_cases": 672
+  },
+  "round_b": {
+    "unchanged_finalists": 6,
+    "cases_each": 75,
+    "authoritative_cases": 450
+  },
+  "total_unique_candidates": 48,
+  "refinement_rounds": 0,
+  "workers": 8,
+  "blas_threads_per_worker": 1,
+  "gpu_used": false,
+  "gpu_reason": "MuJoCo and the small NumPy controller path expose no CUDA execution path.",
+  "non_authoritative_startup_events": [
+    {
+      "stage": "implementation unit-test launcher",
+      "authoritative_case_count": 0,
+      "outcome": "conda run returned Windows CLR HRESULT 0x80004005 before Python started",
+      "recovery": "used the same uav_sway environment's direct Python executable; tests and all authoritative runs then completed"
+    }
+  ],
+  "failed_or_interrupted_authoritative_runs": 0,
+  "holdout_executed": false
+}
