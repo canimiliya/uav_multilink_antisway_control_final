@@ -1,0 +1,19 @@
+{
+  "adaptation": "XU2025-CBS-FTDO-ADAPTED-5LINK",
+  "paper_core_retained": [
+    "load-position virtual velocity loop",
+    "load-velocity virtual force loop",
+    "desired cable-direction command filter",
+    "cable-direction virtual angular-rate loop",
+    "angular-rate command filter and control loop",
+    "finite-time force and angular disturbance observers",
+    "parallel/perpendicular force synthesis"
+  ],
+  "five_link_mapping": "plant-only modes 1 and 2 reconstruct the equivalent payload-center direction",
+  "common_output": "world-frame acceleration [ax, ay, az]",
+  "paper_thrust_attitude_inner_loop_used": false,
+  "common_geometric_inner_loop_used": true,
+  "satc_components_present": false,
+  "unfaithful_pd_plus_sign_reduction": false,
+  "performance_accessed": false
+}
