@@ -1,0 +1,8 @@
+{
+  "baseline_authoritative_runs": 376,
+  "cart_development_runs": 2384,
+  "baseline_all_safe": true,
+  "cart_all_safe": true,
+  "best_near_miss_safety_rate": 1.0,
+  "failure_reasons": []
+}

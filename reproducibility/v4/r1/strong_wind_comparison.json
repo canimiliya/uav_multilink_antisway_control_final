@@ -1,0 +1,42 @@
+{
+  "candidate_id": "cart_b_001",
+  "cohorts": [
+    "STRONG_POST_TARGET",
+    "STRONG_PREEXISTING",
+    "STRONG_SIMULTANEOUS"
+  ],
+  "metrics": {
+    "sample_count": 37,
+    "safety_rate": 1.0,
+    "success_rate": 0.10810810810810811,
+    "position_mean_m": 0.16005538497613564,
+    "position_p90_m": 0.41597240654401224,
+    "position_p95_m": 0.4240680410651888,
+    "acquisition_median_s": 1.9175000000000002,
+    "effort_mean": 4.473949221116178,
+    "solve_p95_ms": 3.9373
+  },
+  "comparisons": {
+    "strong_position_improvement_vs_full": 0.16823790086836082,
+    "strong_position_improvement_vs_legacy": 0.7430593367699164,
+    "strong_p90_change_vs_full": 0.9404353508009997
+  },
+  "catastrophic_pair_ids": [
+    "dev_strong_simultaneous_00",
+    "dev_strong_simultaneous_01",
+    "dev_strong_simultaneous_02",
+    "dev_strong_simultaneous_05",
+    "dev_strong_simultaneous_06",
+    "dev_strong_simultaneous_09",
+    "dev_strong_simultaneous_11"
+  ],
+  "gates": {
+    "safety": true,
+    "success": false,
+    "position_vs_full": true,
+    "position_vs_legacy": true,
+    "p90_tail": false,
+    "catastrophic_pairs": false
+  },
+  "conclusion": "Mean strong-wind error improved, but the simultaneous-onset tail retained catastrophic pairs and success remained below the best Traditional."
+}

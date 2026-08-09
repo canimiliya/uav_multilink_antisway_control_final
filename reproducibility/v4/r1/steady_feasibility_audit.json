@@ -1,0 +1,18 @@
+{
+  "candidate_id": "cart_b_001",
+  "solver": "three-variable active-set box QP with amplitude and finite-slew reachable bounds",
+  "silent_scaling": false,
+  "strong_wind": {
+    "steady_infeasibility_mean_fraction": 0.000112145340361108,
+    "requested_steady_input_mean_max_abs_m_s2": 0.007794571519970968,
+    "requested_steady_input_global_max_abs_m_s2": 0.09612154935565846,
+    "feasible_steady_input_mean_max_abs_m_s2": 0.0074878797295523545
+  },
+  "normal_regime": {
+    "steady_infeasibility_mean_fraction": 0.0033949453036589967,
+    "requested_steady_input_mean_max_abs_m_s2": 0.0008071164459313011,
+    "requested_steady_input_global_max_abs_m_s2": 0.007300292023916482,
+    "feasible_steady_input_mean_max_abs_m_s2": 0.0008071164459313011
+  },
+  "requested_and_feasible_logged_separately": true
+}

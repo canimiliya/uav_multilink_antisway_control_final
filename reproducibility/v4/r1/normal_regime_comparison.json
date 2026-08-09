@@ -1,0 +1,30 @@
+{
+  "candidate_id": "cart_b_001",
+  "cohorts": [
+    "NORMAL_CALM",
+    "NORMAL_CONSTANT",
+    "NORMAL_STOCHASTIC"
+  ],
+  "metrics": {
+    "sample_count": 44,
+    "safety_rate": 1.0,
+    "success_rate": 1.0,
+    "position_mean_m": 0.06588769466172958,
+    "position_p90_m": 0.0807794586453082,
+    "position_p95_m": 0.08384722079261836,
+    "acquisition_median_s": 2.245,
+    "effort_mean": 0.3725601360120347,
+    "solve_p95_ms": 4.6051
+  },
+  "comparisons": {
+    "normal_position_change_vs_legacy": 0.013820628289896443,
+    "normal_acquisition_change_vs_legacy": 0.0
+  },
+  "gates": {
+    "safety": true,
+    "success": true,
+    "position": true,
+    "acquisition": true
+  },
+  "conclusion": "Normal-regime safety and success were preserved; position and acquisition remained within the frozen non-regression limits."
+}

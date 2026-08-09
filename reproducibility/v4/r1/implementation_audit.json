@@ -1,0 +1,19 @@
+{
+  "method": "CART-OFMPC",
+  "architecture_version": "CART-OFMPC-A1",
+  "protocol_freeze_head": "ff5c6ac1a02524705ff53ac106196798a6b1ca72",
+  "implementation_sha256": "385510d44e050632c63071a738d7c76d595d1434f818dd9652cc5a4a27412bff",
+  "runner_sha256": "c6717f3b38c33349ac37918ad44e94a1b7bfd8055aa6ccf90522aacb8574b061",
+  "protocol_sha256": "9ef6ffb38dc993dc75a7dfd92556023131d1e50d98fe227be3888370b5ed31ab",
+  "frozen_task_lqr_backbone": "task_lqr_009",
+  "backbone_gain_modified": false,
+  "required_mechanisms_present": {
+    "causal_dynamic_residual": true,
+    "constraint_feasible_steady_target": true,
+    "trust_scheduler": true,
+    "unrepresented_residual_antiwindup": true,
+    "finite_horizon_predictive_correction": true,
+    "physical_acceleration_and_slew_constraints": true
+  },
+  "true_wind_or_future_information_used": false
+}

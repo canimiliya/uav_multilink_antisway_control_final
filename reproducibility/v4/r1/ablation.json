@@ -1,0 +1,7 @@
+{
+  "executed": false,
+  "reason": "No CART-OFMPC candidate passed all Development gates; the contract permits mechanism ablation only after candidate freeze.",
+  "candidate_frozen": false,
+  "no_ablation_based_retuning": true,
+  "holdout_executed": false
+}

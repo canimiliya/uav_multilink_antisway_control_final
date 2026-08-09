@@ -1,0 +1,11 @@
+{
+  "candidate_id": "cart_b_001",
+  "state": "bounded unrepresented-residual debt",
+  "feedback_enabled": true,
+  "antiwindup_gain": 0.4,
+  "debt_decay": 0.1,
+  "debt_limit": 0.5,
+  "strong_unrepresented_residual_mean_norm": 0.0014459139943391725,
+  "strong_debt_mean_norm": 0.003673772063785182,
+  "interpretation": "Debt remained bounded and prevented an accumulating infeasible equilibrium request; no anti-windup retuning was performed after results."
+}

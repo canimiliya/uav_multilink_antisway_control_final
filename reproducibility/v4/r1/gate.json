@@ -1,0 +1,23 @@
+{
+  "task": "V4-R1-CART-OFMPC-DEVELOPMENT-AND-SELF-FREEZE-R1",
+  "start_head": "b0dd45013e496bfd0f0371ef7c4f7e2333f8ab80",
+  "cart_protocol_freeze_head": "ff5c6ac1a02524705ff53ac106196798a6b1ca72",
+  "baseline_authoritative_runs": 376,
+  "stage_a_runs": 128,
+  "stage_b_runs": 1692,
+  "stage_c_runs": 564,
+  "new_unique_configurations": 26,
+  "budget_max": 32,
+  "best_near_miss": "cart_b_001",
+  "best_near_miss_atomic_gates": "12/15",
+  "overall_gate": true,
+  "strong_wind_gate": false,
+  "normal_nonregression_gate": true,
+  "bootstrap_gate": true,
+  "candidate_frozen": false,
+  "ablation_executed": false,
+  "paper_started": false,
+  "holdout_executed": false,
+  "project_tests": "141 passed in 1.18s",
+  "result": "CLOSED_WITH_NO_V4_CART_OFMPC_DEVELOPMENT_WIN"
+}

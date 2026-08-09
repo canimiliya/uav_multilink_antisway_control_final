@@ -1,0 +1,11 @@
+{
+  "candidate_id": "cart_b_001",
+  "physical_acceleration_limit_m_s2": 2.0,
+  "slew_limit_m_s2_per_update": 0.25,
+  "max_observed_command_m_s2": 2.0,
+  "max_observed_step_m_s2": 0.25000000000000006,
+  "limiter_mismatch_global_max_m_s2": 5.0945034928417954e-05,
+  "all_samples_within_common_authority": true,
+  "strong_amplitude_saturation_fraction": 0.009868789951777503,
+  "strong_slew_activity_fraction": 0.09711786475271951
+}

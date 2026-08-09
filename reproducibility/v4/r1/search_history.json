@@ -1,0 +1,25 @@
+{
+  "protocol_frozen_before_performance": true,
+  "stage_a": {
+    "candidate_count": 8,
+    "sample_count_each": 16,
+    "selection_authority": false
+  },
+  "stage_b": {
+    "candidate_count": 18,
+    "sample_count_each": 94,
+    "ranking_rule": "development_protocol.json"
+  },
+  "stage_c_selected_candidate_ids": [
+    "cart_b_001",
+    "cart_b_014",
+    "cart_b_002",
+    "cart_b_003",
+    "cart_b_004",
+    "cart_b_005"
+  ],
+  "stage_c_selection_source": "top six Stage-B configurations; parameters unchanged",
+  "unique_configuration_count": 26,
+  "maximum_unique_configurations": 32,
+  "holdout_executed": false
+}

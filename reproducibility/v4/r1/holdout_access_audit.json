@@ -1,0 +1,9 @@
+{
+  "holdout_manifest_sha256": "751b105b300e99ba58d3e3dae45d35e02e50e728f322dbb73f481baa58b962a3",
+  "matches_protocol_frozen_sha256": true,
+  "sample_count": 94,
+  "all_execution_allowed_false": true,
+  "holdout_simulations_executed": 0,
+  "holdout_debug_samples_executed": 0,
+  "holdout_results_created": false
+}
