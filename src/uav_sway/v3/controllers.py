@@ -85,6 +85,95 @@ class V3TaskPID(_V3ControllerBase):
         return self._finish(-self.kp * position_error - self.kd * velocity_error - self.ki * self.integral, np.linalg.norm(observation.full_state_error), self.integral)
 
 
+class V3CascadedTaskPID(_V3ControllerBase):
+    """Classical cascaded tip-reference correction and UAV PID/PD.
+
+    The slow outer loop uses only the currently measured cutter-tip error and
+    velocity.  The inner loop anchors the UAV to the equilibrium-mapped
+    reference and uses derivative-on-measurement.  No joint state, wind, or
+    model-derived feedback gain enters the controller.
+    """
+
+    def __init__(
+        self,
+        uav_kp: np.ndarray,
+        uav_kd: np.ndarray,
+        uav_ki: np.ndarray,
+        tip_kp: np.ndarray,
+        tip_kd: np.ndarray,
+        correction_limit_m: np.ndarray,
+        correction_slew_m_per_update: float,
+        integral_limit: float,
+        tip_velocity_mode: str = "absolute",
+    ) -> None:
+        super().__init__()
+        self.uav_kp = np.asarray(uav_kp, dtype=float).reshape(3).copy()
+        self.uav_kd = np.asarray(uav_kd, dtype=float).reshape(3).copy()
+        self.uav_ki = np.asarray(uav_ki, dtype=float).reshape(3).copy()
+        self.tip_kp = np.asarray(tip_kp, dtype=float).reshape(3).copy()
+        self.tip_kd = np.asarray(tip_kd, dtype=float).reshape(3).copy()
+        self.correction_limit_m = np.asarray(correction_limit_m, dtype=float).reshape(3).copy()
+        self.correction_slew_m_per_update = float(correction_slew_m_per_update)
+        self.integral_limit = float(integral_limit)
+        self.tip_velocity_mode = str(tip_velocity_mode)
+        values = np.r_[self.uav_kp, self.uav_kd, self.uav_ki, self.tip_kp, self.tip_kd, self.correction_limit_m]
+        if not np.isfinite(values).all() or np.any(values < 0.0):
+            raise ValueError("cascaded PID gains and limits must be finite and nonnegative")
+        if not np.isfinite(self.correction_slew_m_per_update) or self.correction_slew_m_per_update <= 0.0:
+            raise ValueError("reference-correction slew must be positive and finite")
+        if not np.isfinite(self.integral_limit) or self.integral_limit <= 0.0:
+            raise ValueError("integral limit must be positive and finite")
+        if self.tip_velocity_mode not in {"absolute", "relative_to_uav"}:
+            raise ValueError("unsupported tip velocity mode")
+        self.integral = np.zeros(3, dtype=float)
+        self.reference_correction = np.zeros(3, dtype=float)
+
+    def reset(self) -> None:
+        super().reset()
+        self.integral = np.zeros(3, dtype=float)
+        self.reference_correction = np.zeros(3, dtype=float)
+
+    def command(self, observation: V3Observation, reference: V3Reference, dt: float = 0.05) -> np.ndarray:
+        dt = float(dt)
+        if dt <= 0.0 or not np.isfinite(dt):
+            raise ValueError("dt must be positive and finite")
+        tip_error = observation.task_state.tip_position_world - reference.tip_position_world
+        if self.tip_velocity_mode == "relative_to_uav":
+            tip_velocity_error = observation.task_state.tip_velocity_world - observation.uav_velocity_world
+        else:
+            tip_velocity_error = observation.task_state.tip_velocity_world - reference.uav_velocity_world
+        correction_raw = -self.tip_kp * tip_error - self.tip_kd * tip_velocity_error
+        correction_amplitude = np.clip(correction_raw, -self.correction_limit_m, self.correction_limit_m)
+        correction_delta = np.clip(
+            correction_amplitude - self.reference_correction,
+            -self.correction_slew_m_per_update,
+            self.correction_slew_m_per_update,
+        )
+        self.reference_correction = self.reference_correction + correction_delta
+        corrected_uav_reference = reference.uav_position_world + self.reference_correction
+        position_error = observation.uav_position_world - corrected_uav_reference
+        velocity_error = observation.uav_velocity_world - reference.uav_velocity_world
+        proposed_integral = np.clip(
+            self.integral + position_error * dt,
+            -self.integral_limit,
+            self.integral_limit,
+        )
+        raw = -self.uav_kp * position_error - self.uav_kd * velocity_error - self.uav_ki * proposed_integral
+        amplitude = np.clip(raw, -self.limiter.absolute_limit_m_s2, self.limiter.absolute_limit_m_s2)
+        candidate = self.limiter.previous + np.clip(
+            amplitude - self.limiter.previous,
+            -self.limiter.slew_limit_m_s2_per_update,
+            self.limiter.slew_limit_m_s2_per_update,
+        )
+        integral_command_delta = -self.uav_ki * (proposed_integral - self.integral)
+        constrained = np.abs(raw - candidate) > 1.0e-12
+        drives_farther_into_constraint = (raw - candidate) * integral_command_delta > 1.0e-12
+        blocked = constrained & drives_farther_into_constraint
+        self.integral = np.where(blocked, self.integral, proposed_integral)
+        raw = -self.uav_kp * position_error - self.uav_kd * velocity_error - self.uav_ki * self.integral
+        return self._finish(raw, np.linalg.norm(observation.full_state_error), self.integral)
+
+
 class V3FullStateLQR(_V3ControllerBase):
     """20D full-state discrete LQR with a common 3D limiter."""
 

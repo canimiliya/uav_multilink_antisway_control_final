@@ -1,0 +1,33 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "workers": 20,
+      "status": "FAILED_RESOURCE",
+      "used_for_selection": false,
+      "completed_case_count": null,
+      "error": "Windows page file too small while worker processes imported SciPy; BrokenProcessPool",
+      "corrective_action": "Limit OMP, OpenBLAS, and MKL to one thread and use 8 workers; candidate set and rules unchanged."
+    },
+    {
+      "attempt": 2,
+      "workers": 8,
+      "status": "PERFORMANCE_COMPLETE_EVIDENCE_WRITE_FAILED",
+      "used_for_selection": false,
+      "completed_case_count": 1432,
+      "error": "pid_candidates.csv field union omitted Round-B competence fields",
+      "corrective_action": "Normalize history schema and resume from frozen Round-A aggregate and prewritten Round-B candidate list."
+    },
+    {
+      "attempt": 3,
+      "workers": 8,
+      "status": "COMPLETE",
+      "scope": "Repeat the same 8 x 75 Round-B evaluations only",
+      "completed_case_count": 600,
+      "selection_rule_changed": false,
+      "candidate_set_changed": false,
+      "development_manifest_changed": false
+    }
+  ],
+  "holdout_executed": false
+}

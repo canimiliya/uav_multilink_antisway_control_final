@@ -1,0 +1,69 @@
+{
+  "rounds": [
+    {
+      "round": "R1R1-A",
+      "candidate_count": 64,
+      "case_count": 13
+    },
+    {
+      "round": "R1R1-B",
+      "candidate_count": 8,
+      "case_count": 75
+    }
+  ],
+  "total_unique_candidates_evaluated": 72,
+  "authoritative_case_executions": 1432,
+  "all_attempts_retained": true,
+  "execution_audit": "pid_execution_audit.json",
+  "selected": {
+    "candidate_id": "cascaded_pid_061",
+    "sample_count": 75,
+    "safe_sample_count": 75,
+    "task_success_count": 25,
+    "safety_rate": 1.0,
+    "success_rate": 0.3333333333333333,
+    "acquisition_median_s": 3.24,
+    "position_rmse_3d_m": 0.3550208540759499,
+    "orientation_rmse_deg": 0.7041464341023346,
+    "ramp_peak_position_error_m": 0.6782666916402925,
+    "ramp_steady_state_position_error_m": 1.6756972053328258,
+    "total_acceleration_effort": 6.124456992481669,
+    "parameters": {
+      "candidate_id": "cascaded_pid_061",
+      "uav_kp": [
+        0.4389290477363431,
+        0.4389290477363431,
+        1.7354078336487042
+      ],
+      "uav_kd": [
+        3.4974487716889886,
+        3.4974487716889886,
+        4.949259390824762
+      ],
+      "uav_ki": [
+        0.1919913844321036,
+        0.1919913844321036,
+        0.026763720295116644
+      ],
+      "tip_kp": [
+        0.5137306298841408,
+        0.5137306298841408,
+        0.09353969321807315
+      ],
+      "tip_kd": [
+        0.6671070813485961,
+        0.6671070813485961,
+        0.0698140514467288
+      ],
+      "correction_limit_m": [
+        0.08265392367976052,
+        0.08265392367976052,
+        0.02611250460496481
+      ],
+      "correction_slew_m_per_update": 0.09693266769673356,
+      "integral_limit": 0.3954002436293109
+    },
+    "calm_axis_acquired_count": 4,
+    "competence_pass": false
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "amendment": "V3-R1R1-C-D",
+  "written_before_performance": true,
+  "WHY_EXPANDED": "Round B was safe but failed competence (33.3% success, 4/6 calm axes, 0.355 m RMSE). The retained calm y trace shows an initially convergent response becoming a growing oscillation after absolute tip-velocity correction fights whole-system translation and duplicates UAV velocity damping.",
+  "OLD_RANGE": {
+    "axis_symmetry": "x and y gains tied",
+    "tip_velocity_mode": "absolute world tip velocity",
+    "candidate_budget": 64,
+    "full_development_finalists": 8
+  },
+  "NEW_RANGE": {
+    "axis_symmetry": "x and y tuned independently",
+    "tip_velocity_mode": "tip velocity relative to measured UAV velocity",
+    "uav_kp": {"x": [0.3, 1.5], "y": [0.15, 1.2], "z": [0.8, 5.0]},
+    "uav_kd": {"x": [1.5, 5.0], "y": [2.0, 7.0], "z": [2.0, 6.0]},
+    "uav_ki": {"x": [0.03, 0.3], "y": [0.03, 0.3], "z": [0.0, 0.3]},
+    "tip_kp": {"x": [0.0, 0.8], "y": [0.0, 0.8], "z": [0.0, 0.7]},
+    "tip_kd_relative": {"x": [0.0, 0.6], "y": [0.0, 0.8], "z": [0.0, 0.4]},
+    "reference_correction_limit_m": {"x": [0.03, 0.16], "y": [0.02, 0.14], "z": [0.02, 0.12]},
+    "reference_correction_slew_m_per_update": [0.01, 0.08],
+    "integral_limit_m_s": [0.1, 0.5]
+  },
+  "EVIDENCE": {
+    "round_b_selected": "cascaded_pid_061",
+    "round_b_safety_rate": 1.0,
+    "round_b_success_rate": 0.3333333333333333,
+    "round_b_calm_axis_acquired": 4,
+    "round_b_position_rmse_3d_m": 0.3550208540759499,
+    "calm_axis_02_trace": "temporary candidate_000_calm_axis_02.csv: error fell to 0.0041 m at 4.5 s, then grew to 1.86 m at 11 s while ay reached +/-2 m/s2"
+  },
+  "round_c": {
+    "candidate_budget": 48,
+    "generator": "deterministic stratified sampling, seed 20260810",
+    "evaluation_samples": "same frozen 13-case Development core",
+    "selection_rule": ["safe count descending", "success count descending", "position RMSE ascending", "acquisition median ascending", "orientation RMSE ascending", "effort ascending", "candidate ID ascending"],
+    "advance_count": 6
+  },
+  "round_d": {
+    "candidate_budget": 6,
+    "evaluation_sample_count": 75,
+    "selection_rule": ["competence pass first", "safety count descending", "calm-axis acquisition count descending", "success count descending", "position RMSE ascending", "acquisition median ascending", "orientation RMSE ascending", "effort ascending", "candidate ID ascending"]
+  },
+  "benchmark_changed": false,
+  "holdout_execution_allowed": false,
+  "advanced_execution_allowed": false
+}

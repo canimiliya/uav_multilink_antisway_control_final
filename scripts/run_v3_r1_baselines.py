@@ -30,7 +30,7 @@ from uav_sway.disturbances.aerodynamics import load_aerodynamic_config
 from uav_sway.disturbances.wind_applier import clear_and_apply_wind
 from uav_sway.evaluation.task_space_metrics import first_continuous_acquisition
 from uav_sway.models.model_config import load_model_config
-from uav_sway.v3.controllers import V3FullStateLQR, V3TaskPID, V3TaskWeightedLQR
+from uav_sway.v3.controllers import V3CascadedTaskPID, V3FullStateLQR, V3TaskPID, V3TaskWeightedLQR
 from uav_sway.v3.metrics import build_full_lqr_q, build_task_lqr_q, load_r0_linear_matrices, solve_v3_lqr
 from uav_sway.v3.observation import V3Reference, V3StateReader, reference_for_target
 
@@ -119,6 +119,18 @@ def _target_at(sample: dict, time_s: float, equilibrium_tip: np.ndarray) -> np.n
 def _controller(kind: str, parameters: dict, gains: dict | None = None):
     if kind == "pid":
         return V3TaskPID(np.asarray(parameters["kp"], dtype=float), np.asarray(parameters["kd"], dtype=float), np.asarray(parameters["ki"], dtype=float))
+    if kind == "corrected_pid":
+        return V3CascadedTaskPID(
+            np.asarray(parameters["uav_kp"], dtype=float),
+            np.asarray(parameters["uav_kd"], dtype=float),
+            np.asarray(parameters["uav_ki"], dtype=float),
+            np.asarray(parameters["tip_kp"], dtype=float),
+            np.asarray(parameters["tip_kd"], dtype=float),
+            np.asarray(parameters["correction_limit_m"], dtype=float),
+            float(parameters["correction_slew_m_per_update"]),
+            float(parameters["integral_limit"]),
+            str(parameters.get("tip_velocity_mode", "absolute")),
+        )
     if kind == "full_lqr":
         return V3FullStateLQR(np.asarray(parameters["K"], dtype=float))
     if kind == "task_lqr":
