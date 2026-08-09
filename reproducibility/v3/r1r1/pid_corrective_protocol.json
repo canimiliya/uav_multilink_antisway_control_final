@@ -1,0 +1,56 @@
+{
+  "task": "V3-R1R1-TRADITIONAL-PID-RECOVERY-AND-BASELINE-REFREEZE-R1",
+  "start_head": "4c1bdda538ceee970bff3f28162b40bcbd846081",
+  "branch": "research-v3",
+  "method_family": "CLASSICAL_3D_CASCADED_PID_PD",
+  "frozen_before_corrective_performance": true,
+  "benchmark_frozen": true,
+  "preserve_r1_evidence": true,
+  "protected_tree_ids_at_start": {
+    "reproducibility/v2": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+    "reproducibility/v3/r0": "36c63351b55e827e21423cd792ab5b96b294a479",
+    "reproducibility/v3/r1": "39855236f5c2890f184b38dd4d07394921b2cc23"
+  },
+  "read_only_traditional": ["full_lqr_048", "task_lqr_009"],
+  "architecture_boundary": {
+    "external_input": "current cutter-tip target only",
+    "outer_loop": "bounded causal measured tip-error and tip-velocity correction of equilibrium-mapped UAV reference",
+    "inner_loop": "per-axis UAV position PID/PD with derivative on measured UAV velocity",
+    "anti_windup": "per-axis conditional integration against final amplitude-and-slew achievable command",
+    "allowed_measurements": ["UAV position", "UAV velocity", "cutter-tip position", "cutter-tip velocity"],
+    "forbidden": ["joint state feedback", "LQR gain", "MPC", "observer", "learning", "adaptation", "wind truth", "future target", "future wind"]
+  },
+  "rounds": [
+    {
+      "round": "R1R1-A",
+      "purpose": "architecture and broad-gain screening",
+      "candidate_budget": 64,
+      "generator": "deterministic Latin-hypercube-like stratified sampling, seed 20260809",
+      "search_space": {
+        "uav_kp_xy": [0.4, 4.0], "uav_kp_z": [0.8, 8.0],
+        "uav_kd_xy": [0.8, 5.0], "uav_kd_z": [1.0, 6.0],
+        "uav_ki_xy": [0.0, 0.3], "uav_ki_z": [0.0, 0.4],
+        "tip_kp_xy": [0.0, 1.5], "tip_kp_z": [0.0, 1.0],
+        "tip_kd_xy": [0.0, 0.8], "tip_kd_z": [0.0, 0.6],
+        "reference_correction_limit_xy_m": [0.03, 0.30], "reference_correction_limit_z_m": [0.02, 0.20],
+        "reference_correction_slew_m_per_update": [0.01, 0.10],
+        "integral_limit_m_s": [0.05, 0.50]
+      },
+      "evaluation_samples": ["6 calm axis", "6 constant-3.0 face diagonals", "ramp equilibrium hold"],
+      "selection_rule": ["safe count descending", "success count descending", "position RMSE ascending", "acquisition median ascending", "orientation RMSE ascending", "effort ascending", "candidate ID ascending"],
+      "advance_count": 8
+    },
+    {
+      "round": "R1R1-B",
+      "purpose": "full Development finalist evaluation",
+      "candidate_budget": 8,
+      "evaluation_sample_count": 75,
+      "selection_rule": ["competence pass first", "safety count descending", "calm-axis acquisition count descending", "success count descending", "position RMSE ascending", "acquisition median ascending", "orientation RMSE ascending", "effort ascending", "candidate ID ascending"]
+    }
+  ],
+  "refinement_policy": "A further round is allowed only after a before-execution protocol amendment records WHY_EXPANDED, OLD_RANGE, NEW_RANGE, evidence, budget, and selection rule.",
+  "competence_gate": {"safety_rate": 1.0, "calm_axis_acquired_min": 5, "success_rate_min": 0.5, "position_rmse_3d_m_max": 0.25},
+  "holdout_execution_allowed": false,
+  "advanced_self_started": false,
+  "advanced_paper_selected": false
+}
