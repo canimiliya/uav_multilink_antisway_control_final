@@ -1,0 +1,30 @@
+{
+  "written_after_round_a_and_before_round_b_performance": true,
+  "paper_protocol_freeze_head": "39a01592429897df943f306ec61c70deedabad3e",
+  "source": "top six R3-A candidates under the preregistered lexicographic rule",
+  "candidate_ids": [
+    "paper_a_007",
+    "paper_a_009",
+    "paper_a_013",
+    "paper_a_015",
+    "paper_a_001",
+    "paper_a_003"
+  ],
+  "parameters_changed": false,
+  "candidate_count": 6,
+  "development_case_count": 75,
+  "authoritative_case_budget": 450,
+  "selection_rule": [
+    "hard safety and runtime gates",
+    "hard frozen V3 overall numeric contract",
+    "success count descending",
+    "position RMSE ascending",
+    "acquisition median ascending",
+    "ramp steady error ascending",
+    "ramp peak error ascending",
+    "candidate ID ascending"
+  ],
+  "traditional_rerun": false,
+  "self_rerun_or_retune": false,
+  "holdout_executed": false
+}
