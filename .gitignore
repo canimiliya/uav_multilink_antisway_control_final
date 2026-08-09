@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+reproducibility/*/development/_cache/
 .mypy_cache/
 .ruff_cache/
 .benchmarks/
