@@ -1,0 +1,1042 @@
+{
+  "data_head": "9e1f8e69287cc9d7763f0e9a4470400460935e2a",
+  "device": "cuda",
+  "models_evaluated": 24,
+  "maximum_allowed": 64,
+  "results": [
+    {
+      "model_id": "np_v9_14",
+      "configuration": {
+        "model_id": "np_v9_14",
+        "embedding_dim": 18,
+        "hidden_width": 96,
+        "hidden_depth": 3,
+        "prediction_horizon": 10,
+        "learning_rate": 0.0006,
+        "spectral_gamma": 1.0,
+        "forward_weight": 0.5,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 0.5,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261014
+      },
+      "best_epoch": 45,
+      "epochs_executed": 76,
+      "last_training_losses": {
+        "forward": 0.04395552724599838,
+        "backward": 75627464.0,
+        "reconstruction": 0.0,
+        "total": 75627464.0
+      },
+      "validation": {
+        "force_rmse": 0.8755476224592746,
+        "torque_rmse": 0.19360782480371203,
+        "all_rmse": 0.8966981816750346,
+        "multi_step_rmse": 1.7808577051174133
+      },
+      "lifted_spectral_radius": 0.9928221106529236,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_14.npz",
+      "artifact_sha256": "4568c483a867f8cc9e9fffb55e4009a1a4bb33f13ac3fc1e5fd8a3a3f7d31563",
+      "elapsed_s": 1.5120087999999967,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.10500639567844061,
+        "torque_improvement": 0.17297432951627512
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_08",
+      "configuration": {
+        "model_id": "np_v9_08",
+        "embedding_dim": 40,
+        "hidden_width": 64,
+        "hidden_depth": 3,
+        "prediction_horizon": 10,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 1.1,
+        "forward_weight": 1.0,
+        "backward_weight": 0.5,
+        "reconstruction_weight": 0.5,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261008
+      },
+      "best_epoch": 25,
+      "epochs_executed": 56,
+      "last_training_losses": {
+        "forward": 0.031042445451021194,
+        "backward": 95606824.0,
+        "reconstruction": 0.0,
+        "total": 47803412.0
+      },
+      "validation": {
+        "force_rmse": 0.9516625471935952,
+        "torque_rmse": 0.19372488080277978,
+        "all_rmse": 0.9711801754427718,
+        "multi_step_rmse": 2.1162699264548848
+      },
+      "lifted_spectral_radius": 0.9924994111061096,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_08.npz",
+      "artifact_sha256": "e243cdc228ff7944561a8cc0244820ef59d9f10fbe13c19d71cd5375e44e480e",
+      "elapsed_s": 1.0984362999999995,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.20106910715238957,
+        "torque_improvement": 0.17247430677075182
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_04",
+      "configuration": {
+        "model_id": "np_v9_04",
+        "embedding_dim": 18,
+        "hidden_width": 64,
+        "hidden_depth": 3,
+        "prediction_horizon": 10,
+        "learning_rate": 0.0006,
+        "spectral_gamma": 1.0,
+        "forward_weight": 2.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 0.5,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261004
+      },
+      "best_epoch": 5,
+      "epochs_executed": 36,
+      "last_training_losses": {
+        "forward": 0.05498113855719566,
+        "backward": 320111520.0,
+        "reconstruction": 0.0,
+        "total": 320111520.0
+      },
+      "validation": {
+        "force_rmse": 0.9617964877986888,
+        "torque_rmse": 0.19816525833371318,
+        "all_rmse": 0.9819989580199974,
+        "multi_step_rmse": 2.1647369810662656
+      },
+      "lifted_spectral_radius": 0.9926369190216064,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_04.npz",
+      "artifact_sha256": "28fe4c1fcb9ad0586466e3ecf1e8adbaadfac87672793ffc018feeed2f0ac228",
+      "elapsed_s": 0.6615245999999999,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.21385889595976493,
+        "torque_improvement": 0.15350654961298094
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_16",
+      "configuration": {
+        "model_id": "np_v9_16",
+        "embedding_dim": 24,
+        "hidden_width": 64,
+        "hidden_depth": 3,
+        "prediction_horizon": 10,
+        "learning_rate": 0.001,
+        "spectral_gamma": 1.0,
+        "forward_weight": 1.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 0.5,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261016
+      },
+      "best_epoch": 60,
+      "epochs_executed": 91,
+      "last_training_losses": {
+        "forward": 0.09659744799137115,
+        "backward": 171839632.0,
+        "reconstruction": 0.0,
+        "total": 171839632.0
+      },
+      "validation": {
+        "force_rmse": 1.013891502007097,
+        "torque_rmse": 0.1971904765115651,
+        "all_rmse": 1.0328891817949617,
+        "multi_step_rmse": 2.356394660555371
+      },
+      "lifted_spectral_radius": 0.992430567741394,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_16.npz",
+      "artifact_sha256": "515f68b8be878e782aa7a5f214e2c457688e906f0438941442c781b834284098",
+      "elapsed_s": 1.6703675999999987,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.2796066890056288,
+        "torque_improvement": 0.15767048043992293
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_02",
+      "configuration": {
+        "model_id": "np_v9_02",
+        "embedding_dim": 24,
+        "hidden_width": 96,
+        "hidden_depth": 3,
+        "prediction_horizon": 10,
+        "learning_rate": 0.0006,
+        "spectral_gamma": 0.9,
+        "forward_weight": 1.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 0.5,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261002
+      },
+      "best_epoch": 80,
+      "epochs_executed": 111,
+      "last_training_losses": {
+        "forward": 0.0720534399151802,
+        "backward": 56411228.0,
+        "reconstruction": 0.0,
+        "total": 56411228.0
+      },
+      "validation": {
+        "force_rmse": 1.0190296142309867,
+        "torque_rmse": 0.1977605914300663,
+        "all_rmse": 1.0380417169856533,
+        "multi_step_rmse": 2.3519841944037574
+      },
+      "lifted_spectral_radius": 0.9930274486541748,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_02.npz",
+      "artifact_sha256": "b1b84fe0eeddcfccd3eb602078e7f408e69b03e8985f4f498979d7998c521904",
+      "elapsed_s": 2.1036277000000005,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.28609136981963634,
+        "torque_improvement": 0.1552351466758859
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_19",
+      "configuration": {
+        "model_id": "np_v9_19",
+        "embedding_dim": 24,
+        "hidden_width": 128,
+        "hidden_depth": 3,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 0.9,
+        "forward_weight": 2.0,
+        "backward_weight": 0.5,
+        "reconstruction_weight": 2.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261019
+      },
+      "best_epoch": 50,
+      "epochs_executed": 81,
+      "last_training_losses": {
+        "forward": 0.07586122304201126,
+        "backward": 1.768610439252016e+21,
+        "reconstruction": 0.0,
+        "total": 8.84305219626008e+20
+      },
+      "validation": {
+        "force_rmse": 0.9189108164912908,
+        "torque_rmse": 0.19403983768584407,
+        "all_rmse": 0.9391743966238855,
+        "multi_step_rmse": 2.513211374296352
+      },
+      "lifted_spectral_radius": 0.9930962920188904,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_19.npz",
+      "artifact_sha256": "ff5b5063698f5fd2ec0daafdc2cc88a430b561f0379f5f0152d0bd9486496c4c",
+      "elapsed_s": 1.8606853,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.15973398046455745,
+        "torque_improvement": 0.171128919890579
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_21",
+      "configuration": {
+        "model_id": "np_v9_21",
+        "embedding_dim": 24,
+        "hidden_width": 128,
+        "hidden_depth": 3,
+        "prediction_horizon": 20,
+        "learning_rate": 0.001,
+        "spectral_gamma": 1.0,
+        "forward_weight": 0.5,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 1.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261021
+      },
+      "best_epoch": 0,
+      "epochs_executed": 31,
+      "last_training_losses": {
+        "forward": 0.05496376007795334,
+        "backward": 2.8682015133401927e+20,
+        "reconstruction": 0.0,
+        "total": 2.8682015133401927e+20
+      },
+      "validation": {
+        "force_rmse": 0.9312798580487526,
+        "torque_rmse": 0.19398633109289862,
+        "all_rmse": 0.9512690842543914,
+        "multi_step_rmse": 2.5764677338847863
+      },
+      "lifted_spectral_radius": 0.9921953678131104,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_21.npz",
+      "artifact_sha256": "fea278d43e3a0701aec67d548382645e31d2c97c3f0cdee2dc0343d8072dbf2d",
+      "elapsed_s": 0.7807007999999982,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.175344633362017,
+        "torque_improvement": 0.17135748155099162
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_07",
+      "configuration": {
+        "model_id": "np_v9_07",
+        "embedding_dim": 18,
+        "hidden_width": 96,
+        "hidden_depth": 3,
+        "prediction_horizon": 10,
+        "learning_rate": 0.0006,
+        "spectral_gamma": 1.1,
+        "forward_weight": 1.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 2.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261007
+      },
+      "best_epoch": 0,
+      "epochs_executed": 31,
+      "last_training_losses": {
+        "forward": 0.06568556278944016,
+        "backward": 64376768.0,
+        "reconstruction": 0.0,
+        "total": 64376768.0
+      },
+      "validation": {
+        "force_rmse": 1.1059597883295942,
+        "torque_rmse": 0.19486117664892583,
+        "all_rmse": 1.122995071924648,
+        "multi_step_rmse": 2.381412120960676
+      },
+      "lifted_spectral_radius": 0.9921780824661255,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_07.npz",
+      "artifact_sha256": "02fdf0129c8cb1db584c298969c05e00ff40fb4da97d17201df71da18c8b2882",
+      "elapsed_s": 0.5883047000000019,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.39580373256535295,
+        "torque_improvement": 0.16762044389109
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_15",
+      "configuration": {
+        "model_id": "np_v9_15",
+        "embedding_dim": 18,
+        "hidden_width": 128,
+        "hidden_depth": 3,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 1.1,
+        "forward_weight": 2.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 0.5,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261015
+      },
+      "best_epoch": 20,
+      "epochs_executed": 51,
+      "last_training_losses": {
+        "forward": 0.08765323460102081,
+        "backward": 2.0042379976998545e+20,
+        "reconstruction": 0.0,
+        "total": 2.0042379976998545e+20
+      },
+      "validation": {
+        "force_rmse": 0.9825170482199724,
+        "torque_rmse": 0.19530624679257352,
+        "all_rmse": 1.0017406251515857,
+        "multi_step_rmse": 2.6114232852932906
+      },
+      "lifted_spectral_radius": 0.9930585622787476,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_15.npz",
+      "artifact_sha256": "c58952d3aa0be8a958f1bc327558daea833a1c363ab837ac6b6db663589f52b9",
+      "elapsed_s": 1.1436382999999992,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.24000978849859433,
+        "torque_improvement": 0.1657192581599053
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_12",
+      "configuration": {
+        "model_id": "np_v9_12",
+        "embedding_dim": 32,
+        "hidden_width": 96,
+        "hidden_depth": 2,
+        "prediction_horizon": 10,
+        "learning_rate": 0.0006,
+        "spectral_gamma": 1.1,
+        "forward_weight": 1.0,
+        "backward_weight": 0.5,
+        "reconstruction_weight": 2.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261012
+      },
+      "best_epoch": 15,
+      "epochs_executed": 46,
+      "last_training_losses": {
+        "forward": 0.05514166131615639,
+        "backward": 260664272.0,
+        "reconstruction": 0.0,
+        "total": 130332136.0
+      },
+      "validation": {
+        "force_rmse": 1.1362366186611852,
+        "torque_rmse": 0.19871402036220384,
+        "all_rmse": 1.1534820828582966,
+        "multi_step_rmse": 2.487549430659667
+      },
+      "lifted_spectral_radius": 0.9927529096603394,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_12.npz",
+      "artifact_sha256": "02a518345032e565a8082f4e589f5a2e870c770b55703b806112040f5a5e4e8f",
+      "elapsed_s": 0.8398505999999983,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.43401535041351313,
+        "torque_improvement": 0.15116242801041335
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_17",
+      "configuration": {
+        "model_id": "np_v9_17",
+        "embedding_dim": 24,
+        "hidden_width": 96,
+        "hidden_depth": 3,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 1.0,
+        "forward_weight": 0.5,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 2.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261017
+      },
+      "best_epoch": 20,
+      "epochs_executed": 51,
+      "last_training_losses": {
+        "forward": 0.07217060029506683,
+        "backward": 1.206940915499761e+21,
+        "reconstruction": 0.0,
+        "total": 1.206940915499761e+21
+      },
+      "validation": {
+        "force_rmse": 1.0263595636217067,
+        "torque_rmse": 0.2007631733759898,
+        "all_rmse": 1.0458105973940681,
+        "multi_step_rmse": 2.666859239613817
+      },
+      "lifted_spectral_radius": 0.9928216338157654,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_17.npz",
+      "artifact_sha256": "1c9f48b4162c85273bc22975d8aa2e36c695004c0c05e87818ce795f855bfa76",
+      "elapsed_s": 1.0980312999999988,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.2953423125998751,
+        "torque_improvement": 0.14240915501192652
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_23",
+      "configuration": {
+        "model_id": "np_v9_23",
+        "embedding_dim": 18,
+        "hidden_width": 96,
+        "hidden_depth": 2,
+        "prediction_horizon": 10,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 1.0,
+        "forward_weight": 0.5,
+        "backward_weight": 0.5,
+        "reconstruction_weight": 1.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261023
+      },
+      "best_epoch": 75,
+      "epochs_executed": 106,
+      "last_training_losses": {
+        "forward": 0.11638371646404266,
+        "backward": 164136224.0,
+        "reconstruction": 0.0,
+        "total": 82068112.0
+      },
+      "validation": {
+        "force_rmse": 1.2380214506576197,
+        "torque_rmse": 0.1975641441604793,
+        "all_rmse": 1.2536860465627986,
+        "multi_step_rmse": 2.523956594708989
+      },
+      "lifted_spectral_radius": 0.9934784770011902,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_23.npz",
+      "artifact_sha256": "07aaecd6e93231f06a28b4252b4a3c2d90592db452c0647136495f661ffd16ce",
+      "elapsed_s": 1.722281300000006,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.5624753992492317,
+        "torque_improvement": 0.15607430147249401
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_20",
+      "configuration": {
+        "model_id": "np_v9_20",
+        "embedding_dim": 24,
+        "hidden_width": 96,
+        "hidden_depth": 2,
+        "prediction_horizon": 10,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 1.0,
+        "forward_weight": 2.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 2.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261020
+      },
+      "best_epoch": 35,
+      "epochs_executed": 66,
+      "last_training_losses": {
+        "forward": 0.051014941185712814,
+        "backward": 308707520.0,
+        "reconstruction": 0.0,
+        "total": 308707520.0
+      },
+      "validation": {
+        "force_rmse": 1.2437624173680069,
+        "torque_rmse": 0.2095631389151326,
+        "all_rmse": 1.2612936454486208,
+        "multi_step_rmse": 2.5072563250748643
+      },
+      "lifted_spectral_radius": 0.9923593401908875,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_20.npz",
+      "artifact_sha256": "f7ae728628df4b63cc2afeccbd04bd8afabd5855b09c59655b9061ec242c384c",
+      "elapsed_s": 1.1069663000000034,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.5697209273845671,
+        "torque_improvement": 0.10481874559731863
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_10",
+      "configuration": {
+        "model_id": "np_v9_10",
+        "embedding_dim": 24,
+        "hidden_width": 96,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 1.1,
+        "forward_weight": 1.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 1.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261010
+      },
+      "best_epoch": 25,
+      "epochs_executed": 56,
+      "last_training_losses": {
+        "forward": 0.09004625678062439,
+        "backward": 4.5607739505398713e+21,
+        "reconstruction": 0.0,
+        "total": 4.5607739505398713e+21
+      },
+      "validation": {
+        "force_rmse": 1.2077660075998002,
+        "torque_rmse": 0.19657427764119506,
+        "all_rmse": 1.2236585208887807,
+        "multi_step_rmse": 2.7037697762555166
+      },
+      "lifted_spectral_radius": 0.9927409291267395,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_10.npz",
+      "artifact_sha256": "36d700e19adcfd4aa5f45df375f68f04a429bdc9b5e25f7f1d21c3d5e7f8b81f",
+      "elapsed_s": 1.1328686999999995,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.52429077373558,
+        "torque_improvement": 0.16030266890872968
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_05",
+      "configuration": {
+        "model_id": "np_v9_05",
+        "embedding_dim": 18,
+        "hidden_width": 128,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.001,
+        "spectral_gamma": 0.9,
+        "forward_weight": 1.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 1.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261005
+      },
+      "best_epoch": 50,
+      "epochs_executed": 81,
+      "last_training_losses": {
+        "forward": 0.09914956241846085,
+        "backward": 3.8161527288001074e+21,
+        "reconstruction": 0.0,
+        "total": 3.8161527288001074e+21
+      },
+      "validation": {
+        "force_rmse": 1.169363387139357,
+        "torque_rmse": 0.2029142299021836,
+        "all_rmse": 1.186838201221559,
+        "multi_step_rmse": 2.750504714175969
+      },
+      "lifted_spectral_radius": 0.9927244782447815,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_05.npz",
+      "artifact_sha256": "91bd188de693876ddcea38e3a5f159bc395588038069fed5ada823d96e9ebe47",
+      "elapsed_s": 1.5130599000000018,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.4758238027438617,
+        "torque_improvement": 0.13322058545061144
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_09",
+      "configuration": {
+        "model_id": "np_v9_09",
+        "embedding_dim": 24,
+        "hidden_width": 128,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 1.0,
+        "forward_weight": 2.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 0.5,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261009
+      },
+      "best_epoch": 35,
+      "epochs_executed": 66,
+      "last_training_losses": {
+        "forward": 0.09083813428878784,
+        "backward": 4.4280931204429324e+21,
+        "reconstruction": 0.0,
+        "total": 4.4280931204429324e+21
+      },
+      "validation": {
+        "force_rmse": 1.2295218063126627,
+        "torque_rmse": 0.20092519177989004,
+        "all_rmse": 1.2458309696303662,
+        "multi_step_rmse": 2.7458391977977614
+      },
+      "lifted_spectral_radius": 0.9931929707527161,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_09.npz",
+      "artifact_sha256": "ddbc7830242cc08f4ecf84db4447c75cef3bbd190aee2a00aec9a741616cc966",
+      "elapsed_s": 1.293534000000001,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.5517482142038443,
+        "torque_improvement": 0.14171706842269838
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_13",
+      "configuration": {
+        "model_id": "np_v9_13",
+        "embedding_dim": 24,
+        "hidden_width": 96,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0006,
+        "spectral_gamma": 0.9,
+        "forward_weight": 2.0,
+        "backward_weight": 0.5,
+        "reconstruction_weight": 1.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261013
+      },
+      "best_epoch": 20,
+      "epochs_executed": 51,
+      "last_training_losses": {
+        "forward": 0.06487434357404709,
+        "backward": 4.968269214973562e+21,
+        "reconstruction": 0.0,
+        "total": 2.484134607486781e+21
+      },
+      "validation": {
+        "force_rmse": 1.1976494798134878,
+        "torque_rmse": 0.2061360520584478,
+        "all_rmse": 1.215259786406084,
+        "multi_step_rmse": 2.7658971874593012
+      },
+      "lifted_spectral_radius": 0.9917545914649963,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_13.npz",
+      "artifact_sha256": "9d258b13abb35696c2fea1d25e4b70efa5771ed9792629e0974a81623293d069",
+      "elapsed_s": 1.049042700000001,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.5115229612041106,
+        "torque_improvement": 0.11945807542982523
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_03",
+      "configuration": {
+        "model_id": "np_v9_03",
+        "embedding_dim": 40,
+        "hidden_width": 128,
+        "hidden_depth": 3,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 1.1,
+        "forward_weight": 1.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 1.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261003
+      },
+      "best_epoch": 50,
+      "epochs_executed": 81,
+      "last_training_losses": {
+        "forward": 0.05007077753543854,
+        "backward": 5.7606988911388865e+20,
+        "reconstruction": 0.0,
+        "total": 5.7606988911388865e+20
+      },
+      "validation": {
+        "force_rmse": 1.2183232236717318,
+        "torque_rmse": 0.2002907940847259,
+        "all_rmse": 1.2346772369866428,
+        "multi_step_rmse": 2.765473282235059
+      },
+      "lifted_spectral_radius": 0.9923574328422546,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_03.npz",
+      "artifact_sha256": "9003cca1b7d7f114ccdb8dfc0e57dd19955f78af4d183bceba327e5f43235ab7",
+      "elapsed_s": 1.8472377000000009,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.5376147677489227,
+        "torque_improvement": 0.1444269959771678
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_01",
+      "configuration": {
+        "model_id": "np_v9_01",
+        "embedding_dim": 32,
+        "hidden_width": 128,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0006,
+        "spectral_gamma": 1.0,
+        "forward_weight": 1.0,
+        "backward_weight": 0.5,
+        "reconstruction_weight": 1.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261001
+      },
+      "best_epoch": 40,
+      "epochs_executed": 71,
+      "last_training_losses": {
+        "forward": 0.05451435595750809,
+        "backward": 4.030352934277103e+21,
+        "reconstruction": 0.0,
+        "total": 2.0151764671385515e+21
+      },
+      "validation": {
+        "force_rmse": 1.3084816653934075,
+        "torque_rmse": 0.2007066997205403,
+        "all_rmse": 1.3237852726116182,
+        "multi_step_rmse": 2.7845560532486724
+      },
+      "lifted_spectral_radius": 0.9931528568267822,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_01.npz",
+      "artifact_sha256": "fb5f749ce267d4f378eca2576f204c4b43dd4f06f89cc806ced255d5acabb895",
+      "elapsed_s": 1.4731048999999992,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.6514014449910135,
+        "torque_improvement": 0.14265039093723142
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_00",
+      "configuration": {
+        "model_id": "np_v9_00",
+        "embedding_dim": 24,
+        "hidden_width": 128,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.001,
+        "spectral_gamma": 1.0,
+        "forward_weight": 1.0,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 1.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261000
+      },
+      "best_epoch": 30,
+      "epochs_executed": 61,
+      "last_training_losses": {
+        "forward": 0.09152674674987793,
+        "backward": 5.135213149560559e+21,
+        "reconstruction": 0.0,
+        "total": 5.135213149560559e+21
+      },
+      "validation": {
+        "force_rmse": 1.2828321447329627,
+        "torque_rmse": 0.20575875074428562,
+        "all_rmse": 1.299228607700747,
+        "multi_step_rmse": 2.797630003213175
+      },
+      "lifted_spectral_radius": 0.9925619959831238,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_00.npz",
+      "artifact_sha256": "c34a21904a8ffc6f74ca34daf3b67a4ca08b887c8e03f367f34dc57276d0587b",
+      "elapsed_s": 1.6128296999999998,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.6190298370409317,
+        "torque_improvement": 0.12106977615853143
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_11",
+      "configuration": {
+        "model_id": "np_v9_11",
+        "embedding_dim": 40,
+        "hidden_width": 128,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.001,
+        "spectral_gamma": 1.1,
+        "forward_weight": 0.5,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 2.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261011
+      },
+      "best_epoch": 45,
+      "epochs_executed": 76,
+      "last_training_losses": {
+        "forward": 0.049593981355428696,
+        "backward": 4.6512200233313297e+21,
+        "reconstruction": 0.0,
+        "total": 4.6512200233313297e+21
+      },
+      "validation": {
+        "force_rmse": 1.3364733477195838,
+        "torque_rmse": 0.20209630238934803,
+        "all_rmse": 1.3516670908934045,
+        "multi_step_rmse": 2.829649117350575
+      },
+      "lifted_spectral_radius": 0.9918320775032043,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_11.npz",
+      "artifact_sha256": "98e6bda288ef0802072155fc5915a766afa67d08b5db4037e4a5701f4aecfbf5",
+      "elapsed_s": 1.6225055000000026,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.6867290356357618,
+        "torque_improvement": 0.13671448891446025
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_22",
+      "configuration": {
+        "model_id": "np_v9_22",
+        "embedding_dim": 32,
+        "hidden_width": 128,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.001,
+        "spectral_gamma": 1.0,
+        "forward_weight": 0.5,
+        "backward_weight": 1.0,
+        "reconstruction_weight": 0.5,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261022
+      },
+      "best_epoch": 45,
+      "epochs_executed": 76,
+      "last_training_losses": {
+        "forward": 0.07818922400474548,
+        "backward": 5.166559891816918e+21,
+        "reconstruction": 0.0,
+        "total": 5.166559891816918e+21
+      },
+      "validation": {
+        "force_rmse": 1.4095845244488059,
+        "torque_rmse": 0.20471357639510032,
+        "all_rmse": 1.4243722055439159,
+        "multi_step_rmse": 2.7999487647700003
+      },
+      "lifted_spectral_radius": 0.9919850826263428,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_22.npz",
+      "artifact_sha256": "85545b63a1ef8460a553b50de3545cc0003186c8bdec255efd5f1c61b8bf1c6c",
+      "elapsed_s": 1.5882112999999976,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.7790007931153216,
+        "torque_improvement": 0.12553439951651668
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_18",
+      "configuration": {
+        "model_id": "np_v9_18",
+        "embedding_dim": 32,
+        "hidden_width": 128,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 0.9,
+        "forward_weight": 2.0,
+        "backward_weight": 0.5,
+        "reconstruction_weight": 0.5,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261018
+      },
+      "best_epoch": 125,
+      "epochs_executed": 156,
+      "last_training_losses": {
+        "forward": 0.05807001143693924,
+        "backward": 3.3697269418125427e+21,
+        "reconstruction": 0.0,
+        "total": 1.6848634709062713e+21
+      },
+      "validation": {
+        "force_rmse": 1.4348691183253566,
+        "torque_rmse": 0.20883485992292647,
+        "all_rmse": 1.4499866845743152,
+        "multi_step_rmse": 2.8200086429408375
+      },
+      "lifted_spectral_radius": 0.9922186136245728,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_18.npz",
+      "artifact_sha256": "075c07390295f0380ea4e0c05763714b4ee0f6d4d0523769ddf991ddd265e47a",
+      "elapsed_s": 3.0569930999999997,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.810911836248809,
+        "torque_improvement": 0.10792970158496584
+      },
+      "competence_pass": false
+    },
+    {
+      "model_id": "np_v9_06",
+      "configuration": {
+        "model_id": "np_v9_06",
+        "embedding_dim": 40,
+        "hidden_width": 96,
+        "hidden_depth": 2,
+        "prediction_horizon": 20,
+        "learning_rate": 0.0003,
+        "spectral_gamma": 0.9,
+        "forward_weight": 2.0,
+        "backward_weight": 0.5,
+        "reconstruction_weight": 2.0,
+        "epochs_max": 240,
+        "early_stopping_patience": 30,
+        "window_batch_size": 4096,
+        "training_seed": 20261006
+      },
+      "best_epoch": 40,
+      "epochs_executed": 71,
+      "last_training_losses": {
+        "forward": 0.0512455478310585,
+        "backward": 3.560761756706251e+21,
+        "reconstruction": 0.0,
+        "total": 1.7803808783531256e+21
+      },
+      "validation": {
+        "force_rmse": 1.4931413802732796,
+        "torque_rmse": 0.2045202278998969,
+        "all_rmse": 1.507083177898493,
+        "multi_step_rmse": 2.823505498283476
+      },
+      "lifted_spectral_radius": 0.9915090203285217,
+      "artifact": "reproducibility/v9/predictor/models/np_v9_06.npz",
+      "artifact_sha256": "d9a695a1e835b8469920f04fb0d4f7e6655795d6e4efe3a31449d416184ec4ba",
+      "elapsed_s": 1.426165000000001,
+      "device": "cuda",
+      "relative_to_best_simple": {
+        "force_improvement": -0.8844557766255068,
+        "torque_improvement": 0.12636031742063414
+      },
+      "competence_pass": false
+    }
+  ],
+  "holdout_accessed": false,
+  "development_performance_accessed": false
+}

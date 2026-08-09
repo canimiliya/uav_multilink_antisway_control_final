@@ -1,0 +1,56 @@
+{
+  "result": "BLOCKED_V9_NEURAL_PREDICTOR_NOT_VALIDATED",
+  "selected_model": "np_v9_14",
+  "selected_metrics": {
+    "model_id": "np_v9_14",
+    "configuration": {
+      "model_id": "np_v9_14",
+      "embedding_dim": 18,
+      "hidden_width": 96,
+      "hidden_depth": 3,
+      "prediction_horizon": 10,
+      "learning_rate": 0.0006,
+      "spectral_gamma": 1.0,
+      "forward_weight": 0.5,
+      "backward_weight": 1.0,
+      "reconstruction_weight": 0.5,
+      "epochs_max": 240,
+      "early_stopping_patience": 30,
+      "window_batch_size": 4096,
+      "training_seed": 20261014
+    },
+    "best_epoch": 45,
+    "epochs_executed": 76,
+    "last_training_losses": {
+      "forward": 0.04395552724599838,
+      "backward": 75627464.0,
+      "reconstruction": 0.0,
+      "total": 75627464.0
+    },
+    "validation": {
+      "force_rmse": 0.8755476224592746,
+      "torque_rmse": 0.19360782480371203,
+      "all_rmse": 0.8966981816750346,
+      "multi_step_rmse": 1.7808577051174133
+    },
+    "lifted_spectral_radius": 0.9928221106529236,
+    "artifact": "reproducibility/v9/predictor/models/np_v9_14.npz",
+    "artifact_sha256": "4568c483a867f8cc9e9fffb55e4009a1a4bb33f13ac3fc1e5fd8a3a3f7d31563",
+    "elapsed_s": 1.5120087999999967,
+    "device": "cuda",
+    "relative_to_best_simple": {
+      "force_improvement": -0.10500639567844061,
+      "torque_improvement": 0.17297432951627512
+    },
+    "competence_pass": false
+  },
+  "selected_artifact": "reproducibility/v9/predictor/selected_predictor.npz",
+  "selected_artifact_sha256": "4568c483a867f8cc9e9fffb55e4009a1a4bb33f13ac3fc1e5fd8a3a3f7d31563",
+  "models_evaluated": 24,
+  "force_reference_best_simple": 0.7923462035002203,
+  "torque_reference_best_simple": 0.2341013486201358,
+  "validated": false,
+  "satc_used_for_selection": false,
+  "development_used_for_selection": false,
+  "holdout_accessed": false
+}

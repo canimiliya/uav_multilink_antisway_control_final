@@ -1,0 +1,54 @@
+{
+  "result": "BLOCKED_V9_NEURAL_PREDICTOR_NOT_VALIDATED",
+  "gate_position": "predictor validation before NP-MPC implementation and Development",
+  "models_evaluated": 24,
+  "selected_diagnostic_model": "np_v9_14",
+  "selected_is_frozen_controller_candidate": false,
+  "selected_validation": {
+    "force_rmse": 0.8755476224592746,
+    "torque_rmse": 0.19360782480371203,
+    "all_rmse": 0.8966981816750346,
+    "multi_step_rmse": 1.7808577051174133,
+    "lifted_spectral_radius": 0.9928221106529236
+  },
+  "best_simple_reference": {
+    "name": "low_pass_alpha_0p35",
+    "force_rmse": 0.7923462035002203,
+    "torque_rmse": 0.2341013486201358,
+    "all_rmse": 0.826205753808928
+  },
+  "relative": {
+    "force_improvement": -0.10500639567844061,
+    "torque_improvement": 0.17297432951627512,
+    "all_rmse_improvement": -0.08532187590022189
+  },
+  "competence_rule": "force and torque RMSE each at least 5 percent better than the best simple estimator, with stable lifted A",
+  "competence_pass": false,
+  "offline_failure_mechanism": [
+    "finite-difference force labels contain high-frequency inner-loop and contact-free multibody response that a 20 Hz memoryless chi/zeta lifted state did not predict better than causal low-pass filtering",
+    "torque prediction improved materially, but this cannot compensate for the failed translational-force gate",
+    "stable-A backward free roll is numerically expansive because inverse dynamics magnify small singular directions; the recorded backward objective remained large"
+  ],
+  "online_update_diagnostic": {
+    "paper_window_samples": 40,
+    "result": "WORSE_THAN_FROZEN_OFFLINE_AB",
+    "np_v9_14_force_rmse": 4.671218621972407,
+    "np_v9_14_torque_rmse": 0.7213320283492689,
+    "formal_selection_use": false
+  },
+  "technical_retries": [
+    "normal-equation scaling and ridge stabilization",
+    "Algorithm-1 alternating A/B identification with detached matrices",
+    "regularized backward inverse",
+    "Python-3.9 evidence-write compatibility",
+    "lifted-space forward/backward objective and stable invertible A projection",
+    "causal zeta alignment and full 40-transition online-update window"
+  ],
+  "development_accessed": false,
+  "holdout_accessed": false,
+  "np_mpc_implemented": false,
+  "np_mpc_search_executed": false,
+  "paper_replaced": false,
+  "automatic_v10_started": false,
+  "scientific_interpretation": "The V9 adaptation failed before control-performance qualification. It is not evidence that the original Jin et al. method is ineffective on its source platform."
+}

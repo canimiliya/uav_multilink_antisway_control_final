@@ -1,0 +1,22 @@
+{
+  "validation_trajectories": 48,
+  "validation_transitions": 10909,
+  "estimators": {
+    "zero_residual": {
+      "force_rmse": 3.732982120276721,
+      "torque_rmse": 1.398434282172962,
+      "all_rmse": 3.9863233626817443
+    },
+    "last_value": {
+      "force_rmse": 0.8444122784968443,
+      "torque_rmse": 0.23455468634121865,
+      "all_rmse": 0.8763834759743361
+    },
+    "low_pass_alpha_0p35": {
+      "force_rmse": 0.7923462035002203,
+      "torque_rmse": 0.2341013486201358,
+      "all_rmse": 0.826205753808928
+    }
+  },
+  "selection_independent_of_satc": true
+}
