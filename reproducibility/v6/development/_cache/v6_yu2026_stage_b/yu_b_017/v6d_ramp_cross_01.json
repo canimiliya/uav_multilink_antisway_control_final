@@ -1,0 +1,29 @@
+{
+  "sample_id": "v6d_ramp_cross_01",
+  "cohort": "RAMP_STRONG",
+  "controller": "yu2026",
+  "candidate_id": "yu_b_017",
+  "safe": false,
+  "task_success": false,
+  "acquisition_time_s": null,
+  "position_rmse_3d_m": 2.313525166000581,
+  "orientation_rmse_deg": 21.849152485881508,
+  "ramp_peak_position_error_m": 0.8299501457595335,
+  "ramp_steady_state_position_error_m": 3.3239576363752112,
+  "total_acceleration_effort": 42.96936368593698,
+  "max_abs_command_m_s2": 2.0,
+  "max_command_step_m_s2": 0.25000000000000006,
+  "max_thrust_N": 133.7330409169826,
+  "max_abs_torque_Nm": 21.69666140893397,
+  "max_cutter_angular_speed_rad_s": 5.175843884090627,
+  "safety_failure_reasons": [
+    "attitude",
+    "joint_angle",
+    "uav_height"
+  ],
+  "solve_time_p95_ms": 0.0488,
+  "amplitude_saturation_fraction": 0.3070539419087137,
+  "slew_activity_fraction": 0.0912863070539419,
+  "directional_stratum": "cross",
+  "wind_direction_sign": -1
+}

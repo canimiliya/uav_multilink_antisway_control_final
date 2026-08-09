@@ -1,0 +1,32 @@
+{
+  "result": "V6_NO_QUALIFIED_RECENT_PAPER_BASELINE",
+  "qualified_paper_count": 0,
+  "qualified": [],
+  "papers": {
+    "YU2026": {
+      "development_status": "PAPER_DEVELOPMENT_INELIGIBLE",
+      "best_candidate": "yu_b_007",
+      "holdout_status": "NOT_RUN_DEVELOPMENT_INELIGIBLE"
+    },
+    "SEP2026": {
+      "development_status": "PAPER_DEVELOPMENT_INELIGIBLE",
+      "best_candidate": "sep_b_002",
+      "holdout_status": "NOT_RUN_DEVELOPMENT_INELIGIBLE"
+    }
+  },
+  "authoritative_runs": {
+    "comparators": 480,
+    "paper_stage_a": 384,
+    "paper_stage_b": 5760,
+    "total": 6624
+  },
+  "technical_retries": [
+    {
+      "phase": "comparator launcher",
+      "reason": "initial orchestration command timeout after one second",
+      "resolution": "same implementation commit, parameters, and Development samples completed using persistent launcher/cache; no contract or scientific setting changed"
+    }
+  ],
+  "holdout_execution_allowed": false,
+  "holdout_executed": false
+}

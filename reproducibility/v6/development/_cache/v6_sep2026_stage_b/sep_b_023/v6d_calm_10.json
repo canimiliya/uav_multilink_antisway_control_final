@@ -1,0 +1,27 @@
+{
+  "sample_id": "v6d_calm_10",
+  "cohort": "NORMAL_CALM",
+  "controller": "sep2026",
+  "candidate_id": "sep_b_023",
+  "safe": false,
+  "task_success": false,
+  "acquisition_time_s": null,
+  "position_rmse_3d_m": 1.6154373591807345,
+  "orientation_rmse_deg": 3.139227132491956,
+  "ramp_peak_position_error_m": 1.620587075634843,
+  "ramp_steady_state_position_error_m": 2.3991141156844913,
+  "total_acceleration_effort": 18.577622614974285,
+  "max_abs_command_m_s2": 2.0,
+  "max_command_step_m_s2": 0.2500000000000001,
+  "max_thrust_N": 134.61448585761886,
+  "max_abs_torque_Nm": 16.557858159282965,
+  "max_cutter_angular_speed_rad_s": 3.705368424872683,
+  "safety_failure_reasons": [
+    "attitude"
+  ],
+  "solve_time_p95_ms": 2.1578,
+  "amplitude_saturation_fraction": 0.21991701244813278,
+  "slew_activity_fraction": 0.08298755186721991,
+  "directional_stratum": "not_applicable",
+  "wind_direction_sign": 0
+}

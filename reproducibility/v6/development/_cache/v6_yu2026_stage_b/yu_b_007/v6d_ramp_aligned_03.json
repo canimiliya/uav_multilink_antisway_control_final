@@ -1,0 +1,27 @@
+{
+  "sample_id": "v6d_ramp_aligned_03",
+  "cohort": "RAMP_STRONG",
+  "controller": "yu2026",
+  "candidate_id": "yu_b_007",
+  "safe": false,
+  "task_success": false,
+  "acquisition_time_s": null,
+  "position_rmse_3d_m": 3.671455400893872,
+  "orientation_rmse_deg": 14.245932526805625,
+  "ramp_peak_position_error_m": 7.3749373758652785,
+  "ramp_steady_state_position_error_m": 3.803055444859472,
+  "total_acceleration_effort": 68.39512243340289,
+  "max_abs_command_m_s2": 2.0,
+  "max_command_step_m_s2": 0.2500000000000001,
+  "max_thrust_N": 159.2290896027552,
+  "max_abs_torque_Nm": 17.63525195581286,
+  "max_cutter_angular_speed_rad_s": 3.7175641233136183,
+  "safety_failure_reasons": [
+    "attitude"
+  ],
+  "solve_time_p95_ms": 0.0496,
+  "amplitude_saturation_fraction": 0.6970954356846473,
+  "slew_activity_fraction": 0.7136929460580913,
+  "directional_stratum": "aligned",
+  "wind_direction_sign": -1
+}

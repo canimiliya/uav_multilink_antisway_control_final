@@ -1,0 +1,27 @@
+{
+  "sample_id": "v6d_stochastic_6003",
+  "cohort": "NORMAL_STOCHASTIC",
+  "controller": "yu2026",
+  "candidate_id": "yu_b_002",
+  "safe": false,
+  "task_success": false,
+  "acquisition_time_s": null,
+  "position_rmse_3d_m": 16.64085579502543,
+  "orientation_rmse_deg": 14.108476262922672,
+  "ramp_peak_position_error_m": 10.364605777662092,
+  "ramp_steady_state_position_error_m": 27.035059259605966,
+  "total_acceleration_effort": 86.1712128336005,
+  "max_abs_command_m_s2": 2.0,
+  "max_command_step_m_s2": 0.2500000000000001,
+  "max_thrust_N": 156.8943848766819,
+  "max_abs_torque_Nm": 5.643213580033899,
+  "max_cutter_angular_speed_rad_s": 2.5502626794072905,
+  "safety_failure_reasons": [
+    "attitude"
+  ],
+  "solve_time_p95_ms": 0.0542,
+  "amplitude_saturation_fraction": 0.8464730290456431,
+  "slew_activity_fraction": 0.6721991701244814,
+  "directional_stratum": "aligned",
+  "wind_direction_sign": -1
+}

@@ -1,0 +1,27 @@
+{
+  "sample_id": "v6d_ramp_opposed_02",
+  "cohort": "RAMP_STRONG",
+  "controller": "yu2026",
+  "candidate_id": "yu_b_008",
+  "safe": false,
+  "task_success": false,
+  "acquisition_time_s": null,
+  "position_rmse_3d_m": 6.38310476901758,
+  "orientation_rmse_deg": 12.744478953195674,
+  "ramp_peak_position_error_m": 7.821423333620704,
+  "ramp_steady_state_position_error_m": 8.424313265094632,
+  "total_acceleration_effort": 76.84373274643083,
+  "max_abs_command_m_s2": 2.0,
+  "max_command_step_m_s2": 0.2500000000000001,
+  "max_thrust_N": 158.72467305335954,
+  "max_abs_torque_Nm": 11.096759893864524,
+  "max_cutter_angular_speed_rad_s": 2.8492478661595255,
+  "safety_failure_reasons": [
+    "attitude"
+  ],
+  "solve_time_p95_ms": 0.0495,
+  "amplitude_saturation_fraction": 0.7219917012448133,
+  "slew_activity_fraction": 0.6099585062240664,
+  "directional_stratum": "opposed",
+  "wind_direction_sign": 1
+}

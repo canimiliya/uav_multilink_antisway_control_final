@@ -1,0 +1,27 @@
+{
+  "sample_id": "v6d_strong_preexisting_opposed_02",
+  "cohort": "STRONG_PREEXISTING",
+  "controller": "yu2026",
+  "candidate_id": "yu_b_020",
+  "safe": false,
+  "task_success": false,
+  "acquisition_time_s": null,
+  "position_rmse_3d_m": 14.210152631585743,
+  "orientation_rmse_deg": 15.6424832083663,
+  "ramp_peak_position_error_m": 8.086689492930455,
+  "ramp_steady_state_position_error_m": 22.847316178587654,
+  "total_acceleration_effort": 84.03792293467734,
+  "max_abs_command_m_s2": 2.0,
+  "max_command_step_m_s2": 0.2500000000000001,
+  "max_thrust_N": 156.72555089533986,
+  "max_abs_torque_Nm": 5.569301860140064,
+  "max_cutter_angular_speed_rad_s": 2.763266932217456,
+  "safety_failure_reasons": [
+    "attitude"
+  ],
+  "solve_time_p95_ms": 0.0513,
+  "amplitude_saturation_fraction": 0.9045643153526971,
+  "slew_activity_fraction": 0.6929460580912863,
+  "directional_stratum": "opposed",
+  "wind_direction_sign": 1
+}

@@ -1,0 +1,29 @@
+{
+  "sample_id": "v6d_strong_early_aligned_02",
+  "cohort": "STRONG_NEAR_SIMULTANEOUS",
+  "controller": "yu2026",
+  "candidate_id": "yu_b_010",
+  "safe": false,
+  "task_success": false,
+  "acquisition_time_s": null,
+  "position_rmse_3d_m": 3.346919019008487,
+  "orientation_rmse_deg": 18.338369267997425,
+  "ramp_peak_position_error_m": 3.053413490824941,
+  "ramp_steady_state_position_error_m": 5.52126980417144,
+  "total_acceleration_effort": 71.55747471436048,
+  "max_abs_command_m_s2": 2.0,
+  "max_command_step_m_s2": 0.25,
+  "max_thrust_N": 146.46562879246156,
+  "max_abs_torque_Nm": 21.85561881220989,
+  "max_cutter_angular_speed_rad_s": 5.227903100433588,
+  "safety_failure_reasons": [
+    "attitude",
+    "joint_angle",
+    "uav_height"
+  ],
+  "solve_time_p95_ms": 0.055,
+  "amplitude_saturation_fraction": 0.6265560165975104,
+  "slew_activity_fraction": 0.45643153526970953,
+  "directional_stratum": "aligned",
+  "wind_direction_sign": 1
+}
