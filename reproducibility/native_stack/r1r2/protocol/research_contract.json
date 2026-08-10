@@ -1,0 +1,34 @@
+{
+  "benchmark_tag": "native-stack-benchmark-v1.1",
+  "development_iteration": "P2-R1R2",
+  "failure_audit_required_before_protocol": true,
+  "frozen_assets": {
+    "benchmark_changed": false,
+    "case_semantics": "native-case-semantics-v1",
+    "competence_gate_changed": false,
+    "development_identity_hash": "0f03df8fe11310f6357197a9d03b605476831c76db58f64d04e92535e6df9473",
+    "development_resolved_hash": "0034d481a1abe04a46505410a557dc24815932c8a07cf96b08156c374d1aefe9",
+    "holdout_identity_hash": "63e6192faf992494f5a78f4c008d844564b0015fc26b43a94a0c98da659b2538",
+    "holdout_resolved_hash": "4a4b5d92027760e0d37176b7f768746c690a4ca53236ec60224cd423d6582df0",
+    "metrics_changed": false,
+    "plant_changed": false
+  },
+  "holdout": {
+    "authoritative_runs": 0,
+    "executed": false,
+    "execution_allowed": false,
+    "permitted_operations": [
+      "hash verification",
+      "semantic fingerprint verification"
+    ]
+  },
+  "paper": {
+    "implementation": false,
+    "new_paper_selected": false,
+    "performance": false,
+    "search": false
+  },
+  "r1r1_result_immutable": "BLOCKED_P2_TRADITIONAL_COMPETENCE",
+  "source_head": "046c64eb8d364a58e5af5425df2f88b95c73b261",
+  "task": "P2-R1R2-STRONG-TRADITIONAL-COMPETENCE-RECOVERY-AND-SATC-FINAL-FREEZE-R1"
+}

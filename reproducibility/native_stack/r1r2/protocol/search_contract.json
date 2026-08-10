@@ -1,0 +1,40 @@
+{
+  "benchmark_specific_hard_coding_forbidden": true,
+  "early_stop": {
+    "allowed_after_confirmed_complete_200_competence": true,
+    "minimum_unique_configs_already_evaluated": 48
+  },
+  "initial_design": "deterministic centered Latin hypercube",
+  "initial_design_seeds": {
+    "native_full_lqr": 202608102,
+    "native_pid": 202608101,
+    "native_task_lqr": 202608103
+  },
+  "initial_unique_configs_per_family": 48,
+  "maximum_unique_configs_per_family": 96,
+  "satc_maximum_unique_configs": 128,
+  "stage_a": {
+    "all_initial_candidates": true,
+    "case_count": 48,
+    "rank": [
+      "catastrophic_count_asc",
+      "success_rate_desc",
+      "large_endpoint_failure_fraction_asc",
+      "safety_rate_desc",
+      "setpoint_rmse_asc",
+      "trajectory_rmse_asc",
+      "method_id_asc"
+    ]
+  },
+  "stage_b": {
+    "competent_claim_requires_complete_200": true,
+    "finalists_per_family": 6,
+    "full_development_cases": 200
+  },
+  "stage_c": {
+    "additional_unique_configs": 48,
+    "allowed_if_no_confirmed_competence": true,
+    "method": "deterministic coordinate refinement around top two Stage-B candidates",
+    "within_frozen_ranges": true
+  }
+}

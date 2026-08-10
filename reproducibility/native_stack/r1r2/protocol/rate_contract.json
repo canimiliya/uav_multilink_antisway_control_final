@@ -1,0 +1,27 @@
+{
+  "candidate_rate_is_frozen_parameter": true,
+  "equal_rate_diagnostic": {
+    "allowed_only_after_all_final_freezes": true,
+    "rate_hz": 100,
+    "retuning_allowed": false,
+    "selection_authority": false
+  },
+  "physics_hz": 1000,
+  "post_result_rate_addition_forbidden": true,
+  "supported_inner_hz": [
+    20,
+    50,
+    100,
+    200,
+    500,
+    1000
+  ],
+  "supported_outer_hz": [
+    20,
+    50,
+    100,
+    200,
+    500,
+    1000
+  ]
+}

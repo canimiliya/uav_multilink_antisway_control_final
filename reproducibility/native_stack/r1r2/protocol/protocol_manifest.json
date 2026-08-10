@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "path": "reproducibility/native_stack/r1r2/protocol/competence_reference.json",
+      "sha256": "9e63d1bd4f62328e19e97860754ab858e2ee837371a7b8cb83ef42870a418231"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r2/protocol/native_full_lqr_candidate_registry.json",
+      "sha256": "34f4e7b53882fbf2f3b171808ed915e1199e99f6a3a173c2f579103fb10624f4"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r2/protocol/native_pid_candidate_registry.json",
+      "sha256": "adec4d7db3499c18b778d46465e6612b7315b553958d135370c974d5c945ee45"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r2/protocol/native_task_lqr_candidate_registry.json",
+      "sha256": "64342a7d8eb9353be544a4fac2bb3526e08da52c5b579cb35e8d3e2ac9199a45"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r2/protocol/rate_contract.json",
+      "sha256": "df33ad379e5b70eecb1bf4711e89538b659bc1d079f2218f04356076a0f6f11e"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r2/protocol/research_contract.json",
+      "sha256": "c1f7441033e407cac3b273c0d75106e4c9f4b3f032485ac0a8e0c24d6d089fb5"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r2/protocol/search_contract.json",
+      "sha256": "7ffb290c067abce3d0ff76ef8776af7f859451f58f40a75da4388eee0a76c785"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r2/protocol/selection_contract.json",
+      "sha256": "31e3c1eae83ebfd7974b1c42c8f3b55a574e1f3f1d6c0104b316a9ed37699eba"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r2/protocol/stage_a_manifest.json",
+      "sha256": "bbe0ac01b921a3ed947194d801aeadd022c2ecaf61e08aaf59bd26ffd52f8874"
+    }
+  ],
+  "frozen_before_new_candidate_performance": true
+}

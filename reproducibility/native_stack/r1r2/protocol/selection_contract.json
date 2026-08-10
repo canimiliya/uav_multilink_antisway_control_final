@@ -1,0 +1,56 @@
+{
+  "family_selection": [
+    "competence_pass_desc",
+    "safety_rate_desc",
+    "success_rate_desc",
+    "setpoint_rmse_asc",
+    "trajectory_rmse_asc",
+    "strong_p90_asc",
+    "acquisition_asc",
+    "effort_asc",
+    "runtime_p95_asc",
+    "method_id_asc"
+  ],
+  "primary_eligibility": "competent families only",
+  "primary_selection": [
+    "safety_rate_desc",
+    "success_rate_desc",
+    "setpoint_rmse_asc",
+    "trajectory_rmse_asc",
+    "strong_p90_asc",
+    "acquisition_asc",
+    "effort_asc",
+    "runtime_p95_asc",
+    "method_id_asc"
+  ],
+  "satc_qualification": {
+    "competence_required": true,
+    "deadline_miss_rate_max": 0.01,
+    "eligible_metrics": [
+      "setpoint_position",
+      "trajectory_tracking",
+      "strong_mean",
+      "strong_p90",
+      "acquisition"
+    ],
+    "meaningful_improvement_min_fraction": 0.05,
+    "no_catastrophic_regression": true,
+    "no_task_family_regression_max_fraction": 0.1,
+    "safety_not_below_primary": true,
+    "success_not_below_primary": true
+  },
+  "satc_start_gate": "competent_traditional_count >= 2",
+  "traditional_envelope_metrics": [
+    "safety",
+    "success",
+    "setpoint_rmse",
+    "trajectory_rmse",
+    "acquisition",
+    "strong_mean",
+    "strong_p90",
+    "orientation",
+    "effort",
+    "runtime"
+  ],
+  "traditional_minimum_competent_families": 2
+}
