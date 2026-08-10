@@ -1,0 +1,10 @@
+{
+  "applied_wrench_max_error": 0.0,
+  "cases": 64,
+  "desired_attitude_path": "same frozen GeometricInnerLoop instance class and gains",
+  "desired_force_max_error": 0.0,
+  "pass": true,
+  "thrust_max_error_N": 0.0,
+  "tolerance": 0.0,
+  "torque_max_error_Nm": 0.0
+}

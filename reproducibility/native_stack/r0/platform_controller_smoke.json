@@ -1,0 +1,54 @@
+{
+  "cases": 1,
+  "controllers": [
+    {
+      "candidate_id": "hybrid_x007_y041_z041",
+      "command": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_finite": true,
+      "command_within_legacy_authority": true,
+      "controller": "corrected_pid"
+    },
+    {
+      "candidate_id": "full_lqr_048",
+      "command": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_finite": true,
+      "command_within_legacy_authority": true,
+      "controller": "full_lqr"
+    },
+    {
+      "candidate_id": "task_lqr_009",
+      "command": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_finite": true,
+      "command_within_legacy_authority": true,
+      "controller": "task_lqr"
+    },
+    {
+      "candidate_id": "satc_b_027",
+      "command": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_finite": true,
+      "command_within_legacy_authority": true,
+      "controller": "satc_ofmpc"
+    }
+  ],
+  "parameters_changed": false,
+  "pass": true,
+  "purpose": "native API integration smoke only",
+  "scientific_claim_authority": false,
+  "selection_authority": false
+}
