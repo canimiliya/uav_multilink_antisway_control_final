@@ -11,6 +11,7 @@ from .actuation import CanonicalWrenchActuator
 from .controller import AccelerationOuterStackAdapter, NativeStackController
 from .references import ApproachStopReference, MinimumJerkReference, WaypointReference
 from .scheduler import DeterministicMultiRateScheduler
+from .runner import NativeStackRunner
 
 __all__ = [
     "AccelerationOuterStackAdapter",
@@ -21,6 +22,7 @@ __all__ = [
     "DeterministicMultiRateScheduler",
     "MinimumJerkReference",
     "NativeStackController",
+    "NativeStackRunner",
     "ReferenceSample",
     "SensorPacket",
     "WaypointReference",

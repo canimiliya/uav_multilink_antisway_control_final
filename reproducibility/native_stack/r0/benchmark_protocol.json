@@ -1,0 +1,54 @@
+{
+  "comparison_modes": {
+    "equal_rate": "all compared controllers use one preregistered common rate",
+    "native_rate": "each controller uses its preregistered native rate within the supported set"
+  },
+  "forbidden_runtime_fields": [
+    "true_wind",
+    "future_wind",
+    "future_reference",
+    "future_state",
+    "hidden_mujoco_force",
+    "holdout_metadata"
+  ],
+  "native_holdout_executed": false,
+  "new_controller_performance": false,
+  "old_holdout_accessed": false,
+  "performance_authority": "NO_SELECTION_AUTHORITY",
+  "physical_api": "WrenchCommand[T,tau_x,tau_y,tau_z]",
+  "plant": "reproducibility/frozen/model/model_5link_controlled.xml",
+  "plant_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "reference_preview": {
+    "future_protocol_must_grant_equally": true,
+    "v1_default": false
+  },
+  "safety_v2": {
+    "legacy_rules_preserved": true,
+    "rationale": "The native mission bank is confined to targets within 2 m of trim; limits reserve at least 4x target radius plus suspended-tool reach and are frozen before controller performance.",
+    "tip_horizontal_displacement_max_m": 10.0,
+    "uav_horizontal_displacement_max_m": 8.0
+  },
+  "sensor_fields": [
+    "time_s",
+    "tick",
+    "uav_position_world",
+    "uav_velocity_world",
+    "rotation_world_from_body",
+    "body_angular_velocity",
+    "joint_position",
+    "joint_velocity",
+    "cutter_tip_position_world",
+    "cutter_tip_velocity_world",
+    "reference",
+    "previous_applied_command"
+  ],
+  "supported_rates_hz": [
+    20,
+    50,
+    100,
+    200,
+    500,
+    1000
+  ],
+  "version": "native-stack-benchmark-v1"
+}

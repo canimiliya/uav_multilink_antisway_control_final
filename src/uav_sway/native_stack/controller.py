@@ -43,9 +43,13 @@ class NativeStackController(ABC):
 class AccelerationOuterStackAdapter(NativeStackController):
     """Map an unchanged legacy [ax, ay, az] output through the old inner loop."""
 
-    def __init__(self, legacy_controller: Any, inner_loop: GeometricInnerLoop) -> None:
+    def __init__(
+        self, legacy_controller: Any, inner_loop: GeometricInnerLoop,
+        equilibrium_relative_tip: np.ndarray | None = None,
+    ) -> None:
         self.legacy_controller = legacy_controller
         self.inner_loop = inner_loop
+        self.equilibrium_relative_tip = np.zeros(3) if equilibrium_relative_tip is None else np.asarray(equilibrium_relative_tip, dtype=float).reshape(3).copy()
         self._sensor_packet: SensorPacket | None = None
         self._acceleration = np.zeros(3)
         self._wrench = WrenchCommand(0.0, np.zeros(3))
@@ -76,12 +80,13 @@ class AccelerationOuterStackAdapter(NativeStackController):
             packet.joint_velocity,
             0.0,
         )
+        uav_reference = packet.reference.position_world - self.equilibrium_relative_tip
         reference = ReferenceState(
-            float(packet.reference.position_world[0]),
+            float(uav_reference[0]),
             float(packet.reference.velocity_world[0]),
             float(packet.reference.acceleration_world[0]),
-            float(packet.reference.position_world[1]),
-            float(packet.reference.position_world[2]),
+            float(uav_reference[1]),
+            float(uav_reference[2]),
             float(packet.time_s),
         )
         output = self.inner_loop.compute(

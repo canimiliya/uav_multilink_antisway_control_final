@@ -51,6 +51,7 @@ class AppliedPhysicalCommand:
 
 @dataclass(frozen=True, slots=True)
 class ReferenceSample:
+    """Current causal cutter-tip reference; no preview samples are included."""
     position_world: np.ndarray
     velocity_world: np.ndarray
     acceleration_world: np.ndarray
@@ -82,7 +83,7 @@ class SensorPacket:
     joint_velocity: np.ndarray
     cutter_tip_position_world: np.ndarray
     cutter_tip_velocity_world: np.ndarray
-    reference: ReferenceSample
+    reference: ReferenceSample  # cutter-tip reference at current time only
     previous_applied_command: WrenchCommand
 
     def __post_init__(self) -> None:
