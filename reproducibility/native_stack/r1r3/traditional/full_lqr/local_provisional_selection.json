@@ -1,0 +1,108 @@
+{
+  "competence_v2": false,
+  "confirmation_required": false,
+  "family": "native_full_lqr",
+  "full_200_configs": 6,
+  "metrics": {
+    "acquisition_time_s": 4.51,
+    "all_catastrophic_count": 0,
+    "all_deadline_miss_rate": 9.861111111111111e-05,
+    "all_safety_rate": 1.0,
+    "case_count": 200,
+    "challenge_case_count": 100,
+    "challenge_endpoint_position_error_m": 2.4022114109728436,
+    "challenge_endpoint_velocity_error_m_s": 0.4833777751348446,
+    "challenge_rmse_m": 1.3883931142321406,
+    "challenge_setpoint_rmse_m": 1.478177253076865,
+    "challenge_success_rate": 0.11,
+    "challenge_trajectory_rmse_m": 1.2986089753874168,
+    "competence_v2": false,
+    "family": "native_full_lqr",
+    "method_id": "r1r3_lqi_local_000",
+    "nominal_calm_success_rate": 0.9117647058823529,
+    "nominal_case_count": 100,
+    "nominal_endpoint_position_error_m": 0.6043759497393875,
+    "nominal_endpoint_velocity_error_m_s": 0.2523954658245325,
+    "nominal_moderate_success_rate": 0.058823529411764705,
+    "nominal_setpoint_rmse_m": 0.7584234261264939,
+    "nominal_setpoint_success_rate": 0.52,
+    "nominal_stochastic_success_rate": 0.59375,
+    "nominal_success_rate": 0.52,
+    "nominal_trajectory_rmse_m": 0.345124446508215,
+    "nominal_trajectory_success_rate": 0.52,
+    "orientation_rmse_rad": 0.02543315060725498,
+    "overall_success_rate": 0.315,
+    "physical_effort": 16877.787920904644,
+    "runtime_max_ms": 22.6448,
+    "runtime_mean_ms": 0.09854333,
+    "runtime_p95_ms": 0.15303024999999998,
+    "runtime_p99_ms": 0.24898513,
+    "strong_mean_m": 1.3475965952726041,
+    "strong_p90_m": 2.527033065456408,
+    "thrust_saturation_rate": 0.0,
+    "torque_saturation_rate": 0.0,
+    "wrench_rate_rms": 1.5444090826187802
+  },
+  "selected": "r1r3_lqi_local_000",
+  "selected_spec": {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_local_000",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 10.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.0,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0001,
+        0.0001,
+        0.00012
+      ],
+      "q_position": [
+        0.0001,
+        0.0001,
+        0.00012
+      ],
+      "q_velocity": [
+        0.05,
+        0.05,
+        0.05500000000000001
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "setpoint_acceleration_threshold": 0.02,
+      "setpoint_terminal_kd_scale": 1.0,
+      "setpoint_terminal_kp_scale": 1.0,
+      "setpoint_velocity_threshold": 0.02,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15
+    }
+  },
+  "stage_a_configs": 24
+}
