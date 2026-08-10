@@ -1,0 +1,12 @@
+{
+  "advanced_qualified": false,
+  "bootstrap": "NOT_RUN",
+  "freeze_head": null,
+  "r1r1_diagnostic_retained": "satc_native_004",
+  "r1r1_diagnostic_selection_authority": false,
+  "reason": "Traditional start gate failed (0 competent; 2 required)",
+  "search_executed": false,
+  "selected": null,
+  "stack_frozen": false,
+  "unique_configs": 0
+}

@@ -1,0 +1,77 @@
+{
+  "authoritative_all_passed": true,
+  "authoritative_failed_groups": 0,
+  "authoritative_isolated_groups": [
+    {
+      "group": "native_stack",
+      "passed": 38,
+      "returncode": 0,
+      "summary_tail": "......................................                                   [100%]\n38 passed in 2.44s"
+    },
+    {
+      "group": "release",
+      "passed": 4,
+      "returncode": 0,
+      "summary_tail": "....                                                                     [100%]\n4 passed in 0.49s"
+    },
+    {
+      "group": "v2",
+      "passed": 56,
+      "returncode": 0,
+      "summary_tail": "........................................................                 [100%]\n56 passed in 0.74s"
+    },
+    {
+      "group": "v3",
+      "passed": 63,
+      "returncode": 0,
+      "summary_tail": "...............................................................          [100%]\n63 passed in 0.71s"
+    },
+    {
+      "group": "v4",
+      "passed": 25,
+      "returncode": 0,
+      "summary_tail": ".........................                                                [100%]\n25 passed in 0.46s"
+    },
+    {
+      "group": "v5",
+      "passed": 22,
+      "returncode": 0,
+      "summary_tail": "......................                                                   [100%]\n22 passed in 0.54s"
+    },
+    {
+      "group": "v6",
+      "passed": 20,
+      "returncode": 0,
+      "summary_tail": "    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n20 passed, 6 warnings in 0.53s"
+    },
+    {
+      "group": "v7",
+      "passed": 9,
+      "returncode": 0,
+      "summary_tail": ".........                                                                [100%]\n9 passed in 0.32s"
+    },
+    {
+      "group": "v8",
+      "passed": 11,
+      "returncode": 0,
+      "summary_tail": "...........                                                              [100%]\n11 passed in 0.33s"
+    },
+    {
+      "group": "v9",
+      "passed": 13,
+      "returncode": 0,
+      "summary_tail": ".............                                                            [100%]\n13 passed in 0.37s"
+    },
+    {
+      "group": "v10",
+      "passed": 12,
+      "returncode": 0,
+      "summary_tail": "    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n12 passed, 29 warnings in 0.51s"
+    }
+  ],
+  "authoritative_passed_total": 273,
+  "monolithic_collection_returncode": 2,
+  "monolithic_collection_status": "NON_AUTHORITATIVE_EXISTING_DUPLICATE_MODULE_LAYOUT_DIAGNOSTIC",
+  "monolithic_collection_tail": "  D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\tests\\v9\\test_final_evidence.py\nHINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules\n=========================== short test summary info ===========================\nERROR tests/v3/test_r2_preregistration.py\nERROR tests/v4/test_r0_contract.py\nERROR tests/v4/test_r1_protocol.py\nERROR tests/v5/test_r0_contract.py\nERROR tests/v6/test_final_freeze.py\nERROR tests/v6/test_r0_contract.py\nERROR tests/v7/test_r0_contract.py\nERROR tests/v8/test_paper_protocol.py\nERROR tests/v8/test_r0_contract.py\nERROR tests/v9/test_contract.py\nERROR tests/v9/test_final_evidence.py\n!!!!!!!!!!!!!!!!!! Interrupted: 11 errors during collection !!!!!!!!!!!!!!!!!!!\n229 tests collected, 11 errors in 0.89s",
+  "performance_rerun_during_finalization": false
+}

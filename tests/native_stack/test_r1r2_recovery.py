@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 from pathlib import Path
 
 import numpy as np
@@ -43,3 +44,22 @@ def test_competence_threshold_is_unchanged():
     reference = json.loads((PROTOCOL / "competence_reference.json").read_text(encoding="utf-8"))["contract"]["traditional"]
     source = json.loads((ROOT / "reproducibility/native_stack/r1r1/protocol/competence_contract.json").read_text(encoding="utf-8"))["traditional"]
     assert reference == source
+
+
+def test_failed_recovery_gate_stops_satc_holdout_and_paper():
+    gate = json.loads((ROOT / "reproducibility/native_stack/r1r2/final/final_gate.json").read_text(encoding="utf-8"))
+    assert gate["result"] == "P2_NATIVE_TRADITIONAL_RECOVERY_FAILED"
+    assert gate["competent_traditional_count"] == 0
+    assert gate["satc_search_executed"] is False
+    assert gate["native_holdout_executed"] is False
+    assert gate["p2_r2_authorized"] is False
+    assert gate["paper_search"] is False
+
+
+def test_final_evidence_manifest_hashes_and_sizes():
+    manifest = json.loads((ROOT / "reproducibility/native_stack/r1r2/final/evidence_manifest.json").read_text(encoding="utf-8"))
+    assert manifest["entry_count"] == len(manifest["entries"])
+    for entry in manifest["entries"]:
+        path = ROOT / entry["path"]
+        assert path.stat().st_size == entry["size_bytes"]
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == entry["sha256"]

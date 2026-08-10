@@ -1,0 +1,14 @@
+{
+  "authoritative_runs": 0,
+  "compromised": false,
+  "executed": false,
+  "execution_allowed": false,
+  "identity_hash": "63e6192faf992494f5a78f4c008d844564b0015fc26b43a94a0c98da659b2538",
+  "permitted_checks_only": [
+    "hash verification",
+    "semantic fingerprint verification"
+  ],
+  "resolved_hash": "4a4b5d92027760e0d37176b7f768746c690a4ca53236ec60224cd423d6582df0",
+  "semantic_fingerprint_check": true,
+  "semantic_fingerprint_count": 140
+}
