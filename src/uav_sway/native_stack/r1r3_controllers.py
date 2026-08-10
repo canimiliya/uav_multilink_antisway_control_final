@@ -56,11 +56,17 @@ class GovernanceV2PID(NativeWrenchController):
         target = packet.reference.position_world + UAV_MINUS_TIP_TRIM + correction
         error = target - packet.uav_position_world
         velocity_error = p["reference_velocity_gain"] * packet.reference.velocity_world - packet.uav_velocity_world
+        setpoint_mode = (
+            np.linalg.norm(packet.reference.velocity_world) <= p.get("setpoint_velocity_threshold", 0.0)
+            and np.linalg.norm(packet.reference.acceleration_world) <= p.get("setpoint_acceleration_threshold", 0.0)
+        )
+        kp_scale = p.get("setpoint_terminal_kp_scale", 1.0) if setpoint_mode else 1.0
+        kd_scale = p.get("setpoint_terminal_kd_scale", 1.0) if setpoint_mode else 1.0
         proposed = np.clip(self._integral + error * self.outer_dt, -p["integral_limit"], p["integral_limit"])
         acceleration = (
             p["reference_acceleration_gain"] * packet.reference.acceleration_world
-            + np.asarray(p["kp"]) * error
-            + np.asarray(p["kd"]) * velocity_error
+            + kp_scale * np.asarray(p["kp"]) * error
+            + kd_scale * np.asarray(p["kd"]) * velocity_error
             + np.asarray(p["ki"]) * proposed
         )
         swing = float(np.sum(packet.joint_position))
@@ -131,7 +137,15 @@ class GovernanceV2LQI(NativeWrenchController):
             -p["integral_limit"], p["integral_limit"],
         )
         state = np.column_stack((position_error, velocity_error, proposed))
-        acceleration = -np.sum(self._lqi_gain * state, axis=1)
+        setpoint_mode = (
+            np.linalg.norm(packet.reference.velocity_world) <= p.get("setpoint_velocity_threshold", 0.0)
+            and np.linalg.norm(packet.reference.acceleration_world) <= p.get("setpoint_acceleration_threshold", 0.0)
+        )
+        gain = self._lqi_gain.copy()
+        if setpoint_mode:
+            gain[:, 0] *= p.get("setpoint_terminal_kp_scale", 1.0)
+            gain[:, 1] *= p.get("setpoint_terminal_kd_scale", 1.0)
+        acceleration = -np.sum(gain * state, axis=1)
         acceleration += p["reference_acceleration_gain"] * packet.reference.acceleration_world
         swing = float(np.sum(packet.joint_position))
         swing_rate = float(np.sum(packet.joint_velocity))
@@ -171,4 +185,3 @@ class GovernanceV2SATC(GovernanceV2PID):
         if norm > limit:
             acceleration *= limit / norm
         return acceleration
-

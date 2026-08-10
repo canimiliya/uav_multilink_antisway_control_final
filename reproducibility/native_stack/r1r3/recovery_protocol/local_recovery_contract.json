@@ -1,0 +1,8 @@
+{
+  "configs_per_family": 24,
+  "full_200_selected_per_family": 6,
+  "holdout_execution_allowed": false,
+  "satc_execution_allowed": false,
+  "selection_rule": "unchanged frozen P2-R1R3 Stage-A and qualification order",
+  "stage_a_manifest": "reproducibility/native_stack/r1r3/protocol/stage_a_manifest.json"
+}

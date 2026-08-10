@@ -1,0 +1,21 @@
+{
+  "benchmark_or_governance_change": false,
+  "evidence": {
+    "lqi_summary_sha256": "d3f58c65da0ff382e947c7f61c9ff07b9b58f34a917d0a174a5742559288b26b",
+    "pid_summary_sha256": "67dd7b8dd584a9569fe0e7054ee64aa79ad16936e44a7c87d2122ddc8236944e"
+  },
+  "lqi_observation": {
+    "all_safety_rate": 0.895,
+    "diagnosis": "initial CARE weights were outside the safe low-authority neighbourhood; use conservative weights",
+    "nominal_success_rate": 0.13,
+    "selected": "r1r3_lqi_a_000"
+  },
+  "pid_observation": {
+    "all_safety_rate": 1.0,
+    "diagnosis": "safe but under-regulated; recover native_pid_001 exactly then target integral and terminal damping",
+    "moderate_success_rate": 0.17647058823529413,
+    "nominal_success_rate": 0.27,
+    "selected": "r1r3_pid_a_000",
+    "setpoint_success_rate": 0.16
+  }
+}

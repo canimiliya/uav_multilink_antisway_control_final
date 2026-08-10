@@ -1,0 +1,14 @@
+{
+  "case_count": 42,
+  "evaluated_configs": 24,
+  "family": "native_pid",
+  "selected_for_full_200": [
+    "r1r3_pid_a_000",
+    "r1r3_pid_a_013",
+    "r1r3_pid_a_001",
+    "r1r3_pid_a_009",
+    "r1r3_pid_a_016",
+    "r1r3_pid_a_002"
+  ],
+  "selection_rule": "frozen P2-R1R3 Stage-A order"
+}

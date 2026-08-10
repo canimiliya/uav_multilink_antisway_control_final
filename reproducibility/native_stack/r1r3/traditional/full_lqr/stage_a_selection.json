@@ -1,0 +1,14 @@
+{
+  "case_count": 42,
+  "evaluated_configs": 24,
+  "family": "native_full_lqr",
+  "selected_for_full_200": [
+    "r1r3_lqi_a_000",
+    "r1r3_lqi_a_012",
+    "r1r3_lqi_a_001",
+    "r1r3_lqi_a_016",
+    "r1r3_lqi_a_002",
+    "r1r3_lqi_a_017"
+  ],
+  "selection_rule": "frozen P2-R1R3 Stage-A order"
+}
