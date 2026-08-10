@@ -1,0 +1,330 @@
+[
+  {
+    "family": "native_task_lqr",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ki": [
+        0.03,
+        0.03,
+        0.03
+      ],
+      "kp": [
+        0.14,
+        0.14,
+        0.14
+      ],
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.01,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_task_lqr_000",
+    "q": [
+      0.005,
+      2,
+      20,
+      8.0,
+      50
+    ]
+  },
+  {
+    "family": "native_task_lqr",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "ki": [
+        0.04,
+        0.04,
+        0.04
+      ],
+      "kp": [
+        0.17,
+        0.17,
+        0.17
+      ],
+      "swing_angle_gain": 0.02,
+      "swing_rate_gain": 0.02,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_task_lqr_001",
+    "q": [
+      0.01,
+      3,
+      30,
+      8.0,
+      50
+    ]
+  },
+  {
+    "family": "native_task_lqr",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "ki": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "kp": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.03,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_task_lqr_002",
+    "q": [
+      0.02,
+      3,
+      30,
+      8.0,
+      50
+    ]
+  },
+  {
+    "family": "native_task_lqr",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.23,
+        0.23,
+        0.23
+      ],
+      "swing_angle_gain": 0.04,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_task_lqr_003",
+    "q": [
+      0.03,
+      4,
+      40,
+      8.0,
+      75
+    ]
+  },
+  {
+    "family": "native_task_lqr",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ki": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "kp": [
+        0.26,
+        0.26,
+        0.26
+      ],
+      "swing_angle_gain": 0.05,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_task_lqr_004",
+    "q": [
+      0.04,
+      4,
+      50,
+      8.0,
+      75
+    ]
+  },
+  {
+    "family": "native_task_lqr",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "ki": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "kp": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "swing_angle_gain": 0.06,
+      "swing_rate_gain": 0.06,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_task_lqr_005",
+    "q": [
+      0.05,
+      5,
+      60,
+      8.0,
+      100
+    ]
+  },
+  {
+    "family": "native_task_lqr",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "ki": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "kp": [
+        0.32,
+        0.32,
+        0.32
+      ],
+      "swing_angle_gain": 0.05,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_task_lqr_006",
+    "q": [
+      0.06,
+      3,
+      40,
+      8.0,
+      75
+    ]
+  },
+  {
+    "family": "native_task_lqr",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        1.15,
+        1.15,
+        1.15
+      ],
+      "ki": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "kp": [
+        0.36,
+        0.36,
+        0.36
+      ],
+      "swing_angle_gain": 0.07,
+      "swing_rate_gain": 0.07,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_task_lqr_007",
+    "q": [
+      0.08,
+      5,
+      70,
+      8.0,
+      125
+    ]
+  }
+]
