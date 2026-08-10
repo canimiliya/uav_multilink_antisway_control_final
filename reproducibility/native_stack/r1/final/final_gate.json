@@ -1,0 +1,19 @@
+{
+  "task": "P2-R1-NATIVE-TRADITIONAL-AND-SATC-BASELINE-DEVELOPMENT-FREEZE-R1",
+  "result": "BLOCKED_P2_NATIVE_BENCHMARK_CASE_SEMANTICS_UNDEFINED",
+  "gates": {
+    "P2_R1_PROTOCOL_FROZEN": true,
+    "NATIVE_PID_FROZEN": false,
+    "NATIVE_FULL_LQR_FROZEN": false,
+    "NATIVE_TASK_LQR_FROZEN": false,
+    "PRIMARY_NATIVE_TRADITIONAL_FROZEN": false,
+    "TRADITIONAL_ENVELOPE_FROZEN": false,
+    "SATC_STACK_FROZEN": false,
+    "SATC_NATIVE_ADVANCED_QUALIFIED": false,
+    "NATIVE_HOLDOUT_EXECUTED": false,
+    "V1_V10_UNCHANGED": true
+  },
+  "hard_stop": true,
+  "p2_r2_entry_allowed": false,
+  "final_tag_allowed": false
+}

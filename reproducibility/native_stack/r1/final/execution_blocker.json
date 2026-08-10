@@ -1,0 +1,42 @@
+{
+  "task": "P2-R1-NATIVE-TRADITIONAL-AND-SATC-BASELINE-DEVELOPMENT-FREEZE-R1",
+  "result": "BLOCKED_P2_NATIVE_BENCHMARK_CASE_SEMANTICS_UNDEFINED",
+  "source_head": "cf3cdefc17a0bd14c08e7e869d9c2e77067ae25c",
+  "protocol_freeze_head": "f7893659567911696f7219aa06300129d763845b",
+  "hard_boundary": "P2-R1 may not modify the frozen native benchmark",
+  "missing_frozen_semantics": [
+    "target_seed to cutter target coordinates",
+    "trajectory_seed to minimum-jerk, approach-stop, and waypoint geometry/timing",
+    "wind_kind and wind_seed to physical force amplitude, spectrum, and onset",
+    "wind_direction to a world-frame direction",
+    "wind force application bodies and distribution"
+  ],
+  "evidence": {
+    "bank_builder": "scripts/build_native_stack_r0.py:bank stores identities/categories/seeds only",
+    "generic_runner": "src/uav_sway/native_stack/runner.py requires caller-supplied ReferenceGenerator and disturbance_callback",
+    "authoritative_case_resolver": "absent from source tag",
+    "unique_reproduction_from_manifest": false
+  },
+  "development_execution_audit": {
+    "formal_authoritative_runs": 0,
+    "provisional_non_authoritative_smoke_runs": 38,
+    "provisional_resolver_frozen": false,
+    "results_persisted": false,
+    "selection_authority": false,
+    "candidate_selected": false,
+    "reason": "The provisional resolver was recognized as an unauthorized interpretation of the frozen benchmark and removed before commit."
+  },
+  "native_holdout": {
+    "execution_allowed": false,
+    "executed": false,
+    "authoritative_runs": 0,
+    "compromised": false
+  },
+  "paper": {
+    "selected": false,
+    "implemented": false,
+    "performance_executed": false
+  },
+  "required_owner_action": "Provide an already-authoritative case resolver from the accepted R0 source, or authorize a new R0 semantic-patch milestone that freezes the resolver and new source tag before restarting P2-R1.",
+  "p2_r2_entry_allowed": false
+}

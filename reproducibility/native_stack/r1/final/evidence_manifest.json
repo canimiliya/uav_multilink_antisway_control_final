@@ -1,0 +1,21 @@
+{
+  "algorithm": "sha256",
+  "entries": {
+    "docs/native_stack/r1/P2_R1_BLOCKER_REPORT.md": "d398e08b32dadde918e8c4f0f3ca2bf7a7ea2ea0510f8e510197f7944542ce44",
+    "reproducibility/native_stack/r1/final/claim_matrix.json": "3b4ebf7bfac9233a984f1443e4a64dfae08bca6dda22bb43a2d4adfe1c1f6043",
+    "reproducibility/native_stack/r1/final/execution_blocker.json": "9f46fd9423eafd0540bd20ec55558792fa36b80bdb1c019c94c12e10ce6945e2",
+    "reproducibility/native_stack/r1/final/final_gate.json": "9dd686960eab59faa9a53e56611618eb30efe9b6b1f9d0065dff76172900ecd1",
+    "reproducibility/native_stack/r1/final/holdout_status.json": "f5f414becd9e6e4233f05fa6944a8b05a7928982a20a02b29ebeeeaf5a6193a1",
+    "reproducibility/native_stack/r1/final/project_tests.json": "3b1de490aa457ed5de5902dad3f850da95f3feea0aa0384741bff01e488d20eb",
+    "reproducibility/native_stack/r1/final/protected_evidence_audit.json": "8b04c12852a65266d7197831173c74434f729ed8a9eb7e115f11b3554865ac56",
+    "reproducibility/native_stack/r1/protocol/competence_contract.json": "57078a74348b043c1652ba8d1df481404b564a36a0f7f88f13ca440bb30b665a",
+    "reproducibility/native_stack/r1/protocol/metric_contract.json": "1b4ff44012876aba705b262092eab4b19303cc3587cd83bc49ba421d53f121da",
+    "reproducibility/native_stack/r1/protocol/rate_contract.json": "626299e812ddee5f3b85bb77d7550d366c3d94a54f4dabd1b6215343833baab6",
+    "reproducibility/native_stack/r1/protocol/research_contract.json": "9b1fe1d17d2ec82bdca9e98187899772581a2aeb9fd397eb62337e7e04dfc587",
+    "reproducibility/native_stack/r1/protocol/search_contract.json": "9af953b9c2a3e4c00d935c76c74210bba1b19dd3eeb002b9a9bfba20afac3dfd",
+    "reproducibility/native_stack/r1/protocol/selection_contract.json": "e84dffc8502c417b8f1a1e1811710898f8991afb63640c0427b64318df5a0813",
+    "reproducibility/native_stack/r1/protocol/statistical_protocol.json": "ab0d8bd64227da92b9dbcc45771c5a699bfdf5450b0da3838e0951f3c7e12f3a"
+  },
+  "entry_count": 14,
+  "hash_errors": 0
+}

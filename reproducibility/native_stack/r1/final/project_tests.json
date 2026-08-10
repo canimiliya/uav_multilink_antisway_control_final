@@ -1,0 +1,23 @@
+{
+  "execution": "one isolated pytest process per test directory",
+  "python": "D:/anaconda/envs/uav_sway/python.exe",
+  "pythonpath": ["src", "third_party/udaan", "."],
+  "directories": {
+    "tests/native_stack": 13,
+    "tests/release": 4,
+    "tests/v2": 56,
+    "tests/v3": 63,
+    "tests/v4": 25,
+    "tests/v5": 22,
+    "tests/v6": 20,
+    "tests/v7": 9,
+    "tests/v8": 11,
+    "tests/v9": 13,
+    "tests/v10": 12
+  },
+  "passed": 248,
+  "failed": 0,
+  "warnings": 35,
+  "warning_scope": "existing OSQP deprecation and pending-deprecation warnings",
+  "performance_rerun_during_regression": false
+}

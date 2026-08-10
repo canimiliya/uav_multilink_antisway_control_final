@@ -1,0 +1,10 @@
+{
+  "manifest_sha256": "63e6192faf992494f5a78f4c008d844564b0015fc26b43a94a0c98da659b2538",
+  "manifest_file_sha256": "9eba56a0e6dd236ec6a82a7c9b51f2176801ec38c2ebd4bc2ccbe837539646de",
+  "case_count": 140,
+  "execution_allowed": false,
+  "executed": false,
+  "authoritative_runs": 0,
+  "compromised": false,
+  "audit_scope": "manifest/hash integrity only"
+}

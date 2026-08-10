@@ -1,0 +1,18 @@
+{
+  "authorized": [
+    "P2-R1 protocol was frozen before any Development smoke execution",
+    "the accepted R0 source does not uniquely resolve manifest cases into physical experiments",
+    "38 provisional Development smoke runs have no formal or selection authority",
+    "Native Holdout remained unopened for controller execution",
+    "V1-V10 protected evidence is unchanged",
+    "248 project tests pass"
+  ],
+  "not_authorized": [
+    "any P2-R1 controller performance comparison",
+    "any Native-PID, Native-Full-LQR, Native-Task-LQR, or SATC stack freeze",
+    "Primary Traditional or Traditional Envelope freeze",
+    "SATC advanced qualification",
+    "P2-R2 entry",
+    "Recent Paper selection or performance claim"
+  ]
+}
