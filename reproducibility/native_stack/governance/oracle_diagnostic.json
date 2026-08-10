@@ -1,0 +1,114 @@
+{
+  "MISSION_ENVELOPE_STRUCTURAL_PROBLEM": false,
+  "all": {
+    "cases": 200,
+    "endpoint_success_rate": 1.0,
+    "equilibrium_pass_rate": 1.0,
+    "safety_rate": 1.0,
+    "time_pass_rate": 1.0
+  },
+  "by_task_family": {
+    "setpoint": {
+      "cases": 100,
+      "endpoint_success_rate": 1.0,
+      "equilibrium_pass_rate": 1.0,
+      "safety_rate": 1.0,
+      "time_pass_rate": 1.0
+    },
+    "smooth_trajectory": {
+      "cases": 100,
+      "endpoint_success_rate": 1.0,
+      "equilibrium_pass_rate": 1.0,
+      "safety_rate": 1.0,
+      "time_pass_rate": 1.0
+    }
+  },
+  "by_wind": {
+    "calm": {
+      "cases": 34,
+      "endpoint_success_rate": 1.0,
+      "equilibrium_pass_rate": 1.0,
+      "safety_rate": 1.0,
+      "time_pass_rate": 1.0
+    },
+    "moderate": {
+      "cases": 34,
+      "endpoint_success_rate": 1.0,
+      "equilibrium_pass_rate": 1.0,
+      "safety_rate": 1.0,
+      "time_pass_rate": 1.0
+    },
+    "ramp": {
+      "cases": 32,
+      "endpoint_success_rate": 1.0,
+      "equilibrium_pass_rate": 1.0,
+      "safety_rate": 1.0,
+      "time_pass_rate": 1.0
+    },
+    "stochastic": {
+      "cases": 32,
+      "endpoint_success_rate": 1.0,
+      "equilibrium_pass_rate": 1.0,
+      "safety_rate": 1.0,
+      "time_pass_rate": 1.0
+    },
+    "strong_sustained": {
+      "cases": 34,
+      "endpoint_success_rate": 1.0,
+      "equilibrium_pass_rate": 1.0,
+      "safety_rate": 1.0,
+      "time_pass_rate": 1.0
+    },
+    "strong_transient": {
+      "cases": 34,
+      "endpoint_success_rate": 1.0,
+      "equilibrium_pass_rate": 1.0,
+      "safety_rate": 1.0,
+      "time_pass_rate": 1.0
+    }
+  },
+  "challenge": {
+    "cases": 100,
+    "endpoint_success_rate": 1.0,
+    "equilibrium_pass_rate": 1.0,
+    "safety_rate": 1.0,
+    "time_pass_rate": 1.0
+  },
+  "controller_baseline": false,
+  "development_cases": 200,
+  "executed": true,
+  "failure_mechanisms": {
+    "CERTIFIED_REACHABLE": 200
+  },
+  "holdout_executed": false,
+  "interpretation": "This certifies endpoint equilibrium and conservative transfer-time authority, not trajectory tracking quality or controller competence.",
+  "max_certified_transition_time_s": 9.00713722985816,
+  "max_generalized_acceleration_residual": 4.893025387003896e-13,
+  "min_available_time_s": 11.25,
+  "mission_feasible": true,
+  "nominal": {
+    "cases": 100,
+    "endpoint_success_rate": 1.0,
+    "equilibrium_pass_rate": 1.0,
+    "safety_rate": 1.0,
+    "time_pass_rate": 1.0
+  },
+  "required_wrench": {
+    "limits": {
+      "thrust_N": 285.74568,
+      "torque_Nm": [
+        25.0,
+        25.0,
+        12.0
+      ]
+    },
+    "max_abs_torque_Nm": [
+      0.5460781454054453,
+      0.032731951206350994,
+      0.004466281975896454
+    ],
+    "max_thrust_N": 129.967104320019
+  },
+  "selection_authority": "NONE",
+  "version": "p2-r0g-equilibrium-reachability-certificate-v1"
+}
