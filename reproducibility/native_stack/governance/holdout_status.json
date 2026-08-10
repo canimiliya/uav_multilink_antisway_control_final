@@ -1,0 +1,15 @@
+{
+  "authoritative_runs": 0,
+  "checks_performed": [
+    "file sha256",
+    "serialized semantic fingerprint uniqueness"
+  ],
+  "compromised": false,
+  "executed": false,
+  "execution_allowed": false,
+  "fingerprint_count": 140,
+  "identity_manifest_sha256": "9eba56a0e6dd236ec6a82a7c9b51f2176801ec38c2ebd4bc2ccbe837539646de",
+  "performance_fields_read": false,
+  "resolved_manifest_sha256": "ac8e7bd84997bca42cc3a0e7e2c406b852e8df69910247db408a0f6fb4747cc8",
+  "unique_fingerprint_count": 140
+}

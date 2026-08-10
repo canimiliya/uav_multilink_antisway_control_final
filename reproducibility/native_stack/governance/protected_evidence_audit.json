@@ -1,0 +1,10 @@
+{
+  "audit_source_head": "9d0264246408eced13b5c5029763443907610697",
+  "changed_paths_at_audit_time": [],
+  "historical_statuses_preserved": {
+    "P2-R1R1": "BLOCKED_P2_TRADITIONAL_COMPETENCE",
+    "P2-R1R2": "P2_NATIVE_TRADITIONAL_RECOVERY_FAILED"
+  },
+  "protected_paths_changed": [],
+  "protected_scope_clean": true
+}

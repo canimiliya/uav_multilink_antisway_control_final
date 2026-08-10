@@ -1,0 +1,44 @@
+{
+  "audit_source_head": "9d0264246408eced13b5c5029763443907610697",
+  "balanced_100_100": true,
+  "benchmark_tag": "native-stack-benchmark-v1.1",
+  "case_identity_changed": false,
+  "challenge": {
+    "case_count": 100,
+    "rationale": "3 m/s sustained, 3 m/s transient shock, and ramp-to-3 m/s profiles deliberately stress disturbance rejection and transient coordination",
+    "role": "advanced robustness differentiation",
+    "task_family_counts": {
+      "setpoint": 50,
+      "smooth_trajectory": 50
+    },
+    "wind_kinds": [
+      "strong_sustained",
+      "strong_transient",
+      "ramp"
+    ]
+  },
+  "classification_basis": "mission intent, wind physics, and engineering role; no controller result used",
+  "nominal": {
+    "case_count": 100,
+    "rationale": "calm is nominal; 1.5 m/s constant moderate wind is an ordinary operating disturbance; zero-mean 0.8 m/s OU stochastic wind tests ordinary variability and remains bounded by 3 m/s",
+    "role": "normal operational competence",
+    "task_family_counts": {
+      "setpoint": 50,
+      "smooth_trajectory": 50
+    },
+    "wind_kinds": [
+      "calm",
+      "moderate",
+      "stochastic"
+    ]
+  },
+  "version": "p2-r0g-cohort-audit-v1",
+  "wind_case_counts": {
+    "calm": 34,
+    "moderate": 34,
+    "ramp": 32,
+    "stochastic": 32,
+    "strong_sustained": 34,
+    "strong_transient": 34
+  }
+}

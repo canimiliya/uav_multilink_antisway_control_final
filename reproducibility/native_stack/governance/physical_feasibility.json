@@ -1,0 +1,61 @@
+{
+  "analysis_scope": "Development identities and frozen physical limits only; no Holdout and no controller selection",
+  "hover": {
+    "absolute_reserve_N": 155.86128,
+    "hover_fraction_of_max": 0.45454545454545453,
+    "hover_thrust_N": 129.8844,
+    "max_thrust_N": 285.74568,
+    "max_to_hover_ratio": 2.2
+  },
+  "link_and_cutter_load": {
+    "chain_length_m": 2.5,
+    "interpretation": "material underactuated swing burden but far below vertical thrust reserve; it changes controller difficulty, not basic endpoint reachability",
+    "suspended_mass_kg": 3.5
+  },
+  "mass": {
+    "airframe_kg": 9.74,
+    "cutter_kg": 2.5,
+    "links_kg": 1.0,
+    "total_kg": 13.24
+  },
+  "pre_oracle_conclusion": "The frozen envelope is demanding but has large static force and thrust reserves. Dynamic reachability is delegated to the preregistered diagnostic oracle.",
+  "reference": {
+    "classification": "AGGRESSIVE_BUT_FEASIBLE",
+    "horizontal_acceleration_at_35_deg_m_s2": 6.869035949837253,
+    "max_smooth_reference_acceleration_m_s2": 0.41690053317523135,
+    "max_smooth_reference_speed_m_s": 0.42686189794021273,
+    "max_target_distance_m": 1.7734214017983325,
+    "min_target_distance_m": 0.5588834134099359,
+    "mission_duration_s": 12.0,
+    "vertical_displacement_range_m": [
+      -0.09964345735720292,
+      0.5492542299669452
+    ]
+  },
+  "torque": {
+    "airframe_inertia_diagonal_kg_m2": [
+      0.655826666667,
+      0.966532666667,
+      1.24834333333
+    ],
+    "interpretation": "substantial attitude authority; linked-load coupling still requires nonlinear coordination",
+    "limits_Nm": [
+      25.0,
+      25.0,
+      12.0
+    ],
+    "minimum_axis_angular_acceleration_rad_s2": 9.612740084884802
+  },
+  "version": "p2-r0g-physical-feasibility-v1",
+  "wind": {
+    "3_m_s_drag_fraction_of_tilt_authority": 0.04161376396883501,
+    "classification": "PHYSICALLY_REASONABLE",
+    "conservative_static_projected_area_m2": 0.6584,
+    "drag_weighted_area_m2": 0.6865500000000001,
+    "official_airframe_resistance_ceiling_m_s": 12.0,
+    "static_drag_at_12_m_s_N": 60.55371000000001,
+    "static_drag_at_3_m_s_N": 3.7846068750000006,
+    "strong_speed_m_s": 3.0,
+    "tilted_hover_horizontal_force_at_35_deg_N": 90.94603597584522
+  }
+}

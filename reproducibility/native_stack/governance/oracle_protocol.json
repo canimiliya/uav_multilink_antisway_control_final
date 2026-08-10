@@ -1,0 +1,34 @@
+{
+  "case_count": 200,
+  "frozen_before_oracle_execution": true,
+  "holdout_allowed": false,
+  "interface": "WrenchCommand[T,tau_x,tau_y,tau_z]",
+  "method": "fixed-gain full-state computed-force tracking with exact wind-force cancellation and offline minimum-jerk shaping of setpoint steps",
+  "paper_or_satc_comparison_authority": "NONE",
+  "parameter_basis": "critical-damping pole placement and frozen 35 degree attitude/actuator authority; no candidate search",
+  "parameters": {
+    "acceleration_limit_m_s2": 4.0,
+    "attitude_damping_ratio": 1.0,
+    "attitude_natural_frequency_rad_s": 8.0,
+    "inner_rate_hz": 1000,
+    "outer_rate_hz": 200,
+    "setpoint_transition_s": 4.0,
+    "tip_correction_gain": 0.65,
+    "tip_correction_limit_m": 0.75,
+    "tip_velocity_correction_s": 0.3,
+    "translation_damping_ratio": 1.0,
+    "translation_natural_frequency_rad_s": 1.2
+  },
+  "physical_constraints_unchanged": true,
+  "purpose": "diagnose physical endpoint reachability, never controller competence",
+  "search_or_tuning_allowed": false,
+  "selection_authority": "NONE",
+  "split": "Development only",
+  "truth_access": [
+    "full nonlinear state",
+    "full future reference",
+    "true applied aerodynamic disturbance",
+    "perfect frozen model"
+  ],
+  "version": "p2-r0g-noncausal-oracle-v1"
+}

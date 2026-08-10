@@ -1,0 +1,26 @@
+{
+  "SUCCESS_70_GATE_PHYSICALLY_DERIVED": false,
+  "claimed_inputs": [
+    "2 m mission geometry",
+    "0.5 m endpoint tolerance",
+    "SafetyV2",
+    "real-time periods"
+  ],
+  "classification": {
+    "ENGINEERING_REQUIREMENT": false,
+    "HEURISTIC_RESEARCH_GATE": true,
+    "PHYSICALLY_DERIVED_THRESHOLD": false
+  },
+  "conclusion": "The 70% number was preregistered, but the repository supplies no physical derivation or external engineering requirement that uniquely implies 0.70 rather than 0.50, 0.60, or 0.80.",
+  "frozen_before_performance": true,
+  "introducing_commit": "fe573ec0fb723d4d57325c05eec27e4a15b42cb1",
+  "source_contract": "reproducibility/native_stack/r1r1/protocol/competence_contract.json",
+  "success_rate_min": 0.7,
+  "traceability": {
+    "comparison_of_50_60_70_80_present": false,
+    "controller_performance_used_to_set_v1": false,
+    "equation_or_derivation_present": false,
+    "external_engineering_acceptance_requirement_present": false
+  },
+  "version": "p2-r0g-competence-origin-audit-v1"
+}
