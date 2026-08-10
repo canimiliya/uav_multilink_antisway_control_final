@@ -1,0 +1,9 @@
+{
+  "case_count": 32,
+  "family": "native_full_lqr",
+  "selected_for_stage_b": [
+    "native_full_lqr_006",
+    "native_full_lqr_001"
+  ],
+  "selection_rule": "frozen deterministic rank"
+}
