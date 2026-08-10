@@ -1,0 +1,25 @@
+{
+  "unique_config_budgets": {"P2-NATIVE-PID": 48, "P2-NATIVE-FULL-LQR": 48, "P2-NATIVE-TASK-LQR": 48, "P2-SATC-STACK": 64},
+  "budget_may_increase": false,
+  "stages": {
+    "A": "coarse screening on frozen 36-case balanced core; rank by competence-first selection rule",
+    "B": "top candidates per family on all 200 Development cases",
+    "C": "targeted refinement only inside the preregistered candidate space followed by all-200 confirmation"
+  },
+  "stage_a_case_ids": [
+    "native_development_000", "native_development_001", "native_development_002", "native_development_003", "native_development_004", "native_development_005",
+    "native_development_006", "native_development_007", "native_development_008", "native_development_009", "native_development_010", "native_development_011",
+    "native_development_012", "native_development_013", "native_development_014", "native_development_015", "native_development_016", "native_development_017",
+    "native_development_018", "native_development_019", "native_development_020", "native_development_021", "native_development_022", "native_development_023",
+    "native_development_024", "native_development_025", "native_development_026", "native_development_027", "native_development_028", "native_development_029",
+    "native_development_030", "native_development_031", "native_development_032", "native_development_033", "native_development_034", "native_development_035"
+  ],
+  "stage_a_coverage": {"task_families": ["setpoint", "smooth_trajectory"], "wind_kinds": ["calm", "moderate", "strong_sustained", "strong_transient", "stochastic", "ramp"], "wind_directions": ["aligned", "opposed", "cross"]},
+  "candidate_spaces": {
+    "P2-NATIVE-PID": "Cartesian grid over task correction, position/velocity/integral, SO(3) attitude/rate gains, anti-windup limit, and allowed outer rates around the registered nominal rate",
+    "P2-NATIVE-FULL-LQR": "physical-wrench trim linearization with preregistered logarithmic Q/R scale grid and optional integral tracking augmentation",
+    "P2-NATIVE-TASK-LQR": "same audited physical model with output-weighted cutter-tip/tip-velocity/cutter-orientation cost grid",
+    "P2-SATC-STACK": "bounded grid over shock threshold/gain, constraint horizon/weights, conflict coordination, native mapping/inner gains, and allowed registered rates"
+  },
+  "holdout_cases_permitted": 0
+}

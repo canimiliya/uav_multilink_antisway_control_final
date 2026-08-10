@@ -1,0 +1,24 @@
+{
+  "applies_before_family_selection": true,
+  "traditional": {
+    "safety_rate_min": 1.0,
+    "catastrophic_count_max": 0,
+    "setpoint_success_rate_min": 0.50,
+    "smooth_success_rate_min": 0.50,
+    "setpoint_tip_rmse_max_m": 0.35,
+    "smooth_tip_rmse_max_m": 0.35,
+    "strong_combined_p90_max_m": 0.75,
+    "deadline_miss_rate_max": 0.001,
+    "minimum_strong_traditional_families": 2
+  },
+  "satc": {
+    "must_pass_traditional_competence": true,
+    "safety_not_below_primary": true,
+    "success_not_below_primary_in_each_task_family": true,
+    "meaningful_improvement_min_fraction": 0.05,
+    "eligible_improvement_metrics": ["setpoint_tip_rmse", "smooth_tip_rmse", "strong_mean", "strong_p90", "acquisition"],
+    "catastrophic_regression_allowed": false,
+    "other_task_family_relative_rmse_regression_max": 0.05
+  },
+  "no_posthoc_gate_changes": true
+}

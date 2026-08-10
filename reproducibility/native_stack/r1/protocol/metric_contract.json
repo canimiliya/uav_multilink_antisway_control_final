@@ -1,0 +1,19 @@
+{
+  "aggregation": "task families reported separately; no scalar aggregate score is used for selection",
+  "evaluation_window": "all post-issue samples through case end",
+  "setpoint": {
+    "metrics": ["safety_rate", "success_rate", "tip_position_rmse_m", "orientation_rmse_deg", "acquisition_median_s", "strong_position_mean_m", "strong_position_p90_m", "catastrophic_count"],
+    "success": "after reference issue, position error <=0.05 m, cutter orientation error <=5 deg, and tip speed <=0.10 m/s continuously for 1.0 s",
+    "acquisition": "elapsed seconds from reference issue to first successful 1.0 s window; null on failure"
+  },
+  "smooth_trajectory": {
+    "metrics": ["safety_rate", "success_rate", "tip_tracking_rmse_m", "tracking_p90_m", "tracking_p95_m", "orientation_tracking_rmse_deg", "velocity_tracking_rmse_m_s", "endpoint_error_m", "strong_wind_tracking_rmse_m", "catastrophic_count"],
+    "success": "safe case with full-window tip RMSE <=0.20 m, P95 error <=0.40 m, orientation RMSE <=8 deg, velocity RMSE <=0.30 m/s, and endpoint error <=0.10 m",
+    "engineering_rationale": "The 0.05 m setpoint tolerance is inherited unchanged. Smooth paths span the same <=2 m mission envelope but require continuous tracking, so the full-window tolerance is four times the terminal precision, P95 is limited to twice that value, and the endpoint returns to twice the setpoint tolerance; orientation remains close to the cutter's 5 deg terminal precision while allowing transient motion. These values are frozen before any P2-R1 performance."
+  },
+  "system": {
+    "metrics": ["physical_effort", "thrust_saturation_rate", "torque_axis_saturation_rates", "command_rate", "wrench_rate", "runtime_mean_s", "runtime_p95_s", "runtime_p99_s", "runtime_max_s", "deadline_miss_count", "deadline_miss_rate"]
+  },
+  "strong_wind_kinds": ["strong_sustained", "strong_transient", "stochastic"],
+  "catastrophic": "any safety-v2 violation, non-finite output, or final tip error >2.0 m"
+}

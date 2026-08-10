@@ -1,0 +1,11 @@
+{
+  "split": "Development only",
+  "pairing": "exact sample_id pairing",
+  "primary_comparison": "frozen P2-SATC-STACK minus frozen PRIMARY_NATIVE_TRADITIONAL",
+  "bootstrap": {"method": "paired nonparametric case bootstrap", "resamples": 10000, "seed": 20260810, "confidence_interval": "two-sided percentile 95%"},
+  "reported_effects": ["absolute paired difference", "relative improvement fraction", "95% confidence interval"],
+  "task_family_stratification": true,
+  "strong_wind_stratification": true,
+  "multiplicity": "descriptive Development evidence only; no confirmatory Holdout inference",
+  "claim_boundary": "not a final Holdout claim"
+}

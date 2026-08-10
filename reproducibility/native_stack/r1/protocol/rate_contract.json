@@ -1,0 +1,14 @@
+{
+  "supported_rates_hz": [20, 50, 100, 200, 500, 1000],
+  "primary_comparison_mode": "NATIVE_RATE",
+  "native_rate_preregistration": {
+    "P2-NATIVE-PID": {"outer_hz": 100, "inner_hz": 500, "observer_hz": 100, "optimizer_hz": 0},
+    "P2-NATIVE-FULL-LQR": {"outer_hz": 100, "inner_hz": 100, "observer_hz": 100, "optimizer_hz": 0},
+    "P2-NATIVE-TASK-LQR": {"outer_hz": 100, "inner_hz": 100, "observer_hz": 100, "optimizer_hz": 0},
+    "P2-SATC-STACK": {"outer_hz": 50, "inner_hz": 500, "observer_hz": 100, "optimizer_hz": 50},
+    "legacy_adapter_incumbents": {"outer_hz": 20, "inner_hz": 1000, "observer_hz": 20, "optimizer_hz": 20}
+  },
+  "equal_rate_diagnostic": {"rate_hz": 100, "selection_authority": false, "retuning_allowed": false, "rationale": "100 Hz is an integer divisor of the 1000 Hz plant, is supported by every direct-wrench and adapter stack, exceeds the historical 20 Hz outer bandwidth, and leaves a 10 ms compute deadline."},
+  "deadline_rule": "each component update is a miss iff wall-clock compute time exceeds its own preregistered period; report count/rate plus mean/P95/P99/max",
+  "integer_tick_scheduling_required": true
+}

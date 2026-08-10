@@ -1,0 +1,22 @@
+{
+  "task": "P2-R1-NATIVE-TRADITIONAL-AND-SATC-BASELINE-DEVELOPMENT-FREEZE-R1",
+  "source_tag": "native-stack-benchmark-v1",
+  "source_head": "cf3cdefc17a0bd14c08e7e869d9c2e77067ae25c",
+  "branch": "research/p2-native-baselines-v1",
+  "development_manifest_sha256": "0f03df8fe11310f6357197a9d03b605476831c76db58f64d04e92535e6df9473",
+  "holdout_manifest_sha256": "63e6192faf992494f5a78f4c008d844564b0015fc26b43a94a0c98da659b2538",
+  "authorized_families": ["P2-NATIVE-PID", "P2-NATIVE-FULL-LQR", "P2-NATIVE-TASK-LQR", "P2-SATC-STACK"],
+  "incumbents": {
+    "P2-NATIVE-PID": "corrected_pid/hybrid_x007_y041_z041 + LegacyTaskLevelAdapter",
+    "P2-NATIVE-FULL-LQR": "full_lqr_048 + LegacyTaskLevelAdapter",
+    "P2-NATIVE-TASK-LQR": "task_lqr_009 + LegacyTaskLevelAdapter",
+    "P2-SATC-STACK": "satc_b_027 + LegacyTaskLevelAdapter"
+  },
+  "performance_split": "native Development only (200 cases)",
+  "holdout_execution_allowed": false,
+  "old_holdout_access_allowed": false,
+  "recent_paper_work_allowed": false,
+  "protected_read_only": ["V1-V10", "all historical controllers and parameters", "all historical Holdout evidence", "all historical tags and claims"],
+  "success_result": "P2_NATIVE_BASELINES_AND_SELF_FROZEN",
+  "failure_results": ["BLOCKED_P2_TRADITIONAL_COMPETENCE", "BLOCKED_P2_SATC_STACK_NOT_ADVANCED"]
+}

@@ -1,0 +1,17 @@
+{
+  "family_selection": {
+    "eligible": "candidate must pass the frozen competence contract",
+    "method": "Pareto filtering followed by deterministic lexicographic tie-break",
+    "order": ["safety_rate_max", "success_rate_by_task_maximin", "setpoint_tip_rmse_min", "smooth_tip_rmse_min", "strong_p90_min", "acquisition_median_min", "physical_effort_min", "runtime_p99_min", "candidate_id_ascending"],
+    "incumbent_protection": "select incumbent when challenger is ineligible or fails to strictly improve before the final candidate-id tie-break"
+  },
+  "primary_traditional": {
+    "eligible": "all three frozen family winners are considered if competent",
+    "rule": "same Pareto and lexicographic order as family selection",
+    "freeze_before_paper": true
+  },
+  "traditional_envelope_metrics": ["safety", "success", "setpoint_tracking", "trajectory_tracking", "acquisition", "strong_tail", "effort", "runtime"],
+  "satc_qualification": "competence PASS; safety and per-family success not below Primary Traditional; >=5% improvement in at least one registered core metric; zero catastrophic regression; <=5% RMSE regression in the other task family",
+  "equal_rate_selection_authority": false,
+  "holdout_selection_authority": false
+}
