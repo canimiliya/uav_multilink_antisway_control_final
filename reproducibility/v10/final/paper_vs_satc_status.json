@@ -1,0 +1,7 @@
+{
+  "status": "NOT_RUN_PAPER_DEVELOPMENT_INELIGIBLE",
+  "reason": "The frozen protocol allowed formal Paper-vs-SATC trade-off reporting only after Paper Development qualification.",
+  "paper_development_runtime_advantage_vs_satc": true,
+  "paper_development_performance_advantage_claimed": false,
+  "tradeoff_valid": false
+}

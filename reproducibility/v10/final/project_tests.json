@@ -1,0 +1,13 @@
+{
+  "environment": "conda:uav_sway",
+  "python": "3.11.15",
+  "mujoco": "3.0.1",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "osqp": "1.1.3",
+  "command": "python -m pytest tests/release tests/v2 tests/v3 tests/v4 tests/v5 tests/v6 tests/v7 tests/v8 tests/v9 tests/v10 --import-mode=importlib -q",
+  "result": "235 passed",
+  "warnings": 35,
+  "third_party_udaan": "repository-pinned third_party/udaan supplied via process-local PYTHONPATH",
+  "performance_rerun_during_finalization": false
+}

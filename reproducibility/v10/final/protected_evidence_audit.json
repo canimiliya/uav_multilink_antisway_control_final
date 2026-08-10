@@ -1,0 +1,55 @@
+{
+  "source_head": "46b4c31d45d427f790ef2978702552b5ee8235ab",
+  "protected": {
+    "reproducibility/frozen": {
+      "source_tree": "01b7503111617baca2460f93824acab235ff22bc",
+      "current_tree": "01b7503111617baca2460f93824acab235ff22bc",
+      "unchanged": true
+    },
+    "reproducibility/v2": {
+      "source_tree": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+      "current_tree": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+      "unchanged": true
+    },
+    "reproducibility/v3": {
+      "source_tree": "956e77658e01efabb110dcf1934215af344a620d",
+      "current_tree": "956e77658e01efabb110dcf1934215af344a620d",
+      "unchanged": true
+    },
+    "reproducibility/v4": {
+      "source_tree": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+      "current_tree": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+      "unchanged": true
+    },
+    "reproducibility/v5": {
+      "source_tree": "1134092eb80efc8639ce822d777f30c04a9af226",
+      "current_tree": "1134092eb80efc8639ce822d777f30c04a9af226",
+      "unchanged": true
+    },
+    "reproducibility/v6": {
+      "source_tree": "c6e50538a3a5c1d98829873331e8fd1f09713409",
+      "current_tree": "c6e50538a3a5c1d98829873331e8fd1f09713409",
+      "unchanged": true
+    },
+    "reproducibility/v7": {
+      "source_tree": "e5230eefa26044c40ad2b016afc5125bf44241e9",
+      "current_tree": "e5230eefa26044c40ad2b016afc5125bf44241e9",
+      "unchanged": true
+    },
+    "reproducibility/v8": {
+      "source_tree": "21ef52d0c8f1a510d7a124f27774a826a39b5880",
+      "current_tree": "21ef52d0c8f1a510d7a124f27774a826a39b5880",
+      "unchanged": true
+    },
+    "reproducibility/v9": {
+      "source_tree": "f5c9830cc01e119a8b9d7b50fb9136946b094fa5",
+      "current_tree": "f5c9830cc01e119a8b9d7b50fb9136946b094fa5",
+      "unchanged": true
+    }
+  },
+  "V1_V9_UNCHANGED": true,
+  "traditional_unchanged": true,
+  "satc_unchanged": true,
+  "old_tags_moved": false,
+  "holdout_accessed": false
+}

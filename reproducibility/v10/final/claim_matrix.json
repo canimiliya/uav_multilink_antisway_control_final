@@ -1,0 +1,18 @@
+{
+  "supported": [
+    "Three frozen Traditional controllers remain completed.",
+    "SATC-OFMPC satc_b_027 remains validated with the V5 Overall Holdout win.",
+    "V10 implemented an adapted causal multivariable FxTDO with constrained receding-horizon MPC under the common acceleration interface.",
+    "V10 observer estimates were finite and bounded in an offline validation replay, but fixed-time empirical settling was not validated.",
+    "V10 failed the frozen Development strong-baseline gate and Holdout remained untouched."
+  ],
+  "not_supported": [
+    "Recent Paper > Traditional",
+    "FxTDO-MPC validated on Holdout",
+    "Paper-vs-SATC valid two-sided trade-off",
+    "PROJECT_RESEARCH_COMPLETE",
+    "exact reproduction of Xu et al.",
+    "automatic V11 or another external-paper route"
+  ],
+  "highest_project_claim": "V5_SELF_OVERALL_HOLDOUT_WIN"
+}
