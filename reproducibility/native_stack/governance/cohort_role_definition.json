@@ -1,0 +1,14 @@
+{
+  "version": "native-stack-cohort-role-v2",
+  "benchmark_physics_version": "native-stack-benchmark-v1.1",
+  "case_identity_changed": false,
+  "nominal": {
+    "wind_kinds": ["calm", "moderate", "stochastic"],
+    "role": "normal operational competence"
+  },
+  "challenge": {
+    "wind_kinds": ["strong_sustained", "strong_transient", "ramp"],
+    "role": "advanced robustness differentiation"
+  },
+  "classification_basis": "mission intent, wind physics, and engineering role; controller performance is excluded"
+}
