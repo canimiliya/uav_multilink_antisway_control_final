@@ -1,0 +1,111 @@
+{
+  "computed_after_rule_freeze": true,
+  "existing_method_pass_count": 0,
+  "governance_freeze_commit": "29b26646a4e97e6962cbaa1d2fda84ad9756d560",
+  "interpretation": "Governance v2 corrects research-role coupling but does not rescue an existing method. native_pid_001 remains the strongest evidence and fails nominal reliability, especially moderate wind, despite all-case safety and nominal tracking RMSE.",
+  "methods": {
+    "native_full_lqr_006": {
+      "WOULD_EXISTING_METHOD_PASS": false,
+      "checks": {
+        "all_case_catastrophic": false,
+        "all_case_safety": false,
+        "deadline": true,
+        "nominal_each_task_family": false,
+        "nominal_each_wind": false,
+        "nominal_setpoint_rmse": true,
+        "nominal_success": false,
+        "nominal_trajectory_rmse": true
+      },
+      "method_id": "native_full_lqr_006",
+      "qualification_authority": "NONE_RETROSPECTIVE_ONLY",
+      "source": "reproducibility/native_stack/r1r1/traditional/full_lqr/development_results.csv",
+      "values": {
+        "all_case_catastrophic_count": 8,
+        "all_case_safety_rate": 0.96,
+        "deadline_miss_rate": 0.0,
+        "nominal_each_task_family_success_rate": {
+          "setpoint": 0.26,
+          "smooth_trajectory": 0.2
+        },
+        "nominal_each_wind_success_rate": {
+          "calm": 0.4411764705882353,
+          "moderate": 0.058823529411764705,
+          "stochastic": 0.1875
+        },
+        "nominal_setpoint_rmse_m": 0.957905954518484,
+        "nominal_success_rate": 0.23,
+        "nominal_trajectory_rmse_m": 0.6262939935724084
+      }
+    },
+    "native_pid_001": {
+      "WOULD_EXISTING_METHOD_PASS": false,
+      "checks": {
+        "all_case_catastrophic": true,
+        "all_case_safety": true,
+        "deadline": true,
+        "nominal_each_task_family": false,
+        "nominal_each_wind": false,
+        "nominal_setpoint_rmse": true,
+        "nominal_success": false,
+        "nominal_trajectory_rmse": true
+      },
+      "method_id": "native_pid_001",
+      "qualification_authority": "NONE_RETROSPECTIVE_ONLY",
+      "source": "reproducibility/native_stack/r1r1/traditional/pid/development_results.csv",
+      "values": {
+        "all_case_catastrophic_count": 0,
+        "all_case_safety_rate": 1.0,
+        "deadline_miss_rate": 9.583333333333332e-05,
+        "nominal_each_task_family_success_rate": {
+          "setpoint": 0.42,
+          "smooth_trajectory": 0.52
+        },
+        "nominal_each_wind_success_rate": {
+          "calm": 0.7352941176470589,
+          "moderate": 0.14705882352941177,
+          "stochastic": 0.53125
+        },
+        "nominal_setpoint_rmse_m": 0.7545483608326543,
+        "nominal_success_rate": 0.47,
+        "nominal_trajectory_rmse_m": 0.33588189485770586
+      }
+    },
+    "native_task_lqr_004": {
+      "WOULD_EXISTING_METHOD_PASS": false,
+      "checks": {
+        "all_case_catastrophic": false,
+        "all_case_safety": false,
+        "deadline": true,
+        "nominal_each_task_family": false,
+        "nominal_each_wind": false,
+        "nominal_setpoint_rmse": true,
+        "nominal_success": false,
+        "nominal_trajectory_rmse": true
+      },
+      "method_id": "native_task_lqr_004",
+      "qualification_authority": "NONE_RETROSPECTIVE_ONLY",
+      "source": "reproducibility/native_stack/r1r1/traditional/task_lqr/development_results.csv",
+      "values": {
+        "all_case_catastrophic_count": 20,
+        "all_case_safety_rate": 0.9,
+        "deadline_miss_rate": 0.0,
+        "nominal_each_task_family_success_rate": {
+          "setpoint": 0.3,
+          "smooth_trajectory": 0.2
+        },
+        "nominal_each_wind_success_rate": {
+          "calm": 0.5,
+          "moderate": 0.058823529411764705,
+          "stochastic": 0.1875
+        },
+        "nominal_setpoint_rmse_m": 1.0471198855945576,
+        "nominal_success_rate": 0.25,
+        "nominal_trajectory_rmse_m": 0.6467964665876602
+      }
+    }
+  },
+  "retroactive_pass_allowed": false,
+  "selection_authority": "NONE",
+  "thresholds_changed_after_computation": false,
+  "version": "p2-r0g-v2-retrospective-v1"
+}

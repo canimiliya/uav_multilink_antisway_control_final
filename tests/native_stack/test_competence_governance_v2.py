@@ -27,3 +27,12 @@ def test_v2_forbids_posthoc_rescue():
     assert rules["native_pid_001_targeted_to_pass"] is False
     assert rules["thresholds_may_not_be_changed_after_retrospective"] is True
     assert rules["v1_history_may_not_be_relabelled"] is True
+
+
+def test_retrospective_is_after_freeze_and_has_no_authority():
+    path = ROOT / "reproducibility/native_stack/governance/retrospective_existing_method_diagnostic.json"
+    diagnostic = json.loads(path.read_text(encoding="utf-8"))
+    assert diagnostic["computed_after_rule_freeze"] is True
+    assert diagnostic["thresholds_changed_after_computation"] is False
+    assert diagnostic["selection_authority"] == "NONE"
+    assert diagnostic["retroactive_pass_allowed"] is False
