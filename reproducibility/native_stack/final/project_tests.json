@@ -1,0 +1,27 @@
+{
+  "authoritative_execution": "one isolated pytest process per test directory",
+  "environment": {
+    "executable": "D:/anaconda/envs/uav_sway/python.exe",
+    "mujoco": "3.0.1",
+    "numpy": "2.4.6",
+    "python": "3.11.15"
+  },
+  "failed": 0,
+  "group_count": 11,
+  "groups": {
+    "native_stack": 13,
+    "release": 4,
+    "v10": 12,
+    "v2": 56,
+    "v3": 63,
+    "v4": 25,
+    "v5": 22,
+    "v6": 20,
+    "v7": 9,
+    "v8": 11,
+    "v9": 13
+  },
+  "passed": 248,
+  "status": "PASS",
+  "warnings": "35 OSQP deprecation/pending-deprecation warnings across V6 and V10"
+}

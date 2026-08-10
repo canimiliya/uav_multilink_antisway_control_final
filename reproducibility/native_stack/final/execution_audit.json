@@ -1,0 +1,37 @@
+{
+  "cleanup": "Only verified P2 pytest/conda process trees were terminated after timeout; unrelated smd-blackwell workers were not touched.",
+  "controller_performance_runs": 0,
+  "native_holdout_runs": 0,
+  "protocol_changed_between_attempts": false,
+  "scientific_retries": 0,
+  "technical_attempts": [
+    {
+      "attempt": 1,
+      "result": "TIMEOUT_184_S_NO_CONCLUSION",
+      "scope": "all tests",
+      "wrapper": "conda run"
+    },
+    {
+      "attempt": 2,
+      "result": "TIMEOUT_604_S_ORPHANED_WRAPPER_PROCESSES",
+      "scope": "all tests",
+      "wrapper": "conda run"
+    },
+    {
+      "attempt": 3,
+      "result": "TIMEOUT_604_S_HOST_CONTENTION",
+      "scope": "all tests",
+      "wrapper": "direct environment python"
+    },
+    {
+      "attempt": 4,
+      "result": "COLLECTION_MODULE_NAME_COLLISION_NO_TEST_RESULT",
+      "scope": "multiple explicit directories in one pytest process"
+    },
+    {
+      "attempt": 5,
+      "result": "248_PASSED",
+      "scope": "all 11 directories in isolated processes plus final gate test"
+    }
+  ]
+}

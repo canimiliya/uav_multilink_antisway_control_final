@@ -1,0 +1,131 @@
+{
+  "entries": [
+    {
+      "bytes": 1101,
+      "path": "reproducibility/native_stack/final/execution_audit.json",
+      "sha256": "c4543e5e74bbaaed75963d0308248ef9b80911b6001317596619a3dacd7f5a8f"
+    },
+    {
+      "bytes": 1730,
+      "path": "reproducibility/native_stack/final/final_gate.json",
+      "sha256": "5229653a9b2eeb0d71ce8e6904196844869401ed478a00e4a542dc01fb582bc5"
+    },
+    {
+      "bytes": 603,
+      "path": "reproducibility/native_stack/final/project_tests.json",
+      "sha256": "b22b5330b966d7c6f22c4b5d29c351edb89780a6c2b5384865facbc8d0b1c56c"
+    },
+    {
+      "bytes": 1703,
+      "path": "reproducibility/native_stack/r0/benchmark_protocol.json",
+      "sha256": "191625dcda9721cb30006b77aed1af71dd219bcb4b4e971cf523b19e6d656321"
+    },
+    {
+      "bytes": 785,
+      "path": "reproducibility/native_stack/r0/legacy_pipeline_parity.json",
+      "sha256": "e533bcbf29b0adf79a2e43c7cdeb00dd9235887f68bdd33996c81c6d9b11953d"
+    },
+    {
+      "bytes": 112485,
+      "path": "reproducibility/native_stack/r0/native_development_manifest.json",
+      "sha256": "9f1e683ab9de58d462c70fabb194486197e82bb66aefde99d77e4fe51fbc910d"
+    },
+    {
+      "bytes": 76711,
+      "path": "reproducibility/native_stack/r0/native_holdout_manifest.json",
+      "sha256": "9eba56a0e6dd236ec6a82a7c9b51f2176801ec38c2ebd4bc2ccbe837539646de"
+    },
+    {
+      "bytes": 3171,
+      "path": "reproducibility/native_stack/r0/physical_actuation_audit.json",
+      "sha256": "482ed7e792e69da86e515a3d05a3186f1d464a1c81fbb428908cc61a07dc2933"
+    },
+    {
+      "bytes": 278,
+      "path": "reproducibility/native_stack/r0/physical_wrench_parity.json",
+      "sha256": "0ee9a4ae2c26aaf728e6d322d8401ae7d3b7bd0e1d6eb0a92c898bdcdd0a0735"
+    },
+    {
+      "bytes": 1176,
+      "path": "reproducibility/native_stack/r0/platform_controller_smoke.json",
+      "sha256": "4e9fcf8c548f78eb7294e633bf2f5061fddd189ce4cb6076d68ce043946923a8"
+    },
+    {
+      "bytes": 2685,
+      "path": "reproducibility/native_stack/r0/protected_evidence_audit.json",
+      "sha256": "dfc4c05bf18fcec91d0a473b03fc928691302077e2572f058ece421579b9366d"
+    },
+    {
+      "bytes": 711,
+      "path": "reproducibility/native_stack/r0/scheduler_validation.json",
+      "sha256": "e26864d6065680a8d0d92a1398e517d477a64813bcca48df987927980fbed904"
+    },
+    {
+      "bytes": 1093,
+      "path": "reproducibility/native_stack/r0/split_integrity.json",
+      "sha256": "ae2a5ca0e4bdc7416cad3b7a926757facbce9226d343eeb88137e0dcfe86c1fb"
+    },
+    {
+      "bytes": 1171,
+      "path": "docs/native_stack/CONTROL_INTERFACE_SPEC.md",
+      "sha256": "0769d90d0ebe918b8ba63ddaef66406e5436e12916c3724a4f01a78f5ef1707e"
+    },
+    {
+      "bytes": 868,
+      "path": "docs/native_stack/CURRENT_CONTROL_STACK.md",
+      "sha256": "7bfa49d289cf653bea3bf18b4b8e193de9038c13ddeb7acce3c1621402502d3a"
+    },
+    {
+      "bytes": 1015,
+      "path": "docs/native_stack/FAIRNESS_PROTOCOL.md",
+      "sha256": "227a7838ea0c74957f4952597c27d987f0411c2c062cc67b7e33dfeaed0bc526"
+    },
+    {
+      "bytes": 829,
+      "path": "docs/native_stack/LEGACY_COMPATIBILITY_REPORT.md",
+      "sha256": "65409410e661fedd1a77a04dd85443120ab6948d3f6d22c94c47f870564bab05"
+    },
+    {
+      "bytes": 944,
+      "path": "docs/native_stack/MULTIRATE_CONTROL_SPEC.md",
+      "sha256": "ed5dc12fa77404849f9a02b406afe552d92fc621f0faa165f69fd856ff6c564d"
+    },
+    {
+      "bytes": 1709,
+      "path": "docs/native_stack/NATIVE_STACK_BENCHMARK_SPEC.md",
+      "sha256": "2ccc18f5c7486d94d3e5f264747d335796335a9e5cd36ae78976107c23e57c4d"
+    },
+    {
+      "bytes": 697,
+      "path": "docs/native_stack/NEXT_RESEARCH_ENTRY_CRITERIA.md",
+      "sha256": "d7a8d24524dbb7e40b039a1283b7a450a215afa585f1a31aad98980a5e070563"
+    },
+    {
+      "bytes": 2292,
+      "path": "docs/native_stack/P2_R0_FINAL_REPORT.md",
+      "sha256": "087ffa92f81cec11f81e6a946afee5fccdfd980e8c777ca40b1ea67e10b937dc"
+    },
+    {
+      "bytes": 1020,
+      "path": "docs/native_stack/PAPER_INTERFACE_COMPATIBILITY_MATRIX.md",
+      "sha256": "74c761ce42ab7f0bc4a7a2b9f7b2a922c9b9aeed1ae665e47bbbb6d1b81538c8"
+    },
+    {
+      "bytes": 939,
+      "path": "docs/native_stack/PLATFORM_LIMITATIONS.md",
+      "sha256": "53f5bf241c24d6bc8e5f045626de5a0ba0dc80315f0ed91e0dcb9c09e0ba98de"
+    },
+    {
+      "bytes": 900,
+      "path": "docs/native_stack/SENSOR_ENVELOPE_SPEC.md",
+      "sha256": "9941dec0e335ee11d709f07ef7b04e03445bd35863b24daacf345a8abf20d9c8"
+    },
+    {
+      "bytes": 849,
+      "path": "docs/native_stack/TASK_PROTOCOL.md",
+      "sha256": "e14568cfd62003bbd94b7616103684f048f7fd388fa658237e14fcdc4411b752"
+    }
+  ],
+  "generated_before_final_commit": true,
+  "source_head": "263e78859097592c4dfca5a86a6486606c1cb84f"
+}

@@ -1,0 +1,57 @@
+{
+  "all_required_gates_pass": true,
+  "branch": "platform/native-stack-v1",
+  "gates": {
+    "ACTUATION_AUDIT_COMPLETE": true,
+    "HOLDOUT_EXECUTED": false,
+    "LEGACY_PIPELINE_PARITY": true,
+    "MULTIRATE_SCHEDULER_VALIDATED": true,
+    "NEW_DEVELOPMENT_FROZEN": true,
+    "NEW_HOLDOUT_FROZEN": true,
+    "NO_FUTURE_LEAKAGE": true,
+    "PHYSICAL_API_VALIDATED": true,
+    "PHYSICAL_WRENCH_PARITY": true,
+    "SENSOR_ENVELOPE_FROZEN": true,
+    "SETPOINT_TASK_VALID": true,
+    "SMOOTH_TRAJECTORY_TASK_VALID": true,
+    "V1_V10_UNCHANGED": true
+  },
+  "holdout_executed": false,
+  "new_controller_performance": false,
+  "new_paper_selected": false,
+  "old_holdout_accessed": false,
+  "platform_smoke_pass": true,
+  "platform_smoke_selection_authority": false,
+  "project_tests": {
+    "authoritative_execution": "one isolated pytest process per test directory",
+    "environment": {
+      "executable": "D:/anaconda/envs/uav_sway/python.exe",
+      "mujoco": "3.0.1",
+      "numpy": "2.4.6",
+      "python": "3.11.15"
+    },
+    "failed": 0,
+    "group_count": 11,
+    "groups": {
+      "native_stack": 13,
+      "release": 4,
+      "v10": 12,
+      "v2": 56,
+      "v3": 63,
+      "v4": 25,
+      "v5": 22,
+      "v6": 20,
+      "v7": 9,
+      "v8": 11,
+      "v9": 13
+    },
+    "passed": 248,
+    "status": "PASS",
+    "warnings": "35 OSQP deprecation/pending-deprecation warnings across V6 and V10"
+  },
+  "result": "P2_NATIVE_STACK_BENCHMARK_READY",
+  "satc_retuned": false,
+  "source_head": "263e78859097592c4dfca5a86a6486606c1cb84f",
+  "task": "P2-R0-NATIVE-STACK-BENCHMARK-ARCHITECTURE-IMPLEMENTATION-VALIDATION-AND-FREEZE-R1",
+  "traditional_retuned": false
+}
