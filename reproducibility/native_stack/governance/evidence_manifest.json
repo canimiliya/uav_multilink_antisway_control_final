@@ -1,0 +1,200 @@
+{
+  "entries": [
+    {
+      "path": "docs/native_stack/governance/COMPETENCE_GATE_AUDIT.md",
+      "sha256": "364bbd9b500b0c9bd874b66607947c86c48a077746b7562e794eb977b1825c2b",
+      "size_bytes": 1622
+    },
+    {
+      "path": "docs/native_stack/governance/COMPETENCE_GOVERNANCE_V2.md",
+      "sha256": "b86194da1edd821dafa6bc737ec7d9447384e77f3455a2ab5db6d9962c359f76",
+      "size_bytes": 1818
+    },
+    {
+      "path": "docs/native_stack/governance/MISSION_ENVELOPE_AUDIT.md",
+      "sha256": "94bfd4c834ac3b2b6b520f023c5ee563b10dfc051d86efa8b8844fb797644380",
+      "size_bytes": 1371
+    },
+    {
+      "path": "docs/native_stack/governance/NOMINAL_VS_CHALLENGE_PROTOCOL.md",
+      "sha256": "bab8f4294342c5e3096a54657491e2478220d3b890c3d7ce6268745dffd66a35",
+      "size_bytes": 1438
+    },
+    {
+      "path": "docs/native_stack/governance/OWNER_DECISION.md",
+      "sha256": "528de8517a8ea84eec84f17f1a35d68c13ae34085b5f2177c9a6a3606f8ce92c",
+      "size_bytes": 1165
+    },
+    {
+      "path": "docs/native_stack/governance/P2_R0G_FINAL_REPORT.md",
+      "sha256": "2ffcf26fe7938937c6ec3796082e2e8528149589ee28234c0bc9e0a1e3ce0279",
+      "size_bytes": 2001
+    },
+    {
+      "path": "docs/native_stack/governance/PHYSICAL_FEASIBILITY_REPORT.md",
+      "sha256": "d69a35916743517f5fcb6e1d4d04ffb875695f2897172d6ebb8d4340ac76e24b",
+      "size_bytes": 1399
+    },
+    {
+      "path": "docs/native_stack/governance/V1_1_TO_V1_2_GOVERNANCE.md",
+      "sha256": "2ec1143b55422ce41e97a6aa2dbdb107feef21c8485f46679389de6d61424fe7",
+      "size_bytes": 936
+    },
+    {
+      "path": "reproducibility/native_stack/governance/claim_matrix.json",
+      "sha256": "5b8be93d1841ba300194fe6bf2e4ea76fc06da996cf95d90cfb99dbd5cffe20b",
+      "size_bytes": 558
+    },
+    {
+      "path": "reproducibility/native_stack/governance/cohort_audit.json",
+      "sha256": "36b0e99185499d61a113dbcf631d7417f5a7675224124fd520f4879209482fd2",
+      "size_bytes": 1411
+    },
+    {
+      "path": "reproducibility/native_stack/governance/cohort_role_definition.json",
+      "sha256": "db1204dbebf7762d374b258ba4f2bd2d706c0048424463e0efc1a38a775eeb09",
+      "size_bytes": 531
+    },
+    {
+      "path": "reproducibility/native_stack/governance/competence_governance_v2.json",
+      "sha256": "7f6f73605b6fe837d435e826bd34f2b95825154d2c9ec69ac9283730ec259762",
+      "size_bytes": 3205
+    },
+    {
+      "path": "reproducibility/native_stack/governance/competence_origin_audit.json",
+      "sha256": "7b3c61e04f8ae1b37aa9d1934b663d1087b8e27565d4efff3ad922d59406760c",
+      "size_bytes": 1056
+    },
+    {
+      "path": "reproducibility/native_stack/governance/existing_development_evidence.json",
+      "sha256": "521c61524f7a2ee6891a4f33c47fe3f7b4ba04570ba777022c36f969dff98d9a",
+      "size_bytes": 6801
+    },
+    {
+      "path": "reproducibility/native_stack/governance/final_gate.json",
+      "sha256": "2feba34e6b86ec267dfde6d6421e1cfe08b5a0e54b70b4dce9524a047886f769",
+      "size_bytes": 1083
+    },
+    {
+      "path": "reproducibility/native_stack/governance/holdout_status.json",
+      "sha256": "d84873ce43f146369d013a38c3a84a2e267b2525bbc83c805bfc196894e3c708",
+      "size_bytes": 552
+    },
+    {
+      "path": "reproducibility/native_stack/governance/oracle_diagnostic.json",
+      "sha256": "1d150f9482bef6827a9f68b9da2f774892557bf65b5aeddf1055c8c457c594ff",
+      "size_bytes": 2967
+    },
+    {
+      "path": "reproducibility/native_stack/governance/oracle_dynamic_attempt.json",
+      "sha256": "427abb8735154dd3e0c4418b7d50224b8be6de9945a392dc2dfb8947a7c0ffb2",
+      "size_bytes": 4211
+    },
+    {
+      "path": "reproducibility/native_stack/governance/oracle_dynamic_attempt_results.csv",
+      "sha256": "c4eea419745eb134708896a3099a5d987a388fbdd3740ec7e381bd1109e81f60",
+      "size_bytes": 97481
+    },
+    {
+      "path": "reproducibility/native_stack/governance/oracle_dynamic_attempt_status.json",
+      "sha256": "7731c9a4ffc43e9d82bf8851a12e65213d70d27d2460801bc4dc7c79ff16f146",
+      "size_bytes": 628
+    },
+    {
+      "path": "reproducibility/native_stack/governance/oracle_equilibrium_protocol.json",
+      "sha256": "eff8f49055cad8c766cf676e3ea6d779b759dc328cf75b57a3b732ee43f445e4",
+      "size_bytes": 1602
+    },
+    {
+      "path": "reproducibility/native_stack/governance/oracle_equilibrium_results.csv",
+      "sha256": "bf0d2a14bedb165516e8eaea4d1734f326d5238c708f36b620a6824fceefe580",
+      "size_bytes": 143308
+    },
+    {
+      "path": "reproducibility/native_stack/governance/oracle_protocol.json",
+      "sha256": "4943887353aca34e27e47a83ee5be9456fd6fbf8397bdd9cfc85c8a8bf649c85",
+      "size_bytes": 1344
+    },
+    {
+      "path": "reproducibility/native_stack/governance/owner_decision.json",
+      "sha256": "22063f0e14e7162fafc9cabda2f039542f6689f77046aaf5c38551d6e23a93b6",
+      "size_bytes": 1076
+    },
+    {
+      "path": "reproducibility/native_stack/governance/physical_feasibility.json",
+      "sha256": "a98d4ebaa42f0b85c9c37498b54b3f439646d3a5f130b254478a32d9f6a77ae3",
+      "size_bytes": 2320
+    },
+    {
+      "path": "reproducibility/native_stack/governance/platform_freeze.json",
+      "sha256": "8ceadb1b0d78361caf262dd56ee2da9625a73e6da256a712226e5b69714837c3",
+      "size_bytes": 1336
+    },
+    {
+      "path": "reproducibility/native_stack/governance/project_tests.json",
+      "sha256": "71575615567b796fd5e9f65bda892b6647d0d6b8ff67eaa19746727e3acaaca9",
+      "size_bytes": 636
+    },
+    {
+      "path": "reproducibility/native_stack/governance/protected_evidence_audit.json",
+      "sha256": "2d4ad66c48a0dfe5d4d391afb3e306da594498a722b8951e2a6bdf52fcb873c0",
+      "size_bytes": 3201
+    },
+    {
+      "path": "reproducibility/native_stack/governance/retrospective_existing_method_diagnostic.json",
+      "sha256": "f6cfae3f3725b675618e14c4f4b9f8f982fd29b3bd4daa3cbe45baab1bec13d5",
+      "size_bytes": 4233
+    },
+    {
+      "path": "scripts/audit_p2_r0g_governance.py",
+      "sha256": "b5e785db51fe2310f864dac36d352d636f7a330dccc8ee7df25189460b4d29df",
+      "size_bytes": 16552
+    },
+    {
+      "path": "scripts/compute_p2_r0g_retrospective.py",
+      "sha256": "a6954c98fbbf71c04d28a8b1cc8c8d8d8fd3f9c51428c911071179c5ad4547e5",
+      "size_bytes": 4938
+    },
+    {
+      "path": "scripts/finalize_p2_r0g_governance.py",
+      "sha256": "09d99febe3f94f959ba6fb015b897f4303f5aacda374b7463965de566104bc4b",
+      "size_bytes": 7350
+    },
+    {
+      "path": "scripts/run_p2_r0g_equilibrium_oracle.py",
+      "sha256": "f2cc2284515d4e1b1f15b77eeda9249df640d0def5de16bda1377255edb32f03",
+      "size_bytes": 11450
+    },
+    {
+      "path": "scripts/run_p2_r0g_oracle.py",
+      "sha256": "f3054ca3bf22c495396b4a45f8ea630cee7f914a9b29d11946992f56ea594809",
+      "size_bytes": 4761
+    },
+    {
+      "path": "src/uav_sway/native_stack/governance_oracle.py",
+      "sha256": "bfdaf37392c233b3e0f3486ae47a700bb917656b1066fde4998757d492fa86f1",
+      "size_bytes": 12794
+    },
+    {
+      "path": "tests/native_stack/test_competence_governance_v2.py",
+      "sha256": "aeb7ee14693924389599ba738c3ad12cd586830712c34338667a466a7bd78750",
+      "size_bytes": 1957
+    },
+    {
+      "path": "tests/native_stack/test_governance_audit.py",
+      "sha256": "391a3fe2439db308180103c1c2f4b06e06f4090027324c3fcad2d8b5698d0b9b",
+      "size_bytes": 2366
+    },
+    {
+      "path": "tests/native_stack/test_governance_final.py",
+      "sha256": "7c456e6bee6f08df858e4c85c3bb0847de01822f9d44d8c721ae1b1d8ccb195f",
+      "size_bytes": 1282
+    },
+    {
+      "path": "tests/native_stack/test_governance_v2_platform.py",
+      "sha256": "7114a1e838096fcb29579c9629de4b010e6891dd1d961f1d7ca939a671d1ed97",
+      "size_bytes": 1219
+    }
+  ],
+  "entry_count": 39
+}

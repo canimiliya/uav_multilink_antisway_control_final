@@ -1,0 +1,17 @@
+{
+  "competence_70_origin_audited": true,
+  "controller_tuning": false,
+  "existing_method_pass_count_v2_retrospective": 0,
+  "governance_v2_created": true,
+  "holdout_execution": false,
+  "mission_envelope_structural_problem": false,
+  "mission_feasibility_audited": true,
+  "nominal_challenge_role_defined": true,
+  "owner_decision": "B",
+  "paper_implementation": false,
+  "paper_performance": false,
+  "paper_search": false,
+  "root_cause_classified": true,
+  "satc_search": false,
+  "traditional_eligibility_challenge_coupling": true
+}

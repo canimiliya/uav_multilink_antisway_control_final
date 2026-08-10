@@ -1,0 +1,30 @@
+{
+  "COMPETENCE_70_ORIGIN_AUDITED": true,
+  "HOLDOUT_UNTOUCHED": true,
+  "MISSION_FEASIBILITY_AUDITED": true,
+  "NOMINAL_CHALLENGE_ROLE_DEFINED": true,
+  "OWNER_DECISION": "B",
+  "ROOT_CAUSE_CLASSIFIED": true,
+  "audit_source_head": "9d0264246408eced13b5c5029763443907610697",
+  "benchmark_tag": "native-stack-benchmark-v1.1",
+  "final_status": "COMPLETE_DECISION_B_NO_CONTROLLER_QUALIFIED",
+  "governance_v2": {
+    "created": true,
+    "platform_head": "88c3aef081fabab44d174bc8afd234ae634af3da",
+    "retroactive_pass": false,
+    "retrospective_existing_method_pass_count": 0,
+    "tag": "native-stack-benchmark-v1.2-governance"
+  },
+  "p2_r2_authorized": false,
+  "prohibited": {
+    "controller_tuning": false,
+    "holdout_execution": false,
+    "paper_implementation": false,
+    "paper_performance": false,
+    "paper_search": false,
+    "satc_search": false
+  },
+  "project_progress_percent": 84,
+  "result": "P2_NATIVE_BENCHMARK_GOVERNANCE_AUDIT_COMPLETE",
+  "task": "P2-R0G-MISSION-ENVELOPE-AND-TRADITIONAL-COMPETENCE-STRUCTURAL-AUDIT-R1"
+}

@@ -250,16 +250,23 @@ def main() -> None:
         "methods": existing,
     })
 
-    holdout_raw = ROOT / "reproducibility/native_stack/r0/native_holdout_manifest.json"
-    holdout_resolved = ROOT / "reproducibility/native_stack/r0s/resolved_holdout_manifest.json"
-    resolved_holdout = json.loads(holdout_resolved.read_text(encoding="utf-8"))
+    holdout_raw = json.loads((ROOT / "reproducibility/native_stack/r0/native_holdout_manifest.json").read_text(encoding="utf-8"))
+    resolved_holdout = json.loads((ROOT / "reproducibility/native_stack/r0s/resolved_holdout_manifest.json").read_text(encoding="utf-8"))
     fingerprints = [case["case_semantic_fingerprint"] for case in resolved_holdout["cases"]]
+    identity_hash = holdout_raw["manifest_sha256"]
+    if identity_hash != resolved_holdout["identity_manifest_hash"]:
+        raise AssertionError("Holdout identity semantic hash mismatch")
+    if identity_hash != "63e6192faf992494f5a78f4c008d844564b0015fc26b43a94a0c98da659b2538":
+        raise AssertionError("frozen Holdout identity hash changed")
+    resolved_hash = resolved_holdout["resolved_manifest_hash"]
+    if resolved_hash != "4a4b5d92027760e0d37176b7f768746c690a4ca53236ec60224cd423d6582df0":
+        raise AssertionError("frozen Holdout resolved hash changed")
     holdout = {
-        "identity_manifest_sha256": sha256(holdout_raw),
-        "resolved_manifest_sha256": sha256(holdout_resolved),
+        "identity_manifest_hash": identity_hash,
+        "resolved_manifest_hash": resolved_hash,
         "fingerprint_count": len(fingerprints),
         "unique_fingerprint_count": len(set(fingerprints)),
-        "checks_performed": ["file sha256", "serialized semantic fingerprint uniqueness"],
+        "checks_performed": ["canonical identity hash", "canonical resolved hash", "serialized semantic fingerprint uniqueness"],
         "performance_fields_read": False,
         "execution_allowed": False,
         "executed": False,

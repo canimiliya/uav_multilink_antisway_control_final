@@ -1,0 +1,25 @@
+{
+  "authoritative_mode": "11 isolated pytest directory processes",
+  "environment": "D:/anaconda/envs/uav_sway/python.exe with PYTHONPATH=src;third_party/udaan",
+  "failed": 0,
+  "groups": {
+    "native_stack": 54,
+    "release": 4,
+    "v10": 12,
+    "v2": 56,
+    "v3": 63,
+    "v4": 25,
+    "v5": 22,
+    "v6": 20,
+    "v7": 9,
+    "v8": 11,
+    "v9": 13
+  },
+  "historical_byte_materialization": {
+    "historical_manifest_modified": false,
+    "lf_or_crlf_bytes_restored_by_existing_sha256": 122,
+    "manifest_entries_verified": 185
+  },
+  "passed": 289,
+  "warnings": "OSQP deprecation warnings only"
+}

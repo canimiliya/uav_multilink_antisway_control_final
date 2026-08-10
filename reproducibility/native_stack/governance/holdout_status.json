@@ -1,15 +1,16 @@
 {
   "authoritative_runs": 0,
   "checks_performed": [
-    "file sha256",
+    "canonical identity hash",
+    "canonical resolved hash",
     "serialized semantic fingerprint uniqueness"
   ],
   "compromised": false,
   "executed": false,
   "execution_allowed": false,
   "fingerprint_count": 140,
-  "identity_manifest_sha256": "9eba56a0e6dd236ec6a82a7c9b51f2176801ec38c2ebd4bc2ccbe837539646de",
+  "identity_manifest_hash": "63e6192faf992494f5a78f4c008d844564b0015fc26b43a94a0c98da659b2538",
   "performance_fields_read": false,
-  "resolved_manifest_sha256": "ac8e7bd84997bca42cc3a0e7e2c406b852e8df69910247db408a0f6fb4747cc8",
+  "resolved_manifest_hash": "4a4b5d92027760e0d37176b7f768746c690a4ca53236ec60224cd423d6582df0",
   "unique_fingerprint_count": 140
 }
