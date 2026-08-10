@@ -43,3 +43,13 @@ def test_oracle_has_no_selection_authority():
     assert protocol["search_or_tuning_allowed"] is False
     assert protocol["selection_authority"] == "NONE"
     assert protocol["holdout_allowed"] is False
+
+
+def test_oracle_implementation_is_development_only():
+    from uav_sway.native_stack.governance_oracle import ORACLE_AUTHORITY, OracleParameters
+
+    parameters = OracleParameters()
+    assert parameters.outer_rate_hz == 200
+    assert parameters.inner_rate_hz == 1000
+    assert parameters.acceleration_limit_m_s2 == 4.0
+    assert "NO_SELECTION_AUTHORITY" in ORACLE_AUTHORITY
