@@ -53,3 +53,11 @@ def test_oracle_implementation_is_development_only():
     assert parameters.inner_rate_hz == 1000
     assert parameters.acceleration_limit_m_s2 == 4.0
     assert "NO_SELECTION_AUTHORITY" in ORACLE_AUTHORITY
+
+
+def test_equilibrium_oracle_is_frozen_and_nonselecting():
+    protocol = load("oracle_equilibrium_protocol.json")
+    assert protocol["frozen_before_execution"] is True
+    assert protocol["parameter_search"] is False
+    assert protocol["selection_authority"] == "NONE"
+    assert protocol["holdout_allowed"] is False
