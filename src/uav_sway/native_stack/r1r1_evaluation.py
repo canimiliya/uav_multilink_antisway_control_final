@@ -13,7 +13,7 @@ from .api import SensorPacket, WrenchCommand
 from .case_semantics.authoritative import AUTHORITATIVE_EXECUTION, AuthoritativeNativeCaseRunner
 from .case_semantics.resolver import NativeCaseResolver
 from .controller import NativeStackController
-from .r1r1_controllers import LegacyTaskLevelAdapter, NativeFullLQR, NativePID, NativeTaskLQR, SATCNative
+from .r1r1_controllers import LegacyTaskLevelAdapter, NativeFullLQR, NativeGains, NativePID, NativeTaskLQR, SATCNative
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -43,9 +43,10 @@ class AuditedController(NativeStackController):
 
 def build_controller(spec: dict[str, Any]) -> NativeStackController:
     family = spec["family"]
-    if family == "incumbent": return LegacyTaskLevelAdapter(spec["method_id"], spec["kp"], spec["kd"], spec.get("tip_kp", .10), spec.get("tip_kd", .05))
+    if family == "incumbent": return LegacyTaskLevelAdapter(spec["method_id"], spec["kp"], spec["kd"], spec.get("tip_kp", .10), spec.get("tip_kd", .05), spec.get("historical_id"))
     cls = {"native_pid": NativePID, "native_full_lqr": NativeFullLQR, "native_task_lqr": NativeTaskLQR, "satc_native": SATCNative}[family]
-    kwargs = {"gains": spec["gains"], "method_id": spec["method_id"]}
+    gains = NativeGains(**spec["gains"]) if isinstance(spec["gains"], dict) else spec["gains"]
+    kwargs = {"gains": gains, "method_id": spec["method_id"]}
     if family in {"native_full_lqr", "native_task_lqr"}: kwargs["q"] = spec["q"]
     return cls(**kwargs)
 

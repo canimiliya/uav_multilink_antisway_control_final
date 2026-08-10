@@ -7,6 +7,7 @@
   "complete_development_cases": 200,
   "family": "native_pid",
   "incumbent": "corrected_pid+LegacyTaskLevelAdapter",
+  "incumbent_exact_historical_parameters": true,
   "metrics": {
     "acquisition_time_s": 3.92,
     "case_count": 200,
@@ -41,6 +42,8 @@
     100,
     500
   ],
+  "provisional_incumbent_runs_preserved": true,
+  "provisional_incumbent_selection_authority": false,
   "selected": "native_pid_001",
   "selected_spec": {
     "family": "native_pid",

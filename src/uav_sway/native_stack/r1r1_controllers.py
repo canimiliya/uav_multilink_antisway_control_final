@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
+import json
+from pathlib import Path
 from typing import Any
 
 import numpy as np
@@ -11,6 +13,11 @@ from udaan.control.quadrotor import GeometricAttitudeController
 from udaan.manif import SO3, TSO3
 
 from uav_sway.control.geometric_inner_loop import GeometricInnerLoop
+from uav_sway.task_space.state import CutterTaskState
+from uav_sway.v3.controllers import V3CascadedTaskPID, V3FullStateLQR, V3TaskWeightedLQR
+from uav_sway.v3.metrics import load_r0_linear_matrices
+from uav_sway.v3.observation import V3Observation, V3Reference
+from uav_sway.v5.satc_ofmpc import SATCOFMPC
 from .api import SensorPacket, WrenchCommand
 from .controller import AccelerationOuterStackAdapter, NativeStackController
 
@@ -133,17 +140,48 @@ class LegacyTaskLevelAdapter(AccelerationOuterStackAdapter):
     """Frozen acceleration-output incumbent routed through the audited adapter."""
     architecture = "frozen_legacy_acceleration_plus_LegacyTaskLevelAdapter"
 
-    def __init__(self, method_id: str, kp: float, kd: float, tip_kp: float = .10, tip_kd: float = .05) -> None:
+    def __init__(self, method_id: str, kp: float, kd: float, tip_kp: float = .10, tip_kd: float = .05, historical_id: str | None = None) -> None:
         super().__init__(_LegacyReset(), GeometricInnerLoop(MASS_KG, INERTIA, 4.0, .9), np.array([.225, 0., -2.81]))
         self.method_id = method_id; self.kp = float(kp); self.kd = float(kd)
         self.tip_kp = float(tip_kp); self.tip_kd = float(tip_kd); self._previous = np.zeros(3)
+        self.historical_id = historical_id; self._historical = self._load_historical(historical_id)
+
+    @staticmethod
+    def _load_historical(historical_id: str | None):
+        root = Path(__file__).resolve().parents[3]
+        if historical_id == "corrected_pid":
+            p = json.loads((root/"reproducibility/v3/r1r1/pid_freeze.json").read_text(encoding="utf-8"))["parameters"]
+            return V3CascadedTaskPID(np.array(p["uav_kp"]),np.array(p["uav_kd"]),np.array(p["uav_ki"]),np.array(p["tip_kp"]),np.array(p["tip_kd"]),np.array(p["correction_limit_m"]),p["correction_slew_m_per_update"],p["integral_limit"],p["tip_velocity_mode"])
+        if historical_id in {"full_lqr_048","task_lqr_009"}:
+            name="full_lqr" if historical_id.startswith("full") else "task_lqr"; p=json.loads((root/f"reproducibility/v3/r1/{name}_freeze.json").read_text(encoding="utf-8"))["parameters"]
+            cls=V3FullStateLQR if name=="full_lqr" else V3TaskWeightedLQR; return cls(np.array(p["K"]))
+        if historical_id == "satc_b_027":
+            a,b=load_r0_linear_matrices(root); metric=json.loads((root/"reproducibility/v3/r1/task_metric_alignment_audit.json").read_text(encoding="utf-8")); c=np.vstack([metric[x] for x in ("C_pos","C_vel","C_dir","C_omega_perp")])
+            task=np.array(json.loads((root/"reproducibility/v3/r1/task_lqr_freeze.json").read_text(encoding="utf-8"))["parameters"]["K"]); full=np.array(json.loads((root/"reproducibility/v3/r1/full_lqr_freeze.json").read_text(encoding="utf-8"))["parameters"]["K"]); params=json.loads((root/"reproducibility/v5/self/self_freeze.json").read_text(encoding="utf-8"))["parameters"]
+            return SATCOFMPC(a,b,c,task,full,params)
+        return None
 
     def reset(self) -> None:
         super().reset(); self._previous[:] = 0.0
+        if self._historical is not None: self._historical.reset()
+
+    def _historical_observation(self, p: SensorPacket) -> tuple[V3Observation,V3Reference]:
+        target=p.reference.position_world+UAV_MINUS_TIP_TRIM; r=p.rotation_world_from_body
+        state=np.zeros(20); state[0]=p.uav_position_world[0]-target[0]; state[1]=p.uav_velocity_world[0]-p.reference.velocity_world[0]
+        state[2]=p.uav_position_world[1]-target[1]; state[3]=p.uav_velocity_world[1]-p.reference.velocity_world[1]
+        state[4]=p.uav_position_world[2]-target[2]; state[5]=p.uav_velocity_world[2]-p.reference.velocity_world[2]
+        state[6]=np.arctan2(r[2,1],r[2,2]); state[7]=p.body_angular_velocity[0]; state[8]=np.arcsin(np.clip(-r[2,0],-1.,1.)); state[9]=p.body_angular_velocity[1]
+        state[10:15]=p.joint_position; state[15:20]=p.joint_velocity
+        angle=float(np.sum(p.joint_position)); ca,sa=np.cos(angle),np.sin(angle); ry=np.array([[ca,0,sa],[0,1,0],[-sa,0,ca]]); cutter_rotation=r@ry
+        task=CutterTaskState(p.cutter_tip_position_world,p.cutter_tip_velocity_world,r@(p.body_angular_velocity+np.array([0.,float(np.sum(p.joint_velocity)),0.])),cutter_rotation@np.array([1.,0.,0.]),cutter_rotation)
+        obs=V3Observation(state,p.uav_position_world,p.uav_velocity_world,task); ref=V3Reference(target,p.reference.velocity_world,p.reference.position_world,p.time_s)
+        return obs,ref
 
     def update_high_level(self) -> None:
         if self._sensor_packet is None: raise RuntimeError("observe must precede update")
         p = self._sensor_packet
+        if self._historical is not None:
+            obs,ref=self._historical_observation(p); self.set_legacy_acceleration(self._historical.command(obs,ref,.05)); return
         tip_error = p.reference.position_world - p.cutter_tip_position_world
         relative_velocity = p.cutter_tip_velocity_world - p.uav_velocity_world
         correction = np.clip(self.tip_kp*tip_error - self.tip_kd*relative_velocity, -.15, .15)
@@ -153,7 +191,7 @@ class LegacyTaskLevelAdapter(AccelerationOuterStackAdapter):
         self.set_legacy_acceleration(self._previous)
 
     def diagnostics(self) -> dict[str, Any]:
-        return {"method_id": self.method_id, "architecture": self.architecture, "kp": self.kp, "kd": self.kd}
+        return {"method_id": self.method_id, "architecture": self.architecture, "historical_id":self.historical_id,"kp": self.kp, "kd": self.kd}
 
 
 def physical_hover_model() -> tuple[np.ndarray, np.ndarray]:
