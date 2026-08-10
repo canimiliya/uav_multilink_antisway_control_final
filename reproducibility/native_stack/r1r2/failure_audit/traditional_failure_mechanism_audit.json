@@ -64,36 +64,51 @@
         }
       },
       "failure_by_horizontal_distance": {
-        "mid_1_to_2m": {
+        "far_>1.3m": {
           "A_position_pass_speed_fail": 3,
-          "B_narrow_position_fail": 8,
-          "C_moderate_position_fail": 22,
-          "D_large_tracking_failure": 69,
-          "E_safety_catastrophic": 5,
-          "PASS": 10
+          "B_narrow_position_fail": 3,
+          "C_moderate_position_fail": 12,
+          "D_large_tracking_failure": 43,
+          "E_safety_catastrophic": 4,
+          "PASS": 5
         },
-        "near_<=1m": {
-          "B_narrow_position_fail": 10,
+        "mid_0.9_to_1.3m": {
+          "B_narrow_position_fail": 7,
           "C_moderate_position_fail": 13,
           "D_large_tracking_failure": 43,
+          "E_safety_catastrophic": 1,
+          "PASS": 8
+        },
+        "near_<=0.9m": {
+          "B_narrow_position_fail": 8,
+          "C_moderate_position_fail": 10,
+          "D_large_tracking_failure": 26,
           "E_safety_catastrophic": 3,
-          "PASS": 14
+          "PASS": 11
         }
       },
       "failure_by_vertical_displacement": {
-        "low_<=0.5m": {
-          "A_position_pass_speed_fail": 2,
-          "B_narrow_position_fail": 18,
-          "C_moderate_position_fail": 30,
-          "D_large_tracking_failure": 104,
-          "E_safety_catastrophic": 8,
-          "PASS": 21
-        },
-        "mid_0.5_to_1m": {
+        "high_>0.35m": {
           "A_position_pass_speed_fail": 1,
-          "C_moderate_position_fail": 5,
-          "D_large_tracking_failure": 8,
-          "PASS": 3
+          "B_narrow_position_fail": 5,
+          "C_moderate_position_fail": 14,
+          "D_large_tracking_failure": 45,
+          "PASS": 7
+        },
+        "low_<=0.15m": {
+          "A_position_pass_speed_fail": 2,
+          "B_narrow_position_fail": 8,
+          "C_moderate_position_fail": 12,
+          "D_large_tracking_failure": 37,
+          "E_safety_catastrophic": 4,
+          "PASS": 11
+        },
+        "mid_0.15_to_0.35m": {
+          "B_narrow_position_fail": 5,
+          "C_moderate_position_fail": 9,
+          "D_large_tracking_failure": 30,
+          "E_safety_catastrophic": 4,
+          "PASS": 6
         }
       },
       "failure_by_wind_kind": {
@@ -154,13 +169,20 @@
       "success_count": 24,
       "success_rate": 0.12,
       "target_bin_case_counts": {
-        "mid_1_to_2m": {
-          "low_<=0.5m": 110,
-          "mid_0.5_to_1m": 7
+        "far_>1.3m": {
+          "high_>0.35m": 22,
+          "low_<=0.15m": 34,
+          "mid_0.15_to_0.35m": 14
         },
-        "near_<=1m": {
-          "low_<=0.5m": 73,
-          "mid_0.5_to_1m": 10
+        "mid_0.9_to_1.3m": {
+          "high_>0.35m": 29,
+          "low_<=0.15m": 22,
+          "mid_0.15_to_0.35m": 21
+        },
+        "near_<=0.9m": {
+          "high_>0.35m": 21,
+          "low_<=0.15m": 18,
+          "mid_0.15_to_0.35m": 19
         }
       }
     },
@@ -221,35 +243,49 @@
         }
       },
       "failure_by_horizontal_distance": {
-        "mid_1_to_2m": {
-          "A_position_pass_speed_fail": 11,
-          "B_narrow_position_fail": 15,
-          "C_moderate_position_fail": 26,
-          "D_large_tracking_failure": 41,
-          "PASS": 24
+        "far_>1.3m": {
+          "A_position_pass_speed_fail": 7,
+          "B_narrow_position_fail": 13,
+          "C_moderate_position_fail": 11,
+          "D_large_tracking_failure": 30,
+          "PASS": 9
         },
-        "near_<=1m": {
-          "A_position_pass_speed_fail": 9,
-          "B_narrow_position_fail": 10,
-          "C_moderate_position_fail": 8,
-          "D_large_tracking_failure": 25,
-          "PASS": 31
+        "mid_0.9_to_1.3m": {
+          "A_position_pass_speed_fail": 6,
+          "B_narrow_position_fail": 5,
+          "C_moderate_position_fail": 18,
+          "D_large_tracking_failure": 21,
+          "PASS": 22
+        },
+        "near_<=0.9m": {
+          "A_position_pass_speed_fail": 7,
+          "B_narrow_position_fail": 7,
+          "C_moderate_position_fail": 5,
+          "D_large_tracking_failure": 15,
+          "PASS": 24
         }
       },
       "failure_by_vertical_displacement": {
-        "low_<=0.5m": {
-          "A_position_pass_speed_fail": 19,
-          "B_narrow_position_fail": 23,
-          "C_moderate_position_fail": 33,
-          "D_large_tracking_failure": 60,
-          "PASS": 48
+        "high_>0.35m": {
+          "A_position_pass_speed_fail": 6,
+          "B_narrow_position_fail": 9,
+          "C_moderate_position_fail": 10,
+          "D_large_tracking_failure": 28,
+          "PASS": 19
         },
-        "mid_0.5_to_1m": {
-          "A_position_pass_speed_fail": 1,
-          "B_narrow_position_fail": 2,
-          "C_moderate_position_fail": 1,
-          "D_large_tracking_failure": 6,
-          "PASS": 7
+        "low_<=0.15m": {
+          "A_position_pass_speed_fail": 10,
+          "B_narrow_position_fail": 9,
+          "C_moderate_position_fail": 11,
+          "D_large_tracking_failure": 21,
+          "PASS": 23
+        },
+        "mid_0.15_to_0.35m": {
+          "A_position_pass_speed_fail": 4,
+          "B_narrow_position_fail": 7,
+          "C_moderate_position_fail": 13,
+          "D_large_tracking_failure": 17,
+          "PASS": 13
         }
       },
       "failure_by_wind_kind": {
@@ -309,13 +345,20 @@
       "success_count": 55,
       "success_rate": 0.275,
       "target_bin_case_counts": {
-        "mid_1_to_2m": {
-          "low_<=0.5m": 110,
-          "mid_0.5_to_1m": 7
+        "far_>1.3m": {
+          "high_>0.35m": 22,
+          "low_<=0.15m": 34,
+          "mid_0.15_to_0.35m": 14
         },
-        "near_<=1m": {
-          "low_<=0.5m": 73,
-          "mid_0.5_to_1m": 10
+        "mid_0.9_to_1.3m": {
+          "high_>0.35m": 29,
+          "low_<=0.15m": 22,
+          "mid_0.15_to_0.35m": 21
+        },
+        "near_<=0.9m": {
+          "high_>0.35m": 21,
+          "low_<=0.15m": 18,
+          "mid_0.15_to_0.35m": 19
         }
       }
     },
@@ -379,37 +422,51 @@
         }
       },
       "failure_by_horizontal_distance": {
-        "mid_1_to_2m": {
+        "far_>1.3m": {
           "A_position_pass_speed_fail": 1,
-          "B_narrow_position_fail": 14,
-          "C_moderate_position_fail": 15,
-          "D_large_tracking_failure": 64,
-          "E_safety_catastrophic": 12,
-          "PASS": 11
+          "B_narrow_position_fail": 7,
+          "C_moderate_position_fail": 7,
+          "D_large_tracking_failure": 41,
+          "E_safety_catastrophic": 9,
+          "PASS": 5
         },
-        "near_<=1m": {
-          "B_narrow_position_fail": 8,
-          "C_moderate_position_fail": 12,
-          "D_large_tracking_failure": 40,
-          "E_safety_catastrophic": 8,
-          "PASS": 15
+        "mid_0.9_to_1.3m": {
+          "B_narrow_position_fail": 10,
+          "C_moderate_position_fail": 10,
+          "D_large_tracking_failure": 38,
+          "E_safety_catastrophic": 6,
+          "PASS": 8
+        },
+        "near_<=0.9m": {
+          "B_narrow_position_fail": 5,
+          "C_moderate_position_fail": 10,
+          "D_large_tracking_failure": 25,
+          "E_safety_catastrophic": 5,
+          "PASS": 13
         }
       },
       "failure_by_vertical_displacement": {
-        "low_<=0.5m": {
-          "B_narrow_position_fail": 21,
-          "C_moderate_position_fail": 22,
-          "D_large_tracking_failure": 97,
-          "E_safety_catastrophic": 19,
-          "PASS": 24
-        },
-        "mid_0.5_to_1m": {
+        "high_>0.35m": {
           "A_position_pass_speed_fail": 1,
-          "B_narrow_position_fail": 1,
-          "C_moderate_position_fail": 5,
-          "D_large_tracking_failure": 7,
-          "E_safety_catastrophic": 1,
-          "PASS": 2
+          "B_narrow_position_fail": 8,
+          "C_moderate_position_fail": 11,
+          "D_large_tracking_failure": 40,
+          "E_safety_catastrophic": 6,
+          "PASS": 6
+        },
+        "low_<=0.15m": {
+          "B_narrow_position_fail": 8,
+          "C_moderate_position_fail": 8,
+          "D_large_tracking_failure": 37,
+          "E_safety_catastrophic": 8,
+          "PASS": 13
+        },
+        "mid_0.15_to_0.35m": {
+          "B_narrow_position_fail": 6,
+          "C_moderate_position_fail": 8,
+          "D_large_tracking_failure": 27,
+          "E_safety_catastrophic": 6,
+          "PASS": 7
         }
       },
       "failure_by_wind_kind": {
@@ -469,13 +526,20 @@
       "success_count": 26,
       "success_rate": 0.13,
       "target_bin_case_counts": {
-        "mid_1_to_2m": {
-          "low_<=0.5m": 110,
-          "mid_0.5_to_1m": 7
+        "far_>1.3m": {
+          "high_>0.35m": 22,
+          "low_<=0.15m": 34,
+          "mid_0.15_to_0.35m": 14
         },
-        "near_<=1m": {
-          "low_<=0.5m": 73,
-          "mid_0.5_to_1m": 10
+        "mid_0.9_to_1.3m": {
+          "high_>0.35m": 29,
+          "low_<=0.15m": 22,
+          "mid_0.15_to_0.35m": 21
+        },
+        "near_<=0.9m": {
+          "high_>0.35m": 21,
+          "low_<=0.15m": 18,
+          "mid_0.15_to_0.35m": 19
         }
       }
     }

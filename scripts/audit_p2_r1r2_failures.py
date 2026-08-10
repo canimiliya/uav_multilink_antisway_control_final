@@ -30,8 +30,10 @@ def target_bin(case: dict[str, Any]) -> tuple[str, str]:
     end = case["target"]["final_cutter_target_world_m"]
     horizontal = ((end[0] - start[0]) ** 2 + (end[1] - start[1]) ** 2) ** 0.5
     vertical = abs(end[2] - start[2])
-    h = "near_<=1m" if horizontal <= 1.0 else ("mid_1_to_2m" if horizontal <= 2.0 else "far_>2m")
-    v = "low_<=0.5m" if vertical <= 0.5 else ("mid_0.5_to_1m" if vertical <= 1.0 else "high_>1m")
+    # Fixed mission-relative bins spanning the frozen 0.55--1.71 m horizontal
+    # and 0.00--0.55 m vertical Development ranges.
+    h = "near_<=0.9m" if horizontal <= 0.9 else ("mid_0.9_to_1.3m" if horizontal <= 1.3 else "far_>1.3m")
+    v = "low_<=0.15m" if vertical <= 0.15 else ("mid_0.15_to_0.35m" if vertical <= 0.35 else "high_>0.35m")
     return h, v
 
 
