@@ -1,0 +1,32 @@
+{
+  "blocked_r1_head": "f1a7a20895687fd1167982ef852f4a7b952f7916",
+  "case_identity_frozen": true,
+  "case_semantics_complete": false,
+  "development_case_count": 200,
+  "development_identity_hash": "0f03df8fe11310f6357197a9d03b605476831c76db58f64d04e92535e6df9473",
+  "generic_runner_accepts_custom_disturbance": true,
+  "generic_runner_accepts_custom_reference": true,
+  "holdout_case_count": 140,
+  "holdout_identity_hash": "63e6192faf992494f5a78f4c008d844564b0015fc26b43a94a0c98da659b2538",
+  "manifest_uniquely_determines_physical_experiment": false,
+  "missing_semantics": [
+    "target_seed_to_world_coordinates",
+    "trajectory_seed_to_geometry_and_timing",
+    "wind_kind_seed_to_world_waveform",
+    "wind_direction_to_world_vector",
+    "wind_to_body_force_application"
+  ],
+  "native_stack_benchmark_v1_status": [
+    "ARCHITECTURE_VALIDATED",
+    "CASE_IDENTITY_FROZEN",
+    "CASE_SEMANTICS_INCOMPLETE",
+    "NOT_PERFORMANCE_AUTHORITATIVE"
+  ],
+  "old_holdout_accessed": false,
+  "provisional_performance_used_for_semantics": false,
+  "provisional_r1_smoke_authority": false,
+  "semantic_gap_confirmed": true,
+  "source_head": "cf3cdefc17a0bd14c08e7e869d9c2e77067ae25c",
+  "source_tag": "native-stack-benchmark-v1",
+  "task": "P2-R0S-NATIVE-CASE-SEMANTICS-RESOLVER-AND-BENCHMARK-V1_1-FREEZE-R1"
+}
