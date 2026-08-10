@@ -1,0 +1,17 @@
+{
+  "stage_b_attempts": [
+    {
+      "completed": false,
+      "performance_evidence_written": false,
+      "reason": "OpenBLAS memory allocation failure before first candidate completed",
+      "workers": 8
+    },
+    {
+      "blas_threads": 1,
+      "completed": true,
+      "performance_evidence_written": true,
+      "same_frozen_candidates_and_cases": true,
+      "workers": 4
+    }
+  ]
+}
