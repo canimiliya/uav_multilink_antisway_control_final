@@ -1,0 +1,13 @@
+{
+  "advanced_qualified": false,
+  "bootstrap": "NOT_RUN",
+  "equal_rate": "NOT_RUN",
+  "reason": "Traditional competence hard gate failed before SATC qualification",
+  "stage_a_complete": true,
+  "stage_a_selected": [
+    "satc_native_004",
+    "satc_native_012"
+  ],
+  "stage_b_role": "diagnostic_no_selection_authority",
+  "status": "NOT_FROZEN"
+}

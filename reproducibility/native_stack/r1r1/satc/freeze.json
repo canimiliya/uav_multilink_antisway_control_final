@@ -1,0 +1,83 @@
+{
+  "blocked_by_prior_gate": "BLOCKED_P2_TRADITIONAL_COMPETENCE",
+  "challengers": [
+    "satc_native_004",
+    "satc_native_012"
+  ],
+  "competence_pass": false,
+  "complete_development_cases": 200,
+  "family": "satc_native",
+  "incumbent": "satc_b_027+LegacyTaskLevelAdapter",
+  "metrics": {
+    "acquisition_time_s": 3.3049999999999997,
+    "case_count": 200,
+    "catastrophic_count": 0,
+    "deadline_miss_rate": 9.305555555555556e-05,
+    "endpoint_position_error_m": 1.100890983128411,
+    "endpoint_velocity_error_m_s": 0.6714488227018809,
+    "family": "satc_native",
+    "method_id": "satc_native_004",
+    "orientation_rmse_rad": 0.04206778277255202,
+    "physical_effort": 16881.67427146716,
+    "runtime_max_ms": 18.706,
+    "runtime_mean_ms": 0.09506495604166666,
+    "runtime_p95_ms": 0.13873,
+    "runtime_p99_ms": 0.18831202000000002,
+    "safety_rate": 1.0,
+    "setpoint_position_p90_m": 1.7083025590554763,
+    "setpoint_position_p95_m": 1.9238526402529852,
+    "setpoint_position_rmse_m": 1.068577967330866,
+    "strong_mean_m": 1.0843389464098214,
+    "strong_p90_m": 1.9273444653089038,
+    "success_rate": 0.135,
+    "thrust_saturation_rate": 0.0,
+    "tip_velocity_rmse_m_s": 0.3745578989443817,
+    "torque_saturation_rate": 0.0,
+    "trajectory_position_p90_m": 1.5702688948460157,
+    "trajectory_position_p95_m": 1.666824751558434,
+    "trajectory_position_rmse_m": 0.6723574596913684,
+    "wrench_rate_rms": 2.4585682820367785
+  },
+  "native_rate_hz": [
+    100,
+    500
+  ],
+  "selected": "satc_native_004",
+  "selected_spec": {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.8200000000000001,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.04
+    },
+    "method_id": "satc_native_004"
+  },
+  "selection_authority": false,
+  "status": "DIAGNOSTIC_STAGE_B_NOT_STACK_FREEZE",
+  "unique_configs": 16
+}

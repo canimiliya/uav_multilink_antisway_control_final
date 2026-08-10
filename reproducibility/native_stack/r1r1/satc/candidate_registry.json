@@ -1,0 +1,546 @@
+[
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.78,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.04
+    },
+    "method_id": "satc_native_000"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.78,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.215,
+        0.215,
+        0.215
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.07
+    },
+    "method_id": "satc_native_001"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.78,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.1
+    },
+    "method_id": "satc_native_002"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.78,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.28500000000000003,
+        0.28500000000000003,
+        0.28500000000000003
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.13
+    },
+    "method_id": "satc_native_003"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.8200000000000001,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.04
+    },
+    "method_id": "satc_native_004"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.8200000000000001,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.215,
+        0.215,
+        0.215
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.07
+    },
+    "method_id": "satc_native_005"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.8200000000000001,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.1
+    },
+    "method_id": "satc_native_006"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.8200000000000001,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.28500000000000003,
+        0.28500000000000003,
+        0.28500000000000003
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.13
+    },
+    "method_id": "satc_native_007"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.86,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.04
+    },
+    "method_id": "satc_native_008"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.86,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.215,
+        0.215,
+        0.215
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.07
+    },
+    "method_id": "satc_native_009"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.86,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.1
+    },
+    "method_id": "satc_native_010"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.86,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.28500000000000003,
+        0.28500000000000003,
+        0.28500000000000003
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.13
+    },
+    "method_id": "satc_native_011"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.9,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.04
+    },
+    "method_id": "satc_native_012"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.9,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.215,
+        0.215,
+        0.215
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.07
+    },
+    "method_id": "satc_native_013"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.9,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.1
+    },
+    "method_id": "satc_native_014"
+  },
+  {
+    "family": "satc_native",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.9,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.005,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.28500000000000003,
+        0.28500000000000003,
+        0.28500000000000003
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.13
+    },
+    "method_id": "satc_native_015"
+  }
+]

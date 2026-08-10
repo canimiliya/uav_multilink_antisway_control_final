@@ -1,0 +1,9 @@
+{
+  "case_count": 32,
+  "family": "satc_native",
+  "selected_for_stage_b": [
+    "satc_native_004",
+    "satc_native_012"
+  ],
+  "selection_rule": "frozen deterministic rank"
+}
