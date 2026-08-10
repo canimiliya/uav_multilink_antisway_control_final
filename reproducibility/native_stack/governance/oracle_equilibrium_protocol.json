@@ -1,0 +1,33 @@
+{
+  "version": "p2-r0g-equilibrium-reachability-certificate-v1",
+  "frozen_before_execution": true,
+  "purpose": "Certify final endpoint equilibrium and conservative rest-to-rest time reachability without relying on a feedback controller gain choice.",
+  "split": "Development only",
+  "case_count": 200,
+  "case_identity_changed": false,
+  "plant_changed": false,
+  "actuator_limits_changed": false,
+  "method": {
+    "endpoint": "bounded nonlinear least-squares equilibrium over five joint angles, roll, pitch, and the canonical four-axis wrench; residual is the frozen MuJoCo generalized acceleration under the case final wind",
+    "target_constraint": "translate the free base so the frozen cutter-tip site equals the exact final target",
+    "time_certificate": "rest-to-rest bang-bang lower-bound using 1.0 m/s^2 conservative translational authority plus two longest-link pendulum periods",
+    "wind": "exact final frozen Development wind sample through the frozen distributed aerodynamic model"
+  },
+  "bounds": {
+    "joint_angle_abs_deg": 99.0,
+    "roll_pitch_abs_deg": 24.0,
+    "thrust_N": [0.0, 285.74568],
+    "torque_Nm": [[-25.0, 25.0], [-25.0, 25.0], [-12.0, 12.0]]
+  },
+  "pass_conditions": {
+    "normalized_acceleration_residual_max": 0.001,
+    "endpoint_position_error_max_m": 0.000001,
+    "wrench_within_limits": true,
+    "SafetyV2_endpoint_geometry": true,
+    "certified_transition_time_le_available_time": true
+  },
+  "parameter_search": false,
+  "controller_baseline": false,
+  "selection_authority": "NONE",
+  "holdout_allowed": false
+}

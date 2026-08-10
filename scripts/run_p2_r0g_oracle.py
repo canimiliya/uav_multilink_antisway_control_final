@@ -77,7 +77,7 @@ def main():
         rows = list(pool.map(evaluate_oracle_case, identities, chunksize=1))
     rows.sort(key=lambda row: row["sample_id"])
     fieldnames = list(rows[0])
-    with (OUT / "oracle_development_results.csv").open("w", newline="", encoding="utf-8") as stream:
+    with (OUT / "oracle_dynamic_attempt_results.csv").open("w", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(stream, fieldnames=fieldnames)
         writer.writeheader()
         for row in rows:
@@ -85,7 +85,7 @@ def main():
             serialized["safety_reasons"] = json.dumps(serialized["safety_reasons"], separators=(",", ":"))
             serialized["max_requested_or_applied_torque_Nm"] = json.dumps(serialized["max_requested_or_applied_torque_Nm"], separators=(",", ":"))
             writer.writerow(serialized)
-    (OUT / "oracle_diagnostic.json").write_text(json.dumps(summary(rows), indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    (OUT / "oracle_dynamic_attempt.json").write_text(json.dumps(summary(rows), indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

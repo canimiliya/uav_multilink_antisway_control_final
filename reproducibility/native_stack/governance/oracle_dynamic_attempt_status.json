@@ -1,0 +1,10 @@
+{
+  "attempt": "p2-r0g-noncausal-oracle-v1",
+  "case_count": 200,
+  "evidence_preserved": true,
+  "mission_feasibility_conclusion_authority": false,
+  "reason": "The diagnostic law itself violated its certification preconditions: safety was 0.025, 195/200 cases failed through the oracle safety/authority path, maximum torque reached every actuator limit, and per-case torque saturation reached 0.6583333333333333. This distinguishes oracle implementation failure from plant infeasibility.",
+  "result": "ORACLE_IMPLEMENTATION_NOT_CERTIFYING",
+  "rerun_or_retuning_performed": false,
+  "selection_authority": "NONE"
+}

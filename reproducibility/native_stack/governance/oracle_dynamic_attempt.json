@@ -1,0 +1,126 @@
+{
+  "MISSION_ENVELOPE_STRUCTURAL_PROBLEM": true,
+  "all": {
+    "cases": 200,
+    "endpoint_position_error_mean_m": 3.4654276695360102,
+    "endpoint_velocity_error_mean_m_s": 0.7609965540156577,
+    "position_rmse_mean_m": 2.126185601418674,
+    "safety_rate": 0.025,
+    "success_rate": 0.005
+  },
+  "by_task_family": {
+    "setpoint": {
+      "cases": 100,
+      "endpoint_position_error_mean_m": 3.5338373740600293,
+      "endpoint_velocity_error_mean_m_s": 0.0953825383864244,
+      "position_rmse_mean_m": 2.5281484433017156,
+      "safety_rate": 0.0,
+      "success_rate": 0.0
+    },
+    "smooth_trajectory": {
+      "cases": 100,
+      "endpoint_position_error_mean_m": 3.39701796501199,
+      "endpoint_velocity_error_mean_m_s": 1.4266105696448912,
+      "position_rmse_mean_m": 1.7242227595356323,
+      "safety_rate": 0.05,
+      "success_rate": 0.01
+    }
+  },
+  "by_wind": {
+    "calm": {
+      "cases": 34,
+      "endpoint_position_error_mean_m": 2.6199451403194876,
+      "endpoint_velocity_error_mean_m_s": 0.5696204590293679,
+      "position_rmse_mean_m": 1.6756368269238688,
+      "safety_rate": 0.11764705882352941,
+      "success_rate": 0.029411764705882353
+    },
+    "moderate": {
+      "cases": 34,
+      "endpoint_position_error_mean_m": 3.3759238883383778,
+      "endpoint_velocity_error_mean_m_s": 1.1865062836999607,
+      "position_rmse_mean_m": 1.9096875739185137,
+      "safety_rate": 0.029411764705882353,
+      "success_rate": 0.0
+    },
+    "ramp": {
+      "cases": 32,
+      "endpoint_position_error_mean_m": 3.8308949437351636,
+      "endpoint_velocity_error_mean_m_s": 0.19463950552324868,
+      "position_rmse_mean_m": 2.622663662034099,
+      "safety_rate": 0.0,
+      "success_rate": 0.0
+    },
+    "stochastic": {
+      "cases": 32,
+      "endpoint_position_error_mean_m": 2.903887922212087,
+      "endpoint_velocity_error_mean_m_s": 1.2570735827292228,
+      "position_rmse_mean_m": 1.6498496709511394,
+      "safety_rate": 0.0,
+      "success_rate": 0.0
+    },
+    "strong_sustained": {
+      "cases": 34,
+      "endpoint_position_error_mean_m": 4.258938166451259,
+      "endpoint_velocity_error_mean_m_s": 0.2962996217460006,
+      "position_rmse_mean_m": 2.8474920042533864,
+      "safety_rate": 0.0,
+      "success_rate": 0.0
+    },
+    "strong_transient": {
+      "cases": 34,
+      "endpoint_position_error_mean_m": 3.791442281269994,
+      "endpoint_velocity_error_mean_m_s": 1.0577057525556255,
+      "position_rmse_mean_m": 2.0529687016162064,
+      "safety_rate": 0.0,
+      "success_rate": 0.0
+    }
+  },
+  "challenge": {
+    "cases": 100,
+    "endpoint_position_error_mean_m": 3.963015734220478,
+    "endpoint_velocity_error_mean_m_s": 0.5226464690299923,
+    "position_rmse_mean_m": 2.5054090118465733,
+    "safety_rate": 0.0,
+    "success_rate": 0.0
+  },
+  "controller_baseline": false,
+  "development_cases": 200,
+  "executed": true,
+  "execution_authority": "NONCAUSAL_DIAGNOSTIC_FEASIBILITY_ORACLE_NO_SELECTION_AUTHORITY",
+  "failure_mechanisms": {
+    "ENDPOINT_REACHED": 1,
+    "POSITION_AND_VELOCITY_ENDPOINT": 2,
+    "SAFETY_OR_AUTHORITY_LIMIT": 195,
+    "VELOCITY_ENDPOINT": 2
+  },
+  "holdout_executed": false,
+  "interpretation_rule": "<80% oracle endpoint success indicates a structural mission concern; >=80% supports physical reachability but does not validate any controller",
+  "max_true_external_force_N": 47.496504915744765,
+  "nominal": {
+    "cases": 100,
+    "endpoint_position_error_mean_m": 2.9678396048515414,
+    "endpoint_velocity_error_mean_m_s": 0.9993466390013229,
+    "position_rmse_mean_m": 1.7469621909907749,
+    "safety_rate": 0.05,
+    "success_rate": 0.01
+  },
+  "required_wrench": {
+    "max_abs_torque_Nm": [
+      25.0,
+      25.0,
+      12.0
+    ],
+    "max_abs_torque_limits_Nm": [
+      25.0,
+      25.0,
+      12.0
+    ],
+    "max_thrust_N": 171.42943342320626,
+    "max_thrust_limit_N": 285.74568,
+    "max_thrust_saturation_rate": 0.5688333333333333,
+    "max_torque_saturation_rate": 0.6583333333333333
+  },
+  "selection_authority": "NONE",
+  "version": "p2-r0g-oracle-diagnostic-v1"
+}
