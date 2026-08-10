@@ -1,0 +1,174 @@
+{
+  "actuator_dynamics_present": false,
+  "actuator_lag_present": false,
+  "actuator_rate_limits_present": false,
+  "all_physical_actuator_names": [
+    "rotor_motor_0",
+    "rotor_motor_1",
+    "rotor_motor_2",
+    "rotor_motor_3",
+    "thrust_motor",
+    "mx_motor",
+    "my_motor",
+    "mz_motor"
+  ],
+  "audit_complete": true,
+  "canonical_physical_api": "WrenchCommand[T,tau_x,tau_y,tau_z]",
+  "commanded_vs_applied": "direct MuJoCo motor with dyntype=none; clipped ctrl is actual applied actuator command",
+  "ctrlrange": {
+    "mx_motor": [
+      -25.0,
+      25.0
+    ],
+    "my_motor": [
+      -25.0,
+      25.0
+    ],
+    "mz_motor": [
+      -12.0,
+      12.0
+    ],
+    "rotor_motor_0": [
+      0.0,
+      10.0
+    ],
+    "rotor_motor_1": [
+      0.0,
+      10.0
+    ],
+    "rotor_motor_2": [
+      0.0,
+      10.0
+    ],
+    "rotor_motor_3": [
+      0.0,
+      10.0
+    ],
+    "thrust_motor": [
+      0.0,
+      285.74568
+    ]
+  },
+  "direct_wrench_limits": {
+    "thrust_N": [
+      0.0,
+      285.74568
+    ],
+    "torque_Nm": [
+      [
+        -25.0,
+        25.0
+      ],
+      [
+        -25.0,
+        25.0
+      ],
+      [
+        -12.0,
+        12.0
+      ]
+    ]
+  },
+  "dyntype": {
+    "mx_motor": 0,
+    "my_motor": 0,
+    "mz_motor": 0,
+    "rotor_motor_0": 0,
+    "rotor_motor_1": 0,
+    "rotor_motor_2": 0,
+    "rotor_motor_3": 0,
+    "thrust_motor": 0
+  },
+  "gear": {
+    "mx_motor": [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "my_motor": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "mz_motor": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "rotor_motor_0": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      -0.0249945776
+    ],
+    "rotor_motor_1": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0249945776
+    ],
+    "rotor_motor_2": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      -0.0249945776
+    ],
+    "rotor_motor_3": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0249945776
+    ],
+    "thrust_motor": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "historical_command_dimension": 4,
+  "historical_execution_actuators": [
+    "thrust_motor",
+    "mx_motor",
+    "my_motor",
+    "mz_motor"
+  ],
+  "model_path": "reproducibility/frozen/model/model_5link_controlled.xml",
+  "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "motor_dynamics_present": false,
+  "physics": {
+    "integrator": "RK4",
+    "rate_hz": 1000,
+    "timestep_s": 0.001
+  },
+  "plant_changed": false,
+  "source_head": "263e78859097592c4dfca5a86a6486606c1cb84f",
+  "source_tag": "v10-research-final-2026-08-10",
+  "timing": {
+    "geometric_inner_hz": 200,
+    "hold": "zero-order hold",
+    "legacy_outer_hz": 20,
+    "physics_hz": 1000,
+    "update_order": "sample -> due controller updates -> apply command -> integrate physics",
+    "wind_hz": 200
+  }
+}
