@@ -1,0 +1,14 @@
+{
+  "files": {
+    "adaptation_contract.json": "b669b1d0f1faca8ef33489eabb75fffd2b9fae52d31fb15fe91c4d260cbdd730",
+    "development_manifest.json": "b51d9958b706354867d593d61a93336c702561e1e3b3e9dfcd5488ced0886cc3",
+    "holdout_manifest.json": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+    "paper_source_audit.json": "1427a9555d17ad5cd2624badebf25d4915fb37691ac58baefa2db7610c508eaf",
+    "research_contract.json": "fc5c98281e99daca1631ea00e5c18344a83c391b51b9e0c645074b60d845fc58",
+    "search_contract.json": "baccee946cd9f17281c7f90c795ad3eabd7b8b6ca995d4d3fde515ec2f02a781",
+    "split_integrity.json": "b913a427d66e4666c1e5835abbcb7771ba9202f69c5e267507bc4da328675873",
+    "statistical_protocol.json": "f3f315a42e6024fba4e04c9270ba0eb31148bec14b21b53147b3c5232caee825",
+    "win_contract.json": "ee2be348f259f94772a98363aa2debe7cdaed617ada192dee07206fe005c56ee"
+  },
+  "performance_executed": false
+}

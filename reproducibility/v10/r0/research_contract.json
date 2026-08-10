@@ -1,0 +1,44 @@
+{
+  "task": "V10-FXTDO-MPC-RECENT-PAPER-STRONG-BASELINE-AND-FINAL-PROJECT-CLOSURE-R1",
+  "source_tag": "v9-research-final-2026-08-10",
+  "source_head": "46b4c31d45d427f790ef2978702552b5ee8235ab",
+  "branch": "research-v10",
+  "paper": "Liwen Xu et al., arXiv:2408.15019",
+  "adaptation": "XU-FXTDO-MPC-ADAPTED-5LINK",
+  "fidelity": "ADAPTED_NOT_EXACT_REPRODUCTION",
+  "FINAL_PREREGISTERED_EXTERNAL_PAPER_ROUTE": true,
+  "NO_AUTOMATIC_V11": true,
+  "selection_reason": "V6-V9 failure-driven: no pendulum reduction, modal payload controller, or offline predictor; paper natively estimates wind/payload/aerodynamic/model effects as a causal lumped disturbance and injects it into MPC.",
+  "frozen": {
+    "plant": "MuJoCo five-link",
+    "outer_rate_hz": 20.0,
+    "command": "world [ax,ay,az]",
+    "amplitude_per_axis": 2.0,
+    "slew_per_update": 0.25,
+    "geometric_inner_loop": true,
+    "traditional": [
+      "corrected_pid",
+      "full_lqr_048",
+      "task_lqr_009"
+    ],
+    "satc": "satc_b_027"
+  },
+  "forbidden": [
+    "V1-V9 mutation",
+    "Traditional retune",
+    "SATC retune",
+    "plant change",
+    "control-authority expansion",
+    "payload reduction",
+    "SATC proprietary mechanisms",
+    "Paper replacement",
+    "Holdout before Paper freeze"
+  ],
+  "development_failure": {
+    "result": "V10_FXTDO_MPC_NOT_STRONGER_THAN_TRADITIONAL",
+    "holdout_executed": false,
+    "project_complete": false,
+    "FINAL_EXTERNAL_PAPER_SEARCH_CLOSED": true,
+    "NO_V11": true
+  }
+}

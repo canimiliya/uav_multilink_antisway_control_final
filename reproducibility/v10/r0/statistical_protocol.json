@@ -1,0 +1,11 @@
+{
+  "pair_key": "sample_id",
+  "development_seed": 20260901,
+  "holdout_seed": 20260902,
+  "resamples": 10000,
+  "ci": [
+    0.025,
+    0.975
+  ],
+  "seed_hunting_forbidden": true
+}

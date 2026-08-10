@@ -1,0 +1,43 @@
+{
+  "title": "Fixed-Time Disturbance Observer-Based MPC Robust Trajectory Tracking Control of Quadrotor",
+  "authors": [
+    "Liwen Xu",
+    "Bailing Tian",
+    "Cong Wang",
+    "Junjie Lu",
+    "Dandan Wang",
+    "Zhiyu Li",
+    "Qun Zong"
+  ],
+  "primary_source": "arXiv:2408.15019v2",
+  "version_date": "2024-08-30",
+  "pdf_sha256": "cf497d3f6bb1a7322119ce42459de41af8d99f45b7c80582bc4ddf2d6864af97",
+  "tex_bundle_sha256": "93d61edf3e5fa29925bfa0e84c2465b3b025181e1ab5e6cc4127f4defbc0e44a",
+  "full_text_retrieved": true,
+  "tex_source_retrieved": true,
+  "performance_executed": false,
+  "equation_inventory": {
+    "quadrotor_dynamics": "Eqs. (1a)-(1d)",
+    "lumped_force": "Eq. (1b)",
+    "observer_system": "Eq. (5)",
+    "observer_states": "Eq. (6)",
+    "phi_1_phi_2": "Eq. (7)",
+    "observer_error": "Eq. (8)",
+    "fixed_time_conditions": "Eqs. (9), (20)-(22)",
+    "prediction_model": "Eqs. (23a)-(23c)",
+    "mpc_state_input": "Eqs. (24)-(25)",
+    "mpc_cost_constraints": "Eqs. (26)-(27)",
+    "indi": "Eqs. (30)-(33)"
+  },
+  "paper_parameters": {
+    "N": 10,
+    "dt_s": 0.1,
+    "k_i": 2.0,
+    "k_i_prime": 0.6,
+    "k_i_double_prime": 3.0,
+    "d_infinity": 0.3333333333333333,
+    "L1": 1.0,
+    "L2": 1.0
+  },
+  "paper_claimed_observer_convergence_s": 0.94
+}

@@ -1,0 +1,24 @@
+{
+  "primary_traditional": "full_lqr_048",
+  "pairs": 144,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260901,
+  "hard_gates": {
+    "safety_at_least_best_traditional": true,
+    "success_at_least_best_traditional": true,
+    "position_improvement_min": 0.05,
+    "acquisition_degradation_max": 0.05,
+    "paired_bootstrap_lower_gt": 0.0,
+    "strong_position_improvement_min": 0.05,
+    "strong_p90_degradation_max": 0.1,
+    "catastrophic_max": 0
+  },
+  "advanced_value_any": {
+    "acquisition_improvement_min": 0.05,
+    "orientation_improvement_min": 0.1,
+    "strong_mean_improvement_min": 0.1,
+    "effort_improvement_min": 0.1,
+    "runtime_improvement_vs_satc_min": 0.5
+  },
+  "selection_rule": "qualified first; then gate margin, position, strong P90, acquisition, orientation, effort, runtime, candidate_id"
+}

@@ -1,0 +1,38 @@
+{
+  "adaptation_name": "XU-FXTDO-MPC-ADAPTED-5LINK",
+  "fidelity": "ADAPTED_NOT_EXACT_REPRODUCTION",
+  "preserved": [
+    "multivariable FxTDO",
+    "fixed-time bi-homogeneous phi structure",
+    "causal lumped-disturbance estimate",
+    "constant disturbance injection over prediction horizon",
+    "receding-horizon constrained MPC"
+  ],
+  "adapted": [
+    "force observer mass-normalized to world acceleration",
+    "paper 10D p-v-q model replaced by frozen 20D five-link linear prediction model",
+    "trajectory cost replaced by frozen task-output C_task_v3",
+    "100 Hz source controller executed at fair 20 Hz"
+  ],
+  "omitted": [
+    "torque disturbance observer",
+    "INDI torque command",
+    "paper thrust/body-rate authority",
+    "differential-flatness reference generator"
+  ],
+  "omission_reason": "common benchmark grants only world acceleration and common geometric inner loop",
+  "runtime_inputs": [
+    "current/past UAV position",
+    "current/past UAV velocity",
+    "previous actual limited acceleration",
+    "current/past plant observation",
+    "current reference"
+  ],
+  "forbidden_runtime_inputs": [
+    "true wind",
+    "MuJoCo hidden forces",
+    "future state",
+    "future wind",
+    "SATC internals"
+  ]
+}

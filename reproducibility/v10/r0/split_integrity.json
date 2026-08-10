@@ -1,0 +1,12 @@
+{
+  "development_source": "reproducibility/v7/r0/development_manifest.json",
+  "development_sha256": "b51d9958b706354867d593d61a93336c702561e1e3b3e9dfcd5488ced0886cc3",
+  "development_samples": 144,
+  "holdout_source": "reproducibility/v7/r0/holdout_manifest.json",
+  "holdout_sha256": "3c903826ec0d6ba3ea0c941a07f7499f0863c38b8474a40c5acc2a1d14b87d65",
+  "holdout_samples": 112,
+  "V7_HOLDOUT_HASH_UNCHANGED": true,
+  "V8_HOLDOUT_EXECUTED": false,
+  "V9_HOLDOUT_EXECUTED": false,
+  "v10_holdout_executed": false
+}
