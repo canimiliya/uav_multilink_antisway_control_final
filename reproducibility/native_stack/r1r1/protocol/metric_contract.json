@@ -1,0 +1,44 @@
+{
+  "aggregation": "exact 200-case Development",
+  "definitions": {
+    "acquisition": "first time after issue at which position error <=0.50 m and speed <=0.50 m/s for 0.50 continuous seconds",
+    "catastrophic": "SafetyV2 failure or non-finite state/command",
+    "success": "safe and final tip position error <=0.50 m and final tip speed <=0.50 m/s"
+  },
+  "setpoint": [
+    "safety_rate",
+    "success_rate",
+    "tip_position_rmse_m",
+    "tip_position_p90_m",
+    "tip_position_p95_m",
+    "orientation_rmse_rad",
+    "acquisition_time_s",
+    "strong_mean_m",
+    "strong_p90_m",
+    "catastrophic_count"
+  ],
+  "smooth_trajectory": [
+    "safety_rate",
+    "tip_tracking_rmse_m",
+    "tracking_p90_m",
+    "tracking_p95_m",
+    "orientation_tracking_rmse_rad",
+    "tip_velocity_tracking_rmse_m_s",
+    "endpoint_position_error_m",
+    "endpoint_velocity_error_m_s",
+    "strong_wind_tracking_rmse_m",
+    "catastrophic_count"
+  ],
+  "system": [
+    "physical_effort",
+    "thrust_saturation_rate",
+    "torque_saturation_rate",
+    "wrench_rate_rms",
+    "runtime_mean_ms",
+    "runtime_p95_ms",
+    "runtime_p99_ms",
+    "runtime_max_ms",
+    "deadline_miss_rate"
+  ],
+  "version": "p2-r1r1-metrics-v1"
+}

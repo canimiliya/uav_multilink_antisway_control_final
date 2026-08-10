@@ -1,0 +1,29 @@
+{
+  "frozen_before_performance": true,
+  "rationale": "Thresholds follow the frozen 2 m mission geometry, 0.5 m task tolerance, SafetyV2 envelope, and real-time component periods; no performance result was inspected.",
+  "satc_advanced": {
+    "competence_required": true,
+    "deadline_miss_rate_max": 0.01,
+    "eligible_metrics": [
+      "setpoint_position",
+      "trajectory_tracking",
+      "strong_mean",
+      "strong_p90",
+      "acquisition"
+    ],
+    "meaningful_improvement_min_fraction": 0.05,
+    "no_catastrophic_regression": true,
+    "no_task_family_regression_max_fraction": 0.1,
+    "safety_not_below_primary": true,
+    "success_not_below_primary": true
+  },
+  "traditional": {
+    "catastrophic_count_max": 4,
+    "deadline_miss_rate_max": 0.01,
+    "safety_rate_min": 0.98,
+    "setpoint_rmse_max_m": 1.25,
+    "success_rate_min": 0.7,
+    "trajectory_rmse_max_m": 1.5
+  },
+  "version": "p2-r1r1-competence-v1"
+}

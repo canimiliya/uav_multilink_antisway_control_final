@@ -1,0 +1,15 @@
+{
+  "comparison": "SATC frozen stack minus Primary Native Traditional on exact paired Development cases",
+  "confidence_interval": 0.95,
+  "holdout_claim": false,
+  "method": "percentile paired bootstrap",
+  "resamples": 10000,
+  "seed": 20260810,
+  "subsets": [
+    "overall",
+    "setpoint",
+    "smooth_trajectory",
+    "strong"
+  ],
+  "version": "p2-r1r1-statistics-v1"
+}

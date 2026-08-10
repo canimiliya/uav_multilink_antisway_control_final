@@ -1,0 +1,76 @@
+{
+  "deadline": "component wall time strictly greater than its preregistered period",
+  "equal_rate_diagnostic": {
+    "case_ids": [
+      "native_development_000",
+      "native_development_001",
+      "native_development_002",
+      "native_development_003",
+      "native_development_004",
+      "native_development_005",
+      "native_development_006",
+      "native_development_007",
+      "native_development_008",
+      "native_development_009",
+      "native_development_010",
+      "native_development_011",
+      "native_development_012",
+      "native_development_013",
+      "native_development_014",
+      "native_development_015",
+      "native_development_016",
+      "native_development_017",
+      "native_development_018",
+      "native_development_019",
+      "native_development_020",
+      "native_development_021",
+      "native_development_022",
+      "native_development_023",
+      "native_development_024",
+      "native_development_025",
+      "native_development_026",
+      "native_development_027",
+      "native_development_028",
+      "native_development_029",
+      "native_development_030",
+      "native_development_031"
+    ],
+    "rate_hz": 100,
+    "retuning_allowed": false,
+    "selection_authority": false
+  },
+  "native_rate": {
+    "full_lqr": {
+      "inner": 500,
+      "outer": 100
+    },
+    "legacy_adapter": {
+      "inner": 200,
+      "outer": 20
+    },
+    "pid": {
+      "inner": 500,
+      "outer": 100
+    },
+    "satc_native": {
+      "inner": 500,
+      "optimizer": 100,
+      "outer": 100
+    },
+    "task_lqr": {
+      "inner": 500,
+      "outer": 100
+    }
+  },
+  "physics_hz": 1000,
+  "runtime_clock": "time.perf_counter_ns",
+  "supported_hz": [
+    20,
+    50,
+    100,
+    200,
+    500,
+    1000
+  ],
+  "version": "p2-r1r1-rate-v1"
+}

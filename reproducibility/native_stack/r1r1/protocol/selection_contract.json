@@ -1,0 +1,45 @@
+{
+  "envelope_metrics": [
+    "safety",
+    "success",
+    "setpoint",
+    "trajectory",
+    "acquisition",
+    "strong_mean",
+    "strong_p90",
+    "orientation",
+    "effort",
+    "runtime"
+  ],
+  "family_rule": {
+    "challenger_not_forced": true,
+    "competence_first": true,
+    "ordering": [
+      "safety_rate_desc",
+      "competence_pass_desc",
+      "success_rate_desc",
+      "setpoint_position_rmse_asc",
+      "trajectory_position_rmse_asc",
+      "strong_p90_asc",
+      "acquisition_time_asc",
+      "physical_effort_asc",
+      "runtime_p95_asc",
+      "method_id_asc"
+    ]
+  },
+  "incumbent_challenger_required": true,
+  "paper_may_not_change_primary": true,
+  "primary_traditional_rule": [
+    "competence_pass_desc",
+    "safety_rate_desc",
+    "success_rate_desc",
+    "setpoint_position_rmse_asc",
+    "trajectory_position_rmse_asc",
+    "strong_p90_asc",
+    "acquisition_time_asc",
+    "physical_effort_asc",
+    "runtime_p95_asc",
+    "method_id_asc"
+  ],
+  "version": "p2-r1r1-selection-v1"
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "competence_contract.json": "fe6a60560bca0bce4a68c586022490187ea1cddd786c1af5f606aab9bb0f37ec",
+    "metric_contract.json": "61254bb65c0ce7deb1a2fde21f9cb35c6b75ca219924a5c03ad74969171205e4",
+    "rate_contract.json": "dccf87f74cae7cf00b97d1dd3f4f55b3f54126023abe30687e356f07a157b641",
+    "research_contract.json": "6cc23c7196fb46e9fdc9f72937fe0dc33ad79bbacdde210b705495a47928f7a3",
+    "search_contract.json": "85d52995cc7a588e1821869a4d2806b14e638351d9787c2be47dd99f80a5fcc8",
+    "selection_contract.json": "5821870ee41ef774d34a5cc27b4cf3067db2ff1f74b9f029a40a7a0bdd318662",
+    "stage_a_manifest.json": "d9b2d0edd44cabe1da14707b7f3a69eddd015eb82280c37a01024f935df4998f",
+    "statistical_protocol.json": "cc3a9dc687782c5b1f6abcf244c22beb4d4fd091c072c214b83c21bd4064d2e6"
+  },
+  "performance_executed_at_freeze": false
+}

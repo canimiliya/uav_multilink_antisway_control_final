@@ -1,0 +1,44 @@
+{
+  "authoritative_runner": "AuthoritativeNativeCaseRunner",
+  "case_semantics": "native-case-semantics-v1",
+  "development_cases": 200,
+  "development_identity_hash": "0f03df8fe11310f6357197a9d03b605476831c76db58f64d04e92535e6df9473",
+  "development_resolved_hash": "0034d481a1abe04a46505410a557dc24815932c8a07cf96b08156c374d1aefe9",
+  "equal_rate_hz": 100,
+  "forbidden": [
+    "paper_search",
+    "paper_download",
+    "paper_implementation",
+    "paper_performance",
+    "holdout_execution",
+    "benchmark_semantic_changes",
+    "manifest_changes",
+    "V1-V10_changes"
+  ],
+  "holdout": {
+    "authoritative_runs": 0,
+    "compromised": false,
+    "executed": false,
+    "execution_allowed": false,
+    "permitted_audits": [
+      "hash",
+      "semantic_fingerprint"
+    ]
+  },
+  "holdout_cases": 140,
+  "holdout_identity_hash": "63e6192faf992494f5a78f4c008d844564b0015fc26b43a94a0c98da659b2538",
+  "holdout_resolved_hash": "4a4b5d92027760e0d37176b7f768746c690a4ca53236ec60224cd423d6582df0",
+  "paper_flags": {
+    "download": false,
+    "implementation": false,
+    "new_paper_selected": false,
+    "performance": false,
+    "search": false
+  },
+  "physical_command": "WrenchCommand[T,tau_x,tau_y,tau_z]",
+  "primary_mode": "NATIVE_RATE",
+  "source_head": "0498ad5336033b0c14550fe5324ed46826826c56",
+  "source_tag": "native-stack-benchmark-v1.1",
+  "supersedes_for_performance": "f7893659567911696f7219aa06300129d763845b",
+  "task": "P2-R1R1-NATIVE-TRADITIONAL-AND-SATC-BASELINE-DEVELOPMENT-FREEZE-R1"
+}

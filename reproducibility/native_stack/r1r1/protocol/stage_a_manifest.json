@@ -1,0 +1,64 @@
+{
+  "case_count": 32,
+  "case_ids": [
+    "native_development_000",
+    "native_development_001",
+    "native_development_002",
+    "native_development_003",
+    "native_development_004",
+    "native_development_005",
+    "native_development_006",
+    "native_development_007",
+    "native_development_008",
+    "native_development_009",
+    "native_development_010",
+    "native_development_011",
+    "native_development_012",
+    "native_development_013",
+    "native_development_014",
+    "native_development_015",
+    "native_development_016",
+    "native_development_017",
+    "native_development_018",
+    "native_development_019",
+    "native_development_020",
+    "native_development_021",
+    "native_development_022",
+    "native_development_023",
+    "native_development_024",
+    "native_development_025",
+    "native_development_026",
+    "native_development_027",
+    "native_development_028",
+    "native_development_029",
+    "native_development_030",
+    "native_development_031"
+  ],
+  "coverage": {
+    "task_family": [
+      "setpoint",
+      "smooth_trajectory"
+    ],
+    "trajectory_type": [
+      "step",
+      "minimum_jerk",
+      "approach_stop",
+      "waypoint_3d"
+    ],
+    "wind_direction": [
+      "aligned",
+      "opposed",
+      "cross"
+    ],
+    "wind_kind": [
+      "calm",
+      "moderate",
+      "strong_sustained",
+      "strong_transient",
+      "stochastic",
+      "ramp"
+    ]
+  },
+  "selection_authority": true,
+  "version": "p2-r1r1-stage-a-v1"
+}
