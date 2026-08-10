@@ -32,6 +32,10 @@ class NativeRunResult:
     inner_update_ticks: tuple[int, ...]
     final_qpos: np.ndarray
     final_qvel: np.ndarray
+    execution_authority: str = "DIAGNOSTIC_NON_AUTHORITATIVE"
+    sample_id: str | None = None
+    case_semantics_version: str | None = None
+    case_semantic_fingerprint: str | None = None
 
 
 class NativeStackRunner:
@@ -41,6 +45,8 @@ class NativeStackRunner:
     realization. The callback receives MuJoCo objects but is never exposed to
     the controller or SensorPacket.
     """
+
+    execution_authority = "DIAGNOSTIC_NON_AUTHORITATIVE"
 
     def __init__(self, model_path: str | Path) -> None:
         self.model_path = Path(model_path)

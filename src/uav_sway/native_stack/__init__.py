@@ -12,6 +12,7 @@ from .controller import AccelerationOuterStackAdapter, NativeStackController
 from .references import ApproachStopReference, MinimumJerkReference, WaypointReference
 from .scheduler import DeterministicMultiRateScheduler
 from .runner import NativeStackRunner
+from .case_semantics import AuthoritativeNativeCaseRunner, NativeCaseResolver, ResolvedNativeCase
 
 __all__ = [
     "AccelerationOuterStackAdapter",
@@ -23,6 +24,9 @@ __all__ = [
     "MinimumJerkReference",
     "NativeStackController",
     "NativeStackRunner",
+    "AuthoritativeNativeCaseRunner",
+    "NativeCaseResolver",
+    "ResolvedNativeCase",
     "ReferenceSample",
     "SensorPacket",
     "WaypointReference",

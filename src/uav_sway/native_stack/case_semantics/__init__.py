@@ -6,9 +6,12 @@ from .resolver import (
     ResolvedNativeCase,
     ResolvedReference,
 )
+from .authoritative import AUTHORITATIVE_EXECUTION, AuthoritativeNativeCaseRunner
 
 __all__ = [
     "NATIVE_CASE_SEMANTICS_VERSION",
+    "AUTHORITATIVE_EXECUTION",
+    "AuthoritativeNativeCaseRunner",
     "NativeCaseResolver",
     "ResolvedNativeCase",
     "ResolvedReference",
