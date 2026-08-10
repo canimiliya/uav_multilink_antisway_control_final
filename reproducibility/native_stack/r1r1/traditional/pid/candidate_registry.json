@@ -1,0 +1,410 @@
+[
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "ki": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "kp": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "swing_angle_gain": 0.0,
+      "swing_rate_gain": 0.04,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_000"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.55,
+        0.55,
+        0.55
+      ],
+      "ki": [
+        0.03,
+        0.03,
+        0.03
+      ],
+      "kp": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_001"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ki": [
+        0.04,
+        0.04,
+        0.04
+      ],
+      "kp": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "swing_angle_gain": 0.02,
+      "swing_rate_gain": 0.06,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_002"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "ki": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "kp": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "swing_angle_gain": 0.03,
+      "swing_rate_gain": 0.07,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_003"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "swing_angle_gain": 0.04,
+      "swing_rate_gain": 0.08,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_004"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "ki": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "kp": [
+        0.22,
+        0.22,
+        0.22
+      ],
+      "swing_angle_gain": 0.05,
+      "swing_rate_gain": 0.09,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_005"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ki": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "kp": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "swing_angle_gain": 0.04,
+      "swing_rate_gain": 0.08,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_006"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "ki": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "kp": [
+        0.28,
+        0.28,
+        0.28
+      ],
+      "swing_angle_gain": 0.05,
+      "swing_rate_gain": 0.09,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_007"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "ki": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "kp": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "swing_angle_gain": 0.06,
+      "swing_rate_gain": 0.1,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_008"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        1.05,
+        1.05,
+        1.05
+      ],
+      "ki": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "kp": [
+        0.32,
+        0.32,
+        0.32
+      ],
+      "swing_angle_gain": 0.07,
+      "swing_rate_gain": 0.11000000000000001,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_009"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "ki": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "kp": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "swing_angle_gain": 0.08,
+      "swing_rate_gain": 0.12,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_010"
+  },
+  {
+    "family": "native_pid",
+    "gains": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_outer_update": 0.1,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.85,
+      "integral_limit": 0.8,
+      "jerk_feedforward": 0.0,
+      "kd": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "ki": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "kp": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "swing_angle_gain": 0.06,
+      "swing_rate_gain": 0.1,
+      "tip_correction_kd": 0.02,
+      "tip_correction_kp": 0.05,
+      "tip_correction_limit_m": 0.15,
+      "transient_coordination": 0.0
+    },
+    "method_id": "native_pid_011"
+  }
+]
