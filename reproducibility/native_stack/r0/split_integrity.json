@@ -1,0 +1,50 @@
+{
+  "all_identity_intersections_empty": true,
+  "balance": {
+    "development_direction": {
+      "aligned": 72,
+      "cross": 60,
+      "opposed": 68
+    },
+    "development_task": {
+      "setpoint": 100,
+      "smooth_trajectory": 100
+    },
+    "development_wind": {
+      "calm": 34,
+      "moderate": 34,
+      "ramp": 32,
+      "stochastic": 32,
+      "strong_sustained": 34,
+      "strong_transient": 34
+    },
+    "holdout_direction": {
+      "aligned": 48,
+      "cross": 44,
+      "opposed": 48
+    },
+    "holdout_task": {
+      "setpoint": 70,
+      "smooth_trajectory": 70
+    },
+    "holdout_wind": {
+      "calm": 24,
+      "moderate": 24,
+      "ramp": 22,
+      "stochastic": 22,
+      "strong_sustained": 24,
+      "strong_transient": 24
+    }
+  },
+  "development_count": 200,
+  "future_information_leakage": false,
+  "holdout_count": 140,
+  "holdout_executed": false,
+  "holdout_execution_allowed": false,
+  "intersections": {
+    "target_id": [],
+    "timing_id": [],
+    "trajectory_seed": [],
+    "wind_seed": []
+  }
+}
