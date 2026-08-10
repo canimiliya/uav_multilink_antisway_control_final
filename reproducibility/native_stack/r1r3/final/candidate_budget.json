@@ -1,0 +1,23 @@
+{
+  "full_lqr_lqi": {
+    "full_200_candidates": 12,
+    "initial_configs": 24,
+    "local_configs": 24,
+    "total_new_configs": 48
+  },
+  "pid": {
+    "full_200_candidates": 12,
+    "initial_configs": 24,
+    "local_configs": 24,
+    "maximum": 64,
+    "total_new_configs": 48
+  },
+  "satc": {
+    "maximum_if_gate_opened": 96,
+    "new_configs": 0
+  },
+  "task_lqr": {
+    "maximum_optional": 24,
+    "new_configs": 0
+  }
+}

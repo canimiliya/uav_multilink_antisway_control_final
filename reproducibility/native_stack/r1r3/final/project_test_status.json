@@ -1,0 +1,23 @@
+{
+  "failed": 0,
+  "isolated_group_execution": {
+    "tests/native_stack": 36,
+    "tests/release": 4,
+    "tests/v10": 12,
+    "tests/v2": 56,
+    "tests/v3": 63,
+    "tests/v4": 25,
+    "tests/v5": 22,
+    "tests/v6": 20,
+    "tests/v7": 9,
+    "tests/v8": 11,
+    "tests/v9": 13
+  },
+  "monolithic_invocation": {
+    "action": "exact pytest process stopped after prolonged no-I/O wait; complete suite rerun by isolated test directories",
+    "status": "HARNESS_STALLED_NO_FAILURE_OUTPUT",
+    "used_as_project_failure": false
+  },
+  "passed": 271,
+  "warnings": "OSQP deprecation and pending-deprecation warnings only"
+}

@@ -1,0 +1,61 @@
+{
+  "entries": [
+    {
+      "path": "reproducibility/native_stack/r1r3/protocol/research_contract.json",
+      "sha256": "e848915e16a15758e3ee72ef1b22ae5a5f785f0520cdcedf0e0c3f081b0eca38"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/protocol/search_contract.json",
+      "sha256": "35488defda8582f29be3b7bb0ab5748fed8042480e2711e4e693df90dc5e3d17"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/protocol/selection_contract.json",
+      "sha256": "48042fc7d571a7a3f027dc3d059bfcfd511a71373261fd3d32544e41820db2f5"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/protocol/governance_reference.json",
+      "sha256": "296613705b23755ccd152052c477aa9d7b5b103a8582843d19d543fb5bcc28a5"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/protocol/candidate_import_audit.json",
+      "sha256": "52476c66c5a60b4511680a0bb6ecc646be387e1f16e97b0ed4c73725c88d900b"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/protocol/stage_a_manifest.json",
+      "sha256": "ef33701c31ed0e345cc9fc29c55ed5265b20422888d2991be4d59d708fcc1411"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/protocol/statistical_protocol.json",
+      "sha256": "15c221c004a3d485763c7e58a53d89c1274ab8d4539b5a34e5745d67f9f52dad"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/recovery_protocol/local_recovery_contract.json",
+      "sha256": "9ad671a400ed2677367645261c9232e96367710f938701d47fba913fc1030ca3"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/recovery_protocol/local_recovery_diagnosis.json",
+      "sha256": "0bc9e5424d20f1e3d83ef7a69b1540267683063f92692f537a8ba21106a06421"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/traditional/pid/local_development_summary.csv",
+      "sha256": "cbcd5d2d6c2e3f41d1c51fae2c0f68a16302ba95021814c83a35094ecbb93c04"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/traditional/full_lqr/local_development_summary.csv",
+      "sha256": "21947c3ede0b4644bf3bce22b3f249c9dbf1a4fe6204a13b4e6d9ae8bf547322"
+    },
+    {
+      "path": "docs/native_stack/r1r3/P2_R1R3_FINAL_REPORT.md",
+      "sha256": "8b7ef59016d68c3f9baeb2ae06af24f889cfbf066c6f5de395b58bcb4dd0c411"
+    },
+    {
+      "path": "docs/native_stack/r1r3/TRADITIONAL_QUALIFICATION_FAILURE_BOUNDARY.md",
+      "sha256": "1d80fcc4b7a28126ee61717b6d4cdc49fd6336ba4be500db8cd48a40c9ffcbef"
+    },
+    {
+      "path": "reproducibility/native_stack/r1r3/final/project_test_status.json",
+      "sha256": "4e453b6581346dc119b0ec4434f22449f06228d1dcd305b268b3168bb5677fb0"
+    }
+  ],
+  "holdout_performance_evidence_included": false
+}

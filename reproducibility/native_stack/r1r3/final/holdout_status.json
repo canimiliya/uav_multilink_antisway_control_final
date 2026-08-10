@@ -1,0 +1,9 @@
+{
+  "authoritative_runs": 0,
+  "compromised": false,
+  "executed": false,
+  "execution_allowed": false,
+  "manifest_path": "reproducibility/native_stack/r0s/resolved_holdout_manifest.json",
+  "manifest_sha256": "ac8e7bd84997bca42cc3a0e7e2c406b852e8df69910247db408a0f6fb4747cc8",
+  "performance_fields_read": false
+}
