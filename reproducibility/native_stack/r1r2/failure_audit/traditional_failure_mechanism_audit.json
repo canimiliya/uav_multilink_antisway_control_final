@@ -1,0 +1,495 @@
+{
+  "development_identity_hash": "0f03df8fe11310f6357197a9d03b605476831c76db58f64d04e92535e6df9473",
+  "development_resolved_hash": "0034d481a1abe04a46505410a557dc24815932c8a07cf96b08156c374d1aefe9",
+  "families": {
+    "native_full_lqr": {
+      "by_task_family": {
+        "setpoint": {
+          "A_position_pass_speed_fail": 2,
+          "B_narrow_position_fail": 9,
+          "C_moderate_position_fail": 17,
+          "D_large_tracking_failure": 54,
+          "E_safety_catastrophic": 4,
+          "PASS": 14
+        },
+        "smooth_trajectory": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 9,
+          "C_moderate_position_fail": 18,
+          "D_large_tracking_failure": 58,
+          "E_safety_catastrophic": 4,
+          "PASS": 10
+        }
+      },
+      "by_wind_kind": {
+        "calm": 34,
+        "moderate": 34,
+        "ramp": 32,
+        "stochastic": 32,
+        "strong_sustained": 34,
+        "strong_transient": 34
+      },
+      "case_count": 200,
+      "endpoint_gate_decomposition": {
+        "both_fail": 85,
+        "both_fail_fraction": 0.425,
+        "position_fail_speed_pass": 88,
+        "position_fail_speed_pass_fraction": 0.44,
+        "position_pass_speed_fail": 3,
+        "position_pass_speed_fail_fraction": 0.015
+      },
+      "failure_by_direction": {
+        "aligned": {
+          "B_narrow_position_fail": 6,
+          "C_moderate_position_fail": 14,
+          "D_large_tracking_failure": 40,
+          "E_safety_catastrophic": 3,
+          "PASS": 9
+        },
+        "cross": {
+          "A_position_pass_speed_fail": 2,
+          "B_narrow_position_fail": 6,
+          "C_moderate_position_fail": 11,
+          "D_large_tracking_failure": 35,
+          "E_safety_catastrophic": 2,
+          "PASS": 4
+        },
+        "opposed": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 6,
+          "C_moderate_position_fail": 10,
+          "D_large_tracking_failure": 37,
+          "E_safety_catastrophic": 3,
+          "PASS": 11
+        }
+      },
+      "failure_by_horizontal_distance": {
+        "mid_1_to_2m": {
+          "A_position_pass_speed_fail": 3,
+          "B_narrow_position_fail": 8,
+          "C_moderate_position_fail": 22,
+          "D_large_tracking_failure": 69,
+          "E_safety_catastrophic": 5,
+          "PASS": 10
+        },
+        "near_<=1m": {
+          "B_narrow_position_fail": 10,
+          "C_moderate_position_fail": 13,
+          "D_large_tracking_failure": 43,
+          "E_safety_catastrophic": 3,
+          "PASS": 14
+        }
+      },
+      "failure_by_vertical_displacement": {
+        "low_<=0.5m": {
+          "A_position_pass_speed_fail": 2,
+          "B_narrow_position_fail": 18,
+          "C_moderate_position_fail": 30,
+          "D_large_tracking_failure": 104,
+          "E_safety_catastrophic": 8,
+          "PASS": 21
+        },
+        "mid_0.5_to_1m": {
+          "A_position_pass_speed_fail": 1,
+          "C_moderate_position_fail": 5,
+          "D_large_tracking_failure": 8,
+          "PASS": 3
+        }
+      },
+      "failure_by_wind_kind": {
+        "calm": {
+          "B_narrow_position_fail": 8,
+          "C_moderate_position_fail": 11,
+          "PASS": 15
+        },
+        "moderate": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 1,
+          "C_moderate_position_fail": 3,
+          "D_large_tracking_failure": 27,
+          "PASS": 2
+        },
+        "ramp": {
+          "C_moderate_position_fail": 1,
+          "D_large_tracking_failure": 31
+        },
+        "stochastic": {
+          "A_position_pass_speed_fail": 2,
+          "B_narrow_position_fail": 7,
+          "C_moderate_position_fail": 12,
+          "D_large_tracking_failure": 5,
+          "PASS": 6
+        },
+        "strong_sustained": {
+          "D_large_tracking_failure": 26,
+          "E_safety_catastrophic": 8
+        },
+        "strong_transient": {
+          "B_narrow_position_fail": 2,
+          "C_moderate_position_fail": 8,
+          "D_large_tracking_failure": 23,
+          "PASS": 1
+        }
+      },
+      "failure_class_distribution": {
+        "A_position_pass_speed_fail": 3,
+        "B_narrow_position_fail": 18,
+        "C_moderate_position_fail": 35,
+        "D_large_tracking_failure": 112,
+        "E_safety_catastrophic": 8,
+        "PASS": 24
+      },
+      "final_position_error_distribution": {
+        "0.5_to_0.75": 18,
+        "0.75_to_1.0": 14,
+        "1.0_to_1.5": 21,
+        "<=0.5": 27,
+        ">1.5": 120
+      },
+      "r1r1_freeze_sha256": "4f7254fdec784b4fe22c600b882731bf8cd6d5875621b3bfec2d7910d6cc8df3",
+      "r1r1_results_sha256": "159d7feebf12001b8d9c31e04606f1fc75b2daa8f67c545df6c76ddc04180a29",
+      "safe_count": 192,
+      "safety_rate": 0.96,
+      "selected_method": "native_full_lqr_006",
+      "success_count": 24,
+      "success_rate": 0.12,
+      "target_bin_case_counts": {
+        "mid_1_to_2m": {
+          "low_<=0.5m": 110,
+          "mid_0.5_to_1m": 7
+        },
+        "near_<=1m": {
+          "low_<=0.5m": 73,
+          "mid_0.5_to_1m": 10
+        }
+      }
+    },
+    "native_pid": {
+      "by_task_family": {
+        "setpoint": {
+          "A_position_pass_speed_fail": 2,
+          "B_narrow_position_fail": 17,
+          "C_moderate_position_fail": 22,
+          "D_large_tracking_failure": 33,
+          "PASS": 26
+        },
+        "smooth_trajectory": {
+          "A_position_pass_speed_fail": 18,
+          "B_narrow_position_fail": 8,
+          "C_moderate_position_fail": 12,
+          "D_large_tracking_failure": 33,
+          "PASS": 29
+        }
+      },
+      "by_wind_kind": {
+        "calm": 34,
+        "moderate": 34,
+        "ramp": 32,
+        "stochastic": 32,
+        "strong_sustained": 34,
+        "strong_transient": 34
+      },
+      "case_count": 200,
+      "endpoint_gate_decomposition": {
+        "both_fail": 57,
+        "both_fail_fraction": 0.285,
+        "position_fail_speed_pass": 68,
+        "position_fail_speed_pass_fraction": 0.34,
+        "position_pass_speed_fail": 20,
+        "position_pass_speed_fail_fraction": 0.1
+      },
+      "failure_by_direction": {
+        "aligned": {
+          "A_position_pass_speed_fail": 13,
+          "B_narrow_position_fail": 12,
+          "C_moderate_position_fail": 6,
+          "D_large_tracking_failure": 23,
+          "PASS": 18
+        },
+        "cross": {
+          "A_position_pass_speed_fail": 7,
+          "B_narrow_position_fail": 4,
+          "C_moderate_position_fail": 15,
+          "D_large_tracking_failure": 20,
+          "PASS": 14
+        },
+        "opposed": {
+          "B_narrow_position_fail": 9,
+          "C_moderate_position_fail": 13,
+          "D_large_tracking_failure": 23,
+          "PASS": 23
+        }
+      },
+      "failure_by_horizontal_distance": {
+        "mid_1_to_2m": {
+          "A_position_pass_speed_fail": 11,
+          "B_narrow_position_fail": 15,
+          "C_moderate_position_fail": 26,
+          "D_large_tracking_failure": 41,
+          "PASS": 24
+        },
+        "near_<=1m": {
+          "A_position_pass_speed_fail": 9,
+          "B_narrow_position_fail": 10,
+          "C_moderate_position_fail": 8,
+          "D_large_tracking_failure": 25,
+          "PASS": 31
+        }
+      },
+      "failure_by_vertical_displacement": {
+        "low_<=0.5m": {
+          "A_position_pass_speed_fail": 19,
+          "B_narrow_position_fail": 23,
+          "C_moderate_position_fail": 33,
+          "D_large_tracking_failure": 60,
+          "PASS": 48
+        },
+        "mid_0.5_to_1m": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 2,
+          "C_moderate_position_fail": 1,
+          "D_large_tracking_failure": 6,
+          "PASS": 7
+        }
+      },
+      "failure_by_wind_kind": {
+        "calm": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 5,
+          "C_moderate_position_fail": 3,
+          "PASS": 25
+        },
+        "moderate": {
+          "A_position_pass_speed_fail": 6,
+          "B_narrow_position_fail": 7,
+          "C_moderate_position_fail": 14,
+          "D_large_tracking_failure": 2,
+          "PASS": 5
+        },
+        "ramp": {
+          "C_moderate_position_fail": 1,
+          "D_large_tracking_failure": 31
+        },
+        "stochastic": {
+          "B_narrow_position_fail": 6,
+          "C_moderate_position_fail": 8,
+          "D_large_tracking_failure": 1,
+          "PASS": 17
+        },
+        "strong_sustained": {
+          "C_moderate_position_fail": 2,
+          "D_large_tracking_failure": 32
+        },
+        "strong_transient": {
+          "A_position_pass_speed_fail": 13,
+          "B_narrow_position_fail": 7,
+          "C_moderate_position_fail": 6,
+          "PASS": 8
+        }
+      },
+      "failure_class_distribution": {
+        "A_position_pass_speed_fail": 20,
+        "B_narrow_position_fail": 25,
+        "C_moderate_position_fail": 34,
+        "D_large_tracking_failure": 66,
+        "PASS": 55
+      },
+      "final_position_error_distribution": {
+        "0.5_to_0.75": 25,
+        "0.75_to_1.0": 17,
+        "1.0_to_1.5": 17,
+        "<=0.5": 75,
+        ">1.5": 66
+      },
+      "r1r1_freeze_sha256": "402320e81c2c1ef3cfc9e1fb6dfe518d43cac07488df5e95842d4b5eec328adf",
+      "r1r1_results_sha256": "364d99e6beb3fb7270a4bb742fa5a97be964de3d91494ad3217712c88f64ec4e",
+      "safe_count": 200,
+      "safety_rate": 1.0,
+      "selected_method": "native_pid_001",
+      "success_count": 55,
+      "success_rate": 0.275,
+      "target_bin_case_counts": {
+        "mid_1_to_2m": {
+          "low_<=0.5m": 110,
+          "mid_0.5_to_1m": 7
+        },
+        "near_<=1m": {
+          "low_<=0.5m": 73,
+          "mid_0.5_to_1m": 10
+        }
+      }
+    },
+    "native_task_lqr": {
+      "by_task_family": {
+        "setpoint": {
+          "B_narrow_position_fail": 12,
+          "C_moderate_position_fail": 11,
+          "D_large_tracking_failure": 51,
+          "E_safety_catastrophic": 10,
+          "PASS": 16
+        },
+        "smooth_trajectory": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 10,
+          "C_moderate_position_fail": 16,
+          "D_large_tracking_failure": 53,
+          "E_safety_catastrophic": 10,
+          "PASS": 10
+        }
+      },
+      "by_wind_kind": {
+        "calm": 34,
+        "moderate": 34,
+        "ramp": 32,
+        "stochastic": 32,
+        "strong_sustained": 34,
+        "strong_transient": 34
+      },
+      "case_count": 200,
+      "endpoint_gate_decomposition": {
+        "both_fail": 56,
+        "both_fail_fraction": 0.28,
+        "position_fail_speed_pass": 117,
+        "position_fail_speed_pass_fraction": 0.585,
+        "position_pass_speed_fail": 1,
+        "position_pass_speed_fail_fraction": 0.005
+      },
+      "failure_by_direction": {
+        "aligned": {
+          "B_narrow_position_fail": 5,
+          "C_moderate_position_fail": 10,
+          "D_large_tracking_failure": 38,
+          "E_safety_catastrophic": 9,
+          "PASS": 10
+        },
+        "cross": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 7,
+          "C_moderate_position_fail": 8,
+          "D_large_tracking_failure": 31,
+          "E_safety_catastrophic": 6,
+          "PASS": 7
+        },
+        "opposed": {
+          "B_narrow_position_fail": 10,
+          "C_moderate_position_fail": 9,
+          "D_large_tracking_failure": 35,
+          "E_safety_catastrophic": 5,
+          "PASS": 9
+        }
+      },
+      "failure_by_horizontal_distance": {
+        "mid_1_to_2m": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 14,
+          "C_moderate_position_fail": 15,
+          "D_large_tracking_failure": 64,
+          "E_safety_catastrophic": 12,
+          "PASS": 11
+        },
+        "near_<=1m": {
+          "B_narrow_position_fail": 8,
+          "C_moderate_position_fail": 12,
+          "D_large_tracking_failure": 40,
+          "E_safety_catastrophic": 8,
+          "PASS": 15
+        }
+      },
+      "failure_by_vertical_displacement": {
+        "low_<=0.5m": {
+          "B_narrow_position_fail": 21,
+          "C_moderate_position_fail": 22,
+          "D_large_tracking_failure": 97,
+          "E_safety_catastrophic": 19,
+          "PASS": 24
+        },
+        "mid_0.5_to_1m": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 1,
+          "C_moderate_position_fail": 5,
+          "D_large_tracking_failure": 7,
+          "E_safety_catastrophic": 1,
+          "PASS": 2
+        }
+      },
+      "failure_by_wind_kind": {
+        "calm": {
+          "B_narrow_position_fail": 9,
+          "C_moderate_position_fail": 8,
+          "PASS": 17
+        },
+        "moderate": {
+          "B_narrow_position_fail": 3,
+          "C_moderate_position_fail": 1,
+          "D_large_tracking_failure": 28,
+          "PASS": 2
+        },
+        "ramp": {
+          "C_moderate_position_fail": 1,
+          "D_large_tracking_failure": 31
+        },
+        "stochastic": {
+          "A_position_pass_speed_fail": 1,
+          "B_narrow_position_fail": 9,
+          "C_moderate_position_fail": 12,
+          "D_large_tracking_failure": 4,
+          "PASS": 6
+        },
+        "strong_sustained": {
+          "D_large_tracking_failure": 14,
+          "E_safety_catastrophic": 20
+        },
+        "strong_transient": {
+          "B_narrow_position_fail": 1,
+          "C_moderate_position_fail": 5,
+          "D_large_tracking_failure": 27,
+          "PASS": 1
+        }
+      },
+      "failure_class_distribution": {
+        "A_position_pass_speed_fail": 1,
+        "B_narrow_position_fail": 22,
+        "C_moderate_position_fail": 27,
+        "D_large_tracking_failure": 104,
+        "E_safety_catastrophic": 20,
+        "PASS": 26
+      },
+      "final_position_error_distribution": {
+        "0.5_to_0.75": 22,
+        "0.75_to_1.0": 12,
+        "1.0_to_1.5": 15,
+        "<=0.5": 27,
+        ">1.5": 124
+      },
+      "r1r1_freeze_sha256": "07e06de8105c7cbd99f00283049968f04a737c1e914b466ac5a4b25d1ac4e966",
+      "r1r1_results_sha256": "db8d18d6b6b09a680a3c1d86efb22a99aefee9716394b4ef3b7b56d013478f86",
+      "safe_count": 180,
+      "safety_rate": 0.9,
+      "selected_method": "native_task_lqr_004",
+      "success_count": 26,
+      "success_rate": 0.13,
+      "target_bin_case_counts": {
+        "mid_1_to_2m": {
+          "low_<=0.5m": 110,
+          "mid_0.5_to_1m": 7
+        },
+        "near_<=1m": {
+          "low_<=0.5m": 73,
+          "mid_0.5_to_1m": 10
+        }
+      }
+    }
+  },
+  "mechanism_conclusions": {
+    "architecture_action": "expand causal PID servo/feedforward and LQI/LQT augmentation; do not change plant, benchmark, metrics, or competence gates",
+    "native_full_lqr_primary_failure": "servo/reference architecture: hover stabilization is valid but static LQR tracking lacks integral task regulation",
+    "native_pid_primary_failure": "endpoint regulation, dominated by position failure rather than safety or deadline failure",
+    "native_task_lqr_primary_failure": "task endpoint regulation and trajectory feedforward: native safety improved while tracking authority/servo structure remained insufficient",
+    "setpoint": "steady-state endpoint regulation, trim allocation, and integral action dominate",
+    "smooth_trajectory": "reference velocity/acceleration feedforward and causal task tracking dominate"
+  },
+  "new_controller_executions": 0,
+  "resolved_manifest_sha256": "eccf9411ba5de7f04bc8ceece8b369b913de0a6d41ad7dd2132554b9a965f80b",
+  "source": "P2-R1R1 frozen Development evidence only",
+  "task": "P2-R1R2 failure mechanism audit"
+}
