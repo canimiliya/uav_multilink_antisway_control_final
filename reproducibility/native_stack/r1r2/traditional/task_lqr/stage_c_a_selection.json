@@ -1,0 +1,13 @@
+{
+  "case_count": 48,
+  "family": "native_task_lqr",
+  "selected_for_stage_c_b": [
+    "r1r2_task_lqr_c_0_11",
+    "r1r2_task_lqr_c_0_09",
+    "r1r2_task_lqr_c_0_08",
+    "r1r2_task_lqr_c_1_13",
+    "r1r2_task_lqr_c_0_15",
+    "r1r2_task_lqr_c_0_04"
+  ],
+  "selection_rule": "frozen R1R2 Stage-A lexicographic rule"
+}
