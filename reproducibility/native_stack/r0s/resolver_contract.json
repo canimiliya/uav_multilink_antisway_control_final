@@ -1,0 +1,17 @@
+{
+  "deterministic": true,
+  "development_holdout_algorithm_identical": true,
+  "frames": {
+    "position": "world",
+    "wind": "world"
+  },
+  "physics_rate_hz": 1000,
+  "provisional_performance_used_for_semantics": false,
+  "pure": true,
+  "resolver": "uav_sway.native_stack.case_semantics.NativeCaseResolver",
+  "resolver_implementation_sha": "24b8862cc45f46b1f2819269c3c1947fffa0c83d",
+  "rng": "numpy.PCG64",
+  "units": "SI",
+  "version": "native-case-semantics-v1",
+  "wind_rate_hz": 200
+}

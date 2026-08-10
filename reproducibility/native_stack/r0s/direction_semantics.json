@@ -1,0 +1,8 @@
+{
+  "aligned": "+base",
+  "all_vectors_unit_horizontal": true,
+  "base": "normalized horizontal task net displacement",
+  "cross": "deterministic +/-90 degree world-z rotation; sign from wind_seed parity",
+  "near_zero_or_vertical_dominant_fallback": "PCG64(wind_seed) horizontal azimuth",
+  "opposed": "-base"
+}

@@ -1,0 +1,13 @@
+{
+  "controller_performance_runs": 0,
+  "custom_disturbance_allowed": false,
+  "custom_reference_allowed": false,
+  "diagnostic_generic_runner_preserved": true,
+  "fingerprint_required": true,
+  "formal_signature": "run_case(controller, resolved_case)",
+  "generic_runner_authority": "DIAGNOSTIC_NON_AUTHORITATIVE",
+  "holdout_execution_rejected": true,
+  "implementation": "uav_sway.native_stack.case_semantics.AuthoritativeNativeCaseRunner",
+  "implementation_head": "d751b02b72bf413287ee7da8e925654207cf6821",
+  "validated": true
+}

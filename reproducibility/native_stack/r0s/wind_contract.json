@@ -1,0 +1,39 @@
+{
+  "calm": {
+    "magnitude_m_s": 0.0,
+    "waveform": "zero"
+  },
+  "moderate": {
+    "magnitude_m_s": 1.5,
+    "onset_s": 4.0,
+    "waveform": "constant"
+  },
+  "ramp": {
+    "final_m_s": 3.0,
+    "onset_s": 4.0,
+    "ramp_duration_s": 3.0,
+    "waveform": "linear_then_hold"
+  },
+  "same_algorithm_both_splits": true,
+  "stochastic": {
+    "clip_abs_m_s": 3.0,
+    "initial_m_s": 0.0,
+    "interpolation": "ZOH",
+    "mean_m_s": 0.0,
+    "rng": "numpy.PCG64",
+    "sample_rate_hz": 200,
+    "sigma_m_s": 0.8,
+    "tau_s": 1.0
+  },
+  "strong_sustained": {
+    "magnitude_m_s": 3.0,
+    "onset_s": 4.0,
+    "waveform": "constant"
+  },
+  "strong_transient": {
+    "duration_s": 2.0,
+    "onset_s": 5.0,
+    "peak_m_s": 3.0,
+    "waveform": "one_cosine"
+  }
+}

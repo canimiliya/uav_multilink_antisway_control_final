@@ -1,0 +1,52 @@
+{
+  "all_required_gates_pass": true,
+  "branch": "platform/native-stack-v1.1-semantics",
+  "controller_performance": {
+    "authoritative_runs": 0,
+    "executed": false
+  },
+  "gates": {
+    "ALL_340_CASES_RESOLVED": true,
+    "AUTHORITATIVE_RUNNER_VALIDATED": true,
+    "BLOCKED_R1_HISTORY_PRESERVED": true,
+    "DIRECTION_SEMANTICS_FROZEN": true,
+    "GOLDEN_CASES_PASS": true,
+    "IDENTITY_MANIFESTS_UNCHANGED": true,
+    "NATIVE_HOLDOUT_EXECUTED": false,
+    "NO_CONTROLLER_PERFORMANCE": true,
+    "PROJECT_TESTS_PASS": true,
+    "RESOLVED_SPLIT_INTEGRITY": true,
+    "SEMANTIC_GAP_CONFIRMED": true,
+    "TARGET_RESOLVER_FROZEN": true,
+    "TRAJECTORY_RESOLVER_FROZEN": true,
+    "V1_V10_UNCHANGED": true,
+    "WIND_APPLICATION_FROZEN": true,
+    "WIND_RESOLVER_FROZEN": true
+  },
+  "key_heads": {
+    "authoritative_runner": "d751b02b72bf413287ee7da8e925654207cf6821",
+    "gap_audit": "abe59b4f4d91505a2fedaf2fdd9a73d3b6f04e1c",
+    "resolver_freeze": "24b8862cc45f46b1f2819269c3c1947fffa0c83d"
+  },
+  "native_holdout": {
+    "authoritative_runs": 0,
+    "compromised": false,
+    "executed": false,
+    "execution_allowed": false
+  },
+  "p2_r1r1_started": false,
+  "paper_research_started": false,
+  "project_tests": {
+    "controller_performance_in_test_suite": false,
+    "failed": 0,
+    "numpy": "2.4.6",
+    "passed": 262,
+    "python": "3.11.15",
+    "status": "PASS"
+  },
+  "result": "P2_NATIVE_STACK_BENCHMARK_V1_1_SEMANTICS_READY",
+  "semantic_version": "native-case-semantics-v1",
+  "source_head": "cf3cdefc17a0bd14c08e7e869d9c2e77067ae25c",
+  "source_tag": "native-stack-benchmark-v1",
+  "task": "P2-R0S-NATIVE-CASE-SEMANTICS-RESOLVER-AND-BENCHMARK-V1_1-FREEZE-R1"
+}

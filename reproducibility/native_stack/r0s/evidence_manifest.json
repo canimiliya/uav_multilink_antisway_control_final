@@ -1,0 +1,115 @@
+{
+  "entries": [
+    {
+      "bytes": 535,
+      "path": "reproducibility/native_stack/r0s/authoritative_runner_audit.json",
+      "sha256": "0b7c8269b34f4bd2e77864437064e64252a522ae630966eeb503434baace9624"
+    },
+    {
+      "bytes": 313,
+      "path": "reproducibility/native_stack/r0s/direction_semantics.json",
+      "sha256": "7555c17d13c50abb92028d49f133b85016b326d36b230be62b4685ee02a68d29"
+    },
+    {
+      "bytes": 1687,
+      "path": "reproducibility/native_stack/r0s/final_gate.json",
+      "sha256": "58fe6ceec9c3aaaf4471322dcb873afc48a80ee9d3d07fee3e5de8a3783ff115"
+    },
+    {
+      "bytes": 61272,
+      "path": "reproducibility/native_stack/r0s/golden_cases.json",
+      "sha256": "89dba97a4dc9e9849029cd3885a0fe9e43925929823919c00c96519fc7480b62"
+    },
+    {
+      "bytes": 2575,
+      "path": "reproducibility/native_stack/r0s/protected_evidence_audit.json",
+      "sha256": "c55dad5abf04773b04f2c3e7fc9cee4ae132dacc13a4a32123d18dd4c2135f18"
+    },
+    {
+      "bytes": 1013687,
+      "path": "reproducibility/native_stack/r0s/resolved_development_manifest.json",
+      "sha256": "eccf9411ba5de7f04bc8ceece8b369b913de0a6d41ad7dd2132554b9a965f80b"
+    },
+    {
+      "bytes": 706522,
+      "path": "reproducibility/native_stack/r0s/resolved_holdout_manifest.json",
+      "sha256": "ac8e7bd84997bca42cc3a0e7e2c406b852e8df69910247db408a0f6fb4747cc8"
+    },
+    {
+      "bytes": 542,
+      "path": "reproducibility/native_stack/r0s/resolved_split_integrity.json",
+      "sha256": "f67d514e04efa5bfacc9e03fbb28d5d6df8739156c94e4bf35e0e00c10d1ee90"
+    },
+    {
+      "bytes": 496,
+      "path": "reproducibility/native_stack/r0s/resolver_contract.json",
+      "sha256": "dc219c45d88934a8e6ad57809e3e77ab32a164a53dd95280b2e494a1ed472ba0"
+    },
+    {
+      "bytes": 272058,
+      "path": "reproducibility/native_stack/r0s/semantic_fingerprints.json",
+      "sha256": "559e2619373b2c0c01a7aefe3983bc3c17c1c5dabacdfbc2158db75e5b8d5a89"
+    },
+    {
+      "bytes": 1311,
+      "path": "reproducibility/native_stack/r0s/semantic_gap_audit.json",
+      "sha256": "cbf58ead40190f6fa53ba56415f11ebc156a659c72ac99e0acbe7a0d06a88690"
+    },
+    {
+      "bytes": 415,
+      "path": "reproducibility/native_stack/r0s/target_generation_contract.json",
+      "sha256": "99a75fb989d8f66344ccb4e0d37f4d86c09f5a63682bf5c70cb28dbc2055140d"
+    },
+    {
+      "bytes": 413,
+      "path": "reproducibility/native_stack/r0s/trajectory_contract.json",
+      "sha256": "43c2d4d732fa8c28cb13cfebf049f9889a7b0b5295473f20db77ae721485d750"
+    },
+    {
+      "bytes": 490,
+      "path": "reproducibility/native_stack/r0s/wind_application_contract.json",
+      "sha256": "f4f610408ef4802753f4d8376e98908b139d4e849d854a24bd1c6438ed5061f9"
+    },
+    {
+      "bytes": 760,
+      "path": "reproducibility/native_stack/r0s/wind_contract.json",
+      "sha256": "70bee49967893b898e832406aff5332d1d773b0a452b91f02e67fd22128b2de8"
+    },
+    {
+      "bytes": 363,
+      "path": "reproducibility/native_stack/r0s/wind_level_rationale.json",
+      "sha256": "20fbe9f1aa20cd2238f3df677d5d0345d8f3b7bc3e6e1bbc0a99edbb788669f9"
+    },
+    {
+      "bytes": 605,
+      "path": "docs/native_stack/r0s/AUTHORITATIVE_EXECUTION_SPEC.md",
+      "sha256": "fc56871431b3e164fa67e338278272b94f02e7e259aa4eba24325bd2ce9d1c6a"
+    },
+    {
+      "bytes": 828,
+      "path": "docs/native_stack/r0s/CASE_RESOLUTION_SPEC.md",
+      "sha256": "a914a83540e3669d651935b5c1ac7ca0e69591b05bbc68d63ec9fa8f2e6a6b2e"
+    },
+    {
+      "bytes": 481,
+      "path": "docs/native_stack/r0s/REFERENCE_SEMANTICS_SPEC.md",
+      "sha256": "169d0de2cbbdda9a3b42a1684386e57f58e115839f833d581a05dad0e543e630"
+    },
+    {
+      "bytes": 702,
+      "path": "docs/native_stack/r0s/SEMANTIC_PATCH_REPORT.md",
+      "sha256": "5d4eba9b35ed626bf357fdcac84f6cca79fc9fcf47d6b958922b4a80bee19e1b"
+    },
+    {
+      "bytes": 1309,
+      "path": "docs/native_stack/r0s/V1_TO_V1_1_MIGRATION.md",
+      "sha256": "4579ba4268202e73923b3f06b2a73cee807fd40e027a3676a0e73dc04b473d96"
+    },
+    {
+      "bytes": 765,
+      "path": "docs/native_stack/r0s/WIND_SEMANTICS_SPEC.md",
+      "sha256": "f666eeb7dc314df23de0e2add1f4800dff92a8ebc400116c69e127a2e8177ab2"
+    }
+  ],
+  "generated_from_head": "d751b02b72bf413287ee7da8e925654207cf6821"
+}

@@ -1,0 +1,19 @@
+{
+  "aerodynamic_torque": false,
+  "affected_bodies": [
+    "quadrotor",
+    "link_1",
+    "link_2",
+    "link_3",
+    "link_4",
+    "link_5",
+    "cutter"
+  ],
+  "air_density_kg_m3": 1.225,
+  "application_point": "body_center_of_mass",
+  "coefficient_source": "configs/aerodynamics.yaml",
+  "controller_specific_injection": false,
+  "distribution": "independent_per_body",
+  "formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+  "x_axis_exact_parity_tested": true
+}

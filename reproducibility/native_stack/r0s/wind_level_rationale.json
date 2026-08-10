@@ -1,0 +1,13 @@
+{
+  "basis": [
+    "existing V2/V3 engineering wind taxonomy",
+    "configs/wind_profiles.yaml",
+    "plant official 12 m/s resistance ceiling",
+    "benchmark difficulty intent"
+  ],
+  "below_official_airframe_resistance_ceiling": true,
+  "moderate_m_s": 1.5,
+  "pid_lqr_satc_performance_used": false,
+  "provisional_r1_smoke_used": false,
+  "strong_m_s": 3.0
+}

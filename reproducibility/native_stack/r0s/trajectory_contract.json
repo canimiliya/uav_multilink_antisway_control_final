@@ -1,0 +1,9 @@
+{
+  "approach_stop": "septic 35u^4-84u^5+70u^6-20u^7; C3 endpoint rest",
+  "endpoint_validation": true,
+  "minimum_jerk": "quintic 10u^3-15u^4+6u^5 with analytic p/v/a/j; C2 endpoint rest",
+  "preview": false,
+  "sampling": "analytic at each 1000 Hz physics tick",
+  "step": "causal jump at issue_offset_s",
+  "waypoint_3d": "trajectory_seed-generated two interior waypoints; piecewise septic C3 endpoint rest"
+}

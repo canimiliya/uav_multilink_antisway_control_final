@@ -1,0 +1,16 @@
+{
+  "development_count": 200,
+  "holdout_count": 140,
+  "pass": true,
+  "resolved_physical_fingerprints_disjoint": true,
+  "seed_spaces_disjoint": true,
+  "semantic_fingerprint_intersection": [],
+  "stochastic_wind_realization_intersection": [],
+  "stochastic_wind_realizations_disjoint": true,
+  "target_physical_intersection": [],
+  "targets_physical_identities_disjoint": true,
+  "timing_identities_disjoint": true,
+  "timing_identity_intersection": [],
+  "trajectory_geometries_disjoint": true,
+  "trajectory_geometry_intersection": []
+}

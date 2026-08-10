@@ -1,0 +1,2058 @@
+{
+  "aggregate_sha256": "cc9fc8934755a99d38323b29f7d41118c720365bdc9ae2bc9c2d52b551db301a",
+  "case_count": 12,
+  "cases": [
+    {
+      "case_semantic_fingerprint": "eb63ab2ba6666f084b87236745052898eefe1ddb46c7768f4ddb45e3cdc963f8",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.25,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_000",
+        "split": "development",
+        "target_id": "development_target_310000",
+        "target_seed": 310000,
+        "task_family": "setpoint",
+        "timing_id": "development_timing_310000",
+        "trajectory_seed": 320000,
+        "trajectory_type": "step",
+        "wind_direction": "aligned",
+        "wind_kind": "calm",
+        "wind_seed": 330000
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.25,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_000",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_jerk_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_position_sha256": "8ec9304bd766b154ff34588b0a41c4e27166b2a3c83c0999442b687eb4282d4a",
+        "reference_velocity_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "wind_body_application_sha256": "3982ef35b1551f627fe534304f064bd8bccf862c70bc9837a95faddfea384320",
+        "wind_world_sha256": "517ef428fd40d1e880a9e02a72247340c7ae4856967e41fa0026ea3e58e824c5"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          -0.3646438597011489,
+          -0.5019215063227042,
+          0.3141020387992468
+        ],
+        "final_cutter_target_world_m": [
+          -0.13964385970114887,
+          -0.5019215063227042,
+          0.7041020387992468
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 0.25,
+        "interpolation": "causal_step",
+        "start_time_s": 0.25,
+        "type": "step",
+        "waypoint_times_s": [
+          0.0,
+          0.25
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            -0.13964385970114887,
+            -0.5019215063227042,
+            0.7041020387992468
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 12.0,
+        "direction_class": "aligned",
+        "direction_world": [
+          -0.587760501658222,
+          -0.8090349761848837,
+          0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "calm",
+        "magnitude_m_s": 0.0,
+        "onset_s": 0.0,
+        "sample_dt_s": 0.005,
+        "seed": 330000,
+        "waveform": "zero"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "3dc8727c81932274b8d8a8835a5e2a95c0907f59410d0895974f9320da2465e6",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.3,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_001",
+        "split": "development",
+        "target_id": "development_target_310001",
+        "target_seed": 310001,
+        "task_family": "smooth_trajectory",
+        "timing_id": "development_timing_310001",
+        "trajectory_seed": 320001,
+        "trajectory_type": "minimum_jerk",
+        "wind_direction": "aligned",
+        "wind_kind": "calm",
+        "wind_seed": 330001
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.3,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_001",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "89586bd59b5f3d4f993eb163363b490e3718f7cb8542639810c18d165059d9ac",
+        "reference_jerk_sha256": "801598596e1235fb0e629abd98a18da58674979390523a8f56361cd3d37cf822",
+        "reference_position_sha256": "7904c22b83bc1d2abd7be6db8015347781009c8f592b7142349e43c1445378ac",
+        "reference_velocity_sha256": "a71d3171f3e39242c401af424613f44b287153900223bddfe4f7814a7acf4281",
+        "wind_body_application_sha256": "a40c79a3b39f7b3a8fd426e339c53ffd21614fae8354efa51b8167131ede0370",
+        "wind_world_sha256": "0212082241ad0f90a4fd1513f66a8610af93b841e13b9ccfa78c78c06895c9b3"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          0.8882215592997692,
+          -0.7570639626313624,
+          0.2852727619530576
+        ],
+        "final_cutter_target_world_m": [
+          1.1132215592997692,
+          -0.7570639626313624,
+          0.6752727619530576
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 11.5,
+        "interpolation": "quintic_minimum_jerk",
+        "start_time_s": 0.3,
+        "type": "minimum_jerk",
+        "waypoint_times_s": [
+          0.3,
+          11.5
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            1.1132215592997692,
+            -0.7570639626313624,
+            0.6752727619530576
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 12.0,
+        "direction_class": "aligned",
+        "direction_world": [
+          0.7610609925577759,
+          -0.648680326206193,
+          0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "calm",
+        "magnitude_m_s": 0.0,
+        "onset_s": 0.0,
+        "sample_dt_s": 0.005,
+        "seed": 330001,
+        "waveform": "zero"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "04e0989cd496b5e49e86a109297c4600e76d3bae2260a54ad751fa8174be8874",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.4,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_014",
+        "split": "development",
+        "target_id": "development_target_310014",
+        "target_seed": 310014,
+        "task_family": "setpoint",
+        "timing_id": "development_timing_310014",
+        "trajectory_seed": 320014,
+        "trajectory_type": "step",
+        "wind_direction": "opposed",
+        "wind_kind": "moderate",
+        "wind_seed": 330014
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.4,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_014",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_jerk_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_position_sha256": "b0fd8ade505949fe3e7a6d783ea7a04f8427c91ed92faa9620675c19303aa941",
+        "reference_velocity_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "wind_body_application_sha256": "947ccd005c9c9af117996fc7f7f064ee17de175919685d317ddcae0148669497",
+        "wind_world_sha256": "b8a194cc0d2c73de436eca46a2b41a0f222b248f250131ee245979f656bc001b"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          -0.7088847598028839,
+          0.8499848576644154,
+          0.3981304592489179
+        ],
+        "final_cutter_target_world_m": [
+          -0.4838847598028839,
+          0.8499848576644154,
+          0.7881304592489179
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 0.4,
+        "interpolation": "causal_step",
+        "start_time_s": 0.4,
+        "type": "step",
+        "waypoint_times_s": [
+          0.0,
+          0.4
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            -0.4838847598028839,
+            0.8499848576644154,
+            0.7881304592489179
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 8.0,
+        "direction_class": "opposed",
+        "direction_world": [
+          0.6404851104680026,
+          -0.7679705875024059,
+          -0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "moderate",
+        "magnitude_m_s": 1.5,
+        "onset_s": 4.0,
+        "sample_dt_s": 0.005,
+        "seed": 330014,
+        "waveform": "constant"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "e8981b8368c31f31ca246875d2759d37b3e7d41af82d8b0679695ac17f15b0d6",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.45,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_015",
+        "split": "development",
+        "target_id": "development_target_310015",
+        "target_seed": 310015,
+        "task_family": "smooth_trajectory",
+        "timing_id": "development_timing_310015",
+        "trajectory_seed": 320015,
+        "trajectory_type": "approach_stop",
+        "wind_direction": "opposed",
+        "wind_kind": "moderate",
+        "wind_seed": 330015
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.45,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_015",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "902954848c63194f570ca5122ecf6f28eed967f78bce87b5aff58c16372a8b51",
+        "reference_jerk_sha256": "0464e4a74d47d3a46653ad922c7b91466dcd3eb3aba215b44311549cfea10986",
+        "reference_position_sha256": "3731a1ad2b69a3a3cade715096f1f107ec2235a62a4b41ae5b53d0275f8e3e52",
+        "reference_velocity_sha256": "e4fb3713c4d1fe2fa6a64eae7d8eaf9332f1bf55204e9f79ecf17db011e171d3",
+        "wind_body_application_sha256": "aa18067ce27cbe54991d5a37b42cd7581f3e914eb5ff4f9e0157e517d351cf11",
+        "wind_world_sha256": "5291121c4e6a1c08f41f1f3c60f3b986b97cc12954b13bc9cfa3ff0087064a89"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          -1.106782138668631,
+          -1.0168882004956346,
+          0.41738442286412036
+        ],
+        "final_cutter_target_world_m": [
+          -0.881782138668631,
+          -1.0168882004956346,
+          0.8073844228641204
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 11.0,
+        "interpolation": "septic_C3_endpoint_rest",
+        "start_time_s": 0.45,
+        "type": "approach_stop",
+        "waypoint_times_s": [
+          0.45,
+          11.0
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            -0.881782138668631,
+            -1.0168882004956346,
+            0.8073844228641204
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 8.0,
+        "direction_class": "opposed",
+        "direction_world": [
+          0.7363788470675755,
+          0.6765694299858873,
+          -0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "moderate",
+        "magnitude_m_s": 1.5,
+        "onset_s": 4.0,
+        "sample_dt_s": 0.005,
+        "seed": 330015,
+        "waveform": "constant"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "36e631db0821bc560561ff5c01337c80df08c9f6207ff0739c5fe8300fb8268e",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.55,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_028",
+        "split": "development",
+        "target_id": "development_target_310028",
+        "target_seed": 310028,
+        "task_family": "setpoint",
+        "timing_id": "development_timing_310028",
+        "trajectory_seed": 320028,
+        "trajectory_type": "step",
+        "wind_direction": "cross",
+        "wind_kind": "strong_sustained",
+        "wind_seed": 330028
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.55,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_028",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_jerk_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_position_sha256": "ddfa9ae005fcbe0b0734afd02b70b8fdc53e56c453004cb26187b5ebf87196d4",
+        "reference_velocity_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "wind_body_application_sha256": "70e4297ec61685ce2a896b52d843518dd93b3a87d690e302c4c175e0019aba75",
+        "wind_world_sha256": "6f153aeb6beb9d3f0bd61aa21d3ad75b63f29456db41cfb4bf91893197f7195f"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          -1.3701812166189833,
+          0.4965966892326527,
+          0.4991174436038234
+        ],
+        "final_cutter_target_world_m": [
+          -1.1451812166189832,
+          0.4965966892326527,
+          0.8891174436038234
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 0.55,
+        "interpolation": "causal_step",
+        "start_time_s": 0.55,
+        "type": "step",
+        "waypoint_times_s": [
+          0.0,
+          0.55
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            -1.1451812166189832,
+            0.4965966892326527,
+            0.8891174436038234
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 8.0,
+        "direction_class": "cross",
+        "direction_world": [
+          -0.3407423144694732,
+          -0.9401567290244678,
+          0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "strong_sustained",
+        "magnitude_m_s": 3.0,
+        "onset_s": 4.0,
+        "sample_dt_s": 0.005,
+        "seed": 330028,
+        "waveform": "constant"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "fefe14fc8575633a5590a94ab4ea8c7f62c0a32d5bca4236f966fb8894461953",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.6,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_029",
+        "split": "development",
+        "target_id": "development_target_310029",
+        "target_seed": 310029,
+        "task_family": "smooth_trajectory",
+        "timing_id": "development_timing_310029",
+        "trajectory_seed": 320029,
+        "trajectory_type": "waypoint_3d",
+        "wind_direction": "cross",
+        "wind_kind": "strong_sustained",
+        "wind_seed": 330029
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.6,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_029",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "b841e8c533f158d22afb85ba5051bfa351bbd7226a71c61ff2328127fdfde333",
+        "reference_jerk_sha256": "069e05aeddb8732a61b935a07a226dfc77040cd226337acffc92500eab7a41cb",
+        "reference_position_sha256": "c3edfdaaa59dbb315a1ef85cd198ce0e6fbf471adf25e350c319e1e45a6349c6",
+        "reference_velocity_sha256": "7ab6720062ec693beebc0b501a56beb9dd625e66f4e6da8c81bc287ad5694724",
+        "wind_body_application_sha256": "6073a440c38136f110fe26f3de72ea2f5cf6c129bb379a7648d4552aa74fdc43",
+        "wind_world_sha256": "0a0edb9ce5709f255c87ee9d9c8252a9c745cb0a828c2fc193e7ea0efabfa136"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          -0.4952242019530375,
+          -1.463911333021575,
+          0.5485340016845511
+        ],
+        "final_cutter_target_world_m": [
+          -0.27022420195303753,
+          -1.463911333021575,
+          0.9385340016845511
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 11.0,
+        "interpolation": "piecewise_septic_C3_endpoint_rest",
+        "start_time_s": 0.6,
+        "trajectory_seed": 320029,
+        "type": "waypoint_3d",
+        "waypoint_times_s": [
+          0.6,
+          4.066666666666666,
+          7.533333333333333,
+          11.0
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            0.16987227782746533,
+            -0.5360405076942745,
+            0.6828238403622233
+          ],
+          [
+            -0.16837671057381456,
+            -0.9763043792212016,
+            0.7098419812507569
+          ],
+          [
+            -0.27022420195303753,
+            -1.463911333021575,
+            0.9385340016845511
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 8.0,
+        "direction_class": "cross",
+        "direction_world": [
+          -0.9472657671728493,
+          0.3204490073981089,
+          -0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "strong_sustained",
+        "magnitude_m_s": 3.0,
+        "onset_s": 4.0,
+        "sample_dt_s": 0.005,
+        "seed": 330029,
+        "waveform": "constant"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "ba1b5663ca9a3ff4d2ba937f3a451139c57b15dcbb3be501d25089a8f79bd87a",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.55,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_006",
+        "split": "development",
+        "target_id": "development_target_310006",
+        "target_seed": 310006,
+        "task_family": "setpoint",
+        "timing_id": "development_timing_310006",
+        "trajectory_seed": 320006,
+        "trajectory_type": "step",
+        "wind_direction": "aligned",
+        "wind_kind": "strong_transient",
+        "wind_seed": 330006
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.55,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_006",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_jerk_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_position_sha256": "f61cd690a2c55d7560387420129420217bad4649130b943d367a456e9baa4345",
+        "reference_velocity_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "wind_body_application_sha256": "2bd4088f58b5dfc3ed27fbcbdf6b9e5df94cd3f01859d1957e7eca25e2623e88",
+        "wind_world_sha256": "279e2f8f4e79fab02a3144114f8518b151ef5e2bb776e8585a4422c180a56546"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          1.101391365453776,
+          1.2261590510853497,
+          -0.06238372351422816
+        ],
+        "final_cutter_target_world_m": [
+          1.326391365453776,
+          1.2261590510853497,
+          0.32761627648577185
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 0.55,
+        "interpolation": "causal_step",
+        "start_time_s": 0.55,
+        "type": "step",
+        "waypoint_times_s": [
+          0.0,
+          0.55
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            1.326391365453776,
+            1.2261590510853497,
+            0.32761627648577185
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 2.0,
+        "direction_class": "aligned",
+        "direction_world": [
+          0.6682431227997133,
+          0.7439429607375067,
+          0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "strong_transient",
+        "magnitude_m_s": 3.0,
+        "onset_s": 5.0,
+        "sample_dt_s": 0.005,
+        "seed": 330006,
+        "waveform": "one_cosine"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "0d443b0b0ab1a0727f02054c63bdf430338afc1c23d1e6352eadf4966328b727",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.6,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_007",
+        "split": "development",
+        "target_id": "development_target_310007",
+        "target_seed": 310007,
+        "task_family": "smooth_trajectory",
+        "timing_id": "development_timing_310007",
+        "trajectory_seed": 320007,
+        "trajectory_type": "minimum_jerk",
+        "wind_direction": "aligned",
+        "wind_kind": "strong_transient",
+        "wind_seed": 330007
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.6,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_007",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "a37fb596ac3f0f29e9c61f133b0ddfe17457aa34352b3cac9cbe331f0e2cbb7a",
+        "reference_jerk_sha256": "b0b0196c2c190325afb2588c0c3b0ac9cebcb93873fc8e2d5f1e5b36665251d5",
+        "reference_position_sha256": "db306af586789e0fba73e92ee8b766c02a62a127ebac2f657e6fa61f3df79b00",
+        "reference_velocity_sha256": "93dad70110edab49ef3f1c9e19faedb2ee97e66883c2b889ea8d44917a3bfb39",
+        "wind_body_application_sha256": "731347b4332d0ec91fa9eb363a430cb82fc423221f7c485f5c0a8d63bbd63308",
+        "wind_world_sha256": "05cd80aba1e416277a949243437826633eaea9078814e8fa8b3101e0593d3e9b"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          -0.3335767565880901,
+          0.7752087887490928,
+          0.34503151427303735
+        ],
+        "final_cutter_target_world_m": [
+          -0.1085767565880901,
+          0.7752087887490928,
+          0.7350315142730374
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 11.5,
+        "interpolation": "quintic_minimum_jerk",
+        "start_time_s": 0.6,
+        "type": "minimum_jerk",
+        "waypoint_times_s": [
+          0.6,
+          11.5
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            -0.1085767565880901,
+            0.7752087887490928,
+            0.7350315142730374
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 2.0,
+        "direction_class": "aligned",
+        "direction_world": [
+          -0.3952647207106152,
+          0.9185672542397533,
+          0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "strong_transient",
+        "magnitude_m_s": 3.0,
+        "onset_s": 5.0,
+        "sample_dt_s": 0.005,
+        "seed": 330007,
+        "waveform": "one_cosine"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "b04d2099b019965bc70a850ac977a446263fd605c4315f11b7b29f5cb2ccf851",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.7,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_020",
+        "split": "development",
+        "target_id": "development_target_310020",
+        "target_seed": 310020,
+        "task_family": "setpoint",
+        "timing_id": "development_timing_310020",
+        "trajectory_seed": 320020,
+        "trajectory_type": "step",
+        "wind_direction": "opposed",
+        "wind_kind": "stochastic",
+        "wind_seed": 330020
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.7,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_020",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_jerk_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_position_sha256": "cba46c2b652cb8d5f5d30a42618ea9fda3ae8de0caacb653b64088f8a9d787ea",
+        "reference_velocity_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "wind_body_application_sha256": "8bd18250a413f05bc0d776507f3e5395750572eda5bb3db62b5284cfa5745505",
+        "wind_world_sha256": "6d614987afd573a69d6107ab965aa1ec74919f2dbceeabc0c74af9833fd9875f"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          0.950740384710668,
+          -0.6843764027112373,
+          0.21333695033374422
+        ],
+        "final_cutter_target_world_m": [
+          1.175740384710668,
+          -0.6843764027112373,
+          0.6033369503337442
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 0.7,
+        "interpolation": "causal_step",
+        "start_time_s": 0.7,
+        "type": "step",
+        "waypoint_times_s": [
+          0.0,
+          0.7
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            1.175740384710668,
+            -0.6843764027112373,
+            0.6033369503337442
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 8.0,
+        "clip_abs_m_s": 3.0,
+        "direction_class": "opposed",
+        "direction_world": [
+          -0.8115977561847844,
+          0.5842166397457568,
+          -0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "initial_value_m_s": 0.0,
+        "kind": "stochastic",
+        "magnitude_m_s": 3.0,
+        "mean_m_s": 0.0,
+        "onset_s": 4.0,
+        "rng": "numpy.PCG64",
+        "sample_dt_s": 0.005,
+        "seed": 330020,
+        "sigma_m_s": 0.8,
+        "time_constant_s": 1.0,
+        "waveform": "low_pass_gaussian"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "bf704e396c67478905729124c4475a0e1c484e38fdb1268f0fd90d7196b924e6",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.75,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_021",
+        "split": "development",
+        "target_id": "development_target_310021",
+        "target_seed": 310021,
+        "task_family": "smooth_trajectory",
+        "timing_id": "development_timing_310021",
+        "trajectory_seed": 320021,
+        "trajectory_type": "approach_stop",
+        "wind_direction": "opposed",
+        "wind_kind": "stochastic",
+        "wind_seed": 330021
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.75,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_021",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "9f0d207ff0eeca70d25c84a7a2dc70a5570f263f658747d280375176957e361a",
+        "reference_jerk_sha256": "5790e386f267ace9e8234099d765788206aa1b60aeadcb28fe1b2b36a48e7287",
+        "reference_position_sha256": "8f295aa0f8fe5b15a0ea6cbfbbdcd66c4661ac5d02dd8cb7b4df49d8a01b8c98",
+        "reference_velocity_sha256": "2fc516a9cb6be862a82ab4d3755615e814d5c02b51d0dfc3bc7a1c45fdac9938",
+        "wind_body_application_sha256": "90ee2b19df1a754d3b1da3d0e636a0d0c46f90e43de1c6fe67ac7b09b3760f99",
+        "wind_world_sha256": "7c56b4bdd6b92f4eea19874832faf29224781504a9b579cbef07f8987d466478"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          1.0513790633285711,
+          -1.333314121629636,
+          0.021958631326003952
+        ],
+        "final_cutter_target_world_m": [
+          1.2763790633285712,
+          -1.333314121629636,
+          0.41195863132600397
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 11.0,
+        "interpolation": "septic_C3_endpoint_rest",
+        "start_time_s": 0.75,
+        "type": "approach_stop",
+        "waypoint_times_s": [
+          0.75,
+          11.0
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            1.2763790633285712,
+            -1.333314121629636,
+            0.41195863132600397
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 8.0,
+        "clip_abs_m_s": 3.0,
+        "direction_class": "opposed",
+        "direction_world": [
+          -0.6191952662267114,
+          0.7852370484652594,
+          -0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "initial_value_m_s": 0.0,
+        "kind": "stochastic",
+        "magnitude_m_s": 3.0,
+        "mean_m_s": 0.0,
+        "onset_s": 4.0,
+        "rng": "numpy.PCG64",
+        "sample_dt_s": 0.005,
+        "seed": 330021,
+        "sigma_m_s": 0.8,
+        "time_constant_s": 1.0,
+        "waveform": "low_pass_gaussian"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "c591029fc3e72b9b9d5571a96ee40f71ebb181085199d47ab0010c0d55a3e4ca",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.3,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_034",
+        "split": "development",
+        "target_id": "development_target_310034",
+        "target_seed": 310034,
+        "task_family": "setpoint",
+        "timing_id": "development_timing_310034",
+        "trajectory_seed": 320034,
+        "trajectory_type": "step",
+        "wind_direction": "cross",
+        "wind_kind": "ramp",
+        "wind_seed": 330034
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.3,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_034",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_jerk_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "reference_position_sha256": "af104997901a6be17a2ee9210487b7ed11c9258806835393ef817df7b40c7b4a",
+        "reference_velocity_sha256": "0e89e5d755de20a0a96681c385ffcd1c64e8ae3b7d56d1c7c0c351a81cc46513",
+        "wind_body_application_sha256": "2770dd1ef0370f5dd35ec51d3a3a095f734177908428952311c5be76e9f930e9",
+        "wind_world_sha256": "9384e63c78fbdd803a4f48fb95cbb7ce8a4000b756c7b197a949e5baed4e291d"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          1.2226321114568102,
+          -0.8166541690542123,
+          -0.0016870600125453716
+        ],
+        "final_cutter_target_world_m": [
+          1.4476321114568103,
+          -0.8166541690542123,
+          0.38831293998745464
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 0.3,
+        "interpolation": "causal_step",
+        "start_time_s": 0.3,
+        "type": "step",
+        "waypoint_times_s": [
+          0.0,
+          0.3
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            1.4476321114568103,
+            -0.8166541690542123,
+            0.38831293998745464
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 8.0,
+        "direction_class": "cross",
+        "direction_world": [
+          0.5554373970373419,
+          0.8315583551215046,
+          0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "ramp",
+        "magnitude_m_s": 3.0,
+        "onset_s": 4.0,
+        "ramp_duration_s": 3.0,
+        "sample_dt_s": 0.005,
+        "seed": 330034,
+        "waveform": "linear_ramp_then_hold"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    },
+    {
+      "case_semantic_fingerprint": "e25a774a9e3b50594cdb4a4b4e81795035ee6bb0b4d326d1e89f16ce14a0e7d7",
+      "duration_s": 12.0,
+      "execution": {
+        "execution_allowed": true,
+        "physics_dt_s": 0.001,
+        "physics_rate_hz": 1000,
+        "position_frame": "world",
+        "reference_interpolation": "analytic",
+        "reference_preview_allowed": false,
+        "reference_sampling": "physics_tick_at_start_of_interval",
+        "units": "SI",
+        "wind_frame": "world",
+        "wind_sampling": "200_Hz_left_sample_then_zero_order_hold_at_1000_Hz"
+      },
+      "identity": {
+        "duration_s": 12.0,
+        "execution_allowed": true,
+        "issue_offset_s": 0.35,
+        "reference_preview_allowed": false,
+        "sample_id": "native_development_035",
+        "split": "development",
+        "target_id": "development_target_310035",
+        "target_seed": 310035,
+        "task_family": "smooth_trajectory",
+        "timing_id": "development_timing_310035",
+        "trajectory_seed": 320035,
+        "trajectory_type": "waypoint_3d",
+        "wind_direction": "cross",
+        "wind_kind": "ramp",
+        "wind_seed": 330035
+      },
+      "initial_condition": {
+        "cutter_configuration": "horizontal_positive_world_x_at_trim",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "joint_positions_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qpos": [
+          0.0,
+          0.0,
+          3.2,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uav_qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "issue_offset_s": 0.35,
+      "resolver_version": "native-case-semantics-v1",
+      "sample_id": "native_development_035",
+      "signal_hashes": {
+        "reference_acceleration_sha256": "f0418ee852b4ff3e57d153dd789d91ad8c00982a0c0bc4a5b9c099b0039a1b98",
+        "reference_jerk_sha256": "10bcdba22addc798b658af09047fe7af63e62f28006648b77027248a5be382e1",
+        "reference_position_sha256": "bcb6aa2abd851477f4254e08810df894bdfd30424a83fc682267a95b5a77dc03",
+        "reference_velocity_sha256": "ceea5127ad50d0be3dca3f9cf726745d1b3ab24e85b4798d65a52c5fdebdfaf7",
+        "wind_body_application_sha256": "9948cb18f8bf033b104c8c0cfda8c8cdcbf957c42adb30099a0d0fdf6bb4eba5",
+        "wind_world_sha256": "75ed0a194aa8416bc6cc36f0af10392fabf72a3a3a2171268ede78dac8221c72"
+      },
+      "split": "development",
+      "target": {
+        "displacement_world_m": [
+          1.3011113574682012,
+          0.45102293024872536,
+          0.11364977082814187
+        ],
+        "final_cutter_target_world_m": [
+          1.5261113574682013,
+          0.45102293024872536,
+          0.5036497708281419
+        ],
+        "generation_rule": "pcg64_uniform_azimuth_xy_radius_vertical_v1",
+        "generation_version": "native-case-semantics-v1",
+        "initial_cutter_target_world_m": [
+          0.225,
+          0.0,
+          0.39
+        ],
+        "mission_envelope_radius_m": 2.0
+      },
+      "trajectory": {
+        "end_time_s": 11.0,
+        "interpolation": "piecewise_septic_C3_endpoint_rest",
+        "start_time_s": 0.35,
+        "trajectory_seed": 320035,
+        "type": "waypoint_3d",
+        "waypoint_times_s": [
+          0.35,
+          3.9000000000000004,
+          7.45,
+          11.0
+        ],
+        "waypoints_world_m": [
+          [
+            0.225,
+            0.0,
+            0.39
+          ],
+          [
+            0.6120906716556689,
+            0.3128403317090482,
+            0.5707026626589369
+          ],
+          [
+            1.1373993180201367,
+            0.22694932485689248,
+            0.3962509738744522
+          ],
+          [
+            1.5261113574682013,
+            0.45102293024872536,
+            0.5036497708281419
+          ]
+        ]
+      },
+      "wind": {
+        "active_duration_s": 8.0,
+        "direction_class": "cross",
+        "direction_world": [
+          0.32752441094810436,
+          -0.944842717193236,
+          -0.0
+        ],
+        "duration_s": 12.0,
+        "hold": "zero_order_hold",
+        "kind": "ramp",
+        "magnitude_m_s": 3.0,
+        "onset_s": 4.0,
+        "ramp_duration_s": 3.0,
+        "sample_dt_s": 0.005,
+        "seed": 330035,
+        "waveform": "linear_ramp_then_hold"
+      },
+      "wind_application": {
+        "aerodynamic_torque": false,
+        "affected_bodies": [
+          "quadrotor",
+          "link_1",
+          "link_2",
+          "link_3",
+          "link_4",
+          "link_5",
+          "cutter"
+        ],
+        "air_density_kg_m3": 1.225,
+        "application_point": "body_center_of_mass",
+        "area_and_cd_source": "configs/aerodynamics.yaml",
+        "area_model": {
+          "cutter": "box",
+          "link_1..link_5": "capsule",
+          "quadrotor": "box"
+        },
+        "distribution_rule": "independent_per_body",
+        "force_formula": "0.5*rho*Cd*A_projected*abs(v_rel_axis)*v_rel_axis*axis_world",
+        "implementation": "uav_sway.disturbances.aerodynamics.compute_body_wind_forces_world"
+      }
+    }
+  ],
+  "coverage": {
+    "direction_classes": [
+      "aligned",
+      "cross",
+      "opposed"
+    ],
+    "task_families": [
+      "setpoint",
+      "smooth_trajectory"
+    ],
+    "wind_kinds": [
+      "calm",
+      "moderate",
+      "ramp",
+      "stochastic",
+      "strong_sustained",
+      "strong_transient"
+    ]
+  },
+  "strict_parity": true
+}

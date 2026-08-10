@@ -1,0 +1,68 @@
+{
+  "blocked_r1_commit_present": true,
+  "blocked_r1_history_preserved": true,
+  "blocked_r1_remote_branch_head": "f1a7a20895687fd1167982ef852f4a7b952f7916",
+  "identity_hashes_unchanged": true,
+  "identity_manifest_file_sha256": {
+    "development": "9f1e683ab9de58d462c70fabb194486197e82bb66aefde99d77e4fe51fbc910d",
+    "holdout": "9eba56a0e6dd236ec6a82a7c9b51f2176801ec38c2ebd4bc2ccbe837539646de"
+  },
+  "paths": {
+    "docs/v10": {
+      "current_tree": "c49413c6659fce3c2793c38ebb0b70e9406b1dbb",
+      "source_tree": "c49413c6659fce3c2793c38ebb0b70e9406b1dbb",
+      "unchanged": true
+    },
+    "reproducibility/v10": {
+      "current_tree": "1eae8eb0eea03ac94c650e54e1cfc8280187f0b5",
+      "source_tree": "1eae8eb0eea03ac94c650e54e1cfc8280187f0b5",
+      "unchanged": true
+    },
+    "reproducibility/v2": {
+      "current_tree": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+      "source_tree": "78db9b506b7649c68cbba2ba1c6d9c5d569962a7",
+      "unchanged": true
+    },
+    "reproducibility/v3": {
+      "current_tree": "956e77658e01efabb110dcf1934215af344a620d",
+      "source_tree": "956e77658e01efabb110dcf1934215af344a620d",
+      "unchanged": true
+    },
+    "reproducibility/v4": {
+      "current_tree": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+      "source_tree": "9c76518abe95e5e88419eb7cd310087ff1eb559f",
+      "unchanged": true
+    },
+    "reproducibility/v5": {
+      "current_tree": "1134092eb80efc8639ce822d777f30c04a9af226",
+      "source_tree": "1134092eb80efc8639ce822d777f30c04a9af226",
+      "unchanged": true
+    },
+    "reproducibility/v6": {
+      "current_tree": "c6e50538a3a5c1d98829873331e8fd1f09713409",
+      "source_tree": "c6e50538a3a5c1d98829873331e8fd1f09713409",
+      "unchanged": true
+    },
+    "reproducibility/v7": {
+      "current_tree": "e5230eefa26044c40ad2b016afc5125bf44241e9",
+      "source_tree": "e5230eefa26044c40ad2b016afc5125bf44241e9",
+      "unchanged": true
+    },
+    "reproducibility/v8": {
+      "current_tree": "21ef52d0c8f1a510d7a124f27774a826a39b5880",
+      "source_tree": "21ef52d0c8f1a510d7a124f27774a826a39b5880",
+      "unchanged": true
+    },
+    "reproducibility/v9": {
+      "current_tree": "f5c9830cc01e119a8b9d7b50fb9136946b094fa5",
+      "source_tree": "f5c9830cc01e119a8b9d7b50fb9136946b094fa5",
+      "unchanged": true
+    }
+  },
+  "provisional_performance_used_for_semantics": false,
+  "provisional_r1_smoke_authority": false,
+  "provisional_r1_smoke_runs": 38,
+  "source_tag_target": "cf3cdefc17a0bd14c08e7e869d9c2e77067ae25c",
+  "source_tag_unchanged": true,
+  "v1_v10_unchanged": true
+}

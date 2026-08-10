@@ -1,0 +1,24 @@
+{
+  "azimuth_rad": [
+    -3.141592653589793,
+    3.141592653589793
+  ],
+  "controller_performance_input": false,
+  "horizontal_radius_m": [
+    0.55,
+    1.75
+  ],
+  "initial_cutter_target_world_m": [
+    0.225,
+    0.0,
+    0.39
+  ],
+  "input": "target_seed",
+  "mission_envelope_radius_m": 2.0,
+  "rng": "numpy.PCG64",
+  "same_algorithm_both_splits": true,
+  "vertical_displacement_m": [
+    -0.1,
+    0.55
+  ]
+}
