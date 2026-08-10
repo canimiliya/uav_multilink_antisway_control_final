@@ -1,0 +1,24 @@
+{
+  "methods": {
+    "native_full_lqr_006": {
+      "physical_effort": 16872.64918059752,
+      "thrust_saturation_rate": 0.0,
+      "torque_saturation_rate": 0.0,
+      "wrench_rate_rms": 0.6509738663695033
+    },
+    "native_pid_001": {
+      "physical_effort": 16878.1329039962,
+      "thrust_saturation_rate": 0.0,
+      "torque_saturation_rate": 0.0,
+      "wrench_rate_rms": 1.6763957756316428
+    },
+    "native_task_lqr_004": {
+      "physical_effort": 16871.63292512363,
+      "thrust_saturation_rate": 0.0,
+      "torque_saturation_rate": 0.0,
+      "wrench_rate_rms": 0.5929640300544132
+    }
+  },
+  "requested_clipped_applied_recorded": true,
+  "status": "Traditional-only diagnostic"
+}

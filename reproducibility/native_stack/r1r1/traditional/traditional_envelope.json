@@ -1,0 +1,46 @@
+{
+  "entries": {
+    "best_acquisition": {
+      "method": "native_pid_001",
+      "value": 3.92
+    },
+    "best_effort": {
+      "method": "native_task_lqr_004",
+      "value": 16871.63292512363
+    },
+    "best_orientation": {
+      "method": "native_task_lqr_004",
+      "value": 0.021720803618724735
+    },
+    "best_runtime": {
+      "method": "native_task_lqr_004",
+      "value": 0.0304
+    },
+    "best_safety": {
+      "method": "native_pid_001",
+      "value": 1.0
+    },
+    "best_setpoint": {
+      "method": "native_pid_001",
+      "value": 1.0846591578542455
+    },
+    "best_strong_mean": {
+      "method": "native_pid_001",
+      "value": 1.2658562660051964
+    },
+    "best_strong_p90": {
+      "method": "native_pid_001",
+      "value": 2.3441921991046426
+    },
+    "best_success": {
+      "method": "native_pid_001",
+      "value": 0.275
+    },
+    "best_trajectory": {
+      "method": "native_pid_001",
+      "value": 0.7795461521223135
+    }
+  },
+  "paper_comparator_authority": false,
+  "status": "DIAGNOSTIC_NOT_FROZEN"
+}

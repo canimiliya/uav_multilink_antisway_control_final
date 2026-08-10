@@ -1,0 +1,26 @@
+{
+  "deadline_definition": "component wall time > preregistered period",
+  "methods": {
+    "native_full_lqr_006": {
+      "deadline_miss_rate": 0.0,
+      "runtime_max_ms": 0.48529999999999995,
+      "runtime_mean_ms": 0.00453169125,
+      "runtime_p95_ms": 0.030799999999999998,
+      "runtime_p99_ms": 0.03490100000000002
+    },
+    "native_pid_001": {
+      "deadline_miss_rate": 9.583333333333332e-05,
+      "runtime_max_ms": 18.7803,
+      "runtime_mean_ms": 0.09174691319444443,
+      "runtime_p95_ms": 0.1409297499999999,
+      "runtime_p99_ms": 0.3464290699999999
+    },
+    "native_task_lqr_004": {
+      "deadline_miss_rate": 0.0,
+      "runtime_max_ms": 0.501,
+      "runtime_mean_ms": 0.004465774930555555,
+      "runtime_p95_ms": 0.0304,
+      "runtime_p99_ms": 0.03430299000000002
+    }
+  }
+}

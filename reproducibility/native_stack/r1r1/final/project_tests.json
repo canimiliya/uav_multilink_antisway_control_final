@@ -1,0 +1,29 @@
+{
+  "aggregate": {
+    "failed": 0,
+    "passed": 267,
+    "warnings": 35
+  },
+  "groups": {
+    "native_stack": 32,
+    "release": 4,
+    "v10": 12,
+    "v2": 56,
+    "v3": 63,
+    "v4": 25,
+    "v5": 22,
+    "v6": 20,
+    "v7": 9,
+    "v8": 11,
+    "v9": 13
+  },
+  "isolated_group_execution": true,
+  "monolithic_collection": {
+    "assertion_failures": 0,
+    "known_duplicate_module_name_collection_errors": 11,
+    "status": "NOT_AUTHORITATIVE_REPOSITORY_LAYOUT_DIAGNOSTIC"
+  },
+  "result": "PASS",
+  "runtime": "D:/anaconda/envs/uav_sway/python.exe",
+  "warnings_are_existing_osqp_deprecations": true
+}

@@ -1,0 +1,20 @@
+{
+  "BENCHMARK_V1_1_UNCHANGED": true,
+  "V1_V10_UNCHANGED": true,
+  "competent_traditional_count": 0,
+  "native_full_lqr_frozen": true,
+  "native_holdout_executed": false,
+  "native_pid_frozen": true,
+  "native_task_lqr_frozen": true,
+  "new_paper_selected": false,
+  "paper_download": false,
+  "paper_implementation": false,
+  "paper_performance": false,
+  "paper_search": false,
+  "primary_native_traditional_frozen": false,
+  "result": "BLOCKED_P2_TRADITIONAL_COMPETENCE",
+  "satc_native_advanced_qualified": false,
+  "satc_stack_frozen": false,
+  "task": "P2-R1R1-NATIVE-TRADITIONAL-AND-SATC-BASELINE-DEVELOPMENT-FREEZE-R1",
+  "traditional_envelope_frozen": false
+}

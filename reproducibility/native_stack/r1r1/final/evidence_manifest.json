@@ -1,0 +1,310 @@
+{
+  "entries": [
+    {
+      "bytes": 243,
+      "path": "docs/native_stack/r1r1/DEVELOPMENT_COMPARISON.md",
+      "sha256": "cb12c6bbbe29e43c740e725430ec3ccbe258f046abba996dc7a9693703121fa1"
+    },
+    {
+      "bytes": 1359,
+      "path": "docs/native_stack/r1r1/NATIVE_FULL_LQR_REPORT.md",
+      "sha256": "3f51af505b9471154ee73696189948c035fd95e1d59b730b98c0070718354a66"
+    },
+    {
+      "bytes": 1334,
+      "path": "docs/native_stack/r1r1/NATIVE_PID_REPORT.md",
+      "sha256": "2002cdea46b7092cb812059afcbf2c56ed78e8924185349addb3fd9dbb074f19"
+    },
+    {
+      "bytes": 1321,
+      "path": "docs/native_stack/r1r1/NATIVE_TASK_LQR_REPORT.md",
+      "sha256": "669e8dd3cebabce565c6810e02422783f1ecf7d6e1207ebb981a21b86e9984e6"
+    },
+    {
+      "bytes": 291,
+      "path": "docs/native_stack/r1r1/P2_R1R1_FINAL_REPORT.md",
+      "sha256": "e1e6cafb2438256c4a28d112461c669d02d4ef4406edd72d087f919acf56bd2e"
+    },
+    {
+      "bytes": 149,
+      "path": "docs/native_stack/r1r1/P2_R2_ENTRY_CRITERIA.md",
+      "sha256": "fa0dc0c7730b9f7cc5db6efae5ec63c33a73ac3519bdddb24f0431936f90f60f"
+    },
+    {
+      "bytes": 192,
+      "path": "docs/native_stack/r1r1/SATC_NATIVE_REPORT.md",
+      "sha256": "c6dea7ef79a372d0bc1eecd79c03cf35992af823d7c737ab26d1cd0efaeb5c87"
+    },
+    {
+      "bytes": 723,
+      "path": "reproducibility/native_stack/r1r1/comparison/actuator_analysis.json",
+      "sha256": "163e17c1f256055fda8ba5ff1db29a1b6d4ac56400f28450e48e590a0e7b891b"
+    },
+    {
+      "bytes": 834,
+      "path": "reproducibility/native_stack/r1r1/comparison/deadline_analysis.json",
+      "sha256": "d11927c825952ecc7de92f3054de4af08f5b8c62f63cb4c57316df660efccd67"
+    },
+    {
+      "bytes": 1884,
+      "path": "reproducibility/native_stack/r1r1/comparison/native_rate_table.csv",
+      "sha256": "852990c86f336cc449dfada1de321f5e669c15aac9c815e854dcc1d3cfa68adf"
+    },
+    {
+      "bytes": 3906,
+      "path": "reproducibility/native_stack/r1r1/comparison/task_family_analysis.json",
+      "sha256": "924d3b9db91a530b6ea1f4aee93c0e22005864e07426202a847ffd7ddf55a86d"
+    },
+    {
+      "bytes": 332,
+      "path": "reproducibility/native_stack/r1r1/final/claim_matrix.json",
+      "sha256": "d34a3098eb5d7263d209e9b75a4fd0a7f6b1ab056857f3005305a6852930a136"
+    },
+    {
+      "bytes": 690,
+      "path": "reproducibility/native_stack/r1r1/final/final_gate.json",
+      "sha256": "da443a6ac53ac9d725fd94d1c1a2ed829175199f409c06b0f4a7347a6b9fc37a"
+    },
+    {
+      "bytes": 398,
+      "path": "reproducibility/native_stack/r1r1/final/holdout_status.json",
+      "sha256": "04b97ed95df58bde5e7758f0e32ab9ae286419cf63cc875e593e9f7484308a78"
+    },
+    {
+      "bytes": 609,
+      "path": "reproducibility/native_stack/r1r1/final/project_tests.json",
+      "sha256": "6bde2abc5a92932ed369db4a54e17a754ca755edce3f66475ebabc38140d8d62"
+    },
+    {
+      "bytes": 965,
+      "path": "reproducibility/native_stack/r1r1/protocol/competence_contract.json",
+      "sha256": "fe6a60560bca0bce4a68c586022490187ea1cddd786c1af5f606aab9bb0f37ec"
+    },
+    {
+      "bytes": 1260,
+      "path": "reproducibility/native_stack/r1r1/protocol/metric_contract.json",
+      "sha256": "61254bb65c0ce7deb1a2fde21f9cb35c6b75ca219924a5c03ad74969171205e4"
+    },
+    {
+      "bytes": 857,
+      "path": "reproducibility/native_stack/r1r1/protocol/protocol_manifest.json",
+      "sha256": "0d58943b2eb5a912ed12b237b902d9888369d15cb2e829eb6ec64ccf4d0b2a6c"
+    },
+    {
+      "bytes": 1873,
+      "path": "reproducibility/native_stack/r1r1/protocol/rate_contract.json",
+      "sha256": "dccf87f74cae7cf00b97d1dd3f4f55b3f54126023abe30687e356f07a157b641"
+    },
+    {
+      "bytes": 1556,
+      "path": "reproducibility/native_stack/r1r1/protocol/research_contract.json",
+      "sha256": "6cc23c7196fb46e9fdc9f72937fe0dc33ad79bbacdde210b705495a47928f7a3"
+    },
+    {
+      "bytes": 7946,
+      "path": "reproducibility/native_stack/r1r1/protocol/search_contract.json",
+      "sha256": "85d52995cc7a588e1821869a4d2806b14e638351d9787c2be47dd99f80a5fcc8"
+    },
+    {
+      "bytes": 1065,
+      "path": "reproducibility/native_stack/r1r1/protocol/selection_contract.json",
+      "sha256": "5821870ee41ef774d34a5cc27b4cf3067db2ff1f74b9f029a40a7a0bdd318662"
+    },
+    {
+      "bytes": 1558,
+      "path": "reproducibility/native_stack/r1r1/protocol/stage_a_manifest.json",
+      "sha256": "d9b2d0edd44cabe1da14707b7f3a69eddd015eb82280c37a01024f935df4998f"
+    },
+    {
+      "bytes": 391,
+      "path": "reproducibility/native_stack/r1r1/protocol/statistical_protocol.json",
+      "sha256": "cc3a9dc687782c5b1f6abcf244c22beb4d4fd091c072c214b83c21bd4064d2e6"
+    },
+    {
+      "bytes": 12357,
+      "path": "reproducibility/native_stack/r1r1/satc/candidate_registry.json",
+      "sha256": "af2416ae5c0c6cde703f455084675a8648673dcac5aeca83c5927672352395d9"
+    },
+    {
+      "bytes": 285133,
+      "path": "reproducibility/native_stack/r1r1/satc/development_results.csv",
+      "sha256": "3a6cf1403bf2da1f4d797971f72d1f7e69e46bf9bced7484d6212887d055b9eb"
+    },
+    {
+      "bytes": 1793,
+      "path": "reproducibility/native_stack/r1r1/satc/development_summary.csv",
+      "sha256": "95c421f0aaad14f2df1ff2fb501d7c5d1ce1510bd07ad25171ee99e892121de6"
+    },
+    {
+      "bytes": 2484,
+      "path": "reproducibility/native_stack/r1r1/satc/freeze.json",
+      "sha256": "19511ac5b69ff8877bd9b0ea48d10446edf70b04521dba3f285427ff2bc72383"
+    },
+    {
+      "bytes": 364,
+      "path": "reproducibility/native_stack/r1r1/satc/satc_stack_freeze.json",
+      "sha256": "f7922268a6dff4dc4f2f01b4193ea528772cdf303c1fbd32eeaac199994a84a9"
+    },
+    {
+      "bytes": 241621,
+      "path": "reproducibility/native_stack/r1r1/satc/stage_a_results.csv",
+      "sha256": "5e52c5c71430c90f35ada3516746f7b82650c01f7ca7081309a455d5b0661e46"
+    },
+    {
+      "bytes": 186,
+      "path": "reproducibility/native_stack/r1r1/satc/stage_a_selection.json",
+      "sha256": "06d3f3f81a968b45bcf000e038b838229c0cecdf8a9308e94b3f2cc5ca47ad4b"
+    },
+    {
+      "bytes": 7215,
+      "path": "reproducibility/native_stack/r1r1/satc/stage_a_summary.csv",
+      "sha256": "ca961d1c3247f6f5925a24836de4cdc0c3d6de7ee6092cb93f1c0099675a7587"
+    },
+    {
+      "bytes": 6678,
+      "path": "reproducibility/native_stack/r1r1/traditional/full_lqr/candidate_registry.json",
+      "sha256": "b439828faa7400c3d07677ebac7f26f73ad94bad81b91dda2015aba6305d908e"
+    },
+    {
+      "bytes": 281832,
+      "path": "reproducibility/native_stack/r1r1/traditional/full_lqr/development_results.csv",
+      "sha256": "159d7feebf12001b8d9c31e04606f1fc75b2daa8f67c545df6c76ddc04180a29"
+    },
+    {
+      "bytes": 1821,
+      "path": "reproducibility/native_stack/r1r1/traditional/full_lqr/development_summary.csv",
+      "sha256": "74bf5e4df70b270d6fca5295baa873a50ef6383b9b50f1c15490b60ea1e1e06f"
+    },
+    {
+      "bytes": 8827,
+      "path": "reproducibility/native_stack/r1r1/traditional/full_lqr/freeze.json",
+      "sha256": "4f7254fdec784b4fe22c600b882731bf8cd6d5875621b3bfec2d7910d6cc8df3"
+    },
+    {
+      "bytes": 97276,
+      "path": "reproducibility/native_stack/r1r1/traditional/full_lqr/incumbent_results_exact.csv",
+      "sha256": "b2125cc344236f9b29eb361766f01b7ef3d95ec8963c4a57a60994682c43fd70"
+    },
+    {
+      "bytes": 97737,
+      "path": "reproducibility/native_stack/r1r1/traditional/full_lqr/incumbent_results_provisional_no_authority.csv",
+      "sha256": "4287acd90d13e5fe42d59f2e68bc5c5eac27e2417632381c7b9d6a895957d080"
+    },
+    {
+      "bytes": 118729,
+      "path": "reproducibility/native_stack/r1r1/traditional/full_lqr/stage_a_results.csv",
+      "sha256": "eb737cfb702d570c5d8ff2ffc7d8a2886a37e17be3eefcb2a5d74fcebcf70a6f"
+    },
+    {
+      "bytes": 198,
+      "path": "reproducibility/native_stack/r1r1/traditional/full_lqr/stage_a_selection.json",
+      "sha256": "7487c644d83846b468050776281e5cd96a98c6bc1bc1323f042c14b85440d82a"
+    },
+    {
+      "bytes": 3762,
+      "path": "reproducibility/native_stack/r1r1/traditional/full_lqr/stage_a_summary.csv",
+      "sha256": "69e8081ee0e9c97d405472af1af3d1db12461758064785bd0708de764d8ddf03"
+    },
+    {
+      "bytes": 9008,
+      "path": "reproducibility/native_stack/r1r1/traditional/pid/candidate_registry.json",
+      "sha256": "79192fa099727b7f723547d45197201bd7d0dc2b44d15f10d3a0b73af20c0609"
+    },
+    {
+      "bytes": 285994,
+      "path": "reproducibility/native_stack/r1r1/traditional/pid/development_results.csv",
+      "sha256": "364d99e6beb3fb7270a4bb742fa5a97be964de3d91494ad3217712c88f64ec4e"
+    },
+    {
+      "bytes": 1781,
+      "path": "reproducibility/native_stack/r1r1/traditional/pid/development_summary.csv",
+      "sha256": "d339a524f1db53e8abadde55a3a3faa9c88b0bfaad9279e7a0f5fc3dc96ab498"
+    },
+    {
+      "bytes": 2462,
+      "path": "reproducibility/native_stack/r1r1/traditional/pid/freeze.json",
+      "sha256": "402320e81c2c1ef3cfc9e1fb6dfe518d43cac07488df5e95842d4b5eec328adf"
+    },
+    {
+      "bytes": 97317,
+      "path": "reproducibility/native_stack/r1r1/traditional/pid/incumbent_results_exact.csv",
+      "sha256": "08e7069b20ccc6ff2241470a60388bb6e42e42f34cf859b76f283b0b87edcfb7"
+    },
+    {
+      "bytes": 98134,
+      "path": "reproducibility/native_stack/r1r1/traditional/pid/incumbent_results_provisional_no_authority.csv",
+      "sha256": "a6125c27494a21d97f7d8291cafda305167b4466205a4091868e6ce7ef9ffb1f"
+    },
+    {
+      "bytes": 181219,
+      "path": "reproducibility/native_stack/r1r1/traditional/pid/stage_a_results.csv",
+      "sha256": "3b48922c66102326d48f02ae276a5335c715256a0970be5e258cdd6a00c5cd23"
+    },
+    {
+      "bytes": 183,
+      "path": "reproducibility/native_stack/r1r1/traditional/pid/stage_a_selection.json",
+      "sha256": "14a373e99a118f7f04b532ad35d1915a811c264b137c2a9491c3178727d0241d"
+    },
+    {
+      "bytes": 5593,
+      "path": "reproducibility/native_stack/r1r1/traditional/pid/stage_a_summary.csv",
+      "sha256": "3042ea1b411507dd7a514934dddaa71806fd83d4f219128701bec8fa80460e67"
+    },
+    {
+      "bytes": 200,
+      "path": "reproducibility/native_stack/r1r1/traditional/primary_traditional.json",
+      "sha256": "3b33d32883589bac136751c15899b6e9fadb2de799bf8e2da75dcbe702d45aff"
+    },
+    {
+      "bytes": 6685,
+      "path": "reproducibility/native_stack/r1r1/traditional/task_lqr/candidate_registry.json",
+      "sha256": "f7b208c50d251cf549cc1fdb858b80d15def535a20bf6ba50e3a626bff5d9115"
+    },
+    {
+      "bytes": 281616,
+      "path": "reproducibility/native_stack/r1r1/traditional/task_lqr/development_results.csv",
+      "sha256": "db8d18d6b6b09a680a3c1d86efb22a99aefee9716394b4ef3b7b56d013478f86"
+    },
+    {
+      "bytes": 1761,
+      "path": "reproducibility/native_stack/r1r1/traditional/task_lqr/development_summary.csv",
+      "sha256": "a76a978db4fe784f30fe68f040f346811e6506b341010f8d30e7b216cb845348"
+    },
+    {
+      "bytes": 8817,
+      "path": "reproducibility/native_stack/r1r1/traditional/task_lqr/freeze.json",
+      "sha256": "07e06de8105c7cbd99f00283049968f04a737c1e914b466ac5a4b25d1ac4e966"
+    },
+    {
+      "bytes": 97176,
+      "path": "reproducibility/native_stack/r1r1/traditional/task_lqr/incumbent_results_exact.csv",
+      "sha256": "faf49e54663611ee99876bd688835462ea014470086d990810f271e057ea5654"
+    },
+    {
+      "bytes": 97779,
+      "path": "reproducibility/native_stack/r1r1/traditional/task_lqr/incumbent_results_provisional_no_authority.csv",
+      "sha256": "a4cdedddcf6346bed538734e9f80edf7f17165ffa5acd99e2fe3c18b926b7e03"
+    },
+    {
+      "bytes": 118724,
+      "path": "reproducibility/native_stack/r1r1/traditional/task_lqr/stage_a_results.csv",
+      "sha256": "70ac8584089d49eedaafe586fa2aae6596366e26bedb4ef014f78734f96137e6"
+    },
+    {
+      "bytes": 198,
+      "path": "reproducibility/native_stack/r1r1/traditional/task_lqr/stage_a_selection.json",
+      "sha256": "309921b5e868fef4427ca67c6cb2123b609a2824fa84aa5debb72dd1ce9b31e2"
+    },
+    {
+      "bytes": 3825,
+      "path": "reproducibility/native_stack/r1r1/traditional/task_lqr/stage_a_summary.csv",
+      "sha256": "57b4e676ed5461c9d91aa2a51dcd5f1d9259b6fafda5ea8af6badac6e94d06b8"
+    },
+    {
+      "bytes": 1093,
+      "path": "reproducibility/native_stack/r1r1/traditional/traditional_envelope.json",
+      "sha256": "e11195108d91f485edca1583dc0c39462140b91e0fae7e2b1c9965dbe8bcd1a7"
+    }
+  ],
+  "entry_count": 61
+}

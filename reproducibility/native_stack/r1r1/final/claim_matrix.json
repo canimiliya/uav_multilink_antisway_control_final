@@ -1,0 +1,14 @@
+{
+  "allowed": [
+    "Development-only Traditional family results",
+    "correct P2-R1R1 block"
+  ],
+  "forbidden": {
+    "Holdout performance": true,
+    "Paper": true,
+    "Primary Traditional frozen": true,
+    "SATC Advanced": true
+  },
+  "new_paper_selected": false,
+  "satc_stage_b_selection_authority": false
+}
