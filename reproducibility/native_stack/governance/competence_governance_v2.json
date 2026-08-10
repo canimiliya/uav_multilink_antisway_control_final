@@ -1,0 +1,55 @@
+{
+  "version": "native-stack-competence-governance-v2",
+  "frozen_before_retrospective_existing_method_diagnostic": true,
+  "benchmark_physics_version": "native-stack-benchmark-v1.1",
+  "case_manifests_changed": false,
+  "case_semantics_changed": false,
+  "plant_changed": false,
+  "wind_changed": false,
+  "metric_definitions_changed": false,
+  "success_definition_changed": false,
+  "cohorts": {
+    "nominal": ["calm", "moderate", "stochastic"],
+    "challenge": ["strong_sustained", "strong_transient", "ramp"]
+  },
+  "traditional_eligibility": {
+    "all_case_safety_rate_min": 0.98,
+    "all_case_catastrophic_count_max": 4,
+    "nominal_success_rate_min": 0.70,
+    "nominal_each_wind_success_rate_min": 0.50,
+    "nominal_each_task_family_success_rate_min": 0.60,
+    "nominal_setpoint_rmse_max_m": 1.25,
+    "nominal_trajectory_rmse_max_m": 1.50,
+    "deadline_miss_rate_max": 0.01
+  },
+  "threshold_rationale": {
+    "all_case_safety": "Safety is not an advanced-method differentiator. A baseline that becomes catastrophic in challenge cases is not a safe comparison object, so competence v1 safety and catastrophic limits are retained unchanged.",
+    "nominal_success_0_70": "This is a methodological research gate, not a physically derived number. Fifty percent supplies no clear operational-majority margin; sixty percent permits broad unreliability; seventy percent requires repeatable majority usability while allowing heterogeneous cases; eighty percent would impose near-operational reliability beyond a research baseline.",
+    "nominal_each_wind_0_50": "Prevents calm cases from masking inability to operate in moderate or ordinary stochastic wind. Every nominal condition must succeed on at least a simple majority of its balanced cases.",
+    "nominal_each_task_0_60": "Both mandatory task families must be usable; a ten-point allowance below the aggregate gate accommodates family heterogeneity without permitting one family to be sacrificed.",
+    "tracking_rmse": "The preregistered competence-v1 geometric tracking bounds remain meaningful, but are applied to the operational cohort rather than advanced robustness challenges.",
+    "deadline": "The preregistered one-percent component deadline miss limit remains the real-time validity requirement."
+  },
+  "challenge_robustness": {
+    "eligibility_role": "REPORT_ONLY_EXCEPT_ALL_CASE_SAFETY",
+    "reported_metrics": [
+      "success_rate",
+      "setpoint_position_rmse_m",
+      "trajectory_tracking_rmse_m",
+      "endpoint_position_error_m",
+      "endpoint_velocity_error_m_s",
+      "strong_mean_m",
+      "strong_p90_m",
+      "thrust_saturation_rate",
+      "torque_saturation_rate"
+    ],
+    "purpose": "preserve strong sustained, transient, ramp, and multi-link coordination as the space in which advanced methods demonstrate value"
+  },
+  "anti_posthoc_rules": {
+    "existing_controller_result_used_to_set_thresholds": false,
+    "native_pid_001_targeted_to_pass": false,
+    "thresholds_may_not_be_changed_after_retrospective": true,
+    "v1_history_may_not_be_relabelled": true,
+    "future_qualification_requires_new_task_protocol_and_freeze": true
+  }
+}

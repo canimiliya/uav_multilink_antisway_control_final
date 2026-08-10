@@ -1,0 +1,26 @@
+{
+  "task": "P2-R0G-MISSION-ENVELOPE-AND-TRADITIONAL-COMPETENCE-STRUCTURAL-AUDIT-R1",
+  "result": "P2_NATIVE_BENCHMARK_GOVERNANCE_AUDIT_COMPLETE",
+  "decision": "B",
+  "decision_name": "KEEP_BENCHMARK_V1_1_REVISE_COMPETENCE_GOVERNANCE",
+  "root_cause": {
+    "mission_envelope": "NOT_STRUCTURAL_ROOT_CAUSE",
+    "competence_governance": "PRIMARY_ROOT_CAUSE",
+    "traditional_class": "CONTRIBUTING_LIMITATION",
+    "controller_implementation": "CONTRIBUTING_LIMITATION_NOT_SOLE_CAUSE"
+  },
+  "basis": {
+    "success_70_physically_derived": false,
+    "development_endpoint_equilibrium_certificate_rate": 1.0,
+    "development_conservative_time_certificate_rate": 1.0,
+    "traditional_eligibility_challenge_coupling": true,
+    "case_manifests_need_revision": false,
+    "plant_or_actuator_limits_need_revision": false
+  },
+  "history_preserved": {
+    "P2-R1R1": "BLOCKED_P2_TRADITIONAL_COMPETENCE",
+    "P2-R1R2": "P2_NATIVE_TRADITIONAL_RECOVERY_FAILED"
+  },
+  "no_retroactive_pass": true,
+  "future_controller_authority": "NONE_FROM_THIS_AUDIT"
+}
