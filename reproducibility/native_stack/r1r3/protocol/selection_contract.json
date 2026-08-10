@@ -1,0 +1,22 @@
+{
+  "confirmation": "independent second authoritative 200-case execution of the selected exact spec",
+  "future_paper_may_replace_primary": false,
+  "primary_order": [
+    "all_safety_rate",
+    "nominal_success_rate",
+    "nominal_task_balance",
+    "nominal_rmse",
+    "challenge_robustness",
+    "physical_effort",
+    "runtime"
+  ],
+  "qualification_cases": 200,
+  "stage_a_order": [
+    "catastrophic_count_ascending",
+    "safety_rate_descending",
+    "nominal_success_rate_descending",
+    "endpoint_error_ascending",
+    "nominal_rmse_ascending"
+  ],
+  "stage_b_count_per_family": 6
+}

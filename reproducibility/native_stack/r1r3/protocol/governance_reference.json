@@ -1,0 +1,9 @@
+{
+  "changed": false,
+  "cohort_definition_path": "reproducibility/native_stack/governance/cohort_role_definition.json",
+  "cohort_definition_sha256": "db1204dbebf7762d374b258ba4f2bd2d706c0048424463e0efc1a38a775eeb09",
+  "competence_governance_path": "reproducibility/native_stack/governance/competence_governance_v2.json",
+  "competence_governance_sha256": "7f6f73605b6fe837d435e826bd34f2b95825154d2c9ec69ac9283730ec259762",
+  "resolved_development_manifest_sha256": "eccf9411ba5de7f04bc8ceece8b369b913de0a6d41ad7dd2132554b9a965f80b",
+  "version": "native-stack-competence-governance-v2"
+}

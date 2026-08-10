@@ -1,0 +1,17 @@
+{
+  "benchmark_changed": false,
+  "branch": "research/p2-baselines-governance-v2",
+  "governance_changed": false,
+  "holdout_execution_allowed": false,
+  "holdout_performance_access_allowed": false,
+  "mission_changed": false,
+  "paper_search": false,
+  "satc_search_gate": "competent_traditional_count >= 2",
+  "source_head": "88c3aef081fabab44d174bc8afd234ae634af3da",
+  "source_tag": "native-stack-benchmark-v1.2-governance",
+  "stop_on_satc_not_advanced": true,
+  "stop_on_traditional_failure": true,
+  "success_definition_changed": false,
+  "task": "P2-R1R3-GOVERNANCE-V2-STRONG-TRADITIONAL-QUALIFICATION-AND-SATC-FREEZE-R1",
+  "traditional_minimum": 2
+}

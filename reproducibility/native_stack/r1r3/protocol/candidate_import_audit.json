@@ -1,0 +1,26 @@
+{
+  "imported_files": [
+    {
+      "path": "src/uav_sway/native_stack/r1r1_controllers.py",
+      "source_sha": "9d0264246408eced13b5c5029763443907610697"
+    },
+    {
+      "path": "src/uav_sway/native_stack/r1r1_evaluation.py",
+      "source_sha": "9d0264246408eced13b5c5029763443907610697"
+    },
+    {
+      "path": "src/uav_sway/native_stack/r1r2_controllers.py",
+      "source_sha": "9d0264246408eced13b5c5029763443907610697"
+    },
+    {
+      "path": "src/uav_sway/native_stack/r1r2_evaluation.py",
+      "source_sha": "9d0264246408eced13b5c5029763443907610697"
+    }
+  ],
+  "new_formal_results_require_authoritative_rerun": true,
+  "old_results_imported_as_new_results": false,
+  "reference_heads": {
+    "R1R1": "046c64eb8d364a58e5af5425df2f88b95c73b261",
+    "R1R2": "9d0264246408eced13b5c5029763443907610697"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260810,
+  "cohorts": [
+    "nominal",
+    "challenge",
+    "overall"
+  ],
+  "paired_case_identity_required": true,
+  "satc_advanced_rule": {
+    "nominal_not_materially_worse": true,
+    "single_metric_relative_improvement_min": 0.1,
+    "two_metric_relative_improvement_min": 0.05
+  }
+}

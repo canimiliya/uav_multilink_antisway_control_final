@@ -1,0 +1,23 @@
+{
+  "full_lqr_lqi": {
+    "local_max": 24,
+    "stage_a_initial": 24,
+    "stage_b_full_200_max": 8
+  },
+  "pid": {
+    "local_max": 24,
+    "stage_a_max": 32,
+    "stage_b_full_200_max": 8,
+    "total_max": 64
+  },
+  "satc_native": {
+    "enabled_only_after_two_traditional_pass": true,
+    "maximum_new_configs": 96
+  },
+  "stop_first_confirmed_pass": true,
+  "task_lqr": {
+    "initial_configs": 0,
+    "maximum_configs": 24,
+    "optional": true
+  }
+}

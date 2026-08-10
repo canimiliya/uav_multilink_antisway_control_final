@@ -1,0 +1,1346 @@
+[
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_000",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 10.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 0.8,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0009,
+        0.0009,
+        0.0010890000000000001
+      ],
+      "q_position": [
+        0.0225,
+        0.0225,
+        0.029756249999999995
+      ],
+      "q_velocity": [
+        0.30250000000000005,
+        0.30250000000000005,
+        0.3660250000000001
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.04,
+      "tip_correction_kp": 0.1,
+      "tip_correction_limit_m": 0.3
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_001",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 14.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.0,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0016,
+        0.0016,
+        0.0019360000000000004
+      ],
+      "q_position": [
+        0.04000000000000001,
+        0.04000000000000001,
+        0.05289999999999999
+      ],
+      "q_velocity": [
+        0.42250000000000004,
+        0.42250000000000004,
+        0.5112250000000002
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.06,
+      "tip_correction_kp": 0.16,
+      "tip_correction_limit_m": 0.4
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_002",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 18.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.2,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0025000000000000005,
+        0.0025000000000000005,
+        0.0030250000000000008
+      ],
+      "q_position": [
+        0.0625,
+        0.0625,
+        0.08265624999999999
+      ],
+      "q_velocity": [
+        0.5625,
+        0.5625,
+        0.6806250000000001
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.08,
+      "tip_correction_kp": 0.22,
+      "tip_correction_limit_m": 0.5
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_003",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 10.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.4,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0036,
+        0.0036,
+        0.0043560000000000005
+      ],
+      "q_position": [
+        0.09,
+        0.09,
+        0.11902499999999998
+      ],
+      "q_velocity": [
+        0.7224999999999999,
+        0.7224999999999999,
+        0.8742250000000001
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.04,
+      "tip_correction_kp": 0.28,
+      "tip_correction_limit_m": 0.3
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_004",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 14.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 0.8,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0064,
+        0.0064,
+        0.007744000000000002
+      ],
+      "q_position": [
+        0.12249999999999998,
+        0.12249999999999998,
+        0.16200624999999996
+      ],
+      "q_velocity": [
+        0.9025,
+        0.9025,
+        1.0920249999999998
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.06,
+      "tip_correction_kp": 0.1,
+      "tip_correction_limit_m": 0.4
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_005",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 18.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.0,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.010000000000000002,
+        0.010000000000000002,
+        0.012100000000000003
+      ],
+      "q_position": [
+        0.16000000000000003,
+        0.16000000000000003,
+        0.21159999999999995
+      ],
+      "q_velocity": [
+        1.1025,
+        1.1025,
+        1.3340250000000007
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.08,
+      "tip_correction_kp": 0.16,
+      "tip_correction_limit_m": 0.5
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_006",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 10.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.2,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0144,
+        0.0144,
+        0.017424000000000002
+      ],
+      "q_position": [
+        0.2025,
+        0.2025,
+        0.26780624999999997
+      ],
+      "q_velocity": [
+        1.3224999999999998,
+        1.3224999999999998,
+        1.6002249999999998
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.04,
+      "tip_correction_kp": 0.22,
+      "tip_correction_limit_m": 0.3
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_007",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 14.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.4,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.019600000000000003,
+        0.019600000000000003,
+        0.023716000000000008
+      ],
+      "q_position": [
+        0.25,
+        0.25,
+        0.33062499999999995
+      ],
+      "q_velocity": [
+        1.5625,
+        1.5625,
+        1.890625
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.06,
+      "tip_correction_kp": 0.28,
+      "tip_correction_limit_m": 0.4
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_008",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 18.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 0.8,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0064,
+        0.0064,
+        0.007744000000000002
+      ],
+      "q_position": [
+        0.0576,
+        0.0576,
+        0.07617599999999998
+      ],
+      "q_velocity": [
+        0.48999999999999994,
+        0.48999999999999994,
+        0.5929
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.08,
+      "tip_correction_kp": 0.1,
+      "tip_correction_limit_m": 0.5
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_009",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 10.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.0,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.010000000000000002,
+        0.010000000000000002,
+        0.012100000000000003
+      ],
+      "q_position": [
+        0.07840000000000001,
+        0.07840000000000001,
+        0.10368400000000001
+      ],
+      "q_velocity": [
+        0.6400000000000001,
+        0.6400000000000001,
+        0.7744000000000002
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.04,
+      "tip_correction_kp": 0.16,
+      "tip_correction_limit_m": 0.3
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_010",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 14.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.2,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0144,
+        0.0144,
+        0.017424000000000002
+      ],
+      "q_position": [
+        0.1024,
+        0.1024,
+        0.135424
+      ],
+      "q_velocity": [
+        0.81,
+        0.81,
+        0.9801000000000002
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.06,
+      "tip_correction_kp": 0.22,
+      "tip_correction_limit_m": 0.4
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_011",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 18.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.4,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.019600000000000003,
+        0.019600000000000003,
+        0.023716000000000008
+      ],
+      "q_position": [
+        0.1296,
+        0.1296,
+        0.171396
+      ],
+      "q_velocity": [
+        1.0,
+        1.0,
+        1.2100000000000002
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.08,
+      "tip_correction_kp": 0.28,
+      "tip_correction_limit_m": 0.5
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_012",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 10.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 0.8,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0025000000000000005,
+        0.0025000000000000005,
+        0.0030250000000000008
+      ],
+      "q_position": [
+        0.04000000000000001,
+        0.04000000000000001,
+        0.05289999999999999
+      ],
+      "q_velocity": [
+        0.6400000000000001,
+        0.6400000000000001,
+        0.7744000000000002
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.04,
+      "tip_correction_kp": 0.1,
+      "tip_correction_limit_m": 0.3
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_013",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 14.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.0,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.004900000000000001,
+        0.004900000000000001,
+        0.005929000000000002
+      ],
+      "q_position": [
+        0.07840000000000001,
+        0.07840000000000001,
+        0.10368400000000001
+      ],
+      "q_velocity": [
+        0.9025,
+        0.9025,
+        1.0920249999999998
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.06,
+      "tip_correction_kp": 0.16,
+      "tip_correction_limit_m": 0.4
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_014",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 18.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.2,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0081,
+        0.0081,
+        0.009801
+      ],
+      "q_position": [
+        0.1296,
+        0.1296,
+        0.171396
+      ],
+      "q_velocity": [
+        1.2100000000000002,
+        1.2100000000000002,
+        1.4641000000000004
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.08,
+      "tip_correction_kp": 0.22,
+      "tip_correction_limit_m": 0.5
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_015",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 10.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.4,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0121,
+        0.0121,
+        0.014641000000000003
+      ],
+      "q_position": [
+        0.1936,
+        0.1936,
+        0.256036
+      ],
+      "q_velocity": [
+        1.5625,
+        1.5625,
+        1.890625
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.04,
+      "tip_correction_kp": 0.28,
+      "tip_correction_limit_m": 0.3
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_016",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 14.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 0.8,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0016,
+        0.0016,
+        0.0019360000000000004
+      ],
+      "q_position": [
+        0.09,
+        0.09,
+        0.11902499999999998
+      ],
+      "q_velocity": [
+        0.48999999999999994,
+        0.48999999999999994,
+        0.5929
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.06,
+      "tip_correction_kp": 0.1,
+      "tip_correction_limit_m": 0.4
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_017",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 18.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.0,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0036,
+        0.0036,
+        0.0043560000000000005
+      ],
+      "q_position": [
+        0.1444,
+        0.1444,
+        0.19096899999999994
+      ],
+      "q_velocity": [
+        0.7224999999999999,
+        0.7224999999999999,
+        0.8742250000000001
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.08,
+      "tip_correction_kp": 0.16,
+      "tip_correction_limit_m": 0.5
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_018",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 10.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.2,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0064,
+        0.0064,
+        0.007744000000000002
+      ],
+      "q_position": [
+        0.2116,
+        0.2116,
+        0.279841
+      ],
+      "q_velocity": [
+        1.0,
+        1.0,
+        1.2100000000000002
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.04,
+      "tip_correction_kp": 0.22,
+      "tip_correction_limit_m": 0.3
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_019",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 14.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.4,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.010000000000000002,
+        0.010000000000000002,
+        0.012100000000000003
+      ],
+      "q_position": [
+        0.2916,
+        0.2916,
+        0.385641
+      ],
+      "q_velocity": [
+        1.3224999999999998,
+        1.3224999999999998,
+        1.6002249999999998
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.06,
+      "tip_correction_kp": 0.28,
+      "tip_correction_limit_m": 0.4
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_020",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 18.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 0.8,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.010000000000000002,
+        0.010000000000000002,
+        0.012100000000000003
+      ],
+      "q_position": [
+        0.06760000000000001,
+        0.06760000000000001,
+        0.089401
+      ],
+      "q_velocity": [
+        0.81,
+        0.81,
+        0.9801000000000002
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.08,
+      "tip_correction_kp": 0.1,
+      "tip_correction_limit_m": 0.5
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_021",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 10.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.0,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0144,
+        0.0144,
+        0.017424000000000002
+      ],
+      "q_position": [
+        0.11560000000000002,
+        0.11560000000000002,
+        0.15288100000000002
+      ],
+      "q_velocity": [
+        1.1025,
+        1.1025,
+        1.3340250000000007
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.04,
+      "tip_correction_kp": 0.16,
+      "tip_correction_limit_m": 0.3
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_022",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 14.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.2,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.019600000000000003,
+        0.019600000000000003,
+        0.023716000000000008
+      ],
+      "q_position": [
+        0.17639999999999997,
+        0.17639999999999997,
+        0.23328899999999994
+      ],
+      "q_velocity": [
+        1.44,
+        1.44,
+        1.7424000000000002
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.06,
+      "tip_correction_kp": 0.22,
+      "tip_correction_limit_m": 0.4
+    }
+  },
+  {
+    "family": "native_full_lqr",
+    "inner_rate_hz": 500,
+    "method_id": "r1r3_lqi_a_023",
+    "outer_rate_hz": 100,
+    "parameters": {
+      "acceleration_limit": 5.0,
+      "acceleration_slew_per_s": 18.0,
+      "attitude_wn": 4.0,
+      "attitude_zeta": 0.95,
+      "constraint_margin": 0.88,
+      "integral_limit": 1.4,
+      "kd": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ki": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "q_integral": [
+        0.0256,
+        0.0256,
+        0.030976000000000007
+      ],
+      "q_position": [
+        0.25,
+        0.25,
+        0.33062499999999995
+      ],
+      "q_velocity": [
+        1.8225000000000002,
+        1.8225000000000002,
+        2.205225000000001
+      ],
+      "r_acceleration": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_acceleration_gain": 1.0,
+      "reference_velocity_gain": 1.0,
+      "swing_angle_gain": 0.01,
+      "swing_rate_gain": 0.05,
+      "tip_correction_kd": 0.08,
+      "tip_correction_kp": 0.28,
+      "tip_correction_limit_m": 0.5
+    }
+  }
+]
