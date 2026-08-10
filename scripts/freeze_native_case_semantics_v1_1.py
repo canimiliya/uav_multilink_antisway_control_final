@@ -23,6 +23,7 @@ BLOCKED_R1_HEAD = "f1a7a20895687fd1167982ef852f4a7b952f7916"
 GAP_HEAD = "abe59b4f4d91505a2fedaf2fdd9a73d3b6f04e1c"
 RESOLVER_HEAD = "24b8862cc45f46b1f2819269c3c1947fffa0c83d"
 RUNNER_HEAD = "d751b02b72bf413287ee7da8e925654207cf6821"
+RESOLVED_MANIFEST_HEAD = "59efd118238f08b253eed0d4eac868ef27a5760c"
 
 
 def dump(path: Path, value: object) -> None:
@@ -251,10 +252,21 @@ def main() -> None:
         "all_required_gates_pass": all(pass_conditions),
         "result": "P2_NATIVE_STACK_BENCHMARK_V1_1_SEMANTICS_READY" if all(pass_conditions) else "BLOCKED_P2_NATIVE_STACK_BENCHMARK_V1_1_SEMANTICS",
         "p2_r1r1_started": False, "paper_research_started": False,
-        "key_heads": {"gap_audit": GAP_HEAD, "resolver_freeze": RESOLVER_HEAD, "authoritative_runner": RUNNER_HEAD},
+        "key_heads": {"gap_audit": GAP_HEAD, "resolver_freeze": RESOLVER_HEAD, "authoritative_runner": RUNNER_HEAD, "resolved_manifest_freeze": RESOLVED_MANIFEST_HEAD},
     }
     dump(OUT / "final_gate.json", final_gate)
     evidence_paths = sorted(path for path in OUT.glob("*.json") if path.name != "evidence_manifest.json") + sorted(DOCS.glob("*.md"))
+    evidence_paths += [
+        ROOT / "src/uav_sway/native_stack/case_semantics/resolver.py",
+        ROOT / "src/uav_sway/native_stack/case_semantics/authoritative.py",
+        ROOT / "src/uav_sway/native_stack/runner.py",
+        ROOT / "src/uav_sway/disturbances/aerodynamics.py",
+        ROOT / "src/uav_sway/disturbances/wind_applier.py",
+        ROOT / "scripts/freeze_native_case_semantics_v1_1.py",
+        ROOT / "tests/native_stack/test_case_semantics.py",
+        ROOT / "tests/native_stack/test_authoritative_runner.py",
+        ROOT / "tests/native_stack/test_semantic_freeze_evidence.py",
+    ]
     dump(OUT / "evidence_manifest.json", {"generated_from_head": git("rev-parse", "HEAD"), "entries": [{"path": path.relative_to(ROOT).as_posix(), "sha256": file_hash(path), "bytes": path.stat().st_size} for path in evidence_paths]})
 
 

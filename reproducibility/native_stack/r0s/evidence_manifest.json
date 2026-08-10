@@ -11,9 +11,9 @@
       "sha256": "7555c17d13c50abb92028d49f133b85016b326d36b230be62b4685ee02a68d29"
     },
     {
-      "bytes": 1687,
+      "bytes": 1763,
       "path": "reproducibility/native_stack/r0s/final_gate.json",
-      "sha256": "58fe6ceec9c3aaaf4471322dcb873afc48a80ee9d3d07fee3e5de8a3783ff115"
+      "sha256": "57199e4ea707b5d46bb18c69564d53e64073209d3d00d3d86713a9d5116429f1"
     },
     {
       "bytes": 61272,
@@ -109,7 +109,52 @@
       "bytes": 765,
       "path": "docs/native_stack/r0s/WIND_SEMANTICS_SPEC.md",
       "sha256": "f666eeb7dc314df23de0e2add1f4800dff92a8ebc400116c69e127a2e8177ab2"
+    },
+    {
+      "bytes": 19366,
+      "path": "src/uav_sway/native_stack/case_semantics/resolver.py",
+      "sha256": "6d3cde8d48c83076eee9a40da3c2160312b970a39a4fa4d6d8926b6dac378477"
+    },
+    {
+      "bytes": 3102,
+      "path": "src/uav_sway/native_stack/case_semantics/authoritative.py",
+      "sha256": "a3aedfdf63e4c44877f79e87aa38b85e69ee6e4e74e7f44a3962ace3702d4b57"
+    },
+    {
+      "bytes": 4323,
+      "path": "src/uav_sway/native_stack/runner.py",
+      "sha256": "8afecb83f3ade4865f8cbfd4e89be242f42fabebe6e8b3d5df405d436d76139a"
+    },
+    {
+      "bytes": 6082,
+      "path": "src/uav_sway/disturbances/aerodynamics.py",
+      "sha256": "1683355121cfff6b45064f557564cb90ff54b20460b30be12f14c23b2490ce53"
+    },
+    {
+      "bytes": 1240,
+      "path": "src/uav_sway/disturbances/wind_applier.py",
+      "sha256": "c46226616f2c28dbab8fa6a0fcb667e8fbe856da8734f5f54c8ad7e5c153641a"
+    },
+    {
+      "bytes": 19608,
+      "path": "scripts/freeze_native_case_semantics_v1_1.py",
+      "sha256": "68906dc1918deffcf08dd2b1a906b4b5e6dbb297c0c05e752175273bd95640bc"
+    },
+    {
+      "bytes": 6980,
+      "path": "tests/native_stack/test_case_semantics.py",
+      "sha256": "3b30eeabe7ed147a5334157d5e2170c97a4ae94feb31660ce8e9b3260c3f730d"
+    },
+    {
+      "bytes": 2058,
+      "path": "tests/native_stack/test_authoritative_runner.py",
+      "sha256": "4b44580ab22f4f7e3211008d476d082f3698f56ff630311457b4b3ae6a3e4563"
+    },
+    {
+      "bytes": 3714,
+      "path": "tests/native_stack/test_semantic_freeze_evidence.py",
+      "sha256": "41b4c759c8162e33064f1104c6209347ad53028e7c7e0c65d4c003d39984cc33"
     }
   ],
-  "generated_from_head": "d751b02b72bf413287ee7da8e925654207cf6821"
+  "generated_from_head": "59efd118238f08b253eed0d4eac868ef27a5760c"
 }

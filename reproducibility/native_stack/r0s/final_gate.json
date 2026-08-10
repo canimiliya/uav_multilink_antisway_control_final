@@ -26,6 +26,7 @@
   "key_heads": {
     "authoritative_runner": "d751b02b72bf413287ee7da8e925654207cf6821",
     "gap_audit": "abe59b4f4d91505a2fedaf2fdd9a73d3b6f04e1c",
+    "resolved_manifest_freeze": "59efd118238f08b253eed0d4eac868ef27a5760c",
     "resolver_freeze": "24b8862cc45f46b1f2819269c3c1947fffa0c83d"
   },
   "native_holdout": {
@@ -40,7 +41,7 @@
     "controller_performance_in_test_suite": false,
     "failed": 0,
     "numpy": "2.4.6",
-    "passed": 262,
+    "passed": 263,
     "python": "3.11.15",
     "status": "PASS"
   },

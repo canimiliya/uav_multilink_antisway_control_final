@@ -57,3 +57,14 @@ def test_evidence_contracts_and_final_gate() -> None:
         assert final["result"] == "P2_NATIVE_STACK_BENCHMARK_V1_1_SEMANTICS_READY"
     assert not final["controller_performance"]["executed"]
     assert not final["native_holdout"]["executed"]
+
+
+def test_evidence_manifest_hashes_every_declared_file() -> None:
+    evidence = read(R0S / "evidence_manifest.json")
+    paths = {entry["path"] for entry in evidence["entries"]}
+    assert "src/uav_sway/native_stack/case_semantics/resolver.py" in paths
+    assert "scripts/freeze_native_case_semantics_v1_1.py" in paths
+    for entry in evidence["entries"]:
+        path = ROOT / entry["path"]
+        assert path.stat().st_size == entry["bytes"]
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == entry["sha256"]
