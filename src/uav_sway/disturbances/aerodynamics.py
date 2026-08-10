@@ -89,3 +89,49 @@ def compute_body_wind_forces(model, data, config: AerodynamicConfig, model_confi
         results[f"{name}_x"] = force
     results["total_x"] = float(sum(results.values()))
     return results
+
+
+def compute_body_wind_forces_world(
+    model, data, config: AerodynamicConfig, model_config, wind_velocity_world: np.ndarray,
+) -> dict[str, np.ndarray | float]:
+    """Apply the frozen distributed drag model along any world-frame direction.
+
+    This is the coordinate-general form of :func:`compute_body_wind_forces`:
+    the same bodies, coefficients, projected-area formulas, COM application
+    points, and no-aerodynamic-torque assumption are preserved.
+    """
+    wind = np.asarray(wind_velocity_world, dtype=float).reshape(3)
+    if not np.isfinite(wind).all():
+        raise ValueError("wind_velocity_world must be finite")
+    speed = float(np.linalg.norm(wind))
+    if speed <= 1e-15:
+        axis = np.array([1.0, 0.0, 0.0])
+    else:
+        axis = wind / speed
+    results: dict[str, np.ndarray | float] = {}
+    body_specs = [
+        ("quadrotor", config.airframe_cd, "airframe"),
+        *[(f"link_{i}", config.link_cd, "link") for i in range(1, model_config.n_links + 1)],
+        ("cutter", config.cutter_cd, "cutter"),
+    ]
+    total = np.zeros(3, dtype=float)
+    for name, cd, kind in body_specs:
+        body_id = int(mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_BODY, name))
+        if body_id < 0:
+            raise KeyError(name)
+        velocity = body_com_velocity(model, data, body_id)
+        rotation = np.asarray(data.xmat[body_id], dtype=float).reshape(3, 3)
+        if kind == "airframe":
+            area = box_projected_area(config.airframe_dimensions, rotation, axis)
+        elif kind == "cutter":
+            area = box_projected_area(config.cutter_dimensions, rotation, axis)
+        else:
+            area = link_projected_area(model_config.link_length, config.link_diameter, rotation, axis)
+        relative_axis_speed = float(axis @ (wind - velocity))
+        scalar = 0.5 * config.air_density * cd * area * abs(relative_axis_speed) * relative_axis_speed
+        force = scalar * axis
+        data.xfrc_applied[body_id, :3] += force
+        results[name] = force.copy()
+        total += force
+    results["total_world"] = total
+    return results
