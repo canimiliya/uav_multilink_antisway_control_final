@@ -56,7 +56,7 @@ def audit(candidate_id: str, values: list[dict], baseline: dict[str, list[dict]]
     position_gain = improve(full["position_mean_m"], overall["position_mean_m"])
     strong_gain = improve(full_strong["position_mean_m"], strong["position_mean_m"])
     strong_p90_degradation = (strong["position_p90_m"] - full_strong["position_p90_m"]) / full_strong["position_p90_m"]
-    acquisition_degradation = float("inf") if overall["acquisition_median_s"] is None else (overall["acquisition_median_s"] - full["acquisition_median_s"]) / full["acquisition_median_s"]
+    acquisition_degradation = None if overall["acquisition_median_s"] is None else (overall["acquisition_median_s"] - full["acquisition_median_s"]) / full["acquisition_median_s"]
     extras = {
         "acquisition_ge_5pct": overall["acquisition_median_s"] is not None and improve(full["acquisition_median_s"], overall["acquisition_median_s"]) >= 0.05 - 1e-12,
         "orientation_ge_10pct": improve(full["orientation_mean_deg"], overall["orientation_mean_deg"]) >= 0.10 - 1e-12,
@@ -68,7 +68,7 @@ def audit(candidate_id: str, values: list[dict], baseline: dict[str, list[dict]]
         "safety": overall["safety_rate"] >= best_safety - 1e-12,
         "success": overall["success_rate"] >= best_success - 1e-12,
         "position": position_gain >= 0.05 - 1e-12,
-        "acquisition": acquisition_degradation <= 0.05 + 1e-12,
+        "acquisition": acquisition_degradation is not None and acquisition_degradation <= 0.05 + 1e-12,
         "bootstrap": bootstrap["lower_bound_gt_zero"],
         "strong_position": strong_gain >= 0.05 - 1e-12,
         "strong_p90": strong_p90_degradation <= 0.10 + 1e-12,

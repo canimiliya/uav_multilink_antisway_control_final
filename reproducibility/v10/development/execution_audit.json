@@ -1,0 +1,54 @@
+{
+  "task": "V10 FxTDO-MPC Development execution",
+  "attempts": [
+    {
+      "attempt": 1,
+      "scope": "Stage A process startup",
+      "status": "NO_SAMPLES_EXECUTED",
+      "issue": "repository-pinned third_party/udaan was not on PYTHONPATH",
+      "resolution": "added repository root, src, and pinned third_party/udaan to process-local PYTHONPATH"
+    },
+    {
+      "attempt": 2,
+      "scope": "Stage A: 64 configurations x 12 preregistered core samples",
+      "status": "COMPLETE",
+      "authoritative_runs": 768,
+      "retries": 0
+    },
+    {
+      "attempt": 3,
+      "scope": "Stage B: selected 16 configurations x frozen 144-sample Development",
+      "status": "COMPLETE",
+      "authoritative_runs": 2304,
+      "retries": 0
+    },
+    {
+      "attempt": 4,
+      "scope": "deterministic gate evaluation",
+      "status": "REPORT_WRITE_FAILED_NO_SIMULATION",
+      "issue": "undefined acquisition metric was represented as infinity and strict JSON rejected it",
+      "resolution": "represented undefined acquisition as null and its gate as false; recomputed from unchanged CSV"
+    },
+    {
+      "attempt": 5,
+      "scope": "offline observer-truth audit",
+      "status": "TERMINATED_NO_OUTPUT",
+      "issue": "compressed NPZ arrays were repeatedly decompressed inside the replay loop",
+      "resolution": "loaded each frozen array once in memory; no controller or evidence data changed"
+    },
+    {
+      "attempt": 6,
+      "scope": "offline observer-truth audit",
+      "status": "COMPLETE",
+      "truth_used_as_runtime_input": false,
+      "used_for_selection": false
+    }
+  ],
+  "unique_configurations": 64,
+  "total_paper_performance_runs": 3072,
+  "performance_driven_retries": 0,
+  "traditional_rerun": false,
+  "satc_rerun": false,
+  "holdout_loaded": false,
+  "holdout_executed": false
+}

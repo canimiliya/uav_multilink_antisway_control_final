@@ -1,0 +1,537 @@
+{
+  "source": "stage_a_summary.json",
+  "selection_rule": "finite/stable implicit in completed cases; safety, success, position, strong position, orientation, effort, runtime, id",
+  "selected_ids": [
+    "fxtdo_v10_034",
+    "fxtdo_v10_039",
+    "fxtdo_v10_014",
+    "fxtdo_v10_054",
+    "fxtdo_v10_041",
+    "fxtdo_v10_051",
+    "fxtdo_v10_020",
+    "fxtdo_v10_049",
+    "fxtdo_v10_013",
+    "fxtdo_v10_001",
+    "fxtdo_v10_009",
+    "fxtdo_v10_053",
+    "fxtdo_v10_048",
+    "fxtdo_v10_060",
+    "fxtdo_v10_030",
+    "fxtdo_v10_010"
+  ],
+  "ranked": [
+    {
+      "rank": 1,
+      "candidate_id": "fxtdo_v10_034",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 3.648447878200192,
+      "runtime_ms": 1.2155
+    },
+    {
+      "rank": 2,
+      "candidate_id": "fxtdo_v10_039",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 5.443643855372542,
+      "runtime_ms": 0.8317
+    },
+    {
+      "rank": 3,
+      "candidate_id": "fxtdo_v10_014",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 7.314306947403195,
+      "runtime_ms": 0.9373
+    },
+    {
+      "rank": 4,
+      "candidate_id": "fxtdo_v10_054",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 8.685912971979834,
+      "runtime_ms": 0.9521
+    },
+    {
+      "rank": 5,
+      "candidate_id": "fxtdo_v10_041",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 11.250378639892666,
+      "runtime_ms": 0.811
+    },
+    {
+      "rank": 6,
+      "candidate_id": "fxtdo_v10_051",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 12.655164818571565,
+      "runtime_ms": 1.0139
+    },
+    {
+      "rank": 7,
+      "candidate_id": "fxtdo_v10_020",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 13.944784642279686,
+      "runtime_ms": 0.8139
+    },
+    {
+      "rank": 8,
+      "candidate_id": "fxtdo_v10_049",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 16.168781584292088,
+      "runtime_ms": 1.281
+    },
+    {
+      "rank": 9,
+      "candidate_id": "fxtdo_v10_013",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 16.28975489584708,
+      "runtime_ms": 1.0311
+    },
+    {
+      "rank": 10,
+      "candidate_id": "fxtdo_v10_001",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 16.751771564257563,
+      "runtime_ms": 1.3745
+    },
+    {
+      "rank": 11,
+      "candidate_id": "fxtdo_v10_009",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 17.7312048212039,
+      "runtime_ms": 1.3867
+    },
+    {
+      "rank": 12,
+      "candidate_id": "fxtdo_v10_053",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 18.033982820996776,
+      "runtime_ms": 1.2763
+    },
+    {
+      "rank": 13,
+      "candidate_id": "fxtdo_v10_048",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 18.92954693730528,
+      "runtime_ms": 1.0508
+    },
+    {
+      "rank": 14,
+      "candidate_id": "fxtdo_v10_060",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 19.052095589084065,
+      "runtime_ms": 0.7959
+    },
+    {
+      "rank": 15,
+      "candidate_id": "fxtdo_v10_030",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 19.36519215322723,
+      "runtime_ms": 0.9004
+    },
+    {
+      "rank": 16,
+      "candidate_id": "fxtdo_v10_010",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 20.222083973195854,
+      "runtime_ms": 1.3605
+    },
+    {
+      "rank": 17,
+      "candidate_id": "fxtdo_v10_022",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 20.96780216014135,
+      "runtime_ms": 1.456
+    },
+    {
+      "rank": 18,
+      "candidate_id": "fxtdo_v10_032",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 22.352675235694516,
+      "runtime_ms": 1.4601
+    },
+    {
+      "rank": 19,
+      "candidate_id": "fxtdo_v10_019",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 23.22199472934101,
+      "runtime_ms": 1.2196
+    },
+    {
+      "rank": 20,
+      "candidate_id": "fxtdo_v10_011",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 23.3036408405589,
+      "runtime_ms": 1.0699
+    },
+    {
+      "rank": 21,
+      "candidate_id": "fxtdo_v10_047",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 24.103827710503293,
+      "runtime_ms": 1.5608
+    },
+    {
+      "rank": 22,
+      "candidate_id": "fxtdo_v10_061",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 24.725259506947626,
+      "runtime_ms": 1.5627
+    },
+    {
+      "rank": 23,
+      "candidate_id": "fxtdo_v10_024",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 25.65672163576228,
+      "runtime_ms": 1.0707
+    },
+    {
+      "rank": 24,
+      "candidate_id": "fxtdo_v10_042",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 26.578323037788113,
+      "runtime_ms": 1.1872
+    },
+    {
+      "rank": 25,
+      "candidate_id": "fxtdo_v10_021",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 26.86568091185845,
+      "runtime_ms": 1.1544
+    },
+    {
+      "rank": 26,
+      "candidate_id": "fxtdo_v10_035",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 27.485122857811472,
+      "runtime_ms": 1.6259
+    },
+    {
+      "rank": 27,
+      "candidate_id": "fxtdo_v10_018",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 27.993887975651365,
+      "runtime_ms": 1.663
+    },
+    {
+      "rank": 28,
+      "candidate_id": "fxtdo_v10_031",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 28.034439048327638,
+      "runtime_ms": 1.4539
+    },
+    {
+      "rank": 29,
+      "candidate_id": "fxtdo_v10_063",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 29.281934694114227,
+      "runtime_ms": 1.2908
+    },
+    {
+      "rank": 30,
+      "candidate_id": "fxtdo_v10_056",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 30.482731436383393,
+      "runtime_ms": 1.2708
+    },
+    {
+      "rank": 31,
+      "candidate_id": "fxtdo_v10_004",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 30.993782983556912,
+      "runtime_ms": 1.2335
+    },
+    {
+      "rank": 32,
+      "candidate_id": "fxtdo_v10_027",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 31.745887118800457,
+      "runtime_ms": 1.5767
+    },
+    {
+      "rank": 33,
+      "candidate_id": "fxtdo_v10_017",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 32.170716299188484,
+      "runtime_ms": 0.9526
+    },
+    {
+      "rank": 34,
+      "candidate_id": "fxtdo_v10_037",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 32.44129744006688,
+      "runtime_ms": 1.3396
+    },
+    {
+      "rank": 35,
+      "candidate_id": "fxtdo_v10_050",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 32.51105356764503,
+      "runtime_ms": 1.7444
+    },
+    {
+      "rank": 36,
+      "candidate_id": "fxtdo_v10_045",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 32.5343599334771,
+      "runtime_ms": 1.3446
+    },
+    {
+      "rank": 37,
+      "candidate_id": "fxtdo_v10_036",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 32.797074320858464,
+      "runtime_ms": 1.4206
+    },
+    {
+      "rank": 38,
+      "candidate_id": "fxtdo_v10_005",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 33.91937226222415,
+      "runtime_ms": 1.0187
+    },
+    {
+      "rank": 39,
+      "candidate_id": "fxtdo_v10_002",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 34.00352334441397,
+      "runtime_ms": 1.3619
+    },
+    {
+      "rank": 40,
+      "candidate_id": "fxtdo_v10_016",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 34.0828133655772,
+      "runtime_ms": 1.3007
+    },
+    {
+      "rank": 41,
+      "candidate_id": "fxtdo_v10_052",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 34.9024093442764,
+      "runtime_ms": 1.0018
+    },
+    {
+      "rank": 42,
+      "candidate_id": "fxtdo_v10_015",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.02865698984841,
+      "runtime_ms": 1.0225
+    },
+    {
+      "rank": 43,
+      "candidate_id": "fxtdo_v10_023",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.11896663751896,
+      "runtime_ms": 1.4698
+    },
+    {
+      "rank": 44,
+      "candidate_id": "fxtdo_v10_038",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.18731101881841,
+      "runtime_ms": 1.5689
+    },
+    {
+      "rank": 45,
+      "candidate_id": "fxtdo_v10_064",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.20558243450958,
+      "runtime_ms": 1.7736
+    },
+    {
+      "rank": 46,
+      "candidate_id": "fxtdo_v10_003",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.523669268946364,
+      "runtime_ms": 1.3275
+    },
+    {
+      "rank": 47,
+      "candidate_id": "fxtdo_v10_026",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.59881226296449,
+      "runtime_ms": 1.3451
+    },
+    {
+      "rank": 48,
+      "candidate_id": "fxtdo_v10_025",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.6028805119736,
+      "runtime_ms": 1.2973
+    },
+    {
+      "rank": 49,
+      "candidate_id": "fxtdo_v10_028",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.65459660877617,
+      "runtime_ms": 0.8742
+    },
+    {
+      "rank": 50,
+      "candidate_id": "fxtdo_v10_040",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.74675069523903,
+      "runtime_ms": 1.5723
+    },
+    {
+      "rank": 51,
+      "candidate_id": "fxtdo_v10_055",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.926024131064224,
+      "runtime_ms": 1.2601
+    },
+    {
+      "rank": 52,
+      "candidate_id": "fxtdo_v10_044",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.948400745216055,
+      "runtime_ms": 1.4212
+    },
+    {
+      "rank": 53,
+      "candidate_id": "fxtdo_v10_008",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 35.99242000790291,
+      "runtime_ms": 1.3347
+    },
+    {
+      "rank": 54,
+      "candidate_id": "fxtdo_v10_012",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 36.04406770791318,
+      "runtime_ms": 1.3193
+    },
+    {
+      "rank": 55,
+      "candidate_id": "fxtdo_v10_007",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 36.21895729223761,
+      "runtime_ms": 1.1845
+    },
+    {
+      "rank": 56,
+      "candidate_id": "fxtdo_v10_062",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 36.614787858192095,
+      "runtime_ms": 1.4299
+    },
+    {
+      "rank": 57,
+      "candidate_id": "fxtdo_v10_057",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 36.7561400452936,
+      "runtime_ms": 1.1661
+    },
+    {
+      "rank": 58,
+      "candidate_id": "fxtdo_v10_043",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 36.758399813999816,
+      "runtime_ms": 1.485
+    },
+    {
+      "rank": 59,
+      "candidate_id": "fxtdo_v10_058",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 36.76772608822486,
+      "runtime_ms": 1.305
+    },
+    {
+      "rank": 60,
+      "candidate_id": "fxtdo_v10_046",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 36.8279666546143,
+      "runtime_ms": 1.1964
+    },
+    {
+      "rank": 61,
+      "candidate_id": "fxtdo_v10_029",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 36.97616184256471,
+      "runtime_ms": 1.0515
+    },
+    {
+      "rank": 62,
+      "candidate_id": "fxtdo_v10_033",
+      "safety": 1.0,
+      "success": 0.0,
+      "position": 37.474507174022136,
+      "runtime_ms": 1.1379
+    },
+    {
+      "rank": 63,
+      "candidate_id": "fxtdo_v10_006",
+      "safety": 0.4166666666666667,
+      "success": 0.0,
+      "position": 25.125354139271078,
+      "runtime_ms": 1.229
+    },
+    {
+      "rank": 64,
+      "candidate_id": "fxtdo_v10_059",
+      "safety": 0.4166666666666667,
+      "success": 0.0,
+      "position": 31.734809914814083,
+      "runtime_ms": 0.9325
+    }
+  ],
+  "holdout_accessed": false
+}

@@ -1,0 +1,36 @@
+{
+  "purpose": "offline diagnostic only; truth was never observer/controller input",
+  "source_bank": "reproducibility/v9/training/training_bank.npz",
+  "source_bank_sha256": "e8f04df4f115086f539307be518dd15ef9e2b00baedd89b4ae162e112a4c6ac3",
+  "split": "VALIDATION",
+  "trajectories": 48,
+  "valid_safe_steps": 10957,
+  "selected_candidate": "fxtdo_v10_020",
+  "total_plant_mass_kg": 13.239999999999998,
+  "truth_definition": "V9 finite-difference rigid-body residual force divided by total plant mass",
+  "estimate_units": "m/s^2",
+  "truth_units": "m/s^2",
+  "rmse_all_axes_m_s2": 0.2965215252428634,
+  "rmse_axis_m_s2": [
+    0.10570312076794246,
+    0.4870596771400852,
+    0.12399502393715892
+  ],
+  "post_1s_rmse_all_axes_m_s2": 0.309139743311011,
+  "bias_axis_m_s2": [
+    0.004742404180378406,
+    -0.015377723673695599,
+    -0.02346896589651691
+  ],
+  "trajectory_rmse_median_m_s2": 0.2107009986378667,
+  "trajectory_rmse_p90_m_s2": 0.497023159878105,
+  "estimate_finite": true,
+  "estimate_max_abs_m_s2": 1.0,
+  "observer_clip_m_s2": 1.0,
+  "no_sustained_divergence": true,
+  "fixed_time_claim_validated": false,
+  "fixed_time_diagnostic": "No empirical fixed-time settling claim: error did not enter and remain within a preregistered truth tolerance across the validation trajectories.",
+  "causal": true,
+  "used_for_selection": false,
+  "holdout_accessed": false
+}
