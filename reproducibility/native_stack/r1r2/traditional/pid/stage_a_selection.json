@@ -1,0 +1,13 @@
+{
+  "case_count": 48,
+  "family": "native_pid",
+  "selected_for_stage_b": [
+    "r1r2_pid_007",
+    "r1r2_pid_026",
+    "r1r2_pid_027",
+    "r1r2_pid_029",
+    "r1r2_pid_033",
+    "r1r2_pid_024"
+  ],
+  "selection_rule": "frozen R1R2 Stage-A lexicographic rule"
+}
