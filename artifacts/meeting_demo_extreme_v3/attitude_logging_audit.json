@@ -1,0 +1,79 @@
+{
+  "ATTITUDE_LOGGING_FIXED": true,
+  "controllers": {
+    "full_lqr_048": {
+      "joint_1": {
+        "initial_deg": 20.0,
+        "min_deg": -14.472242081746936,
+        "max_deg": 20.0,
+        "peak_to_peak_deg": 34.47224208174694,
+        "final_deg": -1.9497883032648673
+      },
+      "joint_2": {
+        "initial_deg": -16.0,
+        "min_deg": -16.0,
+        "max_deg": 7.272626836341639,
+        "peak_to_peak_deg": 23.27262683634164,
+        "final_deg": 0.4052860613235022
+      },
+      "joint_3": {
+        "initial_deg": 12.000000000000002,
+        "min_deg": -6.364349664346056,
+        "max_deg": 12.000000000000002,
+        "peak_to_peak_deg": 18.364349664346058,
+        "final_deg": 0.5227490472439715
+      },
+      "joint_4": {
+        "initial_deg": -8.0,
+        "min_deg": -8.0,
+        "max_deg": 4.268228409284351,
+        "peak_to_peak_deg": 12.268228409284353,
+        "final_deg": 0.6677882246290138
+      },
+      "joint_5": {
+        "initial_deg": 4.0,
+        "min_deg": -4.367418496312445,
+        "max_deg": 6.932904986845981,
+        "peak_to_peak_deg": 11.300323483158426,
+        "final_deg": 0.8993453306092761
+      }
+    },
+    "satc_b_027": {
+      "joint_1": {
+        "initial_deg": 20.0,
+        "min_deg": -14.29994283412735,
+        "max_deg": 20.0,
+        "peak_to_peak_deg": 34.29994283412735,
+        "final_deg": -3.0005783865613624
+      },
+      "joint_2": {
+        "initial_deg": -16.0,
+        "min_deg": -16.0,
+        "max_deg": 7.266690959932696,
+        "peak_to_peak_deg": 23.266690959932696,
+        "final_deg": 0.31051925870324765
+      },
+      "joint_3": {
+        "initial_deg": 12.000000000000002,
+        "min_deg": -6.3636961259472695,
+        "max_deg": 12.000000000000002,
+        "peak_to_peak_deg": 18.36369612594727,
+        "final_deg": 0.42544659489868847
+      },
+      "joint_4": {
+        "initial_deg": -8.0,
+        "min_deg": -8.0,
+        "max_deg": 4.286113573026644,
+        "peak_to_peak_deg": 12.286113573026643,
+        "final_deg": 0.5836686449112637
+      },
+      "joint_5": {
+        "initial_deg": 4.0,
+        "min_deg": -4.370488765124922,
+        "max_deg": 6.96102829902211,
+        "peak_to_peak_deg": 11.33151706414703,
+        "final_deg": 0.8302349508229079
+      }
+    }
+  }
+}

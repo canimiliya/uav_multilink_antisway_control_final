@@ -1,0 +1,48 @@
+[
+  {
+    "task": "T1",
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T1",
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T2",
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T2",
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "direction": "X",
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "direction": "X",
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "direction": "Y",
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "direction": "Y",
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "direction": "XY30",
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "direction": "XY30",
+    "controller": "satc_b_027"
+  }
+]

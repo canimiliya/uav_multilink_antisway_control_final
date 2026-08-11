@@ -1,0 +1,14 @@
+# EXTREME COMPOSITE FUNCTIONAL STRESS DEMOS
+
+| Task | Controller | Safety | Key metric |
+|---|---|---|---:|
+| T1 | full_lqr_048 | PASS | 13.2664991614216 |
+| T1 | satc_b_027 | STRESS_CASE_COMPLETE_WITH_FAILURE | 86.2134478457112 |
+| T2 | full_lqr_048 | PASS | 25.8287619194358 |
+| T2 | satc_b_027 | PASS | 22.776663212637754 |
+| T3_X | full_lqr_048 | PASS | 35.58484885003182 |
+| T3_X | satc_b_027 | PASS | 35.59859568757642 |
+| T3_Y | full_lqr_048 | PASS | 80.05900701253853 |
+| T3_Y | satc_b_027 | PASS | 80.03416464579323 |
+| T3_XY30 | full_lqr_048 | PASS | 147.54864773597953 |
+| T3_XY30 | satc_b_027 | PASS | 147.56992788825093 |

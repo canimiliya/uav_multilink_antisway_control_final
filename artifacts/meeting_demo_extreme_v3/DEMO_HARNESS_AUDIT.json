@@ -1,0 +1,6 @@
+{
+  "controller_identity": "frozen acceleration-level controller",
+  "harness": "LegacyTaskLevelAdapter",
+  "physical_actuation": "CanonicalWrenchActuator",
+  "native_controller_claim": false
+}

@@ -1,0 +1,1771 @@
+{
+  "task": "T1",
+  "controller": "satc_b_027",
+  "direction": "",
+  "duration_s": 40.0,
+  "initial_angles_deg": [
+    20.0,
+    -16.0,
+    12.0,
+    -8.0,
+    4.0
+  ],
+  "target_delta_m": [
+    2.0,
+    1.7,
+    4.5
+  ],
+  "safety": {
+    "finite": true,
+    "nan_count": 0,
+    "min_uav_height_m": -0.14813869775344043,
+    "min_cutter_tip_height_m": 0.07089886779785459,
+    "max_roll_pitch_deg": 139.53559708638036,
+    "max_joint_angle_rad": 2.017620612483581,
+    "violations": [
+      {
+        "time_s": 37.69,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.695,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.7,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.705,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.71,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.715,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.72,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.725,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.730000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.735,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.74,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.745,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.75,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.755,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.76,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.765,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.77,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.775,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.78,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.785000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.79,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.795,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.800000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.805,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.975,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.980000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.985,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.99,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 37.995,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.0,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.005,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.01,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.015,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.02,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.025,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.03,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.035000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.04,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.045,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.050000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.055,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.06,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.065,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.07,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.075,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.08,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.085,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.09,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.095,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.1,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.105000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.11,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.115,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.12,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.125,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.13,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.135,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.14,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.145,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.15,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.155,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.160000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.165,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.17,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.175000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.18,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.185,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.19,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.195,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.2,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.205,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.21,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.215,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.22,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.225,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.230000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.235,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.24,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.245,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.25,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.255,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.26,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.265,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.27,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.275,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.28,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.285000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.29,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.295,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.300000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.305,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.31,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.315,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.32,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.325,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.33,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.335,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.34,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.345,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.35,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.355000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.36,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.365,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.37,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.375,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.38,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.385,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.39,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.395,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.4,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.405,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.410000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.415,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.42,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.425000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.43,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.435,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.44,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.445,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.45,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.455,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.46,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.465,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.47,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.475,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.480000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.485,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.49,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.495,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.5,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.505,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.51,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.515,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.52,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.525,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.53,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.535000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.54,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.545,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.550000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.555,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.56,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.565,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.57,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.575,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.58,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.585,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.59,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.595,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.6,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.605000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.61,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.615,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.62,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.625,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.63,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.635,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.64,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.645,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.65,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.655,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.660000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.665,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.67,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.675000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.68,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.685,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.69,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.695,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.7,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.705,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.71,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.715,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.72,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.725,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.730000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.735,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.74,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.745,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.75,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.755,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.76,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.765,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.77,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.775,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.78,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.785000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.79,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.795,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.800000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.805,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.81,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.815,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.82,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.825,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.83,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.835,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.84,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.845,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.85,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.855000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.86,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.865,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.87,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.875,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.88,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.885,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.89,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.895,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.9,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.905,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.910000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.915,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.92,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.925000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.93,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.935,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.94,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.945,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.95,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.955,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.96,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.965,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.97,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.975,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.980000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.985,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.99,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 38.995,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.0,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.005,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.01,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.015,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.02,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.025,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.03,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.035000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.04,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.045,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.050000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.055,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.06,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.065,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.07,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.075,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.08,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.085,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.09,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.095,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.1,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.105000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.11,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.115,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.12,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.125,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.13,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.135,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.14,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.145,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.15,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.155,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.160000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.165,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.17,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.175000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.18,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.185,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.19,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.195,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.2,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.205,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.21,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.215,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.22,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.225,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.230000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.235,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.24,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.245,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.25,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.255,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.26,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.265,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.27,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.275,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.28,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.285000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.29,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.295,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.300000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.305,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.31,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.315,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.32,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.325,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.33,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.335,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.34,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.345,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.35,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.355000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.36,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.365,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.37,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.375,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.38,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.385,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.39,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.395,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.4,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.405,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.410000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.415,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.42,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.425000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.43,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.435,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.44,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.445,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.45,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.455,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.46,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.465,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.47,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.475,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.480000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.485,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.49,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.495,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.5,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.505,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.51,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.515,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.52,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.525,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.53,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.535000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.54,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.545,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.550000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.555,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.56,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.565,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.57,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.575,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.58,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.585,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.59,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.595,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.6,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.605000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.61,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.615,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.62,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.625,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.63,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.635,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.64,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.645,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.65,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.655,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.660000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.665,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.67,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.675000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.68,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.685,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.69,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.695,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.7,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.705,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.71,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.715,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.72,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.725,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.730000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.735,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.74,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.745,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.75,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.755,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.76,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.765,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.77,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.775,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.78,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.785000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.79,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.795,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.800000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.805,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.81,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.815,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.82,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.825,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.83,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.835,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.84,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.845,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.85,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.855000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.86,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.865,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.87,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.875,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.88,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.885,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.89,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.895,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.9,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.905,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.910000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.915,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.92,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.925000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.93,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.935,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.94,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.945,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.95,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.955,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.96,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.965,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.97,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.975,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.980000000000004,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.985,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.99,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 39.995,
+        "reason": "uav_height_nonpositive"
+      },
+      {
+        "time_s": 40.0,
+        "reason": "uav_height_nonpositive"
+      }
+    ]
+  },
+  "runtime_s": 11.829761000000872,
+  "runtime_mean_ms": 0.3774096796182686,
+  "runtime_p95_ms": 2.545159999999999,
+  "control_effort": 255.21085143731253,
+  "wrench_saturation_rate": 0.01727909011373578,
+  "thrust_saturation_rate": 0.06261717285339333,
+  "mx_saturation_rate": 0.0,
+  "my_saturation_rate": 0.0,
+  "mz_saturation_rate": 0.0064991876015498065,
+  "torque_saturation_rate": 0.002166395867183269,
+  "any_wrench_saturation_rate": 0.06261717285339333,
+  "max_roll_deg": 139.53559708638036,
+  "max_pitch_deg": 41.20324200997877,
+  "peak_joint_angle_deg": 115.60114575390938,
+  "peak_joint_rms_deg": 86.2134478457112,
+  "joint_rms_during_move_deg": 3.6973810744929407,
+  "final_5s_joint_rms_deg": 51.2147670970202,
+  "tip_tracking_rmse_m": 8.072447191831676,
+  "final_tip_error_m": 5.124730488435721,
+  "final_tip_speed_mps": 0.5846058100191343,
+  "peak_tip_tracking_error_m": 18.54012006597063,
+  "peak_tip_speed_mps": 10.015579779313363,
+  "settling_after_move_s": null
+}
