@@ -1,0 +1,19 @@
+{
+  "task": "INITIAL_SWAY_RECOVERY",
+  "execution_mode": "HEADLESS_NON_PERFORMANCE_SMOKE",
+  "model_loaded": true,
+  "model_path": "reproducibility/frozen/model/model_5link_controlled.xml",
+  "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "initial_joint_angles_deg": [5, 10, 15, 20, 25],
+  "joint_names": ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5"],
+  "joint_count": 5,
+  "qpos_indices": [7, 8, 9, 10, 11],
+  "qdot_indices": [6, 7, 8, 9, 10],
+  "qpos_readable": true,
+  "qdot_readable": true,
+  "simulation_finite": true,
+  "no_nan": true,
+  "no_crash": true,
+  "simulated_time_s": 0.5000000000000003,
+  "performance_experiment_executed": false
+}

@@ -1,0 +1,16 @@
+{
+  "task": "MOVE_TO_POSITION_AND_SETTLE",
+  "execution_mode": "STATIC_CODE_CHECK",
+  "reference_accepts_xyz": true,
+  "mapped_uav_reference_xyz": [0.1, -0.2, 3.5],
+  "task_reference_xyz": [0.325, -0.2, 0.69],
+  "outer_output_shape": [3],
+  "outer_output_components": ["ax", "ay", "az"],
+  "cutter_tip_xyz_readback": true,
+  "cutter_tip_velocity_readback": true,
+  "orientation_command_field": false,
+  "orientation_measurement_fields": ["cutter_axis_world", "cutter_rotation_world"],
+  "orientation_class": "CUTTER_XYZ_ONLY",
+  "result": "SUPPORTED_CODE_CONTRACT_ONLY",
+  "performance_experiment_executed": false
+}

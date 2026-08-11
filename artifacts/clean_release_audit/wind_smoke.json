@@ -1,0 +1,19 @@
+{
+  "task": "WIND_HOVER_RECOVERY",
+  "execution_mode": "HEADLESS_NON_PERFORMANCE_SMOKE",
+  "constant_wind_available": true,
+  "constant_profile": "constant_crosswind",
+  "constant_onset_s": 4.0,
+  "gust_available": true,
+  "gust_profile": "one_cosine_gust",
+  "gust_onset_s": 5.0,
+  "gust_duration_s": 2.0,
+  "stochastic_available": true,
+  "stochastic_profile": "low_frequency_random",
+  "distributed_body_force_available": true,
+  "force_keys": ["cutter_x", "link_1_x", "link_2_x", "link_3_x", "link_4_x", "link_5_x", "quadrotor_x", "total_x"],
+  "wind_vector_finite": true,
+  "simulation_finite": true,
+  "no_nan": true,
+  "performance_experiment_executed": false
+}

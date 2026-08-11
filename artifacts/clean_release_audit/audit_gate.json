@@ -1,0 +1,32 @@
+{
+  "task": "P3-R1A-ACCELERATION-MAINLINE-INVENTORY-AND-THREE-TASK-CAPABILITY-FREEZE-R1",
+  "result": "P3_ACCELERATION_MAINLINE_EXPORT_READY",
+  "acceleration_architecture_identified": true,
+  "v5_satc_source_identified": true,
+  "pid_source_identified": true,
+  "full_lqr_source_identified": true,
+  "task_lqr_source_identified": true,
+  "five_link_model_identified": true,
+  "model_provenance_match": true,
+  "move_task_capability_classified": true,
+  "orientation_capability_classified": true,
+  "initial_sway_init_verified": true,
+  "wind_constant_verified": true,
+  "wind_gust_verified": true,
+  "export_manifest_complete": true,
+  "absolute_path_audit_complete": true,
+  "import_dependency_audit_complete": true,
+  "controller_modified": false,
+  "model_modified": false,
+  "controller_retuned": false,
+  "holdout_executed": false,
+  "performance_experiment_executed": false,
+  "files_deleted": 0,
+  "tests": {
+    "release": "4 passed",
+    "v3": "63 passed",
+    "v5": "22 passed",
+    "native_stack": "36 passed",
+    "collection_note": "pytest --import-mode=importlib used to avoid duplicate historical test module names"
+  }
+}
