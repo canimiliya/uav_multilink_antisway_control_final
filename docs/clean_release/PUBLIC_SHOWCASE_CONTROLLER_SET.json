@@ -1,0 +1,99 @@
+{
+  "task": "P3-R1G-VISUAL-POLISH-AND-CONTROLLER-LINEUP-AUDIT-R1",
+  "public_showcase_set": [
+    {
+      "name": "PID",
+      "class_id": "V3CascadedTaskPID",
+      "controller_id": "hybrid_x007_y041_z041",
+      "runner_id": "corrected_pid",
+      "source_path": "src/uav_sway/v3/controllers.py",
+      "config_path": "configs/s3_pid.yaml",
+      "evidence_path": "reproducibility/v3/r1r1/pid_freeze.json",
+      "acceleration_mainline": true,
+      "native_stack_only": false,
+      "closed_negative_result": false,
+      "debug_candidate": false,
+      "source_exists": true,
+      "config_exists": true,
+      "evidence_exists": true,
+      "runnable_on_frozen_t1": true,
+      "included": true,
+      "reason": "all four public-showcase rules passed",
+      "t1_runtime_path": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_boundary_v5\\_lineup_runs\\T1\\5.0s\\corrected_pid",
+      "t1_stable_recovered": false
+    },
+    {
+      "name": "Full-LQR",
+      "class_id": "V3FullStateLQR",
+      "controller_id": "full_lqr_048",
+      "runner_id": "full_lqr_048",
+      "source_path": "src/uav_sway/v3/controllers.py",
+      "config_path": "configs/lqr.yaml",
+      "evidence_path": "reproducibility/v3/r1/full_lqr_freeze.json",
+      "acceleration_mainline": true,
+      "native_stack_only": false,
+      "closed_negative_result": false,
+      "debug_candidate": false,
+      "source_exists": true,
+      "config_exists": true,
+      "evidence_exists": true,
+      "runnable_on_frozen_t1": true,
+      "included": true,
+      "reason": "all four public-showcase rules passed",
+      "t1_runtime_path": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_boundary_v5\\T1\\5.0s\\full_lqr_048",
+      "t1_stable_recovered": true
+    },
+    {
+      "name": "SATC",
+      "class_id": "SATC-OFMPC",
+      "controller_id": "satc_b_027",
+      "runner_id": "satc_b_027",
+      "source_path": "src/uav_sway/v5/satc_ofmpc.py",
+      "config_path": "reproducibility/v5/self/self_freeze.json",
+      "evidence_path": "reproducibility/v5/self/self_freeze.json",
+      "acceleration_mainline": true,
+      "native_stack_only": false,
+      "closed_negative_result": false,
+      "debug_candidate": false,
+      "source_exists": true,
+      "config_exists": true,
+      "evidence_exists": true,
+      "runnable_on_frozen_t1": true,
+      "included": true,
+      "reason": "all four public-showcase rules passed",
+      "t1_runtime_path": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_boundary_v5\\T1\\5.0s\\satc_b_027",
+      "t1_stable_recovered": true
+    }
+  ],
+  "frozen_t1": {
+    "initial_sway_deg": [
+      20.0,
+      -16.0,
+      12.0,
+      -8.0,
+      4.0
+    ],
+    "target_delta_m": [
+      2.0,
+      1.7,
+      4.5
+    ],
+    "move_duration_s": 5.0,
+    "wind_mps": 0.0
+  },
+  "frozen_t2": {
+    "move_duration_s": 5.0,
+    "wind_direction": "+X",
+    "wind_mps": 3.0,
+    "onset_s": 3.0,
+    "ramp_s": [
+      3.0,
+      4.0
+    ]
+  },
+  "extra_controllers": [],
+  "controller_retuned": false,
+  "model_modified": false,
+  "holdout_executed": false,
+  "native_stack_revived": false
+}
