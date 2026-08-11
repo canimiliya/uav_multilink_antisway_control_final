@@ -22,11 +22,22 @@
   "holdout_executed": false,
   "performance_experiment_executed": false,
   "files_deleted": 0,
+  "export_manifest_counts": {
+    "required_files": 36,
+    "optional_files": 5,
+    "do_not_export_categories": 12
+  },
   "tests": {
     "release": "4 passed",
     "v3": "63 passed",
     "v5": "22 passed",
     "native_stack": "36 passed",
-    "collection_note": "pytest --import-mode=importlib used to avoid duplicate historical test module names"
+    "collection_note": "pytest --import-mode=importlib used to avoid duplicate historical test module names",
+    "commands": [
+      "$env:PYTHONPATH='src;third_party/udaan'; D:\\anaconda\\envs\\uav_sway\\python.exe -m pytest -q --import-mode=importlib tests\\release",
+      "$env:PYTHONPATH='src;third_party/udaan'; D:\\anaconda\\envs\\uav_sway\\python.exe -m pytest -q --import-mode=importlib tests\\v3",
+      "$env:PYTHONPATH='src;third_party/udaan'; D:\\anaconda\\envs\\uav_sway\\python.exe -m pytest -q --import-mode=importlib tests\\v5",
+      "$env:PYTHONPATH='src;third_party/udaan'; D:\\anaconda\\envs\\uav_sway\\python.exe -m pytest -q --import-mode=importlib tests\\native_stack"
+    ]
   }
 }
