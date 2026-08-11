@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "controller": "satc_b_027",
+  "direction": "XY30",
+  "duration_s": 40.0,
+  "safety": {
+    "finite": true,
+    "NaN": 0,
+    "min_uav_height_m": 3.187130243631323,
+    "min_cutter_tip_height_m": 0.38731325869852024,
+    "max_roll_pitch_deg": 0.0,
+    "max_joint_angle_rad": 0.04115204785933843,
+    "violations": []
+  },
+  "runtime_s": 10.373946699999578,
+  "runtime_mean_ms": 0.33308043626448536,
+  "runtime_p95_ms": 2.3043899999999997,
+  "control_effort": 104.73655197281269,
+  "max_joint_angle_rad": 0.04115204785933843,
+  "joint_rms_rad": 0.011052536083577293,
+  "uav_displacement_rms_m": 0.6060627952714083,
+  "wind_vector_mps": [
+    4.330127018922194,
+    2.4999999999999996,
+    0.0
+  ],
+  "prewind_tip_rms_m": 3.655470119601249e-15,
+  "postwind_tip_rms_m": 0.9015068857118623,
+  "peak_tip_deviation_m": 0.9270960674605698,
+  "peak_time_s": 28.825,
+  "steady_state_tip_error_m": 0.8969347455596451,
+  "recovery_after_peak_s": null,
+  "recovery_from_wind_onset_s": null
+}

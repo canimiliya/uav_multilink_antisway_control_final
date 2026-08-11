@@ -1,0 +1,40 @@
+{
+  "task": "T2",
+  "controller": "satc_b_027",
+  "direction": "",
+  "duration_s": 40.0,
+  "safety": {
+    "finite": true,
+    "NaN": 0,
+    "min_uav_height_m": 3.2,
+    "min_cutter_tip_height_m": 0.38208813505475264,
+    "max_roll_pitch_deg": 0.0,
+    "max_joint_angle_rad": 0.3490658503988659,
+    "violations": []
+  },
+  "runtime_s": 10.277086500000223,
+  "runtime_mean_ms": 0.3279484548966144,
+  "runtime_p95_ms": 2.241,
+  "control_effort": 2.304910750899931,
+  "max_joint_angle_rad": 0.3490658503988659,
+  "joint_rms_rad": 0.021215537735381807,
+  "uav_displacement_rms_m": 0.529805299001423,
+  "initial_angles_deg": [
+    20,
+    -16,
+    12,
+    -8,
+    4
+  ],
+  "initial_joint_rms_rad": 0.2315440905798736,
+  "peak_joint_rms_rad": 0.2315440905798736,
+  "overall_joint_rms_rad": 0.021215537735381807,
+  "final_joint_rms_rad": 1.9881161681374646e-10,
+  "final_5s_joint_rms_rad": 1.1485279800139687e-09,
+  "tip_displacement_rms_m": 0.1963142615540714,
+  "tip_velocity_rms_mps": 0.33638921904319374,
+  "peak_tip_displacement_m": 0.8221559702164001,
+  "uav_correction_displacement_m": 0.665519977398284,
+  "decay50_time_s": 0.06,
+  "decay90_time_s": 8.22
+}

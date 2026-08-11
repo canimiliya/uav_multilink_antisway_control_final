@@ -1,0 +1,10 @@
+# Directional wind metrics
+
+| Direction | Controller | Postwind RMS | Peak | Recovery | Joint RMS | Effort | Safety |
+|---|---|---:|---:|---:|---:|---:|---|
+| X | full_lqr_048 | 0.430885 | 0.560304 | None | 0.0103842 | 12.7823 | PASS |
+| X | satc_b_027 | 0.137408 | 0.35149 | 4.025 | 0.010369 | 12.8451 | PASS |
+| Y | full_lqr_048 | 1.31696 | 1.37069 | None | 8.0026e-18 | 91.5357 | PASS |
+| Y | satc_b_027 | 0.686978 | 1.03276 | None | 8.94353e-06 | 93.0572 | PASS |
+| XY30 | full_lqr_048 | 0.948762 | 1.0189 | None | 0.00879665 | 97.8141 | PASS |
+| XY30 | satc_b_027 | 0.901507 | 0.927096 | None | 0.0110525 | 104.737 | PASS |

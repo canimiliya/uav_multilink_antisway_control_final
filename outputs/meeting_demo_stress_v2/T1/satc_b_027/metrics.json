@@ -1,0 +1,36 @@
+{
+  "task": "T1",
+  "controller": "satc_b_027",
+  "direction": "",
+  "duration_s": 40.0,
+  "safety": {
+    "finite": true,
+    "NaN": 0,
+    "min_uav_height_m": 3.2,
+    "min_cutter_tip_height_m": 0.38999999999999996,
+    "max_roll_pitch_deg": 0.0,
+    "max_joint_angle_rad": 0.0012076583388922575,
+    "violations": []
+  },
+  "runtime_s": 10.166865799999869,
+  "runtime_mean_ms": 0.3173386616678028,
+  "runtime_p95_ms": 2.204664999999999,
+  "control_effort": 0.07712956060840251,
+  "max_joint_angle_rad": 0.0012076583388922575,
+  "joint_rms_rad": 0.00010973198908670948,
+  "uav_displacement_rms_m": 4.082135141079545,
+  "target_delta_m": [
+    2.0,
+    1.7,
+    4.5
+  ],
+  "move_interval_s": [
+    3.0,
+    23.0
+  ],
+  "tip_rmse_3d_m": 0.08166408877800128,
+  "final_tip_error_m": 9.847760909442956e-06,
+  "final_tip_speed_mps": 5.138308924921092e-06,
+  "peak_tracking_error_m": 0.16079215050975768,
+  "settling_after_move_s": 0.0
+}

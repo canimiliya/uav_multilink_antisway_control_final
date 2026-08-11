@@ -1,0 +1,36 @@
+{
+  "task": "T1",
+  "controller": "full_lqr_048",
+  "direction": "",
+  "duration_s": 40.0,
+  "safety": {
+    "finite": true,
+    "NaN": 0,
+    "min_uav_height_m": 3.2,
+    "min_cutter_tip_height_m": 0.38999999999999996,
+    "max_roll_pitch_deg": 0.0,
+    "max_joint_angle_rad": 0.0003973944065465611,
+    "violations": []
+  },
+  "runtime_s": 8.649394099999881,
+  "runtime_mean_ms": 0.1016507839127471,
+  "runtime_p95_ms": 0.1558,
+  "control_effort": 0.059961016934641384,
+  "max_joint_angle_rad": 0.0003973944065465611,
+  "joint_rms_rad": 7.538710355525872e-05,
+  "uav_displacement_rms_m": 4.107983810551378,
+  "target_delta_m": [
+    2.0,
+    1.7,
+    4.5
+  ],
+  "move_interval_s": [
+    3.0,
+    23.0
+  ],
+  "tip_rmse_3d_m": 0.021501110955618036,
+  "final_tip_error_m": 2.8958293757210227e-05,
+  "final_tip_speed_mps": 0.00015318284081637483,
+  "peak_tracking_error_m": 0.042460275517123454,
+  "settling_after_move_s": 0.0
+}

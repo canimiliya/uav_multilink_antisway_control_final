@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "controller": "full_lqr_048",
+  "direction": "XY30",
+  "duration_s": 40.0,
+  "safety": {
+    "finite": true,
+    "NaN": 0,
+    "min_uav_height_m": 3.1999999950051827,
+    "min_cutter_tip_height_m": 0.3868307268647798,
+    "max_roll_pitch_deg": 0.0,
+    "max_joint_angle_rad": 0.027981068413536963,
+    "violations": []
+  },
+  "runtime_s": 9.019590599999901,
+  "runtime_mean_ms": 0.09755573733242445,
+  "runtime_p95_ms": 0.1527,
+  "control_effort": 97.81405493703461,
+  "max_joint_angle_rad": 0.027981068413536963,
+  "joint_rms_rad": 0.008796649402272176,
+  "uav_displacement_rms_m": 0.6418658056918793,
+  "wind_vector_mps": [
+    4.330127018922194,
+    2.4999999999999996,
+    0.0
+  ],
+  "prewind_tip_rms_m": 1.6616019932386243e-25,
+  "postwind_tip_rms_m": 0.9487623410731281,
+  "peak_tip_deviation_m": 1.0189017444809572,
+  "peak_time_s": 11.870000000000001,
+  "steady_state_tip_error_m": 0.9450110521333616,
+  "recovery_after_peak_s": null,
+  "recovery_from_wind_onset_s": null
+}
