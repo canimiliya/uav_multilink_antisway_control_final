@@ -56,19 +56,23 @@ def quintic(u: float) -> tuple[float, float, float]:
     return p, v, a
 
 
-def six_second_reference(p0: np.ndarray, target: np.ndarray, t: float) -> ReferenceSample:
+def six_second_reference(p0: np.ndarray, target: np.ndarray, t: float, move_duration: float = 6.0) -> ReferenceSample:
+    """Minimum-jerk reference retained for legacy R1E and parameterized for R1F."""
+    move_duration = float(move_duration)
+    move_end = 1.0 + move_duration
     if t < 1.0:
         return ReferenceSample(p0, np.zeros(3), np.zeros(3), np.zeros(3), t)
-    if t >= 7.0:
+    if t >= move_end:
         return ReferenceSample(target, np.zeros(3), np.zeros(3), np.zeros(3), t)
-    p, v, a = quintic((t - 1.0) / 6.0)
+    p, v, a = quintic((t - 1.0) / move_duration)
     d = target - p0
-    return ReferenceSample(p0 + p * d, v * d / 6.0, a * d / 36.0, np.zeros(3), t)
+    return ReferenceSample(p0 + p * d, v * d / move_duration, a * d / move_duration**2, np.zeros(3), t)
 
 
 def wind_profile(task: str, t: float, speed: float = 0.0) -> np.ndarray:
     if task == "T2":
-        onset, ramp, speed = 3.0, 1.0, 5.0
+        onset, ramp = 3.0, 1.0
+        speed = 5.0 if speed == 0.0 else float(speed)
     elif task == "T3":
         onset, ramp = 8.0, 1.0
     else:
@@ -150,6 +154,8 @@ def _run_job(job: dict[str, Any]) -> dict[str, Any]:
         raise RuntimeError(f"BLOCK_MODEL_SHA_MISMATCH:{digest}")
     task, controller_id = str(job["task"]), str(job["controller"])
     speed = float(job.get("speed_mps", 0.0))
+    move_duration = float(job.get("move_duration_s", 6.0))
+    output_root = Path(job.get("output_root", OUT))
     model = mujoco.MjModel.from_xml_path(str(MODEL)); data = mujoco.MjData(model)
     jids = [int(mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_JOINT, f"joint_{i}")) for i in range(1, 6)]
     qaddr = [int(model.jnt_qposadr[j]) for j in jids]; _initialise(task, model, data, qaddr)
@@ -164,9 +170,9 @@ def _run_job(job: dict[str, Any]) -> dict[str, Any]:
     saturation_count = np.zeros(4, dtype=int); sample_count = 0; next_render = 0.0; started = time.perf_counter(); nsteps = int(round(DURATION / DT))
     safety: dict[str, Any] = {"finite": True, "nan_count": 0, "min_uav_height_m": float("inf"), "min_cutter_tip_height_m": float("inf"), "max_roll_pitch_deg": 0.0, "max_joint_angle_rad": 0.0, "violations": []}
     for tick in range(nsteps + 1):
-        t = tick * DT; wind = wind_profile(task, t, speed)
+        t = tick * DT; wind = np.zeros(3) if bool(job.get("zero_wind", False)) else wind_profile(task, t, speed)
         clear_and_apply_wind_world(model, data, cfg, aero, wind)
-        ref = six_second_reference(p0, target, t) if task in ("T1", "T2") else ReferenceSample(p0, np.zeros(3), np.zeros(3), np.zeros(3), t)
+        ref = six_second_reference(p0, target, t, move_duration) if task in ("T1", "T2") else ReferenceSample(p0, np.zeros(3), np.zeros(3), np.zeros(3), t)
         packet = sensor.read(model, data, ref, previous_wrench, tick, DT); controller.observe(packet)
         raw = amplitude = np.zeros(3); accel_hit = slew_hit = np.zeros(3, dtype=bool); abs_lim = slew_lim = 0.0
         if tick % OUTER_STRIDE == 0:
@@ -192,16 +198,19 @@ def _run_job(job: dict[str, Any]) -> dict[str, Any]:
         if tick < nsteps: mujoco.mj_step(model, data)
     runtime = time.perf_counter() - started
     times = np.asarray([r["time"] for r in rows], dtype=float); tip = np.asarray([[r["tip_x"], r["tip_y"], r["tip_z"]] for r in rows]); ref_arr = np.asarray([[r["ref_x"], r["ref_y"], r["ref_z"]] for r in rows]); vel_vec = np.asarray([[r["tip_vx"], r["tip_vy"], r["tip_vz"]] for r in rows]); vel = np.linalg.norm(vel_vec, axis=1); err = np.linalg.norm(tip - ref_arr, axis=1); dev = np.linalg.norm(tip - p0, axis=1); q = np.asarray([[r[f"q{i}"] for i in range(1, 6)] for r in rows]); jrms = np.sqrt(np.mean(q*q, axis=1)); effort = np.asarray([sum(float(r[f"a{a}_cmd"])**2 for a in "xyz") for r in rows]); integ = float(np.trapezoid(effort, times) if hasattr(np, "trapezoid") else np.trapz(effort, times))
-    sat_rates = saturation_count / max(1, sample_count); no_safety = bool(safety["finite"] and not safety["violations"]); common: dict[str, Any] = {"task": task, "controller": controller_id, "speed_mps": speed, "duration_s": DURATION, "move_duration_s": 6.0, "initial_angles_deg": INITIAL_ANGLES_DEG.tolist() if task in ("T1", "T2") else [0.0]*5, "target_delta_m": TARGET_DELTA.tolist() if task in ("T1", "T2") else [0.0]*3, "wind_axis": "+X" if task in ("T2", "T3") else "OFF", "safety": safety, "runtime_s": runtime, "runtime_mean_ms": float(np.mean(outer_times + inner_times)), "runtime_p95_ms": float(np.percentile(outer_times + inner_times, 95)), "control_effort": integ, "physical_wrench_saturation_rate": float(np.mean(sat_rates)), "outer_accel_limit_hit_rate": float(np.mean(outer_hits / max(1, outer_count))), "outer_accel_axis_hit_rate": (outer_hits / max(1, outer_count)).tolist(), "outer_slew_limit_hit_rate": float(np.mean(slew_hits / max(1, outer_count))), "outer_slew_axis_hit_rate": (slew_hits / max(1, outer_count)).tolist(), "max_roll_deg": float(max(abs(float(r["uav_roll_deg"])) for r in rows)), "max_pitch_deg": float(max(abs(float(r["uav_pitch_deg"])) for r in rows)), "peak_joint_rms_deg": float(np.degrees(np.max(jrms))), "peak_joint_angle_deg": float(np.degrees(np.max(np.abs(q)))), "final_5s_joint_rms_deg": float(np.degrees(np.sqrt(np.mean(q[times >= 35.0]**2)))), "finite": no_safety}
+    sat_rates = saturation_count / max(1, sample_count); no_safety = bool(safety["finite"] and not safety["violations"]); common: dict[str, Any] = {"task": task, "controller": controller_id, "speed_mps": speed, "duration_s": DURATION, "move_duration_s": move_duration, "initial_angles_deg": INITIAL_ANGLES_DEG.tolist() if task in ("T1", "T2") else [0.0]*5, "target_delta_m": TARGET_DELTA.tolist() if task in ("T1", "T2") else [0.0]*3, "wind_axis": "+X" if task in ("T2", "T3") else "OFF", "safety": safety, "runtime_s": runtime, "runtime_mean_ms": float(np.mean(outer_times + inner_times)), "runtime_p95_ms": float(np.percentile(outer_times + inner_times, 95)), "control_effort": integ, "physical_wrench_saturation_rate": float(np.mean(sat_rates)), "outer_accel_limit_hit_rate": float(np.mean(outer_hits / max(1, outer_count))), "outer_accel_axis_hit_rate": (outer_hits / max(1, outer_count)).tolist(), "outer_slew_limit_hit_rate": float(np.mean(slew_hits / max(1, outer_count))), "outer_slew_axis_hit_rate": (slew_hits / max(1, outer_count)).tolist(), "max_roll_deg": float(max(abs(float(r["uav_roll_deg"])) for r in rows)), "max_pitch_deg": float(max(abs(float(r["uav_pitch_deg"])) for r in rows)), "peak_joint_rms_deg": float(np.degrees(np.max(jrms))), "peak_joint_angle_deg": float(np.degrees(np.max(np.abs(q)))), "final_5s_joint_rms_deg": float(np.degrees(np.sqrt(np.mean(q[times >= 35.0]**2)))), "finite": no_safety}
     if task == "T1":
-        valid = continuous_time(times, (err <= 0.15) & (vel <= 0.20), 1.0, 7.0); common.update({"tip_tracking_rmse_m": float(np.sqrt(np.mean(err*err))), "final_tip_error_m": float(err[-1]), "final_tip_speed_mps": float(vel[-1]), "peak_tracking_error_m": float(np.max(err)), "settling_after_move_s": None if valid is None else valid - 7.0, "classification": "SAFETY_FAILURE" if not no_safety else "CONTROLLED_SHOWCASE" if err[-1] <= 0.50 and vel[-1] <= 0.20 else "CONTROLLED_BUT_NO_RECOVERY"})
+        final5_tip = float(np.sqrt(np.mean(err[times >= 35.0] ** 2))); final5_joint = common["final_5s_joint_rms_deg"]
+        valid = continuous_time(times, (err <= 0.15) & (vel <= 0.20), 1.0, 1.0 + move_duration); stable = bool(no_safety and err[-1] <= 0.15 and vel[-1] <= 0.20 and final5_tip <= 0.20 and final5_joint <= 1.0 and valid is not None)
+        common.update({"tip_tracking_rmse_m": float(np.sqrt(np.mean(err*err))), "peak_tip_error_m": float(np.max(err)), "final_tip_error_m": float(err[-1]), "final_tip_speed_mps": float(vel[-1]), "final_5s_tip_rms_m": final5_tip, "settling_after_move_s": None if valid is None else valid - (1.0 + move_duration), "STABLE_RECOVERED": stable, "classification": "STABLE_RECOVERED" if stable else "SAFETY_FAILURE" if not no_safety else "CONTROLLED_BUT_NOT_STABLE"})
     elif task == "T2":
-        peak_idx = int(np.argmax(np.where(times >= 3.0, err, -np.inf))); valid = continuous_time(times, (err <= 0.15) & (vel <= 0.20), 1.0, max(4.0, times[peak_idx])); final5 = float(np.sqrt(np.mean(dev[times >= 35.0]**2))); common.update({"wind_onset_time_s": 3.0, "peak_error_after_wind_m": float(err[peak_idx]), "time_to_peak_after_wind_s": float(times[peak_idx]-3.0), "recovery_after_peak_s": None if valid is None else float(valid-times[peak_idx]), "final_error_under_wind_m": float(err[-1]), "postwind_tip_rms_m": float(np.sqrt(np.mean(dev[times >= 4.0]**2))), "final_5s_tip_rms_m": final5, "final_5s_tip_speed_rms_mps": float(np.sqrt(np.mean(vel[times >= 35.0]**2))), "classification": "SAFETY_FAILURE" if not no_safety else "RECOVERED" if valid is not None and final5 <= 0.20 else "NOT_RECOVERED"})
+        peak_idx = int(np.argmax(np.where(times >= 3.0, err, -np.inf))); valid = continuous_time(times, (err <= 0.15) & (vel <= 0.20), 1.0, max(4.0, times[peak_idx])); final5 = float(np.sqrt(np.mean(err[times >= 35.0]**2))); final5_joint = common["final_5s_joint_rms_deg"]; stable = bool(no_safety and err[-1] <= 0.15 and vel[-1] <= 0.20 and final5 <= 0.20 and final5_joint <= 1.0 and valid is not None and valid >= 4.0)
+        common.update({"wind_onset_time_s": 3.0, "peak_error_after_wind_m": float(err[peak_idx]), "time_to_peak_after_wind_s": float(times[peak_idx]-3.0), "recovery_after_peak_s": None if valid is None else float(valid-times[peak_idx]), "recovery_from_onset_s": None if valid is None else float(valid-3.0), "final_error_under_wind_m": float(err[-1]), "postwind_tip_rms_m": float(np.sqrt(np.mean(err[times >= 4.0]**2))), "final_5s_tip_rms_m": final5, "final_5s_tip_speed_rms_mps": float(np.sqrt(np.mean(vel[times >= 35.0]**2))), "STABLE_RECOVERED": stable, "classification": "STABLE_RECOVERED" if stable else "SAFETY_FAILURE" if not no_safety else "NOT_RECOVERED"})
     else:
         peak_idx = int(np.argmax(np.where(times >= 8.0, dev, -np.inf))); valid = continuous_time(times, (dev <= 0.15) & (vel <= 0.20), 1.0, float(times[peak_idx])); final5 = float(np.sqrt(np.mean(dev[times >= 35.0]**2))); final5_speed = float(np.sqrt(np.mean(vel[times >= 35.0]**2)))
         recoverable = bool(no_safety and valid is not None and final5 <= 0.20 and final5_speed <= 0.20)
         common.update({"wind_onset_time_s": 8.0, "prewind_tip_rms_m": float(np.sqrt(np.mean(dev[times < 8.0]**2))), "postwind_tip_rms_m": float(np.sqrt(np.mean(dev[times >= 9.0]**2))), "peak_tip_deviation_m": float(dev[peak_idx]), "peak_time_s": float(times[peak_idx]), "recovery_after_peak_s": None if valid is None else float(valid-times[peak_idx]), "recovery_from_wind_onset_s": None if valid is None else float(valid-8.0), "final_5s_tip_rms_m": final5, "final_5s_tip_speed_rms_mps": final5_speed, "recoverable": recoverable, "classification": "RECOVERABLE" if recoverable else "NOT_RECOVERABLE"})
-    path = OUT / task / (f"{int(speed):02d}mps" if task == "T3" else "") / controller_id; path.mkdir(parents=True, exist_ok=True); _write_csv(path / "run.csv", rows); (path / "metrics.json").write_text(json.dumps(common, indent=2, allow_nan=False)+"\n", encoding="utf-8"); np.savez_compressed(path / "render_states.npz", time=np.asarray(render_t), qpos=np.asarray(render_q))
+    case_dir = str(job.get("case_dir", f"{int(speed):02d}mps" if task == "T3" else "")); path = output_root / task / case_dir / controller_id if case_dir else output_root / task / controller_id; path.mkdir(parents=True, exist_ok=True); _write_csv(path / "run.csv", rows); (path / "metrics.json").write_text(json.dumps(common, indent=2, allow_nan=False)+"\n", encoding="utf-8"); np.savez_compressed(path / "render_states.npz", time=np.asarray(render_t), qpos=np.asarray(render_q))
     return {"job": job, "metrics": common, "runtime_s": runtime, "path": str(path)}
 
 
