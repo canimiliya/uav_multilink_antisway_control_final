@@ -1,0 +1,25 @@
+{
+  "task": "TASK3_WIND",
+  "controller": "full_lqr_048",
+  "duration_s": 12.0,
+  "sample_count": 2401,
+  "safety": {
+    "finite": true,
+    "nan_count": 0,
+    "max_joint_angle_rad": 0.01514537686381538,
+    "min_tip_height_m": 0.38582567691179837,
+    "min_uav_height_m": 3.1997600998184907,
+    "max_roll_pitch_deg": 1.8674958556031418,
+    "violations": []
+  },
+  "runtime_mean_ms": 0.10414920514761544,
+  "runtime_p95_ms": 0.14223499999999975,
+  "control_effort": 0.4024347299687252,
+  "prewind_tip_rms_m": 3.502547987012826e-29,
+  "postwind_tip_rms_m": 0.1435048156663157,
+  "peak_tip_deviation_m": 0.21297895255666657,
+  "uav_rmse_3d_m": 0.07212237605799983,
+  "steady_state_tip_error_m": 0.13523981798530416,
+  "joint_rms_rad": 0.004306832526979207,
+  "recovery_time_s": 0.0
+}

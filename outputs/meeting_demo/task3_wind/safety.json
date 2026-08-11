@@ -1,0 +1,20 @@
+{
+  "full_lqr_048": {
+    "finite": true,
+    "nan_count": 0,
+    "max_joint_angle_rad": 0.01514537686381538,
+    "min_tip_height_m": 0.38582567691179837,
+    "min_uav_height_m": 3.1997600998184907,
+    "max_roll_pitch_deg": 1.8674958556031418,
+    "violations": []
+  },
+  "satc_b_027": {
+    "finite": true,
+    "nan_count": 0,
+    "max_joint_angle_rad": 0.02104310358287302,
+    "min_tip_height_m": 0.3865352079870684,
+    "min_uav_height_m": 3.1944810138160307,
+    "max_roll_pitch_deg": 1.8414797453792238,
+    "violations": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "task": "TASK1_MOVE",
+  "controller": "full_lqr_048",
+  "duration_s": 12.0,
+  "sample_count": 2401,
+  "safety": {
+    "finite": true,
+    "nan_count": 0,
+    "max_joint_angle_rad": 0.02121902497259137,
+    "min_tip_height_m": 0.38999999999999996,
+    "min_uav_height_m": 3.2,
+    "max_roll_pitch_deg": 1.1845623411977029,
+    "violations": []
+  },
+  "runtime_mean_ms": 0.11650079485238456,
+  "runtime_p95_ms": 0.16929499999999997,
+  "control_effort": 0.4223714842607933,
+  "tip_rmse_3d_m": 0.08291190148516496,
+  "final_tip_error_m": 0.06270369215469343,
+  "final_tip_speed_mps": 0.0049857465708875665,
+  "peak_tip_error_m": 0.1861425458115461,
+  "uav_rmse_3d_m": 0.3367268957280178,
+  "joint_rms_rad": 0.004872663696666078,
+  "max_joint_angle_rad": 0.02121902497259137,
+  "settling_time_s": 1.0
+}

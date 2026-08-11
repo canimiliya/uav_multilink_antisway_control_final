@@ -1,0 +1,26 @@
+{
+  "task": "P3-R1B2-DESIRED-ATTITUDE-HEADING-AUDIT-AND-THREE-TASK-MEETING-DEMO-R1",
+  "source_path": "third_party\\udaan\\udaan\\control\\quadrotor\\geometric_attitude.py",
+  "function_signature": "compute(self, t: float, state: tuple[SO3, TSO3], thrust_force: Vec3, desired_att: tuple[SO3, TSO3, Vec3] | None=None)",
+  "desired_att_type": "tuple[SO3, TSO3, Vec3] | None",
+  "desired_rotation_type": "SO3 (tuple element 0)",
+  "desired_angular_velocity_type": "TSO3 (tuple element 1)",
+  "desired_angular_acceleration_type": "Vec3 (tuple element 2)",
+  "desired_att_non_none_branch_found": true,
+  "desired_rotation_consumed_by_compute": false,
+  "desired_angular_velocity_consumed_by_compute": true,
+  "desired_angular_acceleration_consumed_by_compute": true,
+  "example_usage_found": true,
+  "example_usage_paths": [
+    "third_party\\udaan\\udaan\\models\\quadrotor\\base.py",
+    "third_party\\udaan\\udaan\\models\\quadrotor\\mujoco.py",
+    "third_party\\udaan\\udaan\\models\\quadrotor_cspayload\\base.py",
+    "third_party\\udaan\\udaan\\models\\quadrotor_cspayload\\mujoco.py",
+    "third_party\\udaan\\udaan\\models\\quadrotor_cspayload\\vfx.py"
+  ],
+  "supported": false,
+  "conclusion": "desired_att tuple is accepted, but compute ignores tuple element 0 (desired rotation); heading extension is not functionally supported",
+  "controller_source_modified": false,
+  "model_modified": false,
+  "parameters_modified": false
+}

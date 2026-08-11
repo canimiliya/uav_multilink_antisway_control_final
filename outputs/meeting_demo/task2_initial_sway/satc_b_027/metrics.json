@@ -1,0 +1,27 @@
+{
+  "task": "TASK2_INITIAL_SWAY",
+  "controller": "satc_b_027",
+  "duration_s": 12.0,
+  "sample_count": 2401,
+  "safety": {
+    "finite": true,
+    "nan_count": 0,
+    "max_joint_angle_rad": 0.08726646259971647,
+    "min_tip_height_m": 0.37771572124601477,
+    "min_uav_height_m": 3.1889861206768946,
+    "max_roll_pitch_deg": 0.9333927272424876,
+    "violations": []
+  },
+  "runtime_mean_ms": 0.3383440953822862,
+  "runtime_p95_ms": 2.3898099999999998,
+  "control_effort": 0.13081691869818862,
+  "initial_joint_rms_rad": 0.0578860226449684,
+  "overall_joint_rms_rad": 0.007935621990948572,
+  "final_joint_rms_rad": 4.2188829028395e-05,
+  "peak_joint_rms_rad": 0.0578860226449684,
+  "tip_velocity_rms_mps": 0.102007751941081,
+  "tip_displacement_rms_m": 0.06327218815521703,
+  "uav_correction_displacement_m": 0.17572322981540595,
+  "decay50_time_s": 0.045,
+  "decay90_time_s": 3.22
+}

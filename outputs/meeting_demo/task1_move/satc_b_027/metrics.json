@@ -1,0 +1,26 @@
+{
+  "task": "TASK1_MOVE",
+  "controller": "satc_b_027",
+  "duration_s": 12.0,
+  "sample_count": 2401,
+  "safety": {
+    "finite": true,
+    "nan_count": 0,
+    "max_joint_angle_rad": 0.014708219700651693,
+    "min_tip_height_m": 0.38999999999999996,
+    "min_uav_height_m": 3.2,
+    "max_roll_pitch_deg": 0.5865933827721747,
+    "violations": []
+  },
+  "runtime_mean_ms": 0.3417115821347464,
+  "runtime_p95_ms": 2.331585,
+  "control_effort": 0.44051682103376294,
+  "tip_rmse_3d_m": 0.09048102720421945,
+  "final_tip_error_m": 0.00743078572037424,
+  "final_tip_speed_mps": 0.004026214161173504,
+  "peak_tip_error_m": 0.20225003659163013,
+  "uav_rmse_3d_m": 0.27964497376768666,
+  "joint_rms_rad": 0.002478793862156428,
+  "max_joint_angle_rad": 0.014708219700651693,
+  "settling_time_s": 1.0
+}

@@ -1,0 +1,25 @@
+{
+  "task": "TASK3_WIND",
+  "controller": "satc_b_027",
+  "duration_s": 12.0,
+  "sample_count": 2401,
+  "safety": {
+    "finite": true,
+    "nan_count": 0,
+    "max_joint_angle_rad": 0.02104310358287302,
+    "min_tip_height_m": 0.3865352079870684,
+    "min_uav_height_m": 3.1944810138160307,
+    "max_roll_pitch_deg": 1.8414797453792238,
+    "violations": []
+  },
+  "runtime_mean_ms": 0.32713815291445875,
+  "runtime_p95_ms": 2.316275,
+  "control_effort": 0.4288831997253199,
+  "prewind_tip_rms_m": 1.1410940221024987e-15,
+  "postwind_tip_rms_m": 0.07640994454252592,
+  "peak_tip_deviation_m": 0.1638495489017714,
+  "uav_rmse_3d_m": 0.024318594057691215,
+  "steady_state_tip_error_m": 0.03431377408783077,
+  "joint_rms_rad": 0.004460707392177403,
+  "recovery_time_s": 0.0
+}
