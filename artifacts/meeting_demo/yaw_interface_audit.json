@@ -1,0 +1,16 @@
+{
+  "task": "P3-R1B-XYZ-PLUS-HEADING-FOUR-TASK-MEETING-DEMO-R1",
+  "result": "BLOCKED_YAW_INTERFACE_NOT_SUPPORTED",
+  "source_path": "third_party\\udaan\\udaan\\control\\quadrotor\\geometric_attitude.py",
+  "function_signature": "(self, t: 'float', state: 'tuple[SO3, TSO3]', thrust_force: 'Vec3', desired_att: 'tuple[SO3, TSO3, Vec3] | None' = None) -> 'tuple[float, Vec3]'",
+  "first_argument_name": "t",
+  "first_argument_annotation": "float",
+  "first_argument_interpretation": "time_parameter",
+  "heading_argument_consumed_by_compute": false,
+  "attitude_derived_from": "thrust_force",
+  "supported": false,
+  "gate": "P0_UDAAN_INTERFACE",
+  "controller_source_modified": false,
+  "model_modified": false,
+  "parameters_modified": false
+}
