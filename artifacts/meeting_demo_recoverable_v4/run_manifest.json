@@ -1,0 +1,34 @@
+{
+  "task": "P3-R1E",
+  "jobs": 20,
+  "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "controller_retuned": false,
+  "model_modified": false,
+  "holdout_executed": false,
+  "videos": {
+    "T1_lqr": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_recoverable_v4\\T1\\full_lqr_048\\T1_LQR.mp4",
+    "T1_satc": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_recoverable_v4\\T1\\satc_b_027\\T1_SATC.mp4",
+    "T1_side": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_recoverable_v4\\T1\\T1_LQR_vs_SATC.mp4",
+    "T2_lqr": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_recoverable_v4\\T2\\full_lqr_048\\T2_LQR.mp4",
+    "T2_satc": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_recoverable_v4\\T2\\satc_b_027\\T2_SATC.mp4",
+    "T2_side": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_recoverable_v4\\T2\\T2_LQR_vs_SATC.mp4",
+    "T3_3_side": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_recoverable_v4\\T3\\T3_3mps_LQR_vs_SATC.mp4",
+    "T3_5_side": "D:\\Desktop\\my_project\\uav_multilink_antisway_control_final\\outputs\\meeting_demo_recoverable_v4\\T3\\T3_5mps_LQR_vs_SATC.mp4"
+  },
+  "envelope": {
+    "speeds_mps": [
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0
+    ],
+    "LQR_MAX_RECOVERABLE_WIND_MPS": 3.0,
+    "SATC_MAX_RECOVERABLE_WIND_MPS": 5.0,
+    "LQR_FIRST_FAILURE_MPS": 4.0,
+    "SATC_FIRST_FAILURE_MPS": 6.0
+  }
+}

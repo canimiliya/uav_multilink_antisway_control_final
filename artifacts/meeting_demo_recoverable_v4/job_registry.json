@@ -1,0 +1,98 @@
+[
+  {
+    "task": "T1",
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T1",
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T2",
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T2",
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 3.0,
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 3.0,
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 4.0,
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 4.0,
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 5.0,
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 5.0,
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 6.0,
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 6.0,
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 7.0,
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 7.0,
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 8.0,
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 8.0,
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 9.0,
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 9.0,
+    "controller": "satc_b_027"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 10.0,
+    "controller": "full_lqr_048"
+  },
+  {
+    "task": "T3",
+    "speed_mps": 10.0,
+    "controller": "satc_b_027"
+  }
+]

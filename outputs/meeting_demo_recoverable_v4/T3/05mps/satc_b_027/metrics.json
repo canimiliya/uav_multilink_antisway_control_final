@@ -1,0 +1,63 @@
+{
+  "task": "T3",
+  "controller": "satc_b_027",
+  "speed_mps": 5.0,
+  "duration_s": 40.0,
+  "move_duration_s": 6.0,
+  "initial_angles_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "target_delta_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "wind_axis": "+X",
+  "safety": {
+    "finite": true,
+    "nan_count": 0,
+    "min_uav_height_m": 3.1864954895621347,
+    "min_cutter_tip_height_m": 0.38556268644423836,
+    "max_roll_pitch_deg": 6.008159410003403,
+    "max_joint_angle_rad": 0.041799395725318114,
+    "violations": []
+  },
+  "runtime_s": 13.468297800000073,
+  "runtime_mean_ms": 0.41936474664848905,
+  "runtime_p95_ms": 3.5191799999999973,
+  "control_effort": 13.621191871795608,
+  "physical_wrench_saturation_rate": 0.0,
+  "outer_accel_limit_hit_rate": 0.0,
+  "outer_accel_axis_hit_rate": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "outer_slew_limit_hit_rate": 0.0,
+  "outer_slew_axis_hit_rate": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "max_roll_deg": 2.3760457684913336e-14,
+  "max_pitch_deg": 6.008159410003403,
+  "peak_joint_rms_deg": 1.3155318989679463,
+  "peak_joint_angle_deg": 2.3949289612579023,
+  "final_5s_joint_rms_deg": 0.6638399808002438,
+  "finite": true,
+  "wind_onset_time_s": 8.0,
+  "prewind_tip_rms_m": 3.655470119601249e-15,
+  "postwind_tip_rms_m": 0.15434447684772573,
+  "peak_tip_deviation_m": 0.4402300420290418,
+  "peak_time_s": 10.715,
+  "recovery_after_peak_s": 3.280000000000001,
+  "recovery_from_wind_onset_s": 5.995000000000001,
+  "final_5s_tip_rms_m": 0.10746423334555998,
+  "final_5s_tip_speed_rms_mps": 3.6876769381791613e-10,
+  "recoverable": true,
+  "classification": "RECOVERABLE"
+}

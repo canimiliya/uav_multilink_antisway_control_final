@@ -1,0 +1,22 @@
+{
+  "controller_ids": [
+    "full_lqr_048",
+    "satc_b_027"
+  ],
+  "model_sha256": "19105873c0fcc891ebb85efe6c20c378d5b77b6bf9003559e43ae47ca03d153d",
+  "limits_read_from_frozen_controller": true,
+  "acceleration_limits_m_s2": {
+    "full_lqr_048": 2.0,
+    "satc_b_027": 2.0
+  },
+  "slew_limits_m_s2_per_outer_update": {
+    "full_lqr_048": 0.25,
+    "satc_b_027": 0.25
+  },
+  "outer_logging": [
+    "raw_command",
+    "post_limit_command",
+    "axis_limit_hit",
+    "slew_limit_hit"
+  ]
+}

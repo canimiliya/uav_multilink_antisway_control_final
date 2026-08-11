@@ -1,0 +1,58 @@
+{
+  "task": "T1",
+  "controller": "satc_b_027",
+  "speed_mps": 0.0,
+  "duration_s": 40.0,
+  "move_duration_s": 6.0,
+  "initial_angles_deg": [
+    20.0,
+    -16.0,
+    12.0,
+    -8.0,
+    4.0
+  ],
+  "target_delta_m": [
+    2.0,
+    1.7,
+    4.5
+  ],
+  "wind_axis": "OFF",
+  "safety": {
+    "finite": true,
+    "nan_count": 0,
+    "min_uav_height_m": 3.2,
+    "min_cutter_tip_height_m": 0.38208813505475264,
+    "max_roll_pitch_deg": 6.683206482683344,
+    "max_joint_angle_rad": 0.3490658503988659,
+    "violations": []
+  },
+  "runtime_s": 13.58393199999955,
+  "runtime_mean_ms": 0.42416073619631905,
+  "runtime_p95_ms": 3.5821499999999986,
+  "control_effort": 7.50634328697263,
+  "physical_wrench_saturation_rate": 0.0,
+  "outer_accel_limit_hit_rate": 0.0,
+  "outer_accel_axis_hit_rate": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "outer_slew_limit_hit_rate": 0.0008322929671244278,
+  "outer_slew_axis_hit_rate": [
+    0.0012484394506866417,
+    0.0,
+    0.0012484394506866417
+  ],
+  "max_roll_deg": 2.887872432809321,
+  "max_pitch_deg": 6.683206482683344,
+  "peak_joint_rms_deg": 13.2664991614216,
+  "peak_joint_angle_deg": 20.0,
+  "final_5s_joint_rms_deg": 1.6475669225355952e-07,
+  "finite": true,
+  "tip_tracking_rmse_m": 0.2563393015770858,
+  "final_tip_error_m": 6.172915054298244e-10,
+  "final_tip_speed_mps": 3.2207495405170717e-10,
+  "peak_tracking_error_m": 1.0733172036804377,
+  "settling_after_move_s": 2.540000000000001,
+  "classification": "CONTROLLED_SHOWCASE"
+}

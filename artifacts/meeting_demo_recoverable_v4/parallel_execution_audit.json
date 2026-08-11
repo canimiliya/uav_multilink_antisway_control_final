@@ -1,0 +1,8 @@
+{
+  "cpu_count": 24,
+  "max_workers": 20,
+  "job_count": 20,
+  "total_wall_time_s": 15.493075000000317,
+  "serial_time_sum_s": 244.1954628000003,
+  "parallel_speedup_estimate": 15.761587857800682
+}
