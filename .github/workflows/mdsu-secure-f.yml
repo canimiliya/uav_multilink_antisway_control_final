@@ -1,0 +1,326 @@
+name: MDSU secure frozen F execution
+
+on:
+  pull_request:
+    branches: [tmp/mdsu-secure-f-base]
+    paths:
+      - bridge/session_request.txt
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mdsu-secure-f-hcme-seed0
+  cancel-in-progress: false
+
+env:
+  TASK: halfcheetah-medium-expert-v2
+  CANDIDATE: F_modelpaired_current_l1
+  DATA_FILE: halfcheetah_medium_expert-v2.hdf5
+  DATA_BYTES: '474567252'
+  DATA_SHA256: 015db75dae5bbe8e94029b71fa0bafc2073365df0c94744e71031189f3f79c06
+  D4RL_BASE: https://rail.eecs.berkeley.edu/datasets/offline_rl/gym_mujoco_v2
+  CACHE_FILE: halfcheetah-medium-expert-v2__seed0__071e8c260bacc411.pt
+  CACHE_SHA256: 2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9
+  SOURCE_SHA256: cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b
+  CACHE_BUILDER_SHA256: 01d77c9864cbd088eba207754f3b7cbc965d7c8e699adc5a32bc96915505d1a9
+  SCORE_RUNTIME_SHA256: 3e9bb297dfa3ad3f239f178301c350ee6779e3032046f147a15a172fdd814e70
+  REGISTRY_RAW_SHA256: f31ca015a3612526cbd0450a371a818085bffd9ea890a8e67c98cb0602b8625f
+  REGISTRY_SEMANTIC_SHA256: fc490fee30ab5139dd45ed7a9b92caecb81923d78b839612f56703cb1a0893d9
+  CANDIDATE_SPEC_SHA256: 8e97bdc3a864d4dc4e3c1ef5d292052196e7265f1ffd9a6b74b22a273c5fa6be
+  OMP_NUM_THREADS: '4'
+  MKL_NUM_THREADS: '4'
+  MUJOCO_GL: osmesa
+  D4RL_SUPPRESS_IMPORT_ERROR: '1'
+
+jobs:
+  formal-f:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 350
+    steps:
+      - name: Checkout isolated bridge head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Emit ephemeral session public key
+        shell: bash
+        run: |
+          set -euo pipefail
+          HEAD_REF='${{ github.event.pull_request.head.ref }}'
+          mkdir -p bridge /tmp/mdsu_bridge
+          openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 -out /tmp/mdsu_bridge/session_private.pem >/dev/null 2>&1
+          openssl pkey -in /tmp/mdsu_bridge/session_private.pem -pubout -out bridge/session_public.pem >/dev/null 2>&1
+          chmod 600 /tmp/mdsu_bridge/session_private.pem
+          printf '%s\n' "$(sha256sum bridge/session_public.pem | awk '{print $1}')" > bridge/session_public.sha256
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add bridge/session_public.pem bridge/session_public.sha256
+          git commit -m 'chore: emit ephemeral MDSU F bridge public key [skip ci]'
+          git push origin "HEAD:${HEAD_REF}"
+
+      - name: Wait for encrypted payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          HEAD_REF='${{ github.event.pull_request.head.ref }}'
+          mkdir -p /tmp/mdsu_bridge/incoming
+          found=0
+          for _ in $(seq 1 180); do
+            git fetch --quiet origin "$HEAD_REF"
+            found=1
+            for f in bridge/transport_key.b64 bridge/payload.enc.b64 bridge/payload.iv bridge/source.enc.b64; do
+              if ! git cat-file -e "origin/${HEAD_REF}:${f}" 2>/dev/null; then found=0; break; fi
+            done
+            if [ "$found" = 1 ]; then
+              for f in transport_key.b64 payload.enc.b64 payload.iv source.enc.b64; do
+                git show "origin/${HEAD_REF}:bridge/${f}" > "/tmp/mdsu_bridge/incoming/${f}"
+              done
+              break
+            fi
+            sleep 10
+          done
+          test "$found" = 1 || { echo 'encrypted bridge payload did not arrive'; exit 1; }
+
+      - name: Decrypt source and retrieve exact immutable cache
+        id: secure_bridge
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd /tmp/mdsu_bridge
+          base64 -d incoming/transport_key.b64 > transport_key.enc
+          base64 -d incoming/payload.enc.b64 > payload.enc
+          base64 -d incoming/source.enc.b64 > source.enc
+          openssl pkeyutl -decrypt -inkey session_private.pem -in transport_key.enc \
+            -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 \
+            -out transport_key.bin
+          KEY_HEX=$(xxd -p -c 256 transport_key.bin)
+          PAYLOAD_IV=$(tr -d '\r\n ' < incoming/payload.iv)
+          openssl enc -d -aes-256-cbc -K "$KEY_HEX" -iv "$PAYLOAD_IV" -in payload.enc -out payload.json
+          python3 - <<'PY'
+          import base64, json, pathlib
+          p=json.loads(pathlib.Path('/tmp/mdsu_bridge/payload.json').read_text())
+          required={
+            'protocol':'MDSU_SECURE_F_V1',
+            'candidate':'F_modelpaired_current_l1',
+            'task':'halfcheetah-medium-expert-v2',
+            'seed':0,
+            'updates':200000,
+            'algorithm_source_sha256':'cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b',
+            'dynamics_cache_sha256':'2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9',
+          }
+          for k,v in required.items():
+              if p.get(k)!=v: raise SystemExit('payload contract mismatch: %s'%k)
+          pathlib.Path('/tmp/mdsu_bridge/cache_url.txt').write_text(p['cache_url'])
+          pathlib.Path('/tmp/mdsu_bridge/source_key_hex.txt').write_text(p['source_key_hex'])
+          pathlib.Path('/tmp/mdsu_bridge/source_iv_hex.txt').write_text(p['source_iv_hex'])
+          pathlib.Path('/tmp/mdsu_bridge/source_sha256.txt').write_text(p['source_plain_sha256'])
+          pathlib.Path('/tmp/mdsu_bridge/result_public.pem').write_bytes(base64.b64decode(p['result_public_pem_b64']))
+          PY
+          SOURCE_KEY=$(cat source_key_hex.txt)
+          SOURCE_IV=$(cat source_iv_hex.txt)
+          openssl enc -d -aes-256-cbc -K "$SOURCE_KEY" -iv "$SOURCE_IV" -in source.enc -out source.tar.gz
+          echo "$(cat source_sha256.txt)  source.tar.gz" | sha256sum -c -
+          mkdir -p /tmp/mdsu
+          tar -xzf source.tar.gz -C /tmp/mdsu
+          (cd /tmp/mdsu && sha256sum -c SOURCE_PAYLOAD_SHA256SUMS.txt)
+          curl --silent --show-error --fail --location --retry 5 --retry-delay 2 --connect-timeout 20 \
+            "$(cat cache_url.txt)" -o /tmp/mdsu_bridge/immutable_cache.pt
+          echo "$CACHE_SHA256  /tmp/mdsu_bridge/immutable_cache.pt" | sha256sum -c -
+          mkdir -p /tmp/secure_cache_output
+          CACHE_KEY_HEX=$(openssl rand -hex 32)
+          CACHE_IV_HEX=$(openssl rand -hex 16)
+          printf '%s' "$CACHE_KEY_HEX" | xxd -r -p > /tmp/secure_cache_output/cache_key.bin
+          openssl enc -aes-256-cbc -K "$CACHE_KEY_HEX" -iv "$CACHE_IV_HEX" \
+            -in /tmp/mdsu_bridge/immutable_cache.pt -out /tmp/secure_cache_output/immutable_cache.pt.enc
+          openssl pkeyutl -encrypt -pubin -inkey result_public.pem \
+            -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 \
+            -in /tmp/secure_cache_output/cache_key.bin -out /tmp/secure_cache_output/cache_key.enc
+          printf '%s\n' "$CACHE_IV_HEX" > /tmp/secure_cache_output/cache_iv.hex
+          printf '%s  immutable_cache.pt\n' "$CACHE_SHA256" > /tmp/secure_cache_output/CACHE_SHA256.txt
+          rm -f /tmp/secure_cache_output/cache_key.bin cache_url.txt transport_key.bin
+
+      - name: Persist encrypted exact-cache recovery artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-secure-hcme-seed0-immutable-cache
+          path: /tmp/secure_cache_output
+          if-no-files-found: error
+          retention-days: 1
+
+      - name: Install exact paper-era score runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libgl1-mesa-dev libglew-dev libosmesa6-dev patchelf git curl
+          source "$(conda info --base)/etc/profile.d/conda.sh"
+          conda create -y -n mdsu37 python=3.7.16 pip
+          conda activate mdsu37
+          python -m pip install 'numpy==1.21.6' 'Cython<3' 'gym==0.23.1' 'mujoco-py==2.1.2.14' 'h5py==3.7.0' 'tqdm<5'
+          python -m pip install 'torch==1.8.1+cpu' -f https://download.pytorch.org/whl/torch_stable.html
+          git clone -q https://github.com/Farama-Foundation/D4RL.git /tmp/d4rl-src
+          cd /tmp/d4rl-src
+          git checkout -q 89141a689b0353b0dac3da5cba60da4b1b16254d
+          python -m pip install --no-deps .
+          mkdir -p "$HOME/.mujoco"
+          curl --silent --show-error --fail --location --retry 5 \
+            https://github.com/google-deepmind/mujoco/releases/download/2.1.0/mujoco210-linux-x86_64.tar.gz \
+            -o /tmp/mujoco210.tar.gz
+          tar -xzf /tmp/mujoco210.tar.gz -C "$HOME/.mujoco"
+          echo "MUJOCO_PY_MUJOCO_PATH=$HOME/.mujoco/mujoco210" >> "$GITHUB_ENV"
+          echo "LD_LIBRARY_PATH=$HOME/.mujoco/mujoco210/bin:/usr/lib/x86_64-linux-gnu" >> "$GITHUB_ENV"
+
+      - name: Retrieve and verify exact HCME D4RL dataset
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/mdsu/data/d4rl /tmp/mdsu/dynamics_cache
+          curl --silent --show-error --fail --location --retry 5 --retry-delay 2 --connect-timeout 20 \
+            "$D4RL_BASE/$DATA_FILE" -o "/tmp/mdsu/data/d4rl/$DATA_FILE"
+          test "$(stat -c%s "/tmp/mdsu/data/d4rl/$DATA_FILE")" = "$DATA_BYTES"
+          echo "$DATA_SHA256  /tmp/mdsu/data/d4rl/$DATA_FILE" | sha256sum -c -
+          cp /tmp/mdsu_bridge/immutable_cache.pt "/tmp/mdsu/dynamics_cache/$CACHE_FILE"
+
+      - name: Verify all frozen identities and cache contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          source "$(conda info --base)/etc/profile.d/conda.sh"
+          conda activate mdsu37
+          cd /tmp/mdsu
+          python - <<'PY'
+          import hashlib,json,os,pathlib,torch
+          import d4rl.gym_mujoco
+          from mdsu.provenance import source_fingerprint,runtime_environment
+          from mdsu.formal_contracts import cache_builder_source_fingerprint,verify_locked_contracts
+          from mdsu.score_runtime import contract_sha256,compatibility_report
+          from mdsu.candidate_registry import candidate_names,candidate_sha256,registry_sha256
+          from mdsu.dynamics_cache import registry_raw_sha256,cache_contract,load_cache
+          from mdsu.d4rl_manifest import require_verified_dataset
+          torch.set_num_threads(4); torch.set_num_interop_threads(2)
+          assert source_fingerprint()['algorithm_source_sha256']==os.environ['SOURCE_SHA256']
+          assert cache_builder_source_fingerprint()['cache_builder_source_sha256']==os.environ['CACHE_BUILDER_SHA256']
+          assert contract_sha256()==os.environ['SCORE_RUNTIME_SHA256']
+          assert registry_raw_sha256()==os.environ['REGISTRY_RAW_SHA256']
+          assert registry_sha256()==os.environ['REGISTRY_SEMANTIC_SHA256']
+          assert candidate_sha256(os.environ['CANDIDATE'])==os.environ['CANDIDATE_SPEC_SHA256']
+          assert os.environ['CANDIDATE'] in candidate_names('primary')
+          env=runtime_environment(); rep=compatibility_report(env,'cpu'); assert rep['compatible'],rep
+          locks=verify_locked_contracts(env,'cpu',strict_runtime=True)
+          ident=require_verified_dataset(os.environ['TASK'],pathlib.Path('data/d4rl')/os.environ['DATA_FILE'])
+          contract=cache_contract(os.environ['TASK'],0,ident,locks['execution_source_sha256'],locks['cache_builder_source_sha256'],locks['score_runtime_semantic_sha256'])
+          p=pathlib.Path('dynamics_cache')/os.environ['CACHE_FILE']
+          load_cache(p,contract,map_location='cpu')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==os.environ['CACHE_SHA256']
+          out={'status':'SECURE_FORMAL_PREFLIGHT_PASS','candidate':os.environ['CANDIDATE'],'task':os.environ['TASK'],'seed':0,'updates':200000,'source_sha256':os.environ['SOURCE_SHA256'],'cache_sha256':os.environ['CACHE_SHA256'],'dataset_sha256':ident['sha256_actual'],'cache_contract_sha256':'071e8c260bacc411a620c6f777e2a2c7bc0aff090cbcc18f5d427c21a204aafa'}
+          pathlib.Path('secure_formal_preflight.json').write_text(json.dumps(out,indent=2))
+          print(json.dumps(out,indent=2))
+          PY
+
+      - name: Run preregistered F HCME seed0 formal 200k
+        shell: bash
+        run: |
+          set -euo pipefail
+          source "$(conda info --base)/etc/profile.d/conda.sh"
+          conda activate mdsu37
+          cd /tmp/mdsu
+          python scripts/formal_stage1.py \
+            --candidate "$CANDIDATE" --task "$TASK" --seed 0 \
+            --cache-dir dynamics_cache --checkpoint-every 10000
+
+      - name: Native and independent final validation
+        shell: bash
+        run: |
+          set -euo pipefail
+          source "$(conda info --base)/etc/profile.d/conda.sh"
+          conda activate mdsu37
+          cd /tmp/mdsu
+          python - <<'PY'
+          import csv,hashlib,json,os,pathlib
+          from scripts.stage1_contract import validate_formal_run
+          root=pathlib.Path('stage1_coarse_runs')/os.environ['TASK']/(os.environ['CANDIDATE']+'_seed0')
+          native=validate_formal_run('stage1_coarse_runs',os.environ['CANDIDATE'],os.environ['TASK'],0,200000,require_actual_dataset=True)
+          pathlib.Path('native_stage1_validation.json').write_text(json.dumps(native,indent=2))
+          assert native['status']=='COMPLETE_VALID',native
+          cfg=json.loads((root/'config.json').read_text()); comp=json.loads((root/'completion.json').read_text())
+          rows=list(csv.DictReader((root/'training.csv').open()))
+          evals=[r for r in rows if r.get('normalized_score') not in ('',None)]
+          expected=list(range(10000,200001,10000)); got=[int(r['update']) for r in evals]
+          problems=[]
+          if got!=expected: problems.append('evaluation_schedule')
+          if cfg.get('candidate_name')!=os.environ['CANDIDATE']: problems.append('candidate')
+          if (cfg.get('source_fingerprint') or {}).get('algorithm_source_sha256')!=os.environ['SOURCE_SHA256']: problems.append('source')
+          if comp.get('dynamics_cache_sha256')!=os.environ['CACHE_SHA256']: problems.append('cache')
+          if comp.get('dataset_sha256')!=os.environ['DATA_SHA256']: problems.append('dataset')
+          for name,fn in [('config','config.json'),('training_log','training.csv'),('checkpoint','checkpoint.pt'),('timing','timing.json')]:
+              p=root/fn; h=hashlib.sha256(p.read_bytes()).hexdigest(); rec=(comp.get('artifacts') or {}).get(name) or {}
+              if rec.get('sha256')!=h or int(rec.get('bytes',-1))!=p.stat().st_size: problems.append('artifact:'+name)
+          out={'status':'COMPLETE_VALID' if not problems else 'INVALID','candidate':os.environ['CANDIDATE'],'task':os.environ['TASK'],'seed':0,'expected_updates':200000,'evaluation_updates':got,'evaluation_count':len(got),'last_normalized_score':float(evals[-1]['normalized_score']),'source_sha256':os.environ['SOURCE_SHA256'],'dataset_sha256':os.environ['DATA_SHA256'],'dynamics_cache_sha256':os.environ['CACHE_SHA256'],'problems':problems}
+          pathlib.Path('independent_validation.json').write_text(json.dumps(out,indent=2))
+          assert not problems,out
+          pathlib.Path('double_validation.json').write_text(json.dumps({'status':'DOUBLE_COMPLETE_VALID','native_stage1_contract':native,'independent_validator':out},indent=2))
+          print(json.dumps(out,indent=2))
+          PY
+
+      - name: Encrypt final F evidence for local recovery
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd /tmp/mdsu
+          RUN="stage1_coarse_runs/$TASK/${CANDIDATE}_seed0"
+          mkdir -p /tmp/secure_final_output
+          tar -czf /tmp/secure_final_output/F_final.tar.gz \
+            secure_formal_preflight.json native_stage1_validation.json independent_validation.json double_validation.json \
+            "$RUN/config.json" "$RUN/training.csv" "$RUN/timing.json" "$RUN/completion.json" "$RUN/checkpoint.pt"
+          RESULT_KEY_HEX=$(openssl rand -hex 32)
+          RESULT_IV_HEX=$(openssl rand -hex 16)
+          printf '%s' "$RESULT_KEY_HEX" | xxd -r -p > /tmp/secure_final_output/result_key.bin
+          openssl enc -aes-256-cbc -K "$RESULT_KEY_HEX" -iv "$RESULT_IV_HEX" \
+            -in /tmp/secure_final_output/F_final.tar.gz -out /tmp/secure_final_output/F_final.tar.gz.enc
+          openssl pkeyutl -encrypt -pubin -inkey /tmp/mdsu_bridge/result_public.pem \
+            -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 \
+            -in /tmp/secure_final_output/result_key.bin -out /tmp/secure_final_output/result_key.enc
+          printf '%s\n' "$RESULT_IV_HEX" > /tmp/secure_final_output/result_iv.hex
+          sha256sum /tmp/secure_final_output/F_final.tar.gz > /tmp/secure_final_output/PLAINTEXT_RESULT_SHA256.txt
+          rm -f /tmp/secure_final_output/F_final.tar.gz /tmp/secure_final_output/result_key.bin
+
+      - name: Upload encrypted DOUBLE_COMPLETE_VALID F result
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-secure-F-HCME-seed0-200k-final
+          path: /tmp/secure_final_output
+          if-no-files-found: error
+          retention-days: 1
+
+      - name: Encrypt partial rescue state on any failure
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN="/tmp/mdsu/stage1_coarse_runs/$TASK/${CANDIDATE}_seed0"
+          test -d "$RUN" || exit 0
+          test -f /tmp/mdsu_bridge/result_public.pem || exit 0
+          mkdir -p /tmp/secure_partial_output
+          tar -czf /tmp/secure_partial_output/F_partial.tar.gz -C /tmp/mdsu stage1_coarse_runs secure_formal_preflight.json 2>/dev/null || true
+          test -s /tmp/secure_partial_output/F_partial.tar.gz || exit 0
+          KEY_HEX=$(openssl rand -hex 32); IV_HEX=$(openssl rand -hex 16)
+          printf '%s' "$KEY_HEX" | xxd -r -p > /tmp/secure_partial_output/key.bin
+          openssl enc -aes-256-cbc -K "$KEY_HEX" -iv "$IV_HEX" \
+            -in /tmp/secure_partial_output/F_partial.tar.gz -out /tmp/secure_partial_output/F_partial.tar.gz.enc
+          openssl pkeyutl -encrypt -pubin -inkey /tmp/mdsu_bridge/result_public.pem \
+            -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 \
+            -in /tmp/secure_partial_output/key.bin -out /tmp/secure_partial_output/key.enc
+          printf '%s\n' "$IV_HEX" > /tmp/secure_partial_output/iv.hex
+          rm -f /tmp/secure_partial_output/F_partial.tar.gz /tmp/secure_partial_output/key.bin
+
+      - name: Upload encrypted partial rescue state
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-secure-F-HCME-seed0-partial-rescue
+          path: /tmp/secure_partial_output
+          if-no-files-found: ignore
+          retention-days: 1
