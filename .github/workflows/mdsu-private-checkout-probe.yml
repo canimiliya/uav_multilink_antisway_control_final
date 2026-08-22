@@ -1,0 +1,40 @@
+name: MDSU private checkout probe
+
+on:
+  pull_request:
+    branches: [tmp/mdsu-public-actions-probe-base]
+    paths: [.mdsu_private_checkout_probe]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Attempt private repository checkout with current GITHUB_TOKEN
+        id: private_checkout
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: canimiliya/learning_of_robot_planning_and_control
+          ref: tmp/mdsu-r22-formal-runner
+          path: _private_probe
+          token: ${{ github.token }}
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Record token-scope result without exposing private content
+        shell: bash
+        env:
+          OUTCOME: ${{ steps.private_checkout.outcome }}
+        run: |
+          set -euo pipefail
+          echo "private_checkout_outcome=$OUTCOME"
+          if [ -e _private_probe/r22_runner/state/hcme_seed0.immutable_cache.pt ]; then
+            echo "private_cache_visible=true"
+            stat -c 'private_cache_bytes=%s' _private_probe/r22_runner/state/hcme_seed0.immutable_cache.pt
+          else
+            echo "private_cache_visible=false"
+          fi
