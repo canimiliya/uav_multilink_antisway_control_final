@@ -1,0 +1,36 @@
+name: MDSU public exact HCME data bridge
+
+on:
+  pull_request:
+    branches: [tmp/mdsu-public-actions-probe-base]
+    paths: [.mdsu_public_hcme_bridge]
+
+permissions:
+  contents: read
+
+jobs:
+  bridge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download exact public D4RL HCME data
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p bridge
+          url_rail='https://rail.eecs.berkeley.edu/datasets/offline_rl/gym_mujoco_v2/halfcheetah_medium_expert-v2.hdf5'
+          url_hf='https://huggingface.co/datasets/imone/D4RL/resolve/main/halfcheetah_medium_expert-v2.hdf5?download=true'
+          if ! curl -fL --retry 5 --retry-delay 2 --connect-timeout 30 "$url_rail" -o bridge/halfcheetah_medium_expert-v2.hdf5; then
+            curl -fL --retry 5 --retry-delay 2 --connect-timeout 30 "$url_hf" -o bridge/halfcheetah_medium_expert-v2.hdf5
+          fi
+          test "$(stat -c%s bridge/halfcheetah_medium_expert-v2.hdf5)" = 474567252
+          echo '015db75dae5bbe8e94029b71fa0bafc2073365df0c94744e71031189f3f79c06  bridge/halfcheetah_medium_expert-v2.hdf5' | sha256sum -c -
+      - name: Upload exact HCME bridge artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-public-hcme-exact
+          path: bridge/halfcheetah_medium_expert-v2.hdf5
+          compression-level: 0
+          retention-days: 1
+          if-no-files-found: error
