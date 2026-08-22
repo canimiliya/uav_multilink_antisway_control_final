@@ -1,0 +1,74 @@
+name: MDSU public paper-era runtime bridge
+
+on:
+  pull_request:
+    branches: [tmp/mdsu-public-actions-probe-base]
+    paths: [.mdsu_public_legacy_runtime_bridge]
+
+permissions:
+  contents: read
+
+jobs:
+  bridge:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build exact-path Python 3.7 legacy runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libgl1-mesa-dev libglew-dev libosmesa6-dev patchelf git curl
+          sudo mkdir -p /mnt/data/mdsu_legacy_runtime
+          sudo chown -R "$USER":"$USER" /mnt/data/mdsu_legacy_runtime
+          source "$(conda info --base)/etc/profile.d/conda.sh"
+          conda create -y -p /mnt/data/mdsu_legacy_runtime/env python=3.7.16 pip
+          conda activate /mnt/data/mdsu_legacy_runtime/env
+          python -m pip install 'numpy==1.21.6' 'Cython<3' 'gym==0.23.1' 'mujoco-py==2.1.2.14' 'h5py==3.7.0' 'tqdm<5'
+          python -m pip install 'torch==1.8.1+cpu' -f https://download.pytorch.org/whl/torch_stable.html
+          git clone -q https://github.com/Farama-Foundation/D4RL.git /tmp/d4rl-src
+          cd /tmp/d4rl-src
+          git checkout -q 89141a689b0353b0dac3da5cba60da4b1b16254d
+          python -m pip install --no-deps .
+          mkdir -p /mnt/data/mdsu_legacy_runtime/mujoco
+          curl -fL --retry 5 https://github.com/google-deepmind/mujoco/releases/download/2.1.0/mujoco210-linux-x86_64.tar.gz -o /tmp/mujoco210.tar.gz
+          tar -xzf /tmp/mujoco210.tar.gz -C /mnt/data/mdsu_legacy_runtime/mujoco
+          mkdir -p /mnt/data/mdsu_legacy_runtime/system_libs
+          roots=(/usr/lib/x86_64-linux-gnu/libOSMesa.so.8 /usr/lib/x86_64-linux-gnu/libGLEW.so.2.2 /usr/lib/x86_64-linux-gnu/libGL.so.1)
+          for root in "${roots[@]}"; do
+            cp -L "$root" /mnt/data/mdsu_legacy_runtime/system_libs/$(basename "$root")
+            ldd "$root" | awk '/=> \/|^\// {for(i=1;i<=NF;i++) if($i ~ /^\//) print $i}' | while read -r dep; do
+              cp -L "$dep" /mnt/data/mdsu_legacy_runtime/system_libs/$(basename "$dep")
+            done
+          done
+          cp /usr/bin/patchelf /mnt/data/mdsu_legacy_runtime/patchelf
+          export MUJOCO_PY_MUJOCO_PATH=/mnt/data/mdsu_legacy_runtime/mujoco/mujoco210
+          export LD_LIBRARY_PATH=/mnt/data/mdsu_legacy_runtime/system_libs:/mnt/data/mdsu_legacy_runtime/mujoco/mujoco210/bin
+          export MUJOCO_GL=osmesa
+          export D4RL_SUPPRESS_IMPORT_ERROR=1
+          cd "$GITHUB_WORKSPACE"
+          python - <<'PY'
+          import json,sys,torch,numpy,gym
+          import d4rl.gym_mujoco
+          env=gym.make('halfcheetah-medium-expert-v2')
+          env.seed(0)
+          obs=env.reset()
+          obs,r,d,info=env.step(env.action_space.sample())
+          payload={'status':'LEGACY_RUNTIME_PROBE_PASS','python':sys.version,'torch':torch.__version__,'numpy':numpy.__version__,'gym':gym.__version__,'obs_shape':list(obs.shape),'reward':float(r)}
+          open('/mnt/data/mdsu_legacy_runtime/runtime_manifest.json','w').write(json.dumps(payload,indent=2))
+          print(json.dumps(payload,indent=2))
+          PY
+          mkdir -p "$GITHUB_WORKSPACE/bridge"
+          tar -C /mnt/data -czf "$GITHUB_WORKSPACE/bridge/mdsu_legacy_runtime.tar.gz" mdsu_legacy_runtime
+          sha256sum "$GITHUB_WORKSPACE/bridge/mdsu_legacy_runtime.tar.gz" | tee "$GITHUB_WORKSPACE/bridge/mdsu_legacy_runtime.tar.gz.sha256"
+      - name: Upload paper-era runtime bridge artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-public-legacy-runtime
+          path: |
+            bridge/mdsu_legacy_runtime.tar.gz
+            bridge/mdsu_legacy_runtime.tar.gz.sha256
+          compression-level: 0
+          retention-days: 1
+          if-no-files-found: error
