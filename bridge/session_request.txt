@@ -1,0 +1,10 @@
+protocol=MDSU_SECURE_F_V1
+candidate=F_modelpaired_current_l1
+task=halfcheetah-medium-expert-v2
+seed=0
+updates=200000
+algorithm_source_sha256=cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b
+dynamics_cache_sha256=2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9
+scientific_change=none
+secondary_started=false
+stage2_started=false
