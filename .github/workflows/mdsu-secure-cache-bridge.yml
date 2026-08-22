@@ -15,6 +15,8 @@ concurrency:
 
 env:
   CACHE_SHA256: 2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9
+  PRIVATE_CONTENTS_URL: https://api.github.com/repos/canimiliya/learning_of_robot_planning_and_control/contents/r22_runner/state/hcme_seed0.immutable_cache.pt?ref=tmp/mdsu-r22-cache-fanout
+  PRIVATE_BLOB_URL: https://api.github.com/repos/canimiliya/learning_of_robot_planning_and_control/git/blobs/df7b841c79b0296454129e92f1c10acc25bca725
 
 jobs:
   recover-cache:
@@ -63,7 +65,7 @@ jobs:
               done
               break
             fi
-            sleep 10
+            sleep 5
           done
           test "$found" = 1 || { echo 'encrypted cache contract did not arrive'; exit 1; }
 
@@ -81,16 +83,71 @@ jobs:
           IV_HEX=$(tr -d '\r\n ' < incoming/cache_payload.iv)
           openssl enc -d -aes-256-cbc -K "$KEY_HEX" -iv "$IV_HEX" -in payload.enc -out payload.json
           python3 - <<'PY'
-          import base64,json,pathlib
+          import base64,json,os,pathlib,urllib.parse
           p=json.loads(pathlib.Path('/tmp/cache_bridge/payload.json').read_text())
           assert p['protocol']=='MDSU_CACHE_BRIDGE_V1'
           assert p['cache_sha256']=='2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9'
+          u=urllib.parse.urlsplit(p['cache_url'])
+          q=urllib.parse.parse_qs(u.query)
+          token=(q.get('token') or [''])[0]
+          if not token: raise SystemExit('encrypted payload contains no private token')
           pathlib.Path('/tmp/cache_bridge/cache_url.txt').write_text(p['cache_url'])
+          pathlib.Path('/tmp/cache_bridge/raw_base_url.txt').write_text(urllib.parse.urlunsplit((u.scheme,u.netloc,u.path,'','')))
+          pathlib.Path('/tmp/cache_bridge/private_token.txt').write_text(token)
+          os.chmod('/tmp/cache_bridge/private_token.txt',0o600)
           pathlib.Path('/tmp/cache_bridge/result_public.pem').write_bytes(base64.b64decode(p['result_public_pem_b64']))
           PY
-          curl --silent --show-error --fail --location --retry 5 --retry-delay 2 --connect-timeout 20 \
-            "$(cat cache_url.txt)" -o immutable_cache.pt
+
+          rm -f immutable_cache.pt candidate.bin blob.json
+          TOKEN=$(cat private_token.txt)
+          try_binary() {
+            label="$1"; shift
+            rm -f candidate.bin
+            code=$(curl --silent --show-error --location --connect-timeout 20 --max-time 120 \
+              --output candidate.bin --write-out '%{http_code}' "$@" || true)
+            bytes=0; test ! -f candidate.bin || bytes=$(stat -c%s candidate.bin)
+            echo "method=${label} http=${code} bytes=${bytes}"
+            if test -f candidate.bin && echo "$CACHE_SHA256  candidate.bin" | sha256sum -c - >/dev/null 2>&1; then
+              mv candidate.bin immutable_cache.pt
+              echo "selected_method=${label}"
+              return 0
+            fi
+            return 1
+          }
+
+          try_binary raw_query "$(cat cache_url.txt)" || \
+          try_binary raw_bearer -H "Authorization: Bearer ${TOKEN}" "$(cat raw_base_url.txt)" || \
+          try_binary raw_token -H "Authorization: token ${TOKEN}" "$(cat raw_base_url.txt)" || \
+          try_binary contents_bearer \
+            -H "Authorization: Bearer ${TOKEN}" \
+            -H 'Accept: application/vnd.github.raw+json' \
+            -H 'X-GitHub-Api-Version: 2022-11-28' \
+            "$PRIVATE_CONTENTS_URL" || true
+
+          if test ! -f immutable_cache.pt; then
+            code=$(curl --silent --show-error --location --connect-timeout 20 --max-time 120 \
+              -H "Authorization: Bearer ${TOKEN}" \
+              -H 'Accept: application/vnd.github+json' \
+              -H 'X-GitHub-Api-Version: 2022-11-28' \
+              --output blob.json --write-out '%{http_code}' "$PRIVATE_BLOB_URL" || true)
+            bytes=0; test ! -f blob.json || bytes=$(stat -c%s blob.json)
+            echo "method=blob_api_bearer http=${code} bytes=${bytes}"
+            python3 - <<'PY' || true
+          import base64,hashlib,json,pathlib
+          p=pathlib.Path('blob.json')
+          if not p.is_file(): raise SystemExit(1)
+          obj=json.loads(p.read_text())
+          data=base64.b64decode((obj.get('content') or '').replace('\n',''))
+          if hashlib.sha256(data).hexdigest()!='2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9': raise SystemExit(1)
+          pathlib.Path('immutable_cache.pt').write_bytes(data)
+          print('selected_method=blob_api_bearer')
+          PY
+          fi
+
+          rm -f private_token.txt cache_url.txt raw_base_url.txt transport_key.bin blob.json candidate.bin
+          test -f immutable_cache.pt || { echo 'all private-token transport modes failed'; exit 1; }
           echo "$CACHE_SHA256  immutable_cache.pt" | sha256sum -c -
+
           mkdir -p /tmp/secure_cache_output
           OUT_KEY_HEX=$(openssl rand -hex 32)
           OUT_IV_HEX=$(openssl rand -hex 16)
@@ -104,7 +161,7 @@ jobs:
             -in /tmp/secure_cache_output/cache_key.bin -out /tmp/secure_cache_output/cache_key.enc
           printf '%s\n' "$OUT_IV_HEX" > /tmp/secure_cache_output/cache_iv.hex
           printf '%s  immutable_cache.pt\n' "$CACHE_SHA256" > /tmp/secure_cache_output/CACHE_SHA256.txt
-          rm -f /tmp/secure_cache_output/cache_key.bin cache_url.txt transport_key.bin immutable_cache.pt
+          rm -f /tmp/secure_cache_output/cache_key.bin immutable_cache.pt
 
       - name: Upload encrypted exact immutable cache
         uses: actions/upload-artifact@v4
