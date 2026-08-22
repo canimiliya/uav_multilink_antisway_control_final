@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: mdsu-secure-hcme-seed1-cache
+  group: mdsu-secure-hcme-seed1-cache-v2
   cancel-in-progress: false
 
 env:
@@ -70,12 +70,28 @@ jobs:
           for _ in $(seq 1 240); do
             git fetch --quiet origin "$HEAD_REF"
             found=1
-            for f in bridge/transport_key.b64 bridge/payload.enc.b64 bridge/payload.iv bridge/source.enc.b64; do
+            for f in bridge/transport_key.b64 bridge/payload.enc.b64 bridge/payload.iv bridge/source_parts.count; do
               if ! git cat-file -e "origin/${HEAD_REF}:${f}" 2>/dev/null; then found=0; break; fi
             done
             if [ "$found" = 1 ]; then
-              for f in transport_key.b64 payload.enc.b64 payload.iv source.enc.b64; do
+              count=$(git show "origin/${HEAD_REF}:bridge/source_parts.count" | tr -d '\r\n ')
+              case "$count" in ''|*[!0-9]*) found=0;; esac
+              if [ "$found" = 1 ]; then
+                for i in $(seq 0 $((count-1))); do
+                  printf -v part 'bridge/source.enc.part%03d' "$i"
+                  if ! git cat-file -e "origin/${HEAD_REF}:${part}" 2>/dev/null; then found=0; break; fi
+                done
+              fi
+            fi
+            if [ "$found" = 1 ]; then
+              for f in transport_key.b64 payload.enc.b64 payload.iv source_parts.count; do
                 git show "origin/${HEAD_REF}:bridge/${f}" > "/tmp/mdsu_bridge/incoming/${f}"
+              done
+              count=$(cat /tmp/mdsu_bridge/incoming/source_parts.count)
+              : > /tmp/mdsu_bridge/incoming/source.enc.b64
+              for i in $(seq 0 $((count-1))); do
+                printf -v part 'source.enc.part%03d' "$i"
+                git show "origin/${HEAD_REF}:bridge/${part}" >> /tmp/mdsu_bridge/incoming/source.enc.b64
               done
               break
             fi
