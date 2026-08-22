@@ -1,0 +1,24 @@
+name: MDSU public runner probe
+
+on:
+  pull_request:
+    branches: [tmp/mdsu-public-actions-probe-base]
+    paths: [.mdsu_public_runner_probe]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record runner facts
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "RUNNER_OK"
+          uname -a
+          python --version
+          df -h .
