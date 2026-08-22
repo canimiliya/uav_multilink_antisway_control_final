@@ -1,4 +1,5 @@
 protocol=MDSU_CACHE_BRIDGE_V1
+request_revision=2
 cache_sha256=2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9
 purpose=restore exact HCME seed0 immutable dynamics cache without retraining
 plaintext_publication=false
