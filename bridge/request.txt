@@ -8,3 +8,5 @@ score_runtime_sha256=3e9bb297dfa3ad3f239f178301c350ee6779e3032046f147a15a172fdd8
 formal_environment_score_count=2
 secondary_started=false
 stage2_started=false
+retry=2
+source_transport=chunked-base64
