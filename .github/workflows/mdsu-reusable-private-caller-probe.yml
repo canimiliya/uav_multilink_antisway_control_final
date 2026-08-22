@@ -1,0 +1,30 @@
+name: MDSU reusable private-caller bridge probe
+
+on:
+  workflow_call:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout caller private formal branch
+        uses: actions/checkout@v4
+        with:
+          repository: canimiliya/learning_of_robot_planning_and_control
+          ref: tmp/mdsu-r22-formal-runner
+          path: private_formal
+          token: ${{ github.token }}
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Verify exact private cache without exposing bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          p=private_formal/r22_runner/state/hcme_seed0.immutable_cache.pt
+          test -f "$p"
+          test "$(stat -c%s "$p")" = 2152219
+          test "$(sha256sum "$p" | awk '{print $1}')" = 2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9
+          echo REUSABLE_PRIVATE_CALLER_BRIDGE_OK
