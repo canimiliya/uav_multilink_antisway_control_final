@@ -1,0 +1,115 @@
+name: MDSU secure immutable-cache bridge
+
+on:
+  pull_request:
+    branches: [tmp/mdsu-secure-f-base]
+    paths:
+      - bridge/cache_session_request.txt
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mdsu-secure-hcme-seed0-cache-bridge
+  cancel-in-progress: false
+
+env:
+  CACHE_SHA256: 2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9
+
+jobs:
+  recover-cache:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 40
+    steps:
+      - name: Checkout bridge head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Emit ephemeral cache-session public key
+        shell: bash
+        run: |
+          set -euo pipefail
+          HEAD_REF='${{ github.event.pull_request.head.ref }}'
+          mkdir -p bridge /tmp/cache_bridge
+          openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 -out /tmp/cache_bridge/session_private.pem >/dev/null 2>&1
+          openssl pkey -in /tmp/cache_bridge/session_private.pem -pubout -out bridge/cache_session_public.pem >/dev/null 2>&1
+          chmod 600 /tmp/cache_bridge/session_private.pem
+          sha256sum bridge/cache_session_public.pem | awk '{print $1}' > bridge/cache_session_public.sha256
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add bridge/cache_session_public.pem bridge/cache_session_public.sha256
+          git commit -m 'chore: emit ephemeral cache bridge key [skip ci]'
+          git push origin "HEAD:${HEAD_REF}"
+
+      - name: Wait for encrypted cache contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          HEAD_REF='${{ github.event.pull_request.head.ref }}'
+          mkdir -p /tmp/cache_bridge/incoming
+          found=0
+          for _ in $(seq 1 180); do
+            git fetch --quiet origin "$HEAD_REF"
+            found=1
+            for f in bridge/cache_transport_key.b64 bridge/cache_payload.enc.b64 bridge/cache_payload.iv; do
+              if ! git cat-file -e "origin/${HEAD_REF}:${f}" 2>/dev/null; then found=0; break; fi
+            done
+            if [ "$found" = 1 ]; then
+              for f in cache_transport_key.b64 cache_payload.enc.b64 cache_payload.iv; do
+                git show "origin/${HEAD_REF}:bridge/${f}" > "/tmp/cache_bridge/incoming/${f}"
+              done
+              break
+            fi
+            sleep 10
+          done
+          test "$found" = 1 || { echo 'encrypted cache contract did not arrive'; exit 1; }
+
+      - name: Retrieve, verify, and encrypt immutable cache
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd /tmp/cache_bridge
+          base64 -d incoming/cache_transport_key.b64 > transport_key.enc
+          base64 -d incoming/cache_payload.enc.b64 > payload.enc
+          openssl pkeyutl -decrypt -inkey session_private.pem -in transport_key.enc \
+            -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 \
+            -out transport_key.bin
+          KEY_HEX=$(od -An -v -tx1 transport_key.bin | tr -d ' \n')
+          IV_HEX=$(tr -d '\r\n ' < incoming/cache_payload.iv)
+          openssl enc -d -aes-256-cbc -K "$KEY_HEX" -iv "$IV_HEX" -in payload.enc -out payload.json
+          python3 - <<'PY'
+          import base64,json,pathlib
+          p=json.loads(pathlib.Path('/tmp/cache_bridge/payload.json').read_text())
+          assert p['protocol']=='MDSU_CACHE_BRIDGE_V1'
+          assert p['cache_sha256']=='2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9'
+          pathlib.Path('/tmp/cache_bridge/cache_url.txt').write_text(p['cache_url'])
+          pathlib.Path('/tmp/cache_bridge/result_public.pem').write_bytes(base64.b64decode(p['result_public_pem_b64']))
+          PY
+          curl --silent --show-error --fail --location --retry 5 --retry-delay 2 --connect-timeout 20 \
+            "$(cat cache_url.txt)" -o immutable_cache.pt
+          echo "$CACHE_SHA256  immutable_cache.pt" | sha256sum -c -
+          mkdir -p /tmp/secure_cache_output
+          OUT_KEY_HEX=$(openssl rand -hex 32)
+          OUT_IV_HEX=$(openssl rand -hex 16)
+          python3 - "$OUT_KEY_HEX" /tmp/secure_cache_output/cache_key.bin <<'PY'
+          import binascii,pathlib,sys
+          pathlib.Path(sys.argv[2]).write_bytes(binascii.unhexlify(sys.argv[1]))
+          PY
+          openssl enc -aes-256-cbc -K "$OUT_KEY_HEX" -iv "$OUT_IV_HEX" -in immutable_cache.pt -out /tmp/secure_cache_output/immutable_cache.pt.enc
+          openssl pkeyutl -encrypt -pubin -inkey result_public.pem \
+            -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 \
+            -in /tmp/secure_cache_output/cache_key.bin -out /tmp/secure_cache_output/cache_key.enc
+          printf '%s\n' "$OUT_IV_HEX" > /tmp/secure_cache_output/cache_iv.hex
+          printf '%s  immutable_cache.pt\n' "$CACHE_SHA256" > /tmp/secure_cache_output/CACHE_SHA256.txt
+          rm -f /tmp/secure_cache_output/cache_key.bin cache_url.txt transport_key.bin immutable_cache.pt
+
+      - name: Upload encrypted exact immutable cache
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-secure-hcme-seed0-immutable-cache
+          path: /tmp/secure_cache_output
+          if-no-files-found: error
+          retention-days: 1
