@@ -1,0 +1,6 @@
+protocol=MDSU_CACHE_BRIDGE_V1
+request_revision=auth-header-1
+cache_sha256=2e2d1f6ee884bb51ceff4103db17f57849bc98dc027a6187e65c168edbc47de9
+transport_tests=raw_query,raw_bearer,raw_token,contents_bearer,blob_api_bearer
+plaintext_publication=false
+scientific_change=none
