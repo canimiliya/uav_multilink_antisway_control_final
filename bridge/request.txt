@@ -1,0 +1,8 @@
+MDSU frozen Stage-1 infrastructure request
+Task: halfcheetah-medium-expert-v2
+Seed: 1
+Purpose: exact immutable dynamics cache for preregistered primary candidate grid
+Algorithm source SHA256: cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b
+Scientific change: none
+Transport mode: atomic single-part encrypted source payload
+Do not merge.
