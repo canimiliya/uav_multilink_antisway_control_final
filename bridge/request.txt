@@ -1,0 +1,10 @@
+MDSU frozen Stage-1 infrastructure request
+Task: walker2d-medium-v2
+Seed: 1
+Purpose: exact immutable dynamics cache for preregistered primary candidate grid
+Algorithm source SHA256: cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b
+Dataset SHA256: cf00f43add04c17fdfc2958dd581dea0851b2e5bedbe6fda073758a8f841aeda
+Expected contract SHA256: b09d3fa5afa89526cc15ffe09344025080c1cb1012b12b329b4b1f4cdccc4990
+Scientific change: none
+Transport mode: atomic encrypted payload
+Do not merge.
