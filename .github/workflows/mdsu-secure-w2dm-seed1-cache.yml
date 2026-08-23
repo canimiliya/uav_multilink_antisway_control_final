@@ -1,0 +1,333 @@
+name: MDSU secure W2DM seed1 cache build
+
+on:
+  pull_request:
+    branches: [tmp/mdsu-secure-w2dm-seed1-cache-base]
+    paths:
+      - bridge/request.txt
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mdsu-secure-w2dm-seed1-cache-v1
+  cancel-in-progress: false
+
+env:
+  TASK: walker2d-medium-v2
+  SEED: '1'
+  DATA_FILE: walker2d_medium-v2.hdf5
+  DATA_BYTES: '232254996'
+  DATA_SHA256: cf00f43add04c17fdfc2958dd581dea0851b2e5bedbe6fda073758a8f841aeda
+  D4RL_BASE: https://rail.eecs.berkeley.edu/datasets/offline_rl/gym_mujoco_v2
+  SOURCE_SHA256: cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b
+  CACHE_BUILDER_SHA256: 01d77c9864cbd088eba207754f3b7cbc965d7c8e699adc5a32bc96915505d1a9
+  SCORE_RUNTIME_SHA256: 3e9bb297dfa3ad3f239f178301c350ee6779e3032046f147a15a172fdd814e70
+  REGISTRY_RAW_SHA256: f31ca015a3612526cbd0450a371a818085bffd9ea890a8e67c98cb0602b8625f
+  REGISTRY_SEMANTIC_SHA256: fc490fee30ab5139dd45ed7a9b92caecb81923d78b839612f56703cb1a0893d9
+  EXPECTED_CONTRACT_SHA256: b09d3fa5afa89526cc15ffe09344025080c1cb1012b12b329b4b1f4cdccc4990
+  EXPECTED_FILENAME: walker2d-medium-v2__seed1__b09d3fa5afa89526.pt
+  OMP_NUM_THREADS: '4'
+  MKL_NUM_THREADS: '4'
+  MUJOCO_GL: osmesa
+  D4RL_SUPPRESS_IMPORT_ERROR: '1'
+
+jobs:
+  build-cache:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 350
+    steps:
+      - name: Checkout isolated bridge head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Emit ephemeral source-session public key
+        shell: bash
+        run: |
+          set -euo pipefail
+          HEAD_REF='${{ github.event.pull_request.head.ref }}'
+          mkdir -p bridge /tmp/mdsu_bridge
+          openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 \
+            -out /tmp/mdsu_bridge/session_private.pem >/dev/null 2>&1
+          openssl pkey -in /tmp/mdsu_bridge/session_private.pem -pubout \
+            -out bridge/session_public.pem >/dev/null 2>&1
+          chmod 600 /tmp/mdsu_bridge/session_private.pem
+          sha256sum bridge/session_public.pem | awk '{print $1}' > bridge/session_public.sha256
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add bridge/session_public.pem bridge/session_public.sha256
+          git commit -m 'chore: emit ephemeral MDSU W2DM seed1 cache key [skip ci]'
+          git push origin "HEAD:${HEAD_REF}"
+
+      - name: Wait for encrypted frozen-source payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          HEAD_REF='${{ github.event.pull_request.head.ref }}'
+          mkdir -p /tmp/mdsu_bridge/incoming
+          found=0
+          for _ in $(seq 1 240); do
+            git fetch --quiet origin "$HEAD_REF"
+            found=1
+            for f in bridge/transport_key.b64 bridge/payload.enc.b64 bridge/payload.iv bridge/source_parts.count; do
+              if ! git cat-file -e "origin/${HEAD_REF}:${f}" 2>/dev/null; then found=0; break; fi
+            done
+            if [ "$found" = 1 ]; then
+              count=$(git show "origin/${HEAD_REF}:bridge/source_parts.count" | tr -d '\r\n ')
+              case "$count" in ''|*[!0-9]*) found=0;; esac
+              if [ "$found" = 1 ]; then
+                for i in $(seq 0 $((count-1))); do
+                  printf -v part 'bridge/source.enc.part%03d' "$i"
+                  git cat-file -e "origin/${HEAD_REF}:${part}" 2>/dev/null || { found=0; break; }
+                done
+              fi
+            fi
+            if [ "$found" = 1 ]; then
+              for f in transport_key.b64 payload.enc.b64 payload.iv source_parts.count; do
+                git show "origin/${HEAD_REF}:bridge/${f}" > "/tmp/mdsu_bridge/incoming/${f}"
+              done
+              count=$(cat /tmp/mdsu_bridge/incoming/source_parts.count)
+              : > /tmp/mdsu_bridge/incoming/source.enc.b64
+              for i in $(seq 0 $((count-1))); do
+                printf -v part 'source.enc.part%03d' "$i"
+                git show "origin/${HEAD_REF}:bridge/${part}" >> /tmp/mdsu_bridge/incoming/source.enc.b64
+              done
+              break
+            fi
+            sleep 5
+          done
+          test "$found" = 1 || { echo 'encrypted source payload did not arrive'; exit 1; }
+
+      - name: Decrypt and verify frozen execution source
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd /tmp/mdsu_bridge
+          base64 -d incoming/transport_key.b64 > transport_key.enc
+          base64 -d incoming/payload.enc.b64 > payload.enc
+          base64 -d incoming/source.enc.b64 > source.enc
+          openssl pkeyutl -decrypt -inkey session_private.pem -in transport_key.enc \
+            -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 \
+            -pkeyopt rsa_mgf1_md:sha256 -out transport_key.bin
+          KEY_HEX=$(od -An -v -tx1 transport_key.bin | tr -d ' \n')
+          PAYLOAD_IV=$(tr -d '\r\n ' < incoming/payload.iv)
+          openssl enc -d -aes-256-cbc -K "$KEY_HEX" -iv "$PAYLOAD_IV" \
+            -in payload.enc -out payload.json
+          python3 - <<'PY'
+          import base64, json, pathlib
+          p=json.loads(pathlib.Path('/tmp/mdsu_bridge/payload.json').read_text())
+          required={
+            'protocol':'MDSU_SECURE_W2DM_SEED1_CACHE_V1',
+            'task':'walker2d-medium-v2',
+            'seed':1,
+            'algorithm_source_sha256':'cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b',
+            'cache_builder_sha256':'01d77c9864cbd088eba207754f3b7cbc965d7c8e699adc5a32bc96915505d1a9',
+            'score_runtime_sha256':'3e9bb297dfa3ad3f239f178301c350ee6779e3032046f147a15a172fdd814e70',
+            'dataset_sha256':'cf00f43add04c17fdfc2958dd581dea0851b2e5bedbe6fda073758a8f841aeda',
+            'expected_contract_sha256':'b09d3fa5afa89526cc15ffe09344025080c1cb1012b12b329b4b1f4cdccc4990',
+            'expected_filename':'walker2d-medium-v2__seed1__b09d3fa5afa89526.pt',
+          }
+          for k,v in required.items():
+              if p.get(k)!=v: raise SystemExit('payload contract mismatch: '+k)
+          for key in ('source_key_hex','source_iv_hex','source_plain_sha256'):
+              if not p.get(key): raise SystemExit('missing payload field: '+key)
+              pathlib.Path('/tmp/mdsu_bridge/'+key+'.txt').write_text(str(p[key]))
+          pathlib.Path('/tmp/mdsu_bridge/result_public.pem').write_bytes(
+              base64.b64decode(p['result_public_pem_b64']))
+          PY
+          openssl enc -d -aes-256-cbc -K "$(cat source_key_hex.txt)" \
+            -iv "$(cat source_iv_hex.txt)" -in source.enc -out source.tar.gz
+          echo "$(cat source_plain_sha256.txt)  source.tar.gz" | sha256sum -c -
+          mkdir -p /tmp/mdsu
+          tar -xzf source.tar.gz -C /tmp/mdsu
+          (cd /tmp/mdsu && sha256sum -c SOURCE_PAYLOAD_SHA256SUMS.txt)
+          rm -f transport_key.bin transport_key.enc payload.enc source.enc payload.json
+
+      - name: Install exact paper-era runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libgl1-mesa-dev libglew-dev libosmesa6-dev patchelf git curl
+          source "$(conda info --base)/etc/profile.d/conda.sh"
+          conda create -y -n mdsu37 python=3.7.16 pip
+          conda activate mdsu37
+          python -m pip install 'numpy==1.21.6' 'Cython<3' 'gym==0.23.1' \
+            'mujoco-py==2.1.2.14' 'h5py==3.7.0' 'tqdm<5'
+          python -m pip install 'torch==1.8.1+cpu' -f https://download.pytorch.org/whl/torch_stable.html
+          git clone -q https://github.com/Farama-Foundation/D4RL.git /tmp/d4rl-src
+          cd /tmp/d4rl-src
+          git checkout -q 89141a689b0353b0dac3da5cba60da4b1b16254d
+          python -m pip install --no-deps .
+          mkdir -p "$HOME/.mujoco"
+          curl -fL --retry 5 \
+            https://github.com/google-deepmind/mujoco/releases/download/2.1.0/mujoco210-linux-x86_64.tar.gz \
+            -o /tmp/mujoco210.tar.gz
+          tar -xzf /tmp/mujoco210.tar.gz -C "$HOME/.mujoco"
+          echo "MUJOCO_PY_MUJOCO_PATH=$HOME/.mujoco/mujoco210" >> "$GITHUB_ENV"
+          echo "LD_LIBRARY_PATH=$HOME/.mujoco/mujoco210/bin:/usr/lib/x86_64-linux-gnu" >> "$GITHUB_ENV"
+
+      - name: Download and verify exact W2DM D4RL
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/mdsu/data/d4rl
+          curl -fL --retry 5 --retry-delay 2 --connect-timeout 20 \
+            "$D4RL_BASE/$DATA_FILE" -o "/tmp/mdsu/data/d4rl/$DATA_FILE"
+          test "$(stat -c%s "/tmp/mdsu/data/d4rl/$DATA_FILE")" = "$DATA_BYTES"
+          echo "$DATA_SHA256  /tmp/mdsu/data/d4rl/$DATA_FILE" | sha256sum -c -
+
+      - name: Verify all frozen identities before fitting
+        shell: bash
+        run: |
+          set -euo pipefail
+          source "$(conda info --base)/etc/profile.d/conda.sh"
+          conda activate mdsu37
+          cd /tmp/mdsu
+          python - <<'PY'
+          import json, os, pathlib, torch
+          import d4rl.gym_mujoco
+          from mdsu.provenance import source_fingerprint, runtime_environment
+          from mdsu.formal_contracts import cache_builder_source_fingerprint, verify_locked_contracts
+          from mdsu.score_runtime import contract_sha256, compatibility_report
+          from mdsu.candidate_registry import registry_sha256
+          from mdsu.dynamics_cache import registry_raw_sha256, cache_contract, cache_contract_sha256, cache_filename
+          from mdsu.d4rl_manifest import require_verified_dataset
+          torch.set_num_threads(4); torch.set_num_interop_threads(2)
+          assert source_fingerprint()['algorithm_source_sha256']==os.environ['SOURCE_SHA256']
+          assert cache_builder_source_fingerprint()['cache_builder_source_sha256']==os.environ['CACHE_BUILDER_SHA256']
+          assert contract_sha256()==os.environ['SCORE_RUNTIME_SHA256']
+          assert registry_raw_sha256()==os.environ['REGISTRY_RAW_SHA256']
+          assert registry_sha256()==os.environ['REGISTRY_SEMANTIC_SHA256']
+          env=runtime_environment(); rep=compatibility_report(env,'cpu'); assert rep['compatible'],rep
+          locks=verify_locked_contracts(env,'cpu',strict_runtime=True)
+          ident=require_verified_dataset(os.environ['TASK'],pathlib.Path('data/d4rl')/os.environ['DATA_FILE'])
+          c=cache_contract(os.environ['TASK'],1,ident,locks['execution_source_sha256'],
+                           locks['cache_builder_source_sha256'],locks['score_runtime_semantic_sha256'])
+          assert cache_contract_sha256(c)==os.environ['EXPECTED_CONTRACT_SHA256']
+          assert cache_filename(os.environ['TASK'],1,c)==os.environ['EXPECTED_FILENAME']
+          out={'status':'W2DM_SEED1_CACHE_PREFLIGHT_PASS','task':os.environ['TASK'],'seed':1,
+               'source_sha256':locks['execution_source_sha256'],
+               'cache_builder_sha256':locks['cache_builder_source_sha256'],
+               'score_runtime_sha256':locks['score_runtime_semantic_sha256'],
+               'dataset_sha256':ident['sha256_actual'],
+               'cache_contract_sha256':cache_contract_sha256(c),
+               'expected_filename':cache_filename(os.environ['TASK'],1,c),
+               'formal_environment_score_count':2}
+          pathlib.Path('w2dm_seed1_cache_preflight.json').write_text(json.dumps(out,indent=2))
+          print(json.dumps(out,indent=2))
+          PY
+
+      - name: Fit exact W2DM seed1 immutable dynamics cache
+        timeout-minutes: 300
+        shell: bash
+        run: |
+          set -euo pipefail
+          source "$(conda info --base)/etc/profile.d/conda.sh"
+          conda activate mdsu37
+          cd /tmp/mdsu
+          python scripts/build_dynamics_cache.py \
+            --task "$TASK" --seed "$SEED" --device cpu --resume --checkpoint-every 1
+
+      - name: Validate and encrypt final cache
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          source "$(conda info --base)/etc/profile.d/conda.sh"
+          conda activate mdsu37
+          cd /tmp/mdsu
+          python - <<'PY'
+          import glob, hashlib, json, os, pathlib
+          from mdsu.d4rl_manifest import require_verified_dataset
+          from mdsu.provenance import runtime_environment
+          from mdsu.formal_contracts import verify_locked_contracts
+          from mdsu.dynamics_cache import cache_contract, load_cache, validate_payload
+          ident=require_verified_dataset(os.environ['TASK'],pathlib.Path('data/d4rl')/os.environ['DATA_FILE'])
+          locks=verify_locked_contracts(runtime_environment(),'cpu',strict_runtime=True)
+          contract=cache_contract(os.environ['TASK'],1,ident,locks['execution_source_sha256'],
+                                  locks['cache_builder_source_sha256'],locks['score_runtime_semantic_sha256'])
+          files=glob.glob('dynamics_cache/*.pt'); assert len(files)==1,files
+          p=pathlib.Path(files[0]); assert p.name==os.environ['EXPECTED_FILENAME']
+          payload=load_cache(p,contract,map_location='cpu')
+          check=validate_payload(payload,contract); assert check['valid'],check
+          assert payload['contract_sha256']==os.environ['EXPECTED_CONTRACT_SHA256']
+          meta={'status':'IMMUTABLE_DYNAMICS_CACHE_VERIFIED','task':os.environ['TASK'],'seed':1,
+                'filename':p.name,'bytes':p.stat().st_size,
+                'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
+                'contract_sha256':payload['contract_sha256'],'fit_info':payload['fit_info'],
+                'resume_provenance':payload.get('resume_provenance'),
+                'source_sha256':locks['execution_source_sha256'],
+                'cache_builder_sha256':locks['cache_builder_source_sha256'],
+                'score_runtime_sha256':locks['score_runtime_semantic_sha256'],
+                'formal_environment_score_count':2,'paper_score':None}
+          pathlib.Path('w2dm_seed1_cache_metadata.json').write_text(json.dumps(meta,indent=2))
+          print(json.dumps(meta,indent=2))
+          PY
+          CACHE=$(find dynamics_cache -maxdepth 1 -type f -name '*.pt' -print -quit)
+          mkdir -p /tmp/w2dm_seed1_cache_plain /tmp/w2dm_seed1_cache_encrypted
+          cp "$CACHE" /tmp/w2dm_seed1_cache_plain/
+          cp w2dm_seed1_cache_metadata.json w2dm_seed1_cache_preflight.json /tmp/w2dm_seed1_cache_plain/
+          tar -czf /tmp/w2dm_seed1_cache_plain.tar.gz -C /tmp/w2dm_seed1_cache_plain .
+          KEY_HEX=$(openssl rand -hex 32); IV_HEX=$(openssl rand -hex 16)
+          python3 - "$KEY_HEX" /tmp/w2dm_seed1_cache_encrypted/key.bin <<'PY'
+          import binascii,pathlib,sys
+          pathlib.Path(sys.argv[2]).write_bytes(binascii.unhexlify(sys.argv[1]))
+          PY
+          openssl enc -aes-256-cbc -K "$KEY_HEX" -iv "$IV_HEX" \
+            -in /tmp/w2dm_seed1_cache_plain.tar.gz \
+            -out /tmp/w2dm_seed1_cache_encrypted/w2dm_seed1_cache.tar.gz.enc
+          openssl pkeyutl -encrypt -pubin -inkey /tmp/mdsu_bridge/result_public.pem \
+            -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 \
+            -pkeyopt rsa_mgf1_md:sha256 -in /tmp/w2dm_seed1_cache_encrypted/key.bin \
+            -out /tmp/w2dm_seed1_cache_encrypted/key.enc
+          printf '%s\n' "$IV_HEX" > /tmp/w2dm_seed1_cache_encrypted/iv.hex
+          sha256sum /tmp/w2dm_seed1_cache_plain.tar.gz > /tmp/w2dm_seed1_cache_encrypted/PLAINTEXT_TAR_SHA256.txt
+          rm -f /tmp/w2dm_seed1_cache_encrypted/key.bin /tmp/w2dm_seed1_cache_plain.tar.gz
+
+      - name: Upload encrypted verified W2DM seed1 cache
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-w2dm-seed1-immutable-cache-encrypted
+          path: /tmp/w2dm_seed1_cache_encrypted
+          if-no-files-found: error
+          retention-days: 1
+
+      - name: Encrypt rescue resume after interrupted or failed fit
+        if: failure()
+        shell: bash
+        run: |
+          set -euo pipefail
+          RESUME=$(find /tmp/mdsu/dynamics_cache_resume -maxdepth 1 -type f -name '*.resume.pt' -print -quit || true)
+          test -n "$RESUME" || exit 0
+          mkdir -p /tmp/w2dm_seed1_resume_plain /tmp/w2dm_seed1_resume_encrypted
+          cp "$RESUME" /tmp/w2dm_seed1_resume_plain/
+          tar -czf /tmp/w2dm_seed1_resume_plain.tar.gz -C /tmp/w2dm_seed1_resume_plain .
+          KEY_HEX=$(openssl rand -hex 32); IV_HEX=$(openssl rand -hex 16)
+          python3 - "$KEY_HEX" /tmp/w2dm_seed1_resume_encrypted/key.bin <<'PY'
+          import binascii,pathlib,sys
+          pathlib.Path(sys.argv[2]).write_bytes(binascii.unhexlify(sys.argv[1]))
+          PY
+          openssl enc -aes-256-cbc -K "$KEY_HEX" -iv "$IV_HEX" \
+            -in /tmp/w2dm_seed1_resume_plain.tar.gz \
+            -out /tmp/w2dm_seed1_resume_encrypted/w2dm_seed1_resume.tar.gz.enc
+          openssl pkeyutl -encrypt -pubin -inkey /tmp/mdsu_bridge/result_public.pem \
+            -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 \
+            -pkeyopt rsa_mgf1_md:sha256 -in /tmp/w2dm_seed1_resume_encrypted/key.bin \
+            -out /tmp/w2dm_seed1_resume_encrypted/key.enc
+          printf '%s\n' "$IV_HEX" > /tmp/w2dm_seed1_resume_encrypted/iv.hex
+          sha256sum /tmp/w2dm_seed1_resume_plain.tar.gz > /tmp/w2dm_seed1_resume_encrypted/PLAINTEXT_TAR_SHA256.txt
+          rm -f /tmp/w2dm_seed1_resume_encrypted/key.bin /tmp/w2dm_seed1_resume_plain.tar.gz
+
+      - name: Upload encrypted W2DM seed1 rescue resume
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-w2dm-seed1-resume-encrypted
+          path: /tmp/w2dm_seed1_resume_encrypted
+          if-no-files-found: ignore
+          retention-days: 1
