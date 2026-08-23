@@ -1,0 +1,9 @@
+protocol=MDSU_SECURE_CACHE_SEED1_V1
+task=halfcheetah-medium-expert-v2
+seed=1
+purpose=resume-safe exact cache build with persistent local result key
+algorithm_source_sha256=cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b
+cache_builder_sha256=01d77c9864cbd088eba207754f3b7cbc965d7c8e699adc5a32bc96915505d1a9
+score_runtime_sha256=3e9bb297dfa3ad3f239f178301c350ee6779e3032046f147a15a172fdd814e70
+secondary_started=false
+stage2_started=false
