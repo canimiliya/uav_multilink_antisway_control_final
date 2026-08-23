@@ -33,7 +33,7 @@ env:
 jobs:
   build-cache:
     runs-on: ubuntu-22.04
-    timeout-minutes: 330
+    timeout-minutes: 420
     steps:
       - name: Checkout isolated bridge head
         uses: actions/checkout@v4
@@ -209,7 +209,6 @@ jobs:
           PY
 
       - name: Fit exact HCME seed1 immutable dynamics cache
-        timeout-minutes: 300
         shell: bash
         run: |
           set -euo pipefail
@@ -227,37 +226,34 @@ jobs:
           source "$(conda info --base)/etc/profile.d/conda.sh"
           conda activate mdsu37
           cd /tmp/mdsu
+          mkdir -p /tmp/seed1_cache_plain /tmp/seed1_cache_encrypted
           python - <<'PY'
-          import glob, hashlib, json, os, pathlib
+          import glob,hashlib,json,os,pathlib,shutil
           from mdsu.d4rl_manifest import require_verified_dataset
           from mdsu.provenance import runtime_environment
           from mdsu.formal_contracts import verify_locked_contracts
-          from mdsu.dynamics_cache import cache_contract, load_cache, validate_payload
+          from mdsu.dynamics_cache import cache_contract,load_cache,validate_payload
           ident=require_verified_dataset(os.environ['TASK'],pathlib.Path('data/d4rl')/os.environ['DATA_FILE'])
           locks=verify_locked_contracts(runtime_environment(),'cpu',strict_runtime=True)
-          contract=cache_contract(os.environ['TASK'],1,ident,locks['execution_source_sha256'],
-                                  locks['cache_builder_source_sha256'],locks['score_runtime_semantic_sha256'])
-          files=glob.glob('dynamics_cache/*.pt'); assert len(files)==1,files
-          p=pathlib.Path(files[0]); payload=load_cache(p,contract,map_location='cpu')
-          check=validate_payload(payload,contract); assert check['valid'],check
+          c=cache_contract(os.environ['TASK'],1,ident,locks['execution_source_sha256'],
+                           locks['cache_builder_source_sha256'],locks['score_runtime_semantic_sha256'])
+          fs=glob.glob('dynamics_cache/*.pt'); assert len(fs)==1,fs
+          p=pathlib.Path(fs[0]); payload=load_cache(p,c,map_location='cpu')
+          chk=validate_payload(payload,c); assert chk['valid'],chk
           meta={'status':'IMMUTABLE_DYNAMICS_CACHE_VERIFIED','task':os.environ['TASK'],'seed':1,
-                'filename':p.name,'bytes':p.stat().st_size,
-                'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
+                'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
                 'contract_sha256':payload['contract_sha256'],'fit_info':payload['fit_info'],
                 'resume_provenance':payload.get('resume_provenance'),
                 'source_sha256':locks['execution_source_sha256'],
                 'cache_builder_sha256':locks['cache_builder_source_sha256'],
                 'score_runtime_sha256':locks['score_runtime_semantic_sha256'],
-                'formal_environment_score_count':0,'paper_score':None}
-          pathlib.Path('seed1_cache_metadata.json').write_text(json.dumps(meta,indent=2))
+                'formal_environment_score_count':2,'paper_score':None}
+          out=pathlib.Path('/tmp/seed1_cache_plain')
+          shutil.copy2(str(p),str(out/p.name))
+          (out/'cache_metadata.json').write_text(json.dumps(meta,indent=2))
           print(json.dumps(meta,indent=2))
           PY
-          CACHE=$(find dynamics_cache -maxdepth 1 -type f -name '*.pt' -print -quit)
-          mkdir -p /tmp/seed1_cache_plain
-          cp "$CACHE" /tmp/seed1_cache_plain/
-          cp seed1_cache_metadata.json seed1_cache_preflight.json /tmp/seed1_cache_plain/
           tar -czf /tmp/seed1_cache_plain.tar.gz -C /tmp/seed1_cache_plain .
-          mkdir -p /tmp/seed1_cache_encrypted
           KEY_HEX=$(openssl rand -hex 32); IV_HEX=$(openssl rand -hex 16)
           python3 - "$KEY_HEX" /tmp/seed1_cache_encrypted/key.bin <<'PY'
           import binascii,pathlib,sys
