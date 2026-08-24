@@ -1,0 +1,183 @@
+name: MDSU secure HCME seed1 cache static-source build
+
+on:
+  pull_request:
+    branches: [tmp/mdsu-secure-hcme-seed1-cache-static-base]
+    paths: [bridge/request.txt]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mdsu-secure-hcme-seed1-cache-static-v1
+  cancel-in-progress: false
+
+env:
+  TASK: halfcheetah-medium-expert-v2
+  SEED: '1'
+  DATA_FILE: halfcheetah_medium_expert-v2.hdf5
+  DATA_BYTES: '474567252'
+  DATA_SHA256: 015db75dae5bbe8e94029b71fa0bafc2073365df0c94744e71031189f3f79c06
+  D4RL_BASE: https://rail.eecs.berkeley.edu/datasets/offline_rl/gym_mujoco_v2
+  SOURCE_SHA256: cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b
+  SOURCE_TAR_SHA256: a614d25f0cf237f4502539d21327cc16b677c35ec2e9f3343967219365b3f93d
+  STATIC_CIPHER_SHA256: ba05a0c68032538edfc75d680b906202182ee7662ef165b0bad841dee2ec9038
+  CACHE_BUILDER_SHA256: 01d77c9864cbd088eba207754f3b7cbc965d7c8e699adc5a32bc96915505d1a9
+  SCORE_RUNTIME_SHA256: 3e9bb297dfa3ad3f239f178301c350ee6779e3032046f147a15a172fdd814e70
+  REGISTRY_RAW_SHA256: f31ca015a3612526cbd0450a371a818085bffd9ea890a8e67c98cb0602b8625f
+  REGISTRY_SEMANTIC_SHA256: fc490fee30ab5139dd45ed7a9b92caecb81923d78b839612f56703cb1a0893d9
+  OMP_NUM_THREADS: '4'
+  MKL_NUM_THREADS: '4'
+  MUJOCO_GL: osmesa
+  D4RL_SUPPRESS_IMPORT_ERROR: '1'
+
+jobs:
+  build-cache:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Emit ephemeral transport key
+        shell: bash
+        run: |
+          set -euo pipefail
+          H='${{ github.event.pull_request.head.ref }}'
+          mkdir -p bridge /tmp/mdsu_bridge
+          openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 -out /tmp/mdsu_bridge/session_private.pem >/dev/null 2>&1
+          openssl pkey -in /tmp/mdsu_bridge/session_private.pem -pubout -out bridge/session_public.pem >/dev/null 2>&1
+          chmod 600 /tmp/mdsu_bridge/session_private.pem
+          sha256sum bridge/session_public.pem | awk '{print $1}' > bridge/session_public.sha256
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add bridge/session_public.pem bridge/session_public.sha256
+          git commit -m 'chore: emit MDSU static session key [skip ci]'
+          git push origin "HEAD:${H}"
+
+      - name: Receive and decrypt frozen source
+        shell: bash
+        run: |
+          set -euo pipefail
+          H='${{ github.event.pull_request.head.ref }}'; mkdir -p /tmp/mdsu_bridge/in
+          ok=0
+          for _ in $(seq 1 240); do
+            git fetch -q origin "$H"; ok=1
+            for f in transport_key.b64 payload.enc.b64 payload.iv; do git cat-file -e "origin/${H}:bridge/${f}" 2>/dev/null || ok=0; done
+            [ "$ok" = 1 ] && break; sleep 5
+          done
+          [ "$ok" = 1 ] || exit 1
+          for f in transport_key.b64 payload.enc.b64 payload.iv; do git show "origin/${H}:bridge/${f}" > "/tmp/mdsu_bridge/in/${f}"; done
+          python3 - <<'PY'
+          import hashlib,json,pathlib
+          r=pathlib.Path('bridge'); m=json.loads((r/'static_source_manifest.json').read_text()); out=[]
+          assert m['part_count']==8
+          for i,e in enumerate(m['part_sha256']):
+              b=(r/f'static_source.enc.part{i:03d}').read_bytes(); assert hashlib.sha256(b).hexdigest()==e; out.append(b)
+          b=b''.join(out); assert len(b)==m['base64_chars']; pathlib.Path('/tmp/mdsu_bridge/source.enc.b64').write_bytes(b)
+          PY
+          base64 -d /tmp/mdsu_bridge/source.enc.b64 > /tmp/mdsu_bridge/source.enc
+          echo "$STATIC_CIPHER_SHA256  /tmp/mdsu_bridge/source.enc" | sha256sum -c -
+          cd /tmp/mdsu_bridge
+          base64 -d in/transport_key.b64 > tk.enc; base64 -d in/payload.enc.b64 > p.enc
+          openssl pkeyutl -decrypt -inkey session_private.pem -in tk.enc -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 -out tk.bin
+          K=$(od -An -v -tx1 tk.bin | tr -d ' \n'); IV=$(tr -d '\r\n ' < in/payload.iv)
+          openssl enc -d -aes-256-cbc -K "$K" -iv "$IV" -in p.enc -out p.json
+          python3 - <<'PY'
+          import base64,json,pathlib
+          p=json.loads(pathlib.Path('/tmp/mdsu_bridge/p.json').read_text())
+          req={'protocol':'MDSU_STATIC_CACHE_SEED1_V1','task':'halfcheetah-medium-expert-v2','seed':1,'algorithm_source_sha256':'cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b','cache_builder_sha256':'01d77c9864cbd088eba207754f3b7cbc965d7c8e699adc5a32bc96915505d1a9','score_runtime_sha256':'3e9bb297dfa3ad3f239f178301c350ee6779e3032046f147a15a172fdd814e70','registry_raw_sha256':'f31ca015a3612526cbd0450a371a818085bffd9ea890a8e67c98cb0602b8625f','registry_semantic_sha256':'fc490fee30ab5139dd45ed7a9b92caecb81923d78b839612f56703cb1a0893d9','dataset_sha256':'015db75dae5bbe8e94029b71fa0bafc2073365df0c94744e71031189f3f79c06','source_plain_sha256':'a614d25f0cf237f4502539d21327cc16b677c35ec2e9f3343967219365b3f93d'}
+          for k,v in req.items(): assert p.get(k)==v,(k,p.get(k),v)
+          pathlib.Path('/tmp/mdsu_bridge/sk').write_text(p['source_key_hex']); pathlib.Path('/tmp/mdsu_bridge/siv').write_text(p['source_iv_hex']); pathlib.Path('/tmp/mdsu_bridge/result_public.pem').write_bytes(base64.b64decode(p['result_public_pem_b64']))
+          PY
+          openssl enc -d -aes-256-cbc -K "$(cat sk)" -iv "$(cat siv)" -in source.enc -out source.tar.gz
+          echo "$SOURCE_TAR_SHA256  source.tar.gz" | sha256sum -c -
+          mkdir -p /tmp/mdsu; tar -xzf source.tar.gz -C /tmp/mdsu; (cd /tmp/mdsu && sha256sum -c SOURCE_PAYLOAD_SHA256SUMS.txt)
+          rm -f tk.bin tk.enc p.enc p.json sk siv
+
+      - name: Install exact runtime and data
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq; sudo apt-get install -y -qq libgl1-mesa-dev libglew-dev libosmesa6-dev patchelf git curl
+          source "$(conda info --base)/etc/profile.d/conda.sh"; conda create -y -n mdsu37 python=3.7.16 pip; conda activate mdsu37
+          python -m pip install 'numpy==1.21.6' 'Cython<3' 'gym==0.23.1' 'mujoco-py==2.1.2.14' 'h5py==3.7.0' 'tqdm<5'
+          python -m pip install 'torch==1.8.1+cpu' -f https://download.pytorch.org/whl/torch_stable.html
+          git clone -q https://github.com/Farama-Foundation/D4RL.git /tmp/d4rl-src; cd /tmp/d4rl-src; git checkout -q 89141a689b0353b0dac3da5cba60da4b1b16254d; python -m pip install --no-deps .
+          mkdir -p "$HOME/.mujoco"; curl -fL --retry 5 https://github.com/google-deepmind/mujoco/releases/download/2.1.0/mujoco210-linux-x86_64.tar.gz -o /tmp/mj.tar.gz; tar -xzf /tmp/mj.tar.gz -C "$HOME/.mujoco"
+          echo "MUJOCO_PY_MUJOCO_PATH=$HOME/.mujoco/mujoco210" >> "$GITHUB_ENV"; echo "LD_LIBRARY_PATH=$HOME/.mujoco/mujoco210/bin:/usr/lib/x86_64-linux-gnu" >> "$GITHUB_ENV"
+          mkdir -p /tmp/mdsu/data/d4rl; curl -fL --retry 5 --retry-delay 2 "$D4RL_BASE/$DATA_FILE" -o "/tmp/mdsu/data/d4rl/$DATA_FILE"
+          test "$(stat -c%s "/tmp/mdsu/data/d4rl/$DATA_FILE")" = "$DATA_BYTES"; echo "$DATA_SHA256  /tmp/mdsu/data/d4rl/$DATA_FILE" | sha256sum -c -
+
+      - name: Verify identities and fit exact dynamics
+        shell: bash
+        run: |
+          set -euo pipefail
+          source "$(conda info --base)/etc/profile.d/conda.sh"; conda activate mdsu37; cd /tmp/mdsu
+          python - <<'PY'
+          import os,pathlib,torch; import d4rl.gym_mujoco
+          from mdsu.provenance import source_fingerprint,runtime_environment
+          from mdsu.formal_contracts import cache_builder_source_fingerprint,verify_locked_contracts
+          from mdsu.score_runtime import contract_sha256,compatibility_report
+          from mdsu.candidate_registry import registry_sha256
+          from mdsu.dynamics_cache import registry_raw_sha256
+          from mdsu.d4rl_manifest import require_verified_dataset
+          torch.set_num_threads(4); torch.set_num_interop_threads(2)
+          assert source_fingerprint()['algorithm_source_sha256']==os.environ['SOURCE_SHA256']; assert cache_builder_source_fingerprint()['cache_builder_source_sha256']==os.environ['CACHE_BUILDER_SHA256']; assert contract_sha256()==os.environ['SCORE_RUNTIME_SHA256']; assert registry_raw_sha256()==os.environ['REGISTRY_RAW_SHA256']; assert registry_sha256()==os.environ['REGISTRY_SEMANTIC_SHA256']
+          e=runtime_environment(); assert compatibility_report(e,'cpu')['compatible']; verify_locked_contracts(e,'cpu',strict_runtime=True); require_verified_dataset(os.environ['TASK'],pathlib.Path('data/d4rl')/os.environ['DATA_FILE'])
+          PY
+          python scripts/build_dynamics_cache.py --task "$TASK" --seed "$SEED" --device cpu --resume --checkpoint-every 1
+
+      - name: Validate and encrypt final cache
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          source "$(conda info --base)/etc/profile.d/conda.sh"; conda activate mdsu37; cd /tmp/mdsu; mkdir -p /tmp/out_plain /tmp/out_enc
+          python - <<'PY'
+          import glob,hashlib,json,os,pathlib,shutil
+          from mdsu.d4rl_manifest import require_verified_dataset
+          from mdsu.provenance import runtime_environment
+          from mdsu.formal_contracts import verify_locked_contracts
+          from mdsu.dynamics_cache import cache_contract,load_cache,validate_payload
+          ident=require_verified_dataset(os.environ['TASK'],pathlib.Path('data/d4rl')/os.environ['DATA_FILE']); locks=verify_locked_contracts(runtime_environment(),'cpu',strict_runtime=True); c=cache_contract(os.environ['TASK'],1,ident,locks['execution_source_sha256'],locks['cache_builder_source_sha256'],locks['score_runtime_semantic_sha256']); fs=glob.glob('dynamics_cache/*.pt'); assert len(fs)==1; p=pathlib.Path(fs[0]); x=load_cache(p,c,map_location='cpu'); assert validate_payload(x,c)['valid']; meta={'status':'IMMUTABLE_DYNAMICS_CACHE_VERIFIED','task':os.environ['TASK'],'seed':1,'filename':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'contract_sha256':x['contract_sha256'],'fit_info':x['fit_info'],'resume_provenance':x.get('resume_provenance'),'source_sha256':locks['execution_source_sha256'],'cache_builder_sha256':locks['cache_builder_source_sha256'],'score_runtime_sha256':locks['score_runtime_semantic_sha256'],'formal_environment_score_count':2,'paper_score':None}; o=pathlib.Path('/tmp/out_plain'); shutil.copy2(str(p),str(o/p.name)); (o/'cache_metadata.json').write_text(json.dumps(meta,indent=2)); print(json.dumps(meta,indent=2))
+          PY
+          tar -czf /tmp/out.tar.gz -C /tmp/out_plain .; K=$(openssl rand -hex 32); IV=$(openssl rand -hex 16); python3 - "$K" /tmp/out_enc/key.bin <<'PY'
+          import binascii,pathlib,sys; pathlib.Path(sys.argv[2]).write_bytes(binascii.unhexlify(sys.argv[1]))
+          PY
+          openssl enc -aes-256-cbc -K "$K" -iv "$IV" -in /tmp/out.tar.gz -out /tmp/out_enc/cache.tar.gz.enc
+          openssl pkeyutl -encrypt -pubin -inkey /tmp/mdsu_bridge/result_public.pem -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 -in /tmp/out_enc/key.bin -out /tmp/out_enc/key.enc
+          printf '%s\n' "$IV" > /tmp/out_enc/iv.hex; sha256sum /tmp/out.tar.gz > /tmp/out_enc/PLAINTEXT_TAR_SHA256.txt; rm -f /tmp/out_enc/key.bin /tmp/out.tar.gz
+
+      - name: Upload verified cache
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-hcme-seed1-cache-encrypted-static-v1
+          path: /tmp/out_enc
+          retention-days: 7
+
+      - name: Encrypt rescue resume
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          R=$(find /tmp/mdsu/dynamics_cache_resume -maxdepth 1 -type f -name '*.resume.pt' -print -quit 2>/dev/null || true); [ -n "$R" ] || exit 0
+          mkdir -p /tmp/resume_plain /tmp/resume_enc; cp "$R" /tmp/resume_plain/; tar -czf /tmp/resume.tar.gz -C /tmp/resume_plain .; K=$(openssl rand -hex 32); IV=$(openssl rand -hex 16); python3 - "$K" /tmp/resume_enc/key.bin <<'PY'
+          import binascii,pathlib,sys; pathlib.Path(sys.argv[2]).write_bytes(binascii.unhexlify(sys.argv[1]))
+          PY
+          openssl enc -aes-256-cbc -K "$K" -iv "$IV" -in /tmp/resume.tar.gz -out /tmp/resume_enc/resume.tar.gz.enc
+          if [ -f /tmp/mdsu_bridge/result_public.pem ]; then openssl pkeyutl -encrypt -pubin -inkey /tmp/mdsu_bridge/result_public.pem -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 -in /tmp/resume_enc/key.bin -out /tmp/resume_enc/key.enc; printf '%s\n' "$IV" > /tmp/resume_enc/iv.hex; sha256sum /tmp/resume.tar.gz > /tmp/resume_enc/PLAINTEXT_TAR_SHA256.txt; fi
+          rm -f /tmp/resume_enc/key.bin /tmp/resume.tar.gz
+
+      - name: Upload rescue resume
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdsu-hcme-seed1-resume-encrypted-static-v1
+          path: /tmp/resume_enc
+          if-no-files-found: ignore
+          retention-days: 7
