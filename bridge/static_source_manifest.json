@@ -1,0 +1,24 @@
+{
+  "protocol": "MDSU_STATIC_FROZEN_SOURCE_V1",
+  "scientific_scope": "encrypted transport only; no algorithm or parameter change",
+  "source_plaintext_sha256": "a614d25f0cf237f4502539d21327cc16b677c35ec2e9f3343967219365b3f93d",
+  "source_plaintext_bytes": 85039,
+  "ciphertext_sha256": "ba05a0c68032538edfc75d680b906202182ee7662ef165b0bad841dee2ec9038",
+  "ciphertext_bytes": 85040,
+  "base64_chars": 113388,
+  "part_count": 8,
+  "part_sha256": [
+    "04950cc4f8659966681dec100cc9df2c1ef16b220e588f1c022e53ad3b34c9c5",
+    "07ede3fa1e7ba67593752f8b6a835134eb78e5b63d3aa5796251def3d6c9feb4",
+    "b303c624f283989309638bd26043f9abed1cede9ca5de39d819d048e6a0fa53b",
+    "807ed735458666d6cfb477e9b40899085ab70d8d15d48aa874323cce64511747",
+    "3a59cd53b13740dfe41dc0de9b749b5b8fb8774609d25c69810ed93745cf256d",
+    "2d2b135fa174aebb5cf0334f251dc28118b8ff6a0a3f6bf1453490c2643c2483",
+    "2128e6e589f95ccb736de123b125afe9bd4554962f1d005bd4a420f1e92d2608",
+    "6a5f21a7170ec2ccb28877c39997aa7e42771aa902c17e6a5d388a868b8dad05"
+  ],
+  "algorithm_source_sha256": "cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b",
+  "cache_builder_sha256": "01d77c9864cbd088eba207754f3b7cbc965d7c8e699adc5a32bc96915505d1a9",
+  "score_runtime_sha256": "3e9bb297dfa3ad3f239f178301c350ee6779e3032046f147a15a172fdd814e70",
+  "candidate_registry_semantic_sha256": "fc490fee30ab5139dd45ed7a9b92caecb81923d78b839612f56703cb1a0893d9"
+}
