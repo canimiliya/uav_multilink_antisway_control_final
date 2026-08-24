@@ -1,0 +1,5 @@
+MDSU Stage-1 candidate-independent dynamics infrastructure only.
+Task: halfcheetah-medium-expert-v2
+Seed: 1
+Frozen execution source: cf5a11ac2cb5ad1d5547598b0ffb18759abc82ec71b448d62789f351cea5438b
+No algorithm parameter, candidate registry, secondary protocol, or Stage-2 state is changed.
